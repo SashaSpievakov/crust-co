@@ -1,6 +1,10 @@
+import NotFoundBlock from "../components/NotFoundBlock"
+
 const NotFound = () => {
   return (
-    <hq>Not Found...</hq>
+    <>
+      <NotFoundBlock />
+    </>
   )
 }
 export default NotFound
