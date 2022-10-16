@@ -1,3 +1,5 @@
+import { Route, Routes } from "react-router-dom";
+
 import "./scss/app.scss";
 import Header from "./components/Header";
 import Home from "./pages/Home";
@@ -9,7 +11,10 @@ function App() {
       <Header />
       <div className="content">
         <div className="container">
-          <Home />
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="*" element={<NotFound />} />
+          </Routes>
         </div>
       </div>
     </div>
