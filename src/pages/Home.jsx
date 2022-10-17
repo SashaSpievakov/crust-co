@@ -4,6 +4,7 @@ import Categories from "../components/Categories";
 import Sort from "../components/Sort";
 import ItemCard from "../components/ItemCard";
 import Skeleton from "../components/ItemCard/Skeleton";
+import SearchItems from "../components/SearchItems";
 // import productItems from "../assets/data/db.json";
 
 const Home = () => {
@@ -50,7 +51,10 @@ const Home = () => {
           sortNamesArr={sortNamesArr}
         />
       </div>
-      <h2 className="content__title">All Pizzas</h2>
+      <div className="content__title--block">
+        <h2 className="content__title">All Pizzas</h2>
+        <SearchItems />
+      </div>
       <div className="content__items">
         {isLoading
           ? [...new Array(6)].map((_, i) => <Skeleton key={i} />)
