@@ -1,9 +1,8 @@
 import { useState } from "react"
 
-const Sort = ({ setActiveSortName, activeSortName}) => {
+const Sort = ({ setActiveSortName, activeSortName, sortNamesArr}) => {
   const [open, setOpen] = useState(false);
 
-  const sortNamesArr = ['rating', 'price', 'A to Z'];
   const chosenSortName = sortNamesArr[activeSortName];
 
   const changeActiveSortName = i => {
