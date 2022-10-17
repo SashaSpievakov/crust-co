@@ -16,6 +16,7 @@ const Home = () => {
   const [activeSortName, setActiveSortName] = useState(0);
 
   const sortNamesArr = ['rating', 'price', 'A to Z'];
+  const sortedActiveName = sortNamesArr[activeSortName];
 
   const sortPropertyName = (property) => {
     if (property === 'A to Z') {
@@ -28,7 +29,7 @@ const Home = () => {
   useEffect(() => {
     setIsLoading(true);
     fetch(
-      `https://6344adb1dcae733e8fe3067a.mockapi.io/pizza-items?${activeIndex > 0 ? `category=${activeIndex}&` : ''}sortBy=${sortPropertyName(sortNamesArr[activeSortName])}&order=desc`
+      `https://6344adb1dcae733e8fe3067a.mockapi.io/pizza-items?${activeIndex > 0 ? `category=${activeIndex}&` : ''}sortBy=${sortPropertyName(sortedActiveName)}&order=desc`
       )
       .then(res => res.json())
       .then(arr => {
@@ -40,7 +41,7 @@ const Home = () => {
       });
 
       window.scrollTo(0, 0);
-  }, [activeIndex, activeSortName]);
+  }, [activeIndex, sortedActiveName]);
 
   return (
     <>
