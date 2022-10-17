@@ -14,7 +14,9 @@ const Home = () => {
   const [activeSortName, setActiveSortName] = useState(0);
 
   useEffect(() => {
-    fetch("https://6344adb1dcae733e8fe3067a.mockapi.io/pizza-items")
+    fetch(
+      `https://6344adb1dcae733e8fe3067a.mockapi.io/pizza-items${activeIndex > 0 ? `?category=${activeIndex}` : ''}`
+      )
       .then(res => res.json())
       .then(arr => {
         setItems(arr);
@@ -25,7 +27,7 @@ const Home = () => {
       });
 
       window.scrollTo(0, 0);
-  }, []);
+  }, [activeIndex]);
 
   return (
     <>
