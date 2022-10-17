@@ -60,7 +60,9 @@ const Home = () => {
       <div className="content__items">
         {isLoading
           ? [...new Array(6)].map((_, i) => <Skeleton key={i} />)
-          : items.filter(item => ((item.name).toLowerCase().includes(searchValue.trim().toLowerCase()))).map(item => <ItemCard key={item.id} {...item} />)}
+          : items
+            .filter(item => ((item.name).toLowerCase().includes(searchValue.trim().toLowerCase())))
+            .map(item => <ItemCard key={item.id} {...item} />)}
       </div>
     </>
   )
