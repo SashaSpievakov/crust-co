@@ -10,6 +10,7 @@ import SearchItems from "../components/SearchItems";
 const Home = () => {
   const [items, setItems] = useState([]);
   const [isLoading, setIsLoading] = useState(true);
+  const [searchValue, setSearchValue] = useState('');
 
   const [activeIndex, setActiveIndex] = useState(0);
   const [activeSortName, setActiveSortName] = useState(0);
@@ -53,12 +54,12 @@ const Home = () => {
       </div>
       <div className="content__title--block">
         <h2 className="content__title">All Pizzas</h2>
-        <SearchItems />
+        <SearchItems searchValue={searchValue} setSearchValue={setSearchValue} />
       </div>
       <div className="content__items">
         {isLoading
           ? [...new Array(6)].map((_, i) => <Skeleton key={i} />)
-          : items.map(item => <ItemCard key={item.id} {...item} />)}
+          : items.filter(item => ((item.name).toLowerCase().includes(searchValue.trim().toLowerCase()))).map(item => <ItemCard key={item.id} {...item} />)}
       </div>
     </>
   )
