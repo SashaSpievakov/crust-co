@@ -1,12 +1,18 @@
 import { useState } from "react"
+import { useSelector, useDispatch } from 'react-redux';
 
-const Sort = ({ setActiveSortName, activeSortName, sortNamesArr}) => {
+import { setSort } from '../redux/slices/sortSlice';
+
+const Sort = ({ sortNamesArr}) => {
+  const activeSort = useSelector((state) => state.activeSort.index);
+  const dispatch = useDispatch();
+
   const [open, setOpen] = useState(false);
 
-  const chosenSortName = sortNamesArr[activeSortName];
+  const chosenSortName = sortNamesArr[activeSort];
 
   const changeActiveSortName = i => {
-    setActiveSortName(i);
+    dispatch(setSort(i));
     setOpen(false);
   }
 
@@ -34,7 +40,7 @@ const Sort = ({ setActiveSortName, activeSortName, sortNamesArr}) => {
         {sortNamesArr.map((sortName, i) => (
           <li
             key={sortName}
-            className={activeSortName === i ? "active" : ""}
+            className={activeSort === i ? "active" : ""}
             onClick={() => changeActiveSortName(i)}
           >
             {sortName}

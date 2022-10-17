@@ -10,15 +10,14 @@ import SearchItems from "../components/SearchItems";
 
 const Home = () => {
   const activeCategory = useSelector((state) => state.activeCategory.index)
+  const activeSort = useSelector((state) => state.activeSort.index)
 
   const [items, setItems] = useState([]);
   const [isLoading, setIsLoading] = useState(true);
   const [searchValue, setSearchValue] = useState('');
 
-  const [activeSortName, setActiveSortName] = useState(0);
-
   const sortNamesArr = ['rating', 'price', 'A to Z'];
-  const sortedActiveName = sortNamesArr[activeSortName];
+  const sortedActiveName = sortNamesArr[activeSort];
 
   const sortPropertyName = (property) => {
     if (property === 'A to Z') {
@@ -50,8 +49,6 @@ const Home = () => {
       <div className="content__top">
         <Categories />
         <Sort
-          activeSortName={activeSortName}
-          setActiveSortName={setActiveSortName}
           sortNamesArr={sortNamesArr}
         />
       </div>
