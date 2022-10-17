@@ -37,7 +37,7 @@ const Home = () => {
         setIsLoading(false);
       })
       .catch(err => {
-        console.error(err);
+        console.log(`Error: ${err.message}`);
       });
 
       window.scrollTo(0, 0);
