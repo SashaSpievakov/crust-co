@@ -1,8 +1,4 @@
-import { useState } from "react"
-
-const Categories = () => {
-  const [activeIndex, setActiveIndex] = useState(0);
-
+const Categories = ({ activeIndex, setActiveIndex}) => {
   const categoriesArr = ['All', 'Meat', 'Vegetarian', 'Grill', 'Spicy'];
 
   return (

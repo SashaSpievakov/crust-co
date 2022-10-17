@@ -10,7 +10,7 @@ const Header = () => {
           <div className="header__logo">
             <img width="38" src={mainLogo} alt="Pizza logo" />
             <div>
-              <h1>Pizza</h1>
+              <h1>Pizza Place</h1>
               <p>the most delicious pizza in town</p>
             </div>
           </div>

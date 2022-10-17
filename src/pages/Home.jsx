@@ -10,6 +10,9 @@ const Home = () => {
   const [items, setItems] = useState([]);
   const [isLoading, setIsLoading] = useState(true);
 
+  const [activeIndex, setActiveIndex] = useState(0);
+  const [activeSortName, setActiveSortName] = useState(0);
+
   useEffect(() => {
     fetch("https://6344adb1dcae733e8fe3067a.mockapi.io/pizza-items")
       .then(res => res.json())
@@ -27,8 +30,8 @@ const Home = () => {
   return (
     <>
       <div className="content__top">
-        <Categories />
-        <Sort />
+        <Categories activeIndex={activeIndex} setActiveIndex={setActiveIndex} />
+        <Sort activeSortName={activeSortName} setActiveSortName={setActiveSortName} />
       </div>
       <h2 className="content__title">All Pizzas</h2>
       <div className="content__items">
