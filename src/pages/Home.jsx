@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { useSelector } from 'react-redux';
 
 import Categories from "../components/Categories";
 import Sort from "../components/Sort";
@@ -8,11 +9,12 @@ import SearchItems from "../components/SearchItems";
 // import productItems from "../assets/data/db.json";
 
 const Home = () => {
+  const activeCategory = useSelector((state) => state.activeCategory.index)
+
   const [items, setItems] = useState([]);
   const [isLoading, setIsLoading] = useState(true);
   const [searchValue, setSearchValue] = useState('');
 
-  const [activeIndex, setActiveIndex] = useState(0);
   const [activeSortName, setActiveSortName] = useState(0);
 
   const sortNamesArr = ['rating', 'price', 'A to Z'];
@@ -29,7 +31,7 @@ const Home = () => {
   useEffect(() => {
     setIsLoading(true);
     fetch(
-      `https://6344adb1dcae733e8fe3067a.mockapi.io/pizza-items?${activeIndex > 0 ? `category=${activeIndex}&` : ''}sortBy=${sortPropertyName(sortedActiveName)}&order=desc`
+      `https://6344adb1dcae733e8fe3067a.mockapi.io/pizza-items?${activeCategory > 0 ? `category=${activeCategory}&` : ''}sortBy=${sortPropertyName(sortedActiveName)}&order=desc`
       )
       .then(res => res.json())
       .then(arr => {
@@ -41,12 +43,12 @@ const Home = () => {
       });
 
       window.scrollTo(0, 0);
-  }, [activeIndex, sortedActiveName]);
+  }, [activeCategory, sortedActiveName]);
 
   return (
     <>
       <div className="content__top">
-        <Categories activeIndex={activeIndex} setActiveIndex={setActiveIndex} />
+        <Categories />
         <Sort
           activeSortName={activeSortName}
           setActiveSortName={setActiveSortName}

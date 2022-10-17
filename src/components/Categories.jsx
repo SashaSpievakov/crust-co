@@ -1,4 +1,11 @@
-const Categories = ({ activeIndex, setActiveIndex}) => {
+import { useSelector, useDispatch } from 'react-redux';
+
+import { setCategory } from '../redux/slices/categorySlice';
+
+const Categories = () => {
+  const activeCategory = useSelector((state) => state.activeCategory.index)
+  const dispatch = useDispatch()
+
   const categoriesArr = ['All', 'Meat', 'Vegetarian', 'Grill', 'Spicy'];
 
   return (
@@ -7,8 +14,8 @@ const Categories = ({ activeIndex, setActiveIndex}) => {
       {categoriesArr.map((name, i) => (
         <li
           key={name}
-          className={activeIndex === i ? "active" : ""}
-          onClick={() => setActiveIndex(i)}
+          className={activeCategory === i ? "active" : ""}
+          onClick={() => dispatch(setCategory(i))}
         >
           {name}
         </li>
