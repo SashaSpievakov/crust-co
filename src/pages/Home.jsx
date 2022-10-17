@@ -14,6 +14,7 @@ const Home = () => {
   const [activeSortName, setActiveSortName] = useState(0);
 
   useEffect(() => {
+    setIsLoading(true);
     fetch(
       `https://6344adb1dcae733e8fe3067a.mockapi.io/pizza-items${activeIndex > 0 ? `?category=${activeIndex}` : ''}`
       )
