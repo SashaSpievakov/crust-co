@@ -4,4 +4,4 @@ export const store = configureStore({
   reducer: {},
 });
 
-console.log(store);
+console.log(configureStore);
