@@ -17,7 +17,7 @@ const Sort = ({ sortNamesArr}) => {
   }
 
   return (
-    <div className="sort">
+    <div className="sort" onClick={() => setOpen(!open)}>
     <div className="sort__label">
       <svg
         width="10"
@@ -32,7 +32,7 @@ const Sort = ({ sortNamesArr}) => {
         />
       </svg>
       <b>Sort by</b>
-      <span onClick={() => setOpen(!open)}>{chosenSortName}</span>
+      <span>{chosenSortName}</span>
     </div>
     {open && (
       <div className="sort__popup">
