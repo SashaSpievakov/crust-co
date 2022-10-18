@@ -6,16 +6,17 @@ import Categories from "../components/Categories";
 import Sort from "../components/Sort";
 import ItemCard from "../components/ItemCard";
 import Skeleton from "../components/ItemCard/Skeleton";
-import SearchItems from "../components/SearchItems";
+import SearchItems from "../components/SearchItems/SearchItems";
 // import productItems from "../assets/data/db.json";
 
 const Home = () => {
-  const activeCategory = useSelector((state) => state.activeCategory.index)
-  const activeSort = useSelector((state) => state.activeSort.index)
+  const activeCategory = useSelector((state) => state.activeCategory.index);
+  const activeSort = useSelector((state) => state.activeSort.index);
+  const searchValue = useSelector((state) => state.searchValue.value);
 
   const [items, setItems] = useState([]);
   const [isLoading, setIsLoading] = useState(true);
-  const [searchValue, setSearchValue] = useState('');
+  // const [searchValue, setSearchValue] = useState('');
 
   const sortNamesArr = ['rating', 'price', 'A to Z'];
   const sortedActiveName = sortNamesArr[activeSort];
@@ -51,7 +52,7 @@ const Home = () => {
       </div>
       <div className="content__title--block">
         <h2 className="content__title">All Pizzas</h2>
-        <SearchItems searchValue={searchValue} setSearchValue={setSearchValue} />
+        <SearchItems searchValue={searchValue} />
       </div>
       <div className="content__items">
         {isLoading
