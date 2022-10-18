@@ -17,6 +17,7 @@ const Home = () => {
   const navigate = useNavigate();
   const dispatch = useDispatch();
   const requested = useRef(false);
+  const isMounted = useRef(false);
   const activeCategory = useSelector((state) => state.activeCategory.index);
   const activeSort = useSelector((state) => state.activeSort.index);
   const searchValue = useSelector((state) => state.searchValue.value);
@@ -49,6 +50,19 @@ const Home = () => {
   }
 
   useEffect(() => {
+    if (isMounted.current) {
+      const queryStr = qs.stringify({
+      category: activeCategory,
+      sort: activeSort,
+      }, {addQueryPrefix: true});
+
+      navigate(queryStr);
+    }
+
+    isMounted.current = true;
+  }, [activeCategory, activeSort, navigate])
+
+  useEffect(() => {
     if(window.location.search) {
       const params = qs.parse(window.location.search.substring(1))
 
@@ -67,15 +81,6 @@ const Home = () => {
 
     requested.current = false;
   }, [activeCategory, sortedPropertyName]);
-
-  useEffect(() => {
-    const queryStr = qs.stringify({
-      category: activeCategory,
-      sort: activeSort,
-    }, {addQueryPrefix: true});
-
-    navigate(queryStr);
-  }, [activeCategory, activeSort, navigate])
 
   return (
     <>
