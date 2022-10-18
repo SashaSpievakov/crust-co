@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { useSelector } from 'react-redux';
+import axios from 'axios';
 
 import Categories from "../components/Categories";
 import Sort from "../components/Sort";
@@ -29,17 +30,13 @@ const Home = () => {
 
   useEffect(() => {
     setIsLoading(true);
-    fetch(
+    axios.get(
       `https://6344adb1dcae733e8fe3067a.mockapi.io/pizza-items?${activeCategory > 0 ? `category=${activeCategory}&` : ''}sortBy=${sortPropertyName(sortedActiveName)}&order=desc`
       )
-      .then(res => res.json())
-      .then(arr => {
-        setItems(arr);
+      .then(res => {
+        setItems(res.data);
         setIsLoading(false);
       })
-      .catch(err => {
-        console.log(`Error: ${err.message}`);
-      });
 
       window.scrollTo(0, 0);
   }, [activeCategory, sortedActiveName]);
