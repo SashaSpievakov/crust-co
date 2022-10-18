@@ -8,10 +8,7 @@ const Categories = () => {
 
   const categoriesArr = ['All', 'Meat', 'Vegetarian', 'Grill', 'Spicy'];
 
-  const onCategoryClick = i => {
-    dispatch(setCategory(i))
-    console.log(activeCategory, i);
-  }
+  const chosenClass = categoriesArr[activeCategory];
 
   return (
     <div className="categories">
@@ -19,8 +16,8 @@ const Categories = () => {
       {categoriesArr.map((name, i) => (
         <li
           key={name}
-          className={activeCategory === i ? "active" : ""}
-          onClick={() => onCategoryClick(i)}
+          className={chosenClass === name ? "active" : ""}
+          onClick={() => dispatch(setCategory(i))}
         >
           {name}
         </li>

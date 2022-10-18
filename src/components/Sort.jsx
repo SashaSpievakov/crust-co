@@ -40,7 +40,7 @@ const Sort = ({ sortNamesArr}) => {
         {sortNamesArr.map((sortName, i) => (
           <li
             key={sortName}
-            className={activeSort === i ? "active" : ""}
+            className={chosenSortName === sortName ? "active" : ""}
             onClick={() => changeActiveSortName(i)}
           >
             {sortName}

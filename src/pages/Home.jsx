@@ -75,7 +75,6 @@ const Home = () => {
     }, {addQueryPrefix: true});
 
     navigate(queryStr);
-    console.log(queryStr);
   }, [activeCategory, activeSort, navigate])
 
   return (
