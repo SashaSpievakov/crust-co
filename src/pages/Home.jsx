@@ -16,7 +16,6 @@ const Home = () => {
 
   const [items, setItems] = useState([]);
   const [isLoading, setIsLoading] = useState(true);
-  // const [searchValue, setSearchValue] = useState('');
 
   const sortNamesArr = ['rating', 'price', 'A to Z'];
   const sortedActiveName = sortNamesArr[activeSort];
@@ -52,7 +51,7 @@ const Home = () => {
       </div>
       <div className="content__title--block">
         <h2 className="content__title">All Pizzas</h2>
-        <SearchItems searchValue={searchValue} />
+        <SearchItems />
       </div>
       <div className="content__items">
         {isLoading
