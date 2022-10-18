@@ -26,10 +26,12 @@ const SearchItems = () => {
         value={searchValue}
         onChange={(e) => dispatch(setSearchValue(e.target.value))}
       />
-    <GrClose
-      className={styles.close}
-      onClick={onClickClose}
-    />
+      {searchValue && (
+        <GrClose
+        className={styles.close}
+        onClick={onClickClose}
+      />
+      )}
     </div>
   )
 }
