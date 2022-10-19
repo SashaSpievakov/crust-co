@@ -6,7 +6,7 @@ import qs from 'qs';
 
 import { setSort } from "../redux/slices/sortSlice";
 import { setCategory } from "../redux/slices/categorySlice";
-import { setItems } from "../redux/slices/pizzasSlice";
+import { fetchItems } from "../redux/slices/pizzasSlice";
 import Categories from "../components/Categories";
 import Sort from "../components/Sort";
 import ItemCard from "../components/ItemCard";
@@ -22,10 +22,10 @@ const Home = () => {
   const activeCategory = useSelector((state) => state.activeCategory.index);
   const activeSort = useSelector((state) => state.activeSort.index);
   const searchValue = useSelector((state) => state.searchValue.value);
-  const items = useSelector((state) => state.pizzas.items);
+  const {items, status} = useSelector((state) => state.pizzas);
 
   // const [items, setItems] = useState([]);
-  const [isLoading, setIsLoading] = useState(true);
+  // const [isLoading, setIsLoading] = useState(true);
 
   const sortNamesArr = ['rating', 'price', 'A to Z'];
   const sortedActiveName = sortNamesArr[activeSort];
@@ -68,22 +68,7 @@ const Home = () => {
     window.scrollTo(0, 0);
 
     if (!requested.current) {
-      setIsLoading(true);
-
-        const requestData = async () => {
-          try {
-            const { data } = await axios.get(
-              `https://6344adb1dcae733e8fe3067a.mockapi.io/pizza-items?${activeCategory > 0 ? `category=${activeCategory}&` : ''}sortBy=${sortedPropertyName}`
-            );
-
-            dispatch(setItems(data));
-          } catch (err) {
-            console.log("Error:", err.message);
-          } finally {
-            setIsLoading(false);
-          }
-        }
-        requestData();
+      dispatch(fetchItems({activeCategory, sortedPropertyName}));
     }
 
     requested.current = false;
@@ -102,7 +87,7 @@ const Home = () => {
         <SearchItems />
       </div>
       <div className="content__items">
-        {isLoading
+        {status === 'loading'
           ? [...new Array(6)].map((_, i) => <Skeleton key={i} />)
           : items
             .filter(item => ((item.name).toLowerCase().includes(searchValue.trim().toLowerCase())))
