@@ -8,7 +8,6 @@ import CartEmpty from "../components/CartEmpty";
 const Cart = () => {
   const {itemsCount, totalPrice, items} = useSelector(state => state.cart);
   const dispatch = useDispatch();
-  console.log(items.length);
 
   return (
     <>
