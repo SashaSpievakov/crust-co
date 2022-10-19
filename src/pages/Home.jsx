@@ -75,10 +75,10 @@ const Home = () => {
             );
 
             setItems(response.data);
-            setIsLoading(false);
           } catch (err) {
-            setIsLoading(false);
             console.log("Error:", err.message);
+          } finally {
+            setIsLoading(false);
           }
         }
         requestData();
