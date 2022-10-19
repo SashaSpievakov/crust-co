@@ -68,16 +68,20 @@ const Home = () => {
     if (!requested.current) {
       setIsLoading(true);
 
-      const requestData = async () => {
-        const response = await axios.get(
-          `https://6344adb1dcae733e8fe3067a.mockapi.io/pizza-items?${activeCategory > 0 ? `category=${activeCategory}&` : ''}sortBy=${sortedPropertyName}`
-        );
+        const requestData = async () => {
+          try {
+            const response = await axios.get(
+              `https://6344adb1dcae733e8fe3067a.mockapi.io/pizza-items?${activeCategory > 0 ? `category=${activeCategory}&` : ''}sortBy=${sortedPropertyName}`
+            );
 
-        setItems(response.data);
-        setIsLoading(false);
-      }
-
-      requestData();
+            setItems(response.data);
+            setIsLoading(false);
+          } catch (err) {
+            setIsLoading(false);
+            console.log("Error:", err.message);
+          }
+        }
+        requestData();
     }
 
     requested.current = false;
