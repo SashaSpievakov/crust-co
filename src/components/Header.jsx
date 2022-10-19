@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import { BsCart3 } from "react-icons/bs";
 import { useSelector } from "react-redux";
 
@@ -7,6 +7,7 @@ import { selectCart } from "../redux/slices/cartSlice";
 
 const Header = () => {
   const {itemsCount, totalPrice} = useSelector(selectCart);
+  const location = useLocation();
 
   return (
     <header className="header">
@@ -20,7 +21,8 @@ const Header = () => {
             </div>
           </div>
         </Link>
-        <div className="header__cart">
+        {location.pathname !== "/cart" && (
+          <div className="header__cart">
           <Link to="/cart" className="button button--cart">
             <span>{totalPrice} $</span>
             <div className="button__delimiter"></div>
@@ -28,6 +30,7 @@ const Header = () => {
             <span>{itemsCount}</span>
           </Link>
         </div>
+        )}
       </div>
     </header>
   )
