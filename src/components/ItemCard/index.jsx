@@ -4,7 +4,7 @@ import { BsPlusLg } from "react-icons/bs";
 import { HiMinus } from "react-icons/hi";
 import { HiPlus } from "react-icons/hi";
 
-import { addItem, removeItem } from "../../redux/slices/cartSlice";
+import { addItem, removeItem, selectCartItemById } from "../../redux/slices/cartSlice";
 import styles from "./styles.module.scss";
 
 const typeNames = ['traditional', 'thin'];
@@ -12,7 +12,7 @@ const sizeNames = [12, 14, 16];
 
 const ItemCard = ({ id, name, imageUrl, price, sizes, types, count }) => {
   const dispatch = useDispatch();
-  const cartItem = useSelector(state => state.cart.items.find(obj => obj.id === id));
+  const cartItem = useSelector(selectCartItemById(id));
   const [activeSize, setActiveSize] = useState(0);
   const [activeType, setActiveType] = useState(0);
   const refType = useRef();
