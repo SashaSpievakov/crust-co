@@ -1,5 +1,7 @@
 import { Link } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
+
+import { clearItems } from "../redux/slices/cartSlice";
 import CartItem from "../components/CartItem";
 
 const Cart = () => {
@@ -24,7 +26,7 @@ const Cart = () => {
           <path d="M8.33337 9.16667V14.1667" stroke="#B6B6B6" strokeWidth="1.2" strokeLinecap="round" strokeLinejoin="round"></path>
           <path d="M11.6666 9.16667V14.1667" stroke="#B6B6B6" strokeWidth="1.2" strokeLinecap="round" strokeLinejoin="round"></path>
           </svg>
-          <span>Delete all items</span>
+          <span onClick={() => dispatch(clearItems())}>Delete all items</span>
         </div>
       </div>
       <div className="content__items--cart">
