@@ -38,19 +38,8 @@ const Home = () => {
 
   const sortedPropertyName = sortPropertyName(sortedActiveName);
 
-  const fetchProducts = () => {
-    setIsLoading(true);
-    axios.get(
-      `https://6344adb1dcae733e8fe3067a.mockapi.io/pizza-items?${activeCategory > 0 ? `category=${activeCategory}&` : ''}sortBy=${sortedPropertyName}`
-      )
-      .then(res => {
-        setItems(res.data);
-        setIsLoading(false);
-      })
-  }
-
   useEffect(() => {
-    if (isMounted.current) {
+    if (isMounted.current || (activeCategory > 0 || activeSort > 0)) {
       const queryStr = qs.stringify({
       category: activeCategory,
       sort: activeSort,
@@ -60,6 +49,7 @@ const Home = () => {
     }
 
     isMounted.current = true;
+
   }, [activeCategory, activeSort, navigate])
 
   useEffect(() => {
@@ -76,7 +66,14 @@ const Home = () => {
     window.scrollTo(0, 0);
 
     if (!requested.current) {
-      fetchProducts();
+      setIsLoading(true);
+      axios.get(
+        `https://6344adb1dcae733e8fe3067a.mockapi.io/pizza-items?${activeCategory > 0 ? `category=${activeCategory}&` : ''}sortBy=${sortedPropertyName}`
+        )
+        .then(res => {
+          setItems(res.data);
+          setIsLoading(false);
+        })
     }
 
     requested.current = false;
