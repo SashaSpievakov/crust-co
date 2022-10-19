@@ -2,10 +2,10 @@ import { useEffect, useState, useRef } from "react"
 import { useSelector, useDispatch } from 'react-redux';
 import { MdArrowDropDown, MdArrowDropUp} from 'react-icons/md';
 
-import { setSort } from '../redux/slices/sortSlice';
+import { selectSort, setSort } from '../redux/slices/sortSlice';
 
 const Sort = ({ sortNamesArr}) => {
-  const activeSort = useSelector((state) => state.activeSort.index);
+  const activeSort = useSelector(selectSort);
   const dispatch = useDispatch();
   const sortRef = useRef();
 

@@ -14,6 +14,8 @@ export const sortSlice = createSlice({
   },
 });
 
+export const selectSort = state => state.activeSort.index;
+
 export const { setSort } = sortSlice.actions;
 
 export default sortSlice.reducer;

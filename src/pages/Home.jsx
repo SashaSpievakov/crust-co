@@ -3,7 +3,7 @@ import { useNavigate } from "react-router-dom";
 import { useSelector, useDispatch } from 'react-redux';
 import qs from 'qs';
 
-import { setSort } from "../redux/slices/sortSlice";
+import { selectSort, setSort } from "../redux/slices/sortSlice";
 import { selectCategory, setCategory } from "../redux/slices/categorySlice";
 import { fetchItems } from "../redux/slices/pizzasSlice";
 import Categories from "../components/Categories";
@@ -19,7 +19,7 @@ const Home = () => {
   const requested = useRef(false);
   const isMounted = useRef(false);
   const activeCategory = useSelector(selectCategory);
-  const activeSort = useSelector((state) => state.activeSort.index);
+  const activeSort = useSelector(selectSort);
   const searchValue = useSelector((state) => state.searchValue.value);
   const {items, status} = useSelector((state) => state.pizzas);
 
