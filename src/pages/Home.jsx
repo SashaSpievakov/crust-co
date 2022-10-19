@@ -1,7 +1,6 @@
 import { useEffect, useRef, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { useSelector, useDispatch } from 'react-redux';
-import axios from 'axios';
 import qs from 'qs';
 
 import { setSort } from "../redux/slices/sortSlice";
@@ -23,9 +22,6 @@ const Home = () => {
   const activeSort = useSelector((state) => state.activeSort.index);
   const searchValue = useSelector((state) => state.searchValue.value);
   const {items, status} = useSelector((state) => state.pizzas);
-
-  // const [items, setItems] = useState([]);
-  // const [isLoading, setIsLoading] = useState(true);
 
   const sortNamesArr = ['rating', 'price', 'A to Z'];
   const sortedActiveName = sortNamesArr[activeSort];
