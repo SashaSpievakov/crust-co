@@ -3,9 +3,10 @@ import { BsCart3 } from "react-icons/bs";
 import { useSelector } from "react-redux";
 
 import mainLogo from "../assets/img/main-logo.svg";
+import { selectCart } from "../redux/slices/cartSlice";
 
 const Header = () => {
-  const {itemsCount, totalPrice} = useSelector(state => state.cart);
+  const {itemsCount, totalPrice} = useSelector(selectCart);
 
   return (
     <header className="header">
