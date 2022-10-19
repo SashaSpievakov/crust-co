@@ -5,7 +5,7 @@ import { useSelector } from "react-redux";
 import mainLogo from "../assets/img/main-logo.svg";
 
 const Header = () => {
-  const {items, totalPrice} = useSelector(state => state.cart);
+  const {itemsCount, totalPrice} = useSelector(state => state.cart);
 
   return (
     <header className="header">
@@ -24,7 +24,7 @@ const Header = () => {
             <span>{totalPrice} $</span>
             <div className="button__delimiter"></div>
             <BsCart3 />
-            <span>{items.length}</span>
+            <span>{itemsCount}</span>
           </Link>
         </div>
       </div>

@@ -70,7 +70,7 @@ const ItemCard = ({ id, name, imageUrl, price, sizes, types }) => {
           <div className={styles.button__wrap}>
             <HiMinus className={styles.minus} />
             <span className={styles.count}>{addedCount}</span>
-            <HiPlus className={styles.plus} />
+            <HiPlus className={styles.plus} onClick={onClickAdd} />
           </div>
         ) : (
           <button
