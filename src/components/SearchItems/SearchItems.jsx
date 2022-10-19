@@ -2,11 +2,11 @@ import { useRef } from 'react';
 import { GrClose } from 'react-icons/gr';
 import { useSelector, useDispatch } from 'react-redux';
 
-import { setSearchValue } from '../../redux/slices/searchSlice';
+import { selectSearchValue, setSearchValue } from '../../redux/slices/searchSlice';
 import styles from "./styles.module.scss";
 
 const SearchItems = () => {
-  const searchValue = useSelector((state) => state.searchValue.value);
+  const searchValue = useSelector(selectSearchValue);
   const dispatch = useDispatch();
 
   const inputRef = useRef();

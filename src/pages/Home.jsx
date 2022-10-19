@@ -11,6 +11,7 @@ import Sort from "../components/Sort";
 import ItemCard from "../components/ItemCard";
 import Skeleton from "../components/ItemCard/Skeleton";
 import SearchItems from "../components/SearchItems/SearchItems";
+import { selectSearchValue } from "../redux/slices/searchSlice";
 // import productItems from "../assets/data/db.json";
 
 const Home = () => {
@@ -20,7 +21,7 @@ const Home = () => {
   const isMounted = useRef(false);
   const activeCategory = useSelector(selectCategory);
   const activeSort = useSelector(selectSort);
-  const searchValue = useSelector((state) => state.searchValue.value);
+  const searchValue = useSelector(selectSearchValue);
   const {items, status} = useSelector((state) => state.pizzas);
 
   const sortNamesArr = ['rating', 'price', 'A to Z'];
