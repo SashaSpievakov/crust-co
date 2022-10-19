@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useRef } from "react";
 import { useNavigate } from "react-router-dom";
 import { useSelector, useDispatch } from 'react-redux';
 import qs from 'qs';
@@ -68,7 +68,7 @@ const Home = () => {
     }
 
     requested.current = false;
-  }, [activeCategory, sortedPropertyName]);
+  }, [activeCategory, sortedPropertyName, dispatch]);
 
   return (
     <>
