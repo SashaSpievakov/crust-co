@@ -6,6 +6,7 @@ import qs from 'qs';
 
 import { setSort } from "../redux/slices/sortSlice";
 import { setCategory } from "../redux/slices/categorySlice";
+import { setItems } from "../redux/slices/pizzasSlice";
 import Categories from "../components/Categories";
 import Sort from "../components/Sort";
 import ItemCard from "../components/ItemCard";
@@ -21,8 +22,9 @@ const Home = () => {
   const activeCategory = useSelector((state) => state.activeCategory.index);
   const activeSort = useSelector((state) => state.activeSort.index);
   const searchValue = useSelector((state) => state.searchValue.value);
+  const items = useSelector((state) => state.pizzas.items);
 
-  const [items, setItems] = useState([]);
+  // const [items, setItems] = useState([]);
   const [isLoading, setIsLoading] = useState(true);
 
   const sortNamesArr = ['rating', 'price', 'A to Z'];
@@ -70,11 +72,11 @@ const Home = () => {
 
         const requestData = async () => {
           try {
-            const response = await axios.get(
+            const { data } = await axios.get(
               `https://6344adb1dcae733e8fe3067a.mockapi.io/pizza-items?${activeCategory > 0 ? `category=${activeCategory}&` : ''}sortBy=${sortedPropertyName}`
             );
 
-            setItems(response.data);
+            dispatch(setItems(data));
           } catch (err) {
             console.log("Error:", err.message);
           } finally {
