@@ -4,13 +4,13 @@ import { BsPlusLg } from "react-icons/bs";
 import { HiMinus } from "react-icons/hi";
 import { HiPlus } from "react-icons/hi";
 
-import { addItem } from "../../redux/slices/cartSlice";
+import { addItem, removeItem } from "../../redux/slices/cartSlice";
 import styles from "./styles.module.scss";
 
 const typeNames = ['traditional', 'thin'];
 const sizeNames = [12, 14, 16];
 
-const ItemCard = ({ id, name, imageUrl, price, sizes, types }) => {
+const ItemCard = ({ id, name, imageUrl, price, sizes, types, count }) => {
   const dispatch = useDispatch();
   const cartItem = useSelector(state => state.cart.items.find(obj => obj.id === id));
   const [activeSize, setActiveSize] = useState(0);
@@ -29,6 +29,13 @@ const ItemCard = ({ id, name, imageUrl, price, sizes, types }) => {
       type: typeNames[activeType]
     };
     dispatch(addItem(item));
+  }
+
+  const onClickRemove = () => {
+    const item = {
+      id, price, count
+    };
+    dispatch(removeItem(item));
   }
 
   return (
@@ -68,7 +75,7 @@ const ItemCard = ({ id, name, imageUrl, price, sizes, types }) => {
         <div className="pizza-block__price">{price}$</div>
         {addedCount ? (
           <div className={styles.button__wrap}>
-            <HiMinus className={styles.minus} />
+            <HiMinus className={styles.minus} onClick={onClickRemove} />
             <span className={styles.count}>{addedCount}</span>
             <HiPlus className={styles.plus} onClick={onClickAdd} />
           </div>
