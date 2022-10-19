@@ -1,14 +1,27 @@
-import { useState } from "react";
+import { useRef, useState } from "react";
 import { useDispatch } from "react-redux";
 
 import { addItem } from "../../redux/slices/cartSlice";
+
+const typeNames = ['traditional', 'thin'];
+const sizeNames = [12, 14, 16];
 
 const ItemCard = ({ id, name, imageUrl, price, sizes, types }) => {
   const dispatch = useDispatch();
   const [activeSize, setActiveSize] = useState(0);
   const [activeType, setActiveType] = useState(0);
+  const refType = useRef();
 
-  const typeNames = ['thin', 'traditional'];
+  // const onTypeClick = type => {
+  //   setActiveType(type);
+  //   if (types.length > 1) {
+  //     if (type !== 0 && refType.current.className !== 'active') {
+  //       setActivePrice(state => state + 1);
+  //     } else if (type === 0 && refType.current.className === 'active') {
+  //       setActivePrice(state => state - 1);
+  //     }
+  //   }
+  // }
 
   const onClickAdd = () => {
     const item = {
@@ -16,8 +29,8 @@ const ItemCard = ({ id, name, imageUrl, price, sizes, types }) => {
       name,
       price,
       imageUrl,
-      sizes: activeSize,
-      types: activeType
+      size: sizeNames[activeSize],
+      type: typeNames[activeType]
     };
     dispatch(addItem(item));
   }
@@ -34,6 +47,7 @@ const ItemCard = ({ id, name, imageUrl, price, sizes, types }) => {
         <ul>
           {types.map(type => (
             <li
+              ref={refType}
               key={type}
               className={activeType === types.indexOf(type) ? "active" : ""}
               onClick={() => setActiveType(type)}
@@ -45,10 +59,10 @@ const ItemCard = ({ id, name, imageUrl, price, sizes, types }) => {
         <ul>
           {sizes.map((size, i) => (
             <li
-            key={size}
-            className={activeSize === i ? "active" : ""}
-            onClick={() => setActiveSize(i)}
-          >
+              key={size}
+              className={activeSize === i ? "active" : ""}
+              onClick={() => setActiveSize(i)}
+            >
             {size} inch
           </li>
           ))}
@@ -73,7 +87,6 @@ const ItemCard = ({ id, name, imageUrl, price, sizes, types }) => {
             />
           </svg>
           <span>Add</span>
-          <i>1</i>
         </button>
       </div>
     </div>
