@@ -3,13 +3,17 @@ import { useDispatch, useSelector } from "react-redux";
 
 import { clearItems } from "../redux/slices/cartSlice";
 import CartItem from "../components/CartItem";
+import CartEmpty from "../components/CartEmpty";
 
 const Cart = () => {
   const {itemsCount, totalPrice, items} = useSelector(state => state.cart);
   const dispatch = useDispatch();
+  console.log(items.length);
 
   return (
-    <div className="cart">
+    <>
+      {items.length ? (
+        <div className="cart">
       <div className="cart__top">
         <h2 className="content__title">
           <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -52,7 +56,11 @@ const Cart = () => {
           </div>
         </div>
       </div>
-    </div>
+        </div>
+    ) : (
+      <CartEmpty />
+    )}
+    </>
   )
 }
 export default Cart
