@@ -4,7 +4,7 @@ import { useSelector, useDispatch } from 'react-redux';
 import qs from 'qs';
 
 import { setSort } from "../redux/slices/sortSlice";
-import { setCategory } from "../redux/slices/categorySlice";
+import { selectCategory, setCategory } from "../redux/slices/categorySlice";
 import { fetchItems } from "../redux/slices/pizzasSlice";
 import Categories from "../components/Categories";
 import Sort from "../components/Sort";
@@ -18,7 +18,7 @@ const Home = () => {
   const dispatch = useDispatch();
   const requested = useRef(false);
   const isMounted = useRef(false);
-  const activeCategory = useSelector((state) => state.activeCategory.index);
+  const activeCategory = useSelector(selectCategory);
   const activeSort = useSelector((state) => state.activeSort.index);
   const searchValue = useSelector((state) => state.searchValue.value);
   const {items, status} = useSelector((state) => state.pizzas);
