@@ -86,13 +86,21 @@ const Home = () => {
         <h2 className="content__title">All Pizzas</h2>
         <SearchItems />
       </div>
-      <div className="content__items">
+      {status === 'rejected'
+      ? (
+        <div className="content__error">
+          <h2>Request Error</h2>
+          <p>Coudn't get store items. Try you request again later.</p>
+        </div>
+      ) : (
+        <div className="content__items">
         {status === 'loading'
           ? [...new Array(6)].map((_, i) => <Skeleton key={i} />)
           : items
             .filter(item => ((item.name).toLowerCase().includes(searchValue.trim().toLowerCase())))
             .map(item => <ItemCard key={item.id} {...item} />)}
-      </div>
+        </div>
+      )}
     </>
   )
 }
