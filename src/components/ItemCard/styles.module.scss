@@ -1,0 +1,22 @@
+.button__wrap {
+  display: flex;
+  align-items: center;
+  min-width: 100px;
+  padding: 8.25px 0;
+}
+
+.minus,
+.plus {
+  font-size: 27px;
+  color: #ff6427;
+  cursor: pointer;
+}
+
+.minus {
+  margin-right: 15px;
+}
+
+.count {
+  font-size: 22px;
+  margin-right: 15px;
+}

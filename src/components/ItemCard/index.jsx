@@ -1,27 +1,23 @@
 import { useRef, useState } from "react";
-import { useDispatch } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
+import { BsPlusLg } from "react-icons/bs";
+import { HiMinus } from "react-icons/hi";
+import { HiPlus } from "react-icons/hi";
 
 import { addItem } from "../../redux/slices/cartSlice";
+import styles from "./styles.module.scss";
 
 const typeNames = ['traditional', 'thin'];
 const sizeNames = [12, 14, 16];
 
 const ItemCard = ({ id, name, imageUrl, price, sizes, types }) => {
   const dispatch = useDispatch();
+  const cartItem = useSelector(state => state.cart.items.find(obj => obj.id === id));
   const [activeSize, setActiveSize] = useState(0);
   const [activeType, setActiveType] = useState(0);
   const refType = useRef();
 
-  // const onTypeClick = type => {
-  //   setActiveType(type);
-  //   if (types.length > 1) {
-  //     if (type !== 0 && refType.current.className !== 'active') {
-  //       setActivePrice(state => state + 1);
-  //     } else if (type === 0 && refType.current.className === 'active') {
-  //       setActivePrice(state => state - 1);
-  //     }
-  //   }
-  // }
+  const addedCount = cartItem ? cartItem.count : 0;
 
   const onClickAdd = () => {
     const item = {
@@ -70,24 +66,21 @@ const ItemCard = ({ id, name, imageUrl, price, sizes, types }) => {
       </div>
       <div className="pizza-block__bottom">
         <div className="pizza-block__price">{price}$</div>
-        <button
-          className="button button--outline button--add"
-          onClick={onClickAdd}
+        {addedCount ? (
+          <div className={styles.button__wrap}>
+            <HiMinus className={styles.minus} />
+            <span className={styles.count}>{addedCount}</span>
+            <HiPlus className={styles.plus} />
+          </div>
+        ) : (
+          <button
+            className="button button--outline button--add"
+            onClick={onClickAdd}
           >
-          <svg
-            width="12"
-            height="12"
-            viewBox="0 0 12 12"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M10.8 4.8H7.2V1.2C7.2 0.5373 6.6627 0 6 0C5.3373 0 4.8 0.5373 4.8 1.2V4.8H1.2C0.5373 4.8 0 5.3373 0 6C0 6.6627 0.5373 7.2 1.2 7.2H4.8V10.8C4.8 11.4627 5.3373 12 6 12C6.6627 12 7.2 11.4627 7.2 10.8V7.2H10.8C11.4627 7.2 12 6.6627 12 6C12 5.3373 11.4627 4.8 10.8 4.8Z"
-              fill="white"
-            />
-          </svg>
+          <BsPlusLg className="button--plus" />
           <span>Add</span>
         </button>
+        )}
       </div>
     </div>
   )
