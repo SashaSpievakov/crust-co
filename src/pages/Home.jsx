@@ -67,13 +67,17 @@ const Home = () => {
 
     if (!requested.current) {
       setIsLoading(true);
-      axios.get(
-        `https://6344adb1dcae733e8fe3067a.mockapi.io/pizza-items?${activeCategory > 0 ? `category=${activeCategory}&` : ''}sortBy=${sortedPropertyName}`
-        )
-        .then(res => {
-          setItems(res.data);
-          setIsLoading(false);
-        })
+
+      const requestData = async () => {
+        const response = await axios.get(
+          `https://6344adb1dcae733e8fe3067a.mockapi.io/pizza-items?${activeCategory > 0 ? `category=${activeCategory}&` : ''}sortBy=${sortedPropertyName}`
+        );
+
+        setItems(response.data);
+        setIsLoading(false);
+      }
+
+      requestData();
     }
 
     requested.current = false;
