@@ -5,7 +5,7 @@ import qs from 'qs';
 
 import { selectSort, setSort } from "../redux/slices/sortSlice";
 import { selectCategory, setCategory } from "../redux/slices/categorySlice";
-import { fetchItems } from "../redux/slices/pizzasSlice";
+import { fetchItems, selectPizzasData } from "../redux/slices/pizzasSlice";
 import Categories from "../components/Categories";
 import Sort from "../components/Sort";
 import ItemCard from "../components/ItemCard";
@@ -22,7 +22,7 @@ const Home = () => {
   const activeCategory = useSelector(selectCategory);
   const activeSort = useSelector(selectSort);
   const searchValue = useSelector(selectSearchValue);
-  const {items, status} = useSelector((state) => state.pizzas);
+  const {items, status} = useSelector(selectPizzasData);
 
   const sortNamesArr = ['rating', 'price', 'A to Z'];
   const sortedActiveName = sortNamesArr[activeSort];
