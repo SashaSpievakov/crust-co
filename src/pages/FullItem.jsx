@@ -1,16 +1,26 @@
-import { useParams } from "react-router-dom"
+import { useParams } from "react-router-dom";
+import { useSelector, useDispatch } from "react-redux";
+import { fetchItem, selectItem } from "../redux/slices/itemSlice";
+import { useEffect } from "react";
+import FullItemCard from "../components/FullItemCard";
 
 const FullItem = () => {
+  const { status } = useSelector(selectItem);
   const {id } = useParams();
-  console.log(id);
+  const dispatch = useDispatch();
+
+  useEffect(() => {
+    dispatch(fetchItem(id))
+  }, [dispatch, id])
 
   return (
-    <div className="container">
-      <img src="" alt="" />
-      <h2>Pizza</h2>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam odit voluptates aliquid cupiditate reiciendis et mollitia minima aliquam a beatae, neque tempore necessitatibus commodi sunt minus. Expedita, voluptatum, dignissimos fugiat, neque maxime eaque modi eum officiis illo molestiae fugit? Inventore quod cumque laboriosam reprehenderit, odit quis error eius consequatur itaque totam nobis corporis incidunt amet placeat consectetur magnam aspernatur modi?</p>
-      <h4>Price</h4>
-    </div>
+    <>
+      {status === "loading" ? (
+        <div className="container">Loading...</div>
+      ) : (
+        <FullItemCard />
+      )}
+    </>
   )
 }
 export default FullItem

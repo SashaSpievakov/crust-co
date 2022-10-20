@@ -5,6 +5,7 @@ import sortSlice from "./slices/sortSlice";
 import searchSlice from "./slices/searchSlice";
 import cart from "./slices/cartSlice";
 import pizzas from "./slices/pizzasSlice";
+import item from "./slices/itemSlice";
 
 export const store = configureStore({
   reducer: {
@@ -13,5 +14,6 @@ export const store = configureStore({
     searchValue: searchSlice,
     cart,
     pizzas,
+    item,
   },
 });

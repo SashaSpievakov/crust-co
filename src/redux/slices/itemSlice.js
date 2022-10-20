@@ -1,18 +1,15 @@
 import axios from "axios";
 import { createSlice, createAsyncThunk } from "@reduxjs/toolkit";
 
-export const fetchItem = createAsyncThunk(
-  "item/fetchItemStatus",
-  async ({ id }) => {
-    const { data } = await axios.get(
-      `https://6344adb1dcae733e8fe3067a.mockapi.io/pizza-items/${id}`
-    );
-    return data;
-  }
-);
+export const fetchItem = createAsyncThunk("item/fetchItemStatus", async id => {
+  const { data } = await axios.get(
+    `https://6344adb1dcae733e8fe3067a.mockapi.io/pizza-items/1`
+  );
+  return data;
+});
 
 const initialState = {
-  data,
+  data: {},
   status: "loading",
 };
 
@@ -25,16 +22,16 @@ export const itemSlice = createSlice({
     },
   },
   extraReducers: {
-    [fetchItem.pending]: state => {
-      state.data = null;
+    [fetchItem.pending]: (state, action) => {
+      state.data = {};
       state.status = "loading";
     },
     [fetchItem.fulfilled]: (state, action) => {
-      state.data = action.payload;
+      state.data = { ...action.payload };
       state.status = "success";
     },
     [fetchItem.rejected]: state => {
-      state.data = null;
+      state.data = {};
       state.status = "rejected";
     },
   },
@@ -42,6 +39,6 @@ export const itemSlice = createSlice({
 
 export const selectItem = state => state.item;
 
-export const { setItem } = itemSlice.actions;
+export const { setData } = itemSlice.actions;
 
 export default itemSlice.reducer;

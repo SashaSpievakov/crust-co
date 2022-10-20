@@ -9,6 +9,7 @@ export const fetchItems = createAsyncThunk(
         activeCategory > 0 ? `category=${activeCategory}&` : ""
       }sortBy=${sortedPropertyName}`
     );
+    console.log(data);
     return data;
   }
 );
