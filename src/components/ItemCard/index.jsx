@@ -6,6 +6,7 @@ import { HiPlus } from "react-icons/hi";
 
 import { addItem, removeItem, selectCartItemById } from "../../redux/slices/cartSlice";
 import styles from "./styles.module.scss";
+import { Link } from "react-router-dom";
 
 const typeNames = ['traditional', 'thin'];
 const sizeNames = [12, 14, 16];
@@ -40,11 +41,13 @@ const ItemCard = ({ id, name, imageUrl, price, sizes, types, count }) => {
 
   return (
     <div className="pizza-block">
-      <img
-        className="pizza-block__image"
-        src={imageUrl}
-        alt="Pizza"
-      />
+      <Link to={`/pizza/item/${id}`}>
+        <img
+          className="pizza-block__image"
+          src={imageUrl}
+          alt="Pizza"
+        />
+      </Link>
       <h4 className="pizza-block__title">{name}</h4>
       <div className="pizza-block__selector">
         <ul>
