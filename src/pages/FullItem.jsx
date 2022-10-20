@@ -6,7 +6,7 @@ import FullItemCard from "../components/FullItemCard";
 
 const FullItem = () => {
   const { status } = useSelector(selectItem);
-  const {id } = useParams();
+  const { id } = useParams();
   const dispatch = useDispatch();
 
   useEffect(() => {
@@ -23,4 +23,4 @@ const FullItem = () => {
     </>
   )
 }
-export default FullItem
+export default FullItem;

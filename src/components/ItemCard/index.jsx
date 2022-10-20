@@ -41,7 +41,7 @@ const ItemCard = ({ id, name, imageUrl, price, sizes, types, count }) => {
 
   return (
     <div className="pizza-block">
-      <Link to={`/pizza/item/${id}`}>
+      <Link to={`/item/${id}`}>
         <img
           className="pizza-block__image"
           src={imageUrl}
