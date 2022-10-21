@@ -1,20 +1,24 @@
-import { useEffect, useState, useRef } from "react"
+import React, { useEffect, useState, useRef } from "react"
 import { useSelector, useDispatch } from 'react-redux';
 import { MdArrowDropDown, MdArrowDropUp} from 'react-icons/md';
 
 import { selectSort, setSort } from '../redux/slices/sortSlice';
 
-const Sort = ({ sortNamesArr}) => {
+interface CategoriesProps {
+  sortNamesArr: string[]
+}
+
+const Sort: React.FC<CategoriesProps> = ({ sortNamesArr }) => {
   const activeSort = useSelector(selectSort);
   const dispatch = useDispatch();
-  const sortRef = useRef();
+  const sortRef = useRef<HTMLDivElement>(null);
 
   const [open, setOpen] = useState(false);
 
   const chosenSortName = sortNamesArr[activeSort];
 
-  const changeActiveSortName = i => {
-    dispatch(setSort(i));
+  const changeActiveSortName = (index: number) => {
+    dispatch(setSort(index));
     setOpen(false);
   }
 
@@ -45,7 +49,7 @@ const Sort = ({ sortNamesArr}) => {
     {open && (
       <div className="sort__popup">
       <ul>
-        {sortNamesArr.map((sortName, i) => (
+        {sortNamesArr.map((sortName, i: number) => (
           <li
             key={sortName}
             className={chosenSortName === sortName ? "active" : ""}

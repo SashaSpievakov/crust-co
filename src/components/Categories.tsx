@@ -1,12 +1,13 @@
+import React from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 
 import { selectCategory, setCategory } from '../redux/slices/categorySlice';
 
-const Categories = () => {
+const Categories: React.FC = () => {
   const activeCategory = useSelector(selectCategory);
   const dispatch = useDispatch();
 
-  const categoriesArr = ['All', 'Meat', 'Vegetarian', 'Grill', 'Spicy'];
+  const categoriesArr: string[] = ['All', 'Meat', 'Vegetarian', 'Grill', 'Spicy'];
 
   const chosenClass = categoriesArr[activeCategory];
 
