@@ -1,4 +1,4 @@
-import { useRef, useState } from "react";
+import React, { useRef, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { BsPlusLg } from "react-icons/bs";
 import { HiMinus } from "react-icons/hi";
@@ -8,15 +8,25 @@ import { addItem, removeItem, selectCartItemById } from "../../redux/slices/cart
 import styles from "./styles.module.scss";
 import { Link } from "react-router-dom";
 
-const typeNames = ['traditional', 'thin'];
-const sizeNames = [12, 14, 16];
+interface ItemCardProps {
+  id: number,
+  name: string,
+  price: number,
+  sizes: number[],
+  types: number[],
+  count: number,
+  imageUrl: string
+}
 
-const ItemCard = ({ id, name, imageUrl, price, sizes, types, count }) => {
+const typeNames: string[] = ['traditional', 'thin'];
+const sizeNames: number[] = [12, 14, 16];
+
+const ItemCard: React.FC<ItemCardProps> = ({ id, name, imageUrl, price, sizes, types, count }) => {
   const dispatch = useDispatch();
   const cartItem = useSelector(selectCartItemById(id));
   const [activeSize, setActiveSize] = useState(0);
   const [activeType, setActiveType] = useState(0);
-  const refType = useRef();
+  const refType = useRef<HTMLLIElement>(null);
 
   const addedCount = cartItem ? cartItem.count : 0;
 
