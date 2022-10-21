@@ -1,3 +1,4 @@
+import React from "react";
 import { Link, useLocation } from "react-router-dom";
 import { BsCart3 } from "react-icons/bs";
 import { useSelector } from "react-redux";
@@ -5,7 +6,7 @@ import { useSelector } from "react-redux";
 import mainLogo from "../assets/img/main-logo.svg";
 import { selectCart } from "../redux/slices/cartSlice";
 
-const Header = () => {
+const Header: React.FC = () => {
   const {itemsCount, totalPrice} = useSelector(selectCart);
   const location = useLocation();
 
