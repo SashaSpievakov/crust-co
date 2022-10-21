@@ -3,7 +3,7 @@ import { selectItem } from "../../redux/slices/itemSlice";
 
 import styles from "./styles.module.scss";
 
-const FullItemCard = () => {
+const FullItemCard: React.FC = () => {
   const { data } = useSelector(selectItem);
 
   return (
