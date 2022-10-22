@@ -1,4 +1,4 @@
-import { useEffect, useRef } from "react";
+import React, { useEffect, useRef } from "react";
 import { useNavigate } from "react-router-dom";
 import { useSelector, useDispatch } from 'react-redux';
 import qs from 'qs';
@@ -14,7 +14,17 @@ import SearchItems from "../components/SearchItems/SearchItems";
 import { selectSearchValue } from "../redux/slices/searchSlice";
 // import productItems from "../assets/data/db.json";
 
-const Home = () => {
+interface Item {
+  id: number,
+  name: string,
+  price: number,
+  sizes: number[],
+  types: number[],
+  count: number,
+  imageUrl: string
+}
+
+const Home: React.FC = () => {
   const navigate = useNavigate();
   const dispatch = useDispatch();
   const requested = useRef(false);
@@ -27,7 +37,7 @@ const Home = () => {
   const sortNamesArr = ['rating', 'price', 'A to Z'];
   const sortedActiveName = sortNamesArr[activeSort];
 
-  const sortPropertyName = (property) => {
+  const sortPropertyName = (property: string) => {
     if (property === 'A to Z') {
       return 'name&order=asc';
     } else {
@@ -65,7 +75,10 @@ const Home = () => {
     window.scrollTo(0, 0);
 
     if (!requested.current) {
-      dispatch(fetchItems({activeCategory, sortedPropertyName}));
+      dispatch(
+        // @ts-ignore
+        fetchItems({activeCategory, sortedPropertyName})
+      );
     }
 
     requested.current = false;
@@ -94,8 +107,8 @@ const Home = () => {
         {status === 'loading'
           ? [...new Array(6)].map((_, i) => <Skeleton key={i} />)
           : items
-            .filter(item => ((item.name).toLowerCase().includes(searchValue.trim().toLowerCase())))
-            .map(item => <ItemCard key={item.id} {...item} />)}
+            .filter((item: Item) => ((item.name).toLowerCase().includes(searchValue.trim().toLowerCase())))
+            .map((item: Item) => <ItemCard key={item.id} {...item} />)}
         </div>
       )}
     </>
