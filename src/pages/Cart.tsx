@@ -5,6 +5,16 @@ import { clearItems, selectCart } from "../redux/slices/cartSlice";
 import CartItem from "../components/CartItem";
 import CartEmpty from "../components/CartEmpty";
 
+interface CartItem {
+  id: number,
+  name: string,
+  price: number,
+  size: number,
+  type: number,
+  count: number,
+  imageUrl: string
+}
+
 const Cart = () => {
   const {itemsCount, totalPrice, items} = useSelector(selectCart);
   const dispatch = useDispatch();
@@ -33,7 +43,7 @@ const Cart = () => {
         </div>
       </div>
       <div className="content__items--cart">
-        {items.map(item => (
+        {items.map((item: CartItem) => (
           <CartItem key={item.id} {...item} />
         ))}
       </div>
