@@ -18,6 +18,17 @@ interface FetchItems {
   sortedPropertyName: string,
 }
 
+enum Status {
+  LOADING = "loading",
+  SUCCESS = "success",
+  REJECTED = "rejected",
+}
+
+interface PizzasSliceState {
+  status: Status,
+  items: PizzaItem[],
+}
+
 export const fetchItems = createAsyncThunk<PizzaItem[], FetchItems>(
   "pizzas/fetchItemsStatus",
   async ({ activeCategory, sortedPropertyName }) => {
@@ -30,14 +41,9 @@ export const fetchItems = createAsyncThunk<PizzaItem[], FetchItems>(
   }
 );
 
-interface PizzasSliceState {
-  status: "loading" | "success" | "rejected",
-  items: PizzaItem[],
-}
-
 const initialState: PizzasSliceState = {
   items: [],
-  status: "loading",
+  status: Status.LOADING,
 };
 
 export const pizzasSlice = createSlice({
@@ -51,17 +57,17 @@ export const pizzasSlice = createSlice({
   extraReducers: (builder) => {
     builder.addCase(fetchItems.pending, (state) => {
       state.items = [];
-      state.status = "loading";
+      state.status = Status.LOADING;
     });
 
     builder.addCase(fetchItems.fulfilled, (state, action) => {
       state.items = action.payload;
-      state.status = "success";
+      state.status = Status.SUCCESS;
     });
 
     builder.addCase(fetchItems.rejected, (state) => {
       state.items = [];
-      state.status = "rejected";
+      state.status = Status.REJECTED;
     });
   }
 });
