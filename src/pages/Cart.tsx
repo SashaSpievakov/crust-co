@@ -7,11 +7,11 @@ import CartEmpty from "../components/CartEmpty";
 import React from "react";
 
 interface CartItem {
-  id: number,
+  id: string,
   name: string,
   price: number,
-  size: number,
-  type: number,
+  size: string,
+  type: string,
   count: number,
   imageUrl: string
 }
