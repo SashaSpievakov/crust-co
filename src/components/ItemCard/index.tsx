@@ -60,8 +60,8 @@ const ItemCard: React.FC<ItemCardProps> = ({ id, name, imageUrl, price, sizes, t
           src={imageUrl}
           alt="Pizza"
         />
+        <h4 className="pizza-block__title">{name}</h4>
       </Link>
-      <h4 className="pizza-block__title">{name}</h4>
       <div className="pizza-block__selector">
         <ul>
           {types.map(type => (
