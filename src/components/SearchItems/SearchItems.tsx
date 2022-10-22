@@ -9,11 +9,11 @@ const SearchItems = () => {
   const searchValue = useSelector(selectSearchValue);
   const dispatch = useDispatch();
 
-  const inputRef = useRef();
+  const inputRef = useRef<HTMLInputElement>(null);
 
   const onClickClose = () => {
     dispatch(setSearchValue(''));
-    inputRef.current.focus();
+    inputRef.current?.focus();
   }
 
   return (
