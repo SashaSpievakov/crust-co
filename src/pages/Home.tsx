@@ -15,7 +15,7 @@ import { selectSearchValue } from "../redux/slices/searchSlice";
 // import productItems from "../assets/data/db.json";
 
 interface Item {
-  id: number,
+  id: string,
   name: string,
   price: number,
   sizes: number[],
