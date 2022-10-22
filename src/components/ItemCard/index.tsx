@@ -4,7 +4,7 @@ import { BsPlusLg } from "react-icons/bs";
 import { HiMinus } from "react-icons/hi";
 import { HiPlus } from "react-icons/hi";
 
-import { addItem, removeItem, selectCartItemById } from "../../redux/slices/cartSlice";
+import { addItem, ICartItem, CartItemForDelete, removeItem, selectCartItemById } from "../../redux/slices/cartSlice";
 import styles from "./styles.module.scss";
 import { Link } from "react-router-dom";
 
@@ -31,20 +31,23 @@ const ItemCard: React.FC<ItemCardProps> = ({ id, name, imageUrl, price, sizes, t
   const addedCount = cartItem ? cartItem.count : 0;
 
   const onClickAdd = () => {
-    const item = {
+    const item: ICartItem = {
       id,
       name,
       price,
       imageUrl,
       size: sizeNames[activeSize],
-      type: typeNames[activeType]
+      type: typeNames[activeType],
+      count: 0,
     };
     dispatch(addItem(item));
   }
 
   const onClickRemove = () => {
-    const item = {
-      id, price, count
+    const item: CartItemForDelete = {
+      id,
+      price,
+      count,
     };
     dispatch(removeItem(item));
   }

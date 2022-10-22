@@ -5,7 +5,7 @@ import qs from 'qs';
 
 import { selectSort, setSort } from "../redux/slices/sortSlice";
 import { selectCategory, setCategory } from "../redux/slices/categorySlice";
-import { fetchItems, selectPizzasData } from "../redux/slices/pizzasSlice";
+import { fetchItems, PizzaItem, selectPizzasData } from "../redux/slices/pizzasSlice";
 import Categories from "../components/Categories";
 import Sort from "../components/Sort";
 import ItemCard from "../components/ItemCard";
@@ -13,16 +13,6 @@ import Skeleton from "../components/ItemCard/Skeleton";
 import SearchItems from "../components/SearchItems/SearchItems";
 import { selectSearchValue } from "../redux/slices/searchSlice";
 // import productItems from "../assets/data/db.json";
-
-interface Item {
-  id: string,
-  name: string,
-  price: number,
-  sizes: number[],
-  types: number[],
-  count: number,
-  imageUrl: string
-}
 
 const Home: React.FC = () => {
   const navigate = useNavigate();
@@ -107,8 +97,8 @@ const Home: React.FC = () => {
         {status === 'loading'
           ? [...new Array(6)].map((_, i) => <Skeleton key={i} />)
           : items
-            .filter((item: Item) => ((item.name).toLowerCase().includes(searchValue.trim().toLowerCase())))
-            .map((item: Item) => <ItemCard key={item.id} {...item} />)}
+            .filter((item: PizzaItem) => ((item.name).toLowerCase().includes(searchValue.trim().toLowerCase())))
+            .map((item: PizzaItem) => <ItemCard count={0} key={item.id} {...item} />)}
         </div>
       )}
     </>

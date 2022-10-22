@@ -14,7 +14,7 @@ export const fetchItems = createAsyncThunk(
   }
 );
 
-interface PizzaItem {
+export interface PizzaItem {
   category: number,
   id: string,
   imageUrl: string,

@@ -10,7 +10,7 @@ interface CartItem {
   id: string,
   name: string,
   price: number,
-  size: string,
+  size: number,
   type: string,
   count: number,
   imageUrl: string
