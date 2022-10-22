@@ -9,7 +9,7 @@ import styles from "./styles.module.scss";
 import { Link } from "react-router-dom";
 
 interface ItemCardProps {
-  id: number,
+  id: string,
   name: string,
   price: number,
   sizes: number[],
