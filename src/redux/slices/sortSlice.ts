@@ -1,4 +1,4 @@
-import { createSlice } from "@reduxjs/toolkit";
+import { createSlice, PayloadAction } from "@reduxjs/toolkit";
 import { RootState } from "../store";
 
 interface SortSliceState {
@@ -13,7 +13,7 @@ export const sortSlice = createSlice({
   name: "activeSort",
   initialState,
   reducers: {
-    setSort: (state, action) => {
+    setSort: (state, action: PayloadAction<number>) => {
       state.index = action.payload;
     },
   },
