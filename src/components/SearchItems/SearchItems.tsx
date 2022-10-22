@@ -1,11 +1,11 @@
-import { useRef } from 'react';
+import React, { useRef } from 'react';
 import { GrClose } from 'react-icons/gr';
 import { useSelector, useDispatch } from 'react-redux';
 
 import { selectSearchValue, setSearchValue } from '../../redux/slices/searchSlice';
 import styles from "./styles.module.scss";
 
-const SearchItems = () => {
+const SearchItems: React.FC = () => {
   const searchValue = useSelector(selectSearchValue);
   const dispatch = useDispatch();
 
