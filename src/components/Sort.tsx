@@ -23,8 +23,8 @@ const Sort: React.FC<CategoriesProps> = ({ sortNamesArr }) => {
   }
 
   useEffect(() => {
-    const handleBodyClick = (e) => {
-      if (!e.composedPath().includes(sortRef.current)) {
+    const handleBodyClick = (e: MouseEvent) => {
+      if (sortRef.current && !e.composedPath().includes(sortRef.current)) {
       setOpen(false);
       }
     }
