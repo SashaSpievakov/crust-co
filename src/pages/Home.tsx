@@ -5,7 +5,7 @@ import qs from 'qs';
 
 import { selectSort, setSort } from "../redux/slices/sortSlice";
 import { selectCategory, setCategory } from "../redux/slices/categorySlice";
-import { fetchItems, PizzaItem, selectPizzasData } from "../redux/slices/pizzasSlice";
+import { FetchItems, fetchItems, PizzaItem, selectPizzasData } from "../redux/slices/pizzasSlice";
 import Categories from "../components/Categories";
 import Sort from "../components/Sort";
 import ItemCard from "../components/ItemCard";
@@ -25,7 +25,7 @@ const Home: React.FC = () => {
   const searchValue = useSelector(selectSearchValue);
   const {items, status} = useSelector(selectPizzasData);
 
-  const sortNamesArr = ['rating', 'price', 'A to Z'];
+  const sortNamesArr: string[] = ['rating', 'price', 'A to Z'];
   const sortedActiveName = sortNamesArr[activeSort];
 
   const sortPropertyName = (property: string) => {
@@ -54,10 +54,10 @@ const Home: React.FC = () => {
 
   useEffect(() => {
     if(window.location.search) {
-      const params = qs.parse(window.location.search.substring(1))
+      const params = qs.parse(window.location.search.substring(1))as unknown as FetchItems;
 
-      dispatch(setCategory(params.category));
-      dispatch(setSort(params.sort));
+      dispatch(setCategory(params.activeCategory));
+      dispatch(setSort(sortNamesArr.indexOf(params.sortedPropertyName)));
       requested.current = true;
     }
   }, [dispatch])

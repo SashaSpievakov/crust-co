@@ -13,7 +13,7 @@ export interface PizzaItem {
   types: number[],
 }
 
-interface FetchItems {
+export interface FetchItems {
   activeCategory: number,
   sortedPropertyName: string,
 }
