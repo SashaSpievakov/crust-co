@@ -1,16 +1,19 @@
 import { useParams } from "react-router-dom";
 import { useSelector, useDispatch } from "react-redux";
 import { fetchItem, selectItem } from "../redux/slices/itemSlice";
-import { useEffect } from "react";
+import React, { useEffect } from "react";
 import FullItemCard from "../components/FullItemCard";
 
-const FullItem = () => {
+const FullItem: React.FC = () => {
   const { status } = useSelector(selectItem);
   const { id } = useParams();
   const dispatch = useDispatch();
 
   useEffect(() => {
-    dispatch(fetchItem(id))
+    dispatch(
+      // @ts-ignore
+      fetchItem(id)
+    )
   }, [dispatch, id])
 
   return (
