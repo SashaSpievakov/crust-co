@@ -38,29 +38,29 @@ const Home: React.FC = () => {
 
   const sortedPropertyName = sortPropertyName(sortedActiveName);
 
-  useEffect(() => {
-    if (isMounted.current || (activeCategory > 0 || activeSort > 0)) {
-      const queryStr = qs.stringify({
-      category: activeCategory,
-      sort: activeSort,
-      }, {addQueryPrefix: true});
+  // useEffect(() => {
+  //   if (isMounted.current || (activeCategory > 0 || activeSort > 0)) {
+  //     const queryStr = qs.stringify({
+  //     category: activeCategory,
+  //     sort: activeSort,
+  //     }, {addQueryPrefix: true});
 
-      navigate(queryStr);
-    }
+  //     navigate(queryStr);
+  //   }
 
-    isMounted.current = true;
+  //   isMounted.current = true;
 
-  }, [activeCategory, activeSort, navigate])
+  // }, [activeCategory, activeSort, navigate])
 
-  useEffect(() => {
-    if(window.location.search) {
-      const params = qs.parse(window.location.search.substring(1))as unknown as FetchItems;
+  // useEffect(() => {
+  //   if(window.location.search) {
+  //     const params = qs.parse(window.location.search.substring(1))as unknown as FetchItems;
 
-      dispatch(setCategory(params.activeCategory));
-      dispatch(setSort(sortNamesArr.indexOf(params.sortedPropertyName)));
-      requested.current = true;
-    }
-  }, [dispatch])
+  //     dispatch(setCategory(params.activeCategory));
+  //     dispatch(setSort(sortNamesArr.indexOf(params.sortedPropertyName)));
+  //     requested.current = true;
+  //   }
+  // }, [dispatch])
 
   useEffect(() => {
     window.scrollTo(0, 0);
