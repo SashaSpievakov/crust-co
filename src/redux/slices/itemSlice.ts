@@ -1,43 +1,52 @@
 import axios from "axios";
-import { createSlice, createAsyncThunk } from "@reduxjs/toolkit";
+import { createSlice, createAsyncThunk, PayloadAction } from "@reduxjs/toolkit";
+import { RootState } from "../store";
+import { PizzaItem, Status } from "./pizzasSlice";
 
-export const fetchItem = createAsyncThunk("item/fetchItemStatus", async id => {
-  const { data } = await axios.get(
+interface ItemSliceState {
+  status: Status,
+  data: PizzaItem,
+}
+
+export const fetchItem = createAsyncThunk<PizzaItem, number>("item/fetchItemStatus", async id => {
+  const { data } = await axios.get<PizzaItem>(
     `https://6344adb1dcae733e8fe3067a.mockapi.io/pizza-items/${id}`
   );
   return data;
 });
 
-const initialState = {
-  data: {},
-  status: "loading",
+const initialState: ItemSliceState = {
+  data: {} as PizzaItem,
+  status: Status.LOADING,
 };
 
 export const itemSlice = createSlice({
   name: "item",
   initialState,
   reducers: {
-    setData: (state, action) => {
+    setData: (state, action: PayloadAction<PizzaItem>) => {
       state.data = action.payload;
     },
   },
-  extraReducers: {
-    [fetchItem.pending]: (state, action) => {
-      state.data = {};
-      state.status = "loading";
-    },
-    [fetchItem.fulfilled]: (state, action) => {
+  extraReducers: (builder) => {
+    builder.addCase(fetchItem.pending, state => {
+      state.data = {} as PizzaItem;
+      state.status = Status.LOADING;
+    });
+
+    builder.addCase(fetchItem.fulfilled, (state, action) => {
       state.data = { ...action.payload };
-      state.status = "success";
-    },
-    [fetchItem.rejected]: state => {
-      state.data = {};
-      state.status = "rejected";
-    },
+      state.status = Status.SUCCESS;
+    });
+
+    builder.addCase(fetchItem.rejected, state => {
+      state.data = {} as PizzaItem;
+      state.status = Status.REJECTED;
+    });
   },
 });
 
-export const selectItem = state => state.item;
+export const selectItem = (state: RootState) => state.item;
 
 export const { setData } = itemSlice.actions;
 
