@@ -18,7 +18,7 @@ interface FetchItems {
   sortedPropertyName: string,
 }
 
-enum Status {
+export enum Status {
   LOADING = "loading",
   SUCCESS = "success",
   REJECTED = "rejected",
