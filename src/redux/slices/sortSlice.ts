@@ -1,4 +1,5 @@
 import { createSlice } from "@reduxjs/toolkit";
+import { RootState } from "../store";
 
 const initialState = {
   index: 0,
@@ -14,7 +15,7 @@ export const sortSlice = createSlice({
   },
 });
 
-export const selectSort = state => state.activeSort.index;
+export const selectSort = (state: RootState) => state.activeSort.index;
 
 export const { setSort } = sortSlice.actions;
 
