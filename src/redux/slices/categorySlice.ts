@@ -1,7 +1,11 @@
 import { createSlice } from "@reduxjs/toolkit";
 import { RootState } from "../store";
 
-const initialState = {
+interface CategorySliceState {
+  index: number,
+}
+
+const initialState: CategorySliceState = {
   index: 0,
 };
 
