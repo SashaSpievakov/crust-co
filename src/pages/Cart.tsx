@@ -4,6 +4,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { clearItems, selectCart } from "../redux/slices/cartSlice";
 import CartItem from "../components/CartItem";
 import CartEmpty from "../components/CartEmpty";
+import React from "react";
 
 interface CartItem {
   id: number,
@@ -15,7 +16,7 @@ interface CartItem {
   imageUrl: string
 }
 
-const Cart = () => {
+const Cart: React.FC = () => {
   const {itemsCount, totalPrice, items} = useSelector(selectCart);
   const dispatch = useDispatch();
 
