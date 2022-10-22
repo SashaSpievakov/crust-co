@@ -1,6 +1,6 @@
 import React, { useEffect, useRef } from "react";
 import { useNavigate } from "react-router-dom";
-import { useSelector, useDispatch } from 'react-redux';
+import { useSelector } from 'react-redux';
 import qs from 'qs';
 
 import { selectSort, setSort } from "../redux/slices/sortSlice";
@@ -12,11 +12,12 @@ import ItemCard from "../components/ItemCard";
 import Skeleton from "../components/ItemCard/Skeleton";
 import SearchItems from "../components/SearchItems/SearchItems";
 import { selectSearchValue } from "../redux/slices/searchSlice";
+import { useAppDispatch } from "../redux/store";
 // import productItems from "../assets/data/db.json";
 
 const Home: React.FC = () => {
   const navigate = useNavigate();
-  const dispatch = useDispatch();
+  const dispatch = useAppDispatch();
   const requested = useRef(false);
   const isMounted = useRef(false);
   const activeCategory = useSelector(selectCategory);
@@ -66,7 +67,6 @@ const Home: React.FC = () => {
 
     if (!requested.current) {
       dispatch(
-        // @ts-ignore
         fetchItems({activeCategory, sortedPropertyName})
       );
     }
