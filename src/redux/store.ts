@@ -17,3 +17,5 @@ export const store = configureStore({
     item,
   },
 });
+
+export type RootState = ReturnType<typeof store.getState>;
