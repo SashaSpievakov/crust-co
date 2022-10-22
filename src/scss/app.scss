@@ -191,10 +191,13 @@ body {
         }
 
         &:disabled {
-          opacity: 0.4;
-          border-color: #787878;
+          border-color: #dddddd;
           cursor: auto;
-          background-color: #a9a9a9;
+          background-color: #fff;
+
+          svg path {
+            fill: #dddddd;
+          }
         }
       }
 
