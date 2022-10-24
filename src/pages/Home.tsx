@@ -19,7 +19,7 @@ const Home: React.FC = () => {
   const navigate = useNavigate();
   const dispatch = useAppDispatch();
   const requested = useRef(false);
-  const isMounted = useRef(false);
+  // const isMounted = useRef(false);
   const activeCategory = useSelector(selectCategory);
   const activeSort = useSelector(selectSort);
   const searchValue = useSelector(selectSearchValue);
