@@ -15,6 +15,8 @@ import { selectSearchValue } from "../redux/slices/searchSlice";
 import { useAppDispatch } from "../redux/store";
 // import productItems from "../assets/data/db.json";
 
+const sortNamesArr: string[] = ['rating', 'price', 'A to Z'];
+
 const Home: React.FC = () => {
   const navigate = useNavigate();
   const dispatch = useAppDispatch();
@@ -25,7 +27,6 @@ const Home: React.FC = () => {
   const searchValue = useSelector(selectSearchValue);
   const {items, status} = useSelector(selectPizzasData);
 
-  const sortNamesArr: string[] = ['rating', 'price', 'A to Z'];
   const sortedActiveName = sortNamesArr[activeSort];
 
   const sortPropertyName = (property: string) => {
