@@ -1,6 +1,6 @@
 import React from 'react';
 import { useSelector, useDispatch } from 'react-redux';
-import { useWhyDidYouUpdate } from 'ahooks';
+import useWhyDidYouUpdate from 'ahooks/lib/useWhyDidYouUpdate';
 
 import { selectCategory, setCategory } from '../redux/slices/categorySlice';
 
