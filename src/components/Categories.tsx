@@ -4,14 +4,14 @@ import useWhyDidYouUpdate from 'ahooks/lib/useWhyDidYouUpdate';
 
 import { selectCategory, setCategory } from '../redux/slices/categorySlice';
 
+const categoriesArr: string[] = ['All', 'Meat', 'Vegetarian', 'Grill', 'Spicy'];
+
 const Categories: React.FC = () => {
   const activeCategory = useSelector(selectCategory);
   const dispatch = useDispatch();
 
-  const categoriesArr: string[] = ['All', 'Meat', 'Vegetarian', 'Grill', 'Spicy'];
-
   const chosenClass = categoriesArr[activeCategory];
-
+  useWhyDidYouUpdate('Categories', {categoriesArr});
   return (
     <div className="categories">
     <ul>
