@@ -1,11 +1,9 @@
 import React, { useEffect, useRef } from "react";
-import { useNavigate } from "react-router-dom";
 import { useSelector } from 'react-redux';
-import qs from 'qs';
 
 import { selectSort, setSort } from "../redux/slices/sortSlice";
 import { selectCategory, setCategory } from "../redux/slices/categorySlice";
-import { FetchItems, fetchItems, PizzaItem, selectPizzasData } from "../redux/slices/pizzasSlice";
+import { fetchItems, PizzaItem, selectPizzasData } from "../redux/slices/pizzasSlice";
 import Categories from "../components/Categories";
 import Sort from "../components/Sort";
 import ItemCard from "../components/ItemCard";
@@ -13,15 +11,12 @@ import Skeleton from "../components/ItemCard/Skeleton";
 import SearchItems from "../components/SearchItems/SearchItems";
 import { selectSearchValue } from "../redux/slices/searchSlice";
 import { useAppDispatch } from "../redux/store";
-// import productItems from "../assets/data/db.json";
 
 const sortNamesArr: string[] = ['rating', 'price', 'A to Z'];
 
 const Home: React.FC = () => {
-  const navigate = useNavigate();
   const dispatch = useAppDispatch();
   const requested = useRef(false);
-  // const isMounted = useRef(false);
   const activeCategory = useSelector(selectCategory);
   const activeSort = useSelector(selectSort);
   const searchValue = useSelector(selectSearchValue);
@@ -38,30 +33,6 @@ const Home: React.FC = () => {
   }
 
   const sortedPropertyName = sortPropertyName(sortedActiveName);
-
-  // useEffect(() => {
-  //   if (isMounted.current || (activeCategory > 0 || activeSort > 0)) {
-  //     const queryStr = qs.stringify({
-  //     category: activeCategory,
-  //     sort: activeSort,
-  //     }, {addQueryPrefix: true});
-
-  //     navigate(queryStr);
-  //   }
-
-  //   isMounted.current = true;
-
-  // }, [activeCategory, activeSort, navigate])
-
-  // useEffect(() => {
-  //   if(window.location.search) {
-  //     const params = qs.parse(window.location.search.substring(1))as unknown as FetchItems;
-
-  //     dispatch(setCategory(params.activeCategory));
-  //     dispatch(setSort(sortNamesArr.indexOf(params.sortedPropertyName)));
-  //     requested.current = true;
-  //   }
-  // }, [dispatch])
 
   useEffect(() => {
     window.scrollTo(0, 0);
