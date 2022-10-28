@@ -5,7 +5,7 @@ import { selectCategory, setCategory } from '../redux/slices/categorySlice';
 
 const categoriesArr: string[] = ['All', 'Meat', 'Vegetarian', 'Grill', 'Spicy'];
 
-const Categories: React.FC = React.memo(() => {
+const Categories: React.FC = () => {
   const activeCategory = useSelector(selectCategory);
   const dispatch = useDispatch();
 
@@ -25,5 +25,5 @@ const Categories: React.FC = React.memo(() => {
     </ul>
   </div>
   )
-})
-export default Categories
+}
+export default React.memo(Categories);
