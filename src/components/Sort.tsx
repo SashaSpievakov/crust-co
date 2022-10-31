@@ -10,7 +10,7 @@ interface CategoriesProps {
 }
 
 const Sort: React.FC<CategoriesProps> = ({ sortNamesArr }) => {
-  useWhyDidYouUpdate('sort', {sortNamesArr})
+  // useWhyDidYouUpdate('sort', {sortNamesArr})
   const activeSort = useSelector(selectSort);
   const dispatch = useDispatch();
   const sortRef = useRef<HTMLDivElement>(null);
