@@ -3,11 +3,11 @@ import React, { Suspense } from "react";
 
 import "./scss/app.scss";
 import Home from "./pages/Home";
-import NotFound from "./pages/NotFound";
-import FullItem from "./pages/FullItem";
 import MainLayout from "./layouts/MainLayout";
 
 const Cart = React.lazy(() => import("./pages/Cart"));
+const FullItem = React.lazy(() => import("./pages/FullItem"));
+const NotFound = React.lazy(() => import("./pages/NotFound"));
 
 function App() {
   return (
@@ -19,8 +19,16 @@ function App() {
             <Cart />
           </Suspense>
         } />
-        <Route path="item/:id" element={<FullItem />} />
-        <Route path="*" element={<NotFound />} />
+        <Route path="item/:id" element={
+          <Suspense fallback={<div>Loading...</div>}>
+            <FullItem />
+          </Suspense>
+        } />
+        <Route path="*" element={
+          <Suspense fallback={<div>Loading...</div>}>
+            <NotFound />
+          </Suspense>
+        } />
       </Route>
     </Routes>
   );
