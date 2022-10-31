@@ -8,7 +8,7 @@ import Categories from "../components/Categories";
 import Sort from "../components/Sort";
 import ItemCard from "../components/ItemCard";
 import Skeleton from "../components/ItemCard/Skeleton";
-import SearchItems from "../components/SearchItems/SearchItems";
+import SearchItems from "../components/SearchItems";
 import { selectSearchValue } from "../redux/slices/searchSlice";
 import { useAppDispatch } from "../redux/store";
 
