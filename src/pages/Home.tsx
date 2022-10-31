@@ -1,8 +1,8 @@
 import React, { useEffect, useRef } from "react";
 import { useSelector } from 'react-redux';
 
-import { selectSort, setSort } from "../redux/slices/sortSlice";
-import { selectCategory, setCategory } from "../redux/slices/categorySlice";
+import { selectSort } from "../redux/slices/sortSlice";
+import { selectCategory } from "../redux/slices/categorySlice";
 import { fetchItems, PizzaItem, selectPizzasData } from "../redux/slices/pizzasSlice";
 import Categories from "../components/Categories";
 import Sort from "../components/Sort";
