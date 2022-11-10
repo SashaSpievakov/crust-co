@@ -8,7 +8,7 @@ interface ItemSliceState {
   data: PizzaItem,
 }
 
-export const fetchItem = createAsyncThunk<PizzaItem, number>("item/fetchItemStatus", async id => {
+export const fetchItem = createAsyncThunk<PizzaItem, string>("item/fetchItemStatus", async id => {
   const { data } = await axios.get<PizzaItem>(
     `https://6344adb1dcae733e8fe3067a.mockapi.io/pizza-items/${id}`
   );
