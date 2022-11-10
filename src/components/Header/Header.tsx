@@ -5,23 +5,23 @@ import { useSelector } from "react-redux";
 
 import mainLogo from "../../assets/img/main-logo.svg";
 import { selectCart } from "../../redux/slices/cartSlice";
-import { Wrapper } from "./Header.styled";
+import { Main, Wrapper, Logo } from "./Header.styled";
 
 const Header: React.FC = () => {
   const {itemsCount, totalPrice} = useSelector(selectCart);
   const location = useLocation();
 
   return (
-    <header className="header">
+    <Main>
       <Wrapper>
         <Link to="/">
-          <div className="header__logo">
+          <Logo>
             <img width="38" src={mainLogo} alt="Pizza logo" />
             <div>
               <h1>Pizza Place</h1>
               <p>the most delicious pizzas in town</p>
             </div>
-          </div>
+          </Logo>
         </Link>
         {location.pathname !== "/cart" && (
           <div className="header__cart">
@@ -34,7 +34,7 @@ const Header: React.FC = () => {
         </div>
         )}
       </Wrapper>
-    </header>
+    </Main>
   )
 }
 export default Header
