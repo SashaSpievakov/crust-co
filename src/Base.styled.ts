@@ -78,12 +78,45 @@ const Title = styled.h2`
   margin: 35px 0;
 `
 
-const Block = styled.div`
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 30px;
+
+
+const Items = styled.div`
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 100px;
+  row-gap: 40px;
+  justify-items: center;
+
+  @media (max-width: 1150px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
 `
+
+const Top = styled.div`
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+`
+
+const Block = styled(Top)`
+  margin-bottom: 30px;
+`
+
+const Error = styled.div`
+  margin: 80px auto;
+  width: 600px;
+
+  h2 {
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 10px;
+  }
+
+  p {
+    font-size: 22px;
+  }
+`
+
 
 export {theme, Wrapper};
 export default Global;
