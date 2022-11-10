@@ -70,5 +70,20 @@ const Wrapper = styled.div`
   max-width: 1400px;
 `
 
+const Main = styled.main`
+  padding: 40px 0;
+`
+
+const Title = styled.h2`
+  margin: 35px 0;
+`
+
+const Block = styled.div`
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+`
+
 export {theme, Wrapper};
 export default Global;
