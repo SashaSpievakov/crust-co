@@ -5,7 +5,7 @@ import { Title, Block, Top, Items, Error } from "../Base.styled";
 import { selectSort } from "../redux/slices/sortSlice";
 import { selectCategory } from "../redux/slices/categorySlice";
 import { fetchItems, PizzaItem, selectPizzasData } from "../redux/slices/pizzasSlice";
-import Categories from "../components/Categories";
+import Categories from "../components/Categories/Categories";
 import Sort from "../components/Sort";
 import ItemCard from "../components/ItemCard";
 import Skeleton from "../components/ItemCard/Skeleton";
