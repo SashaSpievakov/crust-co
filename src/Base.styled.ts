@@ -9,9 +9,8 @@ const theme: DefaultTheme = {
   },
 
   duration: "0.15s",
+  noselect: "-webkit-touch-callout: none; -webkit-user-select: none; -khtml-user-select: none -moz-user-select: none; -ms-user-select: none; user-select: none;",
 };
-
-const noselect: string = "-webkit-touch-callout: none; -webkit-user-select: none; -khtml-user-select: none -moz-user-select: none; -ms-user-select: none; user-select: none;";
 
 const Global = createGlobalStyle`
   * {
@@ -61,5 +60,5 @@ const Global = createGlobalStyle`
   }
 `;
 
-export {theme, noselect};
+export {theme};
 export default Global;
