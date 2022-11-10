@@ -78,8 +78,6 @@ const Title = styled.h2`
   margin: 35px 0;
 `
 
-
-
 const Items = styled.div`
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -118,5 +116,5 @@ const Error = styled.div`
 `
 
 
-export {theme, Wrapper};
+export {theme, Wrapper, Main, Title, Items, Top, Block, Error};
 export default Global;

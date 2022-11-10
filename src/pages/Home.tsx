@@ -1,6 +1,7 @@
 import React, { useEffect, useRef } from "react";
 import { useSelector } from 'react-redux';
 
+import { Title, Block, Top, Items, Error } from "../Base.styled";
 import { selectSort } from "../redux/slices/sortSlice";
 import { selectCategory } from "../redux/slices/categorySlice";
 import { fetchItems, PizzaItem, selectPizzasData } from "../redux/slices/pizzasSlice";
@@ -48,30 +49,30 @@ const Home: React.FC = () => {
 
   return (
     <>
-      <div className="content__top">
+      <Top>
         <Categories />
         <Sort
           sortNamesArr={sortNamesArr}
         />
-      </div>
-      <div className="content__title--block">
-        <h2 className="content__title">All Pizzas</h2>
+      </Top>
+      <Block>
+        <Title>All Pizzas</Title>
         <SearchItems />
-      </div>
+      </Block>
       {status === 'rejected'
       ? (
-        <div className="content__error">
+        <Error>
           <h2>Request Error</h2>
           <p>Coudn't get store items. Try you request again later.</p>
-        </div>
+        </Error>
       ) : (
-        <div className="content__items">
+        <Items>
         {status === 'loading'
           ? [...new Array(6)].map((_, i) => <Skeleton key={i} />)
           : items
             .filter((item: PizzaItem) => ((item.name).toLowerCase().includes(searchValue.trim().toLowerCase())))
             .map((item: PizzaItem) => <ItemCard count={0} key={item.id} {...item} />)}
-        </div>
+        </Items>
       )}
     </>
   )
