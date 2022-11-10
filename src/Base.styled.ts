@@ -115,6 +115,16 @@ const Error = styled.div`
   }
 `
 
+const Container = styled.div`
+  width: 90%;
+  margin: 0 auto;
+`
 
-export {theme, Wrapper, Main, Title, Items, Top, Block, Error};
+const Item = styled(Container)`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+`
+
+export {theme, Wrapper, Main, Title, Items, Top, Block, Error, Container, Item};
 export default Global;

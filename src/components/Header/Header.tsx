@@ -3,8 +3,9 @@ import { Link, useLocation } from "react-router-dom";
 import { BsCart3 } from "react-icons/bs";
 import { useSelector } from "react-redux";
 
-import mainLogo from "../assets/img/main-logo.svg";
-import { selectCart } from "../redux/slices/cartSlice";
+import mainLogo from "../../assets/img/main-logo.svg";
+import { selectCart } from "../../redux/slices/cartSlice";
+import { Wrapper } from "./Header.styled";
 
 const Header: React.FC = () => {
   const {itemsCount, totalPrice} = useSelector(selectCart);
@@ -12,7 +13,7 @@ const Header: React.FC = () => {
 
   return (
     <header className="header">
-      <div className="container">
+      <Wrapper>
         <Link to="/">
           <div className="header__logo">
             <img width="38" src={mainLogo} alt="Pizza logo" />
@@ -32,7 +33,7 @@ const Header: React.FC = () => {
           </Link>
         </div>
         )}
-      </div>
+      </Wrapper>
     </header>
   )
 }

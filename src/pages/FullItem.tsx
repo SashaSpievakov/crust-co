@@ -1,10 +1,11 @@
+import React, { useEffect } from "react";
 import { useParams } from "react-router-dom";
 import { useSelector, useDispatch } from "react-redux";
 
 import { useAppDispatch } from "../redux/store";
 import { fetchItem, selectItem } from "../redux/slices/itemSlice";
-import React, { useEffect } from "react";
 import FullItemCard from "../components/FullItemCard";
+import { Container } from "../Base.styled";
 
 const FullItem: React.FC = () => {
   const { status } = useSelector(selectItem);
@@ -21,7 +22,7 @@ const FullItem: React.FC = () => {
   return (
     <>
       {status === "loading" ? (
-        <div className="container">Loading...</div>
+        <Container>Loading...</Container>
       ) : (
         <FullItemCard />
       )}
