@@ -1,16 +1,18 @@
 import { Outlet } from "react-router-dom";
+
+import { Wrapper } from "../Base.styled";
 import Header from "../components/Header";
 
 const MainLayout: React.FC = () => {
   return (
-    <div className="wrapper">
+    <Wrapper>
       <Header />
       <div className="content">
         <div className="container">
           <Outlet />
         </div>
       </div>
-    </div>
+    </Wrapper>
   )
 }
 export default MainLayout;

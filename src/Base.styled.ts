@@ -59,7 +59,16 @@ const Global = createGlobalStyle`
   a {
     text-decoration: none;
   }
-`;
+`
 
-export {theme};
+const Wrapper = styled.div`
+  width: calc(100vw - 100px);
+  height: 100%;
+  background-color: #fff;
+  margin: 50px auto;
+  border-radius: 10px;
+  max-width: 1400px;
+`
+
+export {theme, Wrapper};
 export default Global;
