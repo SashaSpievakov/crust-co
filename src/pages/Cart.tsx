@@ -6,7 +6,7 @@ import CartItem from "../components/CartItem";
 import CartEmpty from "../components/CartEmpty";
 import React from "react";
 
-interface CartItem {
+interface Item {
   id: string,
   name: string,
   price: number,
@@ -44,7 +44,7 @@ const Cart: React.FC = () => {
         </div>
       </div>
       <div className="content__items--cart">
-        {items.map((item: CartItem) => (
+        {items.map((item: Item) => (
           <CartItem key={item.id} {...item} />
         ))}
       </div>
