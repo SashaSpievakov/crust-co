@@ -1,8 +1,7 @@
-import ContentLoader from "react-content-loader"
+import { Loader } from "./ItemCard.styled"
 
 const Skeleton = () => (
-  <ContentLoader
-    className="pizza-block"
+  <Loader
     speed={2}
     width={265}
     height={490}
@@ -15,7 +14,7 @@ const Skeleton = () => (
     <rect x="0" y="326" rx="10" ry="10" width="280" height="88" />
     <rect x="34" y="436" rx="10" ry="10" width="60" height="40" />
     <rect x="144" y="433" rx="20" ry="20" width="106" height="45" />
-  </ContentLoader>
+  </Loader>
 )
 
 export default Skeleton
