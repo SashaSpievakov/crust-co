@@ -1,9 +1,9 @@
 import React, { useEffect, useState, useRef } from "react"
-import { useSelector, useDispatch } from 'react-redux';
-import { MdArrowDropDown, MdArrowDropUp} from 'react-icons/md';
-// import useWhyDidYouUpdate from 'ahooks/lib/useWhyDidYouUpdate';
+import { useSelector, useDispatch } from "react-redux";
+// import useWhyDidYouUpdate from "ahooks/lib/useWhyDidYouUpdate";
 
-import { selectSort, setSort } from '../redux/slices/sortSlice';
+import { selectSort, setSort } from "../../redux/slices/sortSlice";
+import { Wrapper, Label, ArrowUp, ArrowDown, Popup, Active } from "./Sort.styled";
 
 interface CategoriesProps {
   sortNamesArr: string[]
@@ -40,31 +40,36 @@ const Sort: React.FC<CategoriesProps> = ({ sortNamesArr }) => {
   }, [open])
 
   return (
-    <div className="sort" onClick={() => setOpen(!open)} ref={sortRef}>
-      <div className="sort__label">
-        {open ? <MdArrowDropUp className="sort__arrow" /> : (
-          <MdArrowDropDown className="sort__arrow" />
-        )}
+    <Wrapper onClick={() => setOpen(!open)} ref={sortRef}>
+      <Label>
+        {open ? <ArrowUp/> : <ArrowDown/>}
         <b>Sort by</b>
         <span>{chosenSortName}</span>
-      </div>
-    {open && (
-      <div className="sort__popup">
-      <ul>
-        {sortNamesArr.map((sortName, i: number) => (
-          <li
-            key={sortName}
-            className={chosenSortName === sortName ? "active" : ""}
-            onClick={() => changeActiveSortName(i)}
-          >
-            {sortName}
-          </li>
-        ))}
-      </ul>
-    </div>
-    )}
-
-  </div>
+      </Label>
+      {open && (
+        <Popup>
+          <ul>
+            {sortNamesArr.map((sortName, i: number) => (
+              chosenSortName === sortName ? (
+                <Active
+                key={sortName}
+                onClick={() => changeActiveSortName(i)}
+                >
+                  {sortName}
+                </Active>
+              ) : (
+                <li
+                  key={sortName}
+                  onClick={() => changeActiveSortName(i)}
+                >
+                  {sortName}
+                </li>
+              )
+            ))}
+          </ul>
+        </Popup>
+      )}
+    </Wrapper>
   )
 }
 export default Sort
