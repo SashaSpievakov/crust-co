@@ -10,6 +10,5 @@ declare module "styled-components" {
     },
 
     duration: string,
-    noselect: string,
   }
 }
