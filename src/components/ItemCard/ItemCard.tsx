@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import { BsPlusLg } from "react-icons/bs";
 
 import { addItem, ICartItem, CartItemForDelete, removeItem, selectCartItemById } from "../../redux/slices/cartSlice";
-import { Block, Active, Image, Title, Selector, Bottom, Price, Counter, Minus, Plus, Count } from "./ItemCard.styled";
+import { Block, Li, Image, Title, Selector, Bottom, Price, Counter, Minus, Plus, Count } from "./ItemCard.styled";
 
 interface ItemCardProps {
   id: string,
@@ -62,42 +62,25 @@ const ItemCard: React.FC<ItemCardProps> = ({ id, name, imageUrl, price, sizes, t
       <Selector>
         <ul>
           {types.map(type => (
-            activeType === types.indexOf(type) ? (
-              <Active
-              ref={refType}
-              key={type}
-              onClick={() => setActiveType(type)}
-              >
-                {typeNames[type]}
-              </Active>
-            ) : (
-              <li
-              ref={refType}
-              key={type}
-              onClick={() => setActiveType(type)}
-              >
-                {typeNames[type]}
-              </li>
-            )
+            <Li
+            ref={refType}
+            key={type}
+            onClick={() => setActiveType(type)}
+            chosen={ activeType === types.indexOf(type)}
+            >
+              {typeNames[type]}
+            </Li>
           ))}
         </ul>
         <ul>
           {sizes.map((size, i) => (
-            activeSize === i ? (
-              <Active
-              key={size}
-              onClick={() => setActiveSize(i)}
-              >
-                {size} inch
-              </Active>
-            ) : (
-              <li
-              key={size}
-              onClick={() => setActiveSize(i)}
-              >
-                {size} inch
-              </li>
-            )
+            <Li
+            key={size}
+            onClick={() => setActiveSize(i)}
+            chosen={activeSize === i}
+            >
+              {size} inch
+            </Li>
           ))}
         </ul>
       </Selector>

@@ -2,6 +2,10 @@ import styled, {css} from "styled-components";
 import { HiMinus, HiPlus } from "react-icons/hi";
 import ContentLoader from "react-content-loader"
 
+interface LiProps {
+  chosen: boolean
+}
+
 const mixinBlock = css`
   max-width: 280px;
   text-align: center;
@@ -20,13 +24,6 @@ const Block = styled.article`
 
 const Loader = styled(ContentLoader)`
   ${mixinBlock}
-`
-
-const Active = styled.li`
-  background: #ffffff;
-  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.04);
-  border-radius: 5px;
-  cursor: auto;
 `
 
 const Image = styled.img`
@@ -54,15 +51,22 @@ const Selector = styled.div`
     &:first-of-type {
       margin-bottom: 6px;
     }
-
-    li {
-      padding: 8px;
-      flex: 1;
-      cursor: pointer;
-      font-weight: 600;
-      font-size: 14px;
-    }
   }
+`
+
+const Li = styled.li<LiProps>`
+  padding: 8px;
+  flex: 1;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 14px;
+
+  ${({chosen}) => chosen && css`
+    background: #ffffff;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.04);
+    border-radius: 5px;
+    cursor: auto;
+  `}
 `
 
 const Bottom = styled.div`
@@ -100,4 +104,4 @@ const Count = styled.span`
   margin-right: 15px;
 `
 
-export {Block, Loader, Active, Image, Title, Selector, Bottom, Price, Counter, Minus, Plus, Count}
+export {Block, Loader, Li, Image, Title, Selector, Bottom, Price, Counter, Minus, Plus, Count}
