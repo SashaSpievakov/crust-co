@@ -4,7 +4,7 @@ import { useSelector } from "react-redux";
 
 import { useAppDispatch } from "../redux/store";
 import { fetchItem, selectItem } from "../redux/slices/itemSlice";
-import FullItemCard from "../components/FullItemCard";
+import FullItemCard from "../components/FullItemCard/FullItemCard";
 import { Container } from "../Base.styled";
 
 const FullItem: React.FC = () => {
