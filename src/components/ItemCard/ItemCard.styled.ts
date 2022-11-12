@@ -1,5 +1,6 @@
 import styled, {css} from "styled-components";
 import { HiMinus, HiPlus } from "react-icons/hi";
+import { BsPlusLg } from "react-icons/bs";
 import ContentLoader from "react-content-loader"
 
 interface LiProps {
@@ -104,4 +105,10 @@ const Count = styled.span`
   margin-right: 15px;
 `
 
-export {Block, Loader, Li, Image, Title, Selector, Bottom, Price, Counter, Minus, Plus, Count}
+const MainPlus = styled(BsPlusLg)`
+  font-size: 17px;
+  padding-bottom: 2px;
+  margin-right: 5px;
+`
+
+export {Block, Loader, Li, Image, Title, Selector, Bottom, Price, Counter, Minus, Plus, Count, MainPlus}

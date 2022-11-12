@@ -1,10 +1,10 @@
 import React, { useRef, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { Link } from "react-router-dom";
-import { BsPlusLg } from "react-icons/bs";
 
 import { addItem, ICartItem, CartItemForDelete, removeItem, selectCartItemById } from "../../redux/slices/cartSlice";
-import { Block, Li, Image, Title, Selector, Bottom, Price, Counter, Minus, Plus, Count } from "./ItemCard.styled";
+import { ButtonAdd } from "../Buttons/Buttons.styled";
+import { Block, Li, Image, Title, Selector, Bottom, Price, Counter, Minus, Plus, Count, MainPlus } from "./ItemCard.styled";
 
 interface ItemCardProps {
   id: string,
@@ -93,13 +93,12 @@ const ItemCard: React.FC<ItemCardProps> = ({ id, name, imageUrl, price, sizes, t
             <Plus onClick={onClickAdd} />
           </Counter>
         ) : (
-          <button
-            className="button button--outline button--add"
+          <ButtonAdd
             onClick={onClickAdd}
           >
-          <BsPlusLg className="button--plus" />
+          <MainPlus/>
           <span>Add</span>
-        </button>
+        </ButtonAdd>
         )}
       </Bottom>
     </Block>

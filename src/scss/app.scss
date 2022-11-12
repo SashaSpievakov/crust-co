@@ -1,8 +1,6 @@
 @import './variables';
 @import './libs/normalize';
 
-@import './components/all';
-
 .cart {
   &__top {
     display: flex;
@@ -103,24 +101,6 @@
       justify-content: space-between;
       width: 13%;
 
-      &-minus {
-        svg {
-          path:first-of-type {
-            display: none;
-          }
-        }
-
-        &:disabled {
-          border-color: #dddddd;
-          cursor: auto;
-          background-color: #fff;
-
-          svg path {
-            fill: #dddddd;
-          }
-        }
-      }
-
       b {
         font-size: 22px;
       }
@@ -144,31 +124,6 @@
       align-items: center;
       justify-content: flex-end;
       width: 4%;
-
-      .button {
-        border-color: darken($color: $gray-line, $amount: 10);
-      }
-
-      svg {
-        transform: rotate(45deg);
-
-        path {
-          fill: darken($color: $gray-line, $amount: 15);
-        }
-      }
-
-      .button {
-        svg {
-          width: 11.5px;
-          height: 11.5px;
-          position: relative;
-        }
-        &:hover,
-        &:active {
-          border-color: darken($color: $gray-line, $amount: 80);
-          background-color: darken($color: $gray-line, $amount: 80);
-        }
-      }
     }
   }
 
@@ -194,45 +149,6 @@
       display: flex;
       justify-content: space-between;
       margin-top: 40px;
-
-      .go-back-btn {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        width: 210px;
-
-        border-color: darken($color: $gray-line, $amount: 10);
-
-        span {
-          color: darken($color: $gray-line, $amount: 20);
-          font-weight: 500;
-          font-weight: 600;
-        }
-
-        &:hover {
-          background-color: darken($color: $gray-line, $amount: 90);
-          border-color: darken($color: $gray-line, $amount: 90);
-
-          span {
-            color: $gray-line;
-          }
-        }
-
-        svg {
-          margin-right: 12px;
-          path {
-            fill: transparent;
-            stroke-width: 2;
-          }
-        }
-      }
-
-      .pay-btn {
-        font-size: 16px;
-        font-weight: 600;
-        width: 210px;
-        padding: 16px;
-      }
     }
   }
 
@@ -263,14 +179,6 @@
       display: block;
       width: 300px;
       margin: 45px auto 60px;
-    }
-
-    .button--black {
-      padding: 12px 0 14px;
-      width: 230px;
-      margin: 0 auto;
-      font-weight: 600;
-      font-size: 18px;
     }
   }
 }

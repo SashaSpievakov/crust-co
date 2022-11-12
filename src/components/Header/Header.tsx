@@ -6,6 +6,7 @@ import { useSelector } from "react-redux";
 import mainLogo from "../../assets/img/main-logo.svg";
 import { selectCart } from "../../redux/slices/cartSlice";
 import { Main, Wrapper, Logo, Delimiter } from "./Header.styled";
+import { ButtonCart } from "../Buttons/Buttons.styled";
 
 const Header: React.FC = () => {
   const {itemsCount, totalPrice} = useSelector(selectCart);
@@ -25,12 +26,12 @@ const Header: React.FC = () => {
         </Link>
         {location.pathname !== "/cart" && (
           <div className="header__cart">
-          <Link to="/cart" className="button button--cart">
+          <ButtonCart to="/cart" as={Link}>
             <span>{totalPrice} $</span>
             <Delimiter/>
             <BsCart3 />
             <span>{itemsCount}</span>
-          </Link>
+          </ButtonCart>
         </div>
         )}
       </Wrapper>

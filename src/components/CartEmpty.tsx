@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 import cartImg from "../assets/img/empty-cart.png";
+import { ButtonBlack } from "./Buttons/Buttons.styled";
 
 const CartEmpty: React.FC = () => {
   return (
@@ -12,9 +13,9 @@ const CartEmpty: React.FC = () => {
         If you want to make an order go back to the main page.
       </p>
       <img src={cartImg} alt="empty cart" />
-      <Link to="/" className="button button--black">
+      <ButtonBlack to="/" as={Link}>
         <span>Go Back</span>
-      </Link>
+      </ButtonBlack>
     </div>
   )
 }
