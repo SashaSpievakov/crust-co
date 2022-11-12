@@ -2,7 +2,7 @@ import React from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 
 import { selectCategory, setCategory } from '../../redux/slices/categorySlice';
-import { Wrapper } from './Categories.styled';
+import { Ul, Li } from './Categories.styled';
 
 const categoriesArr: string[] = ['All', 'Meat', 'Vegetarian', 'Grill', 'Spicy'];
 
@@ -12,19 +12,19 @@ const Categories: React.FC = () => {
 
   const chosenClass = categoriesArr[activeCategory];
   return (
-    <Wrapper>
-    <ul>
+    <div>
+    <Ul>
       {categoriesArr.map((name, i) => (
-        <li
+        <Li
           key={name}
-          className={chosenClass === name ? "active" : ""}
           onClick={() => dispatch(setCategory(i))}
+          chosen={chosenClass === name}
         >
           {name}
-        </li>
+        </Li>
       ))}
-    </ul>
-  </Wrapper>
+    </Ul>
+  </div>
   )
 }
 export default React.memo(Categories);
