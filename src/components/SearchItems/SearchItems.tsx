@@ -1,9 +1,8 @@
-import React, { useRef } from 'react';
-import { GrClose } from 'react-icons/gr';
-import { useSelector, useDispatch } from 'react-redux';
+import React, { useRef } from "react";
+import { useSelector, useDispatch } from "react-redux";
 
-import { selectSearchValue, setSearchValue } from '../../redux/slices/searchSlice';
-import styles from "./styles.module.scss";
+import { selectSearchValue, setSearchValue } from "../../redux/slices/searchSlice";
+import {Wrapper, Input, Cross} from "./SearchItems.styled";
 
 const SearchItems: React.FC = () => {
   const searchValue = useSelector(selectSearchValue);
@@ -18,21 +17,19 @@ const SearchItems: React.FC = () => {
 
   return (
     // Add icon inside
-    <div className={styles.wrapper}>
-      <input
+    <Wrapper>
+      <Input
         ref={inputRef}
         placeholder="Search..."
-        className={styles.input}
         value={searchValue}
         onChange={(e) => dispatch(setSearchValue(e.target.value))}
       />
       {searchValue && (
-        <GrClose
-        className={styles.close}
+        <Cross
         onClick={onClickClose}
       />
       )}
-    </div>
+    </Wrapper>
   )
 }
 export default SearchItems

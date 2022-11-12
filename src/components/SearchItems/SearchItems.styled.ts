@@ -1,8 +1,11 @@
-.wrapper {
-  position: relative;
-}
+import styled from "styled-components";
+import { GrClose } from 'react-icons/gr';
 
-.input {
+const Wrapper = styled.div`
+  position: relative;
+`
+
+const Input = styled.input`
   font-size: 16px;
   height: 40px;
   width: 300px;
@@ -14,9 +17,9 @@
   &:focus {
     border: 1px solid rgba(0, 0, 0, 0.3);
   }
-}
+`
 
-.close {
+const Cross = styled(GrClose)`
   position: absolute;
   top: 10px;
   right: 10px;
@@ -28,4 +31,6 @@
   &:hover {
     opacity: .7;
   }
-}
+`
+
+export {Wrapper, Input, Cross}
