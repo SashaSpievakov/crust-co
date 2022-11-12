@@ -33,4 +33,12 @@ const Logo = styled.section`
   }
 `
 
-export {Main, Wrapper, Logo};
+const Delimiter = styled.div`
+  width: 1px;
+  height: 25px;
+  background-color: rgba(255, 255, 255, 0.25);
+  margin-left: 14px;
+  margin-right: 14px;
+`
+
+export {Main, Wrapper, Logo, Delimiter};
