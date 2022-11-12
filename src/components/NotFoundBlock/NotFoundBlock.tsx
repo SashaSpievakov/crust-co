@@ -1,11 +1,12 @@
 import React from 'react';
-import styles from './styles.module.scss';
+
+import { Title } from './NotFoundBlock.styled';
 
 const NotFoundBlock: React.FC = () => {
   return (
-      <h1 className={styles.root}>
+      <Title>
         Not Found...
-      </h1>
+      </Title>
   )
 }
 export default NotFoundBlock
