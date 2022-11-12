@@ -1,6 +1,10 @@
 import styled, { css } from "styled-components";
 import { MdArrowDropDown, MdArrowDropUp} from 'react-icons/md';
 
+interface LiProps {
+  chosen: boolean
+}
+
 const mixinArrow = css`
   font-size: 30px;
 `
@@ -51,26 +55,35 @@ const Popup = styled.div`
   ul {
     overflow: hidden;
 
-    li {
+    /* li {
       padding: 12px 20px;
       cursor: pointer;
 
       &:hover {
         ${mixinBackground}
-      }
+      } */
 
-      &.active {
+      /* &.active {
         font-weight: bold;
         color: $orange;
-      }
-    }
+      } */
+    /* } */
   }
 `
 
-const Active = styled.li`
-  font-weight: bold;
-  color: ${({theme}) => theme.colors.primary};
-  ${mixinBackground}
+const Li = styled.li<LiProps>`
+  padding: 12px 20px;
+  cursor: pointer;
+
+  &:hover {
+    ${mixinBackground}
+  }
+
+  ${({chosen}) => chosen && css`
+    font-weight: bold;
+    color: ${({theme}) => theme.colors.primary};
+    ${mixinBackground}
+  `}
 `
 
-export {Wrapper, Label, ArrowUp, ArrowDown, Popup, Active}
+export {Wrapper, Label, ArrowUp, ArrowDown, Popup, Li}

@@ -3,7 +3,7 @@ import { useSelector, useDispatch } from "react-redux";
 // import useWhyDidYouUpdate from "ahooks/lib/useWhyDidYouUpdate";
 
 import { selectSort, setSort } from "../../redux/slices/sortSlice";
-import { Wrapper, Label, ArrowUp, ArrowDown, Popup, Active } from "./Sort.styled";
+import { Wrapper, Label, ArrowUp, ArrowDown, Popup, Li } from "./Sort.styled";
 
 interface CategoriesProps {
   sortNamesArr: string[]
@@ -50,21 +50,13 @@ const Sort: React.FC<CategoriesProps> = ({ sortNamesArr }) => {
         <Popup>
           <ul>
             {sortNamesArr.map((sortName, i: number) => (
-              chosenSortName === sortName ? (
-                <Active
-                key={sortName}
-                onClick={() => changeActiveSortName(i)}
-                >
-                  {sortName}
-                </Active>
-              ) : (
-                <li
-                  key={sortName}
-                  onClick={() => changeActiveSortName(i)}
-                >
-                  {sortName}
-                </li>
-              )
+              <Li
+              key={sortName}
+              onClick={() => changeActiveSortName(i)}
+              chosen={chosenSortName === sortName}
+              >
+                {sortName}
+              </Li>
             ))}
           </ul>
         </Popup>
