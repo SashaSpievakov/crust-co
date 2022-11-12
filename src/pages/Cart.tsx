@@ -3,7 +3,7 @@ import { useDispatch, useSelector } from "react-redux";
 
 import { clearItems, selectCart } from "../redux/slices/cartSlice";
 import CartItem from "../components/CartItem";
-import CartEmpty from "../components/CartEmpty";
+import CartEmpty from "../components/CartEmpty/CartEmpty";
 import React from "react";
 import { ButtonBack, ButtonPay } from "../components/Buttons/Buttons.styled";
 

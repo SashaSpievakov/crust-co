@@ -1,12 +1,13 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-import cartImg from "../assets/img/empty-cart.png";
-import { ButtonBlack } from "./Buttons/Buttons.styled";
+import cartImg from "../../assets/img/empty-cart.png"
+import { ButtonBlack } from "../Buttons/Buttons.styled";
+import { Article } from "./CartEmpty.styled";
 
 const CartEmpty: React.FC = () => {
   return (
-    <div className="cart cart--empty">
+    <Article>
       <h2>Your cart is empty <span>😕</span></h2>
       <p>
         You haven't ordered food yet.<br />
@@ -16,7 +17,7 @@ const CartEmpty: React.FC = () => {
       <ButtonBlack to="/" as={Link}>
         <span>Go Back</span>
       </ButtonBlack>
-    </div>
+    </Article>
   )
 }
 export default CartEmpty;
