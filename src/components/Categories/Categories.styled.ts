@@ -9,7 +9,7 @@ const Ul = styled.ul`
 `
 
 const Li = styled.li<LiProps>`
-  background-color: #f9f9f9;
+  background-color: ${({theme}) => theme.colors.gray};
   padding: 13px 30px;
   border-radius: 30px;
   margin-right: 10px;
@@ -18,7 +18,7 @@ const Li = styled.li<LiProps>`
   transition: background-color 0.1s ease-in-out;
 
   ${({chosen}) => chosen && css`
-    background-color: #282828;
+    background-color: ${({theme}) => theme.colors.black};
     color: #fff;
   `}
 `
