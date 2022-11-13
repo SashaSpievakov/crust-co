@@ -5,7 +5,7 @@ import "./scss/app.scss";
 import Home from "./pages/Home";
 import MainLayout from "./layouts/MainLayout";
 
-const Cart = React.lazy(() => import(/* webpackChunkName: "Cart" */"./pages/Cart"));
+const Cart = React.lazy(() => import(/* webpackChunkName: "Cart" */"./pages/Cart/Cart"));
 const FullItem = React.lazy(() => import(/* webpackChunkName: "FullItem" */"./pages/FullItem"));
 const NotFound = React.lazy(() => import(/* webpackChunkName: "NotFound" */"./pages/NotFound"));
 
