@@ -94,9 +94,16 @@ const Top = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  @media screen and (max-width: 900px) {
+    flex-direction: column;
+    align-items: start;
+  }
 `
 
 const Block = styled(Top)`
+  flex-direction: row;
+  align-items: center;
   margin-bottom: 30px;
 `
 

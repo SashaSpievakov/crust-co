@@ -15,6 +15,7 @@ const mixinBackground = css`
 
 const Wrapper = styled.div`
   position: relative;
+  margin-top: 15px;
   cursor: pointer;
 `
 
