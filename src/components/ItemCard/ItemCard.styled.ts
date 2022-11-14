@@ -29,6 +29,10 @@ const Loader = styled(ContentLoader)`
 
 const Image = styled.img`
   width: 260px;
+
+  @media screen and (max-width: 400px) {
+    width: 200px;
+  }
 `
 
 const Title = styled.h4`
@@ -82,6 +86,10 @@ const Price = styled.div`
   font-size: 32px;
   line-height: 27px;
   letter-spacing: 0.015em;
+
+  @media screen and (max-width: 400px) {
+    font-size: 28px;
+  }
 `
 
 const Counter = styled.div`
