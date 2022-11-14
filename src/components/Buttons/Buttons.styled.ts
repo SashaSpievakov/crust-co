@@ -207,6 +207,15 @@ const ButtonBack = styled(ButtonAdd)`
     font-weight: 600;
   }
 
+  svg {
+    margin-right: 12px;
+
+    path {
+      fill: #fff;
+      stroke-width: 2;
+    }
+  }
+
   &:hover {
     background-color: #111111;
     border-color: #111111;
@@ -214,14 +223,9 @@ const ButtonBack = styled(ButtonAdd)`
     span {
       color: ${({theme}) => theme.colors.gray};
     }
-  }
 
-  svg {
-    margin-right: 12px;
-
-    path {
-      fill: transparent;
-      stroke-width: 2;
+    svg > path {
+      fill: #111111;
     }
   }
 `
