@@ -17,6 +17,10 @@ const Input = styled.input`
   &:focus {
     border: 1px solid rgba(0, 0, 0, 0.3);
   }
+
+  @media screen and (max-width: 400px) {
+    width: 225px;
+  }
 `
 
 const Cross = styled(GrClose)`
