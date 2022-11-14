@@ -5,12 +5,22 @@ import { Container } from "../../Base.styled";
 const Main = styled.header`
   border-bottom: 1px solid ${({theme}) => theme.colors.gray};
   padding: 40px 0;
+
+  @media screen and (max-width: 550px) {
+    padding: 30px 0;
+  }
 `
 
 const Wrapper = styled(Container)`
   display: flex;
   align-items: center;
   justify-content: space-between;
+
+  @media screen and (max-width: 550px) {
+    flex-direction: column;
+    align-items: start;
+    row-gap: 20px;
+  }
 `
 
 const Logo = styled.section`

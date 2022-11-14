@@ -77,6 +77,10 @@ const Wrapper = styled.div`
 
 const Main = styled.main`
   padding: 40px 0;
+
+  @media screen and (max-width: 550px) {
+    padding: 25px 0;
+  }
 `
 
 const Title = styled.h2`
