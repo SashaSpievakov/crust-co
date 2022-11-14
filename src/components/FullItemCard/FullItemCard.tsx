@@ -1,8 +1,7 @@
 import { useSelector } from "react-redux";
 import { selectItem } from "../../redux/slices/itemSlice";
 
-import { Image, Title, Paragraph, Price } from "./FullItemCard.styled";
-import { Item } from "../../Base.styled";
+import { Image, Title, Paragraph, Price, Item } from "./FullItemCard.styled";
 
 const FullItemCard: React.FC = () => {
   const { data } = useSelector(selectItem);

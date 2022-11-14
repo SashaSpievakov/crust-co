@@ -158,11 +158,5 @@ const Container = styled.div`
   margin: 0 auto;
 `
 
-const Item = styled(Container)`
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-`
-
-export {theme, Wrapper, Main, Title, Items, Top, Block, Error, Container, Item};
+export {theme, Wrapper, Main, Title, Items, Top, Block, Error, Container};
 export default Global;
