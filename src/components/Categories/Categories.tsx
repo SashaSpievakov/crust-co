@@ -12,7 +12,7 @@ const Categories: React.FC = () => {
 
   const chosenClass = categoriesArr[activeCategory];
   return (
-    <div>
+  <div>
     <Ul>
       {categoriesArr.map((name, i) => (
         <Li

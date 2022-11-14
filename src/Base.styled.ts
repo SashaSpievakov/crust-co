@@ -81,6 +81,10 @@ const Main = styled.main`
 
 const Title = styled.h2`
   margin: 35px 0;
+
+  @media screen and (max-width: 650px) {
+    margin: 20px 0;
+  }
 `
 
 const Items = styled.div`
@@ -122,6 +126,11 @@ const Block = styled(Top)`
 
   @media screen and (max-width: 900px) {
     margin-bottom: 50px;
+  }
+
+  @media screen and (max-width: 650px) {
+    flex-direction: column;
+    align-items: start;
   }
 `
 

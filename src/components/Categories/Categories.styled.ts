@@ -6,6 +6,10 @@ interface LiProps {
 
 const Ul = styled.ul`
   display: flex;
+
+  @media screen and (max-width: 650px) {
+    flex-wrap: wrap;
+  }
 `
 
 const Li = styled.li<LiProps>`
@@ -21,6 +25,11 @@ const Li = styled.li<LiProps>`
     background-color: ${({theme}) => theme.colors.black};
     color: #fff;
   `}
+
+  @media screen and (max-width: 650px) {
+    margin-bottom: 10px;
+    padding: 10px 22px;
+  }
 `
 
 export { Li, Ul }

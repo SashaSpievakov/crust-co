@@ -17,6 +17,10 @@ const Wrapper = styled.div`
   position: relative;
   margin-top: 15px;
   cursor: pointer;
+
+  @media screen and (max-width: 650px) {
+    align-self: end;
+  }
 `
 
 const Label = styled.div`
