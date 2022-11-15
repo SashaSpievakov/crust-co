@@ -26,13 +26,13 @@ const Header: React.FC = () => {
         </Link>
         {location.pathname !== "/cart" && (
           <div className="header__cart">
-          <ButtonCart to="/cart" as={Link}>
-            <span>{totalPrice} $</span>
-            <Delimiter/>
-            <BsCart3 />
-            <span>{itemsCount}</span>
-          </ButtonCart>
-        </div>
+            <ButtonCart to="/cart" as={Link}>
+              <span>{totalPrice} $</span>
+              <Delimiter/>
+              <BsCart3 />
+              <span>{itemsCount}</span>
+            </ButtonCart>
+          </div>
         )}
       </Wrapper>
     </Main>
