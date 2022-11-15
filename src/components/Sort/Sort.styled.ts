@@ -10,7 +10,7 @@ const mixinArrow = css`
 `
 
 const mixinBackground = css`
-  background-color: ${({theme}) => theme.colors.secondaryTranparent};
+  background-color: ${({theme}) => theme.colors.secondaryTransparent};
 `
 
 const Wrapper = styled.div`

@@ -4,7 +4,7 @@ const theme: DefaultTheme = {
   colors: {
     primary: "#5e3d1d",
     secondary: "#b08c69",
-    secondaryTranparent: "rgba(176, 140, 105, 0.05)",
+    secondaryTransparent: "rgba(176, 140, 105, 0.05)",
     black: "#232323",
     gray: "#f6f6f6",
   },
