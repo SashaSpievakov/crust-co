@@ -1,7 +1,7 @@
 import React, { useEffect, useRef } from "react";
 import { useSelector } from 'react-redux';
 
-import { Title, Block, Top, Items, Error } from "../Base.styled";
+import { Title, Block, Top, Items, Error } from "../styles/Base.styled";
 import { selectSort } from "../redux/slices/sortSlice";
 import { selectCategory } from "../redux/slices/categorySlice";
 import { fetchItems, PizzaItem, selectPizzasData } from "../redux/slices/pizzasSlice";

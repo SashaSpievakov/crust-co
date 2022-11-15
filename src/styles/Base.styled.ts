@@ -1,80 +1,9 @@
-import styled, { createGlobalStyle, DefaultTheme, css } from "styled-components";
-
-interface Theme {
-  third: string,
-  fourth: string,
-}
-
-const light: Theme = {
-  third: "#232323",
-  fourth: "#fff",
-}
-
-const theme: DefaultTheme = {
-  colors: {
-    primary: "#5e3d1d",
-    secondary: "#b08c69",
-    secondaryTransparent: "rgba(176, 140, 105, 0.05)",
-    ...light,
-    gray: "#f6f6f6",
-  },
-
-  duration: "0.15s",
-};
-
-const Global = createGlobalStyle`
-  * {
-  padding: 0;
-  margin: 0;
-  list-style: none;
-  outline: none;
-  font-family: 'Nunito', Roboto, system-ui, Tahoma, sans-serif;
-  box-sizing: border-box;
-  }
-
-  html {
-    -ms-text-size-adjust: 100%;
-    -webkit-text-size-adjust: 100%;
-  }
-
-  body {
-    -moz-osx-font-smoothing: grayscale;
-    -webkit-font-smoothing: antialiased;
-    color: ${({theme}) => theme.colors.third};
-    background-color: ${({theme}) => theme.colors.secondary};
-  }
-
-  a,
-  span,
-  p,
-  b,
-  h1,
-  h2,
-  h3,
-  h4,
-  h5 {
-    color: ${({theme}) => theme.colors.third};
-  }
-
-  h1 {
-    font-size: 48px;
-  }
-
-  h2 {
-    font-weight: 600;
-    font-size: 28px;
-    line-height: 30px;
-  }
-
-  a {
-    text-decoration: none;
-  }
-`
+import styled from "styled-components";
 
 const Wrapper = styled.div`
   width: calc(100vw - 100px);
   height: 100%;
-  background-color: #fff;
+  background-color: ${({theme}) => theme.colors.fourth};
   margin: 50px auto;
   border-radius: 10px;
   max-width: 1400px;
@@ -168,5 +97,4 @@ const Container = styled.div`
   margin: 0 auto;
 `
 
-export {theme, Wrapper, Main, Title, Items, Top, Block, Error, Container};
-export default Global;
+export { Wrapper, Main, Title, Items, Top, Block, Error, Container };

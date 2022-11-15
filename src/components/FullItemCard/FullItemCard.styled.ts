@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { Container } from "../../Base.styled";
+import { Container } from "../../styles/Base.styled";
 
 const Item = styled(Container)`
   display: flex;

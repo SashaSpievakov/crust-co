@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-import { Container } from "../../Base.styled";
+import { Container } from "../../styles/Base.styled";
 
 const Main = styled.header`
   border-bottom: 1px solid ${({theme}) => theme.colors.gray};
@@ -43,6 +43,19 @@ const Logo = styled.section`
   }
 `
 
+const Right = styled.div`
+  display: flex;
+  align-items: center;
+  column-gap: 30px;
+`
+
+const Icon = styled.i`
+  font-size: 20px;
+  color: ${({theme}) => theme.colors.third};
+  cursor: pointer;
+  transition: all ${({theme}) => theme.duration} ease-in-out;
+`
+
 const Delimiter = styled.div`
   width: 1px;
   height: 25px;
@@ -51,4 +64,4 @@ const Delimiter = styled.div`
   margin-right: 14px;
 `
 
-export {Main, Wrapper, Logo, Delimiter};
+export {Main, Wrapper, Logo, Right, Icon, Delimiter};

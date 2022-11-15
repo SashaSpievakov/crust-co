@@ -5,7 +5,7 @@ import { useSelector } from "react-redux";
 import { useAppDispatch } from "../redux/store";
 import { fetchItem, selectItem } from "../redux/slices/itemSlice";
 import FullItemCard from "../components/FullItemCard/FullItemCard";
-import { Container } from "../Base.styled";
+import { Container } from "../styles/Base.styled";
 
 const FullItem: React.FC = () => {
   const { status } = useSelector(selectItem);
