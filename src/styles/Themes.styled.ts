@@ -7,8 +7,8 @@ const lightTheme: DefaultTheme = {
     secondaryTransparent: "rgba(176, 140, 105, 0.05)",
     third: "#232323",
     fourth: "#fff",
-    typography: "#181818",
-    gray: "#f6f6f6",
+    black: "#181818",
+    gray: "#f3f3f3",
   },
 
   duration: "0.2s",
@@ -21,7 +21,7 @@ const darkTheme: DefaultTheme = {
     secondaryTransparent: "rgba(176, 140, 105, 0.05)",
     third: "#d5d5d5",
     fourth: "#232323",
-    typography: "#181818",
+    black: "#181818",
     gray: "#4d4d4d",
   },
 

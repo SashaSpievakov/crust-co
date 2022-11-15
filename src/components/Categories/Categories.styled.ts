@@ -13,7 +13,7 @@ const Ul = styled.ul`
 `
 
 const Li = styled.li<LiProps>`
-  color: ${({theme}) => theme.colors.typography};
+  color: ${({theme}) => theme.colors.black};
   background-color: ${({theme}) => theme.colors.gray};
   padding: 13px 30px;
   border-radius: 30px;

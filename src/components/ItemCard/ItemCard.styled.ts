@@ -15,7 +15,7 @@ const mixinBlock = css`
 
 const mixinButton = css`
   font-size: 27px;
-  color: ${({theme}) => theme.colors.primary};
+  color: ${({theme}) => theme.colors.secondary};
   cursor: pointer;
 `
 
@@ -29,6 +29,7 @@ const Loader = styled(ContentLoader)`
 
 const Image = styled.img`
   width: 260px;
+  border-radius: 20px;
 
   @media screen and (max-width: 400px) {
     width: 200px;
@@ -44,7 +45,7 @@ const Title = styled.h4`
 
 const Selector = styled.div`
   display: flex;
-  background-color: #f3f3f3;
+  background-color: ${({theme}) => theme.colors.gray};
   border-radius: 10px;
   flex-direction: column;
   padding: 6px;
@@ -67,6 +68,7 @@ const Li = styled.li<LiProps>`
   font-size: 14px;
 
   ${({chosen}) => chosen && css`
+    color: ${({theme}) => theme.colors.black};
     background: #ffffff;
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.04);
     border-radius: 5px;

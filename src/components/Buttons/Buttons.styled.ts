@@ -78,21 +78,21 @@ const ButtonPay = styled(Button)`
 
 const ButtonOutline = styled(Button)`
   background-color: #fff;
-  border-color: ${({theme}) => theme.colors.primary};
+  border-color: ${({theme}) => theme.colors.black};
 
   &,
   span {
-    color: ${({theme}) => theme.colors.primary};
+    color: ${({theme}) => theme.colors.black};
   }
 
   svg {
     path {
-      fill: ${({theme}) => theme.colors.primary};
+      fill: ${({theme}) => theme.colors.black};
     }
   }
 
   &:hover {
-    background-color:${({theme}) => theme.colors.primary};
+    background-color:${({theme}) => theme.colors.secondary};
 
     &,
     span {
