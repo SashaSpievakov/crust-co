@@ -24,8 +24,11 @@ const Ul = styled.ul`
 const Link = styled.a`
   display: flex;
   gap: 5px;
-  color: ${({theme}) => theme.colors.third};
   align-items: center;
+
+  span {
+    color: ${({theme}) => theme.colors.third};
+  }
 `
 
 const Icon = styled.a`
@@ -35,6 +38,7 @@ const Icon = styled.a`
 
 const Copyright = styled.p`
   text-align: center;
+  color: ${({theme}) => theme.colors.third};
 `
 
 export { Main, Ul, Icon, Copyright, Link }

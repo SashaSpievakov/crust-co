@@ -13,6 +13,7 @@ const Ul = styled.ul`
 `
 
 const Li = styled.li<LiProps>`
+  color: ${({theme}) => theme.colors.typography};
   background-color: ${({theme}) => theme.colors.gray};
   padding: 13px 30px;
   border-radius: 30px;
@@ -23,7 +24,7 @@ const Li = styled.li<LiProps>`
 
   ${({chosen}) => chosen && css`
     background-color: ${({theme}) => theme.colors.third};
-    color: #fff;
+    color: ${({theme}) => theme.colors.fourth};
   `}
 
   @media screen and (max-width: 650px) {

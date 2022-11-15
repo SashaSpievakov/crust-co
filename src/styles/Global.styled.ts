@@ -20,6 +20,7 @@ const Global = createGlobalStyle`
     -webkit-font-smoothing: antialiased;
     color: ${({theme}) => theme.colors.third};
     background-color: ${({theme}) => theme.colors.secondary};
+    transition: all ${({theme}) => theme.duration} ease-in-out;
   }
 
   a,

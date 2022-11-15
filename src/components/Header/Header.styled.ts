@@ -31,7 +31,7 @@ const Logo = styled.section`
   }
 
   h1 {
-    color: #181818;
+    color: ${({theme}) => theme.colors.third};
     font-size: 24px;
     letter-spacing: 1%;
     text-transform: uppercase;

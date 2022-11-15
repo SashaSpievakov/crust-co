@@ -49,7 +49,7 @@ const Popup = styled.div`
   position: absolute;
   right: -5px;
   margin-top: 15px;
-  background: #ffffff;
+  background: ${({theme}) => theme.colors.fourth};
   box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.09);
   border-radius: 10px;
   overflow: hidden;

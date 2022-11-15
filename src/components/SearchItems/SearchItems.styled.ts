@@ -10,9 +10,10 @@ const Input = styled.input`
   height: 40px;
   width: 300px;
   padding: 10px 15px;
+  background-color: ${({theme}) => theme.colors.gray};
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 10px;
-  transition: all .3s ease-in-out;
+  transition: all ${({theme}) => theme.duration} ease-in-out;
 
   &:focus {
     border: 1px solid rgba(0, 0, 0, 0.3);
@@ -30,7 +31,7 @@ const Cross = styled(GrClose)`
   font-size: 20px;
   opacity: .3;
   cursor: pointer;
-  transition: all .2s ease-in-out;
+  transition: all ${({theme}) => theme.duration} ease-in-out;
 
   &:hover {
     opacity: .7;

@@ -8,6 +8,7 @@ declare module "styled-components" {
       secondaryTransparent: string,
       third: string,
       fourth: string,
+      typography: string,
       gray: string,
     },
 
