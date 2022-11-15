@@ -19,7 +19,7 @@ const Title = styled.h2`
     margin-right: 10px;
 
     path {
-      stroke: ${({theme}) => theme.colors.black};
+      stroke: ${({theme}) => theme.colors.third};
       stroke-width: 1.9;
     }
   }

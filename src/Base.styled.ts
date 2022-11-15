@@ -1,11 +1,21 @@
-import styled, { createGlobalStyle, DefaultTheme } from "styled-components";
+import styled, { createGlobalStyle, DefaultTheme, css } from "styled-components";
+
+interface Theme {
+  third: string,
+  fourth: string,
+}
+
+const light: Theme = {
+  third: "#232323",
+  fourth: "#fff",
+}
 
 const theme: DefaultTheme = {
   colors: {
     primary: "#5e3d1d",
     secondary: "#b08c69",
     secondaryTransparent: "rgba(176, 140, 105, 0.05)",
-    black: "#232323",
+    ...light,
     gray: "#f6f6f6",
   },
 
@@ -30,7 +40,7 @@ const Global = createGlobalStyle`
   body {
     -moz-osx-font-smoothing: grayscale;
     -webkit-font-smoothing: antialiased;
-    color: ${({theme}) => theme.colors.black};
+    color: ${({theme}) => theme.colors.third};
     background-color: ${({theme}) => theme.colors.secondary};
   }
 
@@ -43,7 +53,7 @@ const Global = createGlobalStyle`
   h3,
   h4,
   h5 {
-    color: ${({theme}) => theme.colors.black};
+    color: ${({theme}) => theme.colors.third};
   }
 
   h1 {

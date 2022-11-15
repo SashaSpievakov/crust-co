@@ -24,7 +24,7 @@ const Ul = styled.ul`
 const Link = styled.a`
   display: flex;
   gap: 5px;
-  color: ${({theme}) => theme.colors.black};
+  color: ${({theme}) => theme.colors.third};
   align-items: center;
 `
 

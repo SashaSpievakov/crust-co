@@ -22,7 +22,7 @@ const Li = styled.li<LiProps>`
   transition: background-color 0.1s ease-in-out;
 
   ${({chosen}) => chosen && css`
-    background-color: ${({theme}) => theme.colors.black};
+    background-color: ${({theme}) => theme.colors.third};
     color: #fff;
   `}
 

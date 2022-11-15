@@ -44,11 +44,11 @@ const ButtonBlack = styled(Button)`
   margin: 0 auto;
   font-weight: 600;
   font-size: 18px;
-  background-color: ${({theme}) => theme.colors.black};
+  background-color: ${({theme}) => theme.colors.third};
 
   &:hover,
   &:active {
-    background-color: lighten(${({theme}) => theme.colors.black}, 10);
+    background-color: lighten(${({theme}) => theme.colors.third}, 10);
   }
 `
 
