@@ -2,7 +2,7 @@
   "name": "pizza-app",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://github.com/AlexandrSpevakov/pizza-app",
+  "homepage": "https://alexandrspevakov.github.io/pizza-app",
   "dependencies": {
     "@reduxjs/toolkit": "^1.9.0",
     "@testing-library/jest-dom": "^5.16.5",
