@@ -47,6 +47,10 @@ const Right = styled.div`
   display: flex;
   align-items: center;
   column-gap: 30px;
+
+  @media screen and (max-width: 550px) {
+    flex-direction: row-reverse;
+  }
 `
 
 const Icon = styled.i`
