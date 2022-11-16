@@ -22,7 +22,7 @@ const darkTheme: DefaultTheme = {
     third: "#d5d5d5",
     fourth: "#232323",
     black: "#181818",
-    gray: "#4d4d4d",
+    gray: "#5b5c5c",
   },
 
   duration: "0.2s",
