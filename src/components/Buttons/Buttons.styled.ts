@@ -18,7 +18,7 @@ const Button = styled.button`
 
   &,
   span {
-    color: #fff;
+    color: ${({theme}) => theme.colors.fourth};
   }
 
   i,
@@ -48,7 +48,7 @@ const ButtonBlack = styled(Button)`
 
   &:hover,
   &:active {
-    background-color: lighten(${({theme}) => theme.colors.third}, 10);
+    background-color: ${({theme}) => theme.colors.gray};
   }
 `
 
