@@ -11,6 +11,7 @@ const Image = styled.img`
   max-width: 500px;
   margin-top: 60px;
   margin-bottom: 40px;
+  border-radius: 20px;
 
   @media screen and (max-width: 600px) {
     width: 340px;

@@ -32,17 +32,18 @@ const Header: React.FC = () => {
             </div>
           </Logo>
         </Link>
-        {location.pathname !== "/cart" && (
-          <Right>
-            <Icon as={isLight ? BsFillMoonFill : BsFillSunFill} onClick={changeThemes} />
+
+        <Right>
+          <Icon as={isLight ? BsFillMoonFill : BsFillSunFill} onClick={changeThemes} />
+          {location.pathname !== "/cart" && (
             <ButtonCart to="/cart" as={Link}>
               <span>{totalPrice} $</span>
               <Delimiter/>
               <BsCart3 />
               <span>{itemsCount}</span>
-            </ButtonCart>
-          </Right>
-        )}
+          </ButtonCart>
+          )}
+        </Right>
       </Wrapper>
     </Main>
   )
