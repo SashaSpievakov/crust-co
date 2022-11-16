@@ -17,6 +17,7 @@ const ImgWrapper = styled.div`
 
   img {
     height: 80px;
+    border-radius: 20px;
   }
 `
 

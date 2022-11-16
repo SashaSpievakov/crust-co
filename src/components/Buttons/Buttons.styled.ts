@@ -77,8 +77,7 @@ const ButtonPay = styled(Button)`
 `
 
 const ButtonOutline = styled(Button)`
-  background-color: #fff;
-  border-color: ${({theme}) => theme.colors.black};
+  background-color: ${({theme}) => theme.colors.gray};
 
   &,
   span {
@@ -122,9 +121,8 @@ const ButtonCircle = styled(ButtonOutline)<CircleProps>`
   border-width: 2px;
 
   &:disabled {
-    border-color: #dddddd;
     cursor: auto;
-    background-color: #fff;
+    background-color: ${({theme}) => theme.colors.gray};
 
     svg path {
       fill: #dddddd;
@@ -140,8 +138,6 @@ const ButtonCircle = styled(ButtonOutline)<CircleProps>`
   `}
 
   ${({remove}) => remove && css`
-  border-color: #ddddde;
-
   svg {
     width: 11.5px;
     height: 11.5px;
@@ -185,13 +181,6 @@ const ButtonAdd = styled(ButtonOutline)`
     top: -1px;
     left: 3px;
   }
-
-  &:hover {
-    i {
-      background-color: #fff;
-      color: $orange;
-    }
-  }
 `
 
 const ButtonBack = styled(ButtonAdd)`
@@ -199,7 +188,6 @@ const ButtonBack = styled(ButtonAdd)`
   align-items: center;
   justify-content: center;
   width: 210px;
-  border-color: #dddddd;
 
   span {
     color: #c3c3c3;
@@ -211,7 +199,7 @@ const ButtonBack = styled(ButtonAdd)`
     margin-right: 12px;
 
     path {
-      fill: #fff;
+      fill: ${({theme}) => theme.colors.gray};
       stroke-width: 2;
     }
   }
