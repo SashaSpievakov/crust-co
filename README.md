@@ -19,6 +19,7 @@
 ### Additional
   * Axios
   * React Icons
+  * MockAPI
   
 ### Features ✨
   * Responsive Design
