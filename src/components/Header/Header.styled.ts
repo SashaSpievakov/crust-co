@@ -1,6 +1,10 @@
-import styled from "styled-components";
+import styled, { css } from "styled-components";
 
 import { Container } from "../../styles/Base.styled";
+
+interface WrapperProps {
+  isCart: boolean
+}
 
 const Main = styled.header`
   border-bottom: 1px solid ${({theme}) => theme.colors.gray};
@@ -11,16 +15,18 @@ const Main = styled.header`
   }
 `
 
-const Wrapper = styled(Container)`
+const Wrapper = styled(Container)<WrapperProps>`
   display: flex;
   align-items: center;
   justify-content: space-between;
 
-  @media screen and (max-width: 550px) {
-    flex-direction: column;
-    align-items: start;
-    row-gap: 20px;
-  }
+  ${({isCart}) => !isCart && css`
+    @media screen and (max-width: 550px) {
+      flex-direction: column;
+      align-items: start;
+      row-gap: 20px;
+    }
+  `}
 `
 
 const Logo = styled.section`

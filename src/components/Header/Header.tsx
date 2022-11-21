@@ -22,7 +22,7 @@ const Header: React.FC = () => {
 
   return (
     <Main>
-      <Wrapper>
+      <Wrapper isCart={location.pathname === "/cart"}>
         <Link to="/">
           <Logo>
             <img width="38" src={mainLogo} alt="Pizza logo" />
