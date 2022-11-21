@@ -4,6 +4,11 @@ const Top = styled.section`
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  @media screen and (max-width: 400px) {
+    flex-direction: column;
+    gap: 15px;
+  }
 `
 
 const Title = styled.h2`
@@ -78,6 +83,12 @@ const Buttons = styled.div`
   display: flex;
   justify-content: space-between;
   margin-top: 40px;
+
+  @media screen and (max-width: 600px) {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
 `
 
 export {Top, Title, Clear, Bottom, Details, Buttons}
