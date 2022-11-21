@@ -18,7 +18,7 @@ const Main = styled.main`
   padding: 40px 0;
 
   @media screen and (max-width: 550px) {
-    padding: 25px 0;
+    padding: 25px 0 0;
   }
 `
 
