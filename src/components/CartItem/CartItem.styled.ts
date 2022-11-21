@@ -6,6 +6,12 @@ const Article = styled.article`
   border-top: 1px solid ${({theme}) => theme.colors.gray};
   padding-top: 30px;
   margin-top: 30px;
+
+  @media screen and (max-width: 800px) {
+    flex-direction: column;
+    row-gap: 10px;
+    align-items: center;
+  }
 `
 
 const ImgWrapper = styled.div`
@@ -18,6 +24,15 @@ const ImgWrapper = styled.div`
   img {
     height: 80px;
     border-radius: 20px;
+  }
+
+  @media screen and (max-width: 800px) {
+    width: auto;
+    margin-right: 0;
+
+    img {
+      height: 200px;
+    }
   }
 `
 
@@ -38,6 +53,11 @@ const InfoWrapper = styled.div`
     font-size: 18px;
     color: #8d8d8d;
   }
+
+  @media screen and (max-width: 800px) {
+    width: auto;
+    text-align: center;
+  }
 `
 
 const Counter = styled.div`
@@ -48,6 +68,11 @@ const Counter = styled.div`
 
   b {
     font-size: 22px;
+  }
+
+  @media screen and (max-width: 800px) {
+    width: auto;
+    gap: 7px;
   }
 `
 
@@ -69,6 +94,10 @@ const Remove = styled.div`
   align-items: center;
   justify-content: flex-end;
   width: 4%;
+
+  @media screen and (max-width: 800px) {
+    width: auto;
+  }
 `
 
 export {Article, ImgWrapper, InfoWrapper, Counter, Price, Remove}
