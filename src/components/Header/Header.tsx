@@ -1,6 +1,6 @@
 import React from "react";
 import { Link, useLocation } from "react-router-dom";
-import { BsCart3 } from "react-icons/bs";
+import { BsCart3, BsFillSunFill, BsFillMoonFill } from "react-icons/bs";
 import { useSelector, useDispatch } from "react-redux";
 
 import mainLogo from "../../assets/img/main-logo.svg";
@@ -8,7 +8,6 @@ import { selectCart } from "../../redux/slices/cartSlice";
 import { setTheme, selectIsLight } from "../../redux/slices/themeSlice";
 import { Main, Wrapper, Logo, Right, Icon, Delimiter } from "./Header.styled";
 import { ButtonCart } from "../Buttons/Buttons.styled";
-import { BsFillSunFill, BsFillMoonFill } from "react-icons/bs";
 
 const Header: React.FC = () => {
   const {itemsCount, totalPrice} = useSelector(selectCart);
