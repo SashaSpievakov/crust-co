@@ -76,6 +76,10 @@ const Counter = styled.div`
   }
 `
 
+const CountIcon = styled.i`
+  stroke-width: 1;
+`
+
 const Price = styled.div`
   display: flex;
   align-items: center;
@@ -100,4 +104,4 @@ const Remove = styled.div`
   }
 `
 
-export {Article, ImgWrapper, InfoWrapper, Counter, Price, Remove}
+export {Article, ImgWrapper, InfoWrapper, Counter, CountIcon, Price, Remove}

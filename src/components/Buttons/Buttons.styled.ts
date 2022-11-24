@@ -1,7 +1,6 @@
 import styled, {css} from "styled-components";
 
 interface CircleProps {
-  minus?: boolean
   remove?: boolean
 }
 
@@ -105,6 +104,7 @@ const ButtonOutline = styled(Button)`
 
 const ButtonCircle = styled(ButtonOutline)<CircleProps>`
   display: flex;
+  font-size: 11px;
   align-items: center;
   justify-content: center;
   width: 32px;
@@ -119,34 +119,23 @@ const ButtonCircle = styled(ButtonOutline)<CircleProps>`
 
     svg path {
       fill: #dddddd;
+      stroke: #dddddd;
     }
   }
-
-  ${({minus}) => minus && css`
-    svg {
-      path:first-of-type {
-        display: none;
-      }
-    }
-  `}
 
   ${({remove}) => remove && css`
-  svg {
-    width: 11.5px;
-    height: 11.5px;
-    position: relative;
-    transform: rotate(45deg);
+    svg {
+      transform: rotate(45deg);
 
-    path {
-      fill: #d0d0d0;
+      path {
+        fill: #dddddd;
+        stroke: #dddddd;
+      }
     }
-  }
 
-  &:hover,
-  &:active {
-    border-color: #2a2a2a;
-    background-color: #2a2a2a;
-  }
+    &:hover {
+      background-color: ${({theme}) => theme.colors.black};
+    }
   `}
 `
 
