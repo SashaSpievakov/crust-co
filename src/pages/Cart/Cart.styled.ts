@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { BsCart3, BsTrash } from "react-icons/bs";
 
 const Top = styled.section`
   display: flex;
@@ -15,20 +16,13 @@ const Title = styled.h2`
   display: flex;
   align-items: center;
   font-size: 32px;
-
-  svg {
-    position: relative;
-    top: -2px;
-    width: 30px;
-    height: 30px;
-    margin-right: 10px;
-
-    path {
-      stroke: ${({theme}) => theme.colors.third};
-      stroke-width: 1.9;
-    }
-  }
 `
+
+const CartIcon = styled(BsCart3)`
+  stroke-width: .5;
+  margin-right: 10px;
+`
+
 
 const Clear = styled.div`
   display: flex;
@@ -38,26 +32,21 @@ const Clear = styled.div`
   span {
     display: inline-block;
     margin-left: 7px;
-    color: #b6b6b6;
     font-size: 18px;
   }
 
-  span,
-  svg,
-  path {
-    transition: all ${({theme}) => theme.duration} ease-in-out;
-  }
-
   &:hover {
-    svg {
-      path {
-        stroke: #373737;
-      }
-    }
+    color: ${({theme}) => theme.colors.secondary};
+
     span {
-      color: #373737;
+    color: ${({theme}) => theme.colors.secondary};
     }
   }
+`
+
+const Trash = styled(BsTrash)`
+  font-size: 18px;
+  stroke-width: .3;
 `
 
 const Bottom = styled.section`
@@ -91,4 +80,4 @@ const Buttons = styled.div`
   }
 `
 
-export {Top, Title, Clear, Bottom, Details, Buttons}
+export {Top, Title, CartIcon, Clear, Trash, Bottom, Details, Buttons}
