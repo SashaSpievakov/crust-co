@@ -2,7 +2,7 @@ import React, { useRef } from "react";
 import { useSelector, useDispatch } from "react-redux";
 
 import { selectSearchValue, setSearchValue } from "../../redux/slices/searchSlice";
-import {Wrapper, Input, Cross} from "./SearchItems.styled";
+import {Wrapper, SearchIcon, Input, Cross} from "./SearchItems.styled";
 
 const SearchItems: React.FC = () => {
   const searchValue = useSelector(selectSearchValue);
@@ -18,6 +18,7 @@ const SearchItems: React.FC = () => {
   return (
     // Add icon inside
     <Wrapper>
+      <SearchIcon />
       <Input
         ref={inputRef}
         placeholder="Search..."
