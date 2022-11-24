@@ -12,7 +12,6 @@ const Button = styled.button`
   min-width: 100px;
   text-align: center;
   cursor: pointer;
-  transition: background-color ${({theme}) => theme.duration} ease-in-out, border-color ${({theme}) => theme.duration} ease-in-out;
   border: 1px solid transparent;
 
   &,

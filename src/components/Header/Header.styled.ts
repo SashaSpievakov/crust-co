@@ -63,7 +63,6 @@ const Icon = styled.i`
   font-size: 20px;
   color: ${({theme}) => theme.colors.third};
   cursor: pointer;
-  transition: all ${({theme}) => theme.duration} ease-in-out;
 `
 
 const Delimiter = styled.div`
