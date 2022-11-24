@@ -29,6 +29,10 @@ const Link = styled.a`
   span {
     color: ${({theme}) => theme.colors.third};
   }
+
+  &:hover svg {
+    fill: ${({theme}) => theme.colors.secondary};
+  }
 `
 
 const Icon = styled.a`

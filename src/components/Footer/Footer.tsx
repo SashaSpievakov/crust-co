@@ -23,7 +23,10 @@ const Footer: React.FC = () => {
         </li>
 
         <li>
-          <Link>
+          <Link
+            href="https://www.google.com/maps/place/88+Alice+St,+Guelph,+ON+N1E+2Z8/@43.5471712,-80.2392008,17z/data=!3m1!4b1!4m5!3m4!1s0x882b9ae0d0802679:0x74ca5ec44983415f!8m2!3d43.5471673!4d-80.2370121"
+            target="_blank"
+          >
             <Icon as={MdLocationOn} />
             <span>88 Alice st</span>
           </Link>
