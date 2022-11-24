@@ -21,13 +21,6 @@ const Button = styled.button`
     color: ${({theme}) => theme.colors.fourth};
   }
 
-  i,
-  span,
-  path,
-  svg {
-    transition: all ${({theme}) => theme.duration} ease-in-out;
-  }
-
   &:hover {
     background-color: darken(${({theme}) => theme.colors.primary}, 8%);
   }
