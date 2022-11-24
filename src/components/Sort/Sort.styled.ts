@@ -1,12 +1,13 @@
 import styled, { css } from "styled-components";
-import { MdArrowDropDown, MdArrowDropUp} from 'react-icons/md';
+import { BsCaretDownFill, BsCaretUpFill} from 'react-icons/bs';
 
 interface LiProps {
   chosen: boolean
 }
 
 const mixinArrow = css`
-  font-size: 30px;
+  font-size: 15px;
+  margin-right: 5px;
 `
 
 const mixinBackground = css`
@@ -37,11 +38,11 @@ const Label = styled.div`
   }
 `
 
-const ArrowUp = styled(MdArrowDropUp)`
+const ArrowUp = styled(BsCaretUpFill)`
   ${mixinArrow}
 `
 
-const ArrowDown = styled(MdArrowDropDown)`
+const ArrowDown = styled(BsCaretDownFill)`
   ${mixinArrow}
 `
 
@@ -59,20 +60,6 @@ const Popup = styled.div`
 
   ul {
     overflow: hidden;
-
-    /* li {
-      padding: 12px 20px;
-      cursor: pointer;
-
-      &:hover {
-        ${mixinBackground}
-      } */
-
-      /* &.active {
-        font-weight: bold;
-        color: $orange;
-      } */
-    /* } */
   }
 `
 
