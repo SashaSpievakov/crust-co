@@ -21,14 +21,13 @@ const Input = styled.input`
   background-color: ${({theme}) => theme.colors.gray};
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 10px;
-  transition: all ${({theme}) => theme.duration} ease-in-out;
 
   &:focus {
     border: 1px solid rgba(0, 0, 0, 0.3);
   }
 
   &::placeholder {
-    color: ${({theme}) => theme.colors.black};
+    color: ${({theme}) => theme.colors.third};
     opacity: .6;
   }
 
@@ -44,7 +43,6 @@ const Cross = styled(BsXLg)`
   font-size: 20px;
   opacity: .3;
   cursor: pointer;
-  transition: all ${({theme}) => theme.duration} ease-in-out;
 
   &:hover {
     opacity: .7;
