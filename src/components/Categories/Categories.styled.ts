@@ -20,7 +20,6 @@ const Li = styled.li<LiProps>`
   margin-right: 10px;
   font-weight: bold;
   cursor: pointer;
-  transition: background-color 0.1s ease-in-out;
 
   ${({chosen}) => chosen && css`
     background-color: ${({theme}) => theme.colors.third};
