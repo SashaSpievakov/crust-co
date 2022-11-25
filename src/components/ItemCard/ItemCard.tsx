@@ -12,14 +12,13 @@ interface ItemCardProps {
   price: number,
   sizes: number[],
   types: number[],
-  count: number,
-  imageUrl: string
+  count: number
 }
 
 const typeNames: string[] = ['traditional', 'thin'];
 const sizeNames: number[] = [12, 14, 16];
 
-const ItemCard: React.FC<ItemCardProps> = ({ id, name, imageUrl, price, sizes, types, count }) => {
+const ItemCard: React.FC<ItemCardProps> = ({ id, name, price, sizes, types, count }) => {
   const dispatch = useDispatch();
   const cartItem = useSelector(selectCartItemById(id));
   const [activeSize, setActiveSize] = useState(0);
@@ -33,7 +32,6 @@ const ItemCard: React.FC<ItemCardProps> = ({ id, name, imageUrl, price, sizes, t
       id,
       name,
       price,
-      imageUrl,
       size: sizeNames[activeSize],
       type: typeNames[activeType],
       count: 0,
@@ -54,7 +52,7 @@ const ItemCard: React.FC<ItemCardProps> = ({ id, name, imageUrl, price, sizes, t
     <Block>
       <Link to={`/item/${id}`}>
         <Image
-          src={`assets/img/pizza${id}.png`}
+          src={`./assets/img/pizza${id}.png`}
           alt="Pizza"
         />
         <Title>{name}</Title>

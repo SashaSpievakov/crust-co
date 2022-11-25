@@ -13,10 +13,9 @@ interface CartItemProps {
   size: number,
   type: string,
   count: number,
-  imageUrl: string
 }
 
-const CartItem: React.FC<CartItemProps> = ({ id, name, price, size, type, count, imageUrl}) => {
+const CartItem: React.FC<CartItemProps> = ({ id, name, price, size, type, count }) => {
   const dispatch = useDispatch();
 
   const onClickAdd = () => {
@@ -24,7 +23,6 @@ const CartItem: React.FC<CartItemProps> = ({ id, name, price, size, type, count,
       id,
       name,
       price,
-      imageUrl,
       size,
       type,
       count,
@@ -49,7 +47,7 @@ const CartItem: React.FC<CartItemProps> = ({ id, name, price, size, type, count,
   return (
     <Article>
       <ImgWrapper>
-        <img src={imageUrl} alt="Pizza" />
+        <img src={`./assets/img/pizza${id}.png`} alt="Pizza" />
       </ImgWrapper>
       <InfoWrapper>
         <h3>{name}</h3>

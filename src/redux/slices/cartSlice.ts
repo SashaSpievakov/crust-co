@@ -5,7 +5,6 @@ export interface ICartItem {
   id: string,
   name: string,
   price: number,
-  imageUrl: string,
   size: number,
   type: string,
   count: number,

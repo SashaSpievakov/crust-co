@@ -15,7 +15,6 @@ interface Item {
   size: number,
   type: string,
   count: number,
-  imageUrl: string
 }
 
 const Cart: React.FC = () => {
