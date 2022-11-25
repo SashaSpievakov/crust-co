@@ -7,7 +7,7 @@ const Article = styled.article`
   padding-top: 30px;
   margin-top: 30px;
 
-  @media screen and (max-width: 800px) {
+  @media screen and (max-width: 850px) {
     flex-direction: column;
     row-gap: 10px;
     align-items: center;
@@ -26,7 +26,7 @@ const ImgWrapper = styled.div`
     border-radius: 20px;
   }
 
-  @media screen and (max-width: 800px) {
+  @media screen and (max-width: 850px) {
     width: auto;
     margin-right: 0;
 
@@ -54,7 +54,7 @@ const InfoWrapper = styled.div`
     color: #8d8d8d;
   }
 
-  @media screen and (max-width: 800px) {
+  @media screen and (max-width: 850px) {
     width: auto;
     text-align: center;
   }
@@ -70,7 +70,7 @@ const Counter = styled.div`
     font-size: 22px;
   }
 
-  @media screen and (max-width: 800px) {
+  @media screen and (max-width: 850px) {
     width: auto;
     gap: 7px;
   }
@@ -99,7 +99,7 @@ const Remove = styled.div`
   justify-content: flex-end;
   width: 4%;
 
-  @media screen and (max-width: 800px) {
+  @media screen and (max-width: 850px) {
     width: auto;
   }
 `
