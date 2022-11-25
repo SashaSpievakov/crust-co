@@ -54,7 +54,7 @@ const ItemCard: React.FC<ItemCardProps> = ({ id, name, imageUrl, price, sizes, t
     <Block>
       <Link to={`/item/${id}`}>
         <Image
-          src={imageUrl}
+          src={`assets/img/pizza${id}.png`}
           alt="Pizza"
         />
         <Title>{name}</Title>
