@@ -28,7 +28,8 @@ const Loader = styled(ContentLoader)`
 `
 
 const Image = styled.img`
-  width: 260px;
+  width: 250px;
+  margin-bottom: 15px;
   border-radius: 20px;
 
   @media screen and (max-width: 400px) {
