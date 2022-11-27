@@ -53,18 +53,9 @@ const Bottom = styled.section`
 `;
 
 const Details = styled.div`
+  font-size: 22px;
   display: flex;
   justify-content: space-between;
-
-  span {
-    font-size: 22px;
-
-    &:last-of-type {
-      b {
-        color: ${({ theme }) => theme.colors.primary};
-      }
-    }
-  }
 `;
 
 const Buttons = styled.div`
