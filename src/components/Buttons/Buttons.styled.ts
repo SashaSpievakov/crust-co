@@ -39,7 +39,7 @@ const ButtonBlack = styled(Button)`
 
   &:hover,
   &:active {
-    background-color: ${({ theme }) => theme.colors.gray};
+    background-color: ${({ theme }) => theme.colors.third}99;
   }
 `;
 
