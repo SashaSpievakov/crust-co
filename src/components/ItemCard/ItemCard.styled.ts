@@ -46,27 +46,24 @@ const Title = styled.h4`
 
 const Selector = styled.div`
   display: flex;
+  flex-direction: column;
+  gap: 6px;
+  padding: 6px;
   background-color: ${({ theme }) => theme.colors.gray};
   border-radius: 10px;
-  flex-direction: column;
-  padding: 6px;
 
   ul {
     display: flex;
     flex: 1;
-
-    &:first-of-type {
-      margin-bottom: 6px;
-    }
   }
 `;
 
 const Li = styled.li<LiProps>`
-  padding: 8px;
   flex: 1;
-  cursor: pointer;
+  padding: 8px;
   font-weight: 600;
   font-size: 14px;
+  cursor: pointer;
 
   ${({ chosen }) =>
     chosen &&
