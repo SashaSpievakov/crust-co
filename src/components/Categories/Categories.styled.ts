@@ -4,6 +4,11 @@ interface LiProps {
   chosen: boolean;
 }
 
+const mixinLiHoverColors = css`
+  color: ${({ theme }) => theme.colors.fourth};
+  background-color: ${({ theme }) => theme.colors.third};
+`;
+
 const Ul = styled.ul`
   display: flex;
 
@@ -21,11 +26,19 @@ const Li = styled.li<LiProps>`
   font-weight: bold;
   cursor: pointer;
 
+  &:hover {
+    ${mixinLiHoverColors}
+    opacity: 0.5;
+  }
+
   ${({ chosen }) =>
     chosen &&
     css`
-      background-color: ${({ theme }) => theme.colors.third};
-      color: ${({ theme }) => theme.colors.fourth};
+      ${mixinLiHoverColors}
+
+      &:hover {
+        opacity: 1;
+      }
     `}
 
   @media screen and (max-width: 650px) {
