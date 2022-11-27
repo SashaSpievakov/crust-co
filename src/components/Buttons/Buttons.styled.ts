@@ -16,15 +16,15 @@ const Button = styled.button`
 
   &,
   span {
-    color: ${({ theme }) => theme.colors.fourth};
+    color: #fff;
   }
 
   &:hover {
-    background-color: darken(${({ theme }) => theme.colors.primary}, 8%);
+    background-color: ${({ theme }) => theme.colors.primary};
+    opacity: 0.8;
   }
 
   &:active {
-    background-color: darken(${({ theme }) => theme.colors.primary}, 12%);
     transform: translateY(1px);
   }
 `;
@@ -37,8 +37,11 @@ const ButtonBlack = styled(Button)`
   font-size: 18px;
   background-color: ${({ theme }) => theme.colors.third};
 
-  &:hover,
-  &:active {
+  span {
+    color: ${({ theme }) => theme.colors.fourth};
+  }
+
+  &:hover {
     background-color: ${({ theme }) => theme.colors.third}99;
   }
 `;
@@ -68,36 +71,13 @@ const ButtonPay = styled(Button)`
 `;
 
 const ButtonOutline = styled(Button)`
+  color: ${({ theme }) => theme.colors.black};
   background-color: ${({ theme }) => theme.colors.gray};
-
-  &,
-  span {
-    color: ${({ theme }) => theme.colors.black};
-  }
-
-  svg {
-    path {
-      fill: ${({ theme }) => theme.colors.black};
-    }
-  }
 
   &:hover {
     background-color: ${({ theme }) => theme.colors.secondary};
-
-    &,
-    span {
-      color: #fff;
-    }
-
-    svg {
-      path {
-        fill: #fff;
-      }
-    }
-  }
-
-  &:active {
-    background-color: darken(${({ theme }) => theme.colors.primary}, 8%);
+    color: #fff;
+    opacity: 1;
   }
 `;
 
@@ -111,6 +91,11 @@ const ButtonCircle = styled(ButtonOutline)<CircleProps>`
   min-width: 32px;
   padding: 0;
   border-width: 2px;
+
+  svg path {
+    fill: ${({ theme }) => theme.colors.third};
+    stroke: ${({ theme }) => theme.colors.third};
+  }
 
   &:disabled {
     cursor: auto;
@@ -127,15 +112,15 @@ const ButtonCircle = styled(ButtonOutline)<CircleProps>`
     css`
       svg {
         transform: rotate(45deg);
-
-        path {
-          fill: #dddddd;
-          stroke: #dddddd;
-        }
       }
 
       &:hover {
         background-color: ${({ theme }) => theme.colors.black};
+
+        svg path {
+          fill: #fff;
+          stroke: #fff;
+        }
       }
     `}
 `;
@@ -143,61 +128,29 @@ const ButtonCircle = styled(ButtonOutline)<CircleProps>`
 const ButtonAdd = styled(ButtonOutline)`
   display: flex;
   align-items: center;
+  color: ${({ theme }) => theme.colors.third};
 
   span {
     font-weight: 600;
     font-size: 18px;
+    color: ${({ theme }) => theme.colors.third};
   }
 
-  i {
-    display: inline-block;
-    border-radius: 30px;
-    background-color: ${({ theme }) => theme.colors.primary};
-    color: #fff;
-    font-weight: 600;
-    width: 22px;
-    height: 22px;
-    font-style: normal;
-    font-size: 13px;
-    line-height: 22px;
-    position: relative;
-    top: -1px;
-    left: 3px;
+  &:hover {
+    color: ${({ theme }) => theme.colors.third};
   }
 `;
 
 const ButtonBack = styled(ButtonAdd)`
   display: flex;
+  width: 210px;
+  color: ${({ theme }) => theme.colors.third};
   align-items: center;
   justify-content: center;
-  width: 210px;
 
   span {
-    color: #c3c3c3;
     font-weight: 500;
     font-weight: 600;
-  }
-
-  svg {
-    margin-right: 12px;
-
-    path {
-      fill: ${({ theme }) => theme.colors.gray};
-      stroke-width: 2;
-    }
-  }
-
-  &:hover {
-    background-color: #111111;
-    border-color: #111111;
-
-    span {
-      color: ${({ theme }) => theme.colors.gray};
-    }
-
-    svg > path {
-      fill: #111111;
-    }
   }
 `;
 

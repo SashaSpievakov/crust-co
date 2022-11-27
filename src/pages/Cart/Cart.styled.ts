@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { BsCart3, BsTrash } from "react-icons/bs";
+import { BsCart3, BsTrash, BsChevronLeft } from "react-icons/bs";
 
 const Top = styled.section`
   display: flex;
@@ -70,4 +70,19 @@ const Buttons = styled.div`
   }
 `;
 
-export { Top, Title, CartIcon, Clear, Trash, Bottom, Details, Buttons };
+const ChevronLeft = styled(BsChevronLeft)`
+  stroke-width: 1.3;
+  margin-right: 12px;
+`;
+
+export {
+  Top,
+  Title,
+  CartIcon,
+  Clear,
+  Trash,
+  Bottom,
+  Details,
+  Buttons,
+  ChevronLeft,
+};

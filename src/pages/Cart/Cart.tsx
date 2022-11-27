@@ -15,6 +15,7 @@ import {
   Bottom,
   Details,
   Buttons,
+  ChevronLeft,
 } from "./Cart.styled";
 
 interface Item {
@@ -66,7 +67,7 @@ function Cart() {
             </Details>
             <Buttons>
               <ButtonBack to="/" as={Link}>
-                <svg
+                {/* <svg
                   width="8"
                   height="14"
                   viewBox="0 0 8 14"
@@ -80,7 +81,8 @@ function Cart() {
                     strokeLinecap="round"
                     strokeLinejoin="round"
                   />
-                </svg>
+                </svg> */}
+                <ChevronLeft />
                 <span>Go Back</span>
               </ButtonBack>
               <ButtonPay>
