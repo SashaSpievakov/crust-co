@@ -18,9 +18,9 @@ const Global = createGlobalStyle`
   body {
     -moz-osx-font-smoothing: grayscale;
     -webkit-font-smoothing: antialiased;
-    color: ${({theme}) => theme.colors.third};
-    background-color: ${({theme}) => theme.colors.secondary};
-    transition: all ${({theme}) => theme.duration} ease-in-out;
+    color: ${({ theme }) => theme.colors.third};
+    background-color: ${({ theme }) => theme.colors.secondary};
+    transition: all ${({ theme }) => theme.duration} ease-in-out;
   }
 
   a,
@@ -32,7 +32,7 @@ const Global = createGlobalStyle`
   h3,
   h4,
   h5 {
-    color: ${({theme}) => theme.colors.third};
+    color: ${({ theme }) => theme.colors.third};
   }
 
   h1 {
@@ -48,6 +48,6 @@ const Global = createGlobalStyle`
   a {
     text-decoration: none;
   }
-`
+`;
 
 export default Global;

@@ -7,8 +7,8 @@ const Main = styled.footer`
   padding: 40px 0;
   flex-direction: column;
   row-gap: 50px;
-  border-top: 1px solid ${({theme}) => theme.colors.gray};
-`
+  border-top: 1px solid ${({ theme }) => theme.colors.gray};
+`;
 
 const Ul = styled.ul`
   display: flex;
@@ -19,7 +19,7 @@ const Ul = styled.ul`
     flex-direction: column;
     row-gap: 20px;
   }
-`
+`;
 
 const Link = styled.a`
   display: flex;
@@ -27,22 +27,22 @@ const Link = styled.a`
   align-items: center;
 
   span {
-    color: ${({theme}) => theme.colors.third};
+    color: ${({ theme }) => theme.colors.third};
   }
 
   &:hover svg {
-    fill: ${({theme}) => theme.colors.secondary};
+    fill: ${({ theme }) => theme.colors.secondary};
   }
-`
+`;
 
 const Icon = styled.a`
   font-size: 30px;
-  color: ${({theme}) => theme.colors.primary};
-`
+  color: ${({ theme }) => theme.colors.primary};
+`;
 
 const Copyright = styled.p`
   text-align: center;
-  color: ${({theme}) => theme.colors.third};
-`
+  color: ${({ theme }) => theme.colors.third};
+`;
 
-export { Main, Ul, Icon, Copyright, Link }
+export { Main, Ul, Icon, Copyright, Link };

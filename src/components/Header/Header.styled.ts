@@ -3,31 +3,33 @@ import styled, { css } from "styled-components";
 import { Container } from "../../styles/Base.styled";
 
 interface WrapperProps {
-  isCart: boolean
+  isCart: boolean;
 }
 
 const Main = styled.header`
-  border-bottom: 1px solid ${({theme}) => theme.colors.gray};
+  border-bottom: 1px solid ${({ theme }) => theme.colors.gray};
   padding: 40px 0;
 
   @media screen and (max-width: 550px) {
     padding: 30px 0;
   }
-`
+`;
 
 const Wrapper = styled(Container)<WrapperProps>`
   display: flex;
   align-items: center;
   justify-content: space-between;
 
-  ${({isCart}) => !isCart && css`
-    @media screen and (max-width: 550px) {
-      flex-direction: column;
-      align-items: start;
-      row-gap: 20px;
-    }
-  `}
-`
+  ${({ isCart }) =>
+    !isCart &&
+    css`
+      @media screen and (max-width: 550px) {
+        flex-direction: column;
+        align-items: start;
+        row-gap: 20px;
+      }
+    `}
+`;
 
 const Logo = styled.section`
   display: flex;
@@ -37,7 +39,7 @@ const Logo = styled.section`
   }
 
   h1 {
-    color: ${({theme}) => theme.colors.third};
+    color: ${({ theme }) => theme.colors.third};
     font-size: 24px;
     letter-spacing: 1%;
     text-transform: uppercase;
@@ -47,7 +49,7 @@ const Logo = styled.section`
   p {
     color: #7b7b7b;
   }
-`
+`;
 
 const Right = styled.div`
   display: flex;
@@ -57,13 +59,13 @@ const Right = styled.div`
   @media screen and (max-width: 550px) {
     flex-direction: row-reverse;
   }
-`
+`;
 
 const Icon = styled.i`
   font-size: 20px;
-  color: ${({theme}) => theme.colors.third};
+  color: ${({ theme }) => theme.colors.third};
   cursor: pointer;
-`
+`;
 
 const Delimiter = styled.div`
   width: 1px;
@@ -71,6 +73,6 @@ const Delimiter = styled.div`
   background-color: rgba(255, 255, 255, 0.25);
   margin-left: 14px;
   margin-right: 14px;
-`
+`;
 
-export {Main, Wrapper, Logo, Right, Icon, Delimiter};
+export { Main, Wrapper, Logo, Right, Icon, Delimiter };

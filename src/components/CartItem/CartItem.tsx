@@ -1,21 +1,33 @@
-import React from "react";
 import { useDispatch } from "react-redux";
 import { BsDashLg, BsPlusLg } from "react-icons/bs";
 
-import { addItem, ICartItem, removeItem, removeItems } from "../../redux/slices/cartSlice";
+import {
+  addItem,
+  ICartItem,
+  removeItem,
+  removeItems,
+} from "../../redux/slices/cartSlice";
 import { ButtonCircle } from "../Buttons/Buttons.styled";
-import { Article, ImgWrapper, InfoWrapper, Counter, CountIcon, Price, Remove } from "./CartItem.styled";
+import {
+  Article,
+  ImgWrapper,
+  InfoWrapper,
+  Counter,
+  CountIcon,
+  Price,
+  Remove,
+} from "./CartItem.styled";
 
 interface CartItemProps {
-  id: string,
-  name: string,
-  price: number,
-  size: number,
-  type: string,
-  count: number,
+  id: string;
+  name: string;
+  price: number;
+  size: number;
+  type: string;
+  count: number;
 }
 
-const CartItem: React.FC<CartItemProps> = ({ id, name, price, size, type, count }) => {
+function CartItem({ id, name, price, size, type, count }: CartItemProps) {
   const dispatch = useDispatch();
 
   const onClickAdd = () => {
@@ -28,21 +40,25 @@ const CartItem: React.FC<CartItemProps> = ({ id, name, price, size, type, count 
       count,
     };
     dispatch(addItem(item));
-  }
+  };
 
   const onClickRemove = () => {
     const item = {
-      id, price, count
+      id,
+      price,
+      count,
     };
     dispatch(removeItem(item));
-  }
+  };
 
   const onClickDelete = () => {
     const item = {
-      id, price, count
+      id,
+      price,
+      count,
     };
-    dispatch(removeItems(item))
-  }
+    dispatch(removeItems(item));
+  };
 
   return (
     <Article>
@@ -51,7 +67,9 @@ const CartItem: React.FC<CartItemProps> = ({ id, name, price, size, type, count 
       </ImgWrapper>
       <InfoWrapper>
         <h3>{name}</h3>
-        <p>{type} dough, {size} inch</p>
+        <p>
+          {type} dough, {size} inch
+        </p>
       </InfoWrapper>
       <Counter>
         <ButtonCircle disabled={count === 1} onClick={onClickRemove}>
@@ -71,6 +89,6 @@ const CartItem: React.FC<CartItemProps> = ({ id, name, price, size, type, count 
         </ButtonCircle>
       </Remove>
     </Article>
-  )
+  );
 }
-export default CartItem
+export default CartItem;

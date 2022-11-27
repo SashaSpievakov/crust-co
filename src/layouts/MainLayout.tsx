@@ -4,7 +4,7 @@ import { Wrapper, Main, Container } from "../styles/Base.styled";
 import Footer from "../components/Footer/Footer";
 import Header from "../components/Header/Header";
 
-const MainLayout: React.FC = () => {
+function MainLayout() {
   return (
     <Wrapper>
       <Header />
@@ -15,6 +15,6 @@ const MainLayout: React.FC = () => {
       </Main>
       <Footer />
     </Wrapper>
-  )
+  );
 }
 export default MainLayout;

@@ -1,12 +1,12 @@
-import styled, {css} from "styled-components";
+import styled, { css } from "styled-components";
 
 interface CircleProps {
-  remove?: boolean
+  remove?: boolean;
 }
 
 const Button = styled.button`
   display: inline-block;
-  background-color: ${({theme}) => theme.colors.primary};
+  background-color: ${({ theme }) => theme.colors.primary};
   border-radius: 30px;
   padding: 10px 20px;
   min-width: 100px;
@@ -16,18 +16,18 @@ const Button = styled.button`
 
   &,
   span {
-    color: ${({theme}) => theme.colors.fourth};
+    color: ${({ theme }) => theme.colors.fourth};
   }
 
   &:hover {
-    background-color: darken(${({theme}) => theme.colors.primary}, 8%);
+    background-color: darken(${({ theme }) => theme.colors.primary}, 8%);
   }
 
   &:active {
-    background-color: darken(${({theme}) => theme.colors.primary}, 12%);
+    background-color: darken(${({ theme }) => theme.colors.primary}, 12%);
     transform: translateY(1px);
   }
-`
+`;
 
 const ButtonBlack = styled(Button)`
   padding: 12px 0 14px;
@@ -35,13 +35,13 @@ const ButtonBlack = styled(Button)`
   margin: 0 auto;
   font-weight: 600;
   font-size: 18px;
-  background-color: ${({theme}) => theme.colors.third};
+  background-color: ${({ theme }) => theme.colors.third};
 
   &:hover,
   &:active {
-    background-color: ${({theme}) => theme.colors.gray};
+    background-color: ${({ theme }) => theme.colors.gray};
   }
-`
+`;
 
 const ButtonCart = styled(Button)`
   display: flex;
@@ -58,31 +58,31 @@ const ButtonCart = styled(Button)`
     font-weight: 600;
     font-size: 16px;
   }
-`
+`;
 
 const ButtonPay = styled(Button)`
   font-size: 16px;
   font-weight: 600;
   width: 210px;
   padding: 16px;
-`
+`;
 
 const ButtonOutline = styled(Button)`
-  background-color: ${({theme}) => theme.colors.gray};
+  background-color: ${({ theme }) => theme.colors.gray};
 
   &,
   span {
-    color: ${({theme}) => theme.colors.black};
+    color: ${({ theme }) => theme.colors.black};
   }
 
   svg {
     path {
-      fill: ${({theme}) => theme.colors.black};
+      fill: ${({ theme }) => theme.colors.black};
     }
   }
 
   &:hover {
-    background-color:${({theme}) => theme.colors.secondary};
+    background-color: ${({ theme }) => theme.colors.secondary};
 
     &,
     span {
@@ -97,9 +97,9 @@ const ButtonOutline = styled(Button)`
   }
 
   &:active {
-    background-color: darken(${({theme}) => theme.colors.primary}, 8%);
+    background-color: darken(${({ theme }) => theme.colors.primary}, 8%);
   }
-`
+`;
 
 const ButtonCircle = styled(ButtonOutline)<CircleProps>`
   display: flex;
@@ -114,7 +114,7 @@ const ButtonCircle = styled(ButtonOutline)<CircleProps>`
 
   &:disabled {
     cursor: auto;
-    background-color: ${({theme}) => theme.colors.gray};
+    background-color: ${({ theme }) => theme.colors.gray};
 
     svg path {
       fill: #dddddd;
@@ -122,21 +122,23 @@ const ButtonCircle = styled(ButtonOutline)<CircleProps>`
     }
   }
 
-  ${({remove}) => remove && css`
-    svg {
-      transform: rotate(45deg);
+  ${({ remove }) =>
+    remove &&
+    css`
+      svg {
+        transform: rotate(45deg);
 
-      path {
-        fill: #dddddd;
-        stroke: #dddddd;
+        path {
+          fill: #dddddd;
+          stroke: #dddddd;
+        }
       }
-    }
 
-    &:hover {
-      background-color: ${({theme}) => theme.colors.black};
-    }
-  `}
-`
+      &:hover {
+        background-color: ${({ theme }) => theme.colors.black};
+      }
+    `}
+`;
 
 const ButtonAdd = styled(ButtonOutline)`
   display: flex;
@@ -150,7 +152,7 @@ const ButtonAdd = styled(ButtonOutline)`
   i {
     display: inline-block;
     border-radius: 30px;
-    background-color: ${({theme}) => theme.colors.primary};
+    background-color: ${({ theme }) => theme.colors.primary};
     color: #fff;
     font-weight: 600;
     width: 22px;
@@ -162,7 +164,7 @@ const ButtonAdd = styled(ButtonOutline)`
     top: -1px;
     left: 3px;
   }
-`
+`;
 
 const ButtonBack = styled(ButtonAdd)`
   display: flex;
@@ -180,7 +182,7 @@ const ButtonBack = styled(ButtonAdd)`
     margin-right: 12px;
 
     path {
-      fill: ${({theme}) => theme.colors.gray};
+      fill: ${({ theme }) => theme.colors.gray};
       stroke-width: 2;
     }
   }
@@ -190,13 +192,20 @@ const ButtonBack = styled(ButtonAdd)`
     border-color: #111111;
 
     span {
-      color: ${({theme}) => theme.colors.gray};
+      color: ${({ theme }) => theme.colors.gray};
     }
 
     svg > path {
       fill: #111111;
     }
   }
-`
+`;
 
-export {ButtonBlack, ButtonCart, ButtonPay, ButtonCircle, ButtonAdd, ButtonBack}
+export {
+  ButtonBlack,
+  ButtonCart,
+  ButtonPay,
+  ButtonCircle,
+  ButtonAdd,
+  ButtonBack,
+};

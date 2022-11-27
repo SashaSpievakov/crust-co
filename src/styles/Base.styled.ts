@@ -3,7 +3,7 @@ import styled from "styled-components";
 const Wrapper = styled.div`
   width: calc(100vw - 100px);
   height: 100%;
-  background-color: ${({theme}) => theme.colors.fourth};
+  background-color: ${({ theme }) => theme.colors.fourth};
   margin: 50px auto;
   border-radius: 10px;
   max-width: 1400px;
@@ -12,7 +12,7 @@ const Wrapper = styled.div`
     width: calc(100vw - 50px);
     margin: 25px auto;
   }
-`
+`;
 
 const Main = styled.main`
   padding: 40px 0;
@@ -20,7 +20,7 @@ const Main = styled.main`
   @media screen and (max-width: 550px) {
     padding: 25px 0 0;
   }
-`
+`;
 
 const Title = styled.h2`
   margin: 35px 0;
@@ -28,7 +28,7 @@ const Title = styled.h2`
   @media screen and (max-width: 650px) {
     margin: 20px 0;
   }
-`
+`;
 
 const Items = styled.div`
   display: grid;
@@ -48,7 +48,7 @@ const Items = styled.div`
     grid-template-columns: repeat(1, 1fr);
     gap: 0;
   }
-`
+`;
 
 const Top = styled.div`
   display: flex;
@@ -61,7 +61,7 @@ const Top = styled.div`
     align-items: start;
     margin-bottom: 15px;
   }
-`
+`;
 
 const Block = styled(Top)`
   flex-direction: row;
@@ -75,7 +75,7 @@ const Block = styled(Top)`
     flex-direction: column;
     align-items: start;
   }
-`
+`;
 
 const Error = styled.div`
   margin: 80px auto;
@@ -90,11 +90,11 @@ const Error = styled.div`
   p {
     font-size: 22px;
   }
-`
+`;
 
 const Container = styled.div`
   width: 90%;
   margin: 0 auto;
-`
+`;
 
 export { Wrapper, Main, Title, Items, Top, Block, Error, Container };

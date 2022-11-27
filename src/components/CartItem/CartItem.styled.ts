@@ -3,7 +3,7 @@ import styled from "styled-components";
 const Article = styled.article`
   display: flex;
   width: 100%;
-  border-top: 1px solid ${({theme}) => theme.colors.gray};
+  border-top: 1px solid ${({ theme }) => theme.colors.gray};
   padding-top: 30px;
   margin-top: 30px;
 
@@ -12,14 +12,13 @@ const Article = styled.article`
     row-gap: 10px;
     align-items: center;
   }
-`
+`;
 
 const ImgWrapper = styled.div`
   display: flex;
   align-items: center;
   margin-right: 15px;
   width: 10%;
-
 
   img {
     height: 80px;
@@ -34,7 +33,7 @@ const ImgWrapper = styled.div`
       height: 200px;
     }
   }
-`
+`;
 
 const InfoWrapper = styled.div`
   display: flex;
@@ -58,7 +57,7 @@ const InfoWrapper = styled.div`
     width: auto;
     text-align: center;
   }
-`
+`;
 
 const Counter = styled.div`
   display: flex;
@@ -74,11 +73,11 @@ const Counter = styled.div`
     width: auto;
     gap: 7px;
   }
-`
+`;
 
 const CountIcon = styled.i`
   stroke-width: 1;
-`
+`;
 
 const Price = styled.div`
   display: flex;
@@ -91,7 +90,7 @@ const Price = styled.div`
     font-size: 22px;
     letter-spacing: 0.01em;
   }
-`
+`;
 
 const Remove = styled.div`
   display: flex;
@@ -102,6 +101,6 @@ const Remove = styled.div`
   @media screen and (max-width: 850px) {
     width: auto;
   }
-`
+`;
 
-export {Article, ImgWrapper, InfoWrapper, Counter, CountIcon, Price, Remove}
+export { Article, ImgWrapper, InfoWrapper, Counter, CountIcon, Price, Remove };

@@ -5,7 +5,7 @@ const Item = styled(Container)`
   display: flex;
   flex-direction: column;
   align-items: center;
-`
+`;
 
 const Image = styled.img`
   max-width: 450px;
@@ -22,7 +22,7 @@ const Image = styled.img`
     width: 200px;
     margin-top: 20px;
   }
-`
+`;
 
 const Title = styled.h2`
   font-size: 45px;
@@ -36,15 +36,15 @@ const Title = styled.h2`
   @media screen and (max-width: 400px) {
     line-height: 35px;
   }
-`
+`;
 
 const Paragraph = styled.p`
   text-align: center;
   margin-bottom: 30px;
-`
+`;
 
 const Price = styled.h4`
   font-size: 40px;
-`
+`;
 
-export { Item, Image, Title, Paragraph, Price}
+export { Item, Image, Title, Paragraph, Price };

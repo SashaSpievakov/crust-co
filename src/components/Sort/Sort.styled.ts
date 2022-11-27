@@ -1,18 +1,18 @@
 import styled, { css } from "styled-components";
-import { BsCaretDownFill, BsCaretUpFill} from 'react-icons/bs';
+import { BsCaretDownFill, BsCaretUpFill } from "react-icons/bs";
 
 interface LiProps {
-  chosen: boolean
+  chosen: boolean;
 }
 
 const mixinArrow = css`
   font-size: 15px;
   margin-right: 5px;
-`
+`;
 
 const mixinBackground = css`
-  background-color: ${({theme}) => theme.colors.secondaryTransparent};
-`
+  background-color: ${({ theme }) => theme.colors.secondaryTransparent};
+`;
 
 const Wrapper = styled.div`
   position: relative;
@@ -22,7 +22,7 @@ const Wrapper = styled.div`
   @media screen and (max-width: 650px) {
     align-self: end;
   }
-`
+`;
 
 const Label = styled.div`
   display: flex;
@@ -33,24 +33,24 @@ const Label = styled.div`
   }
 
   span {
-    color: ${({theme}) => theme.colors.primary};
-    border-bottom: 1px dashed ${({theme}) => theme.colors.primary};
+    color: ${({ theme }) => theme.colors.primary};
+    border-bottom: 1px dashed ${({ theme }) => theme.colors.primary};
   }
-`
+`;
 
 const ArrowUp = styled(BsCaretUpFill)`
   ${mixinArrow}
-`
+`;
 
 const ArrowDown = styled(BsCaretDownFill)`
   ${mixinArrow}
-`
+`;
 
 const Popup = styled.div`
   position: absolute;
   right: -5px;
   margin-top: 15px;
-  background: ${({theme}) => theme.colors.fourth};
+  background: ${({ theme }) => theme.colors.fourth};
   box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.09);
   border-radius: 10px;
   overflow: hidden;
@@ -61,7 +61,7 @@ const Popup = styled.div`
   ul {
     overflow: hidden;
   }
-`
+`;
 
 const Li = styled.li<LiProps>`
   padding: 12px 20px;
@@ -71,11 +71,13 @@ const Li = styled.li<LiProps>`
     ${mixinBackground}
   }
 
-  ${({chosen}) => chosen && css`
-    font-weight: bold;
-    color: ${({theme}) => theme.colors.primary};
-    ${mixinBackground}
-  `}
-`
+  ${({ chosen }) =>
+    chosen &&
+    css`
+      font-weight: bold;
+      color: ${({ theme }) => theme.colors.primary};
+      ${mixinBackground}
+    `}
+`;
 
-export {Wrapper, Label, ArrowUp, ArrowDown, Popup, Li}
+export { Wrapper, Label, ArrowUp, ArrowDown, Popup, Li };

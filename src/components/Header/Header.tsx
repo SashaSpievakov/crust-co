@@ -1,4 +1,3 @@
-import React from "react";
 import { Link, useLocation } from "react-router-dom";
 import { BsCart3, BsFillSunFill, BsFillMoonFill } from "react-icons/bs";
 import { useSelector, useDispatch } from "react-redux";
@@ -9,15 +8,15 @@ import { setTheme, selectIsLight } from "../../redux/slices/themeSlice";
 import { Main, Wrapper, Logo, Right, Icon, Delimiter } from "./Header.styled";
 import { ButtonCart } from "../Buttons/Buttons.styled";
 
-const Header: React.FC = () => {
-  const {itemsCount, totalPrice} = useSelector(selectCart);
+function Header() {
+  const { itemsCount, totalPrice } = useSelector(selectCart);
   const isLight = useSelector(selectIsLight);
   const dispatch = useDispatch();
   const location = useLocation();
 
   const changeThemes = () => {
-    dispatch(setTheme(isLight ? false : true))
-  }
+    dispatch(setTheme(!isLight));
+  };
 
   return (
     <Main>
@@ -33,18 +32,22 @@ const Header: React.FC = () => {
         </Link>
 
         <Right>
-          <Icon as={isLight ? BsFillMoonFill : BsFillSunFill} onClick={changeThemes} />
+          <Icon
+            as={isLight ? BsFillMoonFill : BsFillSunFill}
+            onClick={changeThemes}
+          />
           {location.pathname !== "/cart" && (
             <ButtonCart to="/cart" as={Link}>
               <span>{totalPrice} $</span>
-              <Delimiter/>
+              <Delimiter />
               <BsCart3 />
               <span>{itemsCount}</span>
-          </ButtonCart>
+            </ButtonCart>
           )}
         </Right>
       </Wrapper>
     </Main>
-  )
+  );
 }
-export default Header
+
+export default Header;

@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const Article = styled.article`
+const Article = styled.article`
   margin: 80px auto;
   max-width: 600px;
   text-align: center;
@@ -35,4 +35,6 @@ export const Article = styled.article`
       width: 200px;
     }
   }
-`
+`;
+
+export default Article;

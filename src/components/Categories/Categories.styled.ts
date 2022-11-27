@@ -1,7 +1,7 @@
-import styled, {css} from "styled-components";
+import styled, { css } from "styled-components";
 
 interface LiProps {
-  chosen: boolean
+  chosen: boolean;
 }
 
 const Ul = styled.ul`
@@ -10,26 +10,28 @@ const Ul = styled.ul`
   @media screen and (max-width: 650px) {
     flex-wrap: wrap;
   }
-`
+`;
 
 const Li = styled.li<LiProps>`
-  color: ${({theme}) => theme.colors.black};
-  background-color: ${({theme}) => theme.colors.gray};
+  color: ${({ theme }) => theme.colors.black};
+  background-color: ${({ theme }) => theme.colors.gray};
   padding: 13px 30px;
   border-radius: 30px;
   margin-right: 10px;
   font-weight: bold;
   cursor: pointer;
 
-  ${({chosen}) => chosen && css`
-    background-color: ${({theme}) => theme.colors.third};
-    color: ${({theme}) => theme.colors.fourth};
-  `}
+  ${({ chosen }) =>
+    chosen &&
+    css`
+      background-color: ${({ theme }) => theme.colors.third};
+      color: ${({ theme }) => theme.colors.fourth};
+    `}
 
   @media screen and (max-width: 650px) {
     margin-bottom: 10px;
     padding: 10px 22px;
   }
-`
+`;
 
-export { Li, Ul }
+export { Li, Ul };

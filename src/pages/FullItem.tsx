@@ -1,14 +1,11 @@
-import React, { useEffect } from "react";
+import { useEffect } from "react";
 import { useParams } from "react-router-dom";
-import { useSelector } from "react-redux";
 
 import { useAppDispatch } from "../redux/store";
-import { fetchItem, selectItem } from "../redux/slices/itemSlice";
+import { fetchItem } from "../redux/slices/itemSlice";
 import FullItemCard from "../components/FullItemCard/FullItemCard";
-import { Container } from "../styles/Base.styled";
 
-const FullItem: React.FC = () => {
-  const { status } = useSelector(selectItem);
+function FullItemComp() {
   const { id } = useParams();
   const dispatch = useAppDispatch();
 
@@ -16,17 +13,8 @@ const FullItem: React.FC = () => {
     if (id !== undefined) {
       dispatch(fetchItem(id));
     }
+  }, [dispatch, id]);
 
-  }, [dispatch, id])
-
-  return (
-    <>
-      {status === "loading" ? (
-        <Container>Loading...</Container>
-      ) : (
-        <FullItemCard />
-      )}
-    </>
-  )
+  return <FullItemCard />;
 }
-export default FullItem;
+export default FullItemComp;

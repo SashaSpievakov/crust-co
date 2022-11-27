@@ -1,30 +1,31 @@
-import React from 'react';
-import { useSelector, useDispatch } from 'react-redux';
+import React from "react";
+import { useSelector, useDispatch } from "react-redux";
 
-import { selectCategory, setCategory } from '../../redux/slices/categorySlice';
-import { Ul, Li } from './Categories.styled';
+import { selectCategory, setCategory } from "../../redux/slices/categorySlice";
+import { Ul, Li } from "./Categories.styled";
 
-const categoriesArr: string[] = ['All', 'Meat', 'Vegetarian', 'Grill', 'Spicy'];
+const categoriesArr: string[] = ["All", "Meat", "Vegetarian", "Grill", "Spicy"];
 
-const Categories: React.FC = () => {
+function Categories() {
   const activeCategory = useSelector(selectCategory);
   const dispatch = useDispatch();
 
   const chosenClass = categoriesArr[activeCategory];
   return (
-  <div>
-    <Ul>
-      {categoriesArr.map((name, i) => (
-        <Li
-          key={name}
-          onClick={() => dispatch(setCategory(i))}
-          chosen={chosenClass === name}
-        >
-          {name}
-        </Li>
-      ))}
-    </Ul>
-  </div>
-  )
+    <div>
+      <Ul>
+        {categoriesArr.map((name, i) => (
+          <Li
+            key={name}
+            onClick={() => dispatch(setCategory(i))}
+            chosen={chosenClass === name}
+          >
+            {name}
+          </Li>
+        ))}
+      </Ul>
+    </div>
+  );
 }
+
 export default React.memo(Categories);

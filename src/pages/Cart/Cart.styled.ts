@@ -10,19 +10,18 @@ const Top = styled.section`
     flex-direction: column;
     gap: 15px;
   }
-`
+`;
 
 const Title = styled.h2`
   display: flex;
   align-items: center;
   font-size: 32px;
-`
+`;
 
 const CartIcon = styled(BsCart3)`
-  stroke-width: .5;
+  stroke-width: 0.5;
   margin-right: 10px;
-`
-
+`;
 
 const Clear = styled.div`
   display: flex;
@@ -36,22 +35,22 @@ const Clear = styled.div`
   }
 
   &:hover {
-    color: ${({theme}) => theme.colors.secondary};
+    color: ${({ theme }) => theme.colors.secondary};
 
     span {
-    color: ${({theme}) => theme.colors.secondary};
+      color: ${({ theme }) => theme.colors.secondary};
     }
   }
-`
+`;
 
 const Trash = styled(BsTrash)`
   font-size: 18px;
-  stroke-width: .3;
-`
+  stroke-width: 0.3;
+`;
 
 const Bottom = styled.section`
   margin: 50px 0;
-`
+`;
 
 const Details = styled.div`
   display: flex;
@@ -62,11 +61,11 @@ const Details = styled.div`
 
     &:last-of-type {
       b {
-        color: ${({theme}) => theme.colors.primary};
+        color: ${({ theme }) => theme.colors.primary};
       }
     }
   }
-`
+`;
 
 const Buttons = styled.div`
   display: flex;
@@ -78,6 +77,6 @@ const Buttons = styled.div`
     align-items: center;
     gap: 20px;
   }
-`
+`;
 
-export {Top, Title, CartIcon, Clear, Trash, Bottom, Details, Buttons}
+export { Top, Title, CartIcon, Clear, Trash, Bottom, Details, Buttons };

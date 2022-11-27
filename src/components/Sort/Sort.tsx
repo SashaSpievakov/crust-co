@@ -1,4 +1,4 @@
-import React, { useEffect, useState, useRef } from "react"
+import React, { useEffect, useState, useRef } from "react";
 import { useSelector, useDispatch } from "react-redux";
 // import useWhyDidYouUpdate from "ahooks/lib/useWhyDidYouUpdate";
 
@@ -6,10 +6,10 @@ import { selectSort, setSort } from "../../redux/slices/sortSlice";
 import { Wrapper, Label, ArrowUp, ArrowDown, Popup, Li } from "./Sort.styled";
 
 interface CategoriesProps {
-  sortNamesArr: string[]
+  sortNamesArr: string[];
 }
 
-const Sort: React.FC<CategoriesProps> = ({ sortNamesArr }) => {
+function Sort({ sortNamesArr }: CategoriesProps) {
   // useWhyDidYouUpdate('sort', {sortNamesArr})
   const activeSort = useSelector(selectSort);
   const dispatch = useDispatch();
@@ -22,27 +22,27 @@ const Sort: React.FC<CategoriesProps> = ({ sortNamesArr }) => {
   const changeActiveSortName = (index: number) => {
     dispatch(setSort(index));
     setOpen(false);
-  }
+  };
 
   useEffect(() => {
     const handleBodyClick = (e: MouseEvent) => {
       if (sortRef.current && !e.composedPath().includes(sortRef.current)) {
-      setOpen(false);
+        setOpen(false);
       }
-    }
+    };
     if (open) {
-      document.body.addEventListener('click', handleBodyClick);
+      document.body.addEventListener("click", handleBodyClick);
     }
 
     return () => {
-      document.body.removeEventListener('click', handleBodyClick);
-    }
-  }, [open])
+      document.body.removeEventListener("click", handleBodyClick);
+    };
+  }, [open]);
 
   return (
     <Wrapper onClick={() => setOpen(!open)} ref={sortRef}>
       <Label>
-        {open ? <ArrowUp/> : <ArrowDown/>}
+        {open ? <ArrowUp /> : <ArrowDown />}
         <b>Sort by</b>
         <span>{chosenSortName}</span>
       </Label>
@@ -51,9 +51,9 @@ const Sort: React.FC<CategoriesProps> = ({ sortNamesArr }) => {
           <ul>
             {sortNamesArr.map((sortName, i: number) => (
               <Li
-              key={sortName}
-              onClick={() => changeActiveSortName(i)}
-              chosen={chosenSortName === sortName}
+                key={sortName}
+                onClick={() => changeActiveSortName(i)}
+                chosen={chosenSortName === sortName}
               >
                 {sortName}
               </Li>
@@ -62,6 +62,6 @@ const Sort: React.FC<CategoriesProps> = ({ sortNamesArr }) => {
         </Popup>
       )}
     </Wrapper>
-  )
+  );
 }
-export default Sort
+export default Sort;

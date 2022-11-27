@@ -2,23 +2,42 @@ import React, { useRef, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { Link } from "react-router-dom";
 
-import { addItem, ICartItem, CartItemForDelete, removeItem, selectCartItemById } from "../../redux/slices/cartSlice";
+import {
+  addItem,
+  ICartItem,
+  CartItemForDelete,
+  removeItem,
+  selectCartItemById,
+} from "../../redux/slices/cartSlice";
 import { ButtonAdd } from "../Buttons/Buttons.styled";
-import { Block, Li, Image, Title, Selector, Bottom, Price, Counter, Minus, Plus, Count, MainPlus } from "./ItemCard.styled";
+import {
+  Block,
+  Li,
+  Image,
+  Title,
+  Selector,
+  Bottom,
+  Price,
+  Counter,
+  Minus,
+  Plus,
+  Count,
+  MainPlus,
+} from "./ItemCard.styled";
 
 interface ItemCardProps {
-  id: string,
-  name: string,
-  price: number,
-  sizes: number[],
-  types: number[],
-  count: number
+  id: string;
+  name: string;
+  price: number;
+  sizes: number[];
+  types: number[];
+  count: number;
 }
 
-const typeNames: string[] = ['traditional', 'thin'];
+const typeNames: string[] = ["traditional", "thin"];
 const sizeNames: number[] = [12, 14, 16];
 
-const ItemCard: React.FC<ItemCardProps> = ({ id, name, price, sizes, types, count }) => {
+function ItemCard({ id, name, price, sizes, types, count }: ItemCardProps) {
   const dispatch = useDispatch();
   const cartItem = useSelector(selectCartItemById(id));
   const [activeSize, setActiveSize] = useState(0);
@@ -37,7 +56,7 @@ const ItemCard: React.FC<ItemCardProps> = ({ id, name, price, sizes, types, coun
       count: 0,
     };
     dispatch(addItem(item));
-  }
+  };
 
   const onClickRemove = () => {
     const item: CartItemForDelete = {
@@ -46,25 +65,22 @@ const ItemCard: React.FC<ItemCardProps> = ({ id, name, price, sizes, types, coun
       count,
     };
     dispatch(removeItem(item));
-  }
+  };
 
   return (
     <Block>
       <Link to={`/item/${id}`}>
-        <Image
-          src={`./assets/img/pizza${id}.png`}
-          alt="Pizza"
-        />
+        <Image src={`./assets/img/pizza${id}.png`} alt="Pizza" />
         <Title>{name}</Title>
       </Link>
       <Selector>
         <ul>
-          {types.map(type => (
+          {types.map((type) => (
             <Li
-            ref={refType}
-            key={type}
-            onClick={() => setActiveType(type)}
-            chosen={ activeType === types.indexOf(type)}
+              ref={refType}
+              key={type}
+              onClick={() => setActiveType(type)}
+              chosen={activeType === types.indexOf(type)}
             >
               {typeNames[type]}
             </Li>
@@ -73,9 +89,9 @@ const ItemCard: React.FC<ItemCardProps> = ({ id, name, price, sizes, types, coun
         <ul>
           {sizes.map((size, i) => (
             <Li
-            key={size}
-            onClick={() => setActiveSize(i)}
-            chosen={activeSize === i}
+              key={size}
+              onClick={() => setActiveSize(i)}
+              chosen={activeSize === i}
             >
               {size} inch
             </Li>
@@ -91,15 +107,13 @@ const ItemCard: React.FC<ItemCardProps> = ({ id, name, price, sizes, types, coun
             <Plus onClick={onClickAdd} />
           </Counter>
         ) : (
-          <ButtonAdd
-            onClick={onClickAdd}
-          >
-          <MainPlus/>
-          <span>Add</span>
-        </ButtonAdd>
+          <ButtonAdd onClick={onClickAdd}>
+            <MainPlus />
+            <span>Add</span>
+          </ButtonAdd>
         )}
       </Bottom>
     </Block>
-  )
+  );
 }
-export default ItemCard
+export default ItemCard;

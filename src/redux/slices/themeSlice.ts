@@ -2,7 +2,7 @@ import { createSlice, PayloadAction } from "@reduxjs/toolkit";
 import { RootState } from "../store";
 
 interface ThemeState {
-  isLight: boolean,
+  isLight: boolean;
 }
 
 const initialState: ThemeState = {
