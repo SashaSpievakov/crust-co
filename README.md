@@ -7,24 +7,28 @@
 ## Technologies ⚙️
 
 ### Main
-  * HTML5
-  * CSS3
-  * Styled Components
-  * JavaScript ES6 +
-  * React
-  * Redux Toolkit
-  * React Router 6
-  * TypeScript
-  
+
+- HTML5
+- CSS3
+- Styled Components
+- JavaScript ES6 +
+- React
+- Redux Toolkit
+- React Router 6
+- TypeScript
+
 ### Additional
-  * Axios
-  * React Icons
-  * MockAPI
-  
+
+- Axios
+- ESLint
+- React Icons
+- MockAPI
+
 ### Features ✨
-  * Responsive Design
-  * Dark and Light Theme
-  
+
+- Responsive Design
+- Dark and Light Theme
+
 <br/>
-  
+
 ## [My Contacts](https://github.com/AlexandrSpevakov#contact-me) &nbsp; 👈
