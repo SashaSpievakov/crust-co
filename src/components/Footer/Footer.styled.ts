@@ -26,23 +26,21 @@ const Link = styled.a`
   gap: 5px;
   align-items: center;
 
-  span {
-    color: ${({ theme }) => theme.colors.third};
-  }
+  &:hover {
+    color: ${({ theme }) => theme.colors.secondary};
 
-  &:hover svg {
-    fill: ${({ theme }) => theme.colors.secondary};
+    span {
+      color: ${({ theme }) => theme.colors.secondary};
+    }
   }
 `;
 
 const Icon = styled.a`
   font-size: 30px;
-  color: ${({ theme }) => theme.colors.primary};
 `;
 
 const Copyright = styled.p`
   text-align: center;
-  color: ${({ theme }) => theme.colors.third};
 `;
 
 export { Main, Ul, Icon, Copyright, Link };
