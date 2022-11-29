@@ -10,6 +10,7 @@ declare module "styled-components" {
       fourth: string;
       black: string;
       gray: string;
+      chosen: string;
     };
 
     duration: string;

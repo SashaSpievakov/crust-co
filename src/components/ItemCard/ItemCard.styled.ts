@@ -11,6 +11,16 @@ const mixinBlock = css`
   max-width: 280px;
   text-align: center;
   margin-bottom: 65px;
+
+  &:hover {
+    img {
+      transform: translateY(-10px);
+    }
+
+    h4 {
+      color: ${({ theme }) => theme.colors.secondary};
+    }
+  }
 `;
 
 const mixinButton = css`
@@ -31,6 +41,7 @@ const Image = styled.img`
   width: 250px;
   margin-bottom: 15px;
   border-radius: 20px;
+  transition: 0.2s ease-in-out;
 
   @media screen and (max-width: 400px) {
     width: 200px;
@@ -69,7 +80,7 @@ const Li = styled.li<LiProps>`
     chosen &&
     css`
       color: ${({ theme }) => theme.colors.black};
-      background: #ffffff;
+      background: ${({ theme }) => theme.colors.chosen};
       box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.04);
       border-radius: 5px;
       cursor: auto;
