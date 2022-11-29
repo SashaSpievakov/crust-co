@@ -31,6 +31,10 @@ function Cart() {
   const { itemsCount, totalPrice, items } = useSelector(selectCart);
   const dispatch = useDispatch();
 
+  const onClearClick = () => {
+    dispatch(clearItems());
+  };
+
   return (
     <div>
       {items.length ? (
@@ -40,11 +44,9 @@ function Cart() {
               <CartIcon />
               Cart
             </Title>
-            <Clear>
+            <Clear onClick={onClearClick}>
               <Trash />
-              <span role="presentation" onClick={() => dispatch(clearItems())}>
-                Delete all items
-              </span>
+              <span role="presentation">Delete all items</span>
             </Clear>
           </Top>
 
