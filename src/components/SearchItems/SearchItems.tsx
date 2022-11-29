@@ -19,7 +19,6 @@ function SearchItems() {
   };
 
   return (
-    // Add icon inside
     <Wrapper>
       <SearchIcon />
       <Input
