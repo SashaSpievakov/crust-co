@@ -1,3 +1,4 @@
+import { useEffect, useRef } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { BsCart3, BsFillSunFill, BsFillMoonFill } from "react-icons/bs";
 import { useSelector, useDispatch } from "react-redux";
@@ -9,14 +10,24 @@ import { Main, Wrapper, Logo, Right, Icon, Delimiter } from "./Header.styled";
 import { ButtonCart } from "../Buttons/Buttons.styled";
 
 function Header() {
-  const { itemsCount, totalPrice } = useSelector(selectCart);
+  const { itemsCount, totalPrice, items } = useSelector(selectCart);
   const isLight = useSelector(selectIsLight);
   const dispatch = useDispatch();
   const location = useLocation();
+  const isMounted = useRef(false);
 
   const changeThemes = () => {
     dispatch(setTheme(!isLight));
   };
+
+  useEffect(() => {
+    if (isMounted.current) {
+      const json = JSON.stringify(items);
+      localStorage.setItem("cart", json);
+    }
+
+    isMounted.current = true;
+  }, [items]);
 
   return (
     <Main>
