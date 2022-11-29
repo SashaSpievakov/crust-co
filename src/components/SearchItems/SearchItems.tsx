@@ -13,6 +13,10 @@ function SearchItems() {
 
   const inputRef = useRef<HTMLInputElement>(null);
 
+  const onChangeInput = (e: React.ChangeEvent<HTMLInputElement>): void => {
+    dispatch(setSearchValue(e.target.value));
+  };
+
   const onClickClose = () => {
     dispatch(setSearchValue(""));
     inputRef.current?.focus();
@@ -25,7 +29,7 @@ function SearchItems() {
         ref={inputRef}
         placeholder="Search..."
         value={searchValue}
-        onChange={(e) => dispatch(setSearchValue(e.target.value))}
+        onChange={(e) => onChangeInput(e)}
       />
       {searchValue && <Cross onClick={onClickClose} />}
     </Wrapper>
