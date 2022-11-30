@@ -29,6 +29,13 @@ function Header() {
     isMounted.current = true;
   }, [items]);
 
+  useEffect(() => {
+    if (isMounted.current) {
+      const json = JSON.stringify(isLight);
+      localStorage.setItem("isLight", json);
+    }
+  }, [isLight]);
+
   return (
     <Main>
       <Wrapper isCart={location.pathname === "/cart"}>
