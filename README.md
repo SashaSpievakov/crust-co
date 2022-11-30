@@ -28,7 +28,7 @@
 
 - Responsive Design
 - Dark and Light Theme
-- Cart in Local Storage
+- Cart in the Local Storage
 
 <br/>
 
