@@ -22,7 +22,6 @@
 - Axios
 - ESLint
 - React Icons
-- MockAPI
 
 ### Features ✨
 
