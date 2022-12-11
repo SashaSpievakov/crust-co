@@ -1,6 +1,6 @@
 # Salad Restaurant Landing 🍕
 
-### [View Deployment](https://joyful-cranachan-b5c5da.netlify.app/) &nbsp; 🖥️
+### [View Deployment](https://pizza-store-application.netlify.app/) &nbsp; 🖥️
 
 <br/>
 
