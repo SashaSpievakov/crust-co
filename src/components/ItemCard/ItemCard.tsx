@@ -37,7 +37,7 @@ interface ItemCardProps {
 const typeNames: string[] = ["traditional", "thin"];
 const sizeNames: number[] = [12, 14, 16];
 
-function ItemCard({ id, name, price, sizes, types, count }: ItemCardProps) {
+const ItemCard = ({ id, name, price, sizes, types, count }: ItemCardProps) => {
   const dispatch = useDispatch();
   const cartItem = useSelector(selectCartItemById(id));
   const [activeSize, setActiveSize] = useState(0);
@@ -115,5 +115,5 @@ function ItemCard({ id, name, price, sizes, types, count }: ItemCardProps) {
       </Bottom>
     </Block>
   );
-}
+};
 export default ItemCard;

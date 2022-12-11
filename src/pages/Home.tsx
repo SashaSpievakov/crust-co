@@ -19,7 +19,7 @@ import { useAppDispatch } from "../redux/store";
 
 const sortNamesArr: string[] = ["rating", "price", "A to Z"];
 
-function HomeComp() {
+const HomeComp = () => {
   const dispatch = useAppDispatch();
   const requested = useRef(false);
   const activeCategory = useSelector(selectCategory);
@@ -80,6 +80,6 @@ function HomeComp() {
       )}
     </>
   );
-}
+};
 
 export default HomeComp;

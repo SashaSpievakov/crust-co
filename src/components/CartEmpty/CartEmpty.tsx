@@ -4,7 +4,7 @@ import cartImg from "../../assets/img/empty-cart.png";
 import { ButtonBlack } from "../Buttons/Buttons.styled";
 import Article from "./CartEmpty.styled";
 
-function CartEmpty() {
+const CartEmpty = () => {
   return (
     <Article>
       <h2>
@@ -21,6 +21,6 @@ function CartEmpty() {
       </ButtonBlack>
     </Article>
   );
-}
+};
 
 export default CartEmpty;

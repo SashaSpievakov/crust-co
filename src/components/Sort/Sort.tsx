@@ -9,7 +9,7 @@ interface CategoriesProps {
   sortNamesArr: string[];
 }
 
-function Sort({ sortNamesArr }: CategoriesProps) {
+const Sort = ({ sortNamesArr }: CategoriesProps) => {
   // useWhyDidYouUpdate('sort', {sortNamesArr})
   const activeSort = useSelector(selectSort);
   const dispatch = useDispatch();
@@ -63,5 +63,5 @@ function Sort({ sortNamesArr }: CategoriesProps) {
       )}
     </Wrapper>
   );
-}
+};
 export default Sort;

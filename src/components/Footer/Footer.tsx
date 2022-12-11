@@ -2,7 +2,7 @@ import { MdEmail, MdPhone, MdLocationOn } from "react-icons/md";
 
 import { Main, Ul, Link, Icon, Copyright } from "./Footer.styled";
 
-function Footer() {
+const Footer = () => {
   return (
     <Main>
       <Ul>
@@ -34,5 +34,5 @@ function Footer() {
       <Copyright>&#169; 2022 Oleksandr Spievakov</Copyright>
     </Main>
   );
-}
+};
 export default Footer;

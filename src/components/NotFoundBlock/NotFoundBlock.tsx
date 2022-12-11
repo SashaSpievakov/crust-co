@@ -1,7 +1,7 @@
 import Title from "./NotFoundBlock.styled";
 
-function NotFoundBlock() {
+const NotFoundBlock = () => {
   return <Title>Not Found...</Title>;
-}
+};
 
 export default NotFoundBlock;

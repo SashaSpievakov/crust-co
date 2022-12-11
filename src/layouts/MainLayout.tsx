@@ -4,7 +4,7 @@ import { Wrapper, Main, Container } from "../styles/Base.styled";
 import Footer from "../components/Footer/Footer";
 import Header from "../components/Header/Header";
 
-function MainLayout() {
+const MainLayout = () => {
   return (
     <Wrapper>
       <Header />
@@ -16,5 +16,5 @@ function MainLayout() {
       <Footer />
     </Wrapper>
   );
-}
+};
 export default MainLayout;

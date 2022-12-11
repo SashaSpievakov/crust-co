@@ -7,7 +7,7 @@ import {
 } from "../../redux/slices/searchSlice";
 import { Wrapper, SearchIcon, Input, Cross } from "./SearchItems.styled";
 
-function SearchItems() {
+const SearchItems = () => {
   const searchValue = useSelector(selectSearchValue);
   const dispatch = useDispatch();
 
@@ -34,5 +34,5 @@ function SearchItems() {
       {searchValue && <Cross onClick={onClickClose} />}
     </Wrapper>
   );
-}
+};
 export default SearchItems;

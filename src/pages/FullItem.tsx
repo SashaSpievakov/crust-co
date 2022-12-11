@@ -5,7 +5,7 @@ import { useAppDispatch } from "../redux/store";
 import { fetchItem } from "../redux/slices/itemSlice";
 import FullItemCard from "../components/FullItemCard/FullItemCard";
 
-function FullItemComp() {
+const FullItemComp = () => {
   const { id } = useParams();
   const dispatch = useAppDispatch();
 
@@ -16,5 +16,5 @@ function FullItemComp() {
   }, [dispatch, id]);
 
   return <FullItemCard />;
-}
+};
 export default FullItemComp;

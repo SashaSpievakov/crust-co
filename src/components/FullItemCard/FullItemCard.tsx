@@ -3,7 +3,7 @@ import { selectItem } from "../../redux/slices/itemSlice";
 
 import { Image, Title, Paragraph, Price, Item } from "./FullItemCard.styled";
 
-function FullItemCard() {
+const FullItemCard = () => {
   const { data } = useSelector(selectItem);
 
   return (
@@ -22,5 +22,5 @@ function FullItemCard() {
       <Price>{data.price} $</Price>
     </Item>
   );
-}
+};
 export default FullItemCard;

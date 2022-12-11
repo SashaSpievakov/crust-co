@@ -6,7 +6,7 @@ import { Ul, Li } from "./Categories.styled";
 
 const categoriesArr: string[] = ["All", "Meat", "Vegetarian", "Grill", "Spicy"];
 
-function Categories() {
+const Categories = () => {
   const activeCategory = useSelector(selectCategory);
   const dispatch = useDispatch();
 
@@ -26,6 +26,6 @@ function Categories() {
       </Ul>
     </div>
   );
-}
+};
 
 export default React.memo(Categories);

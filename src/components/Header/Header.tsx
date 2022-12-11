@@ -9,7 +9,7 @@ import { setTheme, selectIsLight } from "../../redux/slices/themeSlice";
 import { Main, Wrapper, Logo, Right, Icon, Delimiter } from "./Header.styled";
 import { ButtonCart } from "../Buttons/Buttons.styled";
 
-function Header() {
+const Header = () => {
   const { itemsCount, totalPrice, items } = useSelector(selectCart);
   const isLight = useSelector(selectIsLight);
   const dispatch = useDispatch();
@@ -66,6 +66,6 @@ function Header() {
       </Wrapper>
     </Main>
   );
-}
+};
 
 export default Header;

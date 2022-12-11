@@ -26,6 +26,7 @@
     "react/no-array-index-key": "off",
     "import/no-cycle": "off",
     "no-plusplus": "off",
-    "no-param-reassign": "off"
+    "no-param-reassign": "off",
+    "react/function-component-definition": "off"
   }
 }

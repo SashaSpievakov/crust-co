@@ -27,7 +27,7 @@ interface CartItemProps {
   count: number;
 }
 
-function CartItem({ id, name, price, size, type, count }: CartItemProps) {
+const CartItem = ({ id, name, price, size, type, count }: CartItemProps) => {
   const dispatch = useDispatch();
 
   const onClickAdd = () => {
@@ -90,5 +90,5 @@ function CartItem({ id, name, price, size, type, count }: CartItemProps) {
       </Remove>
     </Article>
   );
-}
+};
 export default CartItem;

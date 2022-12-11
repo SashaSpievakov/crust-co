@@ -26,7 +26,7 @@ interface Item {
   count: number;
 }
 
-function Cart() {
+const Cart = () => {
   const { itemsCount, totalPrice, items } = useSelector(selectCart);
   const dispatch = useDispatch();
 
@@ -82,6 +82,6 @@ function Cart() {
       )}
     </div>
   );
-}
+};
 
 export default Cart;

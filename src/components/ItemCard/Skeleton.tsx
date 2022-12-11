@@ -1,6 +1,6 @@
 import { Loader } from "./ItemCard.styled";
 
-function Skeleton() {
+const Skeleton = () => {
   return (
     <Loader
       speed={2}
@@ -17,6 +17,6 @@ function Skeleton() {
       <rect x="144" y="433" rx="20" ry="20" width="106" height="45" />
     </Loader>
   );
-}
+};
 
 export default Skeleton;
