@@ -8,26 +8,25 @@
 
 ### Main
 
-- HTML5
-- CSS3
-- Styled Components
-- JavaScript ES6 +
 - React
 - Redux Toolkit
-- React Router 6
 - TypeScript
+- Styled Components
+- React Router 6
 
 ### Additional
 
-- Axios
 - ESLint
+- Prettier
+- Netlify
+- Axios
 - React Icons
 
 ### Features ✨
 
 - Responsive Design
 - Dark and Light Theme
-- Cart in the Local Storage
+- Cart inside the Local Storage
 
 <br/>
 
