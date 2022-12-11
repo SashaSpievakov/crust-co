@@ -12,7 +12,7 @@
 - Redux Toolkit
 - TypeScript
 - Styled Components
-- React Router 6
+- React Router
 
 ### Additional
 
