@@ -2,7 +2,7 @@ import { useEffect, useState, useRef } from "react";
 import { useAppDispatch, useAppSelector } from "../../hooks/reduxHooks";
 // import useWhyDidYouUpdate from "ahooks/lib/useWhyDidYouUpdate";
 
-import { selectSort, setSort } from "../../redux/slices/sortSlice";
+import { selectSort, setSort } from "../../store/slices/sortSlice";
 import { Wrapper, Label, ArrowUp, ArrowDown, Popup, Li } from "./Sort.styled";
 
 interface CategoriesProps {

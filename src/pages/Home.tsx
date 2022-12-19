@@ -1,15 +1,15 @@
 import { useEffect, useRef } from "react";
 
 import { Title, Block, Top, Items, Error } from "../styles/Base.styled";
-import { selectSort } from "../redux/slices/sortSlice";
-import { selectCategory } from "../redux/slices/categorySlice";
-import { fetchItems, selectPizzasData } from "../redux/slices/pizzasSlice";
+import { selectSort } from "../store/slices/sortSlice";
+import { selectCategory } from "../store/slices/categorySlice";
+import { fetchItems, selectPizzasData } from "../store/slices/pizzasSlice";
 import Categories from "../components/Categories/Categories";
 import Sort from "../components/Sort/Sort";
 import ItemCard from "../components/ItemCard/ItemCard";
 import Skeleton from "../components/ItemCard/Skeleton";
 import SearchItems from "../components/SearchItems/SearchItems";
-import { selectSearchValue } from "../redux/slices/searchSlice";
+import { selectSearchValue } from "../store/slices/searchSlice";
 import { IPizzaItem } from "../models/IPizzaItem";
 import { useAppDispatch, useAppSelector } from "../hooks/reduxHooks";
 

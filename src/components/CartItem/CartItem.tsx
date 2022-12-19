@@ -1,6 +1,6 @@
 import { BsDashLg, BsPlusLg } from "react-icons/bs";
 
-import { addItem, removeItem, removeItems } from "../../redux/slices/cartSlice";
+import { addItem, removeItem, removeItems } from "../../store/slices/cartSlice";
 import { ButtonCircle } from "../Buttons/Buttons.styled";
 import {
   Article,

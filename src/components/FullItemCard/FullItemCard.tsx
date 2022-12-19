@@ -1,5 +1,5 @@
 import { useAppSelector } from "../../hooks/reduxHooks";
-import { selectItem } from "../../redux/slices/itemSlice";
+import { selectItem } from "../../store/slices/itemSlice";
 
 import { Image, Title, Paragraph, Price, Item } from "./FullItemCard.styled";
 

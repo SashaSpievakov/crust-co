@@ -4,7 +4,7 @@ import { useAppDispatch, useAppSelector } from "../../hooks/reduxHooks";
 import {
   selectSearchValue,
   setSearchValue,
-} from "../../redux/slices/searchSlice";
+} from "../../store/slices/searchSlice";
 import { Wrapper, SearchIcon, Input, Cross } from "./SearchItems.styled";
 
 const SearchItems = () => {

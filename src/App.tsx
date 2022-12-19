@@ -6,7 +6,7 @@ import { ThemeProvider } from "styled-components";
 import Global from "./styles/Global.styled";
 import Home from "./pages/Home";
 import MainLayout from "./layouts/MainLayout";
-import { selectIsLight } from "./redux/slices/themeSlice";
+import { selectIsLight } from "./store/slices/themeSlice";
 import { lightTheme, darkTheme } from "./styles/Themes.styled";
 
 const Cart = React.lazy(

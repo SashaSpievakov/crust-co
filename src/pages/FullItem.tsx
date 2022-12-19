@@ -1,7 +1,7 @@
 import { useEffect } from "react";
 import { useParams } from "react-router-dom";
 
-import { fetchItem } from "../redux/slices/itemSlice";
+import { fetchItem } from "../store/slices/itemSlice";
 import FullItemCard from "../components/FullItemCard/FullItemCard";
 import { useAppDispatch } from "../hooks/reduxHooks";
 

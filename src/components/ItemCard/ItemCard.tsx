@@ -8,7 +8,7 @@ import {
   CartItemForDelete,
   removeItem,
   selectCartItemById,
-} from "../../redux/slices/cartSlice";
+} from "../../store/slices/cartSlice";
 import { ButtonAdd } from "../Buttons/Buttons.styled";
 import {
   Block,
