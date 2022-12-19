@@ -1,4 +1,4 @@
-import { configureStore } from "@reduxjs/toolkit";
+import { combineReducers, configureStore } from "@reduxjs/toolkit";
 import { useDispatch } from "react-redux";
 
 import categorySlice from "./slices/categorySlice";
@@ -9,16 +9,18 @@ import cart from "./slices/cartSlice";
 import pizzas from "./slices/pizzasSlice";
 import item from "./slices/itemSlice";
 
+const rootReducer = combineReducers({
+  activeCategory: categorySlice,
+  activeSort: sortSlice,
+  searchValue: searchSlice,
+  theme,
+  cart,
+  pizzas,
+  item,
+});
+
 export const store = configureStore({
-  reducer: {
-    activeCategory: categorySlice,
-    activeSort: sortSlice,
-    searchValue: searchSlice,
-    theme,
-    cart,
-    pizzas,
-    item,
-  },
+  reducer: rootReducer,
 });
 
 export type RootState = ReturnType<typeof store.getState>;
