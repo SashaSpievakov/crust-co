@@ -1,18 +1,18 @@
 import { useEffect, useRef } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { BsCart3, BsFillSunFill, BsFillMoonFill } from "react-icons/bs";
-import { useSelector, useDispatch } from "react-redux";
 
 import mainLogo from "../../assets/img/main-logo.svg";
 import { selectCart } from "../../redux/slices/cartSlice";
 import { setTheme, selectIsLight } from "../../redux/slices/themeSlice";
 import { Main, Wrapper, Logo, Right, Icon, Delimiter } from "./Header.styled";
 import { ButtonCart } from "../Buttons/Buttons.styled";
+import { useAppDispatch, useAppSelector } from "../../hooks/reduxHooks";
 
 const Header = () => {
-  const { itemsCount, totalPrice, items } = useSelector(selectCart);
-  const isLight = useSelector(selectIsLight);
-  const dispatch = useDispatch();
+  const { itemsCount, totalPrice, items } = useAppSelector(selectCart);
+  const isLight = useAppSelector(selectIsLight);
+  const dispatch = useAppDispatch();
   const location = useLocation();
   const isMounted = useRef(false);
 

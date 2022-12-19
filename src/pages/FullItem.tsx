@@ -1,9 +1,9 @@
 import { useEffect } from "react";
 import { useParams } from "react-router-dom";
 
-import { useAppDispatch } from "../redux/store";
 import { fetchItem } from "../redux/slices/itemSlice";
 import FullItemCard from "../components/FullItemCard/FullItemCard";
+import { useAppDispatch } from "../hooks/reduxHooks";
 
 const FullItemComp = () => {
   const { id } = useParams();

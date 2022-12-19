@@ -1,5 +1,4 @@
 import { useEffect, useRef } from "react";
-import { useSelector } from "react-redux";
 
 import { Title, Block, Top, Items, Error } from "../styles/Base.styled";
 import { selectSort } from "../redux/slices/sortSlice";
@@ -11,18 +10,18 @@ import ItemCard from "../components/ItemCard/ItemCard";
 import Skeleton from "../components/ItemCard/Skeleton";
 import SearchItems from "../components/SearchItems/SearchItems";
 import { selectSearchValue } from "../redux/slices/searchSlice";
-import { useAppDispatch } from "../redux/store";
 import { IPizzaItem } from "../models/IPizzaItem";
+import { useAppDispatch, useAppSelector } from "../hooks/reduxHooks";
 
 const sortNamesArr: string[] = ["rating", "price", "A to Z"];
 
 const HomeComp = () => {
   const dispatch = useAppDispatch();
   const requested = useRef(false);
-  const activeCategory = useSelector(selectCategory);
-  const activeSort = useSelector(selectSort);
-  const searchValue = useSelector(selectSearchValue);
-  const { items, status } = useSelector(selectPizzasData);
+  const activeCategory = useAppSelector(selectCategory);
+  const activeSort = useAppSelector(selectSort);
+  const searchValue = useAppSelector(selectSearchValue);
+  const { items, status } = useAppSelector(selectPizzasData);
 
   const sortedActiveName = sortNamesArr[activeSort];
 

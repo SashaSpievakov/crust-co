@@ -1,6 +1,6 @@
 import React, { useRef } from "react";
-import { useSelector, useDispatch } from "react-redux";
 
+import { useAppDispatch, useAppSelector } from "../../hooks/reduxHooks";
 import {
   selectSearchValue,
   setSearchValue,
@@ -8,8 +8,8 @@ import {
 import { Wrapper, SearchIcon, Input, Cross } from "./SearchItems.styled";
 
 const SearchItems = () => {
-  const searchValue = useSelector(selectSearchValue);
-  const dispatch = useDispatch();
+  const searchValue = useAppSelector(selectSearchValue);
+  const dispatch = useAppDispatch();
 
   const inputRef = useRef<HTMLInputElement>(null);
 

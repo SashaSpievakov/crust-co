@@ -1,7 +1,7 @@
 import { useRef, useState } from "react";
-import { useDispatch, useSelector } from "react-redux";
 import { Link } from "react-router-dom";
 
+import { useAppDispatch, useAppSelector } from "../../hooks/reduxHooks";
 import { ICartItem } from "../../models/ICartItem";
 import {
   addItem,
@@ -38,8 +38,8 @@ const typeNames: string[] = ["traditional", "thin"];
 const sizeNames: number[] = [12, 14, 16];
 
 const ItemCard = ({ id, name, price, sizes, types, count }: ItemCardProps) => {
-  const dispatch = useDispatch();
-  const cartItem = useSelector(selectCartItemById(id));
+  const dispatch = useAppDispatch();
+  const cartItem = useAppSelector(selectCartItemById(id));
   const [activeSize, setActiveSize] = useState(0);
   const [activeType, setActiveType] = useState(0);
   const refType = useRef<HTMLLIElement>(null);

@@ -1,5 +1,4 @@
 import { combineReducers, configureStore } from "@reduxjs/toolkit";
-import { useDispatch } from "react-redux";
 
 import categorySlice from "./slices/categorySlice";
 import sortSlice from "./slices/sortSlice";
@@ -23,7 +22,5 @@ export const store = configureStore({
   reducer: rootReducer,
 });
 
-export type RootState = ReturnType<typeof store.getState>;
-
-type AppDispatch = typeof store.dispatch;
-export const useAppDispatch = () => useDispatch<AppDispatch>();
+export type RootState = ReturnType<typeof rootReducer>;
+export type AppDispatch = typeof store.dispatch;

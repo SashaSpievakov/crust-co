@@ -1,14 +1,14 @@
 import React from "react";
-import { useSelector, useDispatch } from "react-redux";
 
+import { useAppDispatch, useAppSelector } from "../../hooks/reduxHooks";
 import { selectCategory, setCategory } from "../../redux/slices/categorySlice";
 import { Ul, Li } from "./Categories.styled";
 
 const categoriesArr: string[] = ["All", "Meat", "Vegetarian", "Grill", "Spicy"];
 
 const Categories = () => {
-  const activeCategory = useSelector(selectCategory);
-  const dispatch = useDispatch();
+  const activeCategory = useAppSelector(selectCategory);
+  const dispatch = useAppDispatch();
 
   const chosenClass = categoriesArr[activeCategory];
   return (

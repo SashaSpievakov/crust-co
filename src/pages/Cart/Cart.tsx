@@ -1,5 +1,4 @@
 import { Link } from "react-router-dom";
-import { useDispatch, useSelector } from "react-redux";
 
 import { clearItems, selectCart } from "../../redux/slices/cartSlice";
 import CartItem from "../../components/CartItem/CartItem";
@@ -17,10 +16,11 @@ import {
   ChevronLeft,
 } from "./Cart.styled";
 import { ICartItem } from "../../models/ICartItem";
+import { useAppDispatch, useAppSelector } from "../../hooks/reduxHooks";
 
 const Cart = () => {
-  const { itemsCount, totalPrice, items } = useSelector(selectCart);
-  const dispatch = useDispatch();
+  const { itemsCount, totalPrice, items } = useAppSelector(selectCart);
+  const dispatch = useAppDispatch();
 
   const onClearClick = () => {
     dispatch(clearItems());

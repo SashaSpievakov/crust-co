@@ -1,10 +1,10 @@
-import { useSelector } from "react-redux";
+import { useAppSelector } from "../../hooks/reduxHooks";
 import { selectItem } from "../../redux/slices/itemSlice";
 
 import { Image, Title, Paragraph, Price, Item } from "./FullItemCard.styled";
 
 const FullItemCard = () => {
-  const { data } = useSelector(selectItem);
+  const { data } = useAppSelector(selectItem);
 
   return (
     <Item>

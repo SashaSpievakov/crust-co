@@ -1,4 +1,3 @@
-import { useDispatch } from "react-redux";
 import { BsDashLg, BsPlusLg } from "react-icons/bs";
 
 import { addItem, removeItem, removeItems } from "../../redux/slices/cartSlice";
@@ -13,6 +12,7 @@ import {
   Remove,
 } from "./CartItem.styled";
 import { ICartItem } from "../../models/ICartItem";
+import { useAppDispatch } from "../../hooks/reduxHooks";
 
 interface CartItemProps {
   id: string;
@@ -24,7 +24,7 @@ interface CartItemProps {
 }
 
 const CartItem = ({ id, name, price, size, type, count }: CartItemProps) => {
-  const dispatch = useDispatch();
+  const dispatch = useAppDispatch();
 
   const onClickAdd = () => {
     const item: ICartItem = {
