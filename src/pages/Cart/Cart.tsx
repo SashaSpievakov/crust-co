@@ -16,15 +16,7 @@ import {
   Buttons,
   ChevronLeft,
 } from "./Cart.styled";
-
-interface Item {
-  id: string;
-  name: string;
-  price: number;
-  size: number;
-  type: string;
-  count: number;
-}
+import { ICartItem } from "../../models/ICartItem";
 
 const Cart = () => {
   const { itemsCount, totalPrice, items } = useSelector(selectCart);
@@ -50,7 +42,7 @@ const Cart = () => {
           </Top>
 
           <section>
-            {items.map((item: Item) => (
+            {items.map((item: ICartItem) => (
               <CartItem key={item.id} {...item} />
             ))}
           </section>

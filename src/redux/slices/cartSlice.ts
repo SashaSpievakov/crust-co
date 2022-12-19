@@ -1,16 +1,8 @@
 import { createSlice, PayloadAction } from "@reduxjs/toolkit";
+
 import { RootState } from "../store";
-
 import getCartFromLS from "../../utils/getCartFromLS";
-
-export interface ICartItem {
-  id: string;
-  name: string;
-  price: number;
-  size: number;
-  type: string;
-  count: number;
-}
+import { ICartItem } from "../../models/ICartItem";
 
 export interface CartItemForDelete {
   id: string;

@@ -4,11 +4,7 @@ import { useSelector } from "react-redux";
 import { Title, Block, Top, Items, Error } from "../styles/Base.styled";
 import { selectSort } from "../redux/slices/sortSlice";
 import { selectCategory } from "../redux/slices/categorySlice";
-import {
-  fetchItems,
-  PizzaItem,
-  selectPizzasData,
-} from "../redux/slices/pizzasSlice";
+import { fetchItems, selectPizzasData } from "../redux/slices/pizzasSlice";
 import Categories from "../components/Categories/Categories";
 import Sort from "../components/Sort/Sort";
 import ItemCard from "../components/ItemCard/ItemCard";
@@ -16,6 +12,7 @@ import Skeleton from "../components/ItemCard/Skeleton";
 import SearchItems from "../components/SearchItems/SearchItems";
 import { selectSearchValue } from "../redux/slices/searchSlice";
 import { useAppDispatch } from "../redux/store";
+import { IPizzaItem } from "../models/IPizzaItem";
 
 const sortNamesArr: string[] = ["rating", "price", "A to Z"];
 
@@ -68,12 +65,12 @@ const HomeComp = () => {
           {status === "loading"
             ? [...new Array(6)].map((_, i) => <Skeleton key={i} />)
             : items
-                .filter((item: PizzaItem) =>
+                .filter((item: IPizzaItem) =>
                   item.name
                     .toLowerCase()
                     .includes(searchValue.trim().toLowerCase()),
                 )
-                .map((item: PizzaItem) => (
+                .map((item: IPizzaItem) => (
                   <ItemCard count={0} key={item.id} {...item} />
                 ))}
         </Items>

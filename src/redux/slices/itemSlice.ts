@@ -1,17 +1,19 @@
 import axios from "axios";
 import { createSlice, createAsyncThunk, PayloadAction } from "@reduxjs/toolkit";
+
 import { RootState } from "../store";
-import { PizzaItem, Status } from "./pizzasSlice";
+import { Status } from "./pizzasSlice";
+import { IPizzaItem } from "../../models/IPizzaItem";
 
 interface ItemSliceState {
   status: Status;
-  data: PizzaItem;
+  data: IPizzaItem;
 }
 
-export const fetchItem = createAsyncThunk<PizzaItem, string>(
+export const fetchItem = createAsyncThunk<IPizzaItem, string>(
   "item/fetchItemStatus",
   async (id) => {
-    const { data } = await axios.get<PizzaItem>(
+    const { data } = await axios.get<IPizzaItem>(
       `https://6344adb1dcae733e8fe3067a.mockapi.io/pizza-items/${id}`,
     );
     return data;
@@ -19,7 +21,7 @@ export const fetchItem = createAsyncThunk<PizzaItem, string>(
 );
 
 const initialState: ItemSliceState = {
-  data: {} as PizzaItem,
+  data: {} as IPizzaItem,
   status: Status.LOADING,
 };
 
@@ -27,13 +29,13 @@ export const itemSlice = createSlice({
   name: "item",
   initialState,
   reducers: {
-    setData: (state, action: PayloadAction<PizzaItem>) => {
+    setData: (state, action: PayloadAction<IPizzaItem>) => {
       state.data = action.payload;
     },
   },
   extraReducers: (builder) => {
     builder.addCase(fetchItem.pending, (state) => {
-      state.data = {} as PizzaItem;
+      state.data = {} as IPizzaItem;
       state.status = Status.LOADING;
     });
 
@@ -43,7 +45,7 @@ export const itemSlice = createSlice({
     });
 
     builder.addCase(fetchItem.rejected, (state) => {
-      state.data = {} as PizzaItem;
+      state.data = {} as IPizzaItem;
       state.status = Status.REJECTED;
     });
   },

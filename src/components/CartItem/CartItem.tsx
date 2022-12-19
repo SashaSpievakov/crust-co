@@ -1,12 +1,7 @@
 import { useDispatch } from "react-redux";
 import { BsDashLg, BsPlusLg } from "react-icons/bs";
 
-import {
-  addItem,
-  ICartItem,
-  removeItem,
-  removeItems,
-} from "../../redux/slices/cartSlice";
+import { addItem, removeItem, removeItems } from "../../redux/slices/cartSlice";
 import { ButtonCircle } from "../Buttons/Buttons.styled";
 import {
   Article,
@@ -17,6 +12,7 @@ import {
   Price,
   Remove,
 } from "./CartItem.styled";
+import { ICartItem } from "../../models/ICartItem";
 
 interface CartItemProps {
   id: string;
