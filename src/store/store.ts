@@ -6,7 +6,7 @@ import searchSlice from "./slices/searchSlice";
 import theme from "./slices/themeSlice";
 import cart from "./slices/cartSlice";
 import pizzas from "./slices/pizzasSlice";
-import item from "./slices/itemSlice";
+import itemAPI from "../services/ItemService";
 
 const rootReducer = combineReducers({
   activeCategory: categorySlice,
@@ -15,11 +15,13 @@ const rootReducer = combineReducers({
   theme,
   cart,
   pizzas,
-  item,
+  [itemAPI.reducerPath]: itemAPI.reducer,
 });
 
 export const store = configureStore({
   reducer: rootReducer,
+  middleware: (getDefaultMiddleware) =>
+    getDefaultMiddleware().concat(itemAPI.middleware),
 });
 
 export type RootState = ReturnType<typeof rootReducer>;

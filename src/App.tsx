@@ -13,7 +13,7 @@ const Cart = React.lazy(
   () => import(/* webpackChunkName: "Cart" */ "./pages/Cart/Cart"),
 );
 const FullItem = React.lazy(
-  () => import(/* webpackChunkName: "FullItem" */ "./pages/FullItem"),
+  () => import(/* webpackChunkName: "FullItem" */ "./pages/FullItem/FullItem"),
 );
 const NotFound = React.lazy(
   () => import(/* webpackChunkName: "NotFound" */ "./pages/NotFound"),
