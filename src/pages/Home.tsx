@@ -1,9 +1,8 @@
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 
 import { Title, Block, Top, Items, Error } from "../styles/Base.styled";
 import { selectSort } from "../store/slices/sortSlice";
 import { selectCategory } from "../store/slices/categorySlice";
-import { fetchItems, selectPizzasData } from "../store/slices/pizzasSlice";
 import Categories from "../components/Categories/Categories";
 import Sort from "../components/Sort/Sort";
 import ItemCard from "../components/ItemCard/ItemCard";
@@ -11,17 +10,17 @@ import Skeleton from "../components/ItemCard/Skeleton";
 import SearchItems from "../components/SearchItems/SearchItems";
 import { selectSearchValue } from "../store/slices/searchSlice";
 import { IPizzaItem } from "../models/IPizzaItem";
-import { useAppDispatch, useAppSelector } from "../hooks/reduxHooks";
+import { useAppSelector } from "../hooks/reduxHooks";
+import pizzasAPI from "../services/PizzasService";
 
 const sortNamesArr: string[] = ["rating", "price", "A to Z"];
 
 const HomeComp = () => {
-  const dispatch = useAppDispatch();
+  const [pizzas, setPizzas] = useState<IPizzaItem[]>([]);
   const requested = useRef(false);
   const activeCategory = useAppSelector(selectCategory);
   const activeSort = useAppSelector(selectSort);
   const searchValue = useAppSelector(selectSearchValue);
-  const { items, status } = useAppSelector(selectPizzasData);
 
   const sortedActiveName = sortNamesArr[activeSort];
 
@@ -34,15 +33,24 @@ const HomeComp = () => {
 
   const sortedPropertyName = sortPropertyName(sortedActiveName);
 
+  const { data, isSuccess, isError, isLoading } = pizzasAPI.useFetchPizzasQuery(
+    {
+      activeCategory,
+      sortedPropertyName,
+    },
+  );
+
   useEffect(() => {
     window.scrollTo(0, 0);
 
     if (!requested.current) {
-      dispatch(fetchItems({ activeCategory, sortedPropertyName }));
+      if (isSuccess) {
+        setPizzas(data);
+      }
     }
 
     requested.current = false;
-  }, [activeCategory, sortedPropertyName, dispatch]);
+  }, [activeCategory, sortedPropertyName, data, isSuccess]);
 
   return (
     <>
@@ -54,16 +62,16 @@ const HomeComp = () => {
         <Title>All Pizzas</Title>
         <SearchItems />
       </Block>
-      {status === "rejected" ? (
+      {isError ? (
         <Error>
           <h2>Request Error</h2>
           <p>Coudn&apos;t get store items. Try you request again later.</p>
         </Error>
       ) : (
         <Items>
-          {status === "loading"
+          {isLoading
             ? [...new Array(6)].map((_, i) => <Skeleton key={i} />)
-            : items
+            : pizzas
                 .filter((item: IPizzaItem) =>
                   item.name
                     .toLowerCase()
