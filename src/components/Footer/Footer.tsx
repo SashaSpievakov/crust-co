@@ -9,7 +9,7 @@ const Footer = () => {
         <li>
           <Link href="mailto:alexandr.pobeda99@gamil.com">
             <Icon as={MdEmail} />
-            <span>alexandr.pobeda99@gmail.com</span>
+            <span>spievakov@gmail.com</span>
           </Link>
         </li>
 
