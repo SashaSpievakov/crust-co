@@ -1,9 +1,6 @@
 import { useParams } from "react-router-dom";
 
-// import { useAppSelector } from "../../hooks/reduxHooks";
-// import { ICartItem } from "../../models/ICartItem";
 import itemAPI from "../../services/ItemService";
-// import { selectItem } from "../../store/slices/itemSlice";
 import { Image, Title, Paragraph, Price, Item } from "./FullItem.styled";
 
 const FullItem = () => {
@@ -14,7 +11,6 @@ const FullItem = () => {
     isSuccess,
     error,
   } = itemAPI.useFetchItemQuery(id as string);
-  // const { data } = useAppSelector(selectItem);
 
   return isSuccess ? (
     <Item>

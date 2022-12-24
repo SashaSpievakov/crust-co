@@ -65,7 +65,7 @@ const HomeComp = () => {
       {isError ? (
         <Error>
           <h2>Request Error</h2>
-          <p>Coudn&apos;t get store items. Try you request again later.</p>
+          <p>Coudn&apos;t get store items. Try your request again later.</p>
         </Error>
       ) : (
         <Items>
