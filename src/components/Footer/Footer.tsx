@@ -7,7 +7,7 @@ const Footer = () => {
     <Main>
       <Ul>
         <li>
-          <Link href="mailto:alexandr.pobeda99@gamil.com">
+          <Link href="mailto:spievakov@gamil.com">
             <Icon as={MdEmail} />
             <span>spievakov@gmail.com</span>
           </Link>
