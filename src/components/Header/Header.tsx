@@ -6,7 +6,7 @@ import mainLogo from "../../assets/img/main-logo.svg";
 import { selectCart } from "../../store/slices/cartSlice";
 import { setTheme, selectIsLight } from "../../store/slices/themeSlice";
 import { Main, Wrapper, Logo, Right, Icon, Delimiter } from "./Header.styled";
-import { ButtonCart } from "../Buttons/Buttons.styled";
+import { ButtonCart } from "../../styles/Buttons.styled";
 import { useAppDispatch, useAppSelector } from "../../hooks/reduxHooks";
 
 const Header = () => {

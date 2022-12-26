@@ -2,7 +2,7 @@ import { Link, useParams } from "react-router-dom";
 
 import itemAPI from "../../services/ItemService";
 import { Image, Title, Paragraph, Price, Item } from "./FullItem.styled";
-import { ButtonBlack } from "../../components/Buttons/Buttons.styled";
+import { ButtonBlack } from "../../styles/Buttons.styled";
 
 const FullItem = () => {
   const { id } = useParams();

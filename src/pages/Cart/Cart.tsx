@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import { clearItems, selectCart } from "../../store/slices/cartSlice";
 import CartItem from "../../components/CartItem/CartItem";
 import CartEmpty from "../../components/CartEmpty/CartEmpty";
-import { ButtonBack, ButtonPay } from "../../components/Buttons/Buttons.styled";
+import { ButtonBack, ButtonPay } from "../../styles/Buttons.styled";
 import {
   Top,
   Title,

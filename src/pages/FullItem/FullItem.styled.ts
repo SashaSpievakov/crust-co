@@ -26,6 +26,7 @@ const Image = styled.img`
 
 const Title = styled.h2`
   font-size: 45px;
+  font-weight: 700;
   text-align: center;
   margin-bottom: 37px;
 

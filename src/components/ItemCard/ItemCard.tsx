@@ -1,4 +1,4 @@
-import { useRef, useState } from "react";
+import { useState } from "react";
 import { Link } from "react-router-dom";
 
 import { useAppDispatch, useAppSelector } from "../../hooks/reduxHooks";
@@ -9,7 +9,7 @@ import {
   removeItem,
   selectCartItemById,
 } from "../../store/slices/cartSlice";
-import { ButtonAdd } from "../Buttons/Buttons.styled";
+import { ButtonAdd } from "../../styles/Buttons.styled";
 import {
   Block,
   Li,
@@ -42,7 +42,7 @@ const ItemCard = ({ id, name, price, sizes, types, count }: ItemCardProps) => {
   const cartItem = useAppSelector(selectCartItemById(id));
   const [activeSize, setActiveSize] = useState(0);
   const [activeType, setActiveType] = useState(0);
-  const refType = useRef<HTMLLIElement>(null);
+  // const refType = useRef<HTMLLIElement>(null);
 
   const addedCount = cartItem ? cartItem.count : 0;
 
@@ -77,7 +77,7 @@ const ItemCard = ({ id, name, price, sizes, types, count }: ItemCardProps) => {
         <ul>
           {types.map((type) => (
             <Li
-              ref={refType}
+              // ref={refType}
               key={type}
               onClick={() => setActiveType(type)}
               chosen={activeType === types.indexOf(type)}
