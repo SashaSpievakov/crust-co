@@ -1,7 +1,8 @@
-import { useParams } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 
 import itemAPI from "../../services/ItemService";
 import { Image, Title, Paragraph, Price, Item } from "./FullItem.styled";
+import { ButtonBlack } from "../../components/Buttons/Buttons.styled";
 
 const FullItem = () => {
   const { id } = useParams();
@@ -26,6 +27,9 @@ const FullItem = () => {
         amet placeat consectetur magnam aspernatur modi?
       </Paragraph>
       <Price>{item.price} $</Price>
+      <ButtonBlack to="/" as={Link}>
+        <span>Go Back</span>
+      </ButtonBlack>
     </Item>
   ) : isLoading ? (
     <h1>Loading...</h1>

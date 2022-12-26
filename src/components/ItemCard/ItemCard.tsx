@@ -116,4 +116,5 @@ const ItemCard = ({ id, name, price, sizes, types, count }: ItemCardProps) => {
     </Block>
   );
 };
+
 export default ItemCard;
