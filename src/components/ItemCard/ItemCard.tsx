@@ -78,6 +78,7 @@ const ItemCard = ({ id, name, price, sizes, types, count }: ItemCardProps) => {
         activeType={activeType}
         setActiveSize={setActiveSize}
         setActiveType={setActiveType}
+        typeNames={typeNames}
       />
       <Bottom>
         <Price>{price}$</Price>

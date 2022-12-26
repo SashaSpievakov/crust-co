@@ -7,9 +7,8 @@ interface SelectorProps {
   activeType: number;
   setActiveSize: (index: number) => void;
   setActiveType: (index: number) => void;
+  typeNames: string[];
 }
-
-const typeNames: string[] = ["traditional", "thin"];
 
 const Selector = ({
   sizes,
@@ -18,6 +17,7 @@ const Selector = ({
   activeType,
   setActiveSize,
   setActiveType,
+  typeNames,
 }: SelectorProps) => {
   return (
     <Div>
