@@ -10,12 +10,11 @@ import {
   selectCartItemById,
 } from "../../store/slices/cartSlice";
 import { ButtonAdd } from "../../styles/Buttons.styled";
+import Select from "../UI/Selector/Selector";
 import {
   Block,
-  Li,
   Image,
   Title,
-  Selector,
   Bottom,
   Price,
   Counter,
@@ -42,7 +41,6 @@ const ItemCard = ({ id, name, price, sizes, types, count }: ItemCardProps) => {
   const cartItem = useAppSelector(selectCartItemById(id));
   const [activeSize, setActiveSize] = useState(0);
   const [activeType, setActiveType] = useState(0);
-  // const refType = useRef<HTMLLIElement>(null);
 
   const addedCount = cartItem ? cartItem.count : 0;
 
@@ -73,31 +71,14 @@ const ItemCard = ({ id, name, price, sizes, types, count }: ItemCardProps) => {
         <Image src={`./assets/img/pizza${id}.png`} alt="Pizza" />
         <Title>{name}</Title>
       </Link>
-      <Selector>
-        <ul>
-          {types.map((type) => (
-            <Li
-              // ref={refType}
-              key={type}
-              onClick={() => setActiveType(type)}
-              chosen={activeType === types.indexOf(type)}
-            >
-              {typeNames[type]}
-            </Li>
-          ))}
-        </ul>
-        <ul>
-          {sizes.map((size, i) => (
-            <Li
-              key={size}
-              onClick={() => setActiveSize(i)}
-              chosen={activeSize === i}
-            >
-              {size} inch
-            </Li>
-          ))}
-        </ul>
-      </Selector>
+      <Select
+        sizes={sizes}
+        types={types}
+        activeSize={activeSize}
+        activeType={activeType}
+        setActiveSize={setActiveSize}
+        setActiveType={setActiveType}
+      />
       <Bottom>
         <Price>{price}$</Price>
         {addedCount ? (
