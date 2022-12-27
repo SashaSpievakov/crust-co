@@ -24,15 +24,7 @@ const FullItem = () => {
     <Item>
       <Image src={`../assets/img/pizza${item.id}.png`} alt="pizza" />
       <Title>{item.name}</Title>
-      <Paragraph>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam odit
-        voluptates aliquid cupiditate reiciendis et mollitia minima aliquam a
-        beatae, neque tempore necessitatibus commodi sunt minus. Expedita,
-        voluptatum, dignissimos fugiat, neque maxime eaque modi eum officiis
-        illo molestiae fugit? Inventore quod cumque laboriosam reprehenderit,
-        odit quis error eius consequatur itaque totam nobis corporis incidunt
-        amet placeat consectetur magnam aspernatur modi?
-      </Paragraph>
+      <Paragraph>{item.description}</Paragraph>
       <Selector
         sizes={item.sizes}
         types={item.types}

@@ -48,6 +48,10 @@ const Paragraph = styled.p`
   max-width: 800px;
   text-align: center;
   margin-bottom: 15px;
+
+  @media screen and (max-width: 400px) {
+    font-size: 14px;
+  }
 `;
 
 const Price = styled.h4`
