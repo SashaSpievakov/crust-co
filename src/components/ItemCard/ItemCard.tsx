@@ -9,20 +9,9 @@ import {
   removeItem,
   selectCartItemById,
 } from "../../store/slices/cartSlice";
-import { ButtonAdd } from "../../styles/Buttons.styled";
+import ItemsCountHandler from "../UI/ItemsCountHandler/ItemsCountHandler";
 import Select from "../UI/Selector/Selector";
-import {
-  Block,
-  Image,
-  Title,
-  Bottom,
-  Price,
-  Counter,
-  Minus,
-  Plus,
-  Count,
-  MainPlus,
-} from "./ItemCard.styled";
+import { Block, Image, Title, Bottom, Price } from "./ItemCard.styled";
 
 interface ItemCardProps {
   id: string;
@@ -53,6 +42,7 @@ const ItemCard = ({ id, name, price, sizes, types, count }: ItemCardProps) => {
       type: typeNames[activeType],
       count: 0,
     };
+
     dispatch(addItem(item));
   };
 
@@ -62,6 +52,7 @@ const ItemCard = ({ id, name, price, sizes, types, count }: ItemCardProps) => {
       price,
       count,
     };
+
     dispatch(removeItem(item));
   };
 
@@ -82,18 +73,11 @@ const ItemCard = ({ id, name, price, sizes, types, count }: ItemCardProps) => {
       />
       <Bottom>
         <Price>{price}$</Price>
-        {addedCount ? (
-          <Counter>
-            <Minus onClick={onClickRemove} />
-            <Count>{addedCount}</Count>
-            <Plus onClick={onClickAdd} />
-          </Counter>
-        ) : (
-          <ButtonAdd onClick={onClickAdd}>
-            <MainPlus />
-            <span>Add</span>
-          </ButtonAdd>
-        )}
+        <ItemsCountHandler
+          addedCount={addedCount}
+          onClickAdd={onClickAdd}
+          onClickRemove={onClickRemove}
+        />
       </Bottom>
     </Block>
   );
