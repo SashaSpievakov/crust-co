@@ -78,7 +78,7 @@ const HomeComp = () => {
                     .includes(searchValue.trim().toLowerCase()),
                 )
                 .map((item: IPizzaItem) => (
-                  <ItemCard count={0} key={item.id} {...item} />
+                  <ItemCard key={item.id} {...item} />
                 ))}
         </Items>
       )}

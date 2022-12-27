@@ -7,6 +7,9 @@ import { ICartItem } from "../../models/ICartItem";
 export interface CartItemForDelete {
   id: string;
   price: number;
+}
+
+export interface CartItemsForDelete extends CartItemForDelete {
   count: number;
 }
 
@@ -59,7 +62,7 @@ export const cartSlice = createSlice({
       state.itemsCount -= 1;
       state.totalPrice -= action.payload.price;
     },
-    removeItems: (state, action: PayloadAction<CartItemForDelete>) => {
+    removeItems: (state, action: PayloadAction<CartItemsForDelete>) => {
       state.items = state.items.filter((obj) => obj.id !== action.payload.id);
 
       state.itemsCount -= action.payload.count;

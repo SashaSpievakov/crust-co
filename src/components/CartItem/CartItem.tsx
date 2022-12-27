@@ -1,6 +1,11 @@
 import { BsDashLg, BsPlusLg } from "react-icons/bs";
 
-import { addItem, removeItem, removeItems } from "../../store/slices/cartSlice";
+import {
+  addItem,
+  CartItemsForDelete,
+  removeItem,
+  removeItems,
+} from "../../store/slices/cartSlice";
 import { ButtonCircle } from "../../styles/Buttons.styled";
 import {
   Article,
@@ -48,7 +53,7 @@ const CartItem = ({ id, name, price, size, type, count }: CartItemProps) => {
   };
 
   const onClickDelete = () => {
-    const item = {
+    const item: CartItemsForDelete = {
       id,
       price,
       count,

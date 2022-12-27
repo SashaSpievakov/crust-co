@@ -19,13 +19,12 @@ interface ItemCardProps {
   price: number;
   sizes: number[];
   types: number[];
-  count: number;
 }
 
 const typeNames: string[] = ["traditional", "thin"];
 const sizeNames: number[] = [12, 14, 16];
 
-const ItemCard = ({ id, name, price, sizes, types, count }: ItemCardProps) => {
+const ItemCard = ({ id, name, price, sizes, types }: ItemCardProps) => {
   const dispatch = useAppDispatch();
   const cartItem = useAppSelector(selectCartItemById(id));
   const [activeSize, setActiveSize] = useState(0);
@@ -50,7 +49,6 @@ const ItemCard = ({ id, name, price, sizes, types, count }: ItemCardProps) => {
     const item: CartItemForDelete = {
       id,
       price,
-      count,
     };
 
     dispatch(removeItem(item));
