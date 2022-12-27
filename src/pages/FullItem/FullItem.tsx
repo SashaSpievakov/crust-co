@@ -18,7 +18,9 @@ const FullItem = () => {
     isLoading,
     isSuccess,
     error,
-  } = itemAPI.useFetchItemQuery(id as string);
+  } = itemAPI.useFetchItemQuery(id as string, {
+    refetchOnFocus: true,
+  });
 
   return isSuccess ? (
     <Item>
