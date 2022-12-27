@@ -23,7 +23,7 @@ const Wrapper = styled(Container)<WrapperProps>`
   ${({ isCart }) =>
     !isCart &&
     css`
-      @media screen and (max-width: 550px) {
+      @media screen and (max-width: 670px) {
         flex-direction: column;
         align-items: start;
         row-gap: 20px;
@@ -56,7 +56,7 @@ const Right = styled.div`
   align-items: center;
   column-gap: 30px;
 
-  @media screen and (max-width: 550px) {
+  @media screen and (max-width: 670px) {
     flex-direction: row-reverse;
   }
 `;

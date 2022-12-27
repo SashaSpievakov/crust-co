@@ -4,6 +4,10 @@ interface CircleProps {
   remove?: boolean;
 }
 
+interface ButtonAddProps {
+  isFullScreen?: boolean;
+}
+
 const Button = styled.button`
   display: inline-block;
   background-color: ${({ theme }) => theme.colors.primary};
@@ -125,7 +129,7 @@ const ButtonCircle = styled(ButtonOutline)<CircleProps>`
     `}
 `;
 
-const ButtonAdd = styled(ButtonOutline)`
+const ButtonAdd = styled(ButtonOutline)<ButtonAddProps>`
   display: flex;
   align-items: center;
   color: ${({ theme }) => theme.colors.third};
@@ -139,6 +143,12 @@ const ButtonAdd = styled(ButtonOutline)`
   &:hover {
     color: ${({ theme }) => theme.colors.third};
   }
+
+  ${({ isFullScreen }) =>
+    isFullScreen &&
+    css`
+      padding: 15px 40px;
+    `}
 `;
 
 const ButtonBack = styled(ButtonAdd)`

@@ -22,6 +22,7 @@ interface ItemsCountHandlerProps {
   activeSize: number;
   activeType: number;
   typeNames: string[];
+  isFullScreen?: boolean;
 }
 
 const sizeNames: number[] = [12, 14, 16];
@@ -33,6 +34,7 @@ const ItemsCountHandler = ({
   activeSize,
   activeType,
   typeNames,
+  isFullScreen = false,
 }: ItemsCountHandlerProps) => {
   const dispatch = useAppDispatch();
   const cartItem = useAppSelector(selectCartItemById(id));
@@ -62,13 +64,13 @@ const ItemsCountHandler = ({
   };
 
   return addedCount ? (
-    <Counter>
+    <Counter isFullScreen={isFullScreen}>
       <Minus onClick={onClickRemove} />
-      <Count>{addedCount}</Count>
+      <Count isFullScreen={isFullScreen}>{addedCount}</Count>
       <Plus onClick={onClickAdd} />
     </Counter>
   ) : (
-    <ButtonAdd onClick={onClickAdd}>
+    <ButtonAdd onClick={onClickAdd} isFullScreen={isFullScreen}>
       <MainPlus />
       <span>Add</span>
     </ButtonAdd>

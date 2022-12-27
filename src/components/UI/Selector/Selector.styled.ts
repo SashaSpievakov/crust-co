@@ -23,11 +23,22 @@ const Div = styled.div<DivProps>`
     text-align: center;
   }
 
+  @media screen and (max-width: 400px) {
+    font-size: ${({ isFullScreen }) => (isFullScreen ? "16px" : "14px")};
+  }
+
   ${({ isFullScreen }) =>
     isFullScreen &&
     css`
       min-width: 400px;
-      /* height: 150px; */
+
+      @media screen and (max-width: 550px) {
+        min-width: 300px;
+      }
+
+      @media screen and (max-width: 400px) {
+        min-width: 230px;
+      }
     `}
 `;
 

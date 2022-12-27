@@ -5,6 +5,11 @@ const Item = styled(Container)`
   display: flex;
   flex-direction: column;
   align-items: center;
+  gap: 20px;
+
+  @media screen and (max-width: 550px) {
+    padding-bottom: 40px;
+  }
 `;
 
 const Image = styled.img`
@@ -28,7 +33,7 @@ const Title = styled.h2`
   font-size: 45px;
   font-weight: 700;
   text-align: center;
-  margin-bottom: 37px;
+  margin-bottom: 15px;
 
   @media screen and (max-width: 600px) {
     font-size: 35px;
@@ -42,11 +47,15 @@ const Title = styled.h2`
 const Paragraph = styled.p`
   max-width: 800px;
   text-align: center;
-  margin-bottom: 30px;
+  margin-bottom: 15px;
 `;
 
 const Price = styled.h4`
   font-size: 45px;
+
+  @media screen and (max-width: 500px) {
+    font-size: 40px;
+  }
 `;
 
 export { Item, Image, Title, Paragraph, Price };
