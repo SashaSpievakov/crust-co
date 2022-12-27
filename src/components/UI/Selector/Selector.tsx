@@ -8,6 +8,7 @@ interface SelectorProps {
   setActiveSize: (index: number) => void;
   setActiveType: (index: number) => void;
   typeNames: string[];
+  isFullScreen?: boolean;
 }
 
 const Selector = ({
@@ -18,9 +19,10 @@ const Selector = ({
   setActiveSize,
   setActiveType,
   typeNames,
+  isFullScreen = false,
 }: SelectorProps) => {
   return (
-    <Div>
+    <Div isFullScreen={isFullScreen}>
       <ul>
         {types.map((type) => (
           <Li

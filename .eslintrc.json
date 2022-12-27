@@ -28,6 +28,7 @@
     "no-plusplus": "off",
     "no-param-reassign": "off",
     "react/function-component-definition": "off",
-    "no-nested-ternary": "off"
+    "no-nested-ternary": "off",
+    "react/require-default-props": "off"
   }
 }

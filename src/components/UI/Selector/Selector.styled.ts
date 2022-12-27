@@ -4,8 +4,13 @@ interface LiProps {
   chosen: boolean;
 }
 
-const Div = styled.div`
+interface DivProps {
+  isFullScreen: boolean;
+}
+
+const Div = styled.div<DivProps>`
   display: flex;
+  font-size: ${({ isFullScreen }) => (isFullScreen ? "18px" : "14px")};
   flex-direction: column;
   gap: 6px;
   padding: 6px;
@@ -15,14 +20,21 @@ const Div = styled.div`
   ul {
     display: flex;
     flex: 1;
+    text-align: center;
   }
+
+  ${({ isFullScreen }) =>
+    isFullScreen &&
+    css`
+      min-width: 400px;
+      /* height: 150px; */
+    `}
 `;
 
 const Li = styled.li<LiProps>`
+  font-weight: 600;
   flex: 1;
   padding: 8px;
-  font-weight: 600;
-  font-size: 14px;
   cursor: pointer;
 
   ${({ chosen }) =>

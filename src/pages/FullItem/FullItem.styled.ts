@@ -40,12 +40,13 @@ const Title = styled.h2`
 `;
 
 const Paragraph = styled.p`
+  max-width: 800px;
   text-align: center;
   margin-bottom: 30px;
 `;
 
 const Price = styled.h4`
-  font-size: 40px;
+  font-size: 45px;
 `;
 
 export { Item, Image, Title, Paragraph, Price };

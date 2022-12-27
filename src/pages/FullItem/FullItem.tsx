@@ -1,10 +1,16 @@
+import { useState } from "react";
 import { Link, useParams } from "react-router-dom";
 
 import itemAPI from "../../services/ItemService";
 import { Image, Title, Paragraph, Price, Item } from "./FullItem.styled";
 import { ButtonBlack } from "../../styles/Buttons.styled";
+import Selector from "../../components/UI/Selector/Selector";
+
+const typeNames: string[] = ["traditional", "thin"];
 
 const FullItem = () => {
+  const [activeSize, setActiveSize] = useState(0);
+  const [activeType, setActiveType] = useState(0);
   const { id } = useParams();
   const {
     data: item,
@@ -26,6 +32,16 @@ const FullItem = () => {
         odit quis error eius consequatur itaque totam nobis corporis incidunt
         amet placeat consectetur magnam aspernatur modi?
       </Paragraph>
+      <Selector
+        sizes={item.sizes}
+        types={item.types}
+        activeSize={activeSize}
+        activeType={activeType}
+        setActiveSize={setActiveSize}
+        setActiveType={setActiveType}
+        typeNames={typeNames}
+        isFullScreen
+      />
       <Price>{item.price} $</Price>
       <ButtonBlack to="/" as={Link}>
         <span>Go Back</span>
