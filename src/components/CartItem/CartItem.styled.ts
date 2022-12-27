@@ -71,7 +71,7 @@ const Counter = styled.div`
 
   @media screen and (max-width: 850px) {
     width: auto;
-    gap: 7px;
+    gap: 11px;
   }
 `;
 
