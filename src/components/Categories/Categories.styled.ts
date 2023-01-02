@@ -18,7 +18,7 @@ const Ul = styled.ul`
 `;
 
 const Li = styled.li<LiProps>`
-  color: ${({ theme }) => theme.colors.black};
+  color: ${({ theme }) => theme.colors.third};
   background-color: ${({ theme }) => theme.colors.gray};
   padding: 13px 30px;
   border-radius: 30px;
