@@ -15,6 +15,7 @@ const SearchIcon = styled(BsSearch)`
 
 const Input = styled.input`
   font-size: 16px;
+  color: ${({ theme }) => theme.colors.third};
   height: 40px;
   width: 300px;
   padding: 10px 33px 10px 40px;
