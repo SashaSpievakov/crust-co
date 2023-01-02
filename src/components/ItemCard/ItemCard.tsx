@@ -22,7 +22,16 @@ const ItemCard = ({ id, name, price, sizes, types }: ItemCardProps) => {
   return (
     <Block>
       <Link to={`/item/${id}`}>
-        <Image src={`./assets/img/pizza${id}.png`} alt="Pizza" />
+        <picture>
+          <source srcSet={`./assets/img/pizza${id}.webp`} type="image/webp" />
+          <source srcSet={`./assets/img/pizza${id}.png`} type="image/png" />
+          <Image
+            src={`./assets/img/pizza${id}.png`}
+            alt={`${name} pizza`}
+            width="250"
+            height="250"
+          />
+        </picture>
         <Title>{name}</Title>
       </Link>
       <Select

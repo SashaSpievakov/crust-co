@@ -41,7 +41,7 @@ const Header = () => {
       <Wrapper isCart={location.pathname === "/cart"}>
         <Link to="/">
           <Logo>
-            <img width="38" src={mainLogo} alt="Pizza logo" />
+            <img width="38" height="54.5" src={mainLogo} alt="Pizza logo" />
             <div>
               <h1>Pizza Place</h1>
               <p>the most delicious pizzas in town</p>

@@ -26,13 +26,13 @@ const Loader = styled(ContentLoader)`
 `;
 
 const Image = styled.img`
-  width: 250px;
   margin-bottom: 15px;
   border-radius: 20px;
   transition: 0.2s ease-in-out;
 
   @media screen and (max-width: 400px) {
     width: 200px;
+    height: 200px;
   }
 `;
 

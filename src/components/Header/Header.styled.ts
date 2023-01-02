@@ -49,6 +49,12 @@ const Logo = styled.section`
   p {
     color: #7b7b7b;
   }
+
+  @media screen and (max-width: 373px) {
+    img {
+      height: 76px;
+    }
+  }
 `;
 
 const Right = styled.div`
