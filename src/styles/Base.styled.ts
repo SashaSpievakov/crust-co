@@ -35,6 +35,7 @@ const Items = styled.div`
   grid-template-columns: repeat(3, 1fr);
   gap: 40px 100px;
   justify-items: center;
+  align-items: center;
 
   @media (max-width: 1150px) {
     grid-template-columns: repeat(2, 1fr);

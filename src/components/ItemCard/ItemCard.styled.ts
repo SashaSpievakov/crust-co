@@ -2,7 +2,7 @@ import styled, { css } from "styled-components";
 import ContentLoader from "react-content-loader";
 
 const mixinBlock = css`
-  max-width: 280px;
+  width: 250px;
   text-align: center;
   margin-bottom: 65px;
 
@@ -14,6 +14,10 @@ const mixinBlock = css`
     h4 {
       color: ${({ theme }) => theme.colors.secondary};
     }
+  }
+
+  @media screen and (max-width: 400px) {
+    width: 200px;
   }
 `;
 
