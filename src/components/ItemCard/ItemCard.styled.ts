@@ -40,7 +40,7 @@ const Image = styled.img`
   }
 `;
 
-const Title = styled.h4`
+const Title = styled.h3`
   font-size: 20px;
   font-weight: 900;
   letter-spacing: 1%;
