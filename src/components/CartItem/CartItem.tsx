@@ -64,7 +64,12 @@ const CartItem = ({ id, name, price, size, type, count }: CartItemProps) => {
   return (
     <Article>
       <ImgWrapper>
-        <img src={`./assets/img/pizza${id}.png`} alt="Pizza" />
+        <img
+          src={`./assets/img/pizza${id}.png`}
+          alt="Pizza"
+          width="80"
+          height="80"
+        />
       </ImgWrapper>
       <InfoWrapper>
         <h3>{name}</h3>

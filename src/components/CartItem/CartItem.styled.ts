@@ -21,7 +21,6 @@ const ImgWrapper = styled.div`
   width: 10%;
 
   img {
-    height: 80px;
     border-radius: 20px;
   }
 
@@ -30,6 +29,7 @@ const ImgWrapper = styled.div`
     margin-right: 0;
 
     img {
+      width: 200px;
       height: 200px;
     }
   }
