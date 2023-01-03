@@ -4,6 +4,10 @@
 
 <br/>
 
+![Website Preview](/public/assets/readme.png)
+
+<br/>
+
 ## Description
 
 Web Store Application created with React includes multiple pages and SPA support. States were managed with Redux Toolkit, and styles were implemented with Styled Components. Also entirely written in TypeScript, code styling was configured with ESLint and Airbnb settings. The website has a responsive design, so looks good on all devices. Works with Local Storage and saves your orders and settings.
