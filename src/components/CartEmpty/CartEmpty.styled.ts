@@ -33,6 +33,7 @@ const Article = styled.article`
 
     @media screen and (max-width: 500px) {
       width: 200px;
+      height: 170px;
     }
   }
 `;
