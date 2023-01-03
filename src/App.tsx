@@ -16,7 +16,7 @@ const FullItem = React.lazy(
   () => import(/* webpackChunkName: "FullItem" */ "./pages/FullItem/FullItem"),
 );
 const NotFound = React.lazy(
-  () => import(/* webpackChunkName: "NotFound" */ "./pages/NotFound"),
+  () => import(/* webpackChunkName: "NotFound" */ "./pages/NotFound/NotFound"),
 );
 
 function App() {
