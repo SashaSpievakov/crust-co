@@ -13,18 +13,19 @@ const Item = styled(Container)`
 `;
 
 const Image = styled.img`
-  max-width: 450px;
   margin-top: 60px;
   margin-bottom: 40px;
   border-radius: 20px;
 
   @media screen and (max-width: 600px) {
     width: 300px;
+    height: 300px;
     margin-top: 50px;
   }
 
   @media screen and (max-width: 400px) {
     width: 200px;
+    height: 200px;
     margin-top: 20px;
   }
 `;

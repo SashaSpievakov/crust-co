@@ -24,7 +24,12 @@ const FullItem = () => {
 
   return isSuccess ? (
     <Item>
-      <Image src={`../assets/img/pizza${item.id}.png`} alt="pizza" />
+      <Image
+        src={`../assets/img/pizza${item.id}.png`}
+        alt="pizza"
+        width="450"
+        height="450"
+      />
       <Title>{item.name}</Title>
       <Paragraph>{item.description}</Paragraph>
       <Selector
