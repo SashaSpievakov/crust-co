@@ -1,6 +1,5 @@
 import { useEffect, useState, useRef } from "react";
 import { useAppDispatch, useAppSelector } from "../../hooks/reduxHooks";
-// import useWhyDidYouUpdate from "ahooks/lib/useWhyDidYouUpdate";
 
 import { selectSort, setSort } from "../../store/slices/sortSlice";
 import { Wrapper, Label, ArrowUp, ArrowDown, Popup, Li } from "./Sort.styled";
@@ -10,7 +9,6 @@ interface CategoriesProps {
 }
 
 const Sort = ({ sortNamesArr }: CategoriesProps) => {
-  // useWhyDidYouUpdate('sort', {sortNamesArr})
   const activeSort = useAppSelector(selectSort);
   const dispatch = useAppDispatch();
   const sortRef = useRef<HTMLDivElement>(null);
