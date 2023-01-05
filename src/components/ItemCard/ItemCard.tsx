@@ -16,8 +16,9 @@ interface ItemCardProps {
 const typeNames: string[] = ["traditional", "thin"];
 
 const ItemCard = ({ id, name, price, sizes, types }: ItemCardProps) => {
-  const [activeSize, setActiveSize] = useState(0);
-  const [activeType, setActiveType] = useState(0);
+  const [activePrice, setActivePrice] = useState<number>(price);
+  const [activeSize, setActiveSize] = useState<number>(0);
+  const [activeType, setActiveType] = useState<number>(0);
 
   return (
     <Block>
@@ -35,20 +36,22 @@ const ItemCard = ({ id, name, price, sizes, types }: ItemCardProps) => {
         <Title>{name}</Title>
       </Link>
       <Select
+        price={activePrice}
         sizes={sizes}
         types={types}
         activeSize={activeSize}
         activeType={activeType}
+        setActivePrice={setActivePrice}
         setActiveSize={setActiveSize}
         setActiveType={setActiveType}
         typeNames={typeNames}
       />
       <Bottom>
-        <Price>{price}$</Price>
+        <Price>{activePrice}$</Price>
         <ItemsCountHandler
           id={id}
           name={name}
-          price={price}
+          price={activePrice}
           activeSize={activeSize}
           activeType={activeType}
           typeNames={typeNames}
