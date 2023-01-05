@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+import React, { memo, useRef } from "react";
 
 import { useAppDispatch, useAppSelector } from "../../hooks/reduxHooks";
 import {
@@ -7,7 +7,7 @@ import {
 } from "../../store/slices/searchSlice";
 import { Wrapper, SearchIcon, Input, Cross } from "./SearchItems.styled";
 
-const SearchItems = () => {
+const SearchItems = memo(() => {
   const searchValue = useAppSelector(selectSearchValue);
   const dispatch = useAppDispatch();
 
@@ -34,5 +34,6 @@ const SearchItems = () => {
       {searchValue && <Cross onClick={onClickClose} />}
     </Wrapper>
   );
-};
+});
+
 export default SearchItems;
