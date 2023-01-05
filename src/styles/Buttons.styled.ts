@@ -103,7 +103,7 @@ const ButtonCircle = styled(ButtonOutline)<CircleProps>`
 
   &:disabled {
     cursor: auto;
-    background-color: ${({ theme }) => theme.colors.gray};
+    background-color: ${({ theme }) => theme.colors.disabled};
 
     svg path {
       fill: #dddddd;

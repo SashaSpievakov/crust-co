@@ -10,6 +10,7 @@ const lightTheme: DefaultTheme = {
     black: "#181818",
     gray: "#f3f3f3",
     chosen: "#fff",
+    disabled: "#f3f3f3",
   },
 
   duration: "0.2s",
@@ -25,6 +26,7 @@ const darkTheme: DefaultTheme = {
     black: "#181818",
     gray: "#5b5c5c",
     chosen: "#d5d5d5",
+    disabled: "#959595",
   },
 
   duration: "0.2s",

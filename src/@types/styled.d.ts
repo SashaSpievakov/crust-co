@@ -11,6 +11,7 @@ declare module "styled-components" {
       black: string;
       gray: string;
       chosen: string;
+      disabled: string;
     };
 
     duration: string;
