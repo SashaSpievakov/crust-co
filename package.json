@@ -12,7 +12,7 @@
     "@types/react-dom": "^18.0.6",
     "@types/react-redux": "^7.1.24",
     "@types/styled-components": "^5.1.26",
-    "ahooks": "^3.7.2",
+    "lodash.debounce": "^4.0.8",
     "qs": "^6.11.0",
     "react": "^18.2.0",
     "react-content-loader": "^6.2.0",
@@ -65,7 +65,7 @@
     "eslint-plugin-prettier": "^4.2.1",
     "eslint-plugin-promise": "^6.1.1",
     "eslint-plugin-react": "^7.31.11",
-    "prettier": "^2.8.0",
-    "husky": "^8.0.0"
+    "husky": "^8.0.0",
+    "prettier": "^2.8.0"
   }
 }
