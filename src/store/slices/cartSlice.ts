@@ -89,7 +89,7 @@ export const cartSlice = createSlice({
 });
 
 export const selectCart = (state: RootState) => state.cart;
-export const selectCartItemById = (id: string) => (state: RootState) => {
+export const selectItemPriceById = (id: string) => (state: RootState) => {
   const selectedItems: ICartItem[] = state.cart.items.filter(
     (obj) => obj.id === id,
   );

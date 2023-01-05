@@ -3,7 +3,7 @@ import { ICartItem } from "../../../models/ICartItem";
 import {
   addItem,
   removeItem,
-  selectCartItemById,
+  selectItemPriceById,
 } from "../../../store/slices/cartSlice";
 import { ButtonAdd } from "../../../styles/Buttons.styled";
 import {
@@ -34,7 +34,7 @@ const ItemsCountHandler = ({
   isFullScreen = false,
 }: ItemsCountHandlerProps) => {
   const dispatch = useAppDispatch();
-  const namesCount = useAppSelector(selectCartItemById(id));
+  const namesCount = useAppSelector(selectItemPriceById(id));
 
   const onClickAdd = () => {
     const item: ICartItem = {
