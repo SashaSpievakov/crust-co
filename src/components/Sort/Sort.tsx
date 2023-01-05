@@ -1,4 +1,4 @@
-import { useEffect, useState, useRef } from "react";
+import { useEffect, useState, useRef, memo } from "react";
 import { useAppDispatch, useAppSelector } from "../../hooks/reduxHooks";
 
 import { selectSort, setSort } from "../../store/slices/sortSlice";
@@ -8,7 +8,7 @@ interface CategoriesProps {
   sortNamesArr: string[];
 }
 
-const Sort = ({ sortNamesArr }: CategoriesProps) => {
+const Sort = memo(({ sortNamesArr }: CategoriesProps) => {
   const activeSort = useAppSelector(selectSort);
   const dispatch = useAppDispatch();
   const sortRef = useRef<HTMLDivElement>(null);
@@ -61,5 +61,6 @@ const Sort = ({ sortNamesArr }: CategoriesProps) => {
       )}
     </Wrapper>
   );
-};
+});
+
 export default Sort;
