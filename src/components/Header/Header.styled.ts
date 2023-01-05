@@ -20,6 +20,10 @@ const Wrapper = styled(Container)<WrapperProps>`
   align-items: center;
   justify-content: space-between;
 
+  @media screen and (max-width: 400px) {
+    gap: 15px;
+  }
+
   ${({ isCart }) =>
     !isCart &&
     css`
@@ -50,9 +54,13 @@ const Logo = styled.section`
     color: #7b7b7b;
   }
 
-  @media screen and (max-width: 373px) {
+  @media screen and (max-width: 400px) {
     img {
       height: 76px;
+    }
+
+    p {
+      max-width: 190px;
     }
   }
 `;
