@@ -35,36 +35,6 @@ const Wrapper = styled(Container)<WrapperProps>`
     `}
 `;
 
-const Logo = styled.section`
-  display: flex;
-
-  img {
-    margin-right: 15px;
-  }
-
-  h1 {
-    color: ${({ theme }) => theme.colors.third};
-    font-size: 24px;
-    letter-spacing: 1%;
-    text-transform: uppercase;
-    font-weight: 800;
-  }
-
-  p {
-    color: #7b7b7b;
-  }
-
-  @media screen and (max-width: 400px) {
-    img {
-      height: 76px;
-    }
-
-    p {
-      max-width: 190px;
-    }
-  }
-`;
-
 const Right = styled.div`
   display: flex;
   align-items: center;
@@ -89,4 +59,4 @@ const Delimiter = styled.div`
   margin-right: 14px;
 `;
 
-export { Main, Wrapper, Logo, Right, Icon, Delimiter };
+export { Main, Wrapper, Right, Icon, Delimiter };

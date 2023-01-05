@@ -2,10 +2,10 @@ import { useEffect, useRef } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { BsCart3, BsFillSunFill, BsFillMoonFill } from "react-icons/bs";
 
-import mainLogo from "../../assets/img/main-logo.svg";
+import LogoSection from "../UI/LogoSection/LogoSection";
 import { selectCart } from "../../store/slices/cartSlice";
 import { setTheme, selectIsLight } from "../../store/slices/themeSlice";
-import { Main, Wrapper, Logo, Right, Icon, Delimiter } from "./Header.styled";
+import { Main, Wrapper, Right, Icon, Delimiter } from "./Header.styled";
 import { ButtonCart } from "../../styles/Buttons.styled";
 import { useAppDispatch, useAppSelector } from "../../hooks/reduxHooks";
 
@@ -39,15 +39,7 @@ const Header = () => {
   return (
     <Main>
       <Wrapper isCart={location.pathname === "/cart"}>
-        <Link to="/">
-          <Logo>
-            <img width="38" height="54.5" src={mainLogo} alt="Pizza logo" />
-            <div>
-              <h1>Pizza Place</h1>
-              <p>the most delicious pizzas in town</p>
-            </div>
-          </Logo>
-        </Link>
+        <LogoSection />
 
         <Right>
           <Icon
