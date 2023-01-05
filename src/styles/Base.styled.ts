@@ -30,27 +30,6 @@ const Title = styled.h2`
   }
 `;
 
-const Items = styled.div`
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 40px 100px;
-  justify-items: center;
-  align-items: center;
-
-  @media (max-width: 1150px) {
-    grid-template-columns: repeat(2, 1fr);
-  }
-
-  @media (max-width: 800px) {
-    gap: 40px 50px;
-  }
-
-  @media (max-width: 700px) {
-    grid-template-columns: repeat(1, 1fr);
-    gap: 0;
-  }
-`;
-
 const Top = styled.div`
   display: flex;
   justify-content: space-between;
@@ -98,4 +77,4 @@ const Container = styled.div`
   margin: 0 auto;
 `;
 
-export { Wrapper, Main, Title, Items, Top, Block, Error, Container };
+export { Wrapper, Main, Title, Top, Block, Error, Container };

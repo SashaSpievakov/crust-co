@@ -1,17 +1,15 @@
 import { useEffect, useRef, useState } from "react";
 
-import { Title, Block, Top, Items, Error } from "../styles/Base.styled";
+import { Title, Block, Top, Error } from "../styles/Base.styled";
 import { selectSort } from "../store/slices/sortSlice";
 import { selectCategory } from "../store/slices/categorySlice";
 import Categories from "../components/Categories/Categories";
 import Sort from "../components/Sort/Sort";
-import ItemCard from "../components/ItemCard/ItemCard";
-import Skeleton from "../components/ItemCard/Skeleton";
 import SearchItems from "../components/SearchItems/SearchItems";
-import { selectSearchValue } from "../store/slices/searchSlice";
 import { IPizzaItem } from "../models/IPizzaItem";
 import { useAppSelector } from "../hooks/reduxHooks";
 import pizzasAPI from "../services/PizzasService";
+import ProductsContainer from "../components/ProductsContainer/ProductsContainer";
 
 const sortNamesArr: string[] = ["rating", "price", "A to Z"];
 
@@ -20,7 +18,6 @@ const HomeComp = () => {
   const requested = useRef(false);
   const activeCategory = useAppSelector(selectCategory);
   const activeSort = useAppSelector(selectSort);
-  const searchValue = useAppSelector(selectSearchValue);
 
   const sortedActiveName = sortNamesArr[activeSort];
 
@@ -68,19 +65,7 @@ const HomeComp = () => {
           <p>Coudn&apos;t get store items. Try your request again later.</p>
         </Error>
       ) : (
-        <Items>
-          {isLoading
-            ? [...new Array(6)].map((_, i) => <Skeleton key={i} />)
-            : pizzas
-                .filter((item: IPizzaItem) =>
-                  item.name
-                    .toLowerCase()
-                    .includes(searchValue.trim().toLowerCase()),
-                )
-                .map((item: IPizzaItem) => (
-                  <ItemCard key={item.id} {...item} />
-                ))}
-        </Items>
+        <ProductsContainer isLoading={isLoading} items={pizzas} />
       )}
     </>
   );
