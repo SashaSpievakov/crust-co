@@ -1,4 +1,5 @@
-import React, { memo, useRef } from "react";
+import React, { memo, useCallback, useRef, useState } from "react";
+import debounce from "lodash.debounce";
 
 import { useAppDispatch, useAppSelector } from "../../hooks/reduxHooks";
 import {
@@ -8,13 +9,22 @@ import {
 import { Wrapper, SearchIcon, Input, Cross } from "./SearchItems.styled";
 
 const SearchItems = memo(() => {
+  const [value, setValue] = useState<string>("");
   const searchValue = useAppSelector(selectSearchValue);
   const dispatch = useAppDispatch();
 
   const inputRef = useRef<HTMLInputElement>(null);
 
+  const updataSearchValue = useCallback(
+    debounce((str: string) => {
+      dispatch(setSearchValue(str));
+    }, 200),
+    [],
+  );
+
   const onChangeInput = (e: React.ChangeEvent<HTMLInputElement>): void => {
-    dispatch(setSearchValue(e.target.value));
+    setValue(e.target.value);
+    updataSearchValue(e.target.value);
   };
 
   const onClickClose = () => {
@@ -28,7 +38,7 @@ const SearchItems = memo(() => {
       <Input
         ref={inputRef}
         placeholder="Search..."
-        value={searchValue}
+        value={value}
         onChange={(e) => onChangeInput(e)}
       />
       {searchValue && <Cross onClick={onClickClose} />}
