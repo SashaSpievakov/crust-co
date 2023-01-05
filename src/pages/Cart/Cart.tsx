@@ -43,7 +43,7 @@ const Cart = () => {
 
           <section>
             {items.map((item: ICartItem) => (
-              <CartItem key={item.id} {...item} />
+              <CartItem key={item.name + item.type + item.size} {...item} />
             ))}
           </section>
 

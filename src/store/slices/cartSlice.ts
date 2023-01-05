@@ -4,14 +4,11 @@ import { RootState } from "../store";
 import getCartFromLS from "../../utils/getCartFromLS";
 import { ICartItem } from "../../models/ICartItem";
 
-export interface CartItemForDelete {
-  id: string;
-  price: number;
-}
-
-export interface CartItemsForDelete extends CartItemForDelete {
-  count: number;
-}
+// export interface CartItemsForDelete {
+//   id: string;
+//   price: number;
+//   count: number;
+// }
 
 interface CartSliceState {
   totalPrice: number;
@@ -32,7 +29,12 @@ export const cartSlice = createSlice({
   initialState,
   reducers: {
     addItem: (state, action: PayloadAction<ICartItem>) => {
-      const findItem = state.items.find((obj) => obj.id === action.payload.id);
+      const findItem = state.items.find(
+        (obj) =>
+          obj.name === action.payload.name &&
+          obj.size === action.payload.size &&
+          obj.type === action.payload.type,
+      );
 
       if (findItem) {
         findItem.count++;
@@ -46,8 +48,13 @@ export const cartSlice = createSlice({
       state.itemsCount += 1;
       state.totalPrice += action.payload.price;
     },
-    removeItem: (state, action: PayloadAction<CartItemForDelete>) => {
-      const findItem = state.items.find((obj) => obj.id === action.payload.id);
+    removeItem: (state, action: PayloadAction<ICartItem>) => {
+      const findItem = state.items.find(
+        (obj) =>
+          obj.name === action.payload.name &&
+          obj.size === action.payload.size &&
+          obj.type === action.payload.type,
+      );
 
       if (findItem) {
         if (findItem.count > 1) {
@@ -62,8 +69,13 @@ export const cartSlice = createSlice({
       state.itemsCount -= 1;
       state.totalPrice -= action.payload.price;
     },
-    removeItems: (state, action: PayloadAction<CartItemsForDelete>) => {
-      state.items = state.items.filter((obj) => obj.id !== action.payload.id);
+    removeItems: (state, action: PayloadAction<ICartItem>) => {
+      state.items = state.items.filter(
+        (obj) =>
+          obj.name !== action.payload.name ||
+          obj.size !== action.payload.size ||
+          obj.type !== action.payload.type,
+      );
 
       state.itemsCount -= action.payload.count;
       state.totalPrice -= action.payload.price * action.payload.count;
@@ -77,8 +89,20 @@ export const cartSlice = createSlice({
 });
 
 export const selectCart = (state: RootState) => state.cart;
-export const selectCartItemById = (id: string) => (state: RootState) =>
-  state.cart.items.find((obj) => obj.id === id);
+export const selectCartItemById = (id: string) => (state: RootState) => {
+  const selectedItems: ICartItem[] = state.cart.items.filter(
+    (obj) => obj.id === id,
+  );
+
+  const count: number = selectedItems.reduce(
+    (currenCount: number, item: ICartItem) => {
+      return item.count + currenCount;
+    },
+    0,
+  );
+
+  return count;
+};
 
 export const { addItem, removeItems, removeItem, clearItems } =
   cartSlice.actions;

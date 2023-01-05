@@ -2,7 +2,6 @@ import { useAppDispatch, useAppSelector } from "../../../hooks/reduxHooks";
 import { ICartItem } from "../../../models/ICartItem";
 import {
   addItem,
-  CartItemForDelete,
   removeItem,
   selectCartItemById,
 } from "../../../store/slices/cartSlice";
@@ -25,8 +24,6 @@ interface ItemsCountHandlerProps {
   isFullScreen?: boolean;
 }
 
-const sizeNames: number[] = [12, 14, 16];
-
 const ItemsCountHandler = ({
   id,
   name,
@@ -37,16 +34,14 @@ const ItemsCountHandler = ({
   isFullScreen = false,
 }: ItemsCountHandlerProps) => {
   const dispatch = useAppDispatch();
-  const cartItem = useAppSelector(selectCartItemById(id));
-
-  const addedCount = cartItem ? cartItem.count : 0;
+  const namesCount = useAppSelector(selectCartItemById(id));
 
   const onClickAdd = () => {
     const item: ICartItem = {
       id,
       name,
       price,
-      size: sizeNames[activeSize],
+      size: activeSize,
       type: typeNames[activeType],
       count: 0,
     };
@@ -55,18 +50,22 @@ const ItemsCountHandler = ({
   };
 
   const onClickRemove = () => {
-    const item: CartItemForDelete = {
+    const item: ICartItem = {
       id,
+      name,
       price,
+      size: activeSize,
+      type: typeNames[activeType],
+      count: 0,
     };
 
     dispatch(removeItem(item));
   };
 
-  return addedCount ? (
+  return namesCount ? (
     <Counter isFullScreen={isFullScreen}>
       <Minus onClick={onClickRemove} />
-      <Count isFullScreen={isFullScreen}>{addedCount}</Count>
+      <Count isFullScreen={isFullScreen}>{namesCount}</Count>
       <Plus onClick={onClickAdd} />
     </Counter>
   ) : (
@@ -76,4 +75,5 @@ const ItemsCountHandler = ({
     </ButtonAdd>
   );
 };
+
 export default ItemsCountHandler;

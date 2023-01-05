@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import { Div, Li } from "./Selector.styled";
 
 interface SelectorProps {
@@ -21,6 +22,10 @@ const Selector = ({
   typeNames,
   isFullScreen = false,
 }: SelectorProps) => {
+  useEffect(() => {
+    setActiveSize(sizes[0]);
+  }, [setActiveSize, sizes]);
+
   return (
     <Div isFullScreen={isFullScreen}>
       <ul>
@@ -35,11 +40,11 @@ const Selector = ({
         ))}
       </ul>
       <ul>
-        {sizes.map((size, i) => (
+        {sizes.map((size) => (
           <Li
             key={size}
-            onClick={() => setActiveSize(i)}
-            chosen={activeSize === i}
+            onClick={() => setActiveSize(size)}
+            chosen={activeSize === size}
           >
             {size} inch
           </Li>
