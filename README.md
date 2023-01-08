@@ -40,9 +40,4 @@ Web Store Application created with React includes multiple pages and SPA support
 
 <br/>
 
-Issues
-- price counting after switching sorting parametrs (in process)
-
-<br/>
-
 ## [My Contacts](https://github.com/AlexandrSpevakov#contact-me) &nbsp; 👈

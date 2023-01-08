@@ -1,8 +1,8 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 
 import ItemsCountHandler from "../UI/ItemsCountHandler/ItemsCountHandler";
-import Select from "../UI/Selector/Selector";
+import Selector from "../UI/Selector/Selector";
 import { Block, Image, Title, Bottom, Price } from "./ItemCard.styled";
 
 interface ItemCardProps {
@@ -17,8 +17,12 @@ const typeNames: string[] = ["traditional", "thin"];
 
 const ItemCard = ({ id, name, price, sizes, types }: ItemCardProps) => {
   const [activePrice, setActivePrice] = useState<number>(price);
-  const [activeSize, setActiveSize] = useState<number>(0);
+  const [activeSize, setActiveSize] = useState<number>(sizes[0]);
   const [activeType, setActiveType] = useState<number>(0);
+
+  useEffect(() => {
+    setActivePrice(price);
+  }, [sizes]);
 
   return (
     <Block>
@@ -35,7 +39,7 @@ const ItemCard = ({ id, name, price, sizes, types }: ItemCardProps) => {
         </picture>
         <Title>{name}</Title>
       </Link>
-      <Select
+      <Selector
         price={activePrice}
         sizes={sizes}
         types={types}

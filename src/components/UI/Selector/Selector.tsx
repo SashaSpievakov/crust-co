@@ -56,7 +56,8 @@ const Selector = ({
 
   useEffect(() => {
     setActiveSize(sizes[0]);
-  }, [setActiveSize, sizes]);
+    setActiveType(types[0]);
+  }, [sizes]);
 
   return (
     <Div isFullScreen={isFullScreen}>
