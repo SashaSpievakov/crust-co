@@ -3,6 +3,7 @@ import styled from "styled-components";
 const Article = styled.article`
   display: flex;
   width: 100%;
+  position: relative;
   border-top: 1px solid ${({ theme }) => theme.colors.gray};
   padding-top: 30px;
   margin-top: 30px;
@@ -99,7 +100,9 @@ const Remove = styled.div`
   width: 4%;
 
   @media screen and (max-width: 850px) {
-    width: auto;
+    position: absolute;
+    right: 0;
+    top: 20px;
   }
 `;
 
