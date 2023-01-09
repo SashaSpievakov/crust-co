@@ -55,7 +55,7 @@ const Cart = () => {
               </span>
               <span>
                 {" "}
-                Subtotal <b>{totalPrice} $</b>{" "}
+                Total <b>{totalPrice}$</b>{" "}
               </span>
             </Details>
             <Buttons>
