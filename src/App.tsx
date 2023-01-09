@@ -8,6 +8,7 @@ import Home from "./pages/Home";
 import MainLayout from "./layouts/MainLayout";
 import { selectIsLight } from "./store/slices/themeSlice";
 import { lightTheme, darkTheme } from "./styles/Themes.styled";
+import Loading from "./components/UI/Loading/Loading";
 
 const Cart = React.lazy(
   () => import(/* webpackChunkName: "Cart" */ "./pages/Cart/Cart"),
@@ -31,7 +32,7 @@ function App() {
           <Route
             path="cart"
             element={
-              <Suspense fallback={<div>Loading...</div>}>
+              <Suspense fallback={<Loading />}>
                 <Cart />
               </Suspense>
             }
@@ -39,7 +40,7 @@ function App() {
           <Route
             path="item/:id"
             element={
-              <Suspense fallback={<div>Loading...</div>}>
+              <Suspense fallback={<Loading />}>
                 <FullItem />
               </Suspense>
             }
@@ -47,7 +48,7 @@ function App() {
           <Route
             path="*"
             element={
-              <Suspense fallback={<div>Loading...</div>}>
+              <Suspense fallback={<Loading />}>
                 <NotFound />
               </Suspense>
             }
