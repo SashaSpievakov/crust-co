@@ -16,7 +16,7 @@ const ProductsContainer = ({ isLoading, items }: ProductsContainerProps) => {
   return (
     <Container>
       {isLoading
-        ? [...new Array(6)].map((_, i) => <Skeleton key={i} />)
+        ? [...new Array(9)].map((_, i) => <Skeleton key={i} />)
         : items
             .filter((item: IPizzaItem) =>
               item.name
