@@ -6,8 +6,6 @@
 
 ![Website Preview](/public/assets/readme.png)
 
-## Mock API is down, fixing that problem **************
-
 <br/>
 
 ## Description
