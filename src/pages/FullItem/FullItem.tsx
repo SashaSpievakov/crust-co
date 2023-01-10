@@ -8,7 +8,7 @@ import Error from "./FullItem.styled";
 const FullItem = () => {
   const { id } = useParams();
 
-  const { data, isLoading, isSuccess, error } = itemAPI.useFetchItemQuery(
+  const { data, isLoading, isSuccess } = itemAPI.useFetchItemQuery(
     id as string,
     {
       refetchOnFocus: true,
@@ -20,7 +20,7 @@ const FullItem = () => {
   ) : isLoading ? (
     <Loading />
   ) : (
-    <Error>Eroor: {JSON.stringify(error)}</Error>
+    <Error>Eroor: failed request, try again</Error>
   );
 };
 export default FullItem;
