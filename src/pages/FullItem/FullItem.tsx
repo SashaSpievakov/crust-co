@@ -7,6 +7,7 @@ import Error from "./FullItem.styled";
 
 const FullItem = () => {
   const { id } = useParams();
+
   const { data, isLoading, isSuccess, error } = itemAPI.useFetchItemQuery(
     id as string,
     {

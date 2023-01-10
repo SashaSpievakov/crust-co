@@ -11,6 +11,7 @@ const Categories = () => {
   const dispatch = useAppDispatch();
 
   const chosenClass = categoriesArr[activeCategory];
+
   return (
     <div>
       <Ul>

@@ -10,10 +10,9 @@ interface CategoriesProps {
 
 const Sort = memo(({ sortNamesArr }: CategoriesProps) => {
   const activeSort = useAppSelector(selectSort);
+  const [open, setOpen] = useState(false);
   const dispatch = useAppDispatch();
   const sortRef = useRef<HTMLDivElement>(null);
-
-  const [open, setOpen] = useState(false);
 
   const chosenSortName = sortNamesArr[activeSort];
 

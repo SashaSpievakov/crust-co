@@ -12,7 +12,6 @@ const SearchItems = memo(() => {
   const [value, setValue] = useState<string>("");
   const searchValue = useAppSelector(selectSearchValue);
   const dispatch = useAppDispatch();
-
   const inputRef = useRef<HTMLInputElement>(null);
 
   const updataSearchValue = useCallback(

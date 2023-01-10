@@ -16,10 +16,6 @@ const Header = () => {
   const location = useLocation();
   const isMounted = useRef(false);
 
-  const changeThemes = () => {
-    dispatch(setTheme(!isLight));
-  };
-
   useEffect(() => {
     if (isMounted.current) {
       const json = JSON.stringify(items);
@@ -35,6 +31,10 @@ const Header = () => {
       localStorage.setItem("isLight", json);
     }
   }, [isLight]);
+
+  const changeThemes = () => {
+    dispatch(setTheme(!isLight));
+  };
 
   return (
     <Main>
