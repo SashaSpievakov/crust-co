@@ -29,6 +29,7 @@ const SearchItems = memo(() => {
   const onClickClose = () => {
     dispatch(setSearchValue(""));
     inputRef.current?.focus();
+    setValue("");
   };
 
   return (
