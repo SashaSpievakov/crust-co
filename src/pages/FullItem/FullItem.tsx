@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import { useParams } from "react-router-dom";
 
 import FullItemBlock from "../../components/FullItem/FullItem";
@@ -14,6 +15,10 @@ const FullItem = () => {
       refetchOnFocus: true,
     },
   );
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
   return isSuccess ? (
     <FullItemBlock item={data} />
