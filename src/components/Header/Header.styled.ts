@@ -6,6 +6,10 @@ interface WrapperProps {
   isCart: boolean;
 }
 
+interface LiProps {
+  mode: string;
+}
+
 const Main = styled.header`
   border-bottom: 1px solid ${({ theme }) => theme.colors.gray};
   padding: 40px 0;
@@ -16,6 +20,7 @@ const Main = styled.header`
 `;
 
 const Wrapper = styled(Container)<WrapperProps>`
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -45,10 +50,23 @@ const Right = styled.div`
   }
 `;
 
-const Icon = styled.i`
+const Icon = styled.i<LiProps>`
   font-size: 20px;
   color: ${({ theme }) => theme.colors.third};
   cursor: pointer;
+
+  &:hover {
+    color: ${({ theme }) => theme.colors.primary};
+  }
+
+  ${({ mode }) =>
+    mode === "cart" &&
+    css`
+      @media screen and (max-width: 450px) {
+        position: absolute;
+        top: -15px;
+      }
+    `}
 `;
 
 const Delimiter = styled.div`

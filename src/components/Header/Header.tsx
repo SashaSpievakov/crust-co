@@ -45,6 +45,7 @@ const Header = () => {
           <Icon
             as={isLight ? BsFillMoonFill : BsFillSunFill}
             onClick={changeThemes}
+            mode={location.pathname === "/cart" ? "cart" : ""}
           />
           {location.pathname !== "/cart" && (
             <ButtonCart to="/cart" as={Link}>
