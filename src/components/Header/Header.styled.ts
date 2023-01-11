@@ -51,12 +51,16 @@ const Right = styled.div`
 `;
 
 const Icon = styled.i<LiProps>`
-  font-size: 20px;
+  font-size: 23px;
   color: ${({ theme }) => theme.colors.third};
   cursor: pointer;
 
   &:hover {
     color: ${({ theme }) => theme.colors.primary};
+  }
+
+  @media screen and (max-width: 800px) {
+    font-size: 20px;
   }
 
   ${({ mode }) =>
