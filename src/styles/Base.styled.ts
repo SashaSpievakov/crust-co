@@ -1,16 +1,21 @@
 import styled from "styled-components";
 
 const Wrapper = styled.div`
-  width: calc(100vw - 100px);
+  width: calc(100vw - 70px);
   height: 100%;
   background-color: ${({ theme }) => theme.colors.fourth};
-  margin: 50px auto;
+  margin: 35px auto;
   border-radius: 10px;
   max-width: 1400px;
 
-  @media (max-width: 800px) {
+  @media (max-width: 1000px) {
     width: calc(100vw - 50px);
     margin: 25px auto;
+  }
+
+  @media (max-width: 450px) {
+    width: calc(100vw - 40px);
+    margin: 20px auto;
   }
 `;
 

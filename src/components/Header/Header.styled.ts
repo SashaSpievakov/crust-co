@@ -69,7 +69,7 @@ const Icon = styled.i<LiProps>`
       @media screen and (max-width: 450px) {
         position: absolute;
         font-size: 23px;
-        top: -15px;
+        top: -18px;
       }
     `}
 `;
