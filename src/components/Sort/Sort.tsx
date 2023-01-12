@@ -43,21 +43,19 @@ const Sort = memo(({ sortNamesArr }: CategoriesProps) => {
         <b>Sort by</b>
         <span>{chosenSortName}</span>
       </Label>
-      {open && (
-        <Popup>
-          <ul>
-            {sortNamesArr.map((sortName, i: number) => (
-              <Li
-                key={sortName}
-                onClick={() => changeActiveSortName(i)}
-                chosen={chosenSortName === sortName}
-              >
-                {sortName}
-              </Li>
-            ))}
-          </ul>
-        </Popup>
-      )}
+      <Popup open={open}>
+        <ul>
+          {sortNamesArr.map((sortName, i: number) => (
+            <Li
+              key={sortName}
+              onClick={() => changeActiveSortName(i)}
+              chosen={chosenSortName === sortName}
+            >
+              {sortName}
+            </Li>
+          ))}
+        </ul>
+      </Popup>
     </Wrapper>
   );
 });

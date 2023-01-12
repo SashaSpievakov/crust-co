@@ -1,6 +1,10 @@
 import styled, { css } from "styled-components";
 import { BsCaretDownFill, BsCaretUpFill } from "react-icons/bs";
 
+interface PopupProps {
+  open: boolean;
+}
+
 interface LiProps {
   chosen: boolean;
 }
@@ -15,6 +19,7 @@ const mixinBackground = css`
 `;
 
 const Wrapper = styled.div`
+  width: 127px;
   position: relative;
   margin-top: 15px;
   cursor: pointer;
@@ -46,21 +51,28 @@ const ArrowDown = styled(BsCaretDownFill)`
   ${mixinArrow}
 `;
 
-const Popup = styled.div`
+const Popup = styled.div<PopupProps>`
+  visibility: hidden;
   position: absolute;
-  right: -5px;
+  right: -10px;
+  top: 0px;
+  width: 160px;
   margin-top: 15px;
+  padding: 10px 0;
   background: ${({ theme }) => theme.colors.fourth};
   box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.09);
   border-radius: 10px;
-  overflow: hidden;
-  padding: 10px 0;
-  width: 160px;
+  opacity: 0;
   z-index: 1;
+  transition: 0.25s;
 
-  ul {
-    overflow: hidden;
-  }
+  ${({ open }) =>
+    open &&
+    css`
+      visibility: visible;
+      top: 22.5px;
+      opacity: 1;
+    `}
 `;
 
 const Li = styled.li<LiProps>`
