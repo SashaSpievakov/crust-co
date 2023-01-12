@@ -31,8 +31,8 @@ const SearchItems = memo(() => {
   };
 
   const onClickClose = () => {
-    dispatch(setSearchValue(""));
     setValue("");
+    dispatch(setSearchValue(""));
   };
 
   return (

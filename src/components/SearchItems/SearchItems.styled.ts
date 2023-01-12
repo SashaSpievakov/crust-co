@@ -22,7 +22,7 @@ const Input = styled.input`
   font-size: 16px;
   color: ${({ theme }) => theme.colors.third};
   height: 40px;
-  width: 250px;
+  width: 240px;
   padding: 10px 33px 10px 40px;
   background-color: ${({ theme }) => theme.colors.gray};
   border: 1px solid rgba(0, 0, 0, 0.1);
@@ -39,11 +39,19 @@ const Input = styled.input`
     opacity: 0.6;
   }
 
-  @media screen and (max-width: 400px) {
-    width: 200px;
+  @media screen and (max-width: 800px) {
+    width: 210px;
 
     &:focus {
-      width: 245px;
+      width: 250px;
+    }
+  }
+
+  @media screen and (max-width: 400px) {
+    width: 180px;
+
+    &:focus {
+      width: 240px;
     }
   }
 `;
