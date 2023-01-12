@@ -21,6 +21,10 @@ const SearchItems = memo(() => {
     [],
   );
 
+  const onClickSearch = () => {
+    inputRef.current?.focus();
+  };
+
   const onChangeInput = (e: React.ChangeEvent<HTMLInputElement>): void => {
     setValue(e.target.value);
     updataSearchValue(e.target.value);
@@ -28,13 +32,12 @@ const SearchItems = memo(() => {
 
   const onClickClose = () => {
     dispatch(setSearchValue(""));
-    inputRef.current?.focus();
     setValue("");
   };
 
   return (
     <Wrapper>
-      <SearchIcon />
+      <SearchIcon onClick={onClickSearch} />
       <Input
         ref={inputRef}
         placeholder="Search..."

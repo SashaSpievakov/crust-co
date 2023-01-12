@@ -10,20 +10,27 @@ const SearchIcon = styled(BsSearch)`
   top: 10px;
   left: 10px;
   font-size: 20px;
-  opacity: 0.6;
+  opacity: 0.5;
+
+  &:hover {
+    opacity: 0.7;
+    cursor: pointer;
+  }
 `;
 
 const Input = styled.input`
   font-size: 16px;
   color: ${({ theme }) => theme.colors.third};
   height: 40px;
-  width: 300px;
+  width: 250px;
   padding: 10px 33px 10px 40px;
   background-color: ${({ theme }) => theme.colors.gray};
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 10px;
+  transition: 0.3s;
 
   &:focus {
+    width: 300px;
     border: 1px solid rgba(0, 0, 0, 0.3);
   }
 
@@ -33,7 +40,11 @@ const Input = styled.input`
   }
 
   @media screen and (max-width: 400px) {
-    width: 225px;
+    width: 200px;
+
+    &:focus {
+      width: 245px;
+    }
   }
 `;
 
