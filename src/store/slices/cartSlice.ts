@@ -4,12 +4,6 @@ import { RootState } from "../store";
 import getCartFromLS from "../../utils/getCartFromLS";
 import { ICartItem } from "../../models/ICartItem";
 
-// export interface CartItemsForDelete {
-//   id: string;
-//   price: number;
-//   count: number;
-// }
-
 interface CartSliceState {
   totalPrice: number;
   itemsCount: number;
