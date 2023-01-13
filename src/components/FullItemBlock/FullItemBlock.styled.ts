@@ -21,12 +21,14 @@ const Image = styled.img`
     width: 300px;
     height: 300px;
     margin-top: 50px;
+    margin-bottom: 10px;
   }
 
   @media screen and (max-width: 400px) {
     width: 200px;
     height: 200px;
     margin-top: 20px;
+    margin-bottom: 0;
   }
 `;
 

@@ -1,7 +1,7 @@
 import { useEffect } from "react";
 import { useParams } from "react-router-dom";
 
-import FullItemBlock from "../../components/FullItem/FullItem";
+import FullItemBlock from "../../components/FullItemBlock/FullItemBlock";
 import Loading from "../../components/UI/Loading/Loading";
 import itemAPI from "../../services/ItemService";
 import Error from "./FullItem.styled";

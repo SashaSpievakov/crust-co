@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
 
-import { Image, Title, Paragraph, Price, Item } from "./FullItem.styled";
+import { Image, Title, Paragraph, Price, Item } from "./FullItemBlock.styled";
 import { ButtonBlack } from "../../styles/Buttons.styled";
 import Selector from "../UI/Selector/Selector";
 import ItemsCountHandler from "../UI/ItemsCountHandler/ItemsCountHandler";
@@ -13,7 +13,7 @@ interface FullItemProps {
 
 const typeNames: string[] = ["traditional", "thin"];
 
-const FullItem = ({ item }: FullItemProps) => {
+const FullItemBlock = ({ item }: FullItemProps) => {
   const [activePrice, setActivePrice] = useState<number>(item.price);
   const [activeSize, setActiveSize] = useState<number>(0);
   const [activeType, setActiveType] = useState<number>(0);
@@ -57,4 +57,4 @@ const FullItem = ({ item }: FullItemProps) => {
   );
 };
 
-export default FullItem;
+export default FullItemBlock;
