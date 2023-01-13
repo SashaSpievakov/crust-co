@@ -7,8 +7,16 @@ const Item = styled(Container)`
   align-items: center;
   gap: 20px;
 
+  @media screen and (max-width: 600px) {
+    gap: 15px;
+  }
+
   @media screen and (max-width: 550px) {
     padding-bottom: 40px;
+  }
+
+  @media screen and (max-width: 400px) {
+    gap: 10px;
   }
 `;
 
@@ -36,10 +44,10 @@ const Title = styled.h2`
   font-size: 45px;
   font-weight: 700;
   text-align: center;
-  margin-bottom: 15px;
 
   @media screen and (max-width: 600px) {
     font-size: 35px;
+    margin-bottom: 0;
   }
 
   @media screen and (max-width: 400px) {
