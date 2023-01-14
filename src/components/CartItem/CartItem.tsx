@@ -1,8 +1,8 @@
-import { memo } from "react";
-import { BsDashLg, BsPlusLg } from "react-icons/bs";
+import { memo } from 'react';
+import { BsDashLg, BsPlusLg } from 'react-icons/bs';
 
-import { addItem, removeItem, removeItems } from "../../store/slices/cartSlice";
-import { ButtonCircle } from "../../styles/Buttons.styled";
+import { addItem, removeItem, removeItems } from '../../store/slices/cartSlice';
+import { ButtonCircle } from '../../styles/Buttons.styled';
 import {
   Article,
   ImgWrapper,
@@ -11,9 +11,9 @@ import {
   CountIcon,
   Price,
   Remove,
-} from "./CartItem.styled";
-import { ICartItem } from "../../models/ICartItem";
-import { useAppDispatch } from "../../hooks/reduxHooks";
+} from './CartItem.styled';
+import { ICartItem } from '../../models/ICartItem';
+import { useAppDispatch } from '../../hooks/reduxHooks';
 
 interface CartItemProps {
   id: string;

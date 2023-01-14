@@ -1,12 +1,12 @@
-import { combineReducers, configureStore } from "@reduxjs/toolkit";
+import { combineReducers, configureStore } from '@reduxjs/toolkit';
 
-import categorySlice from "./slices/categorySlice";
-import sortSlice from "./slices/sortSlice";
-import searchSlice from "./slices/searchSlice";
-import theme from "./slices/themeSlice";
-import cart from "./slices/cartSlice";
-import itemAPI from "../services/ItemService";
-import pizzasAPI from "../services/PizzasService";
+import categorySlice from './slices/categorySlice';
+import sortSlice from './slices/sortSlice';
+import searchSlice from './slices/searchSlice';
+import theme from './slices/themeSlice';
+import cart from './slices/cartSlice';
+import itemAPI from '../services/ItemService';
+import pizzasAPI from '../services/PizzasService';
 
 const rootReducer = combineReducers({
   activeCategory: categorySlice,

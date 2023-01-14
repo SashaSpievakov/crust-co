@@ -1,10 +1,10 @@
-import { useEffect } from "react";
-import { useParams } from "react-router-dom";
+import { useEffect } from 'react';
+import { useParams } from 'react-router-dom';
 
-import FullItemBlock from "../../components/FullItemBlock/FullItemBlock";
-import Loading from "../../components/UI/Loading/Loading";
-import itemAPI from "../../services/ItemService";
-import Error from "./FullItem.styled";
+import FullItemBlock from '../../components/FullItemBlock/FullItemBlock';
+import Loading from '../../components/UI/Loading/Loading';
+import itemAPI from '../../services/ItemService';
+import Error from './FullItem.styled';
 
 const FullItem = () => {
   const { id } = useParams();

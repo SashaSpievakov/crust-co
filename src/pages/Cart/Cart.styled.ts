@@ -1,5 +1,5 @@
-import styled from "styled-components";
-import { BsCart3, BsTrash, BsChevronLeft } from "react-icons/bs";
+import styled from 'styled-components';
+import { BsCart3, BsTrash, BsChevronLeft } from 'react-icons/bs';
 
 const Top = styled.section`
   display: flex;

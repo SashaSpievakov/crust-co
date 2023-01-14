@@ -1,18 +1,18 @@
-import { createApi, fetchBaseQuery } from "@reduxjs/toolkit/dist/query/react";
-import { IPizzaItem } from "../models/IPizzaItem";
+import { createApi, fetchBaseQuery } from '@reduxjs/toolkit/dist/query/react';
+import { IPizzaItem } from '../models/IPizzaItem';
 
 const itemAPI = createApi({
-  reducerPath: "itemAPI",
+  reducerPath: 'itemAPI',
   baseQuery: fetchBaseQuery({
-    baseUrl: "https://6344adb1dcae733e8fe3067a.mockapi.io/",
+    baseUrl: 'https://6344adb1dcae733e8fe3067a.mockapi.io/',
   }),
-  tagTypes: ["Item"],
+  tagTypes: ['Item'],
   endpoints: (build) => ({
     fetchItem: build.query<IPizzaItem, string>({
       query: (id) => ({
         url: `pizza-items/${id}`,
       }),
-      providesTags: () => ["Item"],
+      providesTags: () => ['Item'],
     }),
   }),
 });

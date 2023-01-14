@@ -1,6 +1,6 @@
-import { MdEmail, MdPhone, MdLocationOn } from "react-icons/md";
+import { MdEmail, MdPhone, MdLocationOn } from 'react-icons/md';
 
-import { Main, Ul, Link, Icon, Copyright } from "./Footer.styled";
+import { Main, Ul, Link, Icon, Copyright } from './Footer.styled';
 
 const Footer = () => {
   return (

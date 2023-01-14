@@ -1,8 +1,8 @@
-import { memo } from "react";
-import { Link } from "react-router-dom";
+import { memo } from 'react';
+import { Link } from 'react-router-dom';
 
-import mainLogo from "../../../assets/img/main-logo.svg";
-import { Logo, Heading } from "./LogoSection.styled";
+import mainLogo from '../../../assets/img/main-logo.svg';
+import { Logo, Heading } from './LogoSection.styled';
 
 const LogoSection = memo(() => {
   return (

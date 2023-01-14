@@ -1,9 +1,9 @@
-import { Link } from "react-router-dom";
+import { Link } from 'react-router-dom';
 
-import { clearItems, selectCart } from "../../store/slices/cartSlice";
-import CartItem from "../../components/CartItem/CartItem";
-import CartEmpty from "../../components/CartEmpty/CartEmpty";
-import { ButtonBack, ButtonPay } from "../../styles/Buttons.styled";
+import { clearItems, selectCart } from '../../store/slices/cartSlice';
+import CartItem from '../../components/CartItem/CartItem';
+import CartEmpty from '../../components/CartEmpty/CartEmpty';
+import { ButtonBack, ButtonPay } from '../../styles/Buttons.styled';
 import {
   Top,
   Title,
@@ -14,9 +14,9 @@ import {
   Details,
   Buttons,
   ChevronLeft,
-} from "./Cart.styled";
-import { ICartItem } from "../../models/ICartItem";
-import { useAppDispatch, useAppSelector } from "../../hooks/reduxHooks";
+} from './Cart.styled';
+import { ICartItem } from '../../models/ICartItem';
+import { useAppDispatch, useAppSelector } from '../../hooks/reduxHooks';
 
 const Cart = () => {
   const { itemsCount, totalPrice, items } = useAppSelector(selectCart);
@@ -50,12 +50,12 @@ const Cart = () => {
           <Bottom>
             <Details>
               <span>
-                {" "}
-                Items <b>{itemsCount}</b>{" "}
+                {' '}
+                Items <b>{itemsCount}</b>{' '}
               </span>
               <span>
-                {" "}
-                Total <b>{totalPrice}$</b>{" "}
+                {' '}
+                Total <b>{totalPrice}$</b>{' '}
               </span>
             </Details>
             <Buttons>

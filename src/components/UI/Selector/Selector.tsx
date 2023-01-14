@@ -1,5 +1,5 @@
-import { useEffect } from "react";
-import { Div, Li } from "./Selector.styled";
+import { useEffect } from 'react';
+import { Div, Li } from './Selector.styled';
 
 interface SelectorProps {
   price: number;

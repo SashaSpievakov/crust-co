@@ -1,9 +1,9 @@
-import { useEffect, useState } from "react";
-import { Link } from "react-router-dom";
+import { useEffect, useState } from 'react';
+import { Link } from 'react-router-dom';
 
-import ItemsCountHandler from "../UI/ItemsCountHandler/ItemsCountHandler";
-import Selector from "../UI/Selector/Selector";
-import { Block, Image, Title, Bottom, Price } from "./ItemCard.styled";
+import ItemsCountHandler from '../UI/ItemsCountHandler/ItemsCountHandler';
+import Selector from '../UI/Selector/Selector';
+import { Block, Image, Title, Bottom, Price } from './ItemCard.styled';
 
 interface ItemCardProps {
   id: string;
@@ -13,7 +13,7 @@ interface ItemCardProps {
   types: number[];
 }
 
-const typeNames: string[] = ["traditional", "thin"];
+const typeNames: string[] = ['traditional', 'thin'];
 
 const ItemCard = ({ id, name, price, sizes, types }: ItemCardProps) => {
   const [activePrice, setActivePrice] = useState<number>(price);

@@ -1,13 +1,13 @@
-import { useEffect, useRef } from "react";
-import { Link, useLocation } from "react-router-dom";
-import { BsCart3, BsFillSunFill, BsFillMoonFill } from "react-icons/bs";
+import { useEffect, useRef } from 'react';
+import { Link, useLocation } from 'react-router-dom';
+import { BsCart3, BsFillSunFill, BsFillMoonFill } from 'react-icons/bs';
 
-import LogoSection from "../UI/LogoSection/LogoSection";
-import { selectCart } from "../../store/slices/cartSlice";
-import { setTheme, selectIsLight } from "../../store/slices/themeSlice";
-import { Main, Wrapper, Right, Icon, Delimiter } from "./Header.styled";
-import { ButtonCart } from "../../styles/Buttons.styled";
-import { useAppDispatch, useAppSelector } from "../../hooks/reduxHooks";
+import LogoSection from '../UI/LogoSection/LogoSection';
+import { selectCart } from '../../store/slices/cartSlice';
+import { setTheme, selectIsLight } from '../../store/slices/themeSlice';
+import { Main, Wrapper, Right, Icon, Delimiter } from './Header.styled';
+import { ButtonCart } from '../../styles/Buttons.styled';
+import { useAppDispatch, useAppSelector } from '../../hooks/reduxHooks';
 
 const Header = () => {
   const { itemsCount, totalPrice, items } = useAppSelector(selectCart);
@@ -19,7 +19,7 @@ const Header = () => {
   useEffect(() => {
     if (isMounted.current) {
       const json = JSON.stringify(items);
-      localStorage.setItem("cart", json);
+      localStorage.setItem('cart', json);
     }
 
     isMounted.current = true;
@@ -28,7 +28,7 @@ const Header = () => {
   useEffect(() => {
     if (isMounted.current) {
       const json = JSON.stringify(isLight);
-      localStorage.setItem("isLight", json);
+      localStorage.setItem('isLight', json);
     }
   }, [isLight]);
 
@@ -38,16 +38,16 @@ const Header = () => {
 
   return (
     <Main>
-      <Wrapper isCart={location.pathname === "/cart"}>
+      <Wrapper isCart={location.pathname === '/cart'}>
         <LogoSection />
 
         <Right>
           <Icon
             as={isLight ? BsFillMoonFill : BsFillSunFill}
             onClick={changeThemes}
-            mode={location.pathname === "/cart" ? "cart" : ""}
+            mode={location.pathname === '/cart' ? 'cart' : ''}
           />
-          {location.pathname !== "/cart" && (
+          {location.pathname !== '/cart' && (
             <ButtonCart to="/cart" as={Link}>
               <span>{totalPrice} $</span>
               <Delimiter />

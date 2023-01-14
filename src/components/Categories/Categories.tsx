@@ -1,10 +1,10 @@
-import React from "react";
+import React from 'react';
 
-import { useAppDispatch, useAppSelector } from "../../hooks/reduxHooks";
-import { selectCategory, setCategory } from "../../store/slices/categorySlice";
-import { Ul, Li } from "./Categories.styled";
+import { useAppDispatch, useAppSelector } from '../../hooks/reduxHooks';
+import { selectCategory, setCategory } from '../../store/slices/categorySlice';
+import { Ul, Li } from './Categories.styled';
 
-const categoriesArr: string[] = ["All", "Meat", "Vegetarian", "Grill", "Spicy"];
+const categoriesArr: string[] = ['All', 'Meat', 'Vegetarian', 'Grill', 'Spicy'];
 
 const Categories = () => {
   const activeCategory = useAppSelector(selectCategory);

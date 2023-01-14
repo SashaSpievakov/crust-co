@@ -1,18 +1,18 @@
-import { useAppDispatch, useAppSelector } from "../../../hooks/reduxHooks";
-import { ICartItem } from "../../../models/ICartItem";
+import { useAppDispatch, useAppSelector } from '../../../hooks/reduxHooks';
+import { ICartItem } from '../../../models/ICartItem';
 import {
   addItem,
   removeItem,
   selectItemPriceById,
-} from "../../../store/slices/cartSlice";
-import { ButtonAdd } from "../../../styles/Buttons.styled";
+} from '../../../store/slices/cartSlice';
+import { ButtonAdd } from '../../../styles/Buttons.styled';
 import {
   Counter,
   Minus,
   Count,
   Plus,
   MainPlus,
-} from "./ItemsCountHandler.styled";
+} from './ItemsCountHandler.styled';
 
 interface ItemsCountHandlerProps {
   id: string;

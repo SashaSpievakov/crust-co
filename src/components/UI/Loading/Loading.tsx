@@ -1,4 +1,4 @@
-import { Wrapper, Loader, Circle } from "./Loading.styled";
+import { Wrapper, Loader, Circle } from './Loading.styled';
 
 const Loading = () => {
   return (

@@ -1,4 +1,4 @@
-import styled, { css } from "styled-components";
+import styled, { css } from 'styled-components';
 
 interface LiProps {
   chosen: boolean;
@@ -10,7 +10,7 @@ interface DivProps {
 
 const Div = styled.div<DivProps>`
   display: flex;
-  font-size: ${({ isFullScreen }) => (isFullScreen ? "18px" : "14px")};
+  font-size: ${({ isFullScreen }) => (isFullScreen ? '18px' : '14px')};
   flex-direction: column;
   gap: 6px;
   padding: 6px;
@@ -24,7 +24,7 @@ const Div = styled.div<DivProps>`
   }
 
   @media screen and (max-width: 400px) {
-    font-size: ${({ isFullScreen }) => (isFullScreen ? "16px" : "14px")};
+    font-size: ${({ isFullScreen }) => (isFullScreen ? '16px' : '14px')};
   }
 
   ${({ isFullScreen }) =>

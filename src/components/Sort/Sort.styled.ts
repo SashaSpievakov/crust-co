@@ -1,5 +1,5 @@
-import styled, { css } from "styled-components";
-import { BsCaretDownFill, BsCaretUpFill } from "react-icons/bs";
+import styled, { css } from 'styled-components';
+import { BsCaretDownFill, BsCaretUpFill } from 'react-icons/bs';
 
 interface PopupProps {
   open: boolean;

@@ -1,6 +1,6 @@
-import styled, { css } from "styled-components";
+import styled, { css } from 'styled-components';
 
-import { Container } from "../../styles/Base.styled";
+import { Container } from '../../styles/Base.styled';
 
 interface WrapperProps {
   isCart: boolean;
@@ -64,7 +64,7 @@ const Icon = styled.i<LiProps>`
   }
 
   ${({ mode }) =>
-    mode === "cart" &&
+    mode === 'cart' &&
     css`
       @media screen and (max-width: 450px) {
         position: absolute;

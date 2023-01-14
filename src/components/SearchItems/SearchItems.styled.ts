@@ -1,5 +1,5 @@
-import styled from "styled-components";
-import { BsXLg, BsSearch } from "react-icons/bs";
+import styled from 'styled-components';
+import { BsXLg, BsSearch } from 'react-icons/bs';
 
 const Wrapper = styled.div`
   position: relative;

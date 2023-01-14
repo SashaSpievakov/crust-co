@@ -1,8 +1,8 @@
-import { useEffect, useState, useRef, memo } from "react";
-import { useAppDispatch, useAppSelector } from "../../hooks/reduxHooks";
+import { useEffect, useState, useRef, memo } from 'react';
+import { useAppDispatch, useAppSelector } from '../../hooks/reduxHooks';
 
-import { selectSort, setSort } from "../../store/slices/sortSlice";
-import { Wrapper, Label, ArrowUp, ArrowDown, Popup, Li } from "./Sort.styled";
+import { selectSort, setSort } from '../../store/slices/sortSlice';
+import { Wrapper, Label, ArrowUp, ArrowDown, Popup, Li } from './Sort.styled';
 
 interface CategoriesProps {
   sortNamesArr: string[];
@@ -28,11 +28,11 @@ const Sort = memo(({ sortNamesArr }: CategoriesProps) => {
       }
     };
     if (open) {
-      document.body.addEventListener("click", handleBodyClick);
+      document.body.addEventListener('click', handleBodyClick);
     }
 
     return () => {
-      document.body.removeEventListener("click", handleBodyClick);
+      document.body.removeEventListener('click', handleBodyClick);
     };
   }, [open]);
 

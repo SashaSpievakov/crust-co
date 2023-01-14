@@ -1,6 +1,6 @@
-import styled, { css } from "styled-components";
-import { HiMinus, HiPlus } from "react-icons/hi";
-import { BsPlusLg } from "react-icons/bs";
+import styled, { css } from 'styled-components';
+import { HiMinus, HiPlus } from 'react-icons/hi';
+import { BsPlusLg } from 'react-icons/bs';
 
 interface CounterProps {
   isFullScreen?: boolean;
@@ -19,7 +19,7 @@ const Counter = styled.div<CounterProps>`
   padding: 8.25px 0;
 
   svg {
-    font-size: ${({ isFullScreen }) => (isFullScreen ? "34px" : "27px")};
+    font-size: ${({ isFullScreen }) => (isFullScreen ? '34px' : '27px')};
   }
 `;
 
@@ -33,7 +33,7 @@ const Plus = styled(HiPlus)`
 `;
 
 const Count = styled.span<CounterProps>`
-  font-size: ${({ isFullScreen }) => (isFullScreen ? "30px" : "22px")};
+  font-size: ${({ isFullScreen }) => (isFullScreen ? '30px' : '22px')};
   margin-right: 15px;
 `;
 

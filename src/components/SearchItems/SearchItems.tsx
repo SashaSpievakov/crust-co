@@ -1,15 +1,15 @@
-import React, { memo, useCallback, useRef, useState } from "react";
-import debounce from "lodash.debounce";
+import React, { memo, useCallback, useRef, useState } from 'react';
+import debounce from 'lodash.debounce';
 
-import { useAppDispatch, useAppSelector } from "../../hooks/reduxHooks";
+import { useAppDispatch, useAppSelector } from '../../hooks/reduxHooks';
 import {
   selectSearchValue,
   setSearchValue,
-} from "../../store/slices/searchSlice";
-import { Wrapper, SearchIcon, Input, Cross } from "./SearchItems.styled";
+} from '../../store/slices/searchSlice';
+import { Wrapper, SearchIcon, Input, Cross } from './SearchItems.styled';
 
 const SearchItems = memo(() => {
-  const [value, setValue] = useState<string>("");
+  const [value, setValue] = useState<string>('');
   const searchValue = useAppSelector(selectSearchValue);
   const dispatch = useAppDispatch();
   const inputRef = useRef<HTMLInputElement>(null);
@@ -31,8 +31,8 @@ const SearchItems = memo(() => {
   };
 
   const onClickClose = () => {
-    setValue("");
-    dispatch(setSearchValue(""));
+    setValue('');
+    dispatch(setSearchValue(''));
   };
 
   return (

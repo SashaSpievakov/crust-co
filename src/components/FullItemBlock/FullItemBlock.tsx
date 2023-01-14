@@ -1,17 +1,17 @@
-import { useState } from "react";
-import { Link } from "react-router-dom";
+import { useState } from 'react';
+import { Link } from 'react-router-dom';
 
-import { Image, Title, Paragraph, Price, Item } from "./FullItemBlock.styled";
-import { ButtonBlack } from "../../styles/Buttons.styled";
-import Selector from "../UI/Selector/Selector";
-import ItemsCountHandler from "../UI/ItemsCountHandler/ItemsCountHandler";
-import { IPizzaItem } from "../../models/IPizzaItem";
+import { Image, Title, Paragraph, Price, Item } from './FullItemBlock.styled';
+import { ButtonBlack } from '../../styles/Buttons.styled';
+import Selector from '../UI/Selector/Selector';
+import ItemsCountHandler from '../UI/ItemsCountHandler/ItemsCountHandler';
+import { IPizzaItem } from '../../models/IPizzaItem';
 
 interface FullItemProps {
   item: IPizzaItem;
 }
 
-const typeNames: string[] = ["traditional", "thin"];
+const typeNames: string[] = ['traditional', 'thin'];
 
 const FullItemBlock = ({ item }: FullItemProps) => {
   const [activePrice, setActivePrice] = useState<number>(item.price);

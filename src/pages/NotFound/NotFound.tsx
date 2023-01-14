@@ -1,7 +1,7 @@
-import { Link } from "react-router-dom";
+import { Link } from 'react-router-dom';
 
-import { ButtonBlack } from "../../styles/Buttons.styled";
-import { Title, Wrapper } from "./NotFound.styled";
+import { ButtonBlack } from '../../styles/Buttons.styled';
+import { Title, Wrapper } from './NotFound.styled';
 
 const NotFoundPage = () => {
   return (

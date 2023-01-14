@@ -1,5 +1,5 @@
-import styled, { css } from "styled-components";
-import ContentLoader from "react-content-loader";
+import styled, { css } from 'styled-components';
+import ContentLoader from 'react-content-loader';
 
 const mixinBlock = css`
   width: 250px;
