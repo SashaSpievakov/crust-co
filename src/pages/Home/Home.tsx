@@ -1,15 +1,15 @@
 import { useEffect, useRef, useState } from "react";
 
-import { Title, Block, Top, Error } from "../styles/Base.styled";
-import { selectSort } from "../store/slices/sortSlice";
-import { selectCategory } from "../store/slices/categorySlice";
-import Categories from "../components/Categories/Categories";
-import Sort from "../components/Sort/Sort";
-import SearchItems from "../components/SearchItems/SearchItems";
-import { IPizzaItem } from "../models/IPizzaItem";
-import { useAppSelector } from "../hooks/reduxHooks";
-import pizzasAPI from "../services/PizzasService";
-import ProductsContainer from "../components/ProductsContainer/ProductsContainer";
+import { Title, Block, Top, Error } from "../../styles/Base.styled";
+import { selectSort } from "../../store/slices/sortSlice";
+import { selectCategory } from "../../store/slices/categorySlice";
+import Categories from "../../components/Categories/Categories";
+import Sort from "../../components/Sort/Sort";
+import SearchItems from "../../components/SearchItems/SearchItems";
+import { IPizzaItem } from "../../models/IPizzaItem";
+import { useAppSelector } from "../../hooks/reduxHooks";
+import pizzasAPI from "../../services/PizzasService";
+import ProductsContainer from "../../components/ProductsContainer/ProductsContainer";
 
 const sortNamesArr: string[] = ["rating", "price", "A to Z"];
 
