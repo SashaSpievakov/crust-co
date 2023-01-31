@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-const Main = styled.footer`
+const Wrapper = styled.footer`
   width: 90%;
   display: flex;
   margin: 0 auto;
@@ -14,14 +14,16 @@ const Ul = styled.ul`
   display: flex;
   justify-content: space-evenly;
   align-items: center;
+  margin: 100px 0;
 
   @media screen and (max-width: 700px) {
     flex-direction: column;
     row-gap: 20px;
+    margin: 50px 0;
   }
 `;
 
-const Link = styled.a`
+const Contact = styled.a`
   display: flex;
   gap: 5px;
   align-items: center;
@@ -43,4 +45,4 @@ const Copyright = styled.p`
   text-align: center;
 `;
 
-export { Main, Ul, Icon, Copyright, Link };
+export { Wrapper, Ul, Icon, Copyright, Contact };
