@@ -8,6 +8,7 @@ const Article = styled.article`
   h2 {
     font-size: 36px;
     font-weight: 700;
+    line-height: 1.4;
     margin-bottom: 25px;
 
     @media screen and (max-width: 500px) {

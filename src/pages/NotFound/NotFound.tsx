@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import { ButtonBlack } from '../../styles/Buttons.styled';
 import { Title, Wrapper } from './NotFound.styled';
 
-const NotFoundPage = () => {
+const NotFound = () => {
   return (
     <Wrapper>
       <Title>The page wasn&apos;t found</Title>
@@ -14,4 +14,4 @@ const NotFoundPage = () => {
   );
 };
 
-export default NotFoundPage;
+export default NotFound;

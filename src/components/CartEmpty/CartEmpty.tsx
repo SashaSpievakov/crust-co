@@ -16,7 +16,7 @@ const CartEmpty = () => {
         If you want to make an order, go back to the main page.
       </p>
       <img src={cartImg} alt="empty cart" width="300" height="255" />
-      <ButtonBlack to="/" as={Link}>
+      <ButtonBlack as={Link} to="/">
         <span>Go Back</span>
       </ButtonBlack>
     </Article>

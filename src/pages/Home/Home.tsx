@@ -13,9 +13,10 @@ import ProductsContainer from '../../components/ProductsContainer/ProductsContai
 
 const sortNamesArr: string[] = ['rating', 'price', 'A to Z'];
 
-const HomeComp = () => {
+const Home = () => {
   const [pizzas, setPizzas] = useState<IPizzaItem[]>([]);
   const requested = useRef(false);
+  const scrollRef = useRef<null | HTMLDivElement>(null);
   const activeCategory = useAppSelector(selectCategory);
   const activeSort = useAppSelector(selectSort);
 
@@ -38,8 +39,6 @@ const HomeComp = () => {
   );
 
   useEffect(() => {
-    window.scrollTo(0, 0);
-
     if (!requested.current) {
       if (isSuccess) {
         setPizzas(data);
@@ -51,7 +50,7 @@ const HomeComp = () => {
 
   return (
     <>
-      <Top>
+      <Top ref={scrollRef}>
         <Categories />
         <Sort sortNamesArr={sortNamesArr} />
       </Top>
@@ -71,4 +70,4 @@ const HomeComp = () => {
   );
 };
 
-export default HomeComp;
+export default Home;
