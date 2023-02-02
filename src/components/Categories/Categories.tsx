@@ -20,6 +20,7 @@ const Categories = () => {
             key={name}
             onClick={() => dispatch(setCategory(i))}
             chosen={chosenClass === name}
+            aria-current={chosenClass === name}
           >
             {name}
           </Li>
