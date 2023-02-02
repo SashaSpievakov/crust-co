@@ -3,7 +3,7 @@ import userEvent from '@testing-library/user-event';
 import { screen } from '@testing-library/react';
 
 import CartEmpty from './CartEmpty';
-import renderWithProviders from '../../tests/helpers/renderWithRouter';
+import renderWithProviders from '../../tests/helpers/renderWithAllProviders';
 
 describe('Cart Empty Test', () => {
   beforeEach(() => {
