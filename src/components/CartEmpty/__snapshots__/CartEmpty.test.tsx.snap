@@ -1,0 +1,38 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Cart Empty Test renders the Cart Empty component 1`] = `
+Object {
+  "children": Array [
+    <h2>
+      Your cart is empty 
+      <span>
+        😕
+      </span>
+    </h2>,
+    <p>
+      You haven't ordered food yet.
+      <br />
+      If you want to make an order, go back to the main page.
+    </p>,
+    <img
+      alt="empty cart"
+      height="255"
+      src="empty-cart.png"
+      width="300"
+    />,
+    <a
+      className="sc-bcXHqe sc-gswNZR fAfvZN llPphw"
+      href="/"
+      onClick={[Function]}
+    >
+      <span>
+        Go Back
+      </span>
+    </a>,
+  ],
+  "props": Object {
+    "className": "sc-ftTHYK gCqVqR",
+  },
+  "type": "article",
+}
+`;
