@@ -1,5 +1,3 @@
-/* eslint import/no-extraneous-dependencies: 0 */
-
 import { ReactElement } from 'react';
 import { Provider } from 'react-redux';
 import { ThemeProvider } from 'styled-components';
