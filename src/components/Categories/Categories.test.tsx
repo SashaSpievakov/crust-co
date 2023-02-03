@@ -3,22 +3,18 @@ import userEvent from '@testing-library/user-event';
 import { screen } from '@testing-library/react';
 
 import Categories from './Categories';
-import renderWithStoreAndThemeProvider from '../../tests/helpers/renderWithStoreAndThemeProvider';
+import rendererWithStoreAndThemeProvider from '../../tests/helpers/rendererWithStoreAndTheme';
+import renderWithStoreAndThemeProvider from '../../tests/helpers/renderWithStoreAndTheme';
 
-describe('Cart Empty Test', () => {
-  beforeEach(() => {
-    renderWithStoreAndThemeProvider(<Categories />);
-  });
-
-  test('renders categories list', () => {
-    const categories = screen.getAllByRole('listitem');
-    expect(categories[0]).toBeInTheDocument();
-    expect(categories[2]).toBeInTheDocument();
-    expect(categories[4]).toBeInTheDocument();
-    expect(categories[5]).toBeUndefined();
+describe('Categories Test', () => {
+  test('renders the Categories component', () => {
+    const snapshot = rendererWithStoreAndThemeProvider(<Categories />);
+    expect(snapshot).toMatchSnapshot();
   });
 
   test('renders a correct chosen item', () => {
+    renderWithStoreAndThemeProvider(<Categories />);
+
     expect(screen.getByRole('listitem', { current: true })).toHaveTextContent(
       /all/i,
     );

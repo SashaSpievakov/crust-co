@@ -1,8 +1,8 @@
 /* eslint import/no-extraneous-dependencies: 0 */
 
 import { ReactElement } from 'react';
-import renderer from 'react-test-renderer';
 import { ThemeProvider } from 'styled-components';
+import renderer from 'react-test-renderer';
 
 import { lightTheme } from '../../styles/Themes.styled';
 

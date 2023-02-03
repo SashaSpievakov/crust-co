@@ -3,7 +3,7 @@ import { screen } from '@testing-library/react';
 
 import CartItem from './CartItem';
 import { ICartItem } from '../../models/ICartItem';
-import renderWithStoreAndThemeProvider from '../../tests/helpers/renderWithStoreAndThemeProvider';
+import renderWithStoreAndThemeProvider from '../../tests/helpers/renderWithStoreAndTheme';
 
 const CartItemProps: ICartItem = {
   id: '2',

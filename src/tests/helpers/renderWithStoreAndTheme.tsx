@@ -8,7 +8,7 @@ import { render } from '@testing-library/react';
 import { darkTheme } from '../../styles/Themes.styled';
 import { store } from '../../store/store';
 
-const renderWithStoreAndThemeProvider = (compenent: ReactElement) => {
+const renderWithStoreAndTheme = (compenent: ReactElement) => {
   return {
     ...render(
       <Provider store={store}>
@@ -18,4 +18,4 @@ const renderWithStoreAndThemeProvider = (compenent: ReactElement) => {
   };
 };
 
-export default renderWithStoreAndThemeProvider;
+export default renderWithStoreAndTheme;
