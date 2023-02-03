@@ -5,16 +5,20 @@ import { ThemeProvider } from 'styled-components';
 import { MemoryRouter } from 'react-router-dom';
 import { render } from '@testing-library/react';
 
+import AppRouter from '../../router/AppRouter';
 import { darkTheme } from '../../styles/Themes.styled';
 
-const renderWithRouterAndTheme = (compenent: ReactElement) => {
+const renderWithAppRouterAndTheme = (compenent: ReactElement) => {
   return {
     ...render(
       <MemoryRouter>
-        <ThemeProvider theme={darkTheme}>{compenent}</ThemeProvider>
+        <ThemeProvider theme={darkTheme}>
+          <AppRouter />
+          {compenent}
+        </ThemeProvider>
       </MemoryRouter>,
     ),
   };
 };
 
-export default renderWithRouterAndTheme;
+export default renderWithAppRouterAndTheme;

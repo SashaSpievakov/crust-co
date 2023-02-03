@@ -1,0 +1,112 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`FullItemBlock Test renders the FullItemBlock component 1`] = `
+Object {
+  "children": Array [
+    <img
+      alt="pizza"
+      className="sc-ftTHYK mXpZa"
+      height="450"
+      src="../assets/img/pizza12.png"
+      width="450"
+    />,
+    <h2
+      className="sc-pyfCe nwoXR"
+    >
+      Chicken Curry
+    </h2>,
+    <p
+      className="sc-jrcTuL MAZzO"
+    >
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sed vitae, ab eum nam facilis, soluta corporis molestiae quam, quis cumque consequuntur suscipit dolore praesentium fugiat minima voluptas doloribus aliquid optio!
+    </p>,
+    <div
+      className="sc-bjfHbI bOcGkM"
+    >
+      <ul>
+        <li
+          className="sc-idXgbr fuvZJl"
+          onClick={[Function]}
+        >
+          traditional
+        </li>
+        <li
+          className="sc-idXgbr gtMWan"
+          onClick={[Function]}
+        >
+          thin
+        </li>
+      </ul>
+      <ul>
+        <li
+          className="sc-idXgbr gtMWan"
+          onClick={[Function]}
+        >
+          12
+           inch
+        </li>
+        <li
+          className="sc-idXgbr gtMWan"
+          onClick={[Function]}
+        >
+          14
+           inch
+        </li>
+        <li
+          className="sc-idXgbr gtMWan"
+          onClick={[Function]}
+        >
+          16
+           inch
+        </li>
+      </ul>
+    </div>,
+    <h4
+      className="sc-kDvujY fOCaAw"
+    >
+      14
+      $
+    </h4>,
+    <button
+      className="sc-ipEyDJ sc-ksBlkl sc-fnGiBr eVzfYL iXJjXb doUdQK"
+      onClick={[Function]}
+    >
+      <svg
+        className="sc-fLcnxK hCxlfl"
+        fill="currentColor"
+        height="1em"
+        stroke="currentColor"
+        strokeWidth="0"
+        style={
+          Object {
+            "color": undefined,
+          }
+        }
+        viewBox="0 0 16 16"
+        width="1em"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M8 0a1 1 0 0 1 1 1v6h6a1 1 0 1 1 0 2H9v6a1 1 0 1 1-2 0V9H1a1 1 0 0 1 0-2h6V1a1 1 0 0 1 1-1z"
+        />
+      </svg>
+      <span>
+        Add
+      </span>
+    </button>,
+    <a
+      className="sc-ipEyDJ sc-csuSiG eVzfYL jaxesh"
+      href="/"
+      onClick={[Function]}
+    >
+      <span>
+        Go Back
+      </span>
+    </a>,
+  ],
+  "props": Object {
+    "className": "sc-gKPRtg sc-iBYQkv dtnIEm jeErZT",
+  },
+  "type": "div",
+}
+`;

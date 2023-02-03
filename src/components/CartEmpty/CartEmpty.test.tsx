@@ -3,8 +3,8 @@ import userEvent from '@testing-library/user-event';
 import { screen } from '@testing-library/react';
 
 import CartEmpty from './CartEmpty';
-import renderWithProviders from '../../tests/helpers/renderWithAllProviders';
 import rendererWithRouterAndTheme from '../../tests/helpers/rendererWithRouterAndTheme';
+import renderWithAllProvidersAndAppRouter from '../../tests/helpers/renderWithAllProvidersAndAppRouter';
 
 describe('Cart Empty Test', () => {
   test('renders the Cart Empty component', () => {
@@ -13,7 +13,7 @@ describe('Cart Empty Test', () => {
   });
 
   test('checks link to the home page', () => {
-    renderWithProviders(<CartEmpty />);
+    renderWithAllProvidersAndAppRouter(<CartEmpty />);
     const link = screen.getByRole('link', {
       name: /go back/i,
     });

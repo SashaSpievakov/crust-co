@@ -6,19 +6,23 @@ import { ThemeProvider } from 'styled-components';
 import { MemoryRouter } from 'react-router-dom';
 import { render } from '@testing-library/react';
 
+import AppRouter from '../../router/AppRouter';
 import { darkTheme } from '../../styles/Themes.styled';
 import { store } from '../../store/store';
 
-const renderWithAllProviders = (compenent: ReactElement) => {
+const renderWithAllProvidersAndAppRouter = (compenent: ReactElement) => {
   return {
     ...render(
       <Provider store={store}>
         <MemoryRouter>
-          <ThemeProvider theme={darkTheme}>{compenent}</ThemeProvider>
+          <ThemeProvider theme={darkTheme}>
+            <AppRouter />
+            {compenent}
+          </ThemeProvider>
         </MemoryRouter>
       </Provider>,
     ),
   };
 };
 
-export default renderWithAllProviders;
+export default renderWithAllProvidersAndAppRouter;
