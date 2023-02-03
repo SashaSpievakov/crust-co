@@ -1,12 +1,11 @@
 import '@testing-library/jest-dom';
-import renderer from 'react-test-renderer';
 
 import Footer from './Footer';
-import renderWithTheme from '../../tests/helpers/renderWithTheme';
+import rendererWithTheme from '../../tests/helpers/rendererWithTheme';
 
 describe('Footer Test', () => {
   test('renders the Footer component', () => {
-    const snapshot = renderer.create(renderWithTheme(<Footer />)).toJSON();
+    const snapshot = rendererWithTheme(<Footer />);
     expect(snapshot).toMatchSnapshot();
   });
 });
