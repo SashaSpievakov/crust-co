@@ -1,0 +1,253 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Cart Item Test renders the Cart Item component 1`] = `
+Object {
+  "children": Array [
+    <div
+      className="sc-pyfCe jtVCjF"
+    >
+      <img
+        alt="Pizza"
+        height="80"
+        src="./assets/img/pizza6.png"
+        width="80"
+      />
+    </div>,
+    <div
+      className="sc-jrcTuL fufNrK"
+    >
+      <h3>
+        Cheesburger Pizza
+      </h3>
+      <p>
+        thin
+         dough, 
+        14
+         inch
+      </p>
+    </div>,
+    <div
+      className="sc-kDvujY kioDkI"
+    >
+      <button
+        className="sc-bcXHqe sc-eDvSVe sc-jSUZER fAfvZN fwWQTF gCqzMt"
+        disabled={false}
+        onClick={[Function]}
+      >
+        <svg
+          className="sc-ipEyDJ kPOfaS"
+          fill="currentColor"
+          height="1em"
+          stroke="currentColor"
+          strokeWidth="0"
+          style={
+            Object {
+              "color": undefined,
+            }
+          }
+          viewBox="0 0 16 16"
+          width="1em"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M0 8a1 1 0 0 1 1-1h14a1 1 0 1 1 0 2H1a1 1 0 0 1-1-1z"
+          />
+        </svg>
+      </button>
+      <b>
+        13
+      </b>
+      <button
+        className="sc-bcXHqe sc-eDvSVe sc-jSUZER fAfvZN fwWQTF gCqzMt"
+        onClick={[Function]}
+      >
+        <svg
+          className="sc-ipEyDJ kPOfaS"
+          fill="currentColor"
+          height="1em"
+          stroke="currentColor"
+          strokeWidth="0"
+          style={
+            Object {
+              "color": undefined,
+            }
+          }
+          viewBox="0 0 16 16"
+          width="1em"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M8 0a1 1 0 0 1 1 1v6h6a1 1 0 1 1 0 2H9v6a1 1 0 1 1-2 0V9H1a1 1 0 0 1 0-2h6V1a1 1 0 0 1 1-1z"
+          />
+        </svg>
+      </button>
+    </div>,
+    <div
+      className="sc-csuSiG hJIFvm"
+    >
+      <b>
+        91
+        $
+      </b>
+    </div>,
+    <div
+      className="sc-eDWCr fGJRdl"
+    >
+      <button
+        className="sc-bcXHqe sc-eDvSVe sc-jSUZER fAfvZN fwWQTF edjCUe"
+        onClick={[Function]}
+      >
+        <svg
+          className="sc-ipEyDJ kPOfaS"
+          fill="currentColor"
+          height="1em"
+          stroke="currentColor"
+          strokeWidth="0"
+          style={
+            Object {
+              "color": undefined,
+            }
+          }
+          viewBox="0 0 16 16"
+          width="1em"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M8 0a1 1 0 0 1 1 1v6h6a1 1 0 1 1 0 2H9v6a1 1 0 1 1-2 0V9H1a1 1 0 0 1 0-2h6V1a1 1 0 0 1 1-1z"
+          />
+        </svg>
+      </button>
+    </div>,
+  ],
+  "props": Object {
+    "className": "sc-ftTHYK kpyIvF",
+  },
+  "type": "article",
+}
+`;
+
+exports[`Cart Item Test renders the Cart Item component with a disabled button 1`] = `
+Object {
+  "children": Array [
+    <div
+      className="sc-pyfCe jtVCjF"
+    >
+      <img
+        alt="Pizza"
+        height="80"
+        src="./assets/img/pizza2.png"
+        width="80"
+      />
+    </div>,
+    <div
+      className="sc-jrcTuL fufNrK"
+    >
+      <h3>
+        Pepperoni Pizza
+      </h3>
+      <p>
+        traditional
+         dough, 
+        16
+         inch
+      </p>
+    </div>,
+    <div
+      className="sc-kDvujY kioDkI"
+    >
+      <button
+        className="sc-bcXHqe sc-eDvSVe sc-jSUZER fAfvZN fwWQTF gCqzMt"
+        disabled={true}
+        onClick={[Function]}
+      >
+        <svg
+          className="sc-ipEyDJ kPOfaS"
+          fill="currentColor"
+          height="1em"
+          stroke="currentColor"
+          strokeWidth="0"
+          style={
+            Object {
+              "color": undefined,
+            }
+          }
+          viewBox="0 0 16 16"
+          width="1em"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M0 8a1 1 0 0 1 1-1h14a1 1 0 1 1 0 2H1a1 1 0 0 1-1-1z"
+          />
+        </svg>
+      </button>
+      <b>
+        1
+      </b>
+      <button
+        className="sc-bcXHqe sc-eDvSVe sc-jSUZER fAfvZN fwWQTF gCqzMt"
+        onClick={[Function]}
+      >
+        <svg
+          className="sc-ipEyDJ kPOfaS"
+          fill="currentColor"
+          height="1em"
+          stroke="currentColor"
+          strokeWidth="0"
+          style={
+            Object {
+              "color": undefined,
+            }
+          }
+          viewBox="0 0 16 16"
+          width="1em"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M8 0a1 1 0 0 1 1 1v6h6a1 1 0 1 1 0 2H9v6a1 1 0 1 1-2 0V9H1a1 1 0 0 1 0-2h6V1a1 1 0 0 1 1-1z"
+          />
+        </svg>
+      </button>
+    </div>,
+    <div
+      className="sc-csuSiG hJIFvm"
+    >
+      <b>
+        9
+        $
+      </b>
+    </div>,
+    <div
+      className="sc-eDWCr fGJRdl"
+    >
+      <button
+        className="sc-bcXHqe sc-eDvSVe sc-jSUZER fAfvZN fwWQTF edjCUe"
+        onClick={[Function]}
+      >
+        <svg
+          className="sc-ipEyDJ kPOfaS"
+          fill="currentColor"
+          height="1em"
+          stroke="currentColor"
+          strokeWidth="0"
+          style={
+            Object {
+              "color": undefined,
+            }
+          }
+          viewBox="0 0 16 16"
+          width="1em"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M8 0a1 1 0 0 1 1 1v6h6a1 1 0 1 1 0 2H9v6a1 1 0 1 1-2 0V9H1a1 1 0 0 1 0-2h6V1a1 1 0 0 1 1-1z"
+          />
+        </svg>
+      </button>
+    </div>,
+  ],
+  "props": Object {
+    "className": "sc-ftTHYK kpyIvF",
+  },
+  "type": "article",
+}
+`;
