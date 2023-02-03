@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Cart Empty Test renders the Cart Empty component 1`] = `
+exports[`CartEmpty Test renders the CartEmpty component 1`] = `
 Object {
   "children": Array [
     <h2>

@@ -22,13 +22,13 @@ const CartItemProps2: ICartItem = {
   count: 1,
 };
 
-describe('Cart Item Test', () => {
-  test('renders the Cart Item component', () => {
+describe('CartItem Test', () => {
+  test('renders the CartItem component', () => {
     const snapshot = rendererWithStoreAndTheme(<CartItem {...CartItemProps} />);
     expect(snapshot).toMatchSnapshot();
   });
 
-  test('renders the Cart Item component with a disabled button', () => {
+  test('renders the CartItem component with a disabled button', () => {
     const snapshot = rendererWithStoreAndTheme(
       <CartItem {...CartItemProps2} />,
     );
