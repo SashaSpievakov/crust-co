@@ -6,6 +6,7 @@ import FullItemBlock from './FullItemBlock';
 import { IPizzaItem } from '../../models/IPizzaItem';
 import rendererWithAllProviders from '../../tests/helpers/rendererWithAllProviders';
 import renderWithAllProviders from '../../tests/helpers/renderWithAllProviders';
+import renderWithAllProvidersAndAppRouter from '../../tests/helpers/renderWithAllProvidersAndAppRouter';
 
 const FullItemProp: IPizzaItem = {
   id: '12',
@@ -27,7 +28,7 @@ describe('FullItemBlock Test', () => {
     expect(snapshot).toMatchSnapshot();
   });
 
-  describe('checks price changings', () => {
+  describe('checks price changing', () => {
     beforeEach(() => {
       renderWithAllProviders(<FullItemBlock item={FullItemProp} />);
     });
@@ -63,5 +64,19 @@ describe('FullItemBlock Test', () => {
       userEvent.click(sizeItem);
       expect(price).toHaveTextContent('17$');
     });
+  });
+
+  test('checks link redirect to the Home page', () => {
+    renderWithAllProvidersAndAppRouter(<FullItemBlock item={FullItemProp} />);
+    const link = screen.getByRole('link', {
+      name: /go back/i,
+    });
+
+    userEvent.click(link);
+    expect(
+      screen.getByRole('heading', {
+        name: /all pizzas/i,
+      }),
+    ).toBeInTheDocument();
   });
 });
