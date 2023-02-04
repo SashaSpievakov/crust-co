@@ -2,7 +2,7 @@ import { useAppSelector } from '../../hooks/reduxHooks';
 import { IPizzaItem } from '../../models/IPizzaItem';
 import { selectSearchValue } from '../../store/slices/searchSlice';
 import ItemCard from '../ItemCard/ItemCard';
-import Skeleton from '../ItemCard/Skeleton';
+import Skeleton from '../UI/Skeleton/Skeleton';
 import Container from './ProductsContainer.styled';
 
 interface ProductsContainerProps {

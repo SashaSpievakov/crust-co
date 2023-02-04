@@ -1,4 +1,4 @@
-import { Loader } from './ItemCard.styled';
+import Loader from './Skeleton.styled';
 
 const Skeleton = () => {
   return (

@@ -1,7 +1,6 @@
-import styled, { css } from 'styled-components';
-import ContentLoader from 'react-content-loader';
+import styled from 'styled-components';
 
-const mixinBlock = css`
+const Block = styled.article`
   width: 250px;
   text-align: center;
   margin-bottom: 65px;
@@ -19,14 +18,6 @@ const mixinBlock = css`
   @media screen and (max-width: 400px) {
     width: 200px;
   }
-`;
-
-const Block = styled.article`
-  ${mixinBlock}
-`;
-
-const Loader = styled(ContentLoader)`
-  ${mixinBlock}
 `;
 
 const Image = styled.img`
@@ -65,4 +56,4 @@ const Price = styled.div`
   }
 `;
 
-export { Block, Loader, Image, Title, Bottom, Price };
+export { Block, Image, Title, Bottom, Price };
