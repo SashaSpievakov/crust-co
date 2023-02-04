@@ -3,17 +3,17 @@ import userEvent from '@testing-library/user-event';
 import { screen } from '@testing-library/react';
 
 import Categories from './Categories';
-import rendererWithStoreAndThemeProvider from '../../tests/helpers/rendererWithStoreAndTheme';
-import renderWithStoreAndThemeProvider from '../../tests/helpers/renderWithStoreAndTheme';
+import rendererWithStoreAndTheme from '../../tests/helpers/rendererWithStoreAndTheme';
+import renderWithStoreAndTheme from '../../tests/helpers/renderWithStoreAndTheme';
 
 describe('Categories Test', () => {
   test('renders the Categories component', () => {
-    const snapshot = rendererWithStoreAndThemeProvider(<Categories />);
+    const snapshot = rendererWithStoreAndTheme(<Categories />);
     expect(snapshot).toMatchSnapshot();
   });
 
   test('renders a correct chosen item', () => {
-    renderWithStoreAndThemeProvider(<Categories />);
+    renderWithStoreAndTheme(<Categories />);
 
     expect(screen.getByRole('listitem', { current: true })).toHaveTextContent(
       /all/i,

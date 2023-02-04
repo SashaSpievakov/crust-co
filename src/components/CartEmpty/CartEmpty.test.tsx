@@ -4,7 +4,7 @@ import { screen } from '@testing-library/react';
 
 import CartEmpty from './CartEmpty';
 import rendererWithRouterAndTheme from '../../tests/helpers/rendererWithRouterAndTheme';
-import renderWithAllProvidersAndAppRouter from '../../tests/helpers/renderWithAllProvidersAndAppRouter';
+import renderWithAllProviders from '../../tests/helpers/renderWithAllProviders';
 
 describe('CartEmpty Test', () => {
   test('renders the CartEmpty component', () => {
@@ -12,8 +12,8 @@ describe('CartEmpty Test', () => {
     expect(snapshot).toMatchSnapshot();
   });
 
-  test('checks link redirect to the Home page', () => {
-    renderWithAllProvidersAndAppRouter(<CartEmpty />);
+  test('checks link redirect to the Home page', async () => {
+    renderWithAllProviders(<CartEmpty />, true, '/cart');
     const link = screen.getByRole('link', {
       name: /go back/i,
     });

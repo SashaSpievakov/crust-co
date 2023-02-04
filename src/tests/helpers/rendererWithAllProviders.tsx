@@ -6,13 +6,19 @@ import renderer from 'react-test-renderer';
 
 import { darkTheme } from '../../styles/Themes.styled';
 import { store } from '../../store/store';
+import AppRouter from '../../router/AppRouter';
 
-const rendererWithAllProviders = (compenent: ReactElement) => {
+const rendererWithAllProviders = (
+  compenent: ReactElement,
+  appRouter: boolean = false,
+  route: string = '/',
+) => {
   return {
     ...renderer
       .create(
         <Provider store={store}>
-          <MemoryRouter>
+          <MemoryRouter initialEntries={[route]}>
+            {appRouter ?? <AppRouter />}
             <ThemeProvider theme={darkTheme}>{compenent}</ThemeProvider>
           </MemoryRouter>
         </Provider>,

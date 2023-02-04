@@ -6,7 +6,6 @@ import FullItemBlock from './FullItemBlock';
 import { IPizzaItem } from '../../models/IPizzaItem';
 import rendererWithAllProviders from '../../tests/helpers/rendererWithAllProviders';
 import renderWithAllProviders from '../../tests/helpers/renderWithAllProviders';
-import renderWithAllProvidersAndAppRouter from '../../tests/helpers/renderWithAllProvidersAndAppRouter';
 
 const FullItemProp: IPizzaItem = {
   id: '12',
@@ -67,7 +66,11 @@ describe('FullItemBlock Test', () => {
   });
 
   test('checks link redirect to the Home page', () => {
-    renderWithAllProvidersAndAppRouter(<FullItemBlock item={FullItemProp} />);
+    renderWithAllProviders(
+      <FullItemBlock item={FullItemProp} />,
+      true,
+      '/item/:id',
+    );
     const link = screen.getByRole('link', {
       name: /go back/i,
     });

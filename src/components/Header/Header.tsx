@@ -48,7 +48,7 @@ const Header = () => {
             mode={location.pathname === '/cart' ? 'cart' : ''}
           />
           {location.pathname !== '/cart' && (
-            <ButtonCart to="/cart" as={Link}>
+            <ButtonCart to="/cart" as={Link} data-testid="cartLink">
               <span>{totalPrice} $</span>
               <Delimiter />
               <BsCart3 />

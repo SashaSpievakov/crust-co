@@ -8,13 +8,21 @@ import { render } from '@testing-library/react';
 
 import { darkTheme } from '../../styles/Themes.styled';
 import { store } from '../../store/store';
+import AppRouter from '../../router/AppRouter';
 
-const renderWithAllProviders = (compenent: ReactElement) => {
+const renderWithAllProviders = (
+  compenent: ReactElement,
+  appRouter: boolean = false,
+  route: string = '/',
+) => {
   return {
     ...render(
       <Provider store={store}>
-        <MemoryRouter>
-          <ThemeProvider theme={darkTheme}>{compenent}</ThemeProvider>
+        <MemoryRouter initialEntries={[route]}>
+          <ThemeProvider theme={darkTheme}>
+            {appRouter && <AppRouter />}
+            {compenent}
+          </ThemeProvider>
         </MemoryRouter>
       </Provider>,
     ),
