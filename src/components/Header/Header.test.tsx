@@ -13,15 +13,21 @@ describe('Header Test', () => {
   });
 
   test('renders the Header component on the Cart page', () => {
-    const snapshot = rendererWithProviders(<Header />);
+    const snapshot = rendererWithProviders(<Header />, '/cart');
     expect(snapshot).toMatchSnapshot();
   });
 
   test('checks link redirect to the Cart page', () => {
-    renderWithProviders(<Header />);
-    const links = screen.getByTestId('cartLink');
+    renderWithProviders(<Header />, true, '/testing');
+    screen.debug();
+    const link = screen.getByTestId('cartLink');
 
-    userEvent.click(links);
-    expect(screen.queryByRole('cartLink')).toBeNull();
+    userEvent.click(link);
+
+    expect(
+      screen.getByRole('heading', {
+        name: /your cart is empty/i,
+      }),
+    ).toBeInTheDocument();
   });
 });

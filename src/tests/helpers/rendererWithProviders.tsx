@@ -7,12 +7,15 @@ import renderer from 'react-test-renderer';
 import { darkTheme } from '../../styles/Themes.styled';
 import { setupStore } from '../../store/store';
 
-const rendererWithProviders = (compenent: ReactElement) => {
+const rendererWithProviders = (
+  compenent: ReactElement,
+  route: string = '/',
+) => {
   return {
     ...renderer
       .create(
         <Provider store={setupStore()}>
-          <MemoryRouter>
+          <MemoryRouter initialEntries={[route]}>
             <ThemeProvider theme={darkTheme}>{compenent}</ThemeProvider>
           </MemoryRouter>
         </Provider>,
