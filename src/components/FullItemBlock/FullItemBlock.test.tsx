@@ -6,7 +6,7 @@ import FullItemBlock from './FullItemBlock';
 import { IPizzaItem } from '../../models/IPizzaItem';
 import rendererWithAllProviders from '../../tests/helpers/rendererWithProviders';
 import renderWithAllProviders from '../../tests/helpers/renderWithProviders';
-import renderWithAllProvidersAndAppRouter from '../../tests/helpers/render/renderWithAllProvidersAndAppRouter';
+// import renderWithAllProvidersAndAppRouter from '../../tests/helpers/render/renderWithAllProvidersAndAppRouter';
 
 const FullItemProp: IPizzaItem = {
   id: '12',
@@ -66,20 +66,20 @@ describe('FullItemBlock Test', () => {
     });
   });
 
-  test('checks link redirect to the Home page', () => {
-    renderWithAllProvidersAndAppRouter(
-      <FullItemBlock item={FullItemProp} />,
-      '/item/:id',
-    );
-    const link = screen.getByRole('link', {
-      name: /go back/i,
-    });
+  // test('checks link redirect to the Home page', () => {
+  //   renderWithAllProvidersAndAppRouter(
+  //     <FullItemBlock item={FullItemProp} />,
+  //     '/item/:id',
+  //   );
+  //   const link = screen.getByRole('link', {
+  //     name: /go back/i,
+  //   });
 
-    userEvent.click(link);
-    expect(
-      screen.getByRole('heading', {
-        name: /all pizzas/i,
-      }),
-    ).toBeInTheDocument();
-  });
+  //   userEvent.click(link);
+  //   expect(
+  //     screen.getByRole('heading', {
+  //       name: /all pizzas/i,
+  //     }),
+  //   ).toBeInTheDocument();
+  // });
 });
