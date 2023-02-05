@@ -4,8 +4,9 @@ import userEvent from '@testing-library/user-event';
 
 import FullItemBlock from './FullItemBlock';
 import { IPizzaItem } from '../../models/IPizzaItem';
-import rendererWithAllProviders from '../../tests/helpers/rendererWithAllProviders';
-import renderWithAllProviders from '../../tests/helpers/renderWithAllProviders';
+import rendererWithAllProviders from '../../tests/helpers/rendererWithProviders';
+import renderWithAllProviders from '../../tests/helpers/renderWithProviders';
+import renderWithAllProvidersAndAppRouter from '../../tests/helpers/render/renderWithAllProvidersAndAppRouter';
 
 const FullItemProp: IPizzaItem = {
   id: '12',
@@ -66,9 +67,8 @@ describe('FullItemBlock Test', () => {
   });
 
   test('checks link redirect to the Home page', () => {
-    renderWithAllProviders(
+    renderWithAllProvidersAndAppRouter(
       <FullItemBlock item={FullItemProp} />,
-      true,
       '/item/:id',
     );
     const link = screen.getByRole('link', {

@@ -3,8 +3,8 @@ import { screen } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
 
 import Header from './Header';
-import rendererWithAllProviders from '../../tests/helpers/rendererWithAllProviders';
-import renderWithAllProviders from '../../tests/helpers/renderWithAllProviders';
+import rendererWithAllProviders from '../../tests/helpers/rendererWithProviders';
+import renderWithAllProviders from '../../tests/helpers/renderWithProviders';
 
 describe('Header Test', () => {
   test('renders the Header component', () => {

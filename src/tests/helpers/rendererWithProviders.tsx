@@ -8,7 +8,7 @@ import { darkTheme } from '../../styles/Themes.styled';
 import { store } from '../../store/store';
 import AppRouter from '../../router/AppRouter';
 
-const rendererWithAllProviders = (
+const rendererWithProviders = (
   compenent: ReactElement,
   appRouter: boolean = false,
   route: string = '/',
@@ -27,4 +27,4 @@ const rendererWithAllProviders = (
   };
 };
 
-export default rendererWithAllProviders;
+export default rendererWithProviders;

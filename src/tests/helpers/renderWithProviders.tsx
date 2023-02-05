@@ -8,11 +8,11 @@ import { render } from '@testing-library/react';
 
 import { darkTheme } from '../../styles/Themes.styled';
 import { store } from '../../store/store';
-import AppRouter from '../../router/AppRouter';
+import AppRouterTester from '../../router/AppRouterTester';
 
-const renderWithAllProviders = (
-  compenent: ReactElement,
-  appRouter: boolean = false,
+const renderWithProviders = (
+  compenent: ReactElement | null,
+  routes: boolean = false,
   route: string = '/',
 ) => {
   return {
@@ -20,7 +20,7 @@ const renderWithAllProviders = (
       <Provider store={store}>
         <MemoryRouter initialEntries={[route]}>
           <ThemeProvider theme={darkTheme}>
-            {appRouter && <AppRouter />}
+            {routes && <AppRouterTester />}
             {compenent}
           </ThemeProvider>
         </MemoryRouter>
@@ -29,4 +29,4 @@ const renderWithAllProviders = (
   };
 };
 
-export default renderWithAllProviders;
+export default renderWithProviders;

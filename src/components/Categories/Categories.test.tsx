@@ -3,8 +3,8 @@ import userEvent from '@testing-library/user-event';
 import { screen } from '@testing-library/react';
 
 import Categories from './Categories';
-import rendererWithStoreAndTheme from '../../tests/helpers/rendererWithStoreAndTheme';
-import renderWithStoreAndTheme from '../../tests/helpers/renderWithStoreAndTheme';
+import rendererWithStoreAndTheme from '../../tests/helpers/renderer/rendererWithStoreAndTheme';
+import renderWithStoreAndTheme from '../../tests/helpers/render/renderWithStoreAndTheme';
 
 describe('Categories Test', () => {
   test('renders the Categories component', () => {

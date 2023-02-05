@@ -2,7 +2,7 @@ import '@testing-library/jest-dom';
 
 import CartItem from './CartItem';
 import { ICartItem } from '../../models/ICartItem';
-import rendererWithStoreAndTheme from '../../tests/helpers/rendererWithStoreAndTheme';
+import rendererWithStoreAndTheme from '../../tests/helpers/renderer/rendererWithStoreAndTheme';
 
 const CartItemProps: ICartItem = {
   id: '6',

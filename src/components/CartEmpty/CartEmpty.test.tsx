@@ -3,17 +3,17 @@ import userEvent from '@testing-library/user-event';
 import { screen } from '@testing-library/react';
 
 import CartEmpty from './CartEmpty';
-import rendererWithRouterAndTheme from '../../tests/helpers/rendererWithRouterAndTheme';
-import renderWithAllProviders from '../../tests/helpers/renderWithAllProviders';
+import renderWithProviders from '../../tests/helpers/renderWithProviders';
+import rendererWithProviders from '../../tests/helpers/rendererWithProviders';
 
 describe('CartEmpty Test', () => {
   test('renders the CartEmpty component', () => {
-    const snapshot = rendererWithRouterAndTheme(<CartEmpty />);
+    const snapshot = rendererWithProviders(<CartEmpty />);
     expect(snapshot).toMatchSnapshot();
   });
 
   test('checks link redirect to the Home page', async () => {
-    renderWithAllProviders(<CartEmpty />, true, '/cart');
+    renderWithProviders(null, true, '/cart');
     const link = screen.getByRole('link', {
       name: /go back/i,
     });

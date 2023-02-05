@@ -4,8 +4,8 @@ import userEvent from '@testing-library/user-event';
 
 import ItemCard from './ItemCard';
 import { IPizzaItem } from '../../models/IPizzaItem';
-import rendererWithAllProviders from '../../tests/helpers/rendererWithAllProviders';
-import renderWithAllProviders from '../../tests/helpers/renderWithAllProviders';
+import rendererWithAllProviders from '../../tests/helpers/rendererWithProviders';
+import renderWithAllProviders from '../../tests/helpers/renderWithProviders';
 
 const ItemCardProps: IPizzaItem = {
   id: '9',
