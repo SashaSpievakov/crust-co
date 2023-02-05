@@ -1,6 +1,6 @@
 import '@testing-library/jest-dom';
-import userEvent from '@testing-library/user-event';
 import { screen } from '@testing-library/react';
+import userEvent from '@testing-library/user-event';
 
 import CartEmpty from './CartEmpty';
 import renderWithProviders from '../../tests/helpers/renderWithProviders';
