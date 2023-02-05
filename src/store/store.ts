@@ -18,13 +18,16 @@ const rootReducer = combineReducers({
   [pizzasAPI.reducerPath]: pizzasAPI.reducer,
 });
 
-export const store = configureStore({
-  reducer: rootReducer,
-  middleware: (getDefaultMiddleware) =>
-    getDefaultMiddleware()
-      .concat(itemAPI.middleware)
-      .concat(pizzasAPI.middleware),
-});
+export function setupStore(preloadedState?: PreloadedState<RootState>) {
+  return configureStore({
+    reducer: rootReducer,
+    middleware: (getDefaultMiddleware) =>
+      getDefaultMiddleware()
+        .concat(itemAPI.middleware)
+        .concat(pizzasAPI.middleware),
+    preloadedState,
+  });
+}
 
 export type RootState = ReturnType<typeof rootReducer>;
 export type AppDispatch = typeof store.dispatch;
