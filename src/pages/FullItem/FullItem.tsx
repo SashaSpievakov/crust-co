@@ -28,7 +28,7 @@ const FullItem = () => {
       ) : isLoading ? (
         <Loading />
       ) : (
-        <Error>Eroor: failed request, try again</Error>
+        <Error>Error: failed request, try again</Error>
       )}
     </section>
   );

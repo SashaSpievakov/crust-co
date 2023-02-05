@@ -3,10 +3,9 @@ import { screen } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
 
 import FullItemBlock from './FullItemBlock';
+import rendererWithProviders from '../../tests/helpers/rendererWithProviders';
+import renderWithProviders from '../../tests/helpers/renderWithProviders';
 import { IPizzaItem } from '../../models/IPizzaItem';
-import rendererWithAllProviders from '../../tests/helpers/rendererWithProviders';
-import renderWithAllProviders from '../../tests/helpers/renderWithProviders';
-// import renderWithAllProvidersAndAppRouter from '../../tests/helpers/render/renderWithAllProvidersAndAppRouter';
 
 const FullItemProp: IPizzaItem = {
   id: '12',
@@ -22,15 +21,31 @@ const FullItemProp: IPizzaItem = {
 
 describe('FullItemBlock Test', () => {
   test('renders the FullItemBlock component', () => {
-    const snapshot = rendererWithAllProviders(
+    const snapshot = rendererWithProviders(
       <FullItemBlock item={FullItemProp} />,
     );
     expect(snapshot).toMatchSnapshot();
   });
 
-  describe('checks price changing', () => {
+  test('checks link redirect to the Home page', () => {
+    window.HTMLElement.prototype.scrollIntoView = function () {}; // eslint-disable-line func-names
+    renderWithProviders(<FullItemBlock item={FullItemProp} />, true, '/item/1');
+    const link = screen.getByRole('link', {
+      name: /go back/i,
+    });
+
+    userEvent.click(link);
+
+    expect(
+      screen.getByRole('heading', {
+        name: /all pizzas/i,
+      }),
+    ).toBeInTheDocument();
+  });
+
+  describe('checks the price changing', () => {
     beforeEach(() => {
-      renderWithAllProviders(<FullItemBlock item={FullItemProp} />);
+      renderWithProviders(<FullItemBlock item={FullItemProp} />);
     });
 
     test('checks type click', () => {
@@ -40,6 +55,7 @@ describe('FullItemBlock Test', () => {
       });
 
       userEvent.click(typeItem);
+
       expect(price).toHaveTextContent('15$');
     });
 
@@ -50,6 +66,7 @@ describe('FullItemBlock Test', () => {
       });
 
       userEvent.click(sizeItem);
+
       expect(price).toHaveTextContent('18$');
     });
 
@@ -62,24 +79,8 @@ describe('FullItemBlock Test', () => {
 
       userEvent.click(typeItem);
       userEvent.click(sizeItem);
+
       expect(price).toHaveTextContent('17$');
     });
   });
-
-  // test('checks link redirect to the Home page', () => {
-  //   renderWithAllProvidersAndAppRouter(
-  //     <FullItemBlock item={FullItemProp} />,
-  //     '/item/:id',
-  //   );
-  //   const link = screen.getByRole('link', {
-  //     name: /go back/i,
-  //   });
-
-  //   userEvent.click(link);
-  //   expect(
-  //     screen.getByRole('heading', {
-  //       name: /all pizzas/i,
-  //     }),
-  //   ).toBeInTheDocument();
-  // });
 });
