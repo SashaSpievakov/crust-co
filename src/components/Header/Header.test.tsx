@@ -19,7 +19,6 @@ describe('Header Test', () => {
 
   test('checks link redirect to the Cart page', () => {
     renderWithProviders(<Header />, true, '/testing');
-    screen.debug();
     const link = screen.getByTestId('cartLink');
 
     userEvent.click(link);

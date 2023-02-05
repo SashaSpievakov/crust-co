@@ -3,9 +3,9 @@ import { screen } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
 
 import ItemCard from './ItemCard';
-import { IPizzaItem } from '../../models/IPizzaItem';
 import rendererWithAllProviders from '../../tests/helpers/rendererWithProviders';
 import renderWithAllProviders from '../../tests/helpers/renderWithProviders';
+import { IPizzaItem } from '../../models/IPizzaItem';
 
 const ItemCardProps: IPizzaItem = {
   id: '9',
@@ -25,7 +25,7 @@ describe('ItemCard Test', () => {
     expect(snapshot).toMatchSnapshot();
   });
 
-  describe('checks price changing', () => {
+  describe('checks the price changing', () => {
     beforeEach(() => {
       renderWithAllProviders(<ItemCard {...ItemCardProps} />);
     });
@@ -35,6 +35,7 @@ describe('ItemCard Test', () => {
       const price = screen.getByText(/8\$/i);
 
       userEvent.click(typeItem);
+
       expect(price).toHaveTextContent('9$');
     });
 
@@ -43,6 +44,7 @@ describe('ItemCard Test', () => {
       const price = screen.getByText(/8\$/i);
 
       userEvent.click(sizeItem);
+
       expect(price).toHaveTextContent('12$');
     });
 
@@ -53,6 +55,7 @@ describe('ItemCard Test', () => {
 
       userEvent.click(typeItem);
       userEvent.click(sizeItem);
+
       expect(price).toHaveTextContent('11$');
     });
   });
