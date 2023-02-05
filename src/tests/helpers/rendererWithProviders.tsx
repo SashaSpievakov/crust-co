@@ -5,20 +5,14 @@ import { MemoryRouter } from 'react-router-dom';
 import renderer from 'react-test-renderer';
 
 import { darkTheme } from '../../styles/Themes.styled';
-import { store } from '../../store/store';
-import AppRouter from '../../router/AppRouter';
+import { setupStore } from '../../store/store';
 
-const rendererWithProviders = (
-  compenent: ReactElement,
-  appRouter: boolean = false,
-  route: string = '/',
-) => {
+const rendererWithProviders = (compenent: ReactElement) => {
   return {
     ...renderer
       .create(
-        <Provider store={store}>
-          <MemoryRouter initialEntries={[route]}>
-            {appRouter ?? <AppRouter />}
+        <Provider store={setupStore()}>
+          <MemoryRouter>
             <ThemeProvider theme={darkTheme}>{compenent}</ThemeProvider>
           </MemoryRouter>
         </Provider>,

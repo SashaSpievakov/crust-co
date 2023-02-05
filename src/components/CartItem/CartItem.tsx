@@ -18,18 +18,6 @@ import { useAppDispatch } from '../../hooks/reduxHooks';
 const CartItem = memo(({ id, name, price, size, type, count }: ICartItem) => {
   const dispatch = useAppDispatch();
 
-  const onClickAdd = () => {
-    const item: ICartItem = {
-      id,
-      name,
-      price,
-      size,
-      type,
-      count,
-    };
-    dispatch(addItem(item));
-  };
-
   const onClickRemove = () => {
     const item: ICartItem = {
       id,
@@ -40,6 +28,18 @@ const CartItem = memo(({ id, name, price, size, type, count }: ICartItem) => {
       count,
     };
     dispatch(removeItem(item));
+  };
+
+  const onClickAdd = () => {
+    const item: ICartItem = {
+      id,
+      name,
+      price,
+      size,
+      type,
+      count,
+    };
+    dispatch(addItem(item));
   };
 
   const onClickDelete = () => {

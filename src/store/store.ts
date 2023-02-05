@@ -1,4 +1,8 @@
-import { combineReducers, configureStore } from '@reduxjs/toolkit';
+import {
+  combineReducers,
+  configureStore,
+  PreloadedState,
+} from '@reduxjs/toolkit';
 
 import categorySlice from './slices/categorySlice';
 import sortSlice from './slices/sortSlice';
@@ -30,4 +34,5 @@ export function setupStore(preloadedState?: PreloadedState<RootState>) {
 }
 
 export type RootState = ReturnType<typeof rootReducer>;
-export type AppDispatch = typeof store.dispatch;
+export type AppStore = ReturnType<typeof setupStore>;
+export type AppDispatch = AppStore['dispatch'];

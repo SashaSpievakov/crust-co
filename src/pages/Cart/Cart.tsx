@@ -51,11 +51,11 @@ const Cart = () => {
             <Details>
               <span>
                 {' '}
-                Items <b>{itemsCount}</b>{' '}
+                Items <b data-testid="cartPageItemsCount">{itemsCount}</b>{' '}
               </span>
               <span>
                 {' '}
-                Total <b>{totalPrice}$</b>{' '}
+                Total <b data-testid="cartPageItemsPrice">{totalPrice}$</b>{' '}
               </span>
             </Details>
             <Buttons>
