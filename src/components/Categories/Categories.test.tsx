@@ -1,25 +1,25 @@
 import '@testing-library/jest-dom';
-// import userEvent from '@testing-library/user-event';
-// import { screen } from '@testing-library/react';
+import { screen } from '@testing-library/react';
+import userEvent from '@testing-library/user-event';
 
-// import Categories from './Categories';
-// import rendererWithStoreAndTheme from '../../tests/helpers/renderer/rendererWithStoreAndTheme';
-// import renderWithStoreAndTheme from '../../tests/helpers/render/renderWithStoreAndTheme';
+import Categories from './Categories';
+import rendererWithProviders from '../../tests/helpers/rendererWithProviders';
+import renderWithProviders from '../../tests/helpers/renderWithProviders';
 
 describe('Categories Test', () => {
-  // test('renders the Categories component', () => {
-  //   const snapshot = rendererWithStoreAndTheme(<Categories />);
-  //   expect(snapshot).toMatchSnapshot();
-  // });
-  // test('renders a correct chosen item', () => {
-  //   renderWithStoreAndTheme(<Categories />);
-  //   expect(screen.getByRole('listitem', { current: true })).toHaveTextContent(
-  //     /all/i,
-  //   );
-  //   const itemsRest = screen.getAllByRole('listitem', { current: false });
-  //   userEvent.click(itemsRest[0]);
-  //   expect(screen.getByRole('listitem', { current: true })).toHaveTextContent(
-  //     /meat/i,
-  //   );
-  // });
+  test('renders the Categories component', () => {
+    const snapshot = rendererWithProviders(<Categories />);
+    expect(snapshot).toMatchSnapshot();
+  });
+
+  test('selects a correct category', () => {
+    renderWithProviders(<Categories />);
+    const categories = screen.getAllByRole('listitem', { current: false });
+
+    userEvent.click(categories[0]);
+
+    expect(screen.getByRole('listitem', { current: true })).toHaveTextContent(
+      /meat/i,
+    );
+  });
 });
