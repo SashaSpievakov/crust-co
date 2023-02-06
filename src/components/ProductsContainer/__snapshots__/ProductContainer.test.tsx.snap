@@ -1,0 +1,313 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ProductsContainer Test renders the ProductsContainer component 1`] = `
+Object {
+  "children": Array [
+    <article
+      className="sc-bqWxrE fptGBs"
+    >
+      <a
+        href="/item/12"
+        onClick={[Function]}
+      >
+        <picture>
+          <source
+            srcSet="./assets/img/pizza12.webp"
+            type="image/webp"
+          />
+          <source
+            srcSet="./assets/img/pizza12.png"
+            type="image/png"
+          />
+          <img
+            alt="Vegetarian Pizza pizza"
+            className="sc-ksBlkl giKwGo"
+            height="250"
+            src="./assets/img/pizza12.png"
+            width="250"
+          />
+        </picture>
+        <h3
+          className="sc-hBxehG cZCKzy"
+        >
+          Vegetarian Pizza
+        </h3>
+      </a>
+      <div
+        className="sc-csuSiG fpLAMx"
+      >
+        <ul>
+          <li
+            className="sc-eDWCr cQFBpw"
+            onClick={[Function]}
+          >
+            traditional
+          </li>
+          <li
+            className="sc-eDWCr jWyKRS"
+            onClick={[Function]}
+          >
+            thin
+          </li>
+        </ul>
+        <ul>
+          <li
+            className="sc-eDWCr cQFBpw"
+            onClick={[Function]}
+          >
+            12
+             inch
+          </li>
+          <li
+            className="sc-eDWCr jWyKRS"
+            onClick={[Function]}
+          >
+            14
+             inch
+          </li>
+          <li
+            className="sc-eDWCr jWyKRS"
+            onClick={[Function]}
+          >
+            16
+             inch
+          </li>
+        </ul>
+      </div>
+      <div
+        className="sc-fnGiBr PZUmi"
+      >
+        <div
+          className="sc-fEXmlR ljIWrJ"
+        >
+          12
+          $
+        </div>
+        <button
+          className="sc-bcXHqe sc-eDvSVe sc-gKPRtg fAfvZN fwWQTF gmBSoV"
+          onClick={[Function]}
+        >
+          <svg
+            className="sc-ipEyDJ fbIxLm"
+            fill="currentColor"
+            height="1em"
+            stroke="currentColor"
+            strokeWidth="0"
+            style={
+              Object {
+                "color": undefined,
+              }
+            }
+            viewBox="0 0 16 16"
+            width="1em"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M8 0a1 1 0 0 1 1 1v6h6a1 1 0 1 1 0 2H9v6a1 1 0 1 1-2 0V9H1a1 1 0 0 1 0-2h6V1a1 1 0 0 1 1-1z"
+            />
+          </svg>
+          <span>
+            Add
+          </span>
+        </button>
+      </div>
+    </article>,
+    <article
+      className="sc-bqWxrE fptGBs"
+    >
+      <a
+        href="/item/9"
+        onClick={[Function]}
+      >
+        <picture>
+          <source
+            srcSet="./assets/img/pizza9.webp"
+            type="image/webp"
+          />
+          <source
+            srcSet="./assets/img/pizza9.png"
+            type="image/png"
+          />
+          <img
+            alt="Meat Pizza pizza"
+            className="sc-ksBlkl giKwGo"
+            height="250"
+            src="./assets/img/pizza9.png"
+            width="250"
+          />
+        </picture>
+        <h3
+          className="sc-hBxehG cZCKzy"
+        >
+          Meat Pizza
+        </h3>
+      </a>
+      <div
+        className="sc-csuSiG fpLAMx"
+      >
+        <ul>
+          <li
+            className="sc-eDWCr cQFBpw"
+            onClick={[Function]}
+          >
+            traditional
+          </li>
+        </ul>
+        <ul>
+          <li
+            className="sc-eDWCr cQFBpw"
+            onClick={[Function]}
+          >
+            12
+             inch
+          </li>
+          <li
+            className="sc-eDWCr jWyKRS"
+            onClick={[Function]}
+          >
+            16
+             inch
+          </li>
+        </ul>
+      </div>
+      <div
+        className="sc-fnGiBr PZUmi"
+      >
+        <div
+          className="sc-fEXmlR ljIWrJ"
+        >
+          14
+          $
+        </div>
+        <button
+          className="sc-bcXHqe sc-eDvSVe sc-gKPRtg fAfvZN fwWQTF gmBSoV"
+          onClick={[Function]}
+        >
+          <svg
+            className="sc-ipEyDJ fbIxLm"
+            fill="currentColor"
+            height="1em"
+            stroke="currentColor"
+            strokeWidth="0"
+            style={
+              Object {
+                "color": undefined,
+              }
+            }
+            viewBox="0 0 16 16"
+            width="1em"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M8 0a1 1 0 0 1 1 1v6h6a1 1 0 1 1 0 2H9v6a1 1 0 1 1-2 0V9H1a1 1 0 0 1 0-2h6V1a1 1 0 0 1 1-1z"
+            />
+          </svg>
+          <span>
+            Add
+          </span>
+        </button>
+      </div>
+    </article>,
+    <article
+      className="sc-bqWxrE fptGBs"
+    >
+      <a
+        href="/item/2"
+        onClick={[Function]}
+      >
+        <picture>
+          <source
+            srcSet="./assets/img/pizza2.webp"
+            type="image/webp"
+          />
+          <source
+            srcSet="./assets/img/pizza2.png"
+            type="image/png"
+          />
+          <img
+            alt="Pepperoni Pizza pizza"
+            className="sc-ksBlkl giKwGo"
+            height="250"
+            src="./assets/img/pizza2.png"
+            width="250"
+          />
+        </picture>
+        <h3
+          className="sc-hBxehG cZCKzy"
+        >
+          Pepperoni Pizza
+        </h3>
+      </a>
+      <div
+        className="sc-csuSiG fpLAMx"
+      >
+        <ul>
+          <li
+            className="sc-eDWCr cQFBpw"
+            onClick={[Function]}
+          >
+            traditional
+          </li>
+        </ul>
+        <ul>
+          <li
+            className="sc-eDWCr cQFBpw"
+            onClick={[Function]}
+          >
+            12
+             inch
+          </li>
+          <li
+            className="sc-eDWCr jWyKRS"
+            onClick={[Function]}
+          >
+            14
+             inch
+          </li>
+        </ul>
+      </div>
+      <div
+        className="sc-fnGiBr PZUmi"
+      >
+        <div
+          className="sc-fEXmlR ljIWrJ"
+        >
+          10
+          $
+        </div>
+        <button
+          className="sc-bcXHqe sc-eDvSVe sc-gKPRtg fAfvZN fwWQTF gmBSoV"
+          onClick={[Function]}
+        >
+          <svg
+            className="sc-ipEyDJ fbIxLm"
+            fill="currentColor"
+            height="1em"
+            stroke="currentColor"
+            strokeWidth="0"
+            style={
+              Object {
+                "color": undefined,
+              }
+            }
+            viewBox="0 0 16 16"
+            width="1em"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M8 0a1 1 0 0 1 1 1v6h6a1 1 0 1 1 0 2H9v6a1 1 0 1 1-2 0V9H1a1 1 0 0 1 0-2h6V1a1 1 0 0 1 1-1z"
+            />
+          </svg>
+          <span>
+            Add
+          </span>
+        </button>
+      </div>
+    </article>,
+  ],
+  "props": Object {
+    "className": "sc-idXgbr cCVaxy",
+  },
+  "type": "div",
+}
+`;
