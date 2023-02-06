@@ -1,4 +1,3 @@
-import { useEffect, useRef } from 'react';
 import { useParams } from 'react-router-dom';
 
 import FullItemBlock from '../../components/FullItemBlock/FullItemBlock';
@@ -7,7 +6,6 @@ import itemAPI from '../../services/ItemService';
 import Error from './FullItem.styled';
 
 const FullItem = () => {
-  const scrollRef = useRef<null | HTMLDivElement>(null);
   const { id } = useParams();
 
   const { data, isLoading, isSuccess } = itemAPI.useFetchItemQuery(
@@ -17,12 +15,8 @@ const FullItem = () => {
     },
   );
 
-  useEffect(() => {
-    scrollRef.current?.scrollIntoView();
-  }, []);
-
   return (
-    <section ref={scrollRef}>
+    <section>
       {isSuccess ? (
         <FullItemBlock item={data} />
       ) : isLoading ? (
