@@ -5,6 +5,7 @@
   },
   "extends": [
     "react-app",
+    "react-app/jest",
     "airbnb",
     "airbnb-typescript",
     "plugin:import/typescript",
@@ -28,6 +29,8 @@
     "react/function-component-definition": "off",
     "no-nested-ternary": "off",
     "react/require-default-props": "off",
-    "react-hooks/exhaustive-deps": "off"
+    "react-hooks/exhaustive-deps": "off",
+    "testing-library/render-result-naming-convention": "off",
+    "testing-library/no-render-in-setup": "off"
   }
 }
