@@ -1,5 +1,5 @@
 import '@testing-library/jest-dom';
-import { screen, waitFor } from '@testing-library/react';
+import { screen } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
 
 import ItemCard from './ItemCard';
@@ -85,13 +85,11 @@ describe('ItemCard Test', () => {
 
       userEvent.click(link);
 
-      await waitFor(() => {
-        expect(
-          screen.getByText(
-            /Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquid nisi aspernatur debitis quod/i,
-          ),
-        ).toBeInTheDocument();
-      });
+      expect(
+        await screen.findByText(
+          /Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquid nisi aspernatur debitis quod/i,
+        ),
+      ).toBeInTheDocument();
     });
   });
 });
