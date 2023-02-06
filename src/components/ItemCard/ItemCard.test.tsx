@@ -1,11 +1,15 @@
 import '@testing-library/jest-dom';
-import { screen } from '@testing-library/react';
+import { screen, waitFor } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
+import { rest } from 'msw';
 
 import ItemCard from './ItemCard';
 import rendererWithAllProviders from '../../tests/helpers/rendererWithProviders';
 import renderWithAllProviders from '../../tests/helpers/renderWithProviders';
 import { IPizzaItem } from '../../models/IPizzaItem';
+import { setupStore } from '../../store/store';
+import server from '../../tests/mocks/api/server';
+import itemAPI from '../../services/ItemService';
 
 const ItemCardProps: IPizzaItem = {
   id: '9',
@@ -60,18 +64,42 @@ describe('ItemCard Test', () => {
     });
   });
 
-  // test('checks link redirect to the Item page', () => {
-  //   renderWithAllProviders(<ItemCard {...ItemCardProps} />, true);
-  //   const link = screen.getByRole('heading', {
-  //     name: /vegetarian pizza/i,
-  //   });
+  describe('checks rtk query hook', () => {
+    beforeAll(() => {
+      server.listen();
+    });
 
-  //   userEvent.click(link);
-  //   screen.debug();
-  //   expect(
-  //     screen.getByText(
-  //       /Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquid nisi aspernatur debitis quod/i,
-  //     ),
-  //   ).toBeInTheDocument();
-  // });
+    afterEach(() => {
+      server.resetHandlers();
+      setupStore().dispatch(itemAPI.util.resetApiState());
+    });
+
+    afterAll(() => {
+      server.close();
+    });
+
+    test('checks link redirect to the Item page', async () => {
+      server.use(
+        rest.get('*', (req, res, ctx) => {
+          return res(ctx.json(ItemCardProps));
+        }),
+      );
+
+      window.HTMLElement.prototype.scrollIntoView = function () {}; // eslint-disable-line func-names
+      renderWithAllProviders(<ItemCard {...ItemCardProps} />, true, '/cart');
+      const link = screen.getByRole('heading', {
+        name: /vegetarian pizza/i,
+      });
+
+      userEvent.click(link);
+
+      await waitFor(() => {
+        expect(
+          screen.getByText(
+            /Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquid nisi aspernatur debitis quod/i,
+          ),
+        ).toBeInTheDocument();
+      });
+    });
+  });
 });

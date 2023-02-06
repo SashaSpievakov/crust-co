@@ -22,7 +22,7 @@ const rootReducer = combineReducers({
   [pizzasAPI.reducerPath]: pizzasAPI.reducer,
 });
 
-export function setupStore(preloadedState?: PreloadedState<RootState>) {
+export const setupStore = (preloadedState?: PreloadedState<RootState>) => {
   return configureStore({
     reducer: rootReducer,
     middleware: (getDefaultMiddleware) =>
@@ -31,7 +31,7 @@ export function setupStore(preloadedState?: PreloadedState<RootState>) {
         .concat(pizzasAPI.middleware),
     preloadedState,
   });
-}
+};
 
 export type RootState = ReturnType<typeof rootReducer>;
 export type AppStore = ReturnType<typeof setupStore>;
