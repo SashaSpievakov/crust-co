@@ -20,6 +20,5 @@ describe('CartEmpty Test', () => {
 
     userEvent.click(link);
     expect(screen.getByText(/all pizzas/i)).toBeInTheDocument();
-    // expect(screen.getByText(/all pizzas/i)).not.toBeEnabled();
   });
 });

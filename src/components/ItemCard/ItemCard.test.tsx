@@ -5,32 +5,20 @@ import userEvent from '@testing-library/user-event';
 import ItemCard from './ItemCard';
 import rendererWithAllProviders from '../../tests/helpers/rendererWithProviders';
 import renderWithAllProviders from '../../tests/helpers/renderWithProviders';
-import { IPizzaItem } from '../../models/IPizzaItem';
+import { mockItem } from '../../tests/mocks/api/mockData';
 import { setupStore } from '../../store/store';
 import server from '../../tests/mocks/api/server';
 import itemAPI from '../../services/ItemService';
 
-const ItemCardProps: IPizzaItem = {
-  id: '9',
-  name: 'Vegetarian Pizza',
-  description:
-    'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquid nisi aspernatur debitis quod suscipit, vitae placeat natus ipsum inventore esse rerum animi facere numquam saepe vero mollitia quibusdam at voluptates est commodi laudantium? Iste inventore quibusdam cupiditate nemo sint iusto minus nihil culpa! Sequi architecto nesciunt explicabo mollitia. Laboriosam, odio.',
-  types: [0, 1],
-  sizes: [12, 14, 16],
-  price: 8,
-  category: 3,
-  rating: 15,
-};
-
 describe('ItemCard Test', () => {
   test('renders the ItemCard component', () => {
-    const snapshot = rendererWithAllProviders(<ItemCard {...ItemCardProps} />);
+    const snapshot = rendererWithAllProviders(<ItemCard {...mockItem} />);
     expect(snapshot).toMatchSnapshot();
   });
 
   describe('checks the price changing', () => {
     beforeEach(() => {
-      renderWithAllProviders(<ItemCard {...ItemCardProps} />);
+      renderWithAllProviders(<ItemCard {...mockItem} />);
     });
 
     test('checks type click', () => {
@@ -78,7 +66,7 @@ describe('ItemCard Test', () => {
     });
 
     test('checks link redirect to the Item page', async () => {
-      renderWithAllProviders(<ItemCard {...ItemCardProps} />, true, '/cart');
+      renderWithAllProviders(<ItemCard {...mockItem} />, true, '/cart');
       const link = screen.getByRole('heading', {
         name: /vegetarian pizza/i,
       });
