@@ -37,14 +37,14 @@ const SearchItems = memo(() => {
 
   return (
     <Wrapper>
-      <SearchIcon onClick={onClickSearch} />
+      <SearchIcon onClick={onClickSearch} data-testid="searchIcon" />
       <Input
         ref={inputRef}
         placeholder="Search..."
         value={value}
         onChange={(e) => onChangeInput(e)}
       />
-      {searchValue && <Cross onClick={onClickClose} />}
+      {searchValue && <Cross onClick={onClickClose} data-testid="cleanInput" />}
     </Wrapper>
   );
 });
