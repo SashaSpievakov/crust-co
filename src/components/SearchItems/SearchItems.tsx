@@ -1,4 +1,4 @@
-import React, { memo, useCallback, useRef, useState } from 'react';
+import React, { memo, useCallback, useEffect, useRef, useState } from 'react';
 import debounce from 'lodash.debounce';
 
 import { useAppDispatch, useAppSelector } from '../../hooks/reduxHooks';
@@ -34,6 +34,10 @@ const SearchItems = memo(() => {
     setValue('');
     dispatch(setSearchValue(''));
   };
+
+  useEffect(() => {
+    setValue(searchValue);
+  }, [searchValue]);
 
   return (
     <Wrapper>
