@@ -1,7 +1,6 @@
 import '@testing-library/jest-dom';
 import { screen, waitFor } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
-import { rest } from 'msw';
 
 import ItemCard from './ItemCard';
 import rendererWithAllProviders from '../../tests/helpers/rendererWithProviders';
@@ -79,13 +78,6 @@ describe('ItemCard Test', () => {
     });
 
     test('checks link redirect to the Item page', async () => {
-      server.use(
-        rest.get('*', (req, res, ctx) => {
-          return res(ctx.json(ItemCardProps));
-        }),
-      );
-
-      window.HTMLElement.prototype.scrollIntoView = function () {}; // eslint-disable-line func-names
       renderWithAllProviders(<ItemCard {...ItemCardProps} />, true, '/cart');
       const link = screen.getByRole('heading', {
         name: /vegetarian pizza/i,
