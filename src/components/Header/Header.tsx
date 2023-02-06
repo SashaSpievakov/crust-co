@@ -14,7 +14,7 @@ const Header = () => {
   const isLight = useAppSelector(selectIsLight);
   const dispatch = useAppDispatch();
   const location = useLocation();
-  const isMounted = useRef(false);
+  const isMounted = useRef<boolean>(false);
 
   useEffect(() => {
     if (isMounted.current) {

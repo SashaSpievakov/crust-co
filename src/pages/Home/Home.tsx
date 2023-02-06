@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState } from 'react';
+import { useEffect, useState } from 'react';
 
 import { Title, Block, Top, Error } from '../../styles/Base.styled';
 import { selectSort } from '../../store/slices/sortSlice';
@@ -15,8 +15,6 @@ const sortNamesArr: string[] = ['rating', 'price', 'A to Z'];
 
 const Home = () => {
   const [pizzas, setPizzas] = useState<IPizzaItem[]>([]);
-  const requested = useRef(false);
-  const scrollRef = useRef<null | HTMLDivElement>(null);
   const activeCategory = useAppSelector(selectCategory);
   const activeSort = useAppSelector(selectSort);
 
@@ -39,18 +37,14 @@ const Home = () => {
   );
 
   useEffect(() => {
-    if (!requested.current) {
-      if (isSuccess) {
-        setPizzas(data);
-      }
+    if (isSuccess) {
+      setPizzas(data);
     }
-
-    requested.current = false;
   }, [activeCategory, sortedPropertyName, data, isSuccess]);
 
   return (
     <>
-      <Top ref={scrollRef}>
+      <Top>
         <Categories />
         <Sort sortNamesArr={sortNamesArr} />
       </Top>
