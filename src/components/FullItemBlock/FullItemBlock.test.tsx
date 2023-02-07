@@ -19,7 +19,7 @@ const FullItemProp: IPizzaItem = {
   rating: 11,
 };
 
-describe('FullItemBlock Test', () => {
+describe('FullItemBlock Tests', () => {
   test('renders the FullItemBlock component', () => {
     const snapshot = rendererWithProviders(
       <FullItemBlock item={FullItemProp} />,

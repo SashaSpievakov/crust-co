@@ -42,7 +42,7 @@ const ProductsContainerItems: IPizzaItem[] = [
   },
 ];
 
-describe('ProductsContainer Test', () => {
+describe('ProductsContainer Tests', () => {
   test('renders the ProductsContainer component', () => {
     const snapshot = rendererWithAllProviders(
       <ProductsContainer isLoading={false} items={ProductsContainerItems} />,

@@ -6,7 +6,7 @@ import CartEmpty from './CartEmpty';
 import renderWithProviders from '../../tests/helpers/renderWithProviders';
 import rendererWithProviders from '../../tests/helpers/rendererWithProviders';
 
-describe('CartEmpty Test', () => {
+describe('CartEmpty Tests', () => {
   test('renders the CartEmpty component', () => {
     const snapshot = rendererWithProviders(<CartEmpty />);
     expect(snapshot).toMatchSnapshot();

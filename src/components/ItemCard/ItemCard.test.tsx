@@ -10,7 +10,7 @@ import { setupStore } from '../../store/store';
 import server from '../../tests/mocks/api/server';
 import itemAPI from '../../services/ItemService';
 
-describe('ItemCard Test', () => {
+describe('ItemCard Tests', () => {
   test('renders the ItemCard component', () => {
     const snapshot = rendererWithProviders(<ItemCard {...mockItem} />);
     expect(snapshot).toMatchSnapshot();

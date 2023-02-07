@@ -6,7 +6,7 @@ import Categories from './Categories';
 import rendererWithProviders from '../../tests/helpers/rendererWithProviders';
 import renderWithProviders from '../../tests/helpers/renderWithProviders';
 
-describe('Categories Test', () => {
+describe('Categories Tests', () => {
   test('renders the Categories component', () => {
     const snapshot = rendererWithProviders(<Categories />);
     expect(snapshot).toMatchSnapshot();

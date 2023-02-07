@@ -6,7 +6,7 @@ import Header from './Header';
 import rendererWithProviders from '../../tests/helpers/rendererWithProviders';
 import renderWithProviders from '../../tests/helpers/renderWithProviders';
 
-describe('Header Test', () => {
+describe('Header Tests', () => {
   test('renders the Header component', () => {
     const snapshot = rendererWithProviders(<Header />);
     expect(snapshot).toMatchSnapshot();

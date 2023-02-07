@@ -9,7 +9,7 @@ import { setupStore } from '../../store/store';
 import server from '../../tests/mocks/api/server';
 import pizzasAPI from '../../services/PizzasService';
 
-describe('SearchItems Test', () => {
+describe('SearchItems Tests', () => {
   test('renders the SearchItems component', () => {
     const snapshot = rendererWithProviders(<SearchItems />);
     expect(snapshot).toMatchSnapshot();

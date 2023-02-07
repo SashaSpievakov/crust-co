@@ -25,7 +25,7 @@ const CartItemProps2: ICartItem = {
   count: 1,
 };
 
-describe('CartItem Test', () => {
+describe('CartItem Tests', () => {
   test('renders the CartItem component', () => {
     const snapshot = rendererWithProviders(<CartItem {...CartItemProps} />);
     expect(snapshot).toMatchSnapshot();
