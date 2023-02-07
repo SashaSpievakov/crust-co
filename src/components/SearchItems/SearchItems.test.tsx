@@ -3,21 +3,21 @@ import { screen } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
 
 import SearchItems from './SearchItems';
-import rendererWithAllProviders from '../../tests/helpers/rendererWithProviders';
-import renderWithAllProviders from '../../tests/helpers/renderWithProviders';
+import rendererWithProviders from '../../tests/helpers/rendererWithProviders';
+import renderWithProviders from '../../tests/helpers/renderWithProviders';
 import { setupStore } from '../../store/store';
 import server from '../../tests/mocks/api/server';
 import pizzasAPI from '../../services/PizzasService';
 
 describe('SearchItems Test', () => {
   test('renders the SearchItems component', () => {
-    const snapshot = rendererWithAllProviders(<SearchItems />);
+    const snapshot = rendererWithProviders(<SearchItems />);
     expect(snapshot).toMatchSnapshot();
   });
 
   describe('checks SearchItems functionality', () => {
     beforeEach(() => {
-      renderWithAllProviders(<SearchItems />);
+      renderWithProviders(<SearchItems />);
     });
 
     test('focuses on icon click', () => {
@@ -73,7 +73,7 @@ describe('SearchItems Test', () => {
     });
 
     test('filters items on the Home page', async () => {
-      renderWithAllProviders(null, true);
+      renderWithProviders(null, true);
       const input = screen.getByRole('textbox');
 
       userEvent.type(input, 'pepperoni');
