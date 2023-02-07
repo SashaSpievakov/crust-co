@@ -3,9 +3,9 @@ import { useParams } from 'react-router-dom';
 import FullItemBlock from '../../components/FullItemBlock/FullItemBlock';
 import Loading from '../../components/UI/Loading/Loading';
 import itemAPI from '../../services/ItemService';
-import Error from './FullItem.styled';
+import Error from './Item.styled';
 
-const FullItem = () => {
+const Item = () => {
   const { id } = useParams();
 
   const { data, isLoading, isSuccess } = itemAPI.useFetchItemQuery(
@@ -27,4 +27,5 @@ const FullItem = () => {
     </section>
   );
 };
-export default FullItem;
+
+export default Item;

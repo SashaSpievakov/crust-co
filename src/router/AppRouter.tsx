@@ -9,7 +9,7 @@ const Cart = React.lazy(
   () => import(/* webpackChunkName: "Cart" */ '../pages/Cart/Cart'),
 );
 const FullItem = React.lazy(
-  () => import(/* webpackChunkName: "FullItem" */ '../pages/FullItem/FullItem'),
+  () => import(/* webpackChunkName: "FullItem" */ '../pages/Item/Item'),
 );
 const NotFound = React.lazy(
   () => import(/* webpackChunkName: "NotFound" */ '../pages/NotFound/NotFound'),
