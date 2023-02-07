@@ -28,13 +28,12 @@ describe('FullItemBlock Test', () => {
   });
 
   test('checks link redirect to the Home page', () => {
-    window.HTMLElement.prototype.scrollIntoView = function () {}; // eslint-disable-line func-names
-    renderWithProviders(<FullItemBlock item={FullItemProp} />, true, '/item/1');
-    const link = screen.getByRole('link', {
+    renderWithProviders(<FullItemBlock item={FullItemProp} />, true, '/cart');
+    const links = screen.getAllByRole('link', {
       name: /go back/i,
     });
 
-    userEvent.click(link);
+    userEvent.click(links[1]);
 
     expect(
       screen.getByRole('heading', {
