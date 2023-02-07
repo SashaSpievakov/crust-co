@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`SearchItems Test renders the SearchItems component 1`] = `
+exports[`SearchItems Tests renders the SearchItems component 1`] = `
 Object {
   "children": Array [
     <svg

@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Header Test renders the Header component 1`] = `
+exports[`Header Tests renders the Header component 1`] = `
 Object {
   "children": Array [
     <div
@@ -100,7 +100,7 @@ Object {
 }
 `;
 
-exports[`Header Test renders the Header component on the Cart page 1`] = `
+exports[`Header Tests renders the Header component on the Cart page 1`] = `
 Object {
   "children": Array [
     <div

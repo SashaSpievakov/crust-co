@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Categories Test renders the Categories component 1`] = `
+exports[`Categories Tests renders the Categories component 1`] = `
 Object {
   "children": Array [
     <ul

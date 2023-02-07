@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Footer Test renders the Footer component 1`] = `
+exports[`Footer Tests renders the Footer component 1`] = `
 Object {
   "children": Array [
     <ul

@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`CartItem Test renders the CartItem component 1`] = `
+exports[`CartItem Tests renders the CartItem component 1`] = `
 Object {
   "children": Array [
     <div
@@ -126,7 +126,7 @@ Object {
 }
 `;
 
-exports[`CartItem Test renders the CartItem component with a disabled button 1`] = `
+exports[`CartItem Tests renders the CartItem component with a disabled button 1`] = `
 Object {
   "children": Array [
     <div

@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`ProductsContainer Test renders the ProductsContainer component 1`] = `
+exports[`ProductsContainer Tests renders the ProductsContainer component 1`] = `
 Object {
   "children": Array [
     <article

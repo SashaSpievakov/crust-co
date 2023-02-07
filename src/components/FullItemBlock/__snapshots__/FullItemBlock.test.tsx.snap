@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`FullItemBlock Test renders the FullItemBlock component 1`] = `
+exports[`FullItemBlock Tests renders the FullItemBlock component 1`] = `
 Object {
   "children": Array [
     <img

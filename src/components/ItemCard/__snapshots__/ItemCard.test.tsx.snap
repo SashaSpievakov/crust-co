@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`ItemCard Test renders the ItemCard component 1`] = `
+exports[`ItemCard Tests renders the ItemCard component 1`] = `
 Object {
   "children": Array [
     <a
