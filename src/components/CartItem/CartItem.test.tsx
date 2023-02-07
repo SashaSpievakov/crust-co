@@ -47,7 +47,7 @@ describe('CartItem Test', () => {
       });
     });
 
-    test('adds item', () => {
+    test('removes item', () => {
       const buttons = screen.getAllByRole('button');
       const count = screen.getByText(/13/i);
       const price = screen.getByText(/91/i);
@@ -59,7 +59,7 @@ describe('CartItem Test', () => {
       expect(price).toHaveTextContent('77');
     });
 
-    test('removes item', () => {
+    test('adds item', () => {
       const buttons = screen.getAllByRole('button');
       const count = screen.getByText(/13/i);
       const price = screen.getByText(/91/i);
@@ -69,6 +69,19 @@ describe('CartItem Test', () => {
 
       expect(count).toHaveTextContent('15');
       expect(price).toHaveTextContent('105');
+    });
+
+    test('deletes item', () => {
+      const buttons = screen.getAllByRole('button');
+
+      userEvent.click(buttons[2]);
+      userEvent.click(buttons[5]);
+
+      expect(
+        screen.getByRole('heading', {
+          name: /your cart is empty/i,
+        }),
+      ).toBeInTheDocument();
     });
 
     test('changes global count', () => {
@@ -95,19 +108,6 @@ describe('CartItem Test', () => {
       userEvent.click(buttons[4]);
 
       expect(count).toHaveTextContent('125');
-    });
-
-    test('deletes item', () => {
-      const buttons = screen.getAllByRole('button');
-
-      userEvent.click(buttons[2]);
-      userEvent.click(buttons[5]);
-
-      expect(
-        screen.getByRole('heading', {
-          name: /your cart is empty/i,
-        }),
-      ).toBeInTheDocument();
     });
   });
 });
