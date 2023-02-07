@@ -59,4 +59,16 @@ describe('ProductsContainer Test', () => {
     expect(skeletons[0]).toBeInTheDocument();
     expect(skeletons[8]).toBeInTheDocument();
   });
+
+  test('renders components with a search value', () => {
+    renderWithProviders(
+      <ProductsContainer isLoading={false} items={ProductsContainerItems} />,
+      false,
+      '/',
+      { searchValue: { value: '  Meat Pizza ' } },
+    );
+    const heading = screen.getByRole('heading');
+
+    expect(heading).toHaveTextContent(/meat pizza/i);
+  });
 });
