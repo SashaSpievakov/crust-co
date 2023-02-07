@@ -3,13 +3,13 @@ import { IPizzaItem } from '../../../models/IPizzaItem';
 export const mockItems: IPizzaItem[] = [
   {
     id: '3',
-    name: 'Meat Pizza',
+    name: 'Srimp Pizza',
     description:
       'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquid nisi aspernatur debitis quod suscipit, vitae placeat natus ipsum inventore esse rerum animi facere numquam saepe vero mollitia quibusdam at voluptates est commodi laudantium',
     types: [0, 1],
     sizes: [12, 14, 16],
     price: 10,
-    category: 1,
+    category: 3,
     rating: 6,
   },
   {
