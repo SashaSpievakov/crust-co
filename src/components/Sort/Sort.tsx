@@ -37,14 +37,18 @@ const Sort = memo(({ sortNamesArr }: CategoriesProps) => {
   }, [open]);
 
   return (
-    <Wrapper onClick={() => setOpen(!open)} ref={sortRef}>
-      <Label>
-        {open ? <ArrowUp /> : <ArrowDown />}
+    <Wrapper ref={sortRef}>
+      <Label onClick={() => setOpen(!open)}>
+        {open ? (
+          <ArrowUp data-testid="popupIcon" />
+        ) : (
+          <ArrowDown data-testid="popupIcon" />
+        )}
         <b>Sort by</b>
-        <span>{chosenSortName}</span>
+        <span data-testid="currenChosenSortName">{chosenSortName}</span>
       </Label>
-      <Popup open={open}>
-        <ul>
+      <Popup open={open} aria-hidden={!open}>
+        <ul aria-hidden={!open} data-testid="popupList">
           {sortNamesArr.map((sortName, i: number) => (
             <Li
               key={sortName}

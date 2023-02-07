@@ -63,6 +63,7 @@ const Popup = styled.div<PopupProps>`
   box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.09);
   border-radius: 10px;
   opacity: 0;
+  cursor: auto;
   z-index: 1;
   transition: 0.25s;
 

@@ -1,0 +1,74 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Sort Test renders the Sort component 1`] = `
+Object {
+  "children": Array [
+    <div
+      className="sc-gswNZR ekjJvS"
+      onClick={[Function]}
+    >
+      <svg
+        className="sc-hLBbgP bBGzuB"
+        data-testid="popupIcon"
+        fill="currentColor"
+        height="1em"
+        stroke="currentColor"
+        strokeWidth="0"
+        style={
+          Object {
+            "color": undefined,
+          }
+        }
+        viewBox="0 0 16 16"
+        width="1em"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z"
+        />
+      </svg>
+      <b>
+        Sort by
+      </b>
+      <span
+        data-testid="currenChosenSortName"
+      >
+        rating
+      </span>
+    </div>,
+    <div
+      aria-hidden={true}
+      className="sc-eDvSVe fQPTRR"
+      open={false}
+    >
+      <ul
+        aria-hidden={true}
+        data-testid="popupList"
+      >
+        <li
+          className="sc-jSUZER eGkRJW"
+          onClick={[Function]}
+        >
+          rating
+        </li>
+        <li
+          className="sc-jSUZER ebgEhB"
+          onClick={[Function]}
+        >
+          price
+        </li>
+        <li
+          className="sc-jSUZER ebgEhB"
+          onClick={[Function]}
+        >
+          A to Z
+        </li>
+      </ul>
+    </div>,
+  ],
+  "props": Object {
+    "className": "sc-bcXHqe foXnjj",
+  },
+  "type": "div",
+}
+`;
