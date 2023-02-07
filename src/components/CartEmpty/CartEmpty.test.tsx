@@ -12,7 +12,7 @@ describe('CartEmpty Test', () => {
     expect(snapshot).toMatchSnapshot();
   });
 
-  test('checks link redirect to the Home page', async () => {
+  test('checks redirect to the Home page', () => {
     renderWithProviders(null, true, '/cart');
     const link = screen.getByRole('link', {
       name: /go back/i,
