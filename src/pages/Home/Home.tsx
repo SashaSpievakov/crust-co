@@ -11,7 +11,7 @@ import { useAppSelector } from '../../hooks/reduxHooks';
 import pizzasAPI from '../../services/PizzasService';
 import ProductsContainer from '../../components/ProductsContainer/ProductsContainer';
 
-const sortNamesArr: string[] = ['rating', 'price', 'A to Z'];
+export const sortNamesArr: string[] = ['rating', 'price', 'A to Z'];
 
 const Home = () => {
   const [pizzas, setPizzas] = useState<IPizzaItem[]>([]);

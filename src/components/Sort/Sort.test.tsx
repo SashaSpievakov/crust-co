@@ -5,20 +5,19 @@ import userEvent from '@testing-library/user-event';
 import Sort from './Sort';
 import rendererWithProviders from '../../tests/helpers/rendererWithProviders';
 import renderWithProviders from '../../tests/helpers/renderWithProviders';
+import { sortNamesArr } from '../../pages/Home/Home';
 
 describe('Sort Test', () => {
   test('renders the Sort component', () => {
     const snapshot = rendererWithProviders(
-      <Sort sortNamesArr={['rating', 'price', 'A to Z']} />,
+      <Sort sortNamesArr={sortNamesArr} />,
     );
     expect(snapshot).toMatchSnapshot();
   });
 
   describe('tests general functionality', () => {
     beforeEach(() => {
-      renderWithProviders(
-        <Sort sortNamesArr={['rating', 'price', 'A to Z']} />,
-      );
+      renderWithProviders(<Sort sortNamesArr={sortNamesArr} />);
     });
 
     test('changes sort state in redux', () => {
