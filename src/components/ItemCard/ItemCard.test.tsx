@@ -3,8 +3,8 @@ import { screen } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
 
 import ItemCard from './ItemCard';
-import rendererWithAllProviders from '../../tests/helpers/rendererWithProviders';
-import renderWithAllProviders from '../../tests/helpers/renderWithProviders';
+import rendererWithProviders from '../../tests/helpers/rendererWithProviders';
+import renderWithProviders from '../../tests/helpers/renderWithProviders';
 import { mockItem } from '../../tests/mocks/api/mockData';
 import { setupStore } from '../../store/store';
 import server from '../../tests/mocks/api/server';
@@ -12,13 +12,13 @@ import itemAPI from '../../services/ItemService';
 
 describe('ItemCard Test', () => {
   test('renders the ItemCard component', () => {
-    const snapshot = rendererWithAllProviders(<ItemCard {...mockItem} />);
+    const snapshot = rendererWithProviders(<ItemCard {...mockItem} />);
     expect(snapshot).toMatchSnapshot();
   });
 
   describe('checks the price changing', () => {
     beforeEach(() => {
-      renderWithAllProviders(<ItemCard {...mockItem} />);
+      renderWithProviders(<ItemCard {...mockItem} />);
     });
 
     test('checks type click', () => {
@@ -66,7 +66,7 @@ describe('ItemCard Test', () => {
     });
 
     test('checks link redirect to the Item page', async () => {
-      renderWithAllProviders(<ItemCard {...mockItem} />, true, '/cart');
+      renderWithProviders(<ItemCard {...mockItem} />, true, '/cart');
       const link = screen.getByRole('heading', {
         name: /vegetarian pizza/i,
       });
