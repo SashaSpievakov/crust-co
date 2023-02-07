@@ -11,10 +11,10 @@ if (rootElem) {
   const root = ReactDOM.createRoot(rootElem);
 
   root.render(
-    <BrowserRouter>
-      <Provider store={setupStore()}>
+    <Provider store={setupStore()}>
+      <BrowserRouter>
         <App />
-      </Provider>
-    </BrowserRouter>,
+      </BrowserRouter>
+    </Provider>,
   );
 }
