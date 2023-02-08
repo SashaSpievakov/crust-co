@@ -23,31 +23,31 @@ describe('ItemCard Tests', () => {
 
     test('checks type click', () => {
       const typeItem = screen.getByText(/thin/i);
-      const price = screen.getByText(/8\$/i);
+      const price = screen.getByText(/14\$/i);
 
       userEvent.click(typeItem);
 
-      expect(price).toHaveTextContent('9$');
+      expect(price).toHaveTextContent('15$');
     });
 
     test('checks size click', () => {
       const sizeItem = screen.getByText(/16 inch/i);
-      const price = screen.getByText(/8\$/i);
+      const price = screen.getByText(/14\$/i);
 
       userEvent.click(sizeItem);
 
-      expect(price).toHaveTextContent('12$');
+      expect(price).toHaveTextContent('18$');
     });
 
     test('checks type and size click', () => {
       const typeItem = screen.getByText(/thin/i);
       const sizeItem = screen.getByText(/14 inch/i);
-      const price = screen.getByText(/8\$/i);
+      const price = screen.getByText(/14\$/i);
 
       userEvent.click(typeItem);
       userEvent.click(sizeItem);
 
-      expect(price).toHaveTextContent('11$');
+      expect(price).toHaveTextContent('17$');
     });
   });
 
@@ -68,7 +68,7 @@ describe('ItemCard Tests', () => {
     test('checks link redirect to the Item page', async () => {
       renderWithProviders(<ItemCard {...mockItem} />, true, '/cart');
       const link = screen.getByRole('heading', {
-        name: /vegetarian pizza/i,
+        name: /chicken curry/i,
       });
 
       userEvent.click(link);
