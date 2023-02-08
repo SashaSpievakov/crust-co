@@ -4,7 +4,7 @@ exports[`Header Tests renders the Header component 1`] = `
 Object {
   "children": Array [
     <div
-      className="sc-ftTHYK sc-jrcTuL bDSedj dCmKaO"
+      className="sc-dkrFOg sc-eDvSVe gYraVE iRTugX"
     >
       <a
         href="/"
@@ -32,10 +32,10 @@ Object {
         </section>
       </a>
       <div
-        className="sc-kDvujY eDpRQP"
+        className="sc-jSUZER jAeLAN"
       >
         <svg
-          className="sc-ipEyDJ ekjFzN"
+          className="sc-gKPRtg cMcVRX"
           fill="currentColor"
           height="1em"
           mode=""
@@ -56,7 +56,7 @@ Object {
           />
         </svg>
         <a
-          className="sc-eDWCr sc-ksBlkl fFZftL dFPfrZ"
+          className="sc-ftTHYK sc-jrcTuL KXpKQ cKUqLm"
           data-testid="cartLink"
           href="/cart"
           onClick={[Function]}
@@ -66,7 +66,7 @@ Object {
              $
           </span>
           <div
-            className="sc-csuSiG iZgORF"
+            className="sc-iBYQkv iTPFCD"
           />
           <svg
             fill="currentColor"
@@ -94,7 +94,7 @@ Object {
     </div>,
   ],
   "props": Object {
-    "className": "sc-pyfCe dUqSEH",
+    "className": "sc-hLBbgP iodrKd",
   },
   "type": "header",
 }
@@ -104,7 +104,7 @@ exports[`Header Tests renders the Header component on the Cart page 1`] = `
 Object {
   "children": Array [
     <div
-      className="sc-ftTHYK sc-jrcTuL bDSedj ikvCxz"
+      className="sc-dkrFOg sc-eDvSVe gYraVE cvniFy"
     >
       <a
         href="/"
@@ -132,10 +132,10 @@ Object {
         </section>
       </a>
       <div
-        className="sc-kDvujY eDpRQP"
+        className="sc-jSUZER jAeLAN"
       >
         <svg
-          className="sc-ipEyDJ MctcX"
+          className="sc-gKPRtg jvGLTl"
           fill="currentColor"
           height="1em"
           mode="cart"
@@ -159,7 +159,7 @@ Object {
     </div>,
   ],
   "props": Object {
-    "className": "sc-pyfCe dUqSEH",
+    "className": "sc-hLBbgP iodrKd",
   },
   "type": "header",
 }

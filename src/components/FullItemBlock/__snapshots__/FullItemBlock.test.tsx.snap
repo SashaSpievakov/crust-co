@@ -5,33 +5,33 @@ Object {
   "children": Array [
     <img
       alt="pizza"
-      className="sc-ftTHYK mXpZa"
+      className="sc-dkrFOg fXUcwl"
       height="450"
       src="../assets/img/pizza12.png"
       width="450"
     />,
     <h2
-      className="sc-pyfCe nwoXR"
+      className="sc-hLBbgP fiXyOf"
     >
       Chicken Curry
     </h2>,
     <p
-      className="sc-jrcTuL MAZzO"
+      className="sc-eDvSVe jzLwQf"
     >
       Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sed vitae, ab eum nam facilis, soluta corporis molestiae quam, quis cumque consequuntur suscipit dolore praesentium fugiat minima voluptas doloribus aliquid optio!
     </p>,
     <div
-      className="sc-bjfHbI bOcGkM"
+      className="sc-eDWCr hJjroC"
     >
       <ul>
         <li
-          className="sc-idXgbr fuvZJl"
+          className="sc-bqWxrE bUZLVc"
           onClick={[Function]}
         >
           traditional
         </li>
         <li
-          className="sc-idXgbr gtMWan"
+          className="sc-bqWxrE dvnTkm"
           onClick={[Function]}
         >
           thin
@@ -39,21 +39,21 @@ Object {
       </ul>
       <ul>
         <li
-          className="sc-idXgbr gtMWan"
+          className="sc-bqWxrE dvnTkm"
           onClick={[Function]}
         >
           12
            inch
         </li>
         <li
-          className="sc-idXgbr gtMWan"
+          className="sc-bqWxrE dvnTkm"
           onClick={[Function]}
         >
           14
            inch
         </li>
         <li
-          className="sc-idXgbr gtMWan"
+          className="sc-bqWxrE dvnTkm"
           onClick={[Function]}
         >
           16
@@ -62,17 +62,17 @@ Object {
       </ul>
     </div>,
     <h4
-      className="sc-kDvujY fOCaAw"
+      className="sc-jSUZER glJRmG"
     >
       14
       $
     </h4>,
     <button
-      className="sc-ipEyDJ sc-ksBlkl sc-fnGiBr eVzfYL iXJjXb doUdQK"
+      className="sc-gKPRtg sc-jrcTuL sc-ipEyDJ iLACsd kKLFCc heSXxL"
       onClick={[Function]}
     >
       <svg
-        className="sc-fLcnxK hCxlfl"
+        className="sc-bjfHbI lhpcBk"
         fill="currentColor"
         height="1em"
         stroke="currentColor"
@@ -95,7 +95,7 @@ Object {
       </span>
     </button>,
     <a
-      className="sc-ipEyDJ sc-csuSiG eVzfYL jaxesh"
+      className="sc-gKPRtg sc-iBYQkv iLACsd gcostn"
       href="/"
       onClick={[Function]}
     >
@@ -105,7 +105,7 @@ Object {
     </a>,
   ],
   "props": Object {
-    "className": "sc-gKPRtg sc-iBYQkv dtnIEm jeErZT",
+    "className": "sc-bcXHqe sc-gswNZR bZXhLi edAeMk",
   },
   "type": "div",
 }
