@@ -2,11 +2,11 @@ import styled from 'styled-components';
 
 const Wrapper = styled.div`
   width: calc(100vw - 70px);
-  height: 100%;
-  background-color: ${({ theme }) => theme.colors.fourth};
-  margin: 35px auto;
-  border-radius: 10px;
   max-width: 1400px;
+  height: 100%;
+  margin: 35px auto;
+  background-color: ${({ theme }) => theme.colors.fourth};
+  border-radius: 10px;
 
   @media (max-width: 1000px) {
     width: calc(100vw - 50px);
