@@ -7,7 +7,6 @@ const Wrapper = styled.footer`
   padding: 40px 0;
   flex-direction: column;
   row-gap: 50px;
-  border-top: 1px solid ${({ theme }) => theme.colors.gray};
 `;
 
 const Ul = styled.ul`
