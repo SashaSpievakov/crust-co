@@ -3,7 +3,7 @@ import { useParams } from 'react-router-dom';
 import FullItemBlock from '../../components/FullItemBlock/FullItemBlock';
 import Loading from '../../components/UI/Loading/Loading';
 import itemAPI from '../../services/ItemService';
-import Error from './Item.styled';
+import { Error } from './Item.styled';
 
 const Item = () => {
   const { id } = useParams();

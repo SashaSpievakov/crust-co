@@ -1,3 +1,5 @@
+/* eslint import/prefer-default-export: 0 */
+
 import styled from 'styled-components';
 
 const Article = styled.article`
@@ -39,4 +41,4 @@ const Article = styled.article`
   }
 `;
 
-export default Article;
+export { Article };

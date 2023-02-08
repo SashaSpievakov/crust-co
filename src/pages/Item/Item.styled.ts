@@ -1,3 +1,5 @@
+/* eslint import/prefer-default-export: 0 */
+
 import styled from 'styled-components';
 
 const Error = styled.h2`
@@ -8,4 +10,4 @@ const Error = styled.h2`
   }
 `;
 
-export default Error;
+export { Error };

@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom';
 
 import cartImg from '../../assets/img/empty-cart.png';
 import { ButtonBlack } from '../../styles/Buttons.styled';
-import Article from './CartEmpty.styled';
+import { Article } from './CartEmpty.styled';
 
 const CartEmpty = () => {
   return (
