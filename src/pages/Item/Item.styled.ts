@@ -6,6 +6,7 @@ const Error = styled.h2`
   color: ${({ theme }) => theme.colors.primary};
 
   @media screen and (max-width: 550px) {
+    font-size: 24px;
     padding-bottom: 25px;
   }
 `;

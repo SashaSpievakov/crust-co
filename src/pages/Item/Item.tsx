@@ -17,10 +17,10 @@ const Item = () => {
 
   return (
     <section>
-      {isSuccess ? (
-        <FullItemBlock item={data} />
-      ) : isLoading ? (
+      {isLoading ? (
         <Loading />
+      ) : isSuccess ? (
+        <FullItemBlock item={data} />
       ) : (
         <Error>Error: failed request, try again</Error>
       )}
