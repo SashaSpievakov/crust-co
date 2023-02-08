@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 
-import { Title, Block, Top, Error } from '../../styles/Base.styled';
+import { Title, Block, Top, Error } from './Home.styled';
 import { selectSort } from '../../store/slices/sortSlice';
 import { selectCategory } from '../../store/slices/categorySlice';
 import Categories from '../../components/Categories/Categories';
