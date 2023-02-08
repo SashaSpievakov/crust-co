@@ -36,8 +36,8 @@ const Block = styled(Top)`
 `;
 
 const Error = styled.div`
+  width: 550px;
   margin: 80px auto;
-  width: 600px;
 
   h2 {
     font-size: 32px;
@@ -47,6 +47,26 @@ const Error = styled.div`
 
   p {
     font-size: 22px;
+  }
+
+  @media screen and (max-width: 650px) {
+    width: 350px;
+
+    p {
+      font-size: 18px;
+    }
+  }
+
+  @media screen and (max-width: 450px) {
+    width: 250px;
+
+    h2 {
+      font-size: 25px;
+    }
+
+    p {
+      font-size: 16px;
+    }
   }
 `;
 
