@@ -5,30 +5,16 @@ import userEvent from '@testing-library/user-event';
 import FullItemBlock from './FullItemBlock';
 import rendererWithProviders from '../../tests/helpers/rendererWithProviders';
 import renderWithProviders from '../../tests/helpers/renderWithProviders';
-import { IPizzaItem } from '../../models/IPizzaItem';
-
-const FullItemProp: IPizzaItem = {
-  id: '12',
-  name: 'Chicken Curry',
-  description:
-    'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sed vitae, ab eum nam facilis, soluta corporis molestiae quam, quis cumque consequuntur suscipit dolore praesentium fugiat minima voluptas doloribus aliquid optio!',
-  types: [0, 1],
-  sizes: [12, 14, 16],
-  price: 14,
-  category: 1,
-  rating: 11,
-};
+import { mockItem } from '../../tests/mocks/api/mockData';
 
 describe('FullItemBlock Tests', () => {
   test('renders the FullItemBlock component', () => {
-    const snapshot = rendererWithProviders(
-      <FullItemBlock item={FullItemProp} />,
-    );
+    const snapshot = rendererWithProviders(<FullItemBlock item={mockItem} />);
     expect(snapshot).toMatchSnapshot();
   });
 
   test('checks link redirect to the Home page', () => {
-    renderWithProviders(<FullItemBlock item={FullItemProp} />, true, '/cart');
+    renderWithProviders(<FullItemBlock item={mockItem} />, true, '/cart');
     const links = screen.getAllByRole('link', {
       name: /go back/i,
     });
@@ -44,7 +30,7 @@ describe('FullItemBlock Tests', () => {
 
   describe('checks the price changing', () => {
     beforeEach(() => {
-      renderWithProviders(<FullItemBlock item={FullItemProp} />);
+      renderWithProviders(<FullItemBlock item={mockItem} />);
     });
 
     test('checks type click', () => {
