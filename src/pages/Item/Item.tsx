@@ -16,7 +16,7 @@ const Item = () => {
   );
 
   return (
-    <section>
+    <article>
       {isLoading ? (
         <Loading />
       ) : isSuccess ? (
@@ -24,7 +24,7 @@ const Item = () => {
       ) : (
         <Error>Error: failed request, try again</Error>
       )}
-    </section>
+    </article>
   );
 };
 
