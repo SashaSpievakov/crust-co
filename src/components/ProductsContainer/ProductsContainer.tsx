@@ -17,10 +17,10 @@ const ProductsContainer = ({ isLoading, items }: ProductsContainerProps) => {
   );
 
   return (
-    <Container notFound={filteredItems.length < 1}>
+    <Container>
       {isLoading ? (
         [...new Array(9)].map((_, i) => <Skeleton key={i} />)
-      ) : filteredItems.length > 1 ? (
+      ) : filteredItems.length >= 1 ? (
         filteredItems.map((item: IPizzaItem) => (
           <ItemCard key={item.id} {...item} />
         ))

@@ -1,12 +1,8 @@
 /* eslint import/prefer-default-export: 0 */
 
-import styled, { css } from 'styled-components';
+import styled from 'styled-components';
 
-interface ContainerProps {
-  notFound: boolean;
-}
-
-const Container = styled.div<ContainerProps>`
+const Container = styled.div`
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 40px 100px;
@@ -25,20 +21,6 @@ const Container = styled.div<ContainerProps>`
     grid-template-columns: repeat(1, 1fr);
     gap: 0;
   }
-
-  ${({ notFound }) =>
-    notFound &&
-    css`
-      grid-template-columns: 1fr;
-
-      @media (max-width: 1150px) {
-        grid-template-columns: 1fr;
-      }
-
-      @media (max-width: 550px) {
-        margin-bottom: 50px;
-      }
-    `}
 `;
 
 const SearchError = styled.div`

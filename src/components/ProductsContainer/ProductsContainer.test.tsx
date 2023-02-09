@@ -14,6 +14,15 @@ describe('ProductsContainer Tests', () => {
     expect(snapshot).toMatchSnapshot();
   });
 
+  test('renders the ProductsContainer component with not matching search value', () => {
+    const snapshot = rendererWithAllProviders(
+      <ProductsContainer isLoading={false} items={mockItems} />,
+      '/',
+      { searchValue: { value: 'testing value' } },
+    );
+    expect(snapshot).toMatchSnapshot();
+  });
+
   test('renders the ProductsContainer component skeletons', () => {
     renderWithProviders(<ProductsContainer isLoading items={mockItems} />);
     const skeletons = screen.getAllByRole('presentation');
@@ -22,15 +31,15 @@ describe('ProductsContainer Tests', () => {
     expect(skeletons[8]).toBeInTheDocument();
   });
 
-  test('renders components with a search value', () => {
+  test('renders items with a search value', () => {
     renderWithProviders(
       <ProductsContainer isLoading={false} items={mockItems} />,
       false,
       '/',
-      { searchValue: { value: '  Srimp Pizza ' } },
+      { searchValue: { value: '  Shrimp piZza   ' } },
     );
     const heading = screen.getByRole('heading');
 
-    expect(heading).toHaveTextContent(/srimp pizza/i);
+    expect(heading).toHaveTextContent(/shrimp pizza/i);
   });
 });

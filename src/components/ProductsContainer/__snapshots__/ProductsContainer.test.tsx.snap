@@ -20,7 +20,7 @@ Object {
             type="image/png"
           />
           <img
-            alt="Srimp Pizza pizza"
+            alt="Shrimp Pizza pizza"
             className="sc-ksBlkl giKwGo"
             height="250"
             src="./assets/img/pizza3.png"
@@ -30,7 +30,7 @@ Object {
         <h3
           className="sc-hBxehG cZCKzy"
         >
-          Srimp Pizza
+          Shrimp Pizza
         </h3>
       </a>
       <div
@@ -310,6 +310,22 @@ Object {
         </button>
       </div>
     </article>,
+  ],
+  "props": Object {
+    "className": "sc-idXgbr cCVaxy",
+  },
+  "type": "div",
+}
+`;
+
+exports[`ProductsContainer Tests renders the ProductsContainer component with not matching search value 1`] = `
+Object {
+  "children": Array [
+    <div
+      className="sc-dIfARi kMOUPe"
+    >
+      No pizzas with that name were found...
+    </div>,
   ],
   "props": Object {
     "className": "sc-idXgbr cCVaxy",
