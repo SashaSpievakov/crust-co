@@ -40,7 +40,7 @@ const Wrapper = styled(Container)<WrapperProps>`
     `}
 `;
 
-const Right = styled.div`
+const Right = styled.section`
   display: flex;
   align-items: center;
   column-gap: 30px;
