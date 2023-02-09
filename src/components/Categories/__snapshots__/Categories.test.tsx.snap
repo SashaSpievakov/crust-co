@@ -44,6 +44,6 @@ Object {
     </ul>,
   ],
   "props": Object {},
-  "type": "div",
+  "type": "section",
 }
 `;

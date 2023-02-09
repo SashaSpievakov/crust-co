@@ -13,7 +13,7 @@ const Categories = () => {
   const chosenClass = categoriesArr[activeCategory];
 
   return (
-    <div>
+    <section>
       <Ul>
         {categoriesArr.map((name, i) => (
           <Li
@@ -26,7 +26,7 @@ const Categories = () => {
           </Li>
         ))}
       </Ul>
-    </div>
+    </section>
   );
 };
 
