@@ -1,7 +1,6 @@
 import { ReactElement } from 'react';
 import { Provider } from 'react-redux';
 import { PreloadedState } from '@reduxjs/toolkit';
-import { setupListeners } from '@reduxjs/toolkit/dist/query';
 import { ThemeProvider } from 'styled-components';
 import { MemoryRouter } from 'react-router-dom';
 import renderer from 'react-test-renderer';
@@ -14,8 +13,6 @@ const rendererWithProviders = (
   route: string = '/',
   preloadedStore: PreloadedState<RootState> = {},
 ) => {
-  setupListeners(setupStore(preloadedStore).dispatch);
-
   return {
     ...renderer
       .create(
