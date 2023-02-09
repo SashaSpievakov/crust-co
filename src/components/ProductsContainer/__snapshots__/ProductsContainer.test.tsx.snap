@@ -314,22 +314,22 @@ Object {
   "props": Object {
     "className": "sc-idXgbr cCVaxy",
   },
-  "type": "div",
+  "type": "section",
 }
 `;
 
 exports[`ProductsContainer Tests renders the ProductsContainer component with not matching search value 1`] = `
 Object {
   "children": Array [
-    <div
+    <h3
       className="sc-dIfARi kMOUPe"
     >
       No pizzas with that name were found...
-    </div>,
+    </h3>,
   ],
   "props": Object {
     "className": "sc-idXgbr cCVaxy",
   },
-  "type": "div",
+  "type": "section",
 }
 `;

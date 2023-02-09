@@ -2,7 +2,7 @@
 
 import styled from 'styled-components';
 
-const Container = styled.div`
+const Container = styled.section`
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 40px 100px;
@@ -23,7 +23,7 @@ const Container = styled.div`
   }
 `;
 
-const SearchError = styled.div`
+const SearchError = styled.h3`
   font-size: 30px;
 `;
 
