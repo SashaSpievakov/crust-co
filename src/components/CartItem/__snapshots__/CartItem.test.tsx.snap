@@ -30,6 +30,7 @@ Object {
       className="sc-kDvujY kioDkI"
     >
       <button
+        aria-label="minus"
         className="sc-bcXHqe sc-eDvSVe sc-jSUZER fAfvZN fwWQTF gCqzMt"
         disabled={false}
         onClick={[Function]}
@@ -58,6 +59,7 @@ Object {
         13
       </span>
       <button
+        aria-label="plus"
         className="sc-bcXHqe sc-eDvSVe sc-jSUZER fAfvZN fwWQTF gCqzMt"
         onClick={[Function]}
       >
@@ -94,6 +96,7 @@ Object {
       className="sc-eDWCr fGJRdl"
     >
       <button
+        aria-label="delete"
         className="sc-bcXHqe sc-eDvSVe sc-jSUZER fAfvZN fwWQTF edjCUe"
         onClick={[Function]}
       >
@@ -156,6 +159,7 @@ Object {
       className="sc-kDvujY kioDkI"
     >
       <button
+        aria-label="minus"
         className="sc-bcXHqe sc-eDvSVe sc-jSUZER fAfvZN fwWQTF gCqzMt"
         disabled={true}
         onClick={[Function]}
@@ -184,6 +188,7 @@ Object {
         1
       </span>
       <button
+        aria-label="plus"
         className="sc-bcXHqe sc-eDvSVe sc-jSUZER fAfvZN fwWQTF gCqzMt"
         onClick={[Function]}
       >
@@ -220,6 +225,7 @@ Object {
       className="sc-eDWCr fGJRdl"
     >
       <button
+        aria-label="delete"
         className="sc-bcXHqe sc-eDvSVe sc-jSUZER fAfvZN fwWQTF edjCUe"
         onClick={[Function]}
       >

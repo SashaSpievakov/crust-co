@@ -71,11 +71,15 @@ const CartItem = memo(({ id, name, price, size, type, count }: ICartItem) => {
         </p>
       </InfoWrapper>
       <Counter>
-        <ButtonCircle disabled={count === 1} onClick={onClickRemove}>
+        <ButtonCircle
+          disabled={count === 1}
+          onClick={onClickRemove}
+          aria-label="minus"
+        >
           <CountIcon as={BsDashLg} />
         </ButtonCircle>
         <span>{count}</span>
-        <ButtonCircle onClick={onClickAdd}>
+        <ButtonCircle onClick={onClickAdd} aria-label="plus">
           <CountIcon as={BsPlusLg} />
         </ButtonCircle>
       </Counter>
@@ -83,7 +87,7 @@ const CartItem = memo(({ id, name, price, size, type, count }: ICartItem) => {
         <b>{price * count}$</b>
       </Price>
       <Remove>
-        <ButtonCircle onClick={onClickDelete} remove>
+        <ButtonCircle onClick={onClickDelete} remove aria-label="delete">
           <CountIcon as={BsPlusLg} />
         </ButtonCircle>
       </Remove>
