@@ -1,19 +1,7 @@
 import { useEffect } from 'react';
 
 import { Section, Li } from './Selector.styled';
-
-interface SelectorProps {
-  price: number;
-  sizes: number[];
-  types: number[];
-  activeSize: number;
-  activeType: number;
-  setActivePrice: (index: number) => void;
-  setActiveSize: (index: number) => void;
-  setActiveType: (index: number) => void;
-  typeNames: string[];
-  isFullScreen?: boolean;
-}
+import { ISelector } from '../../../models/ISelector';
 
 const Selector = ({
   price,
@@ -26,7 +14,7 @@ const Selector = ({
   setActiveType,
   typeNames,
   isFullScreen = false,
-}: SelectorProps) => {
+}: ISelector) => {
   const typeClickHandler = (type: number) => {
     if (activeType === 0 && type === 1) {
       setActivePrice(price + 1);

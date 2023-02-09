@@ -7,9 +7,9 @@ import rendererWithAllProviders from '../../../tests/helpers/rendererWithProvide
 import renderWithProviders from '../../../tests/helpers/renderWithProviders';
 import { typeNames } from '../../FullItemBlock/FullItemBlock';
 import { CartItemsMockProps } from '../../../tests/mocks/api/mockData';
-import { ItemsCountHandlerProps } from '../../../models/ItemsCountHandlerProps';
+import { IItemsCountHandler } from '../../../models/IItemsCountHandler';
 
-const ItemsCountHandlerMockProps: ItemsCountHandlerProps = {
+const ItemsCountHandlerMockProps: IItemsCountHandler = {
   id: '6',
   name: 'Cheesburger Pizza',
   price: 7,

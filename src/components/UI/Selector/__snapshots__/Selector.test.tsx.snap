@@ -1,0 +1,49 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Selector Tests renders the Selector component 1`] = `
+Object {
+  "children": Array [
+    <ul>
+      <li
+        className="sc-gswNZR cwTTIy"
+        onClick={[Function]}
+      >
+        traditional
+      </li>
+      <li
+        className="sc-gswNZR hrhfUc"
+        onClick={[Function]}
+      >
+        thin
+      </li>
+    </ul>,
+    <ul>
+      <li
+        className="sc-gswNZR hrhfUc"
+        onClick={[Function]}
+      >
+        12
+         inch
+      </li>
+      <li
+        className="sc-gswNZR hrhfUc"
+        onClick={[Function]}
+      >
+        14
+         inch
+      </li>
+      <li
+        className="sc-gswNZR hrhfUc"
+        onClick={[Function]}
+      >
+        16
+         inch
+      </li>
+    </ul>,
+  ],
+  "props": Object {
+    "className": "sc-bcXHqe gzfAJw",
+  },
+  "type": "section",
+}
+`;

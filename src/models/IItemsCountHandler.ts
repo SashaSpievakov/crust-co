@@ -1,4 +1,4 @@
-export interface ItemsCountHandlerProps {
+export interface IItemsCountHandler {
   id: string;
   name: string;
   price: number;

@@ -1,6 +1,6 @@
 import { useAppDispatch, useAppSelector } from '../../../hooks/reduxHooks';
 import { ICartItem } from '../../../models/ICartItem';
-import { ItemsCountHandlerProps } from '../../../models/ItemsCountHandlerProps';
+import { IItemsCountHandler } from '../../../models/IItemsCountHandler';
 import {
   addItem,
   removeItem,
@@ -23,7 +23,7 @@ const ItemsCountHandler = ({
   activeType,
   typeNames,
   isFullScreen = false,
-}: ItemsCountHandlerProps) => {
+}: IItemsCountHandler) => {
   const dispatch = useAppDispatch();
   const namesCount = useAppSelector(selectItemPriceById(id));
 
