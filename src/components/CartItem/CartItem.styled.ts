@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-const Article = styled.article`
+const Section = styled.section`
   display: flex;
   width: 100%;
   position: relative;
@@ -36,7 +36,7 @@ const ImgWrapper = styled.div`
   }
 `;
 
-const InfoWrapper = styled.div`
+const InfoWrapper = styled.section`
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -60,7 +60,7 @@ const InfoWrapper = styled.div`
   }
 `;
 
-const Counter = styled.div`
+const Counter = styled.section`
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -80,13 +80,13 @@ const CountIcon = styled.i`
   stroke-width: 1;
 `;
 
-const Price = styled.div`
+const Price = styled.h3`
   display: flex;
   align-items: center;
   justify-content: center;
   width: 33%;
 
-  b {
+  span {
     font-weight: bold;
     font-size: 22px;
     letter-spacing: 0.01em;
@@ -106,4 +106,4 @@ const Remove = styled.div`
   }
 `;
 
-export { Article, ImgWrapper, InfoWrapper, Counter, CountIcon, Price, Remove };
+export { Section, ImgWrapper, InfoWrapper, Counter, CountIcon, Price, Remove };

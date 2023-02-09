@@ -4,7 +4,7 @@ import { BsDashLg, BsPlusLg } from 'react-icons/bs';
 import { addItem, removeItem, removeItems } from '../../store/slices/cartSlice';
 import { ButtonCircle } from '../../styles/Buttons.styled';
 import {
-  Article,
+  Section,
   ImgWrapper,
   InfoWrapper,
   Counter,
@@ -55,7 +55,7 @@ const CartItem = memo(({ id, name, price, size, type, count }: ICartItem) => {
   };
 
   return (
-    <Article>
+    <Section>
       <ImgWrapper>
         <img
           src={`./assets/img/pizza${id}.png`}
@@ -74,7 +74,7 @@ const CartItem = memo(({ id, name, price, size, type, count }: ICartItem) => {
         <ButtonCircle disabled={count === 1} onClick={onClickRemove}>
           <CountIcon as={BsDashLg} />
         </ButtonCircle>
-        <b>{count}</b>
+        <span>{count}</span>
         <ButtonCircle onClick={onClickAdd}>
           <CountIcon as={BsPlusLg} />
         </ButtonCircle>
@@ -87,7 +87,7 @@ const CartItem = memo(({ id, name, price, size, type, count }: ICartItem) => {
           <CountIcon as={BsPlusLg} />
         </ButtonCircle>
       </Remove>
-    </Article>
+    </Section>
   );
 });
 export default CartItem;
