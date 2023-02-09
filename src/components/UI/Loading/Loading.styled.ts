@@ -21,7 +21,7 @@ const dash = keyframes`
   }
 `;
 
-const Wrapper = styled.div`
+const Wrapper = styled.section`
   width: 100px;
   margin: 0 auto;
 `;
