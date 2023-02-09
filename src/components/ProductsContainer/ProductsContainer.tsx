@@ -3,7 +3,7 @@ import { IPizzaItem } from '../../models/IPizzaItem';
 import { selectSearchValue } from '../../store/slices/searchSlice';
 import ItemCard from '../ItemCard/ItemCard';
 import Skeleton from '../UI/Skeleton/Skeleton';
-import { Container } from './ProductsContainer.styled';
+import { Container, SearchError } from './ProductsContainer.styled';
 
 interface ProductsContainerProps {
   isLoading: boolean;
@@ -12,18 +12,21 @@ interface ProductsContainerProps {
 
 const ProductsContainer = ({ isLoading, items }: ProductsContainerProps) => {
   const searchValue = useAppSelector(selectSearchValue);
+  const filteredItems = items.filter((item: IPizzaItem) =>
+    item.name.toLowerCase().includes(searchValue.trim().toLowerCase()),
+  );
 
   return (
-    <Container>
-      {isLoading
-        ? [...new Array(9)].map((_, i) => <Skeleton key={i} />)
-        : items
-            .filter((item: IPizzaItem) =>
-              item.name
-                .toLowerCase()
-                .includes(searchValue.trim().toLowerCase()),
-            )
-            .map((item: IPizzaItem) => <ItemCard key={item.id} {...item} />)}
+    <Container notFound={filteredItems.length < 1}>
+      {isLoading ? (
+        [...new Array(9)].map((_, i) => <Skeleton key={i} />)
+      ) : filteredItems.length > 1 ? (
+        filteredItems.map((item: IPizzaItem) => (
+          <ItemCard key={item.id} {...item} />
+        ))
+      ) : (
+        <SearchError>No pizzas with that name were found...</SearchError>
+      )}
     </Container>
   );
 };
