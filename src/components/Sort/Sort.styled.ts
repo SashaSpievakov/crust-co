@@ -18,7 +18,7 @@ const mixinBackground = css`
   background-color: ${({ theme }) => theme.colors.secondaryTransparent};
 `;
 
-const Wrapper = styled.div`
+const Wrapper = styled.section`
   width: 127px;
   position: relative;
   margin-top: 15px;
@@ -51,7 +51,7 @@ const ArrowDown = styled(BsCaretDownFill)`
   ${mixinArrow}
 `;
 
-const Popup = styled.div<PopupProps>`
+const Popup = styled.section<PopupProps>`
   visibility: hidden;
   position: absolute;
   right: -10px;

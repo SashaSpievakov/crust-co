@@ -36,7 +36,7 @@ Object {
         rating
       </span>
     </div>,
-    <div
+    <section
       aria-hidden={true}
       className="sc-eDvSVe fQPTRR"
       open={false}
@@ -64,11 +64,11 @@ Object {
           A to Z
         </li>
       </ul>
-    </div>,
+    </section>,
   ],
   "props": Object {
     "className": "sc-bcXHqe foXnjj",
   },
-  "type": "div",
+  "type": "section",
 }
 `;
