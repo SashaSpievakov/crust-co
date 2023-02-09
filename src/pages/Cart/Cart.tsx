@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom';
+import { shallowEqual } from 'react-redux';
 
 import { clearItems, selectCart } from '../../store/slices/cartSlice';
 import CartItem from '../../components/CartItem/CartItem';
@@ -19,7 +20,10 @@ import { ICartItem } from '../../models/ICartItem';
 import { useAppDispatch, useAppSelector } from '../../hooks/reduxHooks';
 
 const Cart = () => {
-  const { itemsCount, totalPrice, items } = useAppSelector(selectCart);
+  const { itemsCount, totalPrice, items } = useAppSelector(
+    selectCart,
+    shallowEqual,
+  );
   const dispatch = useAppDispatch();
 
   const onClearClick = () => {

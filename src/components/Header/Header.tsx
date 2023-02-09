@@ -1,4 +1,5 @@
 import { useEffect, useRef } from 'react';
+import { shallowEqual } from 'react-redux';
 import { Link, useLocation } from 'react-router-dom';
 import { BsCart3, BsFillSunFill, BsFillMoonFill } from 'react-icons/bs';
 
@@ -10,7 +11,10 @@ import { ButtonCart } from '../../styles/Buttons.styled';
 import { useAppDispatch, useAppSelector } from '../../hooks/reduxHooks';
 
 const Header = () => {
-  const { itemsCount, totalPrice, items } = useAppSelector(selectCart);
+  const { itemsCount, totalPrice, items } = useAppSelector(
+    selectCart,
+    shallowEqual,
+  );
   const isLight = useAppSelector(selectIsLight);
   const dispatch = useAppDispatch();
   const location = useLocation();
