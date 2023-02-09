@@ -12,7 +12,7 @@ const mixinButton = css`
   cursor: pointer;
 `;
 
-const Counter = styled.div<CounterProps>`
+const Counter = styled.section<CounterProps>`
   display: flex;
   align-items: center;
   min-width: 100px;
