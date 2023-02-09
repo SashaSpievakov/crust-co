@@ -61,12 +61,12 @@ Object {
         </li>
       </ul>
     </section>,
-    <h4
+    <h3
       className="sc-jSUZER glJRmG"
     >
       14
       $
-    </h4>,
+    </h3>,
     <button
       className="sc-gKPRtg sc-jrcTuL sc-ipEyDJ iLACsd kKLFCc heSXxL"
       onClick={[Function]}

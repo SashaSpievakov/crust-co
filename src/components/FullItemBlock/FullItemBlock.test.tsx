@@ -36,7 +36,7 @@ describe('FullItemBlock Tests', () => {
     test('checks type click', () => {
       const typeItem = screen.getByText(/thin/i);
       const price = screen.getByRole('heading', {
-        level: 4,
+        level: 3,
       });
 
       userEvent.click(typeItem);
@@ -47,7 +47,7 @@ describe('FullItemBlock Tests', () => {
     test('checks size click', () => {
       const sizeItem = screen.getByText(/16 inch/i);
       const price = screen.getByRole('heading', {
-        level: 4,
+        level: 3,
       });
 
       userEvent.click(sizeItem);
@@ -59,7 +59,7 @@ describe('FullItemBlock Tests', () => {
       const typeItem = screen.getByText(/thin/i);
       const sizeItem = screen.getByText(/14 inch/i);
       const price = screen.getByRole('heading', {
-        level: 4,
+        level: 3,
       });
 
       userEvent.click(typeItem);

@@ -65,7 +65,7 @@ const Paragraph = styled.p`
   }
 `;
 
-const Price = styled.h4`
+const Price = styled.h3`
   font-size: 45px;
 
   @media screen and (max-width: 500px) {
