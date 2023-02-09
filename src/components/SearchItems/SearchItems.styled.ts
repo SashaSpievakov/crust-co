@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 import { BsXLg, BsSearch } from 'react-icons/bs';
 
-const Wrapper = styled.div`
+const Wrapper = styled.section`
   position: relative;
 `;
 
