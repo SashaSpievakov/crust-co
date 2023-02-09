@@ -23,7 +23,7 @@ const CartIcon = styled(BsCart3)`
   margin-right: 10px;
 `;
 
-const Clear = styled.div`
+const Clear = styled.section`
   display: flex;
   align-items: center;
   cursor: pointer;
@@ -52,13 +52,13 @@ const Bottom = styled.section`
   margin: 50px 0;
 `;
 
-const Details = styled.div`
+const Details = styled.section`
   font-size: 22px;
   display: flex;
   justify-content: space-between;
 `;
 
-const Buttons = styled.div`
+const Buttons = styled.section`
   display: flex;
   justify-content: space-between;
   margin-top: 40px;

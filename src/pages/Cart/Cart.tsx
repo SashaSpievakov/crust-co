@@ -31,7 +31,7 @@ const Cart = () => {
   };
 
   return (
-    <div>
+    <article>
       {items.length ? (
         <>
           <Top>
@@ -76,7 +76,7 @@ const Cart = () => {
       ) : (
         <CartEmpty />
       )}
-    </div>
+    </article>
   );
 };
 
