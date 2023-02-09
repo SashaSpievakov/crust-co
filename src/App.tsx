@@ -1,13 +1,13 @@
-import { useSelector } from 'react-redux';
 import { ThemeProvider } from 'styled-components';
 
 import Global from './styles/Global.styled';
 import { selectIsLight } from './store/slices/themeSlice';
+import { useAppSelector } from './hooks/reduxHooks';
 import { lightTheme, darkTheme } from './styles/Themes.styled';
 import AppRouter from './router/AppRouter';
 
 function App() {
-  const isLight = useSelector(selectIsLight);
+  const isLight = useAppSelector(selectIsLight);
 
   return (
     <ThemeProvider theme={isLight ? lightTheme : darkTheme}>
