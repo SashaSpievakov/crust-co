@@ -38,8 +38,8 @@ describe('ProductsContainer Tests', () => {
       '/',
       { searchValue: { value: '  Shrimp piZza   ' } },
     );
-    const heading = screen.getByRole('heading');
+    const heading = screen.getByRole('heading', { name: /shrimp pizza/i });
 
-    expect(heading).toHaveTextContent(/shrimp pizza/i);
+    expect(heading).toBeInTheDocument();
   });
 });

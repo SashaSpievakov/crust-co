@@ -38,14 +38,14 @@ const Title = styled.h3`
   margin-bottom: 20px;
 `;
 
-const Bottom = styled.div`
+const Bottom = styled.section`
   display: flex;
   align-items: center;
   justify-content: space-evenly;
   margin-top: 20px;
 `;
 
-const Price = styled.div`
+const Price = styled.h3`
   font-weight: bold;
   font-size: 32px;
   line-height: 27px;

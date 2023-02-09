@@ -71,15 +71,15 @@ Object {
         </li>
       </ul>
     </div>,
-    <div
+    <section
       className="sc-fnGiBr PZUmi"
     >
-      <div
+      <h3
         className="sc-fEXmlR ljIWrJ"
       >
         14
         $
-      </div>
+      </h3>
       <button
         className="sc-bcXHqe sc-eDvSVe sc-gKPRtg fAfvZN fwWQTF gmBSoV"
         onClick={[Function]}
@@ -107,7 +107,7 @@ Object {
           Add
         </span>
       </button>
-    </div>,
+    </section>,
   ],
   "props": Object {
     "className": "sc-bqWxrE fptGBs",

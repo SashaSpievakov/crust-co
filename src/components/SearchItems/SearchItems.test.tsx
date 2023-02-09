@@ -79,8 +79,8 @@ describe('SearchItems Tests', () => {
       userEvent.type(input, 'pepperoni');
 
       expect(
-        await screen.findByRole('heading', { level: 3 }),
-      ).toHaveTextContent(/pepperoni pizza/i);
+        await screen.findByRole('heading', { name: /pepperoni pizza/i }),
+      ).toBeInTheDocument();
     });
   });
 });

@@ -74,15 +74,15 @@ Object {
           </li>
         </ul>
       </div>
-      <div
+      <section
         className="sc-fnGiBr PZUmi"
       >
-        <div
+        <h3
           className="sc-fEXmlR ljIWrJ"
         >
           10
           $
-        </div>
+        </h3>
         <button
           className="sc-bcXHqe sc-eDvSVe sc-gKPRtg fAfvZN fwWQTF gmBSoV"
           onClick={[Function]}
@@ -110,7 +110,7 @@ Object {
             Add
           </span>
         </button>
-      </div>
+      </section>
     </article>,
     <article
       className="sc-bqWxrE fptGBs"
@@ -170,15 +170,15 @@ Object {
           </li>
         </ul>
       </div>
-      <div
+      <section
         className="sc-fnGiBr PZUmi"
       >
-        <div
+        <h3
           className="sc-fEXmlR ljIWrJ"
         >
           12
           $
-        </div>
+        </h3>
         <button
           className="sc-bcXHqe sc-eDvSVe sc-gKPRtg fAfvZN fwWQTF gmBSoV"
           onClick={[Function]}
@@ -206,7 +206,7 @@ Object {
             Add
           </span>
         </button>
-      </div>
+      </section>
     </article>,
     <article
       className="sc-bqWxrE fptGBs"
@@ -272,15 +272,15 @@ Object {
           </li>
         </ul>
       </div>
-      <div
+      <section
         className="sc-fnGiBr PZUmi"
       >
-        <div
+        <h3
           className="sc-fEXmlR ljIWrJ"
         >
           15
           $
-        </div>
+        </h3>
         <button
           className="sc-bcXHqe sc-eDvSVe sc-gKPRtg fAfvZN fwWQTF gmBSoV"
           onClick={[Function]}
@@ -308,7 +308,7 @@ Object {
             Add
           </span>
         </button>
-      </div>
+      </section>
     </article>,
   ],
   "props": Object {
