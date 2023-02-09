@@ -1,6 +1,6 @@
 import { useEffect } from 'react';
 
-import { Div, Li } from './Selector.styled';
+import { Section, Li } from './Selector.styled';
 
 interface SelectorProps {
   price: number;
@@ -61,7 +61,7 @@ const Selector = ({
   }, [sizes]);
 
   return (
-    <Div isFullScreen={isFullScreen}>
+    <Section isFullScreen={isFullScreen}>
       <ul>
         {types.map((type) => (
           <Li
@@ -84,7 +84,7 @@ const Selector = ({
           </Li>
         ))}
       </ul>
-    </Div>
+    </Section>
   );
 };
 export default Selector;

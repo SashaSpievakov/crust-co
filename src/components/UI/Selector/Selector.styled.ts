@@ -4,11 +4,11 @@ interface LiProps {
   chosen: boolean;
 }
 
-interface DivProps {
+interface SectionProps {
   isFullScreen: boolean;
 }
 
-const Div = styled.div<DivProps>`
+const Section = styled.section<SectionProps>`
   display: flex;
   font-size: ${({ isFullScreen }) => (isFullScreen ? '18px' : '14px')};
   flex-direction: column;
@@ -59,4 +59,4 @@ const Li = styled.li<LiProps>`
     `}
 `;
 
-export { Div, Li };
+export { Section, Li };

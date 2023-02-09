@@ -30,7 +30,7 @@ Object {
         Chicken Curry
       </h3>
     </a>,
-    <div
+    <section
       className="sc-csuSiG fpLAMx"
     >
       <ul>
@@ -70,7 +70,7 @@ Object {
            inch
         </li>
       </ul>
-    </div>,
+    </section>,
     <section
       className="sc-fnGiBr PZUmi"
     >
