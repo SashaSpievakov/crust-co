@@ -1,0 +1,25 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Loading Tests renders the Loading component 1`] = `
+Object {
+  "children": Array [
+    <svg
+      className="sc-gswNZR fUMGUt"
+      viewBox="0 0 50 50"
+    >
+      <circle
+        className="sc-dkrFOg fzFiEQ"
+        cx="25"
+        cy="25"
+        fill="none"
+        r="20"
+        strokeWidth="4"
+      />
+    </svg>,
+  ],
+  "props": Object {
+    "className": "sc-bcXHqe iAoXHL",
+  },
+  "type": "section",
+}
+`;
