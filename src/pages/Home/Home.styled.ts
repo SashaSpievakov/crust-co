@@ -8,7 +8,7 @@ const Title = styled.h2`
   }
 `;
 
-const Top = styled.div`
+const Top = styled.section`
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -35,7 +35,7 @@ const Block = styled(Top)`
   }
 `;
 
-const Error = styled.div`
+const Error = styled.section`
   width: 550px;
   margin: 80px auto;
 

@@ -43,7 +43,7 @@ const Home = () => {
   }, [activeCategory, sortedPropertyName, data, isSuccess]);
 
   return (
-    <>
+    <article>
       <Top>
         <Categories />
         <Sort sortNamesArr={sortNamesArr} />
@@ -60,7 +60,7 @@ const Home = () => {
       ) : (
         <ProductsContainer isLoading={isLoading} items={pizzas} />
       )}
-    </>
+    </article>
   );
 };
 
