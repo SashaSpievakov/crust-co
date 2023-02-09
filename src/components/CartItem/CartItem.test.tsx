@@ -3,47 +3,31 @@ import { screen } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
 
 import CartItem from './CartItem';
-import { ICartItem } from '../../models/ICartItem';
 import rendererWithProviders from '../../tests/helpers/rendererWithProviders';
 import renderWithProviders from '../../tests/helpers/renderWithProviders';
-
-const CartItemProps: ICartItem = {
-  id: '6',
-  name: 'Cheesburger Pizza',
-  price: 7,
-  size: 14,
-  type: 'thin',
-  count: 13,
-};
-
-const CartItemProps2: ICartItem = {
-  id: '2',
-  name: 'Pepperoni Pizza',
-  price: 9,
-  size: 16,
-  type: 'traditional',
-  count: 1,
-};
+import {
+  CartItemMockProps,
+  CartItemMockProps2,
+  CartItemsMockProps,
+} from '../../tests/mocks/api/mockData';
 
 describe('CartItem Tests', () => {
   test('renders the CartItem component', () => {
-    const snapshot = rendererWithProviders(<CartItem {...CartItemProps} />);
+    const snapshot = rendererWithProviders(<CartItem {...CartItemMockProps} />);
     expect(snapshot).toMatchSnapshot();
   });
 
   test('renders the CartItem component with a disabled button', () => {
-    const snapshot = rendererWithProviders(<CartItem {...CartItemProps2} />);
+    const snapshot = rendererWithProviders(
+      <CartItem {...CartItemMockProps2} />,
+    );
     expect(snapshot).toMatchSnapshot();
   });
 
   describe('Button tests', () => {
     beforeEach(() => {
       renderWithProviders(null, true, '/cart', {
-        cart: {
-          totalPrice: 100,
-          itemsCount: 14,
-          items: [CartItemProps, CartItemProps2],
-        },
+        cart: CartItemsMockProps,
       });
     });
 

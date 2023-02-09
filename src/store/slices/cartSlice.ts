@@ -3,12 +3,7 @@ import { createSlice, PayloadAction } from '@reduxjs/toolkit';
 import { RootState } from '../store';
 import getCartFromLS from '../../utils/getCartFromLS';
 import { ICartItem } from '../../models/ICartItem';
-
-interface CartSliceState {
-  totalPrice: number;
-  itemsCount: number;
-  items: ICartItem[];
-}
+import { CartSliceState } from '../../models/CartSliceState';
 
 const { items, totalPrice, itemsCount } = getCartFromLS();
 

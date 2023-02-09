@@ -1,3 +1,5 @@
+import { CartSliceState } from '../../../models/CartSliceState';
+import { ICartItem } from '../../../models/ICartItem';
 import { IPizzaItem } from '../../../models/IPizzaItem';
 
 export const mockItems: IPizzaItem[] = [
@@ -46,4 +48,28 @@ export const mockItem: IPizzaItem = {
   price: 14,
   category: 3,
   rating: 15,
+};
+
+export const CartItemMockProps: ICartItem = {
+  id: '6',
+  name: 'Cheesburger Pizza',
+  price: 7,
+  size: 14,
+  type: 'thin',
+  count: 13,
+};
+
+export const CartItemMockProps2: ICartItem = {
+  id: '2',
+  name: 'Pepperoni Pizza',
+  price: 9,
+  size: 16,
+  type: 'traditional',
+  count: 1,
+};
+
+export const CartItemsMockProps: CartSliceState = {
+  totalPrice: 100,
+  itemsCount: 14,
+  items: [CartItemMockProps, CartItemMockProps2],
 };

@@ -1,5 +1,6 @@
 import { useAppDispatch, useAppSelector } from '../../../hooks/reduxHooks';
 import { ICartItem } from '../../../models/ICartItem';
+import { ItemsCountHandlerProps } from '../../../models/ItemsCountHandlerProps';
 import {
   addItem,
   removeItem,
@@ -13,16 +14,6 @@ import {
   Plus,
   MainPlus,
 } from './ItemsCountHandler.styled';
-
-interface ItemsCountHandlerProps {
-  id: string;
-  name: string;
-  price: number;
-  activeSize: number;
-  activeType: number;
-  typeNames: string[];
-  isFullScreen?: boolean;
-}
 
 const ItemsCountHandler = ({
   id,
@@ -64,9 +55,9 @@ const ItemsCountHandler = ({
 
   return namesCount ? (
     <Counter isFullScreen={isFullScreen}>
-      <Minus onClick={onClickRemove} />
+      <Minus onClick={onClickRemove} data-testid="itemsHandlerMinus" />
       <Count isFullScreen={isFullScreen}>{namesCount}</Count>
-      <Plus onClick={onClickAdd} />
+      <Plus onClick={onClickAdd} data-testid="itemsHandlerPlus" />
     </Counter>
   ) : (
     <ButtonAdd onClick={onClickAdd} isFullScreen={isFullScreen}>

@@ -11,7 +11,7 @@ interface FullItemProps {
   item: IPizzaItem;
 }
 
-const typeNames: string[] = ['traditional', 'thin'];
+export const typeNames: string[] = ['traditional', 'thin'];
 
 const FullItemBlock = ({ item }: FullItemProps) => {
   const [activePrice, setActivePrice] = useState<number>(item.price);
