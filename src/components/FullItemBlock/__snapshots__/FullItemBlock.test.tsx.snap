@@ -107,6 +107,6 @@ Object {
   "props": Object {
     "className": "sc-bcXHqe sc-gswNZR bZXhLi edAeMk",
   },
-  "type": "div",
+  "type": "section",
 }
 `;
