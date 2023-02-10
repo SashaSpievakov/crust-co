@@ -53,6 +53,7 @@ const Right = styled.section`
 const Icon = styled.i<LiProps>`
   font-size: 23px;
   color: ${({ theme }) => theme.colors.third};
+  user-select: none;
   cursor: pointer;
 
   &:hover {
