@@ -68,4 +68,21 @@ describe('FullItemBlock Tests', () => {
       expect(price).toHaveTextContent('17$');
     });
   });
+
+  describe('checks the integration between CoundHandler, Selector and FullItem', () => {
+    beforeEach(() => {
+      renderWithProviders(<FullItemBlock item={mockItem} />);
+    });
+
+    test('checks size click', () => {
+      const sizeItem = screen.getByText(/16 inch/i);
+      const price = screen.getByRole('heading', {
+        level: 3,
+      });
+
+      userEvent.click(sizeItem);
+
+      expect(price).toHaveTextContent('18$');
+    });
+  });
 });
