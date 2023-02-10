@@ -15,7 +15,7 @@ export const typeNames: string[] = ['traditional', 'thin'];
 
 const FullItemBlock = ({ item }: FullItemProps) => {
   const [activePrice, setActivePrice] = useState<number>(item.price);
-  const [activeSize, setActiveSize] = useState<number>(0);
+  const [activeSize, setActiveSize] = useState<number>(12);
   const [activeType, setActiveType] = useState<number>(0);
 
   return (

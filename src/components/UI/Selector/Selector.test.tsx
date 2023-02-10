@@ -1,6 +1,6 @@
 import '@testing-library/jest-dom';
-// import { screen } from '@testing-library/react';
-// import userEvent from '@testing-library/user-event';
+import { screen } from '@testing-library/react';
+import userEvent from '@testing-library/user-event';
 
 import Selector from './Selector';
 import rendererWithAllProviders from '../../../tests/helpers/rendererWithProviders';
@@ -41,50 +41,166 @@ describe('Selector Tests', () => {
       server.close();
     });
 
-    // beforeEach(() => {
-    //   renderWithProviders(null, true, '/item/9');
-    // });
+    beforeEach(() => {
+      renderWithProviders(null, true, '/item/9');
+    });
 
     afterEach(() => {
       server.resetHandlers();
       setupStore().dispatch(itemAPI.util.resetApiState());
     });
 
-    // test('checks thin type click', async () => {
-    //   const price = await screen.findByRole('heading', {
-    //     level: 3,
-    //   });
-    //   const typeThin = screen.getByText(/thin/i);
+    test('checks thin type click', async () => {
+      const price = await screen.findByRole('heading', {
+        level: 3,
+      });
+      const typeThin = screen.getByText(/thin/i);
 
-    //   userEvent.click(typeThin);
+      userEvent.click(typeThin);
 
-    //   expect(price).toHaveTextContent(/15\$/i);
-    // });
+      expect(price).toHaveTextContent(/15\$/i);
+    });
 
-    // test('checks traditional type click', async () => {
-    //   const price = await screen.findByRole('heading', {
-    //     level: 3,
-    //   });
-    //   const typeTraditional = screen.getByText(/traditional/i);
-    //   const typeThin = screen.getByText(/thin/i);
+    test('checks traditional type click', async () => {
+      const price = await screen.findByRole('heading', {
+        level: 3,
+      });
+      const typeTraditional = screen.getByText(/traditional/i);
+      const typeThin = screen.getByText(/thin/i);
 
-    //   userEvent.click(typeThin);
-    //   userEvent.click(typeTraditional);
+      userEvent.click(typeThin);
+      userEvent.click(typeTraditional);
 
-    //   expect(price).toHaveTextContent(/14\$/i);
-    // });
+      expect(price).toHaveTextContent(/14\$/i);
+    });
 
     test('checks changing from 12 inch to 14 inch', async () => {
-      renderWithProviders(null, true, '/item/9');
-      // const price = await screen.findByRole('heading', {
-      //   level: 3,
-      // });
-      // const fourteen = screen.getByText(/14 inch/i);
-      // screen.debug();
+      const price = await screen.findByRole('heading', {
+        level: 3,
+      });
+      const fourteen = screen.getByText(/14 inch/i);
 
-      // userEvent.click(fourteen);
+      userEvent.click(fourteen);
 
-      // expect(price).toHaveTextContent(/16\$/i);
+      expect(price).toHaveTextContent(/16\$/i);
+    });
+
+    test('checks changing from 12 inch to 16 inch', async () => {
+      const price = await screen.findByRole('heading', {
+        level: 3,
+      });
+      const sixteen = screen.getByText(/16 inch/i);
+
+      userEvent.click(sixteen);
+
+      expect(price).toHaveTextContent(/18\$/i);
+    });
+
+    test('checks changing from 14 inch to 16 inch', async () => {
+      const price = await screen.findByRole('heading', {
+        level: 3,
+      });
+      const fourteen = screen.getByText(/14 inch/i);
+      const sixteen = screen.getByText(/16 inch/i);
+
+      userEvent.click(fourteen);
+      expect(price).toHaveTextContent(/16\$/i);
+
+      userEvent.click(sixteen);
+      expect(price).toHaveTextContent(/18\$/i);
+    });
+
+    test('checks changing from 14 inch to 12 inch', async () => {
+      const price = await screen.findByRole('heading', {
+        level: 3,
+      });
+      const fourteen = screen.getByText(/14 inch/i);
+      const twelve = screen.getByText(/12 inch/i);
+
+      userEvent.click(fourteen);
+      expect(price).toHaveTextContent(/16\$/i);
+
+      userEvent.click(twelve);
+      expect(price).toHaveTextContent(/14\$/i);
+    });
+
+    test('checks changing from 16 inch to 14 inch', async () => {
+      const price = await screen.findByRole('heading', {
+        level: 3,
+      });
+      const fourteen = screen.getByText(/14 inch/i);
+      const sixteen = screen.getByText(/16 inch/i);
+
+      userEvent.click(sixteen);
+      expect(price).toHaveTextContent(/18\$/i);
+
+      userEvent.click(fourteen);
+      expect(price).toHaveTextContent(/16\$/i);
+    });
+
+    test('checks changing from 16 inch to 12 inch', async () => {
+      const price = await screen.findByRole('heading', {
+        level: 3,
+      });
+      const twelve = screen.getByText(/12 inch/i);
+      const sixteen = screen.getByText(/16 inch/i);
+
+      userEvent.click(sixteen);
+      expect(price).toHaveTextContent(/18\$/i);
+
+      userEvent.click(twelve);
+      expect(price).toHaveTextContent(/14\$/i);
+    });
+
+    test('checks thin type and 16 inch clicks together', async () => {
+      const price = await screen.findByRole('heading', {
+        level: 3,
+      });
+      const typeThin = screen.getByText(/thin/i);
+      const sixteen = screen.getByText(/16 inch/i);
+
+      userEvent.click(sixteen);
+      userEvent.click(typeThin);
+
+      expect(price).toHaveTextContent(/19\$/i);
+    });
+
+    test('checks triple and double click on 14 inch', async () => {
+      const price = await screen.findByRole('heading', {
+        level: 3,
+      });
+      const fourteen = screen.getByText(/14 inch/i);
+
+      userEvent.click(fourteen);
+      userEvent.click(fourteen);
+      expect(price).toHaveTextContent(/16\$/i);
+
+      userEvent.click(fourteen);
+      expect(price).toHaveTextContent(/16\$/i);
+    });
+
+    test('checks all clicks combined', async () => {
+      const price = await screen.findByRole('heading', {
+        level: 3,
+      });
+      const traditionalType = screen.getByText(/traditional/i);
+      const thinType = screen.getByText(/thin/i);
+      const twelve = screen.getByText(/12 inch/i);
+      const fourteen = screen.getByText(/14 inch/i);
+      const sixteen = screen.getByText(/16 inch/i);
+
+      userEvent.click(sixteen);
+      userEvent.click(traditionalType);
+      userEvent.click(fourteen);
+      userEvent.click(twelve);
+      userEvent.click(thinType);
+      userEvent.click(fourteen);
+      userEvent.click(traditionalType);
+      userEvent.click(sixteen);
+      userEvent.click(twelve);
+      userEvent.click(thinType);
+
+      expect(price).toHaveTextContent(/15\$/i);
     });
   });
 });
