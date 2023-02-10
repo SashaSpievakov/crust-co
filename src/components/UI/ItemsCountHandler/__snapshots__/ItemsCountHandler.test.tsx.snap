@@ -38,8 +38,9 @@ exports[`ItemsCountHandler Tests renders the ItemsCountHandler component with it
 Object {
   "children": Array [
     <svg
-      className="sc-pyfCe LRmDr"
+      className="sc-pyfCe ceiUXJ"
       data-testid="itemsHandlerMinus"
+      disabled={true}
       fill="currentColor"
       height="1em"
       onClick={[Function]}
@@ -66,7 +67,7 @@ Object {
       13
     </span>,
     <svg
-      className="sc-jrcTuL dsDDAg"
+      className="sc-jrcTuL cAVtTo"
       data-testid="itemsHandlerPlus"
       fill="currentColor"
       height="1em"
