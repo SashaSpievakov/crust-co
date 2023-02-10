@@ -37,6 +37,10 @@ describe('Selector Tests', () => {
       server.listen();
     });
 
+    afterAll(() => {
+      server.close();
+    });
+
     // beforeEach(() => {
     //   renderWithProviders(null, true, '/item/9');
     // });
@@ -44,10 +48,6 @@ describe('Selector Tests', () => {
     afterEach(() => {
       server.resetHandlers();
       setupStore().dispatch(itemAPI.util.resetApiState());
-    });
-
-    afterAll(() => {
-      server.close();
     });
 
     // test('checks thin type click', async () => {

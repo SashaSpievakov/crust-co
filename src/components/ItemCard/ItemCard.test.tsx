@@ -56,13 +56,13 @@ describe('ItemCard Tests', () => {
       server.listen();
     });
 
+    afterAll(() => {
+      server.close();
+    });
+
     afterEach(() => {
       server.resetHandlers();
       setupStore().dispatch(itemAPI.util.resetApiState());
-    });
-
-    afterAll(() => {
-      server.close();
     });
 
     test('checks link redirect to the Item page', async () => {
