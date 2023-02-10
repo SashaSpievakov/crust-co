@@ -14,6 +14,10 @@ const mixinButton = css`
   font-size: 27px;
   color: ${({ theme }) => theme.colors.secondary};
   cursor: pointer;
+
+  &:active {
+    transform: translateY(1px);
+  }
 `;
 
 const Counter = styled.section<CounterProps>`
