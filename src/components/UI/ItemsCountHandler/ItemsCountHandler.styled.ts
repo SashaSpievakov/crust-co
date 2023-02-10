@@ -13,6 +13,7 @@ interface MinusProps {
 const mixinButton = css`
   font-size: 27px;
   color: ${({ theme }) => theme.colors.secondary};
+  user-select: none;
   cursor: pointer;
 
   &:active {
