@@ -5,6 +5,7 @@ import {
   addItem,
   removeItem,
   selectItemPriceById,
+  selectCurrentItemCount,
 } from '../../../store/slices/cartSlice';
 import { ButtonAdd } from '../../../styles/Buttons.styled';
 import {
@@ -26,6 +27,9 @@ const ItemsCountHandler = ({
 }: IItemsCountHandler) => {
   const dispatch = useAppDispatch();
   const namesCount = useAppSelector(selectItemPriceById(id));
+  const currentItemCount = useAppSelector(
+    selectCurrentItemCount(name, activeSize, typeNames[activeType]),
+  );
 
   const onClickAdd = () => {
     const item: ICartItem = {
@@ -41,6 +45,8 @@ const ItemsCountHandler = ({
   };
 
   const onClickRemove = () => {
+    if (currentItemCount < 1) return;
+
     const item: ICartItem = {
       id,
       name,
@@ -55,7 +61,11 @@ const ItemsCountHandler = ({
 
   return namesCount ? (
     <Counter isFullScreen={isFullScreen}>
-      <Minus onClick={onClickRemove} data-testid="itemsHandlerMinus" />
+      <Minus
+        onClick={onClickRemove}
+        disabled={currentItemCount < 1}
+        data-testid="itemsHandlerMinus"
+      />
       <Count isFullScreen={isFullScreen}>{namesCount}</Count>
       <Plus onClick={onClickAdd} data-testid="itemsHandlerPlus" />
     </Counter>

@@ -50,7 +50,10 @@ export const cartSlice = createSlice({
           findItem.count--;
         } else {
           state.items = state.items.filter(
-            (obj) => obj.id !== action.payload.id,
+            (obj) =>
+              obj.name !== action.payload.name ||
+              obj.size !== action.payload.size ||
+              obj.type !== action.payload.type,
           );
         }
       }
@@ -92,6 +95,14 @@ export const selectItemPriceById = (id: string) => (state: RootState) => {
 
   return count;
 };
+export const selectCurrentItemCount =
+  (name: string, size: number, type: string) => (state: RootState) => {
+    const selectedItem: ICartItem | undefined = state.cart.items.find(
+      (obj) => obj.name === name && obj.size === size && obj.type === type,
+    );
+
+    return selectedItem ? selectedItem.count : 0;
+  };
 
 export const { addItem, removeItems, removeItem, clearItems } =
   cartSlice.actions;

@@ -6,6 +6,10 @@ interface CounterProps {
   isFullScreen?: boolean;
 }
 
+interface MinusProps {
+  disabled: boolean;
+}
+
 const mixinButton = css`
   font-size: 27px;
   color: ${({ theme }) => theme.colors.secondary};
@@ -23,9 +27,16 @@ const Counter = styled.section<CounterProps>`
   }
 `;
 
-const Minus = styled(HiMinus)`
+const Minus = styled(HiMinus)<MinusProps>`
   ${mixinButton}
   margin-right: 15px;
+
+  ${({ disabled }) =>
+    disabled &&
+    css`
+      color: ${({ theme }) => theme.colors.disabled};
+      cursor: auto;
+    `}
 `;
 
 const Plus = styled(HiPlus)`
