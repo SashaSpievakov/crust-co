@@ -63,24 +63,26 @@ describe('SearchItems Tests', () => {
       server.listen();
     });
 
+    afterAll(() => {
+      server.close();
+    });
+
+    beforeEach(() => {
+      renderWithProviders(null, true);
+    });
+
     afterEach(() => {
       server.resetHandlers();
       setupStore().dispatch(pizzasAPI.util.resetApiState());
     });
 
-    afterAll(() => {
-      server.close();
-    });
-
     test('filters items on the Home page', async () => {
-      renderWithProviders(null, true);
       const input = screen.getByRole('textbox');
 
-      userEvent.type(input, 'pepperoni');
+      await userEvent.type(input, '  Diablo     ', { delay: 200 });
 
-      expect(
-        await screen.findByRole('heading', { name: /pepperoni pizza/i }),
-      ).toBeInTheDocument();
+      const headings = screen.getAllByRole('heading', { level: 3 });
+      expect(headings[0]).toHaveTextContent(/diablo/i);
     });
   });
 });
