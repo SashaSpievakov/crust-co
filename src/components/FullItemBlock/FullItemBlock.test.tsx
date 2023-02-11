@@ -5,7 +5,7 @@ import userEvent from '@testing-library/user-event';
 import FullItemBlock from './FullItemBlock';
 import rendererWithProviders from '../../tests/helpers/rendererWithProviders';
 import renderWithProviders from '../../tests/helpers/renderWithProviders';
-import { mockItem } from '../../tests/mocks/api/mockData';
+import { mockItem } from '../../tests/mocks/mockData/mockData';
 
 describe('FullItemBlock Tests', () => {
   test('renders the FullItemBlock component', () => {

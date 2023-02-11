@@ -1,5 +1,5 @@
 import { rest } from 'msw';
-import { mockItem, mockItems } from './mockData';
+import { mockItem, mockItems } from '../mockData/mockData';
 
 const handlers = [
   rest.get(

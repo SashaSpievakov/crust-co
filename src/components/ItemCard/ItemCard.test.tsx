@@ -5,7 +5,7 @@ import userEvent from '@testing-library/user-event';
 import ItemCard from './ItemCard';
 import rendererWithProviders from '../../tests/helpers/rendererWithProviders';
 import renderWithProviders from '../../tests/helpers/renderWithProviders';
-import { mockItem } from '../../tests/mocks/api/mockData';
+import { mockItem } from '../../tests/mocks/mockData/mockData';
 import { setupStore } from '../../store/store';
 import server from '../../tests/mocks/api/server';
 import itemAPI from '../../services/ItemService';

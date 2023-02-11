@@ -6,7 +6,7 @@ import ItemsCountHandler from './ItemsCountHandler';
 import rendererWithAllProviders from '../../../tests/helpers/rendererWithProviders';
 import renderWithProviders from '../../../tests/helpers/renderWithProviders';
 import { typeNames } from '../../FullItemBlock/FullItemBlock';
-import { CartItemsMockProps } from '../../../tests/mocks/api/mockData';
+import { CartItemsMockProps } from '../../../tests/mocks/mockData/mockData';
 import { IItemsCountHandler } from '../../../models/IItemsCountHandler';
 
 const ItemsCountHandlerMockProps: IItemsCountHandler = {

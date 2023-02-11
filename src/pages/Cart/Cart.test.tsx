@@ -5,7 +5,7 @@ import userEvent from '@testing-library/user-event';
 import Cart from './Cart';
 import rendererWithProviders from '../../tests/helpers/rendererWithProviders';
 import renderWithProviders from '../../tests/helpers/renderWithProviders';
-import { CartItemsMockProps } from '../../tests/mocks/api/mockData';
+import { CartItemsMockProps } from '../../tests/mocks/mockData/mockData';
 
 describe('Cart Tests', () => {
   test('renders the Cart page', () => {

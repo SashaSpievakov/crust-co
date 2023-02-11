@@ -9,7 +9,7 @@ import {
   CartItemMockProps,
   CartItemMockProps2,
   CartItemsMockProps,
-} from '../../tests/mocks/api/mockData';
+} from '../../tests/mocks/mockData/mockData';
 
 describe('CartItem Tests', () => {
   test('renders the CartItem component', () => {
