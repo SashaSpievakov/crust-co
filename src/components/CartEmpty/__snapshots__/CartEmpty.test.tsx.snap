@@ -33,6 +33,6 @@ Object {
   "props": Object {
     "className": "sc-ftTHYK gCqVqR",
   },
-  "type": "article",
+  "type": "section",
 }
 `;

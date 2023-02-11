@@ -3,7 +3,7 @@
 exports[`Cart Tests renders the Cart page 1`] = `
 Object {
   "children": Array [
-    <article
+    <section
       className="sc-bqWxrE ktLVrO"
     >
       <h2>
@@ -32,7 +32,7 @@ Object {
           Go Back
         </span>
       </a>
-    </article>,
+    </section>,
   ],
   "props": Object {},
   "type": "article",
