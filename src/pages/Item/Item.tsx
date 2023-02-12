@@ -16,7 +16,7 @@ const Item = () => {
   );
 
   return (
-    <article>
+    <article data-testid="itemPage">
       {isLoading ? (
         <Loading />
       ) : isSuccess ? (
