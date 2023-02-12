@@ -1,0 +1,561 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Home Tests renders the Home page 1`] = `
+<article
+  data-testid="homePage"
+>
+  <section
+    class="sc-gswNZR czkfLZ"
+  >
+    <section>
+      <ul
+        class="sc-eDvSVe ffLqlg"
+      >
+        <li
+          aria-current="true"
+          class="sc-jSUZER dOnGXf"
+        >
+          All
+        </li>
+        <li
+          aria-current="false"
+          class="sc-jSUZER edniGv"
+        >
+          Meat
+        </li>
+        <li
+          aria-current="false"
+          class="sc-jSUZER edniGv"
+        >
+          Vegetarian
+        </li>
+        <li
+          aria-current="false"
+          class="sc-jSUZER edniGv"
+        >
+          Grill
+        </li>
+        <li
+          aria-current="false"
+          class="sc-jSUZER edniGv"
+        >
+          Spicy
+        </li>
+      </ul>
+    </section>
+    <section
+      class="sc-gKPRtg gwEttj"
+    >
+      <div
+        class="sc-iBYQkv dCqMul"
+      >
+        <svg
+          class="sc-pyfCe hSPgnD"
+          data-testid="popupIcon"
+          fill="currentColor"
+          height="1em"
+          stroke="currentColor"
+          stroke-width="0"
+          viewBox="0 0 16 16"
+          width="1em"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z"
+          />
+        </svg>
+        <b>
+          Sort by
+        </b>
+        <span
+          data-testid="currenChosenSortName"
+        >
+          rating
+        </span>
+      </div>
+      <section
+        aria-hidden="true"
+        class="sc-jrcTuL bYVhnI"
+      >
+        <ul
+          aria-hidden="true"
+          data-testid="popupList"
+        >
+          <li
+            class="sc-kDvujY jOFJsk"
+          >
+            rating
+          </li>
+          <li
+            class="sc-kDvujY hmdAGz"
+          >
+            price
+          </li>
+          <li
+            class="sc-kDvujY hmdAGz"
+          >
+            A to Z
+          </li>
+        </ul>
+      </section>
+    </section>
+  </section>
+  <section
+    class="sc-gswNZR sc-dkrFOg czkfLZ iwKCEU"
+  >
+    <h2
+      class="sc-bcXHqe fqevtx"
+    >
+      All Pizzas
+    </h2>
+    <section
+      class="sc-ipEyDJ vYald"
+    >
+      <svg
+        class="sc-csuSiG dBFuyl"
+        data-testid="searchIcon"
+        fill="currentColor"
+        height="1em"
+        stroke="currentColor"
+        stroke-width="0"
+        viewBox="0 0 16 16"
+        width="1em"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"
+        />
+      </svg>
+      <input
+        class="sc-eDWCr izkoNy"
+        placeholder="Search..."
+        value=""
+      />
+    </section>
+  </section>
+  <section
+    class="sc-cabOPr gPzXiB"
+  >
+    <article
+      class="sc-iJnaPW hDZZgg"
+    >
+      <a
+        href="/item/3"
+      >
+        <picture>
+          <source
+            srcset="./assets/img/pizza3.webp"
+            type="image/webp"
+          />
+          <source
+            srcset="./assets/img/pizza3.png"
+            type="image/png"
+          />
+          <img
+            alt="Shrimp Pizza pizza"
+            class="sc-gikAfH hgKOzH"
+            height="250"
+            src="./assets/img/pizza3.png"
+            width="250"
+          />
+        </picture>
+        <h3
+          class="sc-ezOQGI eweGB"
+        >
+          Shrimp Pizza
+        </h3>
+      </a>
+      <section
+        class="sc-cwSeag rMnCt"
+      >
+        <ul>
+          <li
+            class="sc-lllmON bsZNcD"
+          >
+            traditional
+          </li>
+          <li
+            class="sc-lllmON eFmiEx"
+          >
+            thin
+          </li>
+        </ul>
+        <ul>
+          <li
+            class="sc-lllmON bsZNcD"
+          >
+            12
+             inch
+          </li>
+          <li
+            class="sc-lllmON eFmiEx"
+          >
+            14
+             inch
+          </li>
+          <li
+            class="sc-lllmON eFmiEx"
+          >
+            16
+             inch
+          </li>
+        </ul>
+      </section>
+      <section
+        class="sc-bYMpWt zcMWl"
+      >
+        <h3
+          class="sc-kMjNwy jGTtZN"
+        >
+          10
+          $
+        </h3>
+        <button
+          class="sc-ksBlkl sc-bjfHbI sc-dIfARi dHmRYV crUVQb eHgUxF"
+        >
+          <svg
+            class="sc-iveFHk cVKlgm"
+            fill="currentColor"
+            height="1em"
+            stroke="currentColor"
+            stroke-width="0"
+            viewBox="0 0 16 16"
+            width="1em"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M8 0a1 1 0 0 1 1 1v6h6a1 1 0 1 1 0 2H9v6a1 1 0 1 1-2 0V9H1a1 1 0 0 1 0-2h6V1a1 1 0 0 1 1-1z"
+            />
+          </svg>
+          <span>
+            Add
+          </span>
+        </button>
+      </section>
+    </article>
+    <article
+      class="sc-iJnaPW hDZZgg"
+    >
+      <a
+        href="/item/2"
+      >
+        <picture>
+          <source
+            srcset="./assets/img/pizza2.webp"
+            type="image/webp"
+          />
+          <source
+            srcset="./assets/img/pizza2.png"
+            type="image/png"
+          />
+          <img
+            alt="Pepperoni Pizza pizza"
+            class="sc-gikAfH hgKOzH"
+            height="250"
+            src="./assets/img/pizza2.png"
+            width="250"
+          />
+        </picture>
+        <h3
+          class="sc-ezOQGI eweGB"
+        >
+          Pepperoni Pizza
+        </h3>
+      </a>
+      <section
+        class="sc-cwSeag rMnCt"
+      >
+        <ul>
+          <li
+            class="sc-lllmON bsZNcD"
+          >
+            traditional
+          </li>
+        </ul>
+        <ul>
+          <li
+            class="sc-lllmON bsZNcD"
+          >
+            12
+             inch
+          </li>
+          <li
+            class="sc-lllmON eFmiEx"
+          >
+            14
+             inch
+          </li>
+        </ul>
+      </section>
+      <section
+        class="sc-bYMpWt zcMWl"
+      >
+        <h3
+          class="sc-kMjNwy jGTtZN"
+        >
+          12
+          $
+        </h3>
+        <button
+          class="sc-ksBlkl sc-bjfHbI sc-dIfARi dHmRYV crUVQb eHgUxF"
+        >
+          <svg
+            class="sc-iveFHk cVKlgm"
+            fill="currentColor"
+            height="1em"
+            stroke="currentColor"
+            stroke-width="0"
+            viewBox="0 0 16 16"
+            width="1em"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M8 0a1 1 0 0 1 1 1v6h6a1 1 0 1 1 0 2H9v6a1 1 0 1 1-2 0V9H1a1 1 0 0 1 0-2h6V1a1 1 0 0 1 1-1z"
+            />
+          </svg>
+          <span>
+            Add
+          </span>
+        </button>
+      </section>
+    </article>
+    <article
+      class="sc-iJnaPW hDZZgg"
+    >
+      <a
+        href="/item/6"
+      >
+        <picture>
+          <source
+            srcset="./assets/img/pizza6.webp"
+            type="image/webp"
+          />
+          <source
+            srcset="./assets/img/pizza6.png"
+            type="image/png"
+          />
+          <img
+            alt="Diablo pizza"
+            class="sc-gikAfH hgKOzH"
+            height="250"
+            src="./assets/img/pizza6.png"
+            width="250"
+          />
+        </picture>
+        <h3
+          class="sc-ezOQGI eweGB"
+        >
+          Diablo
+        </h3>
+      </a>
+      <section
+        class="sc-cwSeag rMnCt"
+      >
+        <ul>
+          <li
+            class="sc-lllmON bsZNcD"
+          >
+            traditional
+          </li>
+          <li
+            class="sc-lllmON eFmiEx"
+          >
+            thin
+          </li>
+        </ul>
+        <ul>
+          <li
+            class="sc-lllmON bsZNcD"
+          >
+            12
+             inch
+          </li>
+          <li
+            class="sc-lllmON eFmiEx"
+          >
+            16
+             inch
+          </li>
+        </ul>
+      </section>
+      <section
+        class="sc-bYMpWt zcMWl"
+      >
+        <h3
+          class="sc-kMjNwy jGTtZN"
+        >
+          15
+          $
+        </h3>
+        <button
+          class="sc-ksBlkl sc-bjfHbI sc-dIfARi dHmRYV crUVQb eHgUxF"
+        >
+          <svg
+            class="sc-iveFHk cVKlgm"
+            fill="currentColor"
+            height="1em"
+            stroke="currentColor"
+            stroke-width="0"
+            viewBox="0 0 16 16"
+            width="1em"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M8 0a1 1 0 0 1 1 1v6h6a1 1 0 1 1 0 2H9v6a1 1 0 1 1-2 0V9H1a1 1 0 0 1 0-2h6V1a1 1 0 0 1 1-1z"
+            />
+          </svg>
+          <span>
+            Add
+          </span>
+        </button>
+      </section>
+    </article>
+  </section>
+</article>
+`;
+
+exports[`Home Tests renders the Home page with a server requesr error 1`] = `
+<article
+  data-testid="homePage"
+>
+  <section
+    class="sc-gswNZR czkfLZ"
+  >
+    <section>
+      <ul
+        class="sc-eDvSVe ffLqlg"
+      >
+        <li
+          aria-current="true"
+          class="sc-jSUZER dOnGXf"
+        >
+          All
+        </li>
+        <li
+          aria-current="false"
+          class="sc-jSUZER edniGv"
+        >
+          Meat
+        </li>
+        <li
+          aria-current="false"
+          class="sc-jSUZER edniGv"
+        >
+          Vegetarian
+        </li>
+        <li
+          aria-current="false"
+          class="sc-jSUZER edniGv"
+        >
+          Grill
+        </li>
+        <li
+          aria-current="false"
+          class="sc-jSUZER edniGv"
+        >
+          Spicy
+        </li>
+      </ul>
+    </section>
+    <section
+      class="sc-gKPRtg gwEttj"
+    >
+      <div
+        class="sc-iBYQkv dCqMul"
+      >
+        <svg
+          class="sc-pyfCe hSPgnD"
+          data-testid="popupIcon"
+          fill="currentColor"
+          height="1em"
+          stroke="currentColor"
+          stroke-width="0"
+          viewBox="0 0 16 16"
+          width="1em"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z"
+          />
+        </svg>
+        <b>
+          Sort by
+        </b>
+        <span
+          data-testid="currenChosenSortName"
+        >
+          rating
+        </span>
+      </div>
+      <section
+        aria-hidden="true"
+        class="sc-jrcTuL bYVhnI"
+      >
+        <ul
+          aria-hidden="true"
+          data-testid="popupList"
+        >
+          <li
+            class="sc-kDvujY jOFJsk"
+          >
+            rating
+          </li>
+          <li
+            class="sc-kDvujY hmdAGz"
+          >
+            price
+          </li>
+          <li
+            class="sc-kDvujY hmdAGz"
+          >
+            A to Z
+          </li>
+        </ul>
+      </section>
+    </section>
+  </section>
+  <section
+    class="sc-gswNZR sc-dkrFOg czkfLZ iwKCEU"
+  >
+    <h2
+      class="sc-bcXHqe fqevtx"
+    >
+      All Pizzas
+    </h2>
+    <section
+      class="sc-ipEyDJ vYald"
+    >
+      <svg
+        class="sc-csuSiG dBFuyl"
+        data-testid="searchIcon"
+        fill="currentColor"
+        height="1em"
+        stroke="currentColor"
+        stroke-width="0"
+        viewBox="0 0 16 16"
+        width="1em"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"
+        />
+      </svg>
+      <input
+        class="sc-eDWCr izkoNy"
+        placeholder="Search..."
+        value=""
+      />
+    </section>
+  </section>
+  <section
+    class="sc-hLBbgP hOOIrP"
+  >
+    <h2>
+      Request Error
+    </h2>
+    <p>
+      Coudn't get store items. Try your request again later.
+    </p>
+  </section>
+</article>
+`;

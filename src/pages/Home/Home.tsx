@@ -35,7 +35,7 @@ const Home = () => {
   }, [activeCategory, sortSearchParam, data, isSuccess]);
 
   return (
-    <article>
+    <article data-testid="homePage">
       <Top>
         <Categories />
         <Sort sortNamesArr={sortNamesArr} />
