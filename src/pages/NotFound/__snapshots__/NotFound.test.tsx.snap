@@ -1,0 +1,26 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`NotFound Tests renders the NotFound page 1`] = `
+Object {
+  "children": Array [
+    <h1
+      className="sc-pyfCe hhzuux"
+    >
+      The page wasn't found
+    </h1>,
+    <a
+      className="sc-bcXHqe sc-gswNZR fAfvZN llPphw"
+      href="/"
+      onClick={[Function]}
+    >
+      <span>
+        Go Back
+      </span>
+    </a>,
+  ],
+  "props": Object {
+    "className": "sc-ftTHYK grHsNW",
+  },
+  "type": "article",
+}
+`;
