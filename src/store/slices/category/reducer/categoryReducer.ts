@@ -1,7 +1,5 @@
 import { createSlice, PayloadAction } from '@reduxjs/toolkit';
 
-import { RootState } from '../store';
-
 interface CategorySliceState {
   index: number;
 }
@@ -19,8 +17,6 @@ const categorySlice = createSlice({
     },
   },
 });
-
-export const selectCategory = (state: RootState) => state.activeCategory.index;
 
 export const { setCategory } = categorySlice.actions;
 

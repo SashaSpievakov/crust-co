@@ -4,7 +4,7 @@ import {
   PreloadedState,
 } from '@reduxjs/toolkit';
 
-import categorySlice from './slices/categorySlice';
+import categorySlice from './slices/category/reducer/categoryReducer';
 import sortSlice from './slices/sortSlice';
 import searchSlice from './slices/searchSlice';
 import theme from './slices/themeSlice';
