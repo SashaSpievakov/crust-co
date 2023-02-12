@@ -3,11 +3,11 @@ import { createSlice, PayloadAction } from '@reduxjs/toolkit';
 import { RootState } from '../store';
 import getCartFromLS from '../../utils/getCartFromLS';
 import { ICartItem } from '../../models/ICartItem';
-import { CartSliceState } from '../../models/CartSliceState';
+import { ICartSliceState } from '../../models/CartSliceState';
 
 const { items, totalPrice, itemsCount } = getCartFromLS();
 
-const initialState: CartSliceState = {
+const initialState: ICartSliceState = {
   totalPrice,
   items,
   itemsCount,
