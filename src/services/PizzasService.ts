@@ -4,7 +4,7 @@ import { IPizzaItem } from '../models/IPizzaItem';
 
 interface IFetchItems {
   activeCategory: number;
-  sortedPropertyName: string;
+  sortSearchParam: string;
 }
 
 const pizzasAPI = createApi({
@@ -15,10 +15,10 @@ const pizzasAPI = createApi({
   tagTypes: ['Pizzas'],
   endpoints: (build) => ({
     fetchPizzas: build.query<IPizzaItem[], IFetchItems>({
-      query: ({ activeCategory, sortedPropertyName }) => ({
+      query: ({ activeCategory, sortSearchParam }) => ({
         url: `pizza-items?${
           activeCategory > 0 ? `category=${activeCategory}&` : ''
-        }sortBy=${sortedPropertyName}`,
+        }sortBy=${sortSearchParam}`,
       }),
       providesTags: () => ['Pizzas'],
     }),

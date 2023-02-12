@@ -1,15 +1,16 @@
 import { useEffect, useState } from 'react';
 
 import { Title, Block, Top, Error } from './Home.styled';
+import { useAppSelector } from '../../hooks/reduxHooks';
 import { selectSort } from '../../store/slices/sortSlice';
 import { selectCategory } from '../../store/slices/categorySlice';
 import Categories from '../../components/Categories/Categories';
 import Sort from '../../components/Sort/Sort';
 import SearchItems from '../../components/SearchItems/SearchItems';
-import { IPizzaItem } from '../../models/IPizzaItem';
-import { useAppSelector } from '../../hooks/reduxHooks';
-import pizzasAPI from '../../services/PizzasService';
 import ProductsContainer from '../../components/ProductsContainer/ProductsContainer';
+import { IPizzaItem } from '../../models/IPizzaItem';
+import pizzasAPI from '../../services/PizzasService';
+import modifySearchParamsName from '../../utils/modifySearchParamsName';
 
 export const sortNamesArr: string[] = ['rating', 'price', 'A to Z'];
 
@@ -18,21 +19,12 @@ const Home = () => {
   const activeCategory = useAppSelector(selectCategory);
   const activeSort = useAppSelector(selectSort);
 
-  const sortedActiveName = sortNamesArr[activeSort];
-
-  const sortPropertyName = (property: string) => {
-    if (property === 'A to Z') {
-      return 'name&order=asc';
-    }
-    return `${property}&order=desc`;
-  };
-
-  const sortedPropertyName = sortPropertyName(sortedActiveName);
+  const sortSearchParam = modifySearchParamsName(sortNamesArr[activeSort]);
 
   const { data, isSuccess, isError, isLoading } = pizzasAPI.useFetchPizzasQuery(
     {
       activeCategory,
-      sortedPropertyName,
+      sortSearchParam,
     },
   );
 
@@ -40,7 +32,7 @@ const Home = () => {
     if (isSuccess) {
       setPizzas(data);
     }
-  }, [activeCategory, sortedPropertyName, data, isSuccess]);
+  }, [activeCategory, sortSearchParam, data, isSuccess]);
 
   return (
     <article>
