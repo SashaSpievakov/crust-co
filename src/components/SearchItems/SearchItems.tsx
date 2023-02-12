@@ -2,10 +2,8 @@ import React, { memo, useCallback, useEffect, useRef, useState } from 'react';
 import debounce from 'lodash.debounce';
 
 import { useAppDispatch, useAppSelector } from '../../hooks/reduxHooks';
-import {
-  selectSearchValue,
-  setSearchValue,
-} from '../../store/slices/searchSlice';
+import { setSearchValue } from '../../store/slices/search/reducer/searchValueReducer';
+import { selectSearchValue } from '../../store/slices/search/selectors/selectSearchValue';
 import { Wrapper, SearchIcon, Input, Cross } from './SearchItems.styled';
 
 const SearchItems = memo(() => {

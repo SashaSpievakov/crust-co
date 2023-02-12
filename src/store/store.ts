@@ -6,7 +6,7 @@ import {
 
 import categorySlice from './slices/category/reducer/categoryReducer';
 import sortSlice from './slices/sortSlice';
-import searchSlice from './slices/searchSlice';
+import searchSlice from './slices/search/reducer/searchValueReducer';
 import theme from './slices/themeSlice';
 import cart from './slices/cartSlice';
 import itemAPI from '../services/ItemService';

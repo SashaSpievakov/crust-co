@@ -1,6 +1,6 @@
 import { useAppSelector } from '../../hooks/reduxHooks';
+import { selectSearchValue } from '../../store/slices/search/selectors/selectSearchValue';
 import { IPizzaItem } from '../../models/IPizzaItem';
-import { selectSearchValue } from '../../store/slices/searchSlice';
 import ItemCard from '../ItemCard/ItemCard';
 import Skeleton from '../UI/Skeleton/Skeleton';
 import { Container, SearchError } from './ProductsContainer.styled';
