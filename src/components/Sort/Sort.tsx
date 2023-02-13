@@ -1,7 +1,8 @@
 import { useEffect, useState, useRef, memo } from 'react';
 import { useAppDispatch, useAppSelector } from '../../hooks/reduxHooks';
 
-import { selectSort, setSort } from '../../store/slices/sortSlice';
+import { setSort } from '../../store/slices/sort/reducer/sortReducer';
+import { selectSort } from '../../store/slices/sort/selectors/selectSort';
 import { Wrapper, Label, ArrowUp, ArrowDown, Popup, Li } from './Sort.styled';
 
 interface CategoriesProps {

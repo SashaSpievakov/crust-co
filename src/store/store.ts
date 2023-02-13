@@ -5,7 +5,7 @@ import {
 } from '@reduxjs/toolkit';
 
 import categorySlice from './slices/category/reducer/categoryReducer';
-import sortSlice from './slices/sortSlice';
+import sortSlice from './slices/sort/reducer/sortReducer';
 import searchSlice from './slices/search/reducer/searchValueReducer';
 import theme from './slices/themeSlice';
 import cart from './slices/cartSlice';

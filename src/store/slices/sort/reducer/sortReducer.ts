@@ -1,7 +1,5 @@
 import { createSlice, PayloadAction } from '@reduxjs/toolkit';
 
-import { RootState } from '../store';
-
 interface SortSliceState {
   index: number;
 }
@@ -19,8 +17,6 @@ const sortSlice = createSlice({
     },
   },
 });
-
-export const selectSort = (state: RootState) => state.activeSort.index;
 
 export const { setSort } = sortSlice.actions;
 

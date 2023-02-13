@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react';
 
 import { Title, Block, Top, Error } from './Home.styled';
 import { useAppSelector } from '../../hooks/reduxHooks';
-import { selectSort } from '../../store/slices/sortSlice';
+import { selectSort } from '../../store/slices/sort/selectors/selectSort';
 import { selectCategory } from '../../store/slices/category/selectors/selectCategory';
 import Categories from '../../components/Categories/Categories';
 import Sort from '../../components/Sort/Sort';
