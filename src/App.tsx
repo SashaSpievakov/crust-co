@@ -1,9 +1,9 @@
 import { ThemeProvider } from 'styled-components';
 
 import Global from './styles/Global.styled';
-import { selectIsLight } from './store/slices/themeSlice';
 import { useAppSelector } from './hooks/reduxHooks';
 import { lightTheme, darkTheme } from './styles/Themes.styled';
+import { selectIsLight } from './store/slices/theme/selectors/selectIsLight';
 import AppRouter from './router/AppRouter';
 
 function App() {

@@ -1,7 +1,6 @@
 import { createSlice, PayloadAction } from '@reduxjs/toolkit';
 
-import getTheme from '../../utils/getTheme';
-import { RootState } from '../store';
+import getTheme from '../../../../utils/getTheme';
 
 interface ThemeState {
   isLight: boolean;
@@ -20,8 +19,6 @@ export const themeSlice = createSlice({
     },
   },
 });
-
-export const selectIsLight = (state: RootState) => state.theme.isLight;
 
 export const { setTheme } = themeSlice.actions;
 
