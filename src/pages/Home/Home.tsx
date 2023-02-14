@@ -10,7 +10,7 @@ import SearchItems from '../../components/SearchItems/SearchItems';
 import ProductsContainer from '../../components/ProductsContainer/ProductsContainer';
 import { IPizzaItem } from '../../models/IPizzaItem';
 import pizzasAPI from '../../services/PizzasService';
-import modifySearchParamsName from '../../utils/modifySearchParamsName';
+import modifySearchParamsName from '../../utils/modifySearchParamsName/modifySearchParamsName';
 
 export const sortNamesArr: string[] = ['rating', 'price', 'A to Z'];
 
