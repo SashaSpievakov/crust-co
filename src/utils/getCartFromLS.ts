@@ -1,5 +1,5 @@
 import calTotalCount from './calcTotalCount/calcTotalCount';
-import calTotalPrice from './calcTotalPrice';
+import calTotalPrice from './calcTotalPrice/calcTotalPrice';
 
 export default function getCartFromLS() {
   const data = localStorage.getItem('cart');
