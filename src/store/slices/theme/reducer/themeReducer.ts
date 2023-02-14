@@ -1,6 +1,6 @@
 import { createSlice, PayloadAction } from '@reduxjs/toolkit';
 
-import getTheme from '../../../../utils/getTheme';
+import getTheme from '../../../../utils/getThemeFromLs/getThemeFromLs';
 
 interface ThemeState {
   isLight: boolean;

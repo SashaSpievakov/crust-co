@@ -23,19 +23,15 @@ const Header = () => {
 
   useEffect(() => {
     if (isMounted.current) {
-      const json = JSON.stringify(items);
-      localStorage.setItem('cart', json);
+      const jsonCart = JSON.stringify(items);
+      const jsonTheme = JSON.stringify(isLight);
+
+      localStorage.setItem('cart', jsonCart);
+      localStorage.setItem('isLight', jsonTheme);
     }
 
     isMounted.current = true;
-  }, [items]);
-
-  useEffect(() => {
-    if (isMounted.current) {
-      const json = JSON.stringify(isLight);
-      localStorage.setItem('isLight', json);
-    }
-  }, [isLight]);
+  }, [items, isLight]);
 
   const changeThemes = () => {
     dispatch(setTheme(!isLight));
