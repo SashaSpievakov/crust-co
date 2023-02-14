@@ -4,9 +4,9 @@ import { IItemsCountHandler } from '../../../models/IItemsCountHandler';
 import {
   addItem,
   removeItem,
-  selectItemPriceById,
-  selectCurrentItemCount,
-} from '../../../store/slices/cartSlice';
+} from '../../../store/slices/cart/reducer/cartReducer';
+import { selectItemsCount } from '../../../store/slices/cart/selectors/selectItemsCount/selectItemsCount';
+import { selectCurrentItemCount } from '../../../store/slices/cart/selectors/selectCurrentItemCount/selectCurrentItemCount';
 import { ButtonAdd } from '../../../styles/Buttons.styled';
 import {
   Counter,
@@ -26,7 +26,7 @@ const ItemsCountHandler = ({
   isFullScreen = false,
 }: IItemsCountHandler) => {
   const dispatch = useAppDispatch();
-  const namesCount = useAppSelector(selectItemPriceById(id));
+  const namesCount = useAppSelector(selectItemsCount(id));
   const currentItemCount = useAppSelector(
     selectCurrentItemCount(name, activeSize, typeNames[activeType]),
   );

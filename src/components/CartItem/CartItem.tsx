@@ -1,7 +1,11 @@
 import { memo } from 'react';
 import { BsDashLg, BsPlusLg } from 'react-icons/bs';
 
-import { addItem, removeItem, removeItems } from '../../store/slices/cartSlice';
+import {
+  addItem,
+  removeItem,
+  removeItems,
+} from '../../store/slices/cart/reducer/cartReducer';
 import { ButtonCircle } from '../../styles/Buttons.styled';
 import {
   Section,

@@ -1,7 +1,8 @@
 import { Link } from 'react-router-dom';
 import { shallowEqual } from 'react-redux';
 
-import { clearItems, selectCart } from '../../store/slices/cartSlice';
+import { clearCart } from '../../store/slices/cart/reducer/cartReducer';
+import { selectCart } from '../../store/slices/cart/selectors/selectCart/selectCart';
 import CartItem from '../../components/CartItem/CartItem';
 import CartEmpty from '../../components/CartEmpty/CartEmpty';
 import { ButtonBack, ButtonPay } from '../../styles/Buttons.styled';
@@ -27,7 +28,7 @@ const Cart = () => {
   const dispatch = useAppDispatch();
 
   const onClearClick = () => {
-    dispatch(clearItems());
+    dispatch(clearCart());
   };
 
   return (

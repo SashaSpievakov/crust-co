@@ -1,16 +1,15 @@
 import { createSlice, PayloadAction } from '@reduxjs/toolkit';
 
-import { RootState } from '../store';
-import getCartFromLS from '../../utils/getCartFromLS';
-import { ICartItem } from '../../models/ICartItem';
-import { ICartSliceState } from '../../models/CartSliceState';
+import getCartFromLS from '../../../../utils/getCartFromLS';
+import { ICartItem } from '../../../../models/ICartItem';
+import { ICartSliceState } from '../../../../models/CartSliceState';
 
 const { items, totalPrice, itemsCount } = getCartFromLS();
 
 const initialState: ICartSliceState = {
-  totalPrice,
   items,
   itemsCount,
+  totalPrice,
 };
 
 export const cartSlice = createSlice({
@@ -56,12 +55,21 @@ export const cartSlice = createSlice({
               obj.type !== action.payload.type,
           );
         }
-      }
+      } else return;
 
       state.itemsCount -= 1;
       state.totalPrice -= action.payload.price;
     },
     removeItems: (state, action: PayloadAction<ICartItem>) => {
+      const findItem = state.items.find(
+        (obj) =>
+          obj.name === action.payload.name &&
+          obj.size === action.payload.size &&
+          obj.type === action.payload.type,
+      );
+
+      if (!findItem) return;
+
       state.items = state.items.filter(
         (obj) =>
           obj.name !== action.payload.name ||
@@ -72,7 +80,7 @@ export const cartSlice = createSlice({
       state.itemsCount -= action.payload.count;
       state.totalPrice -= action.payload.price * action.payload.count;
     },
-    clearItems: (state) => {
+    clearCart: (state) => {
       state.items = [];
       state.itemsCount = 0;
       state.totalPrice = 0;
@@ -80,31 +88,7 @@ export const cartSlice = createSlice({
   },
 });
 
-export const selectCart = (state: RootState) => state.cart;
-export const selectItemPriceById = (id: string) => (state: RootState) => {
-  const selectedItems: ICartItem[] = state.cart.items.filter(
-    (obj) => obj.id === id,
-  );
-
-  const count: number = selectedItems.reduce(
-    (currenCount: number, item: ICartItem) => {
-      return item.count + currenCount;
-    },
-    0,
-  );
-
-  return count;
-};
-export const selectCurrentItemCount =
-  (name: string, size: number, type: string) => (state: RootState) => {
-    const selectedItem: ICartItem | undefined = state.cart.items.find(
-      (obj) => obj.name === name && obj.size === size && obj.type === type,
-    );
-
-    return selectedItem ? selectedItem.count : 0;
-  };
-
-export const { addItem, removeItems, removeItem, clearItems } =
+export const { addItem, removeItems, removeItem, clearCart } =
   cartSlice.actions;
 
 export default cartSlice.reducer;

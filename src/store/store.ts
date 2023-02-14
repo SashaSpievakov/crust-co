@@ -8,7 +8,7 @@ import categorySlice from './slices/category/reducer/categoryReducer';
 import sortSlice from './slices/sort/reducer/sortReducer';
 import searchSlice from './slices/search/reducer/searchValueReducer';
 import theme from './slices/theme/reducer/themeReducer';
-import cart from './slices/cartSlice';
+import cart from './slices/cart/reducer/cartReducer';
 import itemAPI from '../services/ItemService';
 import pizzasAPI from '../services/PizzasService';
 
