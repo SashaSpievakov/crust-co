@@ -13,7 +13,7 @@ describe('tests themeReducer', () => {
     });
   });
 
-  test('checks setTheme action with an empty state', () => {
+  test('checks setTheme action with an undefined state', () => {
     expect(themeReducer(undefined, setTheme(false))).toEqual({
       isLight: false,
     });

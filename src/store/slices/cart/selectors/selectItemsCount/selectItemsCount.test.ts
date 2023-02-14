@@ -42,7 +42,7 @@ describe('tests selectItemsCount', () => {
     ).toBe(20);
   });
 
-  test('works with an undefined state', () => {
+  test('works with an empty state', () => {
     expect(selectItemsCount('15')({} as RootState)).toBe(0);
   });
 });

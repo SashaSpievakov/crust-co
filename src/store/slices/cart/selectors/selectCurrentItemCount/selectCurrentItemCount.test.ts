@@ -27,7 +27,7 @@ describe('tests selectCurrentItemCount', () => {
     ).toBe(0);
   });
 
-  test('works with an undefined state', () => {
+  test('works with an empty state', () => {
     expect(
       selectCurrentItemCount('Pepperoni Pizza', 16, 'thin')({} as RootState),
     ).toBe(0);

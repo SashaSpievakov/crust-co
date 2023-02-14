@@ -7,7 +7,7 @@ describe('tests searchValueReducer', () => {
     ).toEqual({ value: 'pepperoni' });
   });
 
-  test('checks setSearchValue action with an empty state', () => {
+  test('checks setSearchValue action with an undefined state', () => {
     expect(searchValueReducer(undefined, setSearchValue('pizza'))).toEqual({
       value: 'pizza',
     });

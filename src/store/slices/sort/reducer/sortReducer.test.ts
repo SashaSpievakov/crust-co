@@ -5,7 +5,7 @@ describe('tests sortReducer', () => {
     expect(sortReducer({ index: 0 }, setSort(1))).toEqual({ index: 1 });
   });
 
-  test('checks setSort action with an empty state', () => {
+  test('checks setSort action with an undefined state', () => {
     expect(sortReducer(undefined, setSort(2))).toEqual({ index: 2 });
   });
 });

@@ -5,7 +5,7 @@ describe('tests categoryReducer', () => {
     expect(categoryReducer({ index: 0 }, setCategory(2))).toEqual({ index: 2 });
   });
 
-  test('checks setCategory action with an empty state', () => {
+  test('checks setCategory action with an undefined state', () => {
     expect(categoryReducer(undefined, setCategory(1))).toEqual({ index: 1 });
   });
 });
