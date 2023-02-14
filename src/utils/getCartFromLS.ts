@@ -1,4 +1,4 @@
-import calTotalCount from './calcTotalCount';
+import calTotalCount from './calcTotalCount/calcTotalCount';
 import calTotalPrice from './calcTotalPrice';
 
 export default function getCartFromLS() {
