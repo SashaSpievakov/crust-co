@@ -5,7 +5,7 @@ const handlers = [
   rest.get(
     'https://6344adb1dcae733e8fe3067a.mockapi.io/pizza-items/9',
     (req, res, ctx) => {
-      return res(ctx.status(200), ctx.json(mockItem), ctx.delay(20));
+      return res(ctx.json(mockItem), ctx.status(200), ctx.delay(20));
     },
   ),
   rest.get(
