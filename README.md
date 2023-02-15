@@ -19,8 +19,8 @@ Web Store Application created with React includes multiple pages and SPA support
 ### Main
 
 - React
-- Redux Toolkit
 - TypeScript
+- Redux Toolkit
 - Styled Components
 - RTK Query
 - React Router
