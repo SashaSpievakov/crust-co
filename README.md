@@ -25,7 +25,7 @@ Web Store Application created with React includes multiple pages and SPA support
 - RTK Query
 - React Router
 - Jest
-- React Testing Library
+- Testing Library
 
 ### Additional
 
