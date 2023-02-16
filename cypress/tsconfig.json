@@ -3,7 +3,7 @@
   "include": ["./**/*.ts"],
   "exclude": [],
   "compilerOptions": {
-    "types": ["cypress"],
+    "types": ["cypress", "@testing-library/cypress"],
     "isolatedModules": false
   }
 }
