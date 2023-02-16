@@ -3,7 +3,7 @@
 exports[`Header Tests renders the Header component 1`] = `
 Object {
   "children": Array [
-    <section
+    <article
       className="sc-dkrFOg sc-eDvSVe gYraVE iRTugX"
     >
       <a
@@ -91,7 +91,7 @@ Object {
           </span>
         </a>
       </section>
-    </section>,
+    </article>,
   ],
   "props": Object {
     "className": "sc-hLBbgP iodrKd",
@@ -103,7 +103,7 @@ Object {
 exports[`Header Tests renders the Header component on the Cart page 1`] = `
 Object {
   "children": Array [
-    <section
+    <article
       className="sc-dkrFOg sc-eDvSVe gYraVE cvniFy"
     >
       <a
@@ -156,7 +156,7 @@ Object {
           />
         </svg>
       </section>
-    </section>,
+    </article>,
   ],
   "props": Object {
     "className": "sc-hLBbgP iodrKd",

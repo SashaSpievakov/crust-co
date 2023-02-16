@@ -6,7 +6,7 @@ Object {
     <header
       className="sc-jrcTuL QhEIE"
     >
-      <section
+      <article
         className="sc-dkrFOg sc-kDvujY gYraVE lcOYib"
       >
         <a
@@ -94,12 +94,12 @@ Object {
             </span>
           </a>
         </section>
-      </section>
+      </article>
     </header>,
     <main
       className="sc-gswNZR kJtoUj"
     >
-      <section
+      <article
         className="sc-dkrFOg gYraVE"
       />
     </main>,

@@ -4,7 +4,7 @@ exports[`Item Tests renders the Item page 1`] = `
 <article
   data-testid="itemPage"
 >
-  <section
+  <article
     class="sc-bcXHqe sc-gswNZR bZXhLi edAeMk"
   >
     <img
@@ -95,7 +95,7 @@ exports[`Item Tests renders the Item page 1`] = `
         Go Back
       </span>
     </a>
-  </section>
+  </article>
 </article>
 `;
 
