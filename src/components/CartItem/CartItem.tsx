@@ -8,7 +8,7 @@ import {
 } from '../../store/slices/cart/reducer/cartReducer';
 import { ButtonCircle } from '../../styles/Buttons.styled';
 import {
-  Section,
+  Article,
   ImgWrapper,
   InfoWrapper,
   Counter,
@@ -59,7 +59,7 @@ const CartItem = memo(({ id, name, price, size, type, count }: ICartItem) => {
   };
 
   return (
-    <Section>
+    <Article>
       <ImgWrapper>
         <img
           src={`./assets/img/pizza${id}.png`}
@@ -95,7 +95,7 @@ const CartItem = memo(({ id, name, price, size, type, count }: ICartItem) => {
           <CountIcon as={BsPlusLg} />
         </ButtonCircle>
       </Remove>
-    </Section>
+    </Article>
   );
 });
 export default CartItem;

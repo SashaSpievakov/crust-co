@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-const Section = styled.section`
+const Article = styled.article`
   display: flex;
   width: 100%;
   position: relative;
@@ -106,4 +106,4 @@ const Remove = styled.div`
   }
 `;
 
-export { Section, ImgWrapper, InfoWrapper, Counter, CountIcon, Price, Remove };
+export { Article, ImgWrapper, InfoWrapper, Counter, CountIcon, Price, Remove };

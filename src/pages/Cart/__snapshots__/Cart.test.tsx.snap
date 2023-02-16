@@ -104,7 +104,7 @@ Object {
       </section>
     </section>,
     <section>
-      <section
+      <article
         className="sc-ftTHYK kpyIvF"
       >
         <div
@@ -225,8 +225,8 @@ Object {
             </svg>
           </button>
         </div>
-      </section>
-      <section
+      </article>
+      <article
         className="sc-ftTHYK kpyIvF"
       >
         <div
@@ -347,7 +347,7 @@ Object {
             </svg>
           </button>
         </div>
-      </section>
+      </article>
     </section>,
     <section
       className="sc-idXgbr hfBWFS"
