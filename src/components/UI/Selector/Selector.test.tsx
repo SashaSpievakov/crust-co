@@ -25,7 +25,7 @@ const SelectorMockProps: ISelector = {
 };
 
 describe('Selector Tests', () => {
-  test('renders the Selector component', () => {
+  test('renders the Selector UI component', () => {
     const snapshot = rendererWithAllProviders(
       <Selector {...SelectorMockProps} />,
     );

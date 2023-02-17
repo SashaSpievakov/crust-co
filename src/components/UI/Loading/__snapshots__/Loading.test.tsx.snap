@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Loading Tests renders the Loading component 1`] = `
+exports[`Loading Tests renders the Loading UI component 1`] = `
 Object {
   "children": Array [
     <svg

@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Selector Tests renders the Selector component 1`] = `
+exports[`Selector Tests renders the Selector UI component 1`] = `
 Object {
   "children": Array [
     <ul>

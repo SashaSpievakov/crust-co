@@ -20,7 +20,7 @@ const ItemsCountHandlerMockProps: IItemsCountHandler = {
 };
 
 describe('ItemsCountHandler Tests', () => {
-  test('renders the ItemsCountHandler component', () => {
+  test('renders the ItemsCountHandler UI component', () => {
     const snapshot = rendererWithAllProviders(
       <ItemsCountHandler {...ItemsCountHandlerMockProps} />,
     );

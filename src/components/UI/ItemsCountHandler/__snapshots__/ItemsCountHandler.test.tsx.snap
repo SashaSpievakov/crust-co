@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`ItemsCountHandler Tests renders the ItemsCountHandler component 1`] = `
+exports[`ItemsCountHandler Tests renders the ItemsCountHandler UI component 1`] = `
 Object {
   "children": Array [
     <svg

@@ -7,7 +7,7 @@ import rendererWithAllProviders from '../../../tests/helpers/rendererWithProvide
 import renderWithAllProviders from '../../../tests/helpers/renderWithProviders';
 
 describe('LogoSection Tests', () => {
-  test('renders the LogoSection component', () => {
+  test('renders the LogoSection UI component', () => {
     const snapshot = rendererWithAllProviders(<LogoSection />);
     expect(snapshot).toMatchSnapshot();
   });
