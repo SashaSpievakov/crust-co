@@ -68,7 +68,7 @@ const ButtonCart = styled(Button)`
 `;
 
 const ButtonPay = styled(Button)`
-  font-size: 16px;
+  font-size: 18px;
   font-weight: 600;
   width: 210px;
   padding: 16px;
@@ -155,11 +155,6 @@ const ButtonAdd = styled(ButtonOutline)<ButtonAddProps>`
 const ButtonBackCart = styled(ButtonAdd)`
   width: 210px;
   justify-content: center;
-
-  span {
-    font-weight: 500;
-    font-weight: 600;
-  }
 `;
 
 export {

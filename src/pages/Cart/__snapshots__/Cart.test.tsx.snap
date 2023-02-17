@@ -381,7 +381,7 @@ Object {
         className="sc-hHTYSt dJnySv"
       >
         <a
-          className="sc-bcXHqe sc-eDvSVe sc-gKPRtg sc-iBYQkv fAfvZN fwWQTF gmBSoV cQTopN"
+          className="sc-bcXHqe sc-eDvSVe sc-gKPRtg sc-iBYQkv fAfvZN fwWQTF gmBSoV kPGGvm"
           href="/"
           onClick={[Function]}
         >
@@ -406,11 +406,11 @@ Object {
             />
           </svg>
           <span>
-            Go Back
+            Go back
           </span>
         </a>
         <button
-          className="sc-bcXHqe sc-hLBbgP fAfvZN oxgyE"
+          className="sc-bcXHqe sc-hLBbgP fAfvZN czoOAi"
         >
           <span>
             Buy now

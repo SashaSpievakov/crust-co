@@ -66,7 +66,7 @@ const Cart = () => {
             <Buttons>
               <ButtonBackCart to="/" as={Link}>
                 <ChevronLeft />
-                <span>Go Back</span>
+                <span>Go back</span>
               </ButtonBackCart>
               <ButtonPay>
                 <span>Buy now</span>
