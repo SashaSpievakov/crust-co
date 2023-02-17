@@ -147,6 +147,7 @@ const ButtonAdd = styled(ButtonOutline)<ButtonAddProps>`
   ${({ isFullScreen }) =>
     isFullScreen &&
     css`
+      margin-bottom: 50px;
       padding: 15px 40px;
     `}
 `;
