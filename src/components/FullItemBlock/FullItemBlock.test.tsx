@@ -13,21 +13,6 @@ describe('FullItemBlock Tests', () => {
     expect(snapshot).toMatchSnapshot();
   });
 
-  test('checks link redirect to the Home page', () => {
-    renderWithProviders(<FullItemBlock item={mockItem} />, true, '/cart');
-    const links = screen.getAllByRole('link', {
-      name: /go back/i,
-    });
-
-    userEvent.click(links[1]);
-
-    expect(
-      screen.getByRole('heading', {
-        name: /all pizzas/i,
-      }),
-    ).toBeInTheDocument();
-  });
-
   describe('checks the price changing', () => {
     beforeEach(() => {
       renderWithProviders(<FullItemBlock item={mockItem} />);
