@@ -49,13 +49,19 @@ const Trash = styled(BsTrash)`
 `;
 
 const Bottom = styled.section`
-  margin: 50px 0;
+  margin: 30px 0 50px;
+  border-top: 1px solid ${({ theme }) => theme.colors.gray};
 `;
 
 const Details = styled.section`
   font-size: 22px;
   display: flex;
   justify-content: space-between;
+  margin: 40px 50px 0;
+
+  @media screen and (max-width: 400px) {
+    margin: 40px 25px 0;
+  }
 `;
 
 const Buttons = styled.section`
