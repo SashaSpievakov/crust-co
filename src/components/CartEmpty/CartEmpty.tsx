@@ -1,7 +1,5 @@
-import { Link } from 'react-router-dom';
-
 import cartImg from '../../assets/img/empty-cart.png';
-import { ButtonBlack } from '../../styles/Buttons.styled';
+import ButtonBackToHome from '../UI/ButtonBackToHome/ButtonBackToHome';
 import { Section } from './CartEmpty.styled';
 
 const CartEmpty = () => {
@@ -16,9 +14,7 @@ const CartEmpty = () => {
         If you want to make an order, go back to the main page.
       </p>
       <img src={cartImg} alt="empty cart" width="300" height="255" />
-      <ButtonBlack as={Link} to="/">
-        <span>Go Back</span>
-      </ButtonBlack>
+      <ButtonBackToHome />
     </Section>
   );
 };

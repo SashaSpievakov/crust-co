@@ -33,7 +33,7 @@ const Button = styled.button`
   }
 `;
 
-const ButtonBlack = styled(Button)`
+const ButtonBack = styled(Button)`
   padding: 12px 0 14px;
   width: 230px;
   margin: 0 auto;
@@ -151,11 +151,8 @@ const ButtonAdd = styled(ButtonOutline)<ButtonAddProps>`
     `}
 `;
 
-const ButtonBack = styled(ButtonAdd)`
-  display: flex;
+const ButtonBackCart = styled(ButtonAdd)`
   width: 210px;
-  color: ${({ theme }) => theme.colors.third};
-  align-items: center;
   justify-content: center;
 
   span {
@@ -165,10 +162,10 @@ const ButtonBack = styled(ButtonAdd)`
 `;
 
 export {
-  ButtonBlack,
+  ButtonBack,
   ButtonCart,
   ButtonPay,
   ButtonCircle,
   ButtonAdd,
-  ButtonBack,
+  ButtonBackCart,
 };

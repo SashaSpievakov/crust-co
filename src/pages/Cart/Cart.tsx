@@ -5,7 +5,7 @@ import { clearCart } from '../../store/slices/cart/reducer/cartReducer';
 import { selectCart } from '../../store/slices/cart/selectors/selectCart/selectCart';
 import CartItem from '../../components/CartItem/CartItem';
 import CartEmpty from '../../components/CartEmpty/CartEmpty';
-import { ButtonBack, ButtonPay } from '../../styles/Buttons.styled';
+import { ButtonBackCart, ButtonPay } from '../../styles/Buttons.styled';
 import {
   Top,
   Title,
@@ -64,10 +64,10 @@ const Cart = () => {
               </span>
             </Details>
             <Buttons>
-              <ButtonBack to="/" as={Link}>
+              <ButtonBackCart to="/" as={Link}>
                 <ChevronLeft />
                 <span>Go Back</span>
-              </ButtonBack>
+              </ButtonBackCart>
               <ButtonPay>
                 <span>Buy now</span>
               </ButtonPay>

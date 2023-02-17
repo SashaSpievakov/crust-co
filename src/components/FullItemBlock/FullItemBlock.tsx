@@ -1,10 +1,9 @@
 import { useState } from 'react';
-import { Link } from 'react-router-dom';
 
 import { Image, Title, Paragraph, Price, Item } from './FullItemBlock.styled';
-import { ButtonBlack } from '../../styles/Buttons.styled';
 import Selector from '../UI/Selector/Selector';
 import ItemsCountHandler from '../UI/ItemsCountHandler/ItemsCountHandler';
+import ButtonBackToHome from '../UI/ButtonBackToHome/ButtonBackToHome';
 import { IPizzaItem } from '../../models/IPizzaItem';
 
 interface FullItemProps {
@@ -50,9 +49,7 @@ const FullItemBlock = ({ item }: FullItemProps) => {
         typeNames={typeNames}
         isFullScreen
       />
-      <ButtonBlack to="/" as={Link}>
-        <span>Go Back</span>
-      </ButtonBlack>
+      <ButtonBackToHome />
     </Item>
   );
 };
