@@ -87,9 +87,7 @@ const CartItem = memo(({ id, name, price, size, type, count }: ICartItem) => {
           <CountIcon as={BsPlusLg} />
         </ButtonCircle>
       </Counter>
-      <Price>
-        <b>{price * count}$</b>
-      </Price>
+      <Price>{price * count}$</Price>
       <Remove>
         <ButtonCircle onClick={onClickDelete} remove aria-label="delete">
           <CountIcon as={BsPlusLg} />

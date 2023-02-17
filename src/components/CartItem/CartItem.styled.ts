@@ -66,8 +66,8 @@ const Counter = styled.section`
   justify-content: space-between;
   width: 13%;
 
-  b {
-    font-size: 22px;
+  span {
+    font-size: 20px;
   }
 
   @media screen and (max-width: 850px) {
@@ -81,16 +81,11 @@ const CountIcon = styled.i`
 `;
 
 const Price = styled.h3`
+  font-size: 20px;
   display: flex;
   align-items: center;
   justify-content: center;
   width: 33%;
-
-  span {
-    font-weight: bold;
-    font-size: 22px;
-    letter-spacing: 0.01em;
-  }
 `;
 
 const Remove = styled.div`
