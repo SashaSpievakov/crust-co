@@ -21,17 +21,17 @@ Object {
       Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquid nisi aspernatur debitis quod suscipit, vitae placeat natus ipsum inventore esse rerum animi facere numquam saepe vero mollitia quibusdam at voluptates est commodi laudantium? Iste inventore quibusdam cupiditate nemo sint iusto minus nihil culpa! Sequi architecto nesciunt explicabo mollitia. Laboriosam, odio.
     </p>,
     <section
-      className="sc-eDWCr hJjroC"
+      className="sc-gKPRtg eVocHQ"
     >
       <ul>
         <li
-          className="sc-bqWxrE bUZLVc"
+          className="sc-iBYQkv uIUYd"
           onClick={[Function]}
         >
           traditional
         </li>
         <li
-          className="sc-bqWxrE dvnTkm"
+          className="sc-iBYQkv gouikj"
           onClick={[Function]}
         >
           thin
@@ -39,21 +39,21 @@ Object {
       </ul>
       <ul>
         <li
-          className="sc-bqWxrE bUZLVc"
+          className="sc-iBYQkv uIUYd"
           onClick={[Function]}
         >
           12
            inch
         </li>
         <li
-          className="sc-bqWxrE dvnTkm"
+          className="sc-iBYQkv gouikj"
           onClick={[Function]}
         >
           14
            inch
         </li>
         <li
-          className="sc-bqWxrE dvnTkm"
+          className="sc-iBYQkv gouikj"
           onClick={[Function]}
         >
           16
@@ -68,7 +68,7 @@ Object {
       $
     </h3>,
     <button
-      className="sc-gKPRtg sc-jrcTuL sc-ipEyDJ iLACsd kKLFCc heSXxL"
+      className="sc-ftTHYK sc-ipEyDJ sc-eDWCr KXpKQ ldgyoh lkfFKT"
       onClick={[Function]}
     >
       <svg
@@ -95,7 +95,7 @@ Object {
       </span>
     </button>,
     <a
-      className="sc-gKPRtg sc-iBYQkv iLACsd gcostn"
+      className="sc-ftTHYK sc-pyfCe KXpKQ gZyrww"
       href="/"
       onClick={[Function]}
     >

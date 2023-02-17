@@ -25,35 +25,35 @@ exports[`Item Tests renders the Item page 1`] = `
       Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquid nisi aspernatur debitis quod suscipit, vitae placeat natus ipsum inventore esse rerum animi facere numquam saepe vero mollitia quibusdam at voluptates est commodi laudantium? Iste inventore quibusdam cupiditate nemo sint iusto minus nihil culpa! Sequi architecto nesciunt explicabo mollitia. Laboriosam, odio.
     </p>
     <section
-      class="sc-eDWCr hJjroC"
+      class="sc-gKPRtg eVocHQ"
     >
       <ul>
         <li
-          class="sc-bqWxrE bUZLVc"
+          class="sc-iBYQkv uIUYd"
         >
           traditional
         </li>
         <li
-          class="sc-bqWxrE dvnTkm"
+          class="sc-iBYQkv gouikj"
         >
           thin
         </li>
       </ul>
       <ul>
         <li
-          class="sc-bqWxrE bUZLVc"
+          class="sc-iBYQkv uIUYd"
         >
           12
            inch
         </li>
         <li
-          class="sc-bqWxrE dvnTkm"
+          class="sc-iBYQkv gouikj"
         >
           14
            inch
         </li>
         <li
-          class="sc-bqWxrE dvnTkm"
+          class="sc-iBYQkv gouikj"
         >
           16
            inch
@@ -67,7 +67,7 @@ exports[`Item Tests renders the Item page 1`] = `
       $
     </h3>
     <button
-      class="sc-gKPRtg sc-jrcTuL sc-ipEyDJ iLACsd kKLFCc heSXxL"
+      class="sc-ftTHYK sc-ipEyDJ sc-eDWCr KXpKQ ldgyoh lkfFKT"
     >
       <svg
         class="sc-bjfHbI lhpcBk"
@@ -88,7 +88,7 @@ exports[`Item Tests renders the Item page 1`] = `
       </span>
     </button>
     <a
-      class="sc-gKPRtg sc-iBYQkv iLACsd gcostn"
+      class="sc-ftTHYK sc-pyfCe KXpKQ gZyrww"
       href="/"
     >
       <span>
