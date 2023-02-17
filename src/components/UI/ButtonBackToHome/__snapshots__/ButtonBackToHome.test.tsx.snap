@@ -1,0 +1,18 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ButtonBackToHome Tests renders the ButtonBackToHome UI component 1`] = `
+Object {
+  "children": Array [
+    <span>
+      Go Back
+    </span>,
+  ],
+  "props": Object {
+    "className": "sc-bcXHqe sc-gswNZR fAfvZN llPphw",
+    "href": "/",
+    "onClick": [Function],
+    "target": undefined,
+  },
+  "type": "a",
+}
+`;
