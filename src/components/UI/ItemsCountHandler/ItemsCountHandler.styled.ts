@@ -30,6 +30,12 @@ const Counter = styled.section<CounterProps>`
   svg {
     font-size: ${({ isFullScreen }) => (isFullScreen ? '34px' : '27px')};
   }
+
+  ${({ isFullScreen }) =>
+    isFullScreen &&
+    css`
+      margin-bottom: 50px;
+    `}
 `;
 
 const Minus = styled(HiMinus)<MinusProps>`
