@@ -36,6 +36,7 @@ Object {
       >
         <svg
           className="sc-gKPRtg fIapoa"
+          data-testid="themeIcon"
           fill="currentColor"
           height="1em"
           mode=""
@@ -136,6 +137,7 @@ Object {
       >
         <svg
           className="sc-gKPRtg biBQPw"
+          data-testid="themeIcon"
           fill="currentColor"
           height="1em"
           mode="cart"

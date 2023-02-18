@@ -39,6 +39,7 @@ Object {
         >
           <svg
             className="sc-csuSiG hzbypb"
+            data-testid="themeIcon"
             fill="currentColor"
             height="1em"
             mode=""

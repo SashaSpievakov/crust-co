@@ -47,6 +47,7 @@ const Header = () => {
             as={isLight ? BsFillMoonFill : BsFillSunFill}
             onClick={changeThemes}
             mode={location.pathname === '/cart' ? 'cart' : ''}
+            data-testid="themeIcon"
           />
           {location.pathname !== '/cart' && (
             <ButtonCart to="/cart" as={Link} data-testid="cartLink">
