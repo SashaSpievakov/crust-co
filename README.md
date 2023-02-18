@@ -10,7 +10,7 @@
 
 ## Description
 
-Web Store Application created with React includes multiple pages and SPA support. States were managed with Redux Toolkit, and styles were implemented with Styled Components. Entirely written in TypeScript, code styling was configured with ESLint and Airbnb settings. Tests covered almost 100% of the code and were implemented with Jest and React Testing Library. The website has a responsive design, so looks good on all devices. Works with Local Storage and saves your orders and settings.
+Web Store Application created with React includes multiple pages and SPA support. States were managed with Redux Toolkit, and styles were implemented with Styled Components. Entirely written in TypeScript, code styling was configured with ESLint and Airbnb settings. Covered by all kinds of tests, such as unit, integration and e2e tests. The website has a responsive design, so looks good on all devices. Works with Local Storage and saves your orders and settings.
 
 <br/>
 
@@ -26,6 +26,7 @@ Web Store Application created with React includes multiple pages and SPA support
 - React Router
 - Jest
 - Testing Library
+- Cypress
 
 ### Additional
 
