@@ -2,7 +2,7 @@ import { useAppSelector } from '../../hooks/reduxHooks';
 import { selectSearchValue } from '../../store/slices/search/selectors/selectSearchValue';
 import { IPizzaItem } from '../../models/IPizzaItem';
 import ItemCard from '../ItemCard/ItemCard';
-import { Container, SearchError } from './ProductsContainer.styled';
+import { Section, SearchError } from './ProductsContainer.styled';
 
 interface ProductsContainerProps {
   items: IPizzaItem[];
@@ -15,7 +15,7 @@ const ProductsContainer = ({ items }: ProductsContainerProps) => {
   );
 
   return (
-    <Container>
+    <Section>
       {filteredItems.length >= 1 ? (
         filteredItems.map((item: IPizzaItem) => (
           <ItemCard key={item.id} {...item} />
@@ -23,7 +23,7 @@ const ProductsContainer = ({ items }: ProductsContainerProps) => {
       ) : (
         <SearchError>No pizzas with that name were found...</SearchError>
       )}
-    </Container>
+    </Section>
   );
 };
 export default ProductsContainer;

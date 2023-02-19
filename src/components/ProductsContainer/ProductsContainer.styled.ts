@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-const Container = styled.section`
+const Section = styled.section`
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 40px 100px;
@@ -25,4 +25,4 @@ const SearchError = styled.h3`
   font-size: 30px;
 `;
 
-export { Container, SearchError };
+export { Section, SearchError };
