@@ -1,7 +1,6 @@
 import { useEffect, useState } from 'react';
 
 import { Container } from 'src/styles/Base.styled';
-import Skeleton from 'src/components/UI/Skeleton/Skeleton';
 import { Title, Block, Top, ErrorHeading, ErrorParagraph } from './Home.styled';
 import { useAppSelector } from '../../hooks/reduxHooks';
 import { selectSort } from '../../store/slices/sort/selectors/selectSort';
@@ -23,10 +22,12 @@ const Home = () => {
 
   const sortSearchParam = modifySearchParamsName(sortNamesArr[activeSort]);
 
-  const { data, isSuccess, isLoading } = pizzasAPI.useFetchPizzasQuery({
-    activeCategory,
-    sortSearchParam,
-  });
+  const { data, isSuccess, isError, isLoading } = pizzasAPI.useFetchPizzasQuery(
+    {
+      activeCategory,
+      sortSearchParam,
+    },
+  );
 
   useEffect(() => {
     if (isSuccess) {
@@ -44,17 +45,15 @@ const Home = () => {
         <Title>All Pizzas</Title>
         <SearchItems />
       </Block>
-      {isLoading ? (
-        [...new Array(9)].map((_, i) => <Skeleton key={i} />)
-      ) : isSuccess ? (
-        <ProductsContainer items={pizzas} />
-      ) : (
+      {isError ? (
         <>
           <ErrorHeading>Request Error</ErrorHeading>
           <ErrorParagraph>
             Coudn&apos;t get store items. Try your request again later.
           </ErrorParagraph>
         </>
+      ) : (
+        <ProductsContainer isLoading={isLoading} items={pizzas} />
       )}
     </Container>
   );
