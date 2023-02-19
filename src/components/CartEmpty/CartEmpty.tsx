@@ -1,10 +1,10 @@
 import cartImg from '../../assets/img/empty-cart.png';
 import ButtonBackToHome from '../UI/ButtonBackToHome/ButtonBackToHome';
-import { Section } from './CartEmpty.styled';
+import { Article } from './CartEmpty.styled';
 
 const CartEmpty = () => {
   return (
-    <Section>
+    <Article>
       <h2>
         Your cart is empty <span>😕</span>
       </h2>
@@ -15,7 +15,7 @@ const CartEmpty = () => {
       </p>
       <img src={cartImg} alt="empty cart" width="300" height="255" />
       <ButtonBackToHome />
-    </Section>
+    </Article>
   );
 };
 

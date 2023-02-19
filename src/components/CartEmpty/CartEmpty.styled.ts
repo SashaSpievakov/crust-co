@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-const Section = styled.section`
+const Article = styled.article`
   margin: 80px auto;
   max-width: 600px;
   text-align: center;
@@ -39,4 +39,4 @@ const Section = styled.section`
   }
 `;
 
-export { Section };
+export { Article };

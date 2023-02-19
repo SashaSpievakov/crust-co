@@ -31,53 +31,49 @@ const Cart = () => {
     dispatch(clearCart());
   };
 
-  return (
-    <article>
-      {items.length ? (
-        <>
-          <Top>
-            <Title>
-              <CartIcon />
-              Cart
-            </Title>
-            <Clear onClick={onClearClick}>
-              <Trash />
-              <span role="presentation">Delete all items</span>
-            </Clear>
-          </Top>
+  return items.length ? (
+    <>
+      <Top>
+        <Title>
+          <CartIcon />
+          Cart
+        </Title>
+        <Clear onClick={onClearClick}>
+          <Trash />
+          <span role="presentation">Delete all items</span>
+        </Clear>
+      </Top>
 
-          <section>
-            {items.map((item: ICartItem) => (
-              <CartItem key={item.name + item.type + item.size} {...item} />
-            ))}
-          </section>
+      <section>
+        {items.map((item: ICartItem) => (
+          <CartItem key={item.name + item.type + item.size} {...item} />
+        ))}
+      </section>
 
-          <Bottom>
-            <Details>
-              <span>
-                {' '}
-                Items <b data-testid="cartPageItemsCount">{itemsCount}</b>{' '}
-              </span>
-              <span>
-                {' '}
-                Total <b data-testid="cartPageItemsPrice">{totalPrice}$</b>{' '}
-              </span>
-            </Details>
-            <Buttons>
-              <ButtonBackCart to="/" as={Link}>
-                <ChevronLeft />
-                <span>Go back</span>
-              </ButtonBackCart>
-              <ButtonPay>
-                <span>Buy now</span>
-              </ButtonPay>
-            </Buttons>
-          </Bottom>
-        </>
-      ) : (
-        <CartEmpty />
-      )}
-    </article>
+      <Bottom>
+        <Details>
+          <span>
+            {' '}
+            Items <b data-testid="cartPageItemsCount">{itemsCount}</b>{' '}
+          </span>
+          <span>
+            {' '}
+            Total <b data-testid="cartPageItemsPrice">{totalPrice}$</b>{' '}
+          </span>
+        </Details>
+        <Buttons>
+          <ButtonBackCart to="/" as={Link}>
+            <ChevronLeft />
+            <span>Go back</span>
+          </ButtonBackCart>
+          <ButtonPay>
+            <span>Buy now</span>
+          </ButtonPay>
+        </Buttons>
+      </Bottom>
+    </>
+  ) : (
+    <CartEmpty />
   );
 };
 
