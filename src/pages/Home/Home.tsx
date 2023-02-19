@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 
 import { Container } from 'src/styles/Base.styled';
-import Error from 'src/components/UI/Error/Error';
+import ErrorRequest from 'src/components/UI/ErrorRequest/ErrorRequest';
 import { Title, Block, Top } from './Home.styled';
 import { useAppSelector } from '../../hooks/reduxHooks';
 import { selectSort } from '../../store/slices/sort/selectors/selectSort';
@@ -37,7 +37,7 @@ const Home = () => {
   }, [activeCategory, sortSearchParam, data, isSuccess]);
 
   return isError ? (
-    <Error />
+    <ErrorRequest />
   ) : (
     <Container data-testid="homePage">
       <Top>

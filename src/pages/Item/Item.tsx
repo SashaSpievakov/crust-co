@@ -1,6 +1,6 @@
 import { useParams } from 'react-router-dom';
 
-import Error from 'src/components/UI/Error/Error';
+import ErrorRequest from 'src/components/UI/ErrorRequest/ErrorRequest';
 import Loading from '../../components/UI/Loading/Loading';
 import FullItemBlock from '../../components/FullItemBlock/FullItemBlock';
 import itemAPI from '../../services/ItemService';
@@ -20,7 +20,7 @@ const Item = () => {
   ) : isSuccess ? (
     <FullItemBlock item={data} />
   ) : (
-    <Error />
+    <ErrorRequest />
   );
 };
 

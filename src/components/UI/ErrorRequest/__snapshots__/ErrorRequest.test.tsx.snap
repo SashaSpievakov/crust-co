@@ -1,0 +1,23 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ErrorRequest Tests renders the ErrorRequest UI component 1`] = `
+Object {
+  "children": Array [
+    <h2
+      className="sc-hLBbgP iKqTzj"
+    >
+      Error: failed to get data from the server
+    </h2>,
+    <p
+      className="sc-gswNZR cyBoAG"
+    >
+      We are already working on that. Try again later
+    </p>,
+  ],
+  "props": Object {
+    "className": "sc-bcXHqe sc-dkrFOg bZXhLi gpZOpZ",
+    "data-testid": "itemPage",
+  },
+  "type": "article",
+}
+`;

@@ -1,7 +1,7 @@
 import { ErrorParagraph } from 'src/styles/Base.styled';
-import { Article, ErrorHeading } from './Error.styled';
+import { Article, ErrorHeading } from './ErrorRequest.styled';
 
-const Error = () => {
+const ErrorRequest = () => {
   return (
     <Article data-testid="itemPage">
       <ErrorHeading>Error: failed to get data from the server</ErrorHeading>
@@ -12,4 +12,4 @@ const Error = () => {
   );
 };
 
-export default Error;
+export default ErrorRequest;
