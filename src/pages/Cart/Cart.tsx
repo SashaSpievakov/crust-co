@@ -1,13 +1,13 @@
 import { Link } from 'react-router-dom';
 import { shallowEqual } from 'react-redux';
 
-import { Container } from 'src/styles/Base.styled';
 import { clearCart } from '../../store/slices/cart/reducer/cartReducer';
 import { selectCart } from '../../store/slices/cart/selectors/selectCart/selectCart';
 import CartItem from '../../components/CartItem/CartItem';
 import CartEmpty from '../../components/CartEmpty/CartEmpty';
 import { ButtonBackCart, ButtonPay } from '../../styles/Buttons.styled';
 import {
+  Article,
   Top,
   Title,
   CartIcon,
@@ -33,7 +33,7 @@ const Cart = () => {
   };
 
   return items.length ? (
-    <Container>
+    <Article>
       <Top>
         <Title>
           <CartIcon />
@@ -72,7 +72,7 @@ const Cart = () => {
           </ButtonPay>
         </Buttons>
       </Bottom>
-    </Container>
+    </Article>
   ) : (
     <CartEmpty />
   );

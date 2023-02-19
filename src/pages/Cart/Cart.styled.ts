@@ -1,5 +1,10 @@
 import styled from 'styled-components';
 import { BsCart3, BsTrash, BsChevronLeft } from 'react-icons/bs';
+import { Container } from 'src/styles/Base.styled';
+
+const Article = styled(Container)`
+  margin: 50px auto;
+`;
 
 const Top = styled.section`
   display: flex;
@@ -49,7 +54,7 @@ const Trash = styled(BsTrash)`
 `;
 
 const Bottom = styled.section`
-  margin: 30px 0 50px;
+  margin-top: 30px;
   border-top: 1px solid ${({ theme }) => theme.colors.gray};
 `;
 
@@ -82,6 +87,7 @@ const ChevronLeft = styled(BsChevronLeft)`
 `;
 
 export {
+  Article,
   Top,
   Title,
   CartIcon,
