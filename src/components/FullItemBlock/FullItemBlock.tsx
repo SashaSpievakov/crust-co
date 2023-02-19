@@ -18,7 +18,7 @@ const FullItemBlock = ({ item }: FullItemProps) => {
   const [activeType, setActiveType] = useState<number>(0);
 
   return (
-    <Item>
+    <Item data-testid="itemPage">
       <Image
         src={`../assets/img/pizza${item.id}.png`}
         alt="pizza"

@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 
-const Error = styled.h2`
+const ErrorMessage = styled.h2`
+  font-size: 30px;
   color: ${({ theme }) => theme.colors.primary};
 
   @media screen and (max-width: 550px) {
@@ -9,4 +10,4 @@ const Error = styled.h2`
   }
 `;
 
-export { Error };
+export { ErrorMessage };

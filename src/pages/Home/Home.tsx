@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react';
 
+import { Container } from 'src/styles/Base.styled';
 import { Title, Block, Top, Error } from './Home.styled';
 import { useAppSelector } from '../../hooks/reduxHooks';
 import { selectSort } from '../../store/slices/sort/selectors/selectSort';
@@ -35,7 +36,7 @@ const Home = () => {
   }, [activeCategory, sortSearchParam, data, isSuccess]);
 
   return (
-    <article data-testid="homePage">
+    <Container data-testid="homePage">
       <Top>
         <Categories />
         <Sort sortNamesArr={sortNamesArr} />
@@ -52,7 +53,7 @@ const Home = () => {
       ) : (
         <ProductsContainer isLoading={isLoading} items={pizzas} />
       )}
-    </article>
+    </Container>
   );
 };
 

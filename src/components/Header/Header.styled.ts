@@ -18,7 +18,6 @@ const HeaderWrapper = styled.header<WrapperProps>`
   justify-content: space-between;
   margin: 0 auto;
   padding: 40px 0;
-  border-bottom: 1px solid ${({ theme }) => theme.colors.gray};
 
   @media screen and (max-width: 550px) {
     padding: 30px 0;

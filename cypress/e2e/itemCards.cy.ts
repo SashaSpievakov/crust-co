@@ -26,12 +26,12 @@ describe('itemCard tests', () => {
     // check if states after the rerender are right
     cy.findAllByText(/traditional/i)
       .first()
-      .should('have.class', 'eBnDEA');
-    cy.get('@thinType').should('have.class', 'eFmiEx');
+      .should('have.class', 'dQlcUX');
+    cy.get('@thinType').should('have.class', 'gTWzVO');
     cy.findAllByText(/12 inch/i)
       .first()
-      .should('have.class', 'eBnDEA');
-    cy.get('@14inch').should('have.class', 'eFmiEx');
+      .should('have.class', 'dQlcUX');
+    cy.get('@14inch').should('have.class', 'gTWzVO');
 
     // check disabled minus button
     cy.findAllByTestId('itemsHandlerMinus')

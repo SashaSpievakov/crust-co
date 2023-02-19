@@ -1,9 +1,9 @@
 import { useParams } from 'react-router-dom';
 
-import FullItemBlock from '../../components/FullItemBlock/FullItemBlock';
+import Error from 'src/components/UI/Error/Error';
 import Loading from '../../components/UI/Loading/Loading';
+import FullItemBlock from '../../components/FullItemBlock/FullItemBlock';
 import itemAPI from '../../services/ItemService';
-import { Error } from './Item.styled';
 
 const Item = () => {
   const { id } = useParams();
@@ -15,16 +15,12 @@ const Item = () => {
     },
   );
 
-  return (
-    <article data-testid="itemPage">
-      {isLoading ? (
-        <Loading />
-      ) : isSuccess ? (
-        <FullItemBlock item={data} />
-      ) : (
-        <Error>Error: failed request, try again</Error>
-      )}
-    </article>
+  return isLoading ? (
+    <Loading />
+  ) : isSuccess ? (
+    <FullItemBlock item={data} />
+  ) : (
+    <Error />
   );
 };
 
