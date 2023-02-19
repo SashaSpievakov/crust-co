@@ -2,15 +2,13 @@ import { useAppSelector } from '../../hooks/reduxHooks';
 import { selectSearchValue } from '../../store/slices/search/selectors/selectSearchValue';
 import { IPizzaItem } from '../../models/IPizzaItem';
 import ItemCard from '../ItemCard/ItemCard';
-import Skeleton from '../UI/Skeleton/Skeleton';
 import { Container, SearchError } from './ProductsContainer.styled';
 
 interface ProductsContainerProps {
-  isLoading: boolean;
   items: IPizzaItem[];
 }
 
-const ProductsContainer = ({ isLoading, items }: ProductsContainerProps) => {
+const ProductsContainer = ({ items }: ProductsContainerProps) => {
   const searchValue = useAppSelector(selectSearchValue);
   const filteredItems = items.filter((item: IPizzaItem) =>
     item.name.toLowerCase().includes(searchValue.trim().toLowerCase()),
@@ -18,9 +16,7 @@ const ProductsContainer = ({ isLoading, items }: ProductsContainerProps) => {
 
   return (
     <Container>
-      {isLoading ? (
-        [...new Array(9)].map((_, i) => <Skeleton key={i} />)
-      ) : filteredItems.length >= 1 ? (
+      {filteredItems.length >= 1 ? (
         filteredItems.map((item: IPizzaItem) => (
           <ItemCard key={item.id} {...item} />
         ))
