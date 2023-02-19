@@ -1,10 +1,10 @@
 import { MdEmail, MdPhone, MdLocationOn } from 'react-icons/md';
 
-import { Wrapper, Ul, Contact, Icon, Copyright } from './Footer.styled';
+import { FooterWrapper, Ul, Contact, Icon, Copyright } from './Footer.styled';
 
 const Footer = () => {
   return (
-    <Wrapper>
+    <FooterWrapper>
       <Ul>
         <li>
           <Contact href="mailto:spievakov@gamil.com">
@@ -32,7 +32,7 @@ const Footer = () => {
       </Ul>
 
       <Copyright>&#169; 2022 Oleksandr Spievakov</Copyright>
-    </Wrapper>
+    </FooterWrapper>
   );
 };
 export default Footer;

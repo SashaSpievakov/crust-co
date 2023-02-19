@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-const Wrapper = styled.footer`
+const FooterWrapper = styled.footer`
   width: 90%;
   display: flex;
   margin: 0 auto;
@@ -13,7 +13,7 @@ const Ul = styled.ul`
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  margin: 100px 0;
+  margin: 50px 0;
 
   @media screen and (max-width: 700px) {
     flex-direction: column;
@@ -44,4 +44,4 @@ const Copyright = styled.p`
   text-align: center;
 `;
 
-export { Wrapper, Ul, Icon, Copyright, Contact };
+export { FooterWrapper, Ul, Icon, Copyright, Contact };

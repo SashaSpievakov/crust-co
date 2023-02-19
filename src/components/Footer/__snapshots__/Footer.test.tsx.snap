@@ -4,7 +4,7 @@ exports[`Footer Tests renders the Footer component 1`] = `
 Object {
   "children": Array [
     <ul
-      className="sc-gswNZR kZdONu"
+      className="sc-gswNZR heSPKu"
     >
       <li>
         <a
