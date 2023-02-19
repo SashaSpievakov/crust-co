@@ -22,9 +22,10 @@ describe('local Storage tests', () => {
     // reload the page
     cy.reload();
     cy.reload();
+    cy.reload();
 
     // check all items are saved and still showing
-    cy.get('@themeIcon').should('have.class', 'kCuySh');
+    cy.get('@themeIcon').should('have.class', 'eyyuzE');
     cy.findByText(/68 \$/i).should('be.visible');
     cy.findByText('5').should('be.visible').click();
 

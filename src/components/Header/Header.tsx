@@ -12,15 +12,28 @@ import { ButtonCart } from '../../styles/Buttons.styled';
 import { useAppDispatch, useAppSelector } from '../../hooks/reduxHooks';
 
 const Header = () => {
+  const scrollRef = useRef<null | HTMLDivElement>(null);
+  const isMounted = useRef<boolean>(false);
+  const isMountedSecond = useRef<boolean>(false);
+  const location = useLocation();
+
   const { itemsCount, totalPrice, items } = useAppSelector(
     selectCart,
     shallowEqual,
   );
   const isLight = useAppSelector(selectIsLight);
   const dispatch = useAppDispatch();
-  const location = useLocation();
-  const isMounted = useRef<boolean>(false);
 
+  // scroll effect
+  useEffect(() => {
+    if (isMountedSecond.current) {
+      scrollRef.current?.scrollIntoView();
+    }
+
+    isMountedSecond.current = true;
+  }, [location.pathname]);
+
+  // local storage effects
   useEffect(() => {
     if (isMounted.current) {
       const jsonCart = JSON.stringify(items);
@@ -38,7 +51,7 @@ const Header = () => {
   };
 
   return (
-    <Main>
+    <Main ref={scrollRef}>
       <Wrapper isCart={location.pathname === '/cart'}>
         <LogoSection />
 

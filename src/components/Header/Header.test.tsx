@@ -18,6 +18,7 @@ describe('Header Tests', () => {
   });
 
   test('checks link redirect to the Cart page', () => {
+    window.HTMLElement.prototype.scrollIntoView = () => {};
     renderWithProviders(<Header />, true, '/testing');
     const link = screen.getByTestId('cartLink');
 

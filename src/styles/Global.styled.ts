@@ -48,6 +48,25 @@ const Global = createGlobalStyle`
   a {
     text-decoration: none;
   }
+
+  #root {
+    width: calc(100vw - 70px);
+    max-width: 1400px;
+    height: 100%;
+    margin: 35px auto;
+    background-color: ${({ theme }) => theme.colors.fourth};
+    border-radius: 10px;
+
+    @media (max-width: 1000px) {
+      width: calc(100vw - 50px);
+      margin: 25px auto;
+    }
+
+    @media (max-width: 450px) {
+      width: calc(100vw - 40px);
+      margin: 20px auto;
+    }
+  }
 `;
 
 export default Global;
