@@ -6,52 +6,52 @@ exports[`Home Tests renders the Home page 1`] = `
   data-testid="homePage"
 >
   <section
-    class="sc-dkrFOg bKxbcz"
+    class="sc-jSUZER eANtvp"
   >
     <section>
       <ul
-        class="sc-jSUZER dpQOsm"
+        class="sc-iBYQkv gRQnbh"
       >
         <li
           aria-current="true"
-          class="sc-gKPRtg hYAhSL"
+          class="sc-ftTHYK earNXG"
         >
           All
         </li>
         <li
           aria-current="false"
-          class="sc-gKPRtg cIyCjv"
+          class="sc-ftTHYK jxPSBm"
         >
           Meat
         </li>
         <li
           aria-current="false"
-          class="sc-gKPRtg cIyCjv"
+          class="sc-ftTHYK jxPSBm"
         >
           Vegetarian
         </li>
         <li
           aria-current="false"
-          class="sc-gKPRtg cIyCjv"
+          class="sc-ftTHYK jxPSBm"
         >
           Grill
         </li>
         <li
           aria-current="false"
-          class="sc-gKPRtg cIyCjv"
+          class="sc-ftTHYK jxPSBm"
         >
           Spicy
         </li>
       </ul>
     </section>
     <section
-      class="sc-iBYQkv iseYUE"
+      class="sc-pyfCe dcrHaX"
     >
       <div
-        class="sc-ftTHYK fjYOEb"
+        class="sc-jrcTuL kbCoBx"
       >
         <svg
-          class="sc-jrcTuL gGWpXA"
+          class="sc-ipEyDJ kYhfAR"
           data-testid="popupIcon"
           fill="currentColor"
           height="1em"
@@ -76,24 +76,24 @@ exports[`Home Tests renders the Home page 1`] = `
       </div>
       <section
         aria-hidden="true"
-        class="sc-kDvujY kfYMtJ"
+        class="sc-csuSiG lmkHwq"
       >
         <ul
           aria-hidden="true"
           data-testid="popupList"
         >
           <li
-            class="sc-ipEyDJ fKZIlA"
+            class="sc-eDWCr ivFgPg"
           >
             rating
           </li>
           <li
-            class="sc-ipEyDJ jTZUxH"
+            class="sc-eDWCr eiwidf"
           >
             price
           </li>
           <li
-            class="sc-ipEyDJ jTZUxH"
+            class="sc-eDWCr eiwidf"
           >
             A to Z
           </li>
@@ -102,18 +102,18 @@ exports[`Home Tests renders the Home page 1`] = `
     </section>
   </section>
   <section
-    class="sc-dkrFOg sc-hLBbgP bKxbcz jHNPko"
+    class="sc-jSUZER sc-gKPRtg eANtvp eljnoa"
   >
     <h2
-      class="sc-gswNZR bGFxrF"
+      class="sc-eDvSVe dtdrzn"
     >
       All Pizzas
     </h2>
     <section
-      class="sc-csuSiG hrlAfi"
+      class="sc-bqWxrE dJvvDl"
     >
       <svg
-        class="sc-eDWCr dvqNhy"
+        class="sc-ksBlkl jYsCes"
         data-testid="searchIcon"
         fill="currentColor"
         height="1em"
@@ -128,17 +128,17 @@ exports[`Home Tests renders the Home page 1`] = `
         />
       </svg>
       <input
-        class="sc-bqWxrE gBpJFS"
+        class="sc-hBxehG iIJYd"
         placeholder="Search..."
         value=""
       />
     </section>
   </section>
   <section
-    class="sc-cabOPr gPzXiB"
+    class="sc-iAEawV jcRPMJ"
   >
     <article
-      class="sc-gikAfH gGGJld"
+      class="sc-bYMpWt fjKzCa"
     >
       <a
         href="/item/3"
@@ -154,48 +154,48 @@ exports[`Home Tests renders the Home page 1`] = `
           />
           <img
             alt="Shrimp Pizza pizza"
-            class="sc-ezOQGI dZEkIO"
+            class="sc-kMjNwy cwMvrV"
             height="250"
             src="./assets/img/pizza3.png"
             width="250"
           />
         </picture>
         <h3
-          class="sc-bYMpWt bAlChL"
+          class="sc-ilhmMj rvChN"
         >
           Shrimp Pizza
         </h3>
       </a>
       <section
-        class="sc-lllmON cLrsHJ"
+        class="sc-gikAfH jGYPJX"
       >
         <ul>
           <li
-            class="sc-iJnaPW fEkMEg"
+            class="sc-ezOQGI bnHGQs"
           >
             traditional
           </li>
           <li
-            class="sc-iJnaPW gTWzVO"
+            class="sc-ezOQGI iosdzC"
           >
             thin
           </li>
         </ul>
         <ul>
           <li
-            class="sc-iJnaPW fEkMEg"
+            class="sc-ezOQGI bnHGQs"
           >
             12
              inch
           </li>
           <li
-            class="sc-iJnaPW gTWzVO"
+            class="sc-ezOQGI iosdzC"
           >
             14
              inch
           </li>
           <li
-            class="sc-iJnaPW gTWzVO"
+            class="sc-ezOQGI iosdzC"
           >
             16
              inch
@@ -203,19 +203,19 @@ exports[`Home Tests renders the Home page 1`] = `
         </ul>
       </section>
       <section
-        class="sc-kMjNwy bUSjvo"
+        class="sc-jIRcFI jOLeNN"
       >
         <h3
-          class="sc-ilhmMj kRupxC"
+          class="sc-hhOBVt bsEnMi"
         >
           10
           $
         </h3>
         <button
-          class="sc-hBxehG sc-idXgbr sc-hHTYSt itXPlc kSxAzc hHiJUO"
+          class="sc-fEXmlR sc-hHTYSt sc-kgTSHT blZHeE goSwuU euaXrP"
         >
           <svg
-            class="sc-cwSeag eWircx"
+            class="sc-iJnaPW hntdDm"
             fill="currentColor"
             height="1em"
             stroke="currentColor"
@@ -235,7 +235,7 @@ exports[`Home Tests renders the Home page 1`] = `
       </section>
     </article>
     <article
-      class="sc-gikAfH gGGJld"
+      class="sc-bYMpWt fjKzCa"
     >
       <a
         href="/item/2"
@@ -251,37 +251,37 @@ exports[`Home Tests renders the Home page 1`] = `
           />
           <img
             alt="Pepperoni Pizza pizza"
-            class="sc-ezOQGI dZEkIO"
+            class="sc-kMjNwy cwMvrV"
             height="250"
             src="./assets/img/pizza2.png"
             width="250"
           />
         </picture>
         <h3
-          class="sc-bYMpWt bAlChL"
+          class="sc-ilhmMj rvChN"
         >
           Pepperoni Pizza
         </h3>
       </a>
       <section
-        class="sc-lllmON cLrsHJ"
+        class="sc-gikAfH jGYPJX"
       >
         <ul>
           <li
-            class="sc-iJnaPW fEkMEg"
+            class="sc-ezOQGI bnHGQs"
           >
             traditional
           </li>
         </ul>
         <ul>
           <li
-            class="sc-iJnaPW fEkMEg"
+            class="sc-ezOQGI bnHGQs"
           >
             12
              inch
           </li>
           <li
-            class="sc-iJnaPW gTWzVO"
+            class="sc-ezOQGI iosdzC"
           >
             14
              inch
@@ -289,19 +289,19 @@ exports[`Home Tests renders the Home page 1`] = `
         </ul>
       </section>
       <section
-        class="sc-kMjNwy bUSjvo"
+        class="sc-jIRcFI jOLeNN"
       >
         <h3
-          class="sc-ilhmMj kRupxC"
+          class="sc-hhOBVt bsEnMi"
         >
           12
           $
         </h3>
         <button
-          class="sc-hBxehG sc-idXgbr sc-hHTYSt itXPlc kSxAzc hHiJUO"
+          class="sc-fEXmlR sc-hHTYSt sc-kgTSHT blZHeE goSwuU euaXrP"
         >
           <svg
-            class="sc-cwSeag eWircx"
+            class="sc-iJnaPW hntdDm"
             fill="currentColor"
             height="1em"
             stroke="currentColor"
@@ -321,7 +321,7 @@ exports[`Home Tests renders the Home page 1`] = `
       </section>
     </article>
     <article
-      class="sc-gikAfH gGGJld"
+      class="sc-bYMpWt fjKzCa"
     >
       <a
         href="/item/6"
@@ -337,42 +337,42 @@ exports[`Home Tests renders the Home page 1`] = `
           />
           <img
             alt="Diablo pizza"
-            class="sc-ezOQGI dZEkIO"
+            class="sc-kMjNwy cwMvrV"
             height="250"
             src="./assets/img/pizza6.png"
             width="250"
           />
         </picture>
         <h3
-          class="sc-bYMpWt bAlChL"
+          class="sc-ilhmMj rvChN"
         >
           Diablo
         </h3>
       </a>
       <section
-        class="sc-lllmON cLrsHJ"
+        class="sc-gikAfH jGYPJX"
       >
         <ul>
           <li
-            class="sc-iJnaPW fEkMEg"
+            class="sc-ezOQGI bnHGQs"
           >
             traditional
           </li>
           <li
-            class="sc-iJnaPW gTWzVO"
+            class="sc-ezOQGI iosdzC"
           >
             thin
           </li>
         </ul>
         <ul>
           <li
-            class="sc-iJnaPW fEkMEg"
+            class="sc-ezOQGI bnHGQs"
           >
             12
              inch
           </li>
           <li
-            class="sc-iJnaPW gTWzVO"
+            class="sc-ezOQGI iosdzC"
           >
             16
              inch
@@ -380,19 +380,19 @@ exports[`Home Tests renders the Home page 1`] = `
         </ul>
       </section>
       <section
-        class="sc-kMjNwy bUSjvo"
+        class="sc-jIRcFI jOLeNN"
       >
         <h3
-          class="sc-ilhmMj kRupxC"
+          class="sc-hhOBVt bsEnMi"
         >
           15
           $
         </h3>
         <button
-          class="sc-hBxehG sc-idXgbr sc-hHTYSt itXPlc kSxAzc hHiJUO"
+          class="sc-fEXmlR sc-hHTYSt sc-kgTSHT blZHeE goSwuU euaXrP"
         >
           <svg
-            class="sc-cwSeag eWircx"
+            class="sc-iJnaPW hntdDm"
             fill="currentColor"
             height="1em"
             stroke="currentColor"
@@ -411,153 +411,6 @@ exports[`Home Tests renders the Home page 1`] = `
         </button>
       </section>
     </article>
-  </section>
-</article>
-`;
-
-exports[`Home Tests renders the Home page with a server requesr error 1`] = `
-<article
-  class="sc-bcXHqe bZXhLi"
-  data-testid="homePage"
->
-  <section
-    class="sc-dkrFOg bKxbcz"
-  >
-    <section>
-      <ul
-        class="sc-jSUZER dpQOsm"
-      >
-        <li
-          aria-current="true"
-          class="sc-gKPRtg hYAhSL"
-        >
-          All
-        </li>
-        <li
-          aria-current="false"
-          class="sc-gKPRtg cIyCjv"
-        >
-          Meat
-        </li>
-        <li
-          aria-current="false"
-          class="sc-gKPRtg cIyCjv"
-        >
-          Vegetarian
-        </li>
-        <li
-          aria-current="false"
-          class="sc-gKPRtg cIyCjv"
-        >
-          Grill
-        </li>
-        <li
-          aria-current="false"
-          class="sc-gKPRtg cIyCjv"
-        >
-          Spicy
-        </li>
-      </ul>
-    </section>
-    <section
-      class="sc-iBYQkv iseYUE"
-    >
-      <div
-        class="sc-ftTHYK fjYOEb"
-      >
-        <svg
-          class="sc-jrcTuL gGWpXA"
-          data-testid="popupIcon"
-          fill="currentColor"
-          height="1em"
-          stroke="currentColor"
-          stroke-width="0"
-          viewBox="0 0 16 16"
-          width="1em"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <path
-            d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z"
-          />
-        </svg>
-        <b>
-          Sort by
-        </b>
-        <span
-          data-testid="currenChosenSortName"
-        >
-          rating
-        </span>
-      </div>
-      <section
-        aria-hidden="true"
-        class="sc-kDvujY kfYMtJ"
-      >
-        <ul
-          aria-hidden="true"
-          data-testid="popupList"
-        >
-          <li
-            class="sc-ipEyDJ fKZIlA"
-          >
-            rating
-          </li>
-          <li
-            class="sc-ipEyDJ jTZUxH"
-          >
-            price
-          </li>
-          <li
-            class="sc-ipEyDJ jTZUxH"
-          >
-            A to Z
-          </li>
-        </ul>
-      </section>
-    </section>
-  </section>
-  <section
-    class="sc-dkrFOg sc-hLBbgP bKxbcz jHNPko"
-  >
-    <h2
-      class="sc-gswNZR bGFxrF"
-    >
-      All Pizzas
-    </h2>
-    <section
-      class="sc-csuSiG hrlAfi"
-    >
-      <svg
-        class="sc-eDWCr dvqNhy"
-        data-testid="searchIcon"
-        fill="currentColor"
-        height="1em"
-        stroke="currentColor"
-        stroke-width="0"
-        viewBox="0 0 16 16"
-        width="1em"
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        <path
-          d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"
-        />
-      </svg>
-      <input
-        class="sc-bqWxrE gBpJFS"
-        placeholder="Search..."
-        value=""
-      />
-    </section>
-  </section>
-  <section
-    class="sc-eDvSVe jKghvf"
-  >
-    <h2>
-      Request Error
-    </h2>
-    <p>
-      Coudn't get store items. Try your request again later.
-    </p>
   </section>
 </article>
 `;

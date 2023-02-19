@@ -32,11 +32,10 @@ describe('Item Tests', () => {
 
   test('renders the Item page with a server requesr error', async () => {
     server.use(rest.get('*', (_req, res, ctx) => res.once(ctx.status(500))));
-
     renderWithProviders(<Item />);
-    const error = await screen.findByText(/Error: failed request/i); // eslint-disable-line @typescript-eslint/no-unused-vars
 
-    const loadedItem = screen.getByTestId('itemPage');
-    expect(loadedItem).toMatchSnapshot();
+    expect(
+      await screen.findByText(/failed to get data from the server/i),
+    ).toBeInTheDocument();
   });
 });

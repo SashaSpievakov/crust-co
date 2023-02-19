@@ -3,38 +3,36 @@
 exports[`Cart Tests renders the Cart page 1`] = `
 Object {
   "children": Array [
-    <section
-      className="sc-bqWxrE ktLVrO"
+    <h2>
+      Your cart is empty 
+      <span>
+        😕
+      </span>
+    </h2>,
+    <p>
+      You haven't ordered food yet.
+      <br />
+      If you want to make an order, go back to the main page.
+    </p>,
+    <img
+      alt="empty cart"
+      height="255"
+      src="empty-cart.png"
+      width="300"
+    />,
+    <a
+      className="sc-bcXHqe sc-gswNZR fAfvZN llPphw"
+      href="/"
+      onClick={[Function]}
     >
-      <h2>
-        Your cart is empty 
-        <span>
-          😕
-        </span>
-      </h2>
-      <p>
-        You haven't ordered food yet.
-        <br />
-        If you want to make an order, go back to the main page.
-      </p>
-      <img
-        alt="empty cart"
-        height="255"
-        src="empty-cart.png"
-        width="300"
-      />
-      <a
-        className="sc-bcXHqe sc-gswNZR fAfvZN llPphw"
-        href="/"
-        onClick={[Function]}
-      >
-        <span>
-          Go Back
-        </span>
-      </a>
-    </section>,
+      <span>
+        Go Back
+      </span>
+    </a>,
   ],
-  "props": Object {},
+  "props": Object {
+    "className": "sc-bqWxrE ktLVrO",
+  },
   "type": "article",
 }
 `;
@@ -43,13 +41,13 @@ exports[`Cart Tests renders the Cart page with items 1`] = `
 Object {
   "children": Array [
     <section
-      className="sc-ksBlkl fTEa-Db"
+      className="sc-fEXmlR jfLkoK"
     >
       <h2
-        className="sc-hBxehG yKVxx"
+        className="sc-bjfHbI kzirpQ"
       >
         <svg
-          className="sc-fnGiBr hOfYkI"
+          className="sc-idXgbr eiDaYw"
           fill="currentColor"
           height="1em"
           stroke="currentColor"
@@ -70,11 +68,11 @@ Object {
         Cart
       </h2>
       <section
-        className="sc-fEXmlR icVmZh"
+        className="sc-dIfARi gvVGxo"
         onClick={[Function]}
       >
         <svg
-          className="sc-bjfHbI jiQiCh"
+          className="sc-hHTYSt jxBtuq"
           fill="currentColor"
           height="1em"
           stroke="currentColor"
@@ -346,10 +344,10 @@ Object {
       </article>
     </section>,
     <section
-      className="sc-idXgbr kQcmRf"
+      className="sc-dmctIk gFIzDq"
     >
       <section
-        className="sc-dIfARi bVvpxU"
+        className="sc-kgTSHT iKomvi"
       >
         <span>
            
@@ -374,7 +372,7 @@ Object {
         </span>
       </section>
       <section
-        className="sc-hHTYSt dJnySv"
+        className="sc-fLcnxK dCfemR"
       >
         <a
           className="sc-bcXHqe sc-eDvSVe sc-gKPRtg sc-iBYQkv fAfvZN fwWQTF gmBSoV kPGGvm"
@@ -382,7 +380,7 @@ Object {
           onClick={[Function]}
         >
           <svg
-            className="sc-dmctIk wkOGL"
+            className="sc-bBABsx eyDVuX"
             fill="currentColor"
             height="1em"
             stroke="currentColor"
@@ -415,7 +413,9 @@ Object {
       </section>
     </section>,
   ],
-  "props": Object {},
+  "props": Object {
+    "className": "sc-ksBlkl sc-fnGiBr bEhjPe cQLoWZ",
+  },
   "type": "article",
 }
 `;

@@ -32,11 +32,10 @@ describe('Home Tests', () => {
 
   test('renders the Home page with a server requesr error', async () => {
     server.use(rest.get('*', (_req, res, ctx) => res.once(ctx.status(500))));
-
     renderWithProviders(<Home />);
-    const error = await screen.findByText(/request error/i); // eslint-disable-line @typescript-eslint/no-unused-vars
 
-    const loadedHome = screen.getByTestId('homePage');
-    expect(loadedHome).toMatchSnapshot();
+    expect(
+      await screen.findByText(/failed to get data from the server/i),
+    ).toBeInTheDocument();
   });
 });
