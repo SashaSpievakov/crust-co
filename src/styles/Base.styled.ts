@@ -5,4 +5,17 @@ const Container = styled.article`
   margin: 0 auto;
 `;
 
-export { Container };
+const ErrorParagraph = styled.p`
+  font-size: 26px;
+
+  @media screen and (max-width: 550px) {
+    font-size: 20px;
+    padding: 0 15px;
+  }
+
+  @media screen and (max-width: 450px) {
+    font-size: 17px;
+  }
+`;
+
+export { Container, ErrorParagraph };

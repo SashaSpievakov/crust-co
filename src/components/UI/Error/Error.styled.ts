@@ -8,7 +8,7 @@ const Article = styled(Container)`
 `;
 
 const ErrorHeading = styled.h2`
-  font-size: 38px;
+  font-size: 45px;
   font-weight: 700;
   line-height: 1.2;
   margin-bottom: 5px;
@@ -24,17 +24,4 @@ const ErrorHeading = styled.h2`
   }
 `;
 
-const ErrorParagraph = styled.p`
-  font-size: 26px;
-
-  @media screen and (max-width: 550px) {
-    font-size: 20px;
-    padding: 0 15px;
-  }
-
-  @media screen and (max-width: 450px) {
-    font-size: 17px;
-  }
-`;
-
-export { Article, ErrorHeading, ErrorParagraph };
+export { Article, ErrorHeading };

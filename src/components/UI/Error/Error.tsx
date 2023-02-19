@@ -1,4 +1,5 @@
-import { Article, ErrorHeading, ErrorParagraph } from './Error.styled';
+import { ErrorParagraph } from 'src/styles/Base.styled';
+import { Article, ErrorHeading } from './Error.styled';
 
 const Error = () => {
   return (

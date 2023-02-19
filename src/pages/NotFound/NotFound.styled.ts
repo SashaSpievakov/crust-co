@@ -1,38 +1,30 @@
 import styled from 'styled-components';
 
-const Wrapper = styled.article`
+const Article = styled.article`
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-bottom: 75px;
+  margin: 120px 0 50px;
 
-  @media screen and (max-width: 900px) {
+  p {
     margin-bottom: 50px;
   }
-
-  @media screen and (max-width: 650px) {
-    margin-bottom: 20px;
-  }
 `;
 
-const Title = styled.h1`
-  font-size: 64px;
+const Title = styled.h2`
+  font-size: 60px;
+  line-height: 1.1;
   text-align: center;
-  padding: 150px 0;
+  margin-bottom: 20px;
 
-  @media screen and (max-width: 900px) {
-    font-size: 50px;
-    padding: 100px 0;
+  @media screen and (max-width: 750px) {
+    font-size: 55px;
+    padding: 0 15px;
   }
 
-  @media screen and (max-width: 650px) {
+  @media screen and (max-width: 400px) {
     font-size: 35px;
-    padding: 50px 0;
-  }
-
-  @media screen and (max-width: 500px) {
-    padding: 40px 0;
   }
 `;
 
-export { Title, Wrapper };
+export { Title, Article };
