@@ -33,6 +33,7 @@
     "react-hooks/exhaustive-deps": "off",
     "testing-library/render-result-naming-convention": "off",
     "testing-library/no-render-in-setup": "off",
-    "import/no-extraneous-dependencies": "off"
+    "import/no-extraneous-dependencies": "off",
+    "import/prefer-default-export": "off"
   }
 }

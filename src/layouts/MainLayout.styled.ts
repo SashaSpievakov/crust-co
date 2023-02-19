@@ -1,4 +1,3 @@
-/* eslint import/prefer-default-export: 0 */
 import styled from 'styled-components';
 
 const Main = styled.main`

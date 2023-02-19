@@ -1,7 +1,6 @@
 import { RootState } from '../../../../store';
 import { ICartItem } from '../../../../../models/ICartItem';
 
-// eslint-disable-next-line import/prefer-default-export
 export const selectItemsCount = (id: string) => (state: RootState) => {
   if (!state.cart) return 0;
 
