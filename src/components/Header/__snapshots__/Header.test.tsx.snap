@@ -3,44 +3,72 @@
 exports[`Header Tests renders the Header component 1`] = `
 Object {
   "children": Array [
-    <article
-      className="sc-dkrFOg sc-eDvSVe gYraVE iRTugX"
+    <a
+      href="/"
+      onClick={[Function]}
     >
+      <section
+        className="sc-bcXHqe bwjlDT"
+      >
+        <img
+          alt="Pizza logo"
+          height="54.5"
+          src="main-logo.svg"
+          width="38"
+        />
+        <div>
+          <h1
+            className="sc-gswNZR gWFkxJ"
+          >
+            Pizza Place
+          </h1>
+          <p>
+            the most delicious pizzas in town
+          </p>
+        </div>
+      </section>
+    </a>,
+    <section
+      className="sc-hLBbgP dia-Dlb"
+    >
+      <svg
+        className="sc-eDvSVe kXIglM"
+        data-testid="themeIcon"
+        fill="currentColor"
+        height="1em"
+        mode=""
+        onClick={[Function]}
+        stroke="currentColor"
+        strokeWidth="0"
+        style={
+          Object {
+            "color": undefined,
+          }
+        }
+        viewBox="0 0 16 16"
+        width="1em"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M6 .278a.768.768 0 0 1 .08.858 7.208 7.208 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277.527 0 1.04-.055 1.533-.16a.787.787 0 0 1 .81.316.733.733 0 0 1-.031.893A8.349 8.349 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.752.752 0 0 1 6 .278z"
+        />
+      </svg>
       <a
-        href="/"
+        className="sc-gKPRtg sc-ftTHYK iLACsd jLwvLM"
+        data-testid="cartLink"
+        href="/cart"
         onClick={[Function]}
       >
-        <section
-          className="sc-bcXHqe bwjlDT"
-        >
-          <img
-            alt="Pizza logo"
-            height="54.5"
-            src="main-logo.svg"
-            width="38"
-          />
-          <div>
-            <h1
-              className="sc-gswNZR gWFkxJ"
-            >
-              Pizza Place
-            </h1>
-            <p>
-              the most delicious pizzas in town
-            </p>
-          </div>
-        </section>
-      </a>
-      <section
-        className="sc-jSUZER jAeLAN"
-      >
+        <span>
+          0
+           $
+        </span>
+        <div
+          className="sc-jSUZER iQBnno"
+        />
         <svg
-          className="sc-gKPRtg fIapoa"
-          data-testid="themeIcon"
           fill="currentColor"
           height="1em"
-          mode=""
-          onClick={[Function]}
           stroke="currentColor"
           strokeWidth="0"
           style={
@@ -53,49 +81,17 @@ Object {
           xmlns="http://www.w3.org/2000/svg"
         >
           <path
-            d="M6 .278a.768.768 0 0 1 .08.858 7.208 7.208 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277.527 0 1.04-.055 1.533-.16a.787.787 0 0 1 .81.316.733.733 0 0 1-.031.893A8.349 8.349 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.752.752 0 0 1 6 .278z"
+            d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .49.598l-1 5a.5.5 0 0 1-.465.401l-9.397.472L4.415 11H13a.5.5 0 0 1 0 1H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l.84 4.479 9.144-.459L13.89 4H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"
           />
         </svg>
-        <a
-          className="sc-ftTHYK sc-jrcTuL KXpKQ cKUqLm"
-          data-testid="cartLink"
-          href="/cart"
-          onClick={[Function]}
-        >
-          <span>
-            0
-             $
-          </span>
-          <div
-            className="sc-iBYQkv iTPFCD"
-          />
-          <svg
-            fill="currentColor"
-            height="1em"
-            stroke="currentColor"
-            strokeWidth="0"
-            style={
-              Object {
-                "color": undefined,
-              }
-            }
-            viewBox="0 0 16 16"
-            width="1em"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .49.598l-1 5a.5.5 0 0 1-.465.401l-9.397.472L4.415 11H13a.5.5 0 0 1 0 1H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l.84 4.479 9.144-.459L13.89 4H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"
-            />
-          </svg>
-          <span>
-            0
-          </span>
-        </a>
-      </section>
-    </article>,
+        <span>
+          0
+        </span>
+      </a>
+    </section>,
   ],
   "props": Object {
-    "className": "sc-hLBbgP iodrKd",
+    "className": "sc-dkrFOg hXgVLm",
   },
   "type": "header",
 }
@@ -104,64 +100,60 @@ Object {
 exports[`Header Tests renders the Header component on the Cart page 1`] = `
 Object {
   "children": Array [
-    <article
-      className="sc-dkrFOg sc-eDvSVe gYraVE cvniFy"
+    <a
+      href="/"
+      onClick={[Function]}
     >
-      <a
-        href="/"
-        onClick={[Function]}
-      >
-        <section
-          className="sc-bcXHqe bwjlDT"
-        >
-          <img
-            alt="Pizza logo"
-            height="54.5"
-            src="main-logo.svg"
-            width="38"
-          />
-          <div>
-            <h1
-              className="sc-gswNZR gWFkxJ"
-            >
-              Pizza Place
-            </h1>
-            <p>
-              the most delicious pizzas in town
-            </p>
-          </div>
-        </section>
-      </a>
       <section
-        className="sc-jSUZER jAeLAN"
+        className="sc-bcXHqe bwjlDT"
       >
-        <svg
-          className="sc-gKPRtg biBQPw"
-          data-testid="themeIcon"
-          fill="currentColor"
-          height="1em"
-          mode="cart"
-          onClick={[Function]}
-          stroke="currentColor"
-          strokeWidth="0"
-          style={
-            Object {
-              "color": undefined,
-            }
-          }
-          viewBox="0 0 16 16"
-          width="1em"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <path
-            d="M6 .278a.768.768 0 0 1 .08.858 7.208 7.208 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277.527 0 1.04-.055 1.533-.16a.787.787 0 0 1 .81.316.733.733 0 0 1-.031.893A8.349 8.349 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.752.752 0 0 1 6 .278z"
-          />
-        </svg>
+        <img
+          alt="Pizza logo"
+          height="54.5"
+          src="main-logo.svg"
+          width="38"
+        />
+        <div>
+          <h1
+            className="sc-gswNZR gWFkxJ"
+          >
+            Pizza Place
+          </h1>
+          <p>
+            the most delicious pizzas in town
+          </p>
+        </div>
       </section>
-    </article>,
+    </a>,
+    <section
+      className="sc-hLBbgP dia-Dlb"
+    >
+      <svg
+        className="sc-eDvSVe jsRVnS"
+        data-testid="themeIcon"
+        fill="currentColor"
+        height="1em"
+        mode="cart"
+        onClick={[Function]}
+        stroke="currentColor"
+        strokeWidth="0"
+        style={
+          Object {
+            "color": undefined,
+          }
+        }
+        viewBox="0 0 16 16"
+        width="1em"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M6 .278a.768.768 0 0 1 .08.858 7.208 7.208 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277.527 0 1.04-.055 1.533-.16a.787.787 0 0 1 .81.316.733.733 0 0 1-.031.893A8.349 8.349 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.752.752 0 0 1 6 .278z"
+        />
+      </svg>
+    </section>,
   ],
   "props": Object {
-    "className": "sc-hLBbgP iodrKd",
+    "className": "sc-dkrFOg cJQGOn",
   },
   "type": "header",
 }

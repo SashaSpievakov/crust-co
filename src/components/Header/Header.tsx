@@ -7,7 +7,7 @@ import LogoSection from '../UI/LogoSection/LogoSection';
 import { setTheme } from '../../store/slices/theme/reducer/themeReducer';
 import { selectIsLight } from '../../store/slices/theme/selectors/selectIsLight';
 import { selectCart } from '../../store/slices/cart/selectors/selectCart/selectCart';
-import { Main, Wrapper, Right, Icon, Delimiter } from './Header.styled';
+import { HeaderWrapper, Right, Icon, Delimiter } from './Header.styled';
 import { ButtonCart } from '../../styles/Buttons.styled';
 import { useAppDispatch, useAppSelector } from '../../hooks/reduxHooks';
 
@@ -51,28 +51,26 @@ const Header = () => {
   };
 
   return (
-    <Main ref={scrollRef}>
-      <Wrapper isCart={location.pathname === '/cart'}>
-        <LogoSection />
+    <HeaderWrapper ref={scrollRef} isCart={location.pathname === '/cart'}>
+      <LogoSection />
 
-        <Right>
-          <Icon
-            as={isLight ? BsFillMoonFill : BsFillSunFill}
-            onClick={changeThemes}
-            mode={location.pathname === '/cart' ? 'cart' : ''}
-            data-testid="themeIcon"
-          />
-          {location.pathname !== '/cart' && (
-            <ButtonCart to="/cart" as={Link} data-testid="cartLink">
-              <span>{totalPrice} $</span>
-              <Delimiter />
-              <BsCart3 />
-              <span>{itemsCount}</span>
-            </ButtonCart>
-          )}
-        </Right>
-      </Wrapper>
-    </Main>
+      <Right>
+        <Icon
+          as={isLight ? BsFillMoonFill : BsFillSunFill}
+          onClick={changeThemes}
+          mode={location.pathname === '/cart' ? 'cart' : ''}
+          data-testid="themeIcon"
+        />
+        {location.pathname !== '/cart' && (
+          <ButtonCart to="/cart" as={Link} data-testid="cartLink">
+            <span>{totalPrice} $</span>
+            <Delimiter />
+            <BsCart3 />
+            <span>{itemsCount}</span>
+          </ButtonCart>
+        )}
+      </Right>
+    </HeaderWrapper>
   );
 };
 

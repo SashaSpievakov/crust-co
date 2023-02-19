@@ -1,6 +1,6 @@
 import styled, { css } from 'styled-components';
 
-import { Container } from '../../styles/Base.styled';
+// import { Container } from '../../styles/Base.styled';
 
 interface WrapperProps {
   isCart: boolean;
@@ -10,20 +10,19 @@ interface LiProps {
   mode: string;
 }
 
-const Main = styled.header`
-  border-bottom: 1px solid ${({ theme }) => theme.colors.gray};
+const HeaderWrapper = styled.header<WrapperProps>`
+  position: relative;
+  width: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 auto;
   padding: 40px 0;
+  border-bottom: 1px solid ${({ theme }) => theme.colors.gray};
 
   @media screen and (max-width: 550px) {
     padding: 30px 0;
   }
-`;
-
-const Wrapper = styled(Container)<WrapperProps>`
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
 
   @media screen and (max-width: 400px) {
     gap: 15px;
@@ -83,4 +82,4 @@ const Delimiter = styled.div`
   margin-right: 14px;
 `;
 
-export { Main, Wrapper, Right, Icon, Delimiter };
+export { HeaderWrapper, Right, Icon, Delimiter };
