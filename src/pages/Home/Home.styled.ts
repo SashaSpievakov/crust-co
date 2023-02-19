@@ -35,26 +35,4 @@ const Block = styled(Top)`
   }
 `;
 
-const ErrorHeading = styled.h2`
-  font-size: 32px;
-  font-weight: 700;
-  margin-bottom: 10px;
-
-  @media screen and (max-width: 450px) {
-    font-size: 25px;
-  }
-`;
-
-const ErrorParagraph = styled.p`
-  font-size: 22px;
-
-  @media screen and (max-width: 650px) {
-    font-size: 18px;
-  }
-
-  @media screen and (max-width: 450px) {
-    font-size: 16px;
-  }
-`;
-
-export { Title, Top, Block, ErrorHeading, ErrorParagraph };
+export { Title, Top, Block };

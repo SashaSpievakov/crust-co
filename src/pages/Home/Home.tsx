@@ -1,7 +1,8 @@
 import { useEffect, useState } from 'react';
 
 import { Container } from 'src/styles/Base.styled';
-import { Title, Block, Top, ErrorHeading, ErrorParagraph } from './Home.styled';
+import Error from 'src/components/UI/Error/Error';
+import { Title, Block, Top } from './Home.styled';
 import { useAppSelector } from '../../hooks/reduxHooks';
 import { selectSort } from '../../store/slices/sort/selectors/selectSort';
 import { selectCategory } from '../../store/slices/category/selectors/selectCategory';
@@ -35,7 +36,9 @@ const Home = () => {
     }
   }, [activeCategory, sortSearchParam, data, isSuccess]);
 
-  return (
+  return isError ? (
+    <Error />
+  ) : (
     <Container data-testid="homePage">
       <Top>
         <Categories />
@@ -45,16 +48,7 @@ const Home = () => {
         <Title>All Pizzas</Title>
         <SearchItems />
       </Block>
-      {isError ? (
-        <>
-          <ErrorHeading>Request Error</ErrorHeading>
-          <ErrorParagraph>
-            Coudn&apos;t get store items. Try your request again later.
-          </ErrorParagraph>
-        </>
-      ) : (
-        <ProductsContainer isLoading={isLoading} items={pizzas} />
-      )}
+      <ProductsContainer isLoading={isLoading} items={pizzas} />
     </Container>
   );
 };

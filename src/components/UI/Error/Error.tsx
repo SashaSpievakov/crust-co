@@ -1,11 +1,13 @@
-import { Container } from 'src/styles/Base.styled';
-import { ErrorMessage } from './Error.styled';
+import { Article, ErrorHeading, ErrorParagraph } from './Error.styled';
 
 const Error = () => {
   return (
-    <Container data-testid="itemPage">
-      <ErrorMessage>Error: failed request, try again</ErrorMessage>
-    </Container>
+    <Article data-testid="itemPage">
+      <ErrorHeading>Error: failed to get data from the server</ErrorHeading>
+      <ErrorParagraph>
+        We are already working on that. Try again later
+      </ErrorParagraph>
+    </Article>
   );
 };
 

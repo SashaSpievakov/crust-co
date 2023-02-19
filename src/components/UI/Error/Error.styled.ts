@@ -1,13 +1,40 @@
 import styled from 'styled-components';
 
-const ErrorMessage = styled.h2`
-  font-size: 30px;
-  color: ${({ theme }) => theme.colors.primary};
+import { Container } from 'src/styles/Base.styled';
+
+const Article = styled(Container)`
+  margin: 100px auto;
+  text-align: center;
+`;
+
+const ErrorHeading = styled.h2`
+  font-size: 38px;
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 5px;
 
   @media screen and (max-width: 550px) {
-    font-size: 24px;
-    padding-bottom: 25px;
+    font-size: 30px;
+    padding: 0 15px;
+    margin-bottom: 0;
+  }
+
+  @media screen and (max-width: 450px) {
+    font-size: 26px;
   }
 `;
 
-export { ErrorMessage };
+const ErrorParagraph = styled.p`
+  font-size: 26px;
+
+  @media screen and (max-width: 550px) {
+    font-size: 20px;
+    padding: 0 15px;
+  }
+
+  @media screen and (max-width: 450px) {
+    font-size: 17px;
+  }
+`;
+
+export { Article, ErrorHeading, ErrorParagraph };
