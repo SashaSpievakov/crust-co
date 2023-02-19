@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom';
 import { shallowEqual } from 'react-redux';
 
+import { Container } from 'src/styles/Base.styled';
 import { clearCart } from '../../store/slices/cart/reducer/cartReducer';
 import { selectCart } from '../../store/slices/cart/selectors/selectCart/selectCart';
 import CartItem from '../../components/CartItem/CartItem';
@@ -32,7 +33,7 @@ const Cart = () => {
   };
 
   return items.length ? (
-    <>
+    <Container>
       <Top>
         <Title>
           <CartIcon />
@@ -71,7 +72,7 @@ const Cart = () => {
           </ButtonPay>
         </Buttons>
       </Bottom>
-    </>
+    </Container>
   ) : (
     <CartEmpty />
   );
