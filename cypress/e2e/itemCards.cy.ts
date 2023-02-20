@@ -23,15 +23,20 @@ describe('itemCard tests', () => {
     // change category and rerender items
     cy.findByText('Meat').click();
 
-    // check if states after the rerender are right
-    cy.findAllByText(/traditional/i)
-      .first()
-      .should('have.class', 'gTFxUf');
-    cy.get('@thinType').should('have.class', 'iosdzC');
-    cy.findAllByText(/12 inch/i)
-      .first()
-      .should('have.class', 'gTFxUf');
-    cy.get('@14inch').should('have.class', 'iosdzC');
+    // check if current values after the rerender are right
+    cy.findAllByRole('listitem', { current: true })
+      .eq(1)
+      .should('have.text', 'traditional');
+    cy.findAllByRole('listitem', { current: false })
+      .eq(4)
+      .should('have.text', 'thin');
+
+    cy.findAllByRole('listitem', { current: true })
+      .eq(2)
+      .should('have.text', '12 inch');
+    cy.findAllByRole('listitem', { current: false })
+      .eq(5)
+      .should('have.text', '14 inch');
 
     // check disabled minus button
     cy.findAllByTestId('itemsHandlerMinus')

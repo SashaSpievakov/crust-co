@@ -56,6 +56,7 @@ const Selector = ({
             key={type}
             onClick={() => typeClickHandler(type)}
             chosen={activeType === types.indexOf(type)}
+            aria-current={activeType === types.indexOf(type)}
           >
             {typeNames[type]}
           </Li>
@@ -67,6 +68,7 @@ const Selector = ({
             key={size}
             onClick={() => sizeClickHandler(size)}
             chosen={activeSize === size}
+            aria-current={activeSize === size}
           >
             {size} inch
           </Li>
