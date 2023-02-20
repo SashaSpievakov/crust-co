@@ -3,7 +3,7 @@ import { useAppDispatch, useAppSelector } from '../../hooks/reduxHooks';
 
 import { setSort } from '../../store/slices/sort/reducer/sortReducer';
 import { selectSort } from '../../store/slices/sort/selectors/selectSort';
-import { Wrapper, Label, ArrowUp, ArrowDown, Popup, Li } from './Sort.styled';
+import { Section, Label, ArrowUp, ArrowDown, Popup, Li } from './Sort.styled';
 
 interface CategoriesProps {
   sortNamesArr: string[];
@@ -38,7 +38,7 @@ const Sort = memo(({ sortNamesArr }: CategoriesProps) => {
   }, [open]);
 
   return (
-    <Wrapper ref={sortRef}>
+    <Section ref={sortRef}>
       <Label onClick={() => setOpen(!open)}>
         {open ? (
           <ArrowUp data-testid="popupIcon" />
@@ -61,7 +61,7 @@ const Sort = memo(({ sortNamesArr }: CategoriesProps) => {
           ))}
         </ul>
       </Popup>
-    </Wrapper>
+    </Section>
   );
 });
 

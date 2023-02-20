@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 import { BsXLg, BsSearch } from 'react-icons/bs';
 
-const Wrapper = styled.section`
+const Section = styled.section`
   position: relative;
 `;
 
@@ -69,4 +69,4 @@ const Cross = styled(BsXLg)`
   }
 `;
 
-export { Wrapper, SearchIcon, Input, Cross };
+export { Section, SearchIcon, Input, Cross };

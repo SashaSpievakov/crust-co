@@ -18,7 +18,7 @@ const mixinBackground = css`
   background-color: ${({ theme }) => theme.colors.secondaryTransparent};
 `;
 
-const Wrapper = styled.section`
+const Section = styled.section`
   width: 127px;
   position: relative;
   margin-top: 15px;
@@ -93,4 +93,4 @@ const Li = styled.li<LiProps>`
     `}
 `;
 
-export { Wrapper, Label, ArrowUp, ArrowDown, Popup, Li };
+export { Section, Label, ArrowUp, ArrowDown, Popup, Li };

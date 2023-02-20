@@ -21,7 +21,7 @@ const dash = keyframes`
   }
 `;
 
-const Wrapper = styled.article`
+const Article = styled.article`
   width: 100px;
   margin: 0 auto;
 `;
@@ -39,4 +39,4 @@ const Circle = styled.circle`
   animation: ${dash} 1.5s ease-in-out infinite;
 `;
 
-export { Wrapper, Loader, Circle };
+export { Article, Loader, Circle };
