@@ -34,6 +34,7 @@ Object {
       <svg
         className="sc-eDvSVe kXIglM"
         data-testid="themeIcon"
+        data-theme="light"
         fill="currentColor"
         height="1em"
         mode=""
@@ -129,8 +130,9 @@ Object {
       className="sc-hLBbgP dia-Dlb"
     >
       <svg
-        className="sc-eDvSVe jsRVnS"
+        className="sc-eDvSVe NXRxe"
         data-testid="themeIcon"
+        data-theme="light"
         fill="currentColor"
         height="1em"
         mode="cart"

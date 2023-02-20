@@ -38,12 +38,14 @@ Object {
       >
         <ul>
           <li
+            aria-current={true}
             className="sc-eDWCr cQFBpw"
             onClick={[Function]}
           >
             traditional
           </li>
           <li
+            aria-current={false}
             className="sc-eDWCr jWyKRS"
             onClick={[Function]}
           >
@@ -52,6 +54,7 @@ Object {
         </ul>
         <ul>
           <li
+            aria-current={true}
             className="sc-eDWCr cQFBpw"
             onClick={[Function]}
           >
@@ -59,6 +62,7 @@ Object {
              inch
           </li>
           <li
+            aria-current={false}
             className="sc-eDWCr jWyKRS"
             onClick={[Function]}
           >
@@ -66,6 +70,7 @@ Object {
              inch
           </li>
           <li
+            aria-current={false}
             className="sc-eDWCr jWyKRS"
             onClick={[Function]}
           >
@@ -147,6 +152,7 @@ Object {
       >
         <ul>
           <li
+            aria-current={true}
             className="sc-eDWCr cQFBpw"
             onClick={[Function]}
           >
@@ -155,6 +161,7 @@ Object {
         </ul>
         <ul>
           <li
+            aria-current={true}
             className="sc-eDWCr cQFBpw"
             onClick={[Function]}
           >
@@ -162,6 +169,7 @@ Object {
              inch
           </li>
           <li
+            aria-current={false}
             className="sc-eDWCr jWyKRS"
             onClick={[Function]}
           >
@@ -243,12 +251,14 @@ Object {
       >
         <ul>
           <li
+            aria-current={true}
             className="sc-eDWCr cQFBpw"
             onClick={[Function]}
           >
             traditional
           </li>
           <li
+            aria-current={false}
             className="sc-eDWCr jWyKRS"
             onClick={[Function]}
           >
@@ -257,6 +267,7 @@ Object {
         </ul>
         <ul>
           <li
+            aria-current={true}
             className="sc-eDWCr cQFBpw"
             onClick={[Function]}
           >
@@ -264,6 +275,7 @@ Object {
              inch
           </li>
           <li
+            aria-current={false}
             className="sc-eDWCr jWyKRS"
             onClick={[Function]}
           >

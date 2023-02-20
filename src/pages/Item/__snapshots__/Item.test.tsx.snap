@@ -27,11 +27,13 @@ exports[`Item Tests renders the Item page 1`] = `
   >
     <ul>
       <li
+        aria-current="true"
         class="sc-csuSiG bABTBH"
       >
         traditional
       </li>
       <li
+        aria-current="false"
         class="sc-csuSiG leYTbZ"
       >
         thin
@@ -39,18 +41,21 @@ exports[`Item Tests renders the Item page 1`] = `
     </ul>
     <ul>
       <li
+        aria-current="true"
         class="sc-csuSiG bABTBH"
       >
         12
          inch
       </li>
       <li
+        aria-current="false"
         class="sc-csuSiG leYTbZ"
       >
         14
          inch
       </li>
       <li
+        aria-current="false"
         class="sc-csuSiG leYTbZ"
       >
         16

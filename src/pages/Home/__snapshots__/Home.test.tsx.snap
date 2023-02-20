@@ -171,11 +171,13 @@ exports[`Home Tests renders the Home page 1`] = `
       >
         <ul>
           <li
+            aria-current="true"
             class="sc-ezOQGI bnHGQs"
           >
             traditional
           </li>
           <li
+            aria-current="false"
             class="sc-ezOQGI iosdzC"
           >
             thin
@@ -183,18 +185,21 @@ exports[`Home Tests renders the Home page 1`] = `
         </ul>
         <ul>
           <li
+            aria-current="true"
             class="sc-ezOQGI bnHGQs"
           >
             12
              inch
           </li>
           <li
+            aria-current="false"
             class="sc-ezOQGI iosdzC"
           >
             14
              inch
           </li>
           <li
+            aria-current="false"
             class="sc-ezOQGI iosdzC"
           >
             16
@@ -268,6 +273,7 @@ exports[`Home Tests renders the Home page 1`] = `
       >
         <ul>
           <li
+            aria-current="true"
             class="sc-ezOQGI bnHGQs"
           >
             traditional
@@ -275,12 +281,14 @@ exports[`Home Tests renders the Home page 1`] = `
         </ul>
         <ul>
           <li
+            aria-current="true"
             class="sc-ezOQGI bnHGQs"
           >
             12
              inch
           </li>
           <li
+            aria-current="false"
             class="sc-ezOQGI iosdzC"
           >
             14
@@ -354,11 +362,13 @@ exports[`Home Tests renders the Home page 1`] = `
       >
         <ul>
           <li
+            aria-current="true"
             class="sc-ezOQGI bnHGQs"
           >
             traditional
           </li>
           <li
+            aria-current="false"
             class="sc-ezOQGI iosdzC"
           >
             thin
@@ -366,12 +376,14 @@ exports[`Home Tests renders the Home page 1`] = `
         </ul>
         <ul>
           <li
+            aria-current="true"
             class="sc-ezOQGI bnHGQs"
           >
             12
              inch
           </li>
           <li
+            aria-current="false"
             class="sc-ezOQGI iosdzC"
           >
             16

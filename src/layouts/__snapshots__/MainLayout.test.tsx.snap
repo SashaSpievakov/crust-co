@@ -36,6 +36,7 @@ Object {
       <svg
         className="sc-jrcTuL hRRHDV"
         data-testid="themeIcon"
+        data-theme="light"
         fill="currentColor"
         height="1em"
         mode=""

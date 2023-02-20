@@ -5,12 +5,14 @@ Object {
   "children": Array [
     <ul>
       <li
+        aria-current={true}
         className="sc-gswNZR cwTTIy"
         onClick={[Function]}
       >
         traditional
       </li>
       <li
+        aria-current={false}
         className="sc-gswNZR hrhfUc"
         onClick={[Function]}
       >
@@ -19,6 +21,7 @@ Object {
     </ul>,
     <ul>
       <li
+        aria-current={false}
         className="sc-gswNZR hrhfUc"
         onClick={[Function]}
       >
@@ -26,6 +29,7 @@ Object {
          inch
       </li>
       <li
+        aria-current={false}
         className="sc-gswNZR hrhfUc"
         onClick={[Function]}
       >
@@ -33,6 +37,7 @@ Object {
          inch
       </li>
       <li
+        aria-current={false}
         className="sc-gswNZR hrhfUc"
         onClick={[Function]}
       >
