@@ -60,6 +60,7 @@ const Header = () => {
           onClick={changeThemes}
           mode={location.pathname === '/cart' ? 'cart' : ''}
           data-testid="themeIcon"
+          data-theme={isLight ? 'light' : 'dark'}
         />
         {location.pathname !== '/cart' && (
           <ButtonCart to="/cart" as={Link} data-testid="cartLink">

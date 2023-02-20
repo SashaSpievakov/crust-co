@@ -25,7 +25,8 @@ describe('local Storage tests', () => {
     cy.reload();
 
     // check all items are saved and still showing
-    cy.get('@themeIcon').should('have.class', 'kCuySh');
+    // cy.get('[data-theme="dark"]').should('be.visible');
+    cy.get('[data-theme="dark"]').should('be.visible');
     cy.findByText(/68 \$/i).should('be.visible');
     cy.findByText('5').should('be.visible').click();
 
