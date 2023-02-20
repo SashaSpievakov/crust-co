@@ -1,4 +1,4 @@
-import { useEffect } from 'react';
+import { useLayoutEffect } from 'react';
 
 import { Section, Li } from './Selector.styled';
 import { ISelector } from '../../../models/ISelector';
@@ -43,7 +43,7 @@ const Selector = ({
     setActiveSize(size);
   };
 
-  useEffect(() => {
+  useLayoutEffect(() => {
     setActiveSize(sizes[0]);
     setActiveType(types[0]);
   }, [sizes]);
