@@ -31,6 +31,11 @@ const Section = styled.section<SectionProps>`
 const SearchError = styled.h3`
   font-size: 35px;
   margin: 100px 0;
+
+  @media (max-width: 400px) {
+    font-size: 30px;
+    padding: 0 10px;
+  }
 `;
 
 export { Section, SearchError };
