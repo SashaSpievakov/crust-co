@@ -324,7 +324,7 @@ Object {
     </article>,
   ],
   "props": Object {
-    "className": "sc-iveFHk cCXYWz",
+    "className": "sc-iveFHk hwMDtY",
   },
   "type": "section",
 }
@@ -334,13 +334,13 @@ exports[`ProductsContainer Tests renders the ProductsContainer component with no
 Object {
   "children": Array [
     <h3
-      className="sc-cwSeag bjyzun"
+      className="sc-cwSeag elsWri"
     >
       No pizzas with that name were found...
     </h3>,
   ],
   "props": Object {
-    "className": "sc-iveFHk cCXYWz",
+    "className": "sc-iveFHk bYASNO",
   },
   "type": "section",
 }
