@@ -17,7 +17,7 @@ const ProductsContainer = ({ isLoading, items }: ProductsContainerProps) => {
   );
 
   return (
-    <Section>
+    <Section hasResult={filteredItems.length >= 1}>
       {isLoading ? (
         [...new Array(9)].map((_, i) => <Skeleton key={i} />)
       ) : filteredItems.length >= 1 ? (

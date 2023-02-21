@@ -1,8 +1,6 @@
 import styled, { css } from 'styled-components';
 
-// import { Container } from '../../styles/Base.styled';
-
-interface WrapperProps {
+interface HeaderProps {
   isCart: boolean;
 }
 
@@ -10,7 +8,7 @@ interface LiProps {
   mode: string;
 }
 
-const HeaderWrapper = styled.header<WrapperProps>`
+const HeaderWrapper = styled.header<HeaderProps>`
   position: relative;
   width: 90%;
   display: flex;
