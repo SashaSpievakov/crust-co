@@ -21,12 +21,12 @@ Web Store Application created with React includes multiple pages and SPA support
 - React
 - TypeScript
 - Redux Toolkit
-- Styled Components
 - RTK Query
-- React Router
 - Jest
 - Testing Library
 - Cypress
+- Styled Components
+- React Router
 
 ### Additional
 
