@@ -6,7 +6,7 @@ const Main = styled.main`
   border-bottom: 1px solid ${({ theme }) => theme.colors.gray};
 
   @media screen and (max-width: 550px) {
-    padding: 25px 0 0;
+    padding: 30px 0;
   }
 `;
 
