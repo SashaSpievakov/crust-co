@@ -3,13 +3,23 @@
 exports[`FullItemBlock Tests renders the FullItemBlock component 1`] = `
 Object {
   "children": Array [
-    <img
-      alt="pizza"
-      className="sc-hLBbgP cUiwpx"
-      height="450"
-      src="../assets/img/pizza9.png"
-      width="450"
-    />,
+    <picture>
+      <source
+        srcSet="../assets/img/pizza9.webp"
+        type="image/webp"
+      />
+      <source
+        srcSet="../assets/img/pizza9.png"
+        type="image/png"
+      />
+      <img
+        alt="Chicken Curry pizza"
+        className="sc-hLBbgP cUiwpx"
+        height="450"
+        src="../assets/img/pizza9.png"
+        width="450"
+      />
+    </picture>,
     <h2
       className="sc-eDvSVe eCLYab"
     >

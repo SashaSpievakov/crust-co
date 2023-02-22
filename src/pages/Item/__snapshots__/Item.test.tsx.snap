@@ -5,13 +5,23 @@ exports[`Item Tests renders the Item page 1`] = `
   class="sc-bcXHqe sc-iBYQkv bZXhLi kUVJpc"
   data-testid="itemPage"
 >
-  <img
-    alt="pizza"
-    class="sc-ftTHYK mXpZa"
-    height="450"
-    src="../assets/img/pizza9.png"
-    width="450"
-  />
+  <picture>
+    <source
+      srcset="../assets/img/pizza9.webp"
+      type="image/webp"
+    />
+    <source
+      srcset="../assets/img/pizza9.png"
+      type="image/png"
+    />
+    <img
+      alt="Chicken Curry pizza"
+      class="sc-ftTHYK mXpZa"
+      height="450"
+      src="../assets/img/pizza9.png"
+      width="450"
+    />
+  </picture>
   <h2
     class="sc-pyfCe nwoXR"
   >

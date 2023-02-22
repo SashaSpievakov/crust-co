@@ -19,12 +19,19 @@ const FullItemBlock = ({ item }: FullItemProps) => {
 
   return (
     <Item data-testid="itemPage">
-      <Image
-        src={`../assets/img/pizza${item.id}.png`}
-        alt="pizza"
-        width="450"
-        height="450"
-      />
+      <picture>
+        <source
+          srcSet={`../assets/img/pizza${item.id}.webp`}
+          type="image/webp"
+        />
+        <source srcSet={`../assets/img/pizza${item.id}.png`} type="image/png" />
+        <Image
+          src={`../assets/img/pizza${item.id}.png`}
+          alt={`${item.name} pizza`}
+          width="450"
+          height="450"
+        />
+      </picture>
       <Title>{item.name}</Title>
       <Paragraph>{item.description}</Paragraph>
       <Selector
