@@ -48,6 +48,11 @@ const ButtonBack = styled(Button)`
   &:hover {
     background-color: ${({ theme }) => theme.colors.third}99;
   }
+
+  @media screen and (max-width: 400px) {
+    width: 200px;
+    padding: 10px 0 12px;
+  }
 `;
 
 const ButtonCart = styled(Button)`
@@ -149,6 +154,11 @@ const ButtonAdd = styled(ButtonOutline)<ButtonAddProps>`
     css`
       margin-bottom: 50px;
       padding: 15px 40px;
+
+      @media screen and (max-width: 400px) {
+        margin-bottom: 40px;
+        padding: 13px 30px;
+      }
     `}
 `;
 

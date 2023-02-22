@@ -11,10 +11,6 @@ const Item = styled(Container)`
     gap: 15px;
   }
 
-  @media screen and (max-width: 550px) {
-    padding-bottom: 40px;
-  }
-
   @media screen and (max-width: 400px) {
     gap: 10px;
   }

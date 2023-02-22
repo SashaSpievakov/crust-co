@@ -73,7 +73,7 @@ Object {
       $
     </h3>,
     <button
-      className="sc-pyfCe sc-csuSiG sc-bqWxrE kimegh jTyypa iYnUel"
+      className="sc-pyfCe sc-csuSiG sc-bqWxrE kimegh jTyypa fPSXem"
       onClick={[Function]}
     >
       <svg
@@ -100,7 +100,7 @@ Object {
       </span>
     </button>,
     <a
-      className="sc-pyfCe sc-jrcTuL kimegh fRZsib"
+      className="sc-pyfCe sc-jrcTuL kimegh briJJD"
       href="/"
       onClick={[Function]}
     >
@@ -110,7 +110,7 @@ Object {
     </a>,
   ],
   "props": Object {
-    "className": "sc-bcXHqe sc-dkrFOg bZXhLi iBOOue",
+    "className": "sc-bcXHqe sc-dkrFOg bZXhLi gHcQNN",
     "data-testid": "itemPage",
   },
   "type": "article",

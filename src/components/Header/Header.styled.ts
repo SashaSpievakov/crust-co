@@ -56,10 +56,6 @@ const Icon = styled.i<LiProps>`
     color: ${({ theme }) => theme.colors.primary};
   }
 
-  @media screen and (max-width: 800px) {
-    font-size: 20px;
-  }
-
   ${({ mode }) =>
     mode === 'cart' &&
     css`

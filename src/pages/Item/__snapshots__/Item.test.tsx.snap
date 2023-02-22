@@ -2,7 +2,7 @@
 
 exports[`Item Tests renders the Item page 1`] = `
 <article
-  class="sc-bcXHqe sc-iBYQkv bZXhLi jeErZT"
+  class="sc-bcXHqe sc-iBYQkv bZXhLi kUVJpc"
   data-testid="itemPage"
 >
   <img
@@ -70,7 +70,7 @@ exports[`Item Tests renders the Item page 1`] = `
     $
   </h3>
   <button
-    class="sc-eDWCr sc-fnGiBr sc-bjfHbI fFZftL bHIIaI crUWof"
+    class="sc-eDWCr sc-fnGiBr sc-bjfHbI fFZftL bHIIaI ejSnrg"
   >
     <svg
       class="sc-fLcnxK hCxlfl"
@@ -91,7 +91,7 @@ exports[`Item Tests renders the Item page 1`] = `
     </span>
   </button>
   <a
-    class="sc-eDWCr sc-bqWxrE fFZftL dvoOeS"
+    class="sc-eDWCr sc-bqWxrE fFZftL jQcfUS"
     href="/"
   >
     <span>

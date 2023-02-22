@@ -4,6 +4,10 @@ import { Container } from 'src/styles/Base.styled';
 
 const Article = styled(Container)`
   margin: 50px auto;
+
+  @media screen and (max-width: 400px) {
+    margin: 30px auto;
+  }
 `;
 
 const Top = styled.section`
