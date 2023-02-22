@@ -61,12 +61,16 @@ const CartItem = memo(({ id, name, price, size, type, count }: ICartItem) => {
   return (
     <Article>
       <ImgWrapper>
-        <img
-          src={`./assets/img/pizza${id}.png`}
-          alt="Pizza"
-          width="80"
-          height="80"
-        />
+        <picture>
+          <source srcSet={`./assets/img/pizza${id}.webp`} type="image/webp" />
+          <source srcSet={`./assets/img/pizza${id}.png`} type="image/png" />
+          <img
+            src={`./assets/img/pizza${id}.png`}
+            alt={`${name} pizza`}
+            width="80"
+            height="80"
+          />
+        </picture>
       </ImgWrapper>
       <InfoWrapper>
         <h3>{name}</h3>
