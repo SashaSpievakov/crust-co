@@ -4,17 +4,17 @@ const Skeleton = () => {
   return (
     <Loader
       speed={2}
-      width={265}
-      height={490}
-      viewBox="0 0 280 490"
+      width={250}
+      height={470}
+      viewBox="0 0 250 470"
       backgroundColor="#f3f3f3"
       foregroundColor="#ecebeb"
     >
-      <circle cx="134" cy="136" r="125" />
-      <rect x="0" y="279" rx="10" ry="10" width="280" height="25" />
-      <rect x="0" y="326" rx="10" ry="10" width="280" height="88" />
-      <rect x="34" y="436" rx="10" ry="10" width="60" height="40" />
-      <rect x="144" y="433" rx="20" ry="20" width="106" height="45" />
+      <rect x="5" y="335" rx="5" ry="5" width="240" height="68" />
+      <rect x="27" y="425" rx="5" ry="5" width="60" height="40" />
+      <rect x="134" y="423" rx="20" ry="20" width="95" height="45" />
+      <rect x="40" y="275" rx="10" ry="10" width="170" height="35" />
+      <circle cx="123" cy="135" r="120" />
     </Loader>
   );
 };

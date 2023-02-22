@@ -6,12 +6,22 @@ Object {
     <div
       className="sc-pyfCe jtVCjF"
     >
-      <img
-        alt="Pizza"
-        height="80"
-        src="./assets/img/pizza6.png"
-        width="80"
-      />
+      <picture>
+        <source
+          srcSet="./assets/img/pizza6.webp"
+          type="image/webp"
+        />
+        <source
+          srcSet="./assets/img/pizza6.png"
+          type="image/png"
+        />
+        <img
+          alt="Cheesburger Pizza pizza"
+          height="80"
+          src="./assets/img/pizza6.png"
+          width="80"
+        />
+      </picture>
     </div>,
     <section
       className="sc-jrcTuL fufNrK"
@@ -133,12 +143,22 @@ Object {
     <div
       className="sc-pyfCe jtVCjF"
     >
-      <img
-        alt="Pizza"
-        height="80"
-        src="./assets/img/pizza2.png"
-        width="80"
-      />
+      <picture>
+        <source
+          srcSet="./assets/img/pizza2.webp"
+          type="image/webp"
+        />
+        <source
+          srcSet="./assets/img/pizza2.png"
+          type="image/png"
+        />
+        <img
+          alt="Pepperoni Pizza pizza"
+          height="80"
+          src="./assets/img/pizza2.png"
+          width="80"
+        />
+      </picture>
     </div>,
     <section
       className="sc-jrcTuL fufNrK"

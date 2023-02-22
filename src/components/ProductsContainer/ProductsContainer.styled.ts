@@ -1,20 +1,20 @@
 import styled from 'styled-components';
 
 interface SectionProps {
-  hasResult: boolean;
+  noSearchResult: boolean;
 }
 
 const Section = styled.section<SectionProps>`
   display: grid;
-  grid-template-columns: ${({ hasResult }) =>
-    hasResult ? 'repeat(3, 1fr)' : '1fr'};
+  grid-template-columns: ${({ noSearchResult }) =>
+    noSearchResult ? '1fr' : 'repeat(3, 1fr)'};
   gap: 40px 100px;
   justify-items: center;
   align-items: center;
 
   @media (max-width: 1150px) {
-    grid-template-columns: ${({ hasResult }) =>
-      hasResult ? 'repeat(2, 1fr)' : '1fr'};
+    grid-template-columns: ${({ noSearchResult }) =>
+      noSearchResult ? '1fr' : 'repeat(2, 1fr)'};
   }
 
   @media (max-width: 800px) {
@@ -22,8 +22,8 @@ const Section = styled.section<SectionProps>`
   }
 
   @media (max-width: 700px) {
-    grid-template-columns: ${({ hasResult }) =>
-      hasResult ? 'repeat(1, 1fr)' : '1fr'};
+    grid-template-columns: ${({ noSearchResult }) =>
+      noSearchResult ? '1fr' : 'repeat(1, 1fr)'};
     gap: 0;
   }
 `;
