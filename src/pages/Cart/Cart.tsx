@@ -1,6 +1,8 @@
+import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { shallowEqual } from 'react-redux';
 
+import Modal from 'src/components/UI/Modal/Modal';
 import { clearCart } from '../../store/slices/cart/reducer/cartReducer';
 import { selectCart } from '../../store/slices/cart/selectors/selectCart/selectCart';
 import CartItem from '../../components/CartItem/CartItem';
@@ -22,6 +24,7 @@ import { ICartItem } from '../../models/ICartItem';
 import { useAppDispatch, useAppSelector } from '../../hooks/reduxHooks';
 
 const Cart = () => {
+  const [isOpen, setIsOpen] = useState(false);
   const { itemsCount, totalPrice, items } = useAppSelector(
     selectCart,
     shallowEqual,
@@ -67,9 +70,10 @@ const Cart = () => {
             <ChevronLeft />
             <span>Go back</span>
           </ButtonBackCart>
-          <ButtonPay>
+          <ButtonPay onClick={() => setIsOpen(true)}>
             <span>Buy now</span>
           </ButtonPay>
+          {isOpen && <Modal setIsOpen={setIsOpen} />}
         </Buttons>
       </Bottom>
     </Article>
