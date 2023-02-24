@@ -13,11 +13,11 @@ const Bg = styled.div`
 
 const Aricle = styled.article`
   position: fixed;
-  top: 30%;
+  top: 40%;
   left: 50%;
   text-align: center;
   width: 60%;
-  height: 30%;
+  height: 70%;
   background: ${({ theme }) => theme.colors.fourth};
   transform: translate(-50%, -50%);
   z-index: 10;
@@ -30,4 +30,39 @@ const Header = styled.h3`
   margin-top: 7%;
 `;
 
-export { Bg, Aricle, Header };
+const SubHeader = styled.h4`
+  font-size: 1.3rem;
+  font-weight: 400;
+  width: 70%;
+  margin: 0 auto 3%;
+`;
+
+const Form = styled.form`
+  display: flex;
+  flex-direction: column;
+  row-gap: 2em;
+  width: 70%;
+  margin: 0 auto;
+`;
+
+const Group = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+`;
+
+const Label = styled.label`
+  font-size: 1.3em;
+  font-weight: 700;
+`;
+
+const Input = styled.input`
+  font-size: 1.2em;
+  padding: 0.5em 1em;
+  color: ${({ theme }) => theme.colors.third};
+  background-color: ${({ theme }) => theme.colors.gray};
+  border-radius: 10px;
+  border: none;
+`;
+
+export { Bg, Aricle, Header, SubHeader, Form, Group, Label, Input };
