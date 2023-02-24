@@ -1,4 +1,4 @@
-import { Bg, Aricle } from './Modal.styled';
+import { Bg, Aricle, Header } from './Modal.styled';
 
 interface ModalProps {
   setIsOpen: (value: boolean) => void;
@@ -7,7 +7,9 @@ interface ModalProps {
 const Modal = ({ setIsOpen }: ModalProps) => {
   return (
     <Bg onClick={() => setIsOpen(false)}>
-      <Aricle>some texxt</Aricle>
+      <Aricle>
+        <Header>Order</Header>
+      </Aricle>
     </Bg>
   );
 };
