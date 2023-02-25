@@ -69,6 +69,10 @@ const Header = styled.h3`
   @media screen and (max-width: 700px) {
     font-size: 2rem;
   }
+
+  @media screen and (max-width: 500px) {
+    font-size: 1.7rem;
+  }
 `;
 
 const SubHeader = styled.h4`
