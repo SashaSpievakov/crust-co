@@ -13,6 +13,15 @@ const mixinArticle = css`
   z-index: 10;
   border-radius: 15px;
   box-shadow: 0 5px 20px 0 rgba(0, 0, 0, 0.05);
+
+  @media screen and (max-width: 900px) {
+    top: 35%;
+  }
+
+  @media screen and (max-width: 500px) {
+    top: 30%;
+    transform: translate(-50%, -35%);
+  }
 `;
 
 const Bg = styled.div`
@@ -30,17 +39,40 @@ const Aricle = styled.article`
   ${mixinArticle}
   width: 40%;
   height: 95%;
+
+  @media screen and (max-width: 900px) {
+    width: 70%;
+    height: 85%;
+  }
+
+  @media screen and (max-width: 500px) {
+    width: 80%;
+    height: 80%;
+  }
 `;
 
 const AricleSubmitted = styled.article`
   ${mixinArticle}
   width: 40%;
   height: 30%;
+
+  @media screen and (max-width: 900px) {
+    width: 70%;
+  }
+
+  @media screen and (max-width: 500px) {
+    width: 80%;
+    height: 40%;
+  }
 `;
 
 const Header = styled.h3`
   font-size: 2.5rem;
   margin-top: 5%;
+
+  @media screen and (max-width: 500px) {
+    font-size: 2rem;
+  }
 `;
 
 const SubHeader = styled.h4`
@@ -48,6 +80,10 @@ const SubHeader = styled.h4`
   font-weight: 400;
   width: 70%;
   margin: 0 auto 3%;
+
+  @media screen and (max-width: 500px) {
+    font-size: 1rem;
+  }
 `;
 
 const Cross = styled(BsXLg)`
@@ -68,6 +104,10 @@ const SubHeaderSubmitted = styled.h4`
   font-weight: 400;
   width: 60%;
   margin: 2% auto 0;
+
+  @media screen and (max-width: 500px) {
+    font-size: 1rem;
+  }
 `;
 
 const Form = styled.form`
@@ -89,6 +129,10 @@ const Group = styled.div`
 const Label = styled.label`
   font-size: 1.3em;
   font-weight: 700;
+
+  @media screen and (max-width: 500px) {
+    font-size: 1rem;
+  }
 `;
 
 const Input = styled.input`
@@ -102,6 +146,10 @@ const Input = styled.input`
 
   &:focus {
     border: 3px solid ${({ theme }) => theme.colors.secondary};
+  }
+
+  @media screen and (max-width: 500px) {
+    padding: 0.3em 0.5em;
   }
 `;
 
