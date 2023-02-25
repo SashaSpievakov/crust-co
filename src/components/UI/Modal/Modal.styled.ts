@@ -14,12 +14,8 @@ const mixinArticle = css`
   border-radius: 15px;
   box-shadow: 0 5px 20px 0 rgba(0, 0, 0, 0.05);
 
-  @media screen and (max-width: 900px) {
-    top: 35%;
-  }
-
   @media screen and (max-width: 500px) {
-    top: 30%;
+    top: 35%;
     transform: translate(-50%, -35%);
   }
 `;
@@ -42,12 +38,12 @@ const Aricle = styled.article`
 
   @media screen and (max-width: 900px) {
     width: 70%;
-    height: 85%;
+    height: 95%;
   }
 
   @media screen and (max-width: 500px) {
     width: 80%;
-    height: 80%;
+    height: 90%;
   }
 `;
 
@@ -58,11 +54,11 @@ const AricleSubmitted = styled.article`
 
   @media screen and (max-width: 900px) {
     width: 70%;
+    height: 40%;
   }
 
   @media screen and (max-width: 500px) {
     width: 80%;
-    height: 40%;
   }
 `;
 
@@ -70,7 +66,7 @@ const Header = styled.h3`
   font-size: 2.5rem;
   margin-top: 5%;
 
-  @media screen and (max-width: 500px) {
+  @media screen and (max-width: 700px) {
     font-size: 2rem;
   }
 `;
@@ -81,8 +77,12 @@ const SubHeader = styled.h4`
   width: 70%;
   margin: 0 auto 3%;
 
-  @media screen and (max-width: 500px) {
+  @media screen and (max-width: 700px) {
     font-size: 1rem;
+  }
+
+  @media screen and (max-width: 500px) {
+    font-size: 0.75rem;
   }
 `;
 
@@ -105,7 +105,7 @@ const SubHeaderSubmitted = styled.h4`
   width: 60%;
   margin: 2% auto 0;
 
-  @media screen and (max-width: 500px) {
+  @media screen and (max-width: 700px) {
     font-size: 1rem;
   }
 `;
@@ -117,6 +117,14 @@ const Form = styled.form`
   row-gap: 2em;
   width: 60%;
   margin: 0 auto;
+
+  @media screen and (max-width: 900px) {
+    row-gap: 1.5em;
+  }
+
+  @media screen and (max-width: 500px) {
+    width: 75%;
+  }
 `;
 
 const Group = styled.div`
@@ -130,7 +138,7 @@ const Label = styled.label`
   font-size: 1.3em;
   font-weight: 700;
 
-  @media screen and (max-width: 500px) {
+  @media screen and (max-width: 700px) {
     font-size: 1rem;
   }
 `;
@@ -148,7 +156,7 @@ const Input = styled.input`
     border: 3px solid ${({ theme }) => theme.colors.secondary};
   }
 
-  @media screen and (max-width: 500px) {
+  @media screen and (max-width: 700px) {
     padding: 0.3em 0.5em;
   }
 `;
