@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { KeyboardEvent } from 'react';
 
 import { useAppDispatch, useAppSelector } from '../../hooks/reduxHooks';
 import { setCategory } from '../../store/slices/category/reducer/categoryReducer';
@@ -13,6 +13,10 @@ const Categories = () => {
 
   const chosenClass = categoriesArr[activeCategory];
 
+  const handleKeyDown = (e: KeyboardEvent<HTMLElement>, i: number) => {
+    if (e.code === 'Enter') dispatch(setCategory(i));
+  };
+
   return (
     <section>
       <Ul>
@@ -20,6 +24,7 @@ const Categories = () => {
           <Li
             key={name}
             onClick={() => dispatch(setCategory(i))}
+            onKeyDown={(e) => handleKeyDown(e, i)}
             chosen={chosenClass === name}
             tabIndex={0}
             aria-current={chosenClass === name}

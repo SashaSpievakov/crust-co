@@ -1,4 +1,4 @@
-import { useLayoutEffect } from 'react';
+import { KeyboardEvent, useLayoutEffect } from 'react';
 
 import { Section, Li } from './Selector.styled';
 import { ISelector } from '../../../models/ISelector';
@@ -43,6 +43,14 @@ const Selector = ({
     setActiveSize(size);
   };
 
+  const handleKeyDownType = (e: KeyboardEvent<HTMLElement>, type: number) => {
+    if (e.code === 'Enter') typeClickHandler(type);
+  };
+
+  const handleKeyDownSize = (e: KeyboardEvent<HTMLElement>, size: number) => {
+    if (e.code === 'Enter') sizeClickHandler(size);
+  };
+
   useLayoutEffect(() => {
     setActiveSize(sizes[0]);
     setActiveType(types[0]);
@@ -51,10 +59,11 @@ const Selector = ({
   return (
     <Section isFullScreen={isFullScreen}>
       <ul>
-        {types.map((type) => (
+        {types.map((type: number) => (
           <Li
             key={type}
             onClick={() => typeClickHandler(type)}
+            onKeyDown={(e) => handleKeyDownType(e, type)}
             chosen={activeType === types.indexOf(type)}
             tabIndex={0}
             aria-current={activeType === types.indexOf(type)}
@@ -64,10 +73,11 @@ const Selector = ({
         ))}
       </ul>
       <ul>
-        {sizes.map((size) => (
+        {sizes.map((size: number) => (
           <Li
             key={size}
             onClick={() => sizeClickHandler(size)}
+            onKeyDown={(e) => handleKeyDownSize(e, size)}
             chosen={activeSize === size}
             tabIndex={0}
             aria-current={activeSize === size}
