@@ -21,6 +21,7 @@ const Categories = () => {
             key={name}
             onClick={() => dispatch(setCategory(i))}
             chosen={chosenClass === name}
+            tabIndex={0}
             aria-current={chosenClass === name}
           >
             {name}

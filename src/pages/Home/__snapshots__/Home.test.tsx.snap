@@ -14,31 +14,36 @@ exports[`Home Tests renders the Home page 1`] = `
       >
         <li
           aria-current="true"
-          class="sc-ftTHYK earNXG"
+          class="sc-ftTHYK hvoGON"
+          tabindex="0"
         >
           All
         </li>
         <li
           aria-current="false"
-          class="sc-ftTHYK jxPSBm"
+          class="sc-ftTHYK hskZzN"
+          tabindex="0"
         >
           Meat
         </li>
         <li
           aria-current="false"
-          class="sc-ftTHYK jxPSBm"
+          class="sc-ftTHYK hskZzN"
+          tabindex="0"
         >
           Vegetarian
         </li>
         <li
           aria-current="false"
-          class="sc-ftTHYK jxPSBm"
+          class="sc-ftTHYK hskZzN"
+          tabindex="0"
         >
           Grill
         </li>
         <li
           aria-current="false"
-          class="sc-ftTHYK jxPSBm"
+          class="sc-ftTHYK hskZzN"
+          tabindex="0"
         >
           Spicy
         </li>

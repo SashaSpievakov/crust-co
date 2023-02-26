@@ -8,36 +8,41 @@ Object {
     >
       <li
         aria-current={true}
-        className="sc-gswNZR yUeCn"
+        className="sc-gswNZR kJDdlY"
         onClick={[Function]}
+        tabIndex={0}
       >
         All
       </li>
       <li
         aria-current={false}
-        className="sc-gswNZR jIralv"
+        className="sc-gswNZR iixEeI"
         onClick={[Function]}
+        tabIndex={0}
       >
         Meat
       </li>
       <li
         aria-current={false}
-        className="sc-gswNZR jIralv"
+        className="sc-gswNZR iixEeI"
         onClick={[Function]}
+        tabIndex={0}
       >
         Vegetarian
       </li>
       <li
         aria-current={false}
-        className="sc-gswNZR jIralv"
+        className="sc-gswNZR iixEeI"
         onClick={[Function]}
+        tabIndex={0}
       >
         Grill
       </li>
       <li
         aria-current={false}
-        className="sc-gswNZR jIralv"
+        className="sc-gswNZR iixEeI"
         onClick={[Function]}
+        tabIndex={0}
       >
         Spicy
       </li>

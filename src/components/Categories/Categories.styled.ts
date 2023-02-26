@@ -31,6 +31,11 @@ const Li = styled.li<LiProps>`
     opacity: 0.5;
   }
 
+  &:focus {
+    outline: 4px solid ${({ theme }) => theme.colors.secondary};
+    outline-offset: -3px;
+  }
+
   ${({ chosen }) =>
     chosen &&
     css`
