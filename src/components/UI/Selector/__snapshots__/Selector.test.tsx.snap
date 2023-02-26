@@ -6,15 +6,17 @@ Object {
     <ul>
       <li
         aria-current={true}
-        className="sc-gswNZR cwTTIy"
+        className="sc-gswNZR iMRIUn"
         onClick={[Function]}
+        tabIndex={0}
       >
         traditional
       </li>
       <li
         aria-current={false}
-        className="sc-gswNZR hrhfUc"
+        className="sc-gswNZR kCsqcO"
         onClick={[Function]}
+        tabIndex={0}
       >
         thin
       </li>
@@ -22,24 +24,27 @@ Object {
     <ul>
       <li
         aria-current={false}
-        className="sc-gswNZR hrhfUc"
+        className="sc-gswNZR kCsqcO"
         onClick={[Function]}
+        tabIndex={0}
       >
         12
          inch
       </li>
       <li
         aria-current={false}
-        className="sc-gswNZR hrhfUc"
+        className="sc-gswNZR kCsqcO"
         onClick={[Function]}
+        tabIndex={0}
       >
         14
          inch
       </li>
       <li
         aria-current={false}
-        className="sc-gswNZR hrhfUc"
+        className="sc-gswNZR kCsqcO"
         onClick={[Function]}
+        tabIndex={0}
       >
         16
          inch

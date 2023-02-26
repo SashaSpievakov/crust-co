@@ -172,13 +172,15 @@ exports[`Home Tests renders the Home page 1`] = `
         <ul>
           <li
             aria-current="true"
-            class="sc-ezOQGI bnHGQs"
+            class="sc-ezOQGI fAVUlZ"
+            tabindex="0"
           >
             traditional
           </li>
           <li
             aria-current="false"
-            class="sc-ezOQGI iosdzC"
+            class="sc-ezOQGI ezJDtU"
+            tabindex="0"
           >
             thin
           </li>
@@ -186,21 +188,24 @@ exports[`Home Tests renders the Home page 1`] = `
         <ul>
           <li
             aria-current="true"
-            class="sc-ezOQGI bnHGQs"
+            class="sc-ezOQGI fAVUlZ"
+            tabindex="0"
           >
             12
              inch
           </li>
           <li
             aria-current="false"
-            class="sc-ezOQGI iosdzC"
+            class="sc-ezOQGI ezJDtU"
+            tabindex="0"
           >
             14
              inch
           </li>
           <li
             aria-current="false"
-            class="sc-ezOQGI iosdzC"
+            class="sc-ezOQGI ezJDtU"
+            tabindex="0"
           >
             16
              inch
@@ -274,7 +279,8 @@ exports[`Home Tests renders the Home page 1`] = `
         <ul>
           <li
             aria-current="true"
-            class="sc-ezOQGI bnHGQs"
+            class="sc-ezOQGI fAVUlZ"
+            tabindex="0"
           >
             traditional
           </li>
@@ -282,14 +288,16 @@ exports[`Home Tests renders the Home page 1`] = `
         <ul>
           <li
             aria-current="true"
-            class="sc-ezOQGI bnHGQs"
+            class="sc-ezOQGI fAVUlZ"
+            tabindex="0"
           >
             12
              inch
           </li>
           <li
             aria-current="false"
-            class="sc-ezOQGI iosdzC"
+            class="sc-ezOQGI ezJDtU"
+            tabindex="0"
           >
             14
              inch
@@ -363,13 +371,15 @@ exports[`Home Tests renders the Home page 1`] = `
         <ul>
           <li
             aria-current="true"
-            class="sc-ezOQGI bnHGQs"
+            class="sc-ezOQGI fAVUlZ"
+            tabindex="0"
           >
             traditional
           </li>
           <li
             aria-current="false"
-            class="sc-ezOQGI iosdzC"
+            class="sc-ezOQGI ezJDtU"
+            tabindex="0"
           >
             thin
           </li>
@@ -377,14 +387,16 @@ exports[`Home Tests renders the Home page 1`] = `
         <ul>
           <li
             aria-current="true"
-            class="sc-ezOQGI bnHGQs"
+            class="sc-ezOQGI fAVUlZ"
+            tabindex="0"
           >
             12
              inch
           </li>
           <li
             aria-current="false"
-            class="sc-ezOQGI iosdzC"
+            class="sc-ezOQGI ezJDtU"
+            tabindex="0"
           >
             16
              inch

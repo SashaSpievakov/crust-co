@@ -46,7 +46,14 @@ const Li = styled.li<LiProps>`
   font-weight: 600;
   flex: 1;
   padding: 8px;
+  border-radius: 5px;
   cursor: pointer;
+  transition: 0;
+
+  &:focus {
+    outline: 3px solid ${({ theme }) => theme.colors.black};
+    outline-offset: -3px;
+  }
 
   ${({ chosen }) =>
     chosen &&
@@ -54,7 +61,6 @@ const Li = styled.li<LiProps>`
       color: ${({ theme }) => theme.colors.black};
       background: ${({ theme }) => theme.colors.chosen};
       box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.04);
-      border-radius: 5px;
       cursor: auto;
     `}
 `;
