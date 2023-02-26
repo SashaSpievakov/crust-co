@@ -1,4 +1,28 @@
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
+import { Link } from 'react-router-dom';
+
+interface CustomLinkProps {
+  isHome: boolean;
+}
+
+const CustomLink = styled(Link)<CustomLinkProps>`
+  border-radius: 5px;
+
+  &:focus {
+    outline: 4px solid ${({ theme }) => theme.colors.secondary};
+    outline-offset: 10px;
+  }
+
+  ${({ isHome }) =>
+    isHome &&
+    css`
+      cursor: default;
+
+      &:focus {
+        outline: none;
+      }
+    `}
+`;
 
 const Logo = styled.section`
   display: flex;
@@ -30,4 +54,4 @@ const Heading = styled.h1`
   font-weight: 800;
 `;
 
-export { Logo, Heading };
+export { CustomLink, Logo, Heading };

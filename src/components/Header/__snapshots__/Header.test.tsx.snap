@@ -4,11 +4,14 @@ exports[`Header Tests renders the Header component 1`] = `
 Object {
   "children": Array [
     <a
+      className="sc-bcXHqe eHbXto"
       href="/"
+      isHome={true}
       onClick={[Function]}
+      tabIndex={-1}
     >
       <section
-        className="sc-bcXHqe bwjlDT"
+        className="sc-gswNZR ilMqZL"
       >
         <img
           alt="Pizza logo"
@@ -18,7 +21,7 @@ Object {
         />
         <div>
           <h1
-            className="sc-gswNZR gWFkxJ"
+            className="sc-dkrFOg iZFYkr"
           >
             Pizza Place
           </h1>
@@ -29,16 +32,17 @@ Object {
       </section>
     </a>,
     <section
-      className="sc-hLBbgP dia-Dlb"
+      className="sc-eDvSVe cigAor"
     >
       <svg
-        className="sc-eDvSVe gYMDSJ"
+        className="sc-jSUZER ldvbWQ"
         data-testid="themeIcon"
         data-theme="light"
         fill="currentColor"
         height="1em"
         mode=""
         onClick={[Function]}
+        onKeyDown={[Function]}
         stroke="currentColor"
         strokeWidth="0"
         style={
@@ -46,6 +50,7 @@ Object {
             "color": undefined,
           }
         }
+        tabIndex={0}
         viewBox="0 0 16 16"
         width="1em"
         xmlns="http://www.w3.org/2000/svg"
@@ -55,7 +60,7 @@ Object {
         />
       </svg>
       <a
-        className="sc-gKPRtg sc-ftTHYK iLACsd jLwvLM"
+        className="sc-iBYQkv sc-pyfCe dPnDSi djZoFJ"
         data-testid="cartLink"
         href="/cart"
         onClick={[Function]}
@@ -65,7 +70,7 @@ Object {
            $
         </span>
         <div
-          className="sc-jSUZER iQBnno"
+          className="sc-gKPRtg gvvkog"
         />
         <svg
           fill="currentColor"
@@ -92,7 +97,7 @@ Object {
     </section>,
   ],
   "props": Object {
-    "className": "sc-dkrFOg fZgBeY",
+    "className": "sc-hLBbgP eYuoYk",
   },
   "type": "header",
 }
@@ -102,11 +107,14 @@ exports[`Header Tests renders the Header component on the Cart page 1`] = `
 Object {
   "children": Array [
     <a
+      className="sc-bcXHqe LyGCx"
       href="/"
+      isHome={false}
       onClick={[Function]}
+      tabIndex={0}
     >
       <section
-        className="sc-bcXHqe bwjlDT"
+        className="sc-gswNZR ilMqZL"
       >
         <img
           alt="Pizza logo"
@@ -116,7 +124,7 @@ Object {
         />
         <div>
           <h1
-            className="sc-gswNZR gWFkxJ"
+            className="sc-dkrFOg iZFYkr"
           >
             Pizza Place
           </h1>
@@ -127,16 +135,17 @@ Object {
       </section>
     </a>,
     <section
-      className="sc-hLBbgP dia-Dlb"
+      className="sc-eDvSVe cigAor"
     >
       <svg
-        className="sc-eDvSVe bCRbNf"
+        className="sc-jSUZER cTyQkW"
         data-testid="themeIcon"
         data-theme="light"
         fill="currentColor"
         height="1em"
         mode="cart"
         onClick={[Function]}
+        onKeyDown={[Function]}
         stroke="currentColor"
         strokeWidth="0"
         style={
@@ -144,6 +153,7 @@ Object {
             "color": undefined,
           }
         }
+        tabIndex={0}
         viewBox="0 0 16 16"
         width="1em"
         xmlns="http://www.w3.org/2000/svg"
@@ -155,7 +165,7 @@ Object {
     </section>,
   ],
   "props": Object {
-    "className": "sc-dkrFOg dyDbGp",
+    "className": "sc-hLBbgP CgfjB",
   },
   "type": "header",
 }

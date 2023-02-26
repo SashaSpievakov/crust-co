@@ -1,12 +1,18 @@
 import { memo } from 'react';
-import { Link } from 'react-router-dom';
+import { useLocation } from 'react-router-dom';
 
 import mainLogo from '../../../assets/img/main-logo.svg';
-import { Logo, Heading } from './LogoSection.styled';
+import { CustomLink, Logo, Heading } from './LogoSection.styled';
 
 const LogoSection = memo(() => {
+  const location = useLocation();
+
   return (
-    <Link to="/">
+    <CustomLink
+      to={location.pathname !== '/' ? '/' : '#'}
+      tabIndex={location.pathname !== '/' ? 0 : -1}
+      isHome={location.pathname === '/'}
+    >
       <Logo>
         <img width="38" height="54.5" src={mainLogo} alt="Pizza logo" />
         <div>
@@ -14,7 +20,7 @@ const LogoSection = memo(() => {
           <p>the most delicious pizzas in town</p>
         </div>
       </Logo>
-    </Link>
+    </CustomLink>
   );
 });
 export default LogoSection;

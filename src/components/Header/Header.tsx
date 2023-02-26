@@ -1,13 +1,13 @@
-import { useEffect, useRef } from 'react';
+import { KeyboardEvent, useEffect, useRef } from 'react';
 import { shallowEqual } from 'react-redux';
 import { Link, useLocation } from 'react-router-dom';
 import { BsCart3, BsFillSunFill, BsFillMoonFill } from 'react-icons/bs';
 
 import LogoSection from '../UI/LogoSection/LogoSection';
+import { HeaderWrapper, Right, Icon, Delimiter } from './Header.styled';
 import { setTheme } from '../../store/slices/theme/reducer/themeReducer';
 import { selectIsLight } from '../../store/slices/theme/selectors/selectIsLight';
 import { selectCart } from '../../store/slices/cart/selectors/selectCart/selectCart';
-import { HeaderWrapper, Right, Icon, Delimiter } from './Header.styled';
 import { ButtonCart } from '../../styles/Buttons.styled';
 import { useAppDispatch, useAppSelector } from '../../hooks/reduxHooks';
 
@@ -50,6 +50,10 @@ const Header = () => {
     dispatch(setTheme(!isLight));
   };
 
+  const keyChangeThemes = (e: KeyboardEvent<SVGElement>) => {
+    if (e.code === 'Enter') dispatch(setTheme(!isLight));
+  };
+
   return (
     <HeaderWrapper ref={scrollRef} isCart={location.pathname === '/cart'}>
       <LogoSection />
@@ -58,7 +62,9 @@ const Header = () => {
         <Icon
           as={isLight ? BsFillMoonFill : BsFillSunFill}
           onClick={changeThemes}
+          onKeyDown={(e) => keyChangeThemes(e)}
           mode={location.pathname === '/cart' ? 'cart' : ''}
+          tabIndex={0}
           data-testid="themeIcon"
           data-theme={isLight ? 'light' : 'dark'}
         />

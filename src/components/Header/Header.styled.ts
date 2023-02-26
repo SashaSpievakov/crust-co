@@ -50,10 +50,16 @@ const Icon = styled.i<LiProps>`
   font-size: 23px;
   color: ${({ theme }) => theme.colors.third};
   user-select: none;
+  border-radius: 5px;
   cursor: pointer;
 
   &:hover {
     color: ${({ theme }) => theme.colors.primary};
+  }
+
+  &:focus {
+    outline: 4px solid ${({ theme }) => theme.colors.secondary};
+    outline-offset: 5px;
   }
 
   ${({ mode }) =>

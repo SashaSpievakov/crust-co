@@ -3,14 +3,17 @@
 exports[`MainLayout Tests renders the MainLayout component 1`] = `
 Object {
   "0": <header
-    className="sc-ftTHYK cCOKiD"
+    className="sc-pyfCe bMckfK"
   >
     <a
+      className="sc-gKPRtg bSEABM"
       href="/"
+      isHome={true}
       onClick={[Function]}
+      tabIndex={-1}
     >
       <section
-        className="sc-gKPRtg bEDqgb"
+        className="sc-iBYQkv hZzAek"
       >
         <img
           alt="Pizza logo"
@@ -20,7 +23,7 @@ Object {
         />
         <div>
           <h1
-            className="sc-iBYQkv kWKvOK"
+            className="sc-ftTHYK ffMGYo"
           >
             Pizza Place
           </h1>
@@ -31,16 +34,17 @@ Object {
       </section>
     </a>
     <section
-      className="sc-pyfCe kLYOGx"
+      className="sc-jrcTuL kDaWQG"
     >
       <svg
-        className="sc-jrcTuL eLShYk"
+        className="sc-kDvujY gWjRPG"
         data-testid="themeIcon"
         data-theme="light"
         fill="currentColor"
         height="1em"
         mode=""
         onClick={[Function]}
+        onKeyDown={[Function]}
         stroke="currentColor"
         strokeWidth="0"
         style={
@@ -48,6 +52,7 @@ Object {
             "color": undefined,
           }
         }
+        tabIndex={0}
         viewBox="0 0 16 16"
         width="1em"
         xmlns="http://www.w3.org/2000/svg"
@@ -57,7 +62,7 @@ Object {
         />
       </svg>
       <a
-        className="sc-ipEyDJ sc-eDWCr eVzfYL dGLzIP"
+        className="sc-csuSiG sc-bqWxrE cWVHwM fXzfCT"
         data-testid="cartLink"
         href="/cart"
         onClick={[Function]}
@@ -67,7 +72,7 @@ Object {
            $
         </span>
         <div
-          className="sc-kDvujY ivIxim"
+          className="sc-ipEyDJ dDMWcG"
         />
         <svg
           fill="currentColor"
