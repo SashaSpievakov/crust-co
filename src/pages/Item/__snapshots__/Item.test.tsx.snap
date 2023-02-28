@@ -85,7 +85,7 @@ exports[`Item Tests renders the Item page 1`] = `
     $
   </h3>
   <button
-    class="sc-eDWCr sc-fnGiBr sc-bjfHbI fFZftL bHIIaI ejSnrg"
+    class="sc-eDWCr sc-fnGiBr sc-bjfHbI dZZUKC bHIIaI ejSnrg"
   >
     <svg
       class="sc-fLcnxK hCxlfl"
@@ -106,7 +106,7 @@ exports[`Item Tests renders the Item page 1`] = `
     </span>
   </button>
   <a
-    class="sc-eDWCr sc-bqWxrE fFZftL jQcfUS"
+    class="sc-eDWCr sc-bqWxrE dZZUKC jQcfUS"
     href="/"
   >
     <span>

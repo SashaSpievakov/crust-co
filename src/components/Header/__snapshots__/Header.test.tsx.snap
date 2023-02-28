@@ -60,7 +60,7 @@ Object {
         />
       </svg>
       <a
-        className="sc-iBYQkv sc-pyfCe dPnDSi djZoFJ"
+        className="sc-iBYQkv sc-pyfCe eRXbvH djZoFJ"
         data-testid="cartLink"
         href="/cart"
         onClick={[Function]}

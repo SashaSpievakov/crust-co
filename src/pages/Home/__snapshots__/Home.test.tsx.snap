@@ -53,7 +53,8 @@ exports[`Home Tests renders the Home page 1`] = `
       class="sc-pyfCe dcrHaX"
     >
       <div
-        class="sc-jrcTuL kbCoBx"
+        class="sc-jrcTuL bjUGsr"
+        tabindex="0"
       >
         <svg
           class="sc-ipEyDJ kYhfAR"
@@ -88,17 +89,20 @@ exports[`Home Tests renders the Home page 1`] = `
           data-testid="popupList"
         >
           <li
-            class="sc-eDWCr ivFgPg"
+            class="sc-eDWCr iBTyEZ"
+            tabindex="0"
           >
             rating
           </li>
           <li
-            class="sc-eDWCr eiwidf"
+            class="sc-eDWCr cgIKVK"
+            tabindex="0"
           >
             price
           </li>
           <li
-            class="sc-eDWCr eiwidf"
+            class="sc-eDWCr cgIKVK"
+            tabindex="0"
           >
             A to Z
           </li>
@@ -227,7 +231,7 @@ exports[`Home Tests renders the Home page 1`] = `
           $
         </h3>
         <button
-          class="sc-fEXmlR sc-hHTYSt sc-kgTSHT blZHeE goSwuU euaXrP"
+          class="sc-fEXmlR sc-hHTYSt sc-kgTSHT cCXveJ goSwuU euaXrP"
         >
           <svg
             class="sc-iJnaPW hntdDm"
@@ -319,7 +323,7 @@ exports[`Home Tests renders the Home page 1`] = `
           $
         </h3>
         <button
-          class="sc-fEXmlR sc-hHTYSt sc-kgTSHT blZHeE goSwuU euaXrP"
+          class="sc-fEXmlR sc-hHTYSt sc-kgTSHT cCXveJ goSwuU euaXrP"
         >
           <svg
             class="sc-iJnaPW hntdDm"
@@ -418,7 +422,7 @@ exports[`Home Tests renders the Home page 1`] = `
           $
         </h3>
         <button
-          class="sc-fEXmlR sc-hHTYSt sc-kgTSHT blZHeE goSwuU euaXrP"
+          class="sc-fEXmlR sc-hHTYSt sc-kgTSHT cCXveJ goSwuU euaXrP"
         >
           <svg
             class="sc-iJnaPW hntdDm"

@@ -41,6 +41,7 @@ Object {
             aria-current={true}
             className="sc-eDWCr dPBKll"
             onClick={[Function]}
+            onKeyDown={[Function]}
             tabIndex={0}
           >
             traditional
@@ -49,6 +50,7 @@ Object {
             aria-current={false}
             className="sc-eDWCr ifQPTE"
             onClick={[Function]}
+            onKeyDown={[Function]}
             tabIndex={0}
           >
             thin
@@ -59,6 +61,7 @@ Object {
             aria-current={true}
             className="sc-eDWCr dPBKll"
             onClick={[Function]}
+            onKeyDown={[Function]}
             tabIndex={0}
           >
             12
@@ -68,6 +71,7 @@ Object {
             aria-current={false}
             className="sc-eDWCr ifQPTE"
             onClick={[Function]}
+            onKeyDown={[Function]}
             tabIndex={0}
           >
             14
@@ -77,6 +81,7 @@ Object {
             aria-current={false}
             className="sc-eDWCr ifQPTE"
             onClick={[Function]}
+            onKeyDown={[Function]}
             tabIndex={0}
           >
             16
@@ -94,7 +99,7 @@ Object {
           $
         </h3>
         <button
-          className="sc-bcXHqe sc-eDvSVe sc-gKPRtg fAfvZN fwWQTF gmBSoV"
+          className="sc-bcXHqe sc-eDvSVe sc-gKPRtg dRXTCo fwWQTF gmBSoV"
           onClick={[Function]}
         >
           <svg
@@ -160,6 +165,7 @@ Object {
             aria-current={true}
             className="sc-eDWCr dPBKll"
             onClick={[Function]}
+            onKeyDown={[Function]}
             tabIndex={0}
           >
             traditional
@@ -170,6 +176,7 @@ Object {
             aria-current={true}
             className="sc-eDWCr dPBKll"
             onClick={[Function]}
+            onKeyDown={[Function]}
             tabIndex={0}
           >
             12
@@ -179,6 +186,7 @@ Object {
             aria-current={false}
             className="sc-eDWCr ifQPTE"
             onClick={[Function]}
+            onKeyDown={[Function]}
             tabIndex={0}
           >
             14
@@ -196,7 +204,7 @@ Object {
           $
         </h3>
         <button
-          className="sc-bcXHqe sc-eDvSVe sc-gKPRtg fAfvZN fwWQTF gmBSoV"
+          className="sc-bcXHqe sc-eDvSVe sc-gKPRtg dRXTCo fwWQTF gmBSoV"
           onClick={[Function]}
         >
           <svg
@@ -262,6 +270,7 @@ Object {
             aria-current={true}
             className="sc-eDWCr dPBKll"
             onClick={[Function]}
+            onKeyDown={[Function]}
             tabIndex={0}
           >
             traditional
@@ -270,6 +279,7 @@ Object {
             aria-current={false}
             className="sc-eDWCr ifQPTE"
             onClick={[Function]}
+            onKeyDown={[Function]}
             tabIndex={0}
           >
             thin
@@ -280,6 +290,7 @@ Object {
             aria-current={true}
             className="sc-eDWCr dPBKll"
             onClick={[Function]}
+            onKeyDown={[Function]}
             tabIndex={0}
           >
             12
@@ -289,6 +300,7 @@ Object {
             aria-current={false}
             className="sc-eDWCr ifQPTE"
             onClick={[Function]}
+            onKeyDown={[Function]}
             tabIndex={0}
           >
             16
@@ -306,7 +318,7 @@ Object {
           $
         </h3>
         <button
-          className="sc-bcXHqe sc-eDvSVe sc-gKPRtg fAfvZN fwWQTF gmBSoV"
+          className="sc-bcXHqe sc-eDvSVe sc-gKPRtg dRXTCo fwWQTF gmBSoV"
           onClick={[Function]}
         >
           <svg

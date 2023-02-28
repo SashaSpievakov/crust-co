@@ -41,7 +41,7 @@ Object {
     >
       <button
         aria-label="minus"
-        className="sc-bcXHqe sc-eDvSVe sc-jSUZER fAfvZN fwWQTF gCqzMt"
+        className="sc-bcXHqe sc-eDvSVe sc-jSUZER dRXTCo fwWQTF gCqzMt"
         disabled={false}
         onClick={[Function]}
       >
@@ -70,7 +70,7 @@ Object {
       </span>
       <button
         aria-label="plus"
-        className="sc-bcXHqe sc-eDvSVe sc-jSUZER fAfvZN fwWQTF gCqzMt"
+        className="sc-bcXHqe sc-eDvSVe sc-jSUZER dRXTCo fwWQTF gCqzMt"
         onClick={[Function]}
       >
         <svg
@@ -105,7 +105,7 @@ Object {
     >
       <button
         aria-label="delete"
-        className="sc-bcXHqe sc-eDvSVe sc-jSUZER fAfvZN fwWQTF edjCUe"
+        className="sc-bcXHqe sc-eDvSVe sc-jSUZER dRXTCo fwWQTF edjCUe"
         onClick={[Function]}
       >
         <svg
@@ -178,7 +178,7 @@ Object {
     >
       <button
         aria-label="minus"
-        className="sc-bcXHqe sc-eDvSVe sc-jSUZER fAfvZN fwWQTF gCqzMt"
+        className="sc-bcXHqe sc-eDvSVe sc-jSUZER dRXTCo fwWQTF gCqzMt"
         disabled={true}
         onClick={[Function]}
       >
@@ -207,7 +207,7 @@ Object {
       </span>
       <button
         aria-label="plus"
-        className="sc-bcXHqe sc-eDvSVe sc-jSUZER fAfvZN fwWQTF gCqzMt"
+        className="sc-bcXHqe sc-eDvSVe sc-jSUZER dRXTCo fwWQTF gCqzMt"
         onClick={[Function]}
       >
         <svg
@@ -242,7 +242,7 @@ Object {
     >
       <button
         aria-label="delete"
-        className="sc-bcXHqe sc-eDvSVe sc-jSUZER fAfvZN fwWQTF edjCUe"
+        className="sc-bcXHqe sc-eDvSVe sc-jSUZER dRXTCo fwWQTF edjCUe"
         onClick={[Function]}
       >
         <svg

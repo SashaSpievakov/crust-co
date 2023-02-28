@@ -21,7 +21,7 @@ Object {
       width="300"
     />,
     <a
-      className="sc-bcXHqe sc-gswNZR fAfvZN cItvZU"
+      className="sc-bcXHqe sc-gswNZR dRXTCo cItvZU"
       href="/"
       onClick={[Function]}
     >
@@ -143,7 +143,7 @@ Object {
         >
           <button
             aria-label="minus"
-            className="sc-bcXHqe sc-eDvSVe sc-jSUZER fAfvZN fwWQTF gCqzMt"
+            className="sc-bcXHqe sc-eDvSVe sc-jSUZER dRXTCo fwWQTF gCqzMt"
             disabled={false}
             onClick={[Function]}
           >
@@ -172,7 +172,7 @@ Object {
           </span>
           <button
             aria-label="plus"
-            className="sc-bcXHqe sc-eDvSVe sc-jSUZER fAfvZN fwWQTF gCqzMt"
+            className="sc-bcXHqe sc-eDvSVe sc-jSUZER dRXTCo fwWQTF gCqzMt"
             onClick={[Function]}
           >
             <svg
@@ -207,7 +207,7 @@ Object {
         >
           <button
             aria-label="delete"
-            className="sc-bcXHqe sc-eDvSVe sc-jSUZER fAfvZN fwWQTF edjCUe"
+            className="sc-bcXHqe sc-eDvSVe sc-jSUZER dRXTCo fwWQTF edjCUe"
             onClick={[Function]}
           >
             <svg
@@ -273,7 +273,7 @@ Object {
         >
           <button
             aria-label="minus"
-            className="sc-bcXHqe sc-eDvSVe sc-jSUZER fAfvZN fwWQTF gCqzMt"
+            className="sc-bcXHqe sc-eDvSVe sc-jSUZER dRXTCo fwWQTF gCqzMt"
             disabled={true}
             onClick={[Function]}
           >
@@ -302,7 +302,7 @@ Object {
           </span>
           <button
             aria-label="plus"
-            className="sc-bcXHqe sc-eDvSVe sc-jSUZER fAfvZN fwWQTF gCqzMt"
+            className="sc-bcXHqe sc-eDvSVe sc-jSUZER dRXTCo fwWQTF gCqzMt"
             onClick={[Function]}
           >
             <svg
@@ -337,7 +337,7 @@ Object {
         >
           <button
             aria-label="delete"
-            className="sc-bcXHqe sc-eDvSVe sc-jSUZER fAfvZN fwWQTF edjCUe"
+            className="sc-bcXHqe sc-eDvSVe sc-jSUZER dRXTCo fwWQTF edjCUe"
             onClick={[Function]}
           >
             <svg
@@ -395,7 +395,7 @@ Object {
         className="sc-gYbzsP dKEUBU"
       >
         <a
-          className="sc-bcXHqe sc-eDvSVe sc-gKPRtg sc-iBYQkv fAfvZN fwWQTF gmBSoV kPGGvm"
+          className="sc-bcXHqe sc-eDvSVe sc-gKPRtg sc-iBYQkv dRXTCo fwWQTF gmBSoV kPGGvm"
           href="/"
           onClick={[Function]}
         >
@@ -424,7 +424,7 @@ Object {
           </span>
         </a>
         <button
-          className="sc-bcXHqe sc-hLBbgP fAfvZN czoOAi"
+          className="sc-bcXHqe sc-hLBbgP dRXTCo czoOAi"
           onClick={[Function]}
         >
           <span>

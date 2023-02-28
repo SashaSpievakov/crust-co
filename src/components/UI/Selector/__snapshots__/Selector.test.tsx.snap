@@ -8,6 +8,7 @@ Object {
         aria-current={true}
         className="sc-gswNZR iMRIUn"
         onClick={[Function]}
+        onKeyDown={[Function]}
         tabIndex={0}
       >
         traditional
@@ -16,6 +17,7 @@ Object {
         aria-current={false}
         className="sc-gswNZR kCsqcO"
         onClick={[Function]}
+        onKeyDown={[Function]}
         tabIndex={0}
       >
         thin
@@ -26,6 +28,7 @@ Object {
         aria-current={false}
         className="sc-gswNZR kCsqcO"
         onClick={[Function]}
+        onKeyDown={[Function]}
         tabIndex={0}
       >
         12
@@ -35,6 +38,7 @@ Object {
         aria-current={false}
         className="sc-gswNZR kCsqcO"
         onClick={[Function]}
+        onKeyDown={[Function]}
         tabIndex={0}
       >
         14
@@ -44,6 +48,7 @@ Object {
         aria-current={false}
         className="sc-gswNZR kCsqcO"
         onClick={[Function]}
+        onKeyDown={[Function]}
         tabIndex={0}
       >
         16

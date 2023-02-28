@@ -38,6 +38,7 @@ Object {
           aria-current={true}
           className="sc-ftTHYK bsmFHy"
           onClick={[Function]}
+          onKeyDown={[Function]}
           tabIndex={0}
         >
           traditional
@@ -46,6 +47,7 @@ Object {
           aria-current={false}
           className="sc-ftTHYK idilNT"
           onClick={[Function]}
+          onKeyDown={[Function]}
           tabIndex={0}
         >
           thin
@@ -56,6 +58,7 @@ Object {
           aria-current={true}
           className="sc-ftTHYK bsmFHy"
           onClick={[Function]}
+          onKeyDown={[Function]}
           tabIndex={0}
         >
           12
@@ -65,6 +68,7 @@ Object {
           aria-current={false}
           className="sc-ftTHYK idilNT"
           onClick={[Function]}
+          onKeyDown={[Function]}
           tabIndex={0}
         >
           14
@@ -74,6 +78,7 @@ Object {
           aria-current={false}
           className="sc-ftTHYK idilNT"
           onClick={[Function]}
+          onKeyDown={[Function]}
           tabIndex={0}
         >
           16
@@ -88,7 +93,7 @@ Object {
       $
     </h3>,
     <button
-      className="sc-pyfCe sc-csuSiG sc-bqWxrE kimegh jTyypa fPSXem"
+      className="sc-pyfCe sc-csuSiG sc-bqWxrE idmeKs jTyypa fPSXem"
       onClick={[Function]}
     >
       <svg
@@ -115,7 +120,7 @@ Object {
       </span>
     </button>,
     <a
-      className="sc-pyfCe sc-jrcTuL kimegh briJJD"
+      className="sc-pyfCe sc-jrcTuL idmeKs briJJD"
       href="/"
       onClick={[Function]}
     >
