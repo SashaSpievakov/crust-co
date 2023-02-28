@@ -4,6 +4,7 @@ exports[`ItemCard Tests renders the ItemCard component 1`] = `
 Object {
   "children": Array [
     <a
+      className="sc-ksBlkl chaHoQ"
       href="/item/9"
       onClick={[Function]}
     >
@@ -18,14 +19,14 @@ Object {
         />
         <img
           alt="Chicken Curry pizza"
-          className="sc-ksBlkl giKwGo"
+          className="sc-hBxehG hiutnt"
           height="250"
           src="./assets/img/pizza9.png"
           width="250"
         />
       </picture>
       <h3
-        className="sc-hBxehG cZCKzy"
+        className="sc-fnGiBr djgFrE"
       >
         Chicken Curry
       </h3>
@@ -87,10 +88,10 @@ Object {
       </ul>
     </section>,
     <section
-      className="sc-fnGiBr PZUmi"
+      className="sc-fEXmlR dJUDNk"
     >
       <h3
-        className="sc-fEXmlR ljIWrJ"
+        className="sc-bjfHbI dFHOIQ"
       >
         14
         $

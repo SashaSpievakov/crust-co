@@ -7,6 +7,7 @@ Object {
       className="sc-bqWxrE fptGBs"
     >
       <a
+        className="sc-ksBlkl chaHoQ"
         href="/item/3"
         onClick={[Function]}
       >
@@ -21,14 +22,14 @@ Object {
           />
           <img
             alt="Shrimp Pizza pizza"
-            className="sc-ksBlkl giKwGo"
+            className="sc-hBxehG hiutnt"
             height="250"
             src="./assets/img/pizza3.png"
             width="250"
           />
         </picture>
         <h3
-          className="sc-hBxehG cZCKzy"
+          className="sc-fnGiBr djgFrE"
         >
           Shrimp Pizza
         </h3>
@@ -90,10 +91,10 @@ Object {
         </ul>
       </section>
       <section
-        className="sc-fnGiBr PZUmi"
+        className="sc-fEXmlR dJUDNk"
       >
         <h3
-          className="sc-fEXmlR ljIWrJ"
+          className="sc-bjfHbI dFHOIQ"
         >
           10
           $
@@ -131,6 +132,7 @@ Object {
       className="sc-bqWxrE fptGBs"
     >
       <a
+        className="sc-ksBlkl chaHoQ"
         href="/item/2"
         onClick={[Function]}
       >
@@ -145,14 +147,14 @@ Object {
           />
           <img
             alt="Pepperoni Pizza pizza"
-            className="sc-ksBlkl giKwGo"
+            className="sc-hBxehG hiutnt"
             height="250"
             src="./assets/img/pizza2.png"
             width="250"
           />
         </picture>
         <h3
-          className="sc-hBxehG cZCKzy"
+          className="sc-fnGiBr djgFrE"
         >
           Pepperoni Pizza
         </h3>
@@ -195,10 +197,10 @@ Object {
         </ul>
       </section>
       <section
-        className="sc-fnGiBr PZUmi"
+        className="sc-fEXmlR dJUDNk"
       >
         <h3
-          className="sc-fEXmlR ljIWrJ"
+          className="sc-bjfHbI dFHOIQ"
         >
           12
           $
@@ -236,6 +238,7 @@ Object {
       className="sc-bqWxrE fptGBs"
     >
       <a
+        className="sc-ksBlkl chaHoQ"
         href="/item/6"
         onClick={[Function]}
       >
@@ -250,14 +253,14 @@ Object {
           />
           <img
             alt="Diablo pizza"
-            className="sc-ksBlkl giKwGo"
+            className="sc-hBxehG hiutnt"
             height="250"
             src="./assets/img/pizza6.png"
             width="250"
           />
         </picture>
         <h3
-          className="sc-hBxehG cZCKzy"
+          className="sc-fnGiBr djgFrE"
         >
           Diablo
         </h3>
@@ -309,10 +312,10 @@ Object {
         </ul>
       </section>
       <section
-        className="sc-fnGiBr PZUmi"
+        className="sc-fEXmlR dJUDNk"
       >
         <h3
-          className="sc-fEXmlR ljIWrJ"
+          className="sc-bjfHbI dFHOIQ"
         >
           15
           $
@@ -348,7 +351,7 @@ Object {
     </article>,
   ],
   "props": Object {
-    "className": "sc-iveFHk hwMDtY",
+    "className": "sc-cwSeag cRsqA-D",
   },
   "type": "section",
 }
@@ -358,13 +361,13 @@ exports[`ProductsContainer Tests renders the ProductsContainer component with no
 Object {
   "children": Array [
     <h3
-      className="sc-cwSeag elsWri"
+      className="sc-lllmON eEYlZm"
     >
       No pizzas with that name were found...
     </h3>,
   ],
   "props": Object {
-    "className": "sc-iveFHk bYASNO",
+    "className": "sc-cwSeag dAOqIN",
   },
   "type": "section",
 }

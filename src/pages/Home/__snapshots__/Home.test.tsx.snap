@@ -144,12 +144,13 @@ exports[`Home Tests renders the Home page 1`] = `
     </section>
   </section>
   <section
-    class="sc-iAEawV gwdIIe"
+    class="sc-eeMvmM fLEVJU"
   >
     <article
       class="sc-bYMpWt fjKzCa"
     >
       <a
+        class="sc-kMjNwy jcOtpt"
         href="/item/3"
       >
         <picture>
@@ -163,14 +164,14 @@ exports[`Home Tests renders the Home page 1`] = `
           />
           <img
             alt="Shrimp Pizza pizza"
-            class="sc-kMjNwy cwMvrV"
+            class="sc-ilhmMj hVMhhC"
             height="250"
             src="./assets/img/pizza3.png"
             width="250"
           />
         </picture>
         <h3
-          class="sc-ilhmMj rvChN"
+          class="sc-jIRcFI kqJrCP"
         >
           Shrimp Pizza
         </h3>
@@ -222,10 +223,10 @@ exports[`Home Tests renders the Home page 1`] = `
         </ul>
       </section>
       <section
-        class="sc-jIRcFI jOLeNN"
+        class="sc-hhOBVt drvpMz"
       >
         <h3
-          class="sc-hhOBVt bsEnMi"
+          class="sc-gYbzsP eKShMY"
         >
           10
           $
@@ -257,6 +258,7 @@ exports[`Home Tests renders the Home page 1`] = `
       class="sc-bYMpWt fjKzCa"
     >
       <a
+        class="sc-kMjNwy jcOtpt"
         href="/item/2"
       >
         <picture>
@@ -270,14 +272,14 @@ exports[`Home Tests renders the Home page 1`] = `
           />
           <img
             alt="Pepperoni Pizza pizza"
-            class="sc-kMjNwy cwMvrV"
+            class="sc-ilhmMj hVMhhC"
             height="250"
             src="./assets/img/pizza2.png"
             width="250"
           />
         </picture>
         <h3
-          class="sc-ilhmMj rvChN"
+          class="sc-jIRcFI kqJrCP"
         >
           Pepperoni Pizza
         </h3>
@@ -314,10 +316,10 @@ exports[`Home Tests renders the Home page 1`] = `
         </ul>
       </section>
       <section
-        class="sc-jIRcFI jOLeNN"
+        class="sc-hhOBVt drvpMz"
       >
         <h3
-          class="sc-hhOBVt bsEnMi"
+          class="sc-gYbzsP eKShMY"
         >
           12
           $
@@ -349,6 +351,7 @@ exports[`Home Tests renders the Home page 1`] = `
       class="sc-bYMpWt fjKzCa"
     >
       <a
+        class="sc-kMjNwy jcOtpt"
         href="/item/6"
       >
         <picture>
@@ -362,14 +365,14 @@ exports[`Home Tests renders the Home page 1`] = `
           />
           <img
             alt="Diablo pizza"
-            class="sc-kMjNwy cwMvrV"
+            class="sc-ilhmMj hVMhhC"
             height="250"
             src="./assets/img/pizza6.png"
             width="250"
           />
         </picture>
         <h3
-          class="sc-ilhmMj rvChN"
+          class="sc-jIRcFI kqJrCP"
         >
           Diablo
         </h3>
@@ -413,10 +416,10 @@ exports[`Home Tests renders the Home page 1`] = `
         </ul>
       </section>
       <section
-        class="sc-jIRcFI jOLeNN"
+        class="sc-hhOBVt drvpMz"
       >
         <h3
-          class="sc-hhOBVt bsEnMi"
+          class="sc-gYbzsP eKShMY"
         >
           15
           $
