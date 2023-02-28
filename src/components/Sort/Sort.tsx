@@ -1,4 +1,4 @@
-import { useEffect, useState, useRef, memo } from 'react';
+import { useEffect, useState, useRef, memo, KeyboardEvent } from 'react';
 import { useAppDispatch, useAppSelector } from '../../hooks/reduxHooks';
 
 import { setSort } from '../../store/slices/sort/reducer/sortReducer';
@@ -22,6 +22,14 @@ const Sort = memo(({ sortNamesArr }: CategoriesProps) => {
     setOpen(false);
   };
 
+  const handleLabelKeyDownClick = (e: KeyboardEvent<HTMLDivElement>) => {
+    if (e.code === 'Enter') setOpen(!open);
+  };
+
+  const handleLiKeyDownClick = (e: KeyboardEvent<HTMLElement>, i: number) => {
+    if (e.code === 'Enter') changeActiveSortName(i);
+  };
+
   useEffect(() => {
     const handleBodyClick = (e: MouseEvent) => {
       if (sortRef.current && !e.composedPath().includes(sortRef.current)) {
@@ -39,7 +47,11 @@ const Sort = memo(({ sortNamesArr }: CategoriesProps) => {
 
   return (
     <Section ref={sortRef}>
-      <Label onClick={() => setOpen(!open)}>
+      <Label
+        onClick={() => setOpen(!open)}
+        onKeyDown={(e) => handleLabelKeyDownClick(e)}
+        tabIndex={0}
+      >
         {open ? (
           <ArrowUp data-testid="popupIcon" />
         ) : (
@@ -54,6 +66,8 @@ const Sort = memo(({ sortNamesArr }: CategoriesProps) => {
             <Li
               key={sortName}
               onClick={() => changeActiveSortName(i)}
+              onKeyDown={(e) => handleLiKeyDownClick(e, i)}
+              tabIndex={0}
               chosen={chosenSortName === sortName}
             >
               {sortName}

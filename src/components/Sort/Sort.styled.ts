@@ -32,6 +32,11 @@ const Section = styled.section`
 const Label = styled.div`
   display: flex;
   align-items: center;
+  border-radius: 5px;
+
+  &:focus {
+    background-color: ${({ theme }) => theme.colors.secondary};
+  }
 
   b {
     margin-right: 8px;
@@ -82,6 +87,11 @@ const Li = styled.li<LiProps>`
 
   &:hover {
     ${mixinBackground}
+  }
+
+  &:focus {
+    outline: 4px solid ${({ theme }) => theme.colors.third};
+    outline-offset: -4px;
   }
 
   ${({ chosen }) =>
