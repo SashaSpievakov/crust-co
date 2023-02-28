@@ -61,11 +61,17 @@ const Cross = styled(BsXLg)`
   top: 10px;
   right: 10px;
   font-size: 20px;
+  border-radius: 5px;
   opacity: 0.3;
   cursor: pointer;
 
   &:hover {
     opacity: 0.7;
+  }
+
+  &:focus {
+    outline: 3px solid ${({ theme }) => theme.colors.black};
+    outline-offset: 3px;
   }
 `;
 

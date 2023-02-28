@@ -1,4 +1,11 @@
-import React, { memo, useCallback, useEffect, useRef, useState } from 'react';
+import React, {
+  KeyboardEvent,
+  memo,
+  useCallback,
+  useEffect,
+  useRef,
+  useState,
+} from 'react';
 import debounce from 'lodash.debounce';
 
 import { useAppDispatch, useAppSelector } from '../../hooks/reduxHooks';
@@ -33,6 +40,13 @@ const SearchItems = memo(() => {
     dispatch(setSearchValue(''));
   };
 
+  const handleCrossKeyDownClick = (e: KeyboardEvent<SVGElement>) => {
+    if (e.code === 'Enter') {
+      setValue('');
+      dispatch(setSearchValue(''));
+    }
+  };
+
   useEffect(() => {
     setValue(searchValue);
   }, [searchValue]);
@@ -46,7 +60,14 @@ const SearchItems = memo(() => {
         value={value}
         onChange={(e) => onChangeInput(e)}
       />
-      {searchValue && <Cross onClick={onClickClose} data-testid="cleanInput" />}
+      {searchValue && (
+        <Cross
+          onClick={onClickClose}
+          onKeyDown={(e) => handleCrossKeyDownClick(e)}
+          tabIndex={0}
+          data-testid="cleanInput"
+        />
+      )}
     </Section>
   );
 });
