@@ -28,6 +28,11 @@ const Button = styled.button`
     opacity: 0.8;
   }
 
+  &:focus {
+    outline: 5px solid ${({ theme }) => theme.colors.third};
+    outline-offset: -5px;
+  }
+
   &:active {
     transform: translateY(1px);
   }
