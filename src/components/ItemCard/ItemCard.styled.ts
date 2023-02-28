@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { Link } from 'react-router-dom';
 
 const Block = styled.article`
   width: 250px;
@@ -17,6 +18,15 @@ const Block = styled.article`
 
   @media screen and (max-width: 400px) {
     width: 200px;
+  }
+`;
+
+const CustomLink = styled(Link)`
+  display: block;
+  border-radius: 5px;
+
+  &:focus {
+    outline: 5px solid ${({ theme }) => theme.colors.third};
   }
 `;
 
@@ -56,4 +66,4 @@ const Price = styled.h3`
   }
 `;
 
-export { Block, Image, Title, Bottom, Price };
+export { Block, CustomLink, Image, Title, Bottom, Price };

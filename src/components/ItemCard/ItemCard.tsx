@@ -1,9 +1,15 @@
 import { useEffect, useState } from 'react';
-import { Link } from 'react-router-dom';
 
 import ItemsCountHandler from '../UI/ItemsCountHandler/ItemsCountHandler';
 import Selector from '../UI/Selector/Selector';
-import { Block, Image, Title, Bottom, Price } from './ItemCard.styled';
+import {
+  Block,
+  CustomLink,
+  Image,
+  Title,
+  Bottom,
+  Price,
+} from './ItemCard.styled';
 import { typeNames } from '../FullItemBlock/FullItemBlock';
 
 interface ItemCardProps {
@@ -25,7 +31,7 @@ const ItemCard = ({ id, name, price, sizes, types }: ItemCardProps) => {
 
   return (
     <Block>
-      <Link to={`/item/${id}`}>
+      <CustomLink to={`/item/${id}`}>
         <picture>
           <source srcSet={`./assets/img/pizza${id}.webp`} type="image/webp" />
           <source srcSet={`./assets/img/pizza${id}.png`} type="image/png" />
@@ -37,7 +43,7 @@ const ItemCard = ({ id, name, price, sizes, types }: ItemCardProps) => {
           />
         </picture>
         <Title>{name}</Title>
-      </Link>
+      </CustomLink>
       <Selector
         price={activePrice}
         sizes={sizes}
