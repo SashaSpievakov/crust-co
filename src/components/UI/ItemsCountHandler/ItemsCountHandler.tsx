@@ -1,3 +1,5 @@
+import { KeyboardEvent } from 'react';
+
 import { useAppDispatch, useAppSelector } from '../../../hooks/reduxHooks';
 import { ICartItem } from '../../../models/ICartItem';
 import { IItemsCountHandler } from '../../../models/IItemsCountHandler';
@@ -59,15 +61,30 @@ const ItemsCountHandler = ({
     dispatch(removeItem(item));
   };
 
+  const handleAddKeyDownClick = (e: KeyboardEvent<SVGElement>) => {
+    if (e.code === 'Enter') onClickAdd();
+  };
+
+  const handleRemoveKeyDownClick = (e: KeyboardEvent<SVGElement>) => {
+    if (e.code === 'Enter') onClickRemove();
+  };
+
   return namesCount ? (
     <Counter isFullScreen={isFullScreen}>
       <Minus
         onClick={onClickRemove}
+        onKeyDown={(e) => handleRemoveKeyDownClick(e)}
+        tabIndex={0}
         disabled={currentItemCount < 1}
         data-testid="itemsHandlerMinus"
       />
       <Count isFullScreen={isFullScreen}>{namesCount}</Count>
-      <Plus onClick={onClickAdd} data-testid="itemsHandlerPlus" />
+      <Plus
+        onClick={onClickAdd}
+        onKeyDown={(e) => handleAddKeyDownClick(e)}
+        tabIndex={0}
+        data-testid="itemsHandlerPlus"
+      />
     </Counter>
   ) : (
     <ButtonAdd onClick={onClickAdd} isFullScreen={isFullScreen}>

@@ -16,6 +16,11 @@ const mixinButton = css`
   user-select: none;
   cursor: pointer;
 
+  &:focus {
+    outline: 3px solid ${({ theme }) => theme.colors.third};
+    outline-offset: 3px;
+  }
+
   &:active {
     transform: translateY(1px);
   }
