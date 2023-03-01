@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { KeyboardEvent, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { shallowEqual } from 'react-redux';
 
@@ -35,6 +35,10 @@ const Cart = () => {
     dispatch(clearCart());
   };
 
+  const handleClearKeyDownClick = (e: KeyboardEvent<HTMLElement>) => {
+    if (e.code === 'Enter') onClearClick();
+  };
+
   return items.length ? (
     <Article>
       <Top>
@@ -42,7 +46,11 @@ const Cart = () => {
           <CartIcon />
           Cart
         </Title>
-        <Clear onClick={onClearClick}>
+        <Clear
+          onClick={onClearClick}
+          onKeyDown={(e) => handleClearKeyDownClick(e)}
+          tabIndex={0}
+        >
           <Trash />
           <span role="presentation">Delete all items</span>
         </Clear>

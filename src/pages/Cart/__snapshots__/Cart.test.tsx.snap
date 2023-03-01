@@ -68,8 +68,10 @@ Object {
         Cart
       </h2>
       <section
-        className="sc-kMjNwy iwZknd"
+        className="sc-kMjNwy geUgei"
         onClick={[Function]}
+        onKeyDown={[Function]}
+        tabIndex={0}
       >
         <svg
           className="sc-ilhmMj dGcrYL"

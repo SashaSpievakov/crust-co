@@ -35,7 +35,14 @@ const CartIcon = styled(BsCart3)`
 const Clear = styled.section`
   display: flex;
   align-items: center;
+  border-radius: 5px;
   cursor: pointer;
+
+  &:focus {
+    background-color: ${({ theme }) => theme.colors.primary};
+    outline: 4px solid ${({ theme }) => theme.colors.primary};
+    outline-offset: -1px;
+  }
 
   span {
     display: inline-block;
