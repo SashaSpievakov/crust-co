@@ -26,6 +26,13 @@ const Contact = styled.a`
   display: flex;
   gap: 5px;
   align-items: center;
+  border-radius: 5px;
+
+  &:focus {
+    background-color: ${({ theme }) => theme.colors.primary};
+    outline: 5px solid ${({ theme }) => theme.colors.primary};
+    outline-offset: -1px;
+  }
 
   &:hover {
     color: ${({ theme }) => theme.colors.secondary};
