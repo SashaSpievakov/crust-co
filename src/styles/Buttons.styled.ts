@@ -46,12 +46,16 @@ const ButtonBack = styled(Button)`
   font-size: 18px;
   background-color: ${({ theme }) => theme.colors.third};
 
-  span {
-    color: ${({ theme }) => theme.colors.fourth};
-  }
-
   &:hover {
     background-color: ${({ theme }) => theme.colors.third}99;
+  }
+
+  &:focus {
+    outline: 6px solid ${({ theme }) => theme.colors.secondary};
+  }
+
+  span {
+    color: ${({ theme }) => theme.colors.fourth};
   }
 
   @media screen and (max-width: 400px) {
@@ -106,9 +110,9 @@ const ButtonCircle = styled(ButtonOutline)<CircleProps>`
   padding: 0;
   border-width: 2px;
 
-  svg path {
-    fill: ${({ theme }) => theme.colors.third};
-    stroke: ${({ theme }) => theme.colors.third};
+  &:focus {
+    outline: 3px solid ${({ theme }) => theme.colors.third};
+    outline-offset: -3px;
   }
 
   &:disabled {
@@ -119,6 +123,11 @@ const ButtonCircle = styled(ButtonOutline)<CircleProps>`
       fill: #dddddd;
       stroke: #dddddd;
     }
+  }
+
+  svg path {
+    fill: ${({ theme }) => theme.colors.third};
+    stroke: ${({ theme }) => theme.colors.third};
   }
 
   ${({ remove }) =>
