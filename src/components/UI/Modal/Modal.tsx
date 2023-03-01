@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { KeyboardEvent, useState } from 'react';
 import { useForm, SubmitHandler } from 'react-hook-form';
 
 import {
@@ -40,6 +40,16 @@ const Modal = ({ setIsOpen }: ModalProps) => {
     setIsSubmitted(true);
   };
 
+  const handlePhoneInputKeyDownClick = (e: KeyboardEvent<HTMLInputElement>) => {
+    if (e.key === 'e' || e.key === '-') {
+      e.preventDefault();
+    }
+  };
+
+  const handleCrossKeyDownClick = (e: KeyboardEvent<SVGElement>) => {
+    if (e.code === 'Enter') setIsOpen(false);
+  };
+
   return !isSubmitted ? (
     <>
       <Bg onClick={() => setIsOpen(false)} />
@@ -49,7 +59,11 @@ const Modal = ({ setIsOpen }: ModalProps) => {
           Please provide your information, and our operator will get in touch
           with you as soon as possible to finish your order
         </SubHeader>
-        <Cross onClick={() => setIsOpen(false)} />
+        <Cross
+          onClick={() => setIsOpen(false)}
+          onKeyDown={(e) => handleCrossKeyDownClick(e)}
+          tabIndex={0}
+        />
         <Form onSubmit={handleSubmit(onSubmit)}>
           <Group>
             <Label htmlFor="inputName">Name</Label>
@@ -62,11 +76,7 @@ const Modal = ({ setIsOpen }: ModalProps) => {
             <Input
               id="inputPhone"
               type="number"
-              onKeyPress={(e) => {
-                if (e.key === 'e' || e.key === '-') {
-                  e.preventDefault();
-                }
-              }}
+              onKeyPress={(e) => handlePhoneInputKeyDownClick(e)}
               {...register('phone', {
                 required: {
                   value: true,
@@ -74,11 +84,11 @@ const Modal = ({ setIsOpen }: ModalProps) => {
                 },
                 maxLength: {
                   value: 10,
-                  message: 'The phone number should be 10 characters',
+                  message: 'The phone number should have 10 characters',
                 },
                 minLength: {
                   value: 10,
-                  message: 'The phone number should be 10 characters',
+                  message: 'The phone number should have 10 characters',
                 },
               })}
             />

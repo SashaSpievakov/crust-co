@@ -96,10 +96,16 @@ const Cross = styled(BsXLg)`
   right: 15px;
   font-size: 25px;
   opacity: 0.3;
+  border-radius: 5px;
   cursor: pointer;
 
   &:hover {
     opacity: 0.7;
+  }
+
+  &:focus {
+    outline: 3px solid ${({ theme }) => theme.colors.third};
+    outline-offset: 3px;
   }
 `;
 
