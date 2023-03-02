@@ -86,7 +86,7 @@ const Buttons = styled.section`
   margin-top: 40px;
 
   @media screen and (max-width: 600px) {
-    flex-direction: column;
+    flex-direction: column-reverse;
     align-items: center;
     gap: 20px;
   }
