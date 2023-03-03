@@ -1,0 +1,129 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Modal Tests renders the Modal UI component 1`] = `
+Object {
+  "0": <div
+    className="sc-ftTHYK eGxASH"
+    onClick={[Function]}
+  />,
+  "1": <article
+    className="sc-pyfCe cMErXB"
+  >
+    <h3
+      className="sc-kDvujY gpEeWv"
+    >
+      Order
+    </h3>
+    <h4
+      className="sc-ipEyDJ gdDGzU"
+    >
+      Please provide your information, and our operator will get in touch with you as soon as possible to finish your order
+    </h4>
+    <svg
+      className="sc-csuSiG kBcuim"
+      fill="currentColor"
+      height="1em"
+      onClick={[Function]}
+      onKeyDown={[Function]}
+      stroke="currentColor"
+      strokeWidth="0"
+      style={
+        Object {
+          "color": undefined,
+        }
+      }
+      tabIndex={0}
+      viewBox="0 0 16 16"
+      width="1em"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M1.293 1.293a1 1 0 0 1 1.414 0L8 6.586l5.293-5.293a1 1 0 1 1 1.414 1.414L9.414 8l5.293 5.293a1 1 0 0 1-1.414 1.414L8 9.414l-5.293 5.293a1 1 0 0 1-1.414-1.414L6.586 8 1.293 2.707a1 1 0 0 1 0-1.414z"
+      />
+    </svg>
+    <form
+      className="sc-bqWxrE gaAleb"
+      onSubmit={[Function]}
+    >
+      <div
+        className="sc-ksBlkl ihNhWJ"
+      >
+        <label
+          className="sc-hBxehG gZLzlN"
+          htmlFor="inputName"
+        >
+          Name
+        </label>
+        <input
+          className="sc-fnGiBr ktBbpq"
+          id="inputName"
+          name="name"
+          onBlur={[Function]}
+          onChange={[Function]}
+        />
+      </div>
+      <div
+        className="sc-ksBlkl ihNhWJ"
+      >
+        <label
+          className="sc-hBxehG gZLzlN"
+          htmlFor="inputPhone"
+        >
+          Phone Number
+        </label>
+        <input
+          className="sc-fnGiBr ktBbpq"
+          id="inputPhone"
+          name="phone"
+          onBlur={[Function]}
+          onChange={[Function]}
+          onKeyPress={[Function]}
+          type="number"
+        />
+      </div>
+      <div
+        className="sc-ksBlkl ihNhWJ"
+      >
+        <label
+          className="sc-hBxehG gZLzlN"
+          htmlFor="inputCity"
+        >
+          City
+        </label>
+        <input
+          className="sc-fnGiBr ktBbpq"
+          id="inputCity"
+          name="city"
+          onBlur={[Function]}
+          onChange={[Function]}
+        />
+      </div>
+      <div
+        className="sc-ksBlkl ihNhWJ"
+      >
+        <label
+          className="sc-hBxehG gZLzlN"
+          htmlFor="inputAdddress"
+        >
+          Adddress (optional)
+        </label>
+        <input
+          className="sc-fnGiBr ktBbpq"
+          id="inputAdddress"
+          name="address"
+          onBlur={[Function]}
+          onChange={[Function]}
+        />
+      </div>
+      <button
+        className="sc-bcXHqe sc-hLBbgP sc-fEXmlR dRXTCo czoOAi mJgNn"
+        type="submit"
+      >
+        <span>
+          Send
+        </span>
+      </button>
+    </form>
+  </article>,
+}
+`;
