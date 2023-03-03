@@ -63,6 +63,7 @@ const Modal = ({ setIsOpen }: ModalProps) => {
           onClick={() => setIsOpen(false)}
           onKeyDown={(e) => handleCrossKeyDownClick(e)}
           tabIndex={0}
+          data-testid="modalCross"
         />
         <Form onSubmit={handleSubmit(onSubmit)}>
           <Group>

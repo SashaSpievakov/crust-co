@@ -21,6 +21,7 @@ Object {
     </h4>
     <svg
       className="sc-csuSiG kBcuim"
+      data-testid="modalCross"
       fill="currentColor"
       height="1em"
       onClick={[Function]}
