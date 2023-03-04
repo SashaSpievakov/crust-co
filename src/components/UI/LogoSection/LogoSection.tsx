@@ -11,7 +11,7 @@ const LogoSection = memo(() => {
     <CustomLink
       to={location.pathname !== '/' ? '/' : '#'}
       tabIndex={location.pathname !== '/' ? 0 : -1}
-      isHome={location.pathname === '/'}
+      ishome={location.pathname === '/' ? 'home' : null}
     >
       <Logo>
         <img width="38" height="54.5" src={mainLogo} alt="Pizza logo" />

@@ -8,7 +8,7 @@ Object {
     <a
       className="sc-gKPRtg bSEABM"
       href="/"
-      isHome={true}
+      ishome="home"
       onClick={[Function]}
       tabIndex={-1}
     >

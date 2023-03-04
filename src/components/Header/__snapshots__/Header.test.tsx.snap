@@ -6,7 +6,7 @@ Object {
     <a
       className="sc-bcXHqe eHbXto"
       href="/"
-      isHome={true}
+      ishome="home"
       onClick={[Function]}
       tabIndex={-1}
     >
@@ -109,7 +109,7 @@ Object {
     <a
       className="sc-bcXHqe LyGCx"
       href="/"
-      isHome={false}
+      ishome={null}
       onClick={[Function]}
       tabIndex={0}
     >

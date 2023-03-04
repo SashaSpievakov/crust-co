@@ -2,7 +2,7 @@ import styled, { css } from 'styled-components';
 import { Link } from 'react-router-dom';
 
 interface CustomLinkProps {
-  isHome: boolean;
+  ishome: string | null;
 }
 
 const CustomLink = styled(Link)<CustomLinkProps>`
@@ -13,8 +13,8 @@ const CustomLink = styled(Link)<CustomLinkProps>`
     outline-offset: 10px;
   }
 
-  ${({ isHome }) =>
-    isHome &&
+  ${({ ishome }) =>
+    ishome &&
     css`
       cursor: default;
 

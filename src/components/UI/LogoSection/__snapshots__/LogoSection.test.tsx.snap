@@ -27,7 +27,7 @@ Object {
   "props": Object {
     "className": "sc-bcXHqe eHbXto",
     "href": "/",
-    "isHome": true,
+    "ishome": "home",
     "onClick": [Function],
     "tabIndex": -1,
     "target": undefined,
