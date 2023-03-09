@@ -122,7 +122,7 @@ const Modal = ({ setIsOpen }: ModalProps) => {
           Our operator will give you a call in a few minutes
         </SubHeaderSubmitted>
         <SubmittedButton onClick={() => setIsOpen(false)}>
-          <span>Return</span>
+          <span>Close</span>
         </SubmittedButton>
       </AricleSubmitted>
     </>

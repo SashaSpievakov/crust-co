@@ -153,7 +153,7 @@ describe('Modal Tests', () => {
       userEvent.type(inputs[2], 'some address');
       userEvent.click(sumbitBtn);
 
-      const returnBtn = await screen.findByText(/return/i);
+      const returnBtn = await screen.findByText(/close/i);
 
       userEvent.click(returnBtn);
 
