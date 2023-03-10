@@ -1,12 +1,14 @@
-import styled, { css } from 'styled-components';
+import styled from 'styled-components';
 import { BsXLg } from 'react-icons/bs';
 
-import { ButtonPay, ButtonBack } from 'src/styles/Buttons.styled';
+import { ButtonPay } from 'src/styles/Buttons.styled';
 
-const mixinArticle = css`
+const Aricle = styled.article`
   position: fixed;
   top: 40%;
   left: 50%;
+  width: 40%;
+  height: 95%;
   text-align: center;
   background: ${({ theme }) => theme.colors.fourth};
   transform: translate(-50%, -40%);
@@ -14,51 +16,16 @@ const mixinArticle = css`
   border-radius: 15px;
   box-shadow: 0 5px 20px 0 rgba(0, 0, 0, 0.05);
 
-  @media screen and (max-width: 500px) {
-    top: 35%;
-    transform: translate(-50%, -35%);
-  }
-`;
-
-const Bg = styled.div`
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  width: 100vw;
-  height: 100vh;
-  z-index: 0;
-  background-color: rgba(0, 0, 0, 0.3);
-  transform: translate(-50%, -50%);
-`;
-
-const Aricle = styled.article`
-  ${mixinArticle}
-  width: 40%;
-  height: 95%;
-
   @media screen and (max-width: 900px) {
     width: 70%;
     height: 95%;
   }
 
   @media screen and (max-width: 500px) {
+    top: 35%;
     width: 80%;
     height: 90%;
-  }
-`;
-
-const AricleSubmitted = styled.article`
-  ${mixinArticle}
-  width: 40%;
-  height: 30%;
-
-  @media screen and (max-width: 900px) {
-    width: 70%;
-    height: 40%;
-  }
-
-  @media screen and (max-width: 500px) {
-    width: 80%;
+    transform: translate(-50%, -35%);
   }
 `;
 
@@ -106,17 +73,6 @@ const Cross = styled(BsXLg)`
   &:focus {
     outline: 3px solid ${({ theme }) => theme.colors.third};
     outline-offset: 3px;
-  }
-`;
-
-const SubHeaderSubmitted = styled.h4`
-  font-size: 1.3rem;
-  font-weight: 400;
-  width: 60%;
-  margin: 2% auto 0;
-
-  @media screen and (max-width: 700px) {
-    font-size: 1rem;
   }
 `;
 
@@ -175,22 +131,14 @@ const ModalButton = styled(ButtonPay)`
   margin-top: 5%;
 `;
 
-const SubmittedButton = styled(ButtonBack)`
-  margin-top: 5%;
-`;
-
 export {
-  Bg,
   Aricle,
-  AricleSubmitted,
   Header,
   SubHeader,
   Cross,
-  SubHeaderSubmitted,
   Form,
   Group,
   Label,
   Input,
   ModalButton,
-  SubmittedButton,
 };

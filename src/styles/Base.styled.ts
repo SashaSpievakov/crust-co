@@ -18,4 +18,15 @@ const ErrorParagraph = styled.p`
   }
 `;
 
-export { Container, ErrorParagraph };
+const ModalBg = styled.div`
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  width: 100vw;
+  height: 100vh;
+  z-index: 0;
+  background-color: rgba(0, 0, 0, 0.3);
+  transform: translate(-50%, -50%);
+`;
+
+export { Container, ErrorParagraph, ModalBg };

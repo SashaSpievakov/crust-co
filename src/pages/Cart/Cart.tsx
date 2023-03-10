@@ -2,7 +2,7 @@ import { KeyboardEvent, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { shallowEqual } from 'react-redux';
 
-import Modal from 'src/components/UI/Modal/Modal';
+import Modal from 'src/components/UI/OrderModal/OrderModal';
 import { clearCart } from '../../store/slices/cart/reducer/cartReducer';
 import { selectCart } from '../../store/slices/cart/selectors/selectCart/selectCart';
 import CartItem from '../../components/CartItem/CartItem';

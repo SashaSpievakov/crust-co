@@ -1,23 +1,21 @@
 import { KeyboardEvent, useState } from 'react';
 import { useForm, SubmitHandler } from 'react-hook-form';
 
+import { ModalBg } from 'src/styles/Base.styled';
+import SuccessModal from '../SuccessModal/SuccessModal';
 import {
-  Bg,
   Aricle,
-  AricleSubmitted,
   Header,
   SubHeader,
   Cross,
-  SubHeaderSubmitted,
   Form,
   Group,
   Label,
   Input,
   ModalButton,
-  SubmittedButton,
-} from './Modal.styled';
+} from './OrderModal.styled';
 
-interface ModalProps {
+interface OrderModalProps {
   setIsOpen: (value: boolean) => void;
 }
 
@@ -28,7 +26,7 @@ interface FormValues {
   address?: string;
 }
 
-const Modal = ({ setIsOpen }: ModalProps) => {
+const OrderModal = ({ setIsOpen }: OrderModalProps) => {
   const [isSubmitted, setIsSubmitted] = useState(false);
   const {
     register,
@@ -52,7 +50,7 @@ const Modal = ({ setIsOpen }: ModalProps) => {
 
   return !isSubmitted ? (
     <>
-      <Bg onClick={() => setIsOpen(false)} />
+      <ModalBg onClick={() => setIsOpen(false)} />
       <Aricle>
         <Header>Order</Header>
         <SubHeader>
@@ -114,18 +112,7 @@ const Modal = ({ setIsOpen }: ModalProps) => {
       </Aricle>
     </>
   ) : (
-    <>
-      <Bg onClick={() => setIsOpen(false)} />
-      <AricleSubmitted>
-        <Header>Thank you for your order!</Header>
-        <SubHeaderSubmitted>
-          Our operator will give you a call in a few minutes
-        </SubHeaderSubmitted>
-        <SubmittedButton onClick={() => setIsOpen(false)}>
-          <span>Close</span>
-        </SubmittedButton>
-      </AricleSubmitted>
-    </>
+    <SuccessModal setIsOpen={setIsOpen} />
   );
 };
-export default Modal;
+export default OrderModal;

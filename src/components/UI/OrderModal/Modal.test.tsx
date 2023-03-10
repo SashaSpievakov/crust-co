@@ -3,24 +3,26 @@ import { screen } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
 
 import { CartItemsMockProps } from 'src/tests/mocks/mockData/mockData';
-import Modal from './Modal';
+import OrderModal from './OrderModal';
 import rendererWithAllProviders from '../../../tests/helpers/rendererWithProviders';
 import renderWithProviders from '../../../tests/helpers/renderWithProviders';
 
-describe('Modal Tests', () => {
-  test('renders the Modal UI component', () => {
-    const snapshot = rendererWithAllProviders(<Modal setIsOpen={jest.fn()} />);
+describe('OrderModal Tests', () => {
+  test('renders the OrderModal UI component', () => {
+    const snapshot = rendererWithAllProviders(
+      <OrderModal setIsOpen={jest.fn()} />,
+    );
     expect(snapshot).toMatchSnapshot();
   });
 
-  describe('checks Modal logic', () => {
+  describe('checks OrderModal logic', () => {
     beforeEach(() => {
       renderWithProviders(null, true, '/cart', {
         cart: CartItemsMockProps,
       });
     });
 
-    test('checks Modal opening', () => {
+    test('checks OrderModal opening', () => {
       const buyButton = screen.getByRole('button', {
         name: /buy now/i,
       });
@@ -34,7 +36,7 @@ describe('Modal Tests', () => {
       ).toBeInTheDocument();
     });
 
-    test('closes Modal by clicking on the cross', () => {
+    test('closes OrderModal by clicking on the cross', () => {
       const buyButton = screen.getByRole('button', {
         name: /buy now/i,
       });
@@ -134,7 +136,7 @@ describe('Modal Tests', () => {
       ).toBeInTheDocument();
     });
 
-    test('closes the success modal', async () => {
+    test('closes the SuccessModal', async () => {
       const buyButton = screen.getByRole('button', {
         name: /buy now/i,
       });
