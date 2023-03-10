@@ -4,7 +4,7 @@ exports[`NotFound Tests renders the NotFound page 1`] = `
 Object {
   "children": Array [
     <h2
-      className="sc-hLBbgP loTNhK"
+      className="sc-eDvSVe Czhza"
     >
       The page wasn't found
     </h2>,
@@ -14,7 +14,7 @@ Object {
       Make sure you wrote the correct URL
     </p>,
     <a
-      className="sc-eDvSVe sc-jSUZER bXEiPO IHfPg"
+      className="sc-jSUZER sc-gKPRtg bAUgYc heneWw"
       href="/"
       onClick={[Function]}
     >
@@ -24,7 +24,7 @@ Object {
     </a>,
   ],
   "props": Object {
-    "className": "sc-dkrFOg kKJLCw",
+    "className": "sc-hLBbgP gDybTc",
   },
   "type": "article",
 }
