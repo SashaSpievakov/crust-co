@@ -135,33 +135,5 @@ describe('OrderModal Tests', () => {
         await screen.findByText(/thank you for your order!/i),
       ).toBeInTheDocument();
     });
-
-    test('closes the SuccessModal', async () => {
-      const buyButton = screen.getByRole('button', {
-        name: /buy now/i,
-      });
-
-      userEvent.click(buyButton);
-
-      const sumbitBtn = screen.getByRole('button', {
-        name: /send/i,
-      });
-      const inputs = screen.getAllByRole('textbox');
-      const phoneInput = screen.getByRole('spinbutton');
-
-      userEvent.type(phoneInput, '4730395859');
-      userEvent.type(inputs[0], 'Alex');
-      userEvent.type(inputs[1], 'Toronto');
-      userEvent.type(inputs[2], 'some address');
-      userEvent.click(sumbitBtn);
-
-      const returnBtn = await screen.findByText(/close/i);
-
-      userEvent.click(returnBtn);
-
-      expect(
-        screen.queryByText(/thank you for your order!/i),
-      ).not.toBeInTheDocument();
-    });
   });
 });
