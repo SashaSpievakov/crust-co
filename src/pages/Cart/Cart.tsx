@@ -1,4 +1,4 @@
-import { KeyboardEvent, useState } from 'react';
+import { KeyboardEvent, useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { shallowEqual } from 'react-redux';
 
@@ -38,6 +38,16 @@ const Cart = () => {
   const handleClearKeyDownClick = (e: KeyboardEvent<HTMLElement>) => {
     if (e.code === 'Enter') onClearClick();
   };
+
+  useEffect(() => {
+    if (isOpen) {
+      document.body.style.overflow = 'hidden';
+    }
+
+    return () => {
+      document.body.style.overflow = 'scroll';
+    };
+  }, [isOpen]);
 
   return items.length ? (
     <Article>
