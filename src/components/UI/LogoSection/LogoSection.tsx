@@ -16,7 +16,7 @@ const LogoSection = memo(() => {
       <Logo>
         <img width="38" height="54.5" src={mainLogo} alt="Pizza logo" />
         <div>
-          <Heading>Pizza Place</Heading>
+          <Heading>Crust & Co.</Heading>
           <p>the most delicious pizzas in town</p>
         </div>
       </Logo>
