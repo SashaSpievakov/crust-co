@@ -2,7 +2,7 @@
 
 ![Website Preview](/public/assets/crust&co-work.webp)
 
-## [View Deployment](https://pizza-store-application.netlify.app/)
+## [View Deployment](https://crustco.netlify.app/)
 
 <br/>
 
