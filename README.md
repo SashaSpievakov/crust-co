@@ -9,5 +9,5 @@
 ## Description
 
 > ### An innovative online pizza store 
-> ### offering a delicious selection of handcrafted pizzas
+> ### offering a selection of handcrafted pizzas
 > ### with a seamless ordering experience.
