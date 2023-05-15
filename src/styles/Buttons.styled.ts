@@ -114,7 +114,7 @@ const ButtonCircle = styled(ButtonOutline)<CircleProps>`
   padding: 0;
   border-width: 2px;
 
-  &:focus {
+  &:focus-visible {
     outline: 3px solid ${({ theme }) => theme.colors.third};
     outline-offset: -3px;
   }
