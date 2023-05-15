@@ -1,4 +1,11 @@
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
+
+const mixinFooterItems = css`
+  display: flex;
+  width: fit-content;
+  flex-direction: column;
+  row-gap: 4px;
+`;
 
 const FooterWrapper = styled.footer`
   display: flex;
@@ -16,10 +23,7 @@ const FooterWrapper = styled.footer`
 `;
 
 const Contacts = styled.section`
-  display: flex;
-  width: fit-content;
-  flex-direction: column;
-  row-gap: 4px;
+  ${mixinFooterItems}
 `;
 
 const Contact = styled.a`
@@ -38,10 +42,7 @@ const Contact = styled.a`
 `;
 
 const Copyright = styled.section`
-  display: flex;
-  width: fit-content;
-  flex-direction: column;
-  row-gap: 4px;
+  ${mixinFooterItems}
 `;
 
 export { FooterWrapper, Contacts, Contact, Copyright };
