@@ -47,11 +47,11 @@ const ButtonBack = styled(Button)`
   background-color: ${({ theme }) => theme.colors.third};
 
   &:hover {
-    background-color: ${({ theme }) => theme.colors.third}99;
+    background-color: ${({ theme }) => theme.colors.third};
   }
 
-  &:focus {
-    outline: 6px solid ${({ theme }) => theme.colors.secondary};
+  &:focus-visible {
+    outline: 5px solid ${({ theme }) => theme.colors.secondary};
   }
 
   span {
