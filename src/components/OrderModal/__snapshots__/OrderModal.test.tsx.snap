@@ -20,7 +20,7 @@ Object {
       Please provide your information, and our operator will get in touch with you as soon as possible to finish your order
     </h4>
     <svg
-      className="sc-fnGiBr hAjlmc"
+      className="sc-fnGiBr kperDT"
       data-testid="modalCross"
       fill="currentColor"
       height="1em"
@@ -117,7 +117,7 @@ Object {
         />
       </div>
       <button
-        className="sc-hLBbgP sc-gKPRtg sc-hHTYSt hEWbyi cwILTQ deIBzx"
+        className="sc-hLBbgP sc-gKPRtg sc-hHTYSt fGqcTx fdWAyy deIBzx"
         type="submit"
       >
         <span>

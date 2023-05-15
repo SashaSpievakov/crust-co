@@ -21,7 +21,7 @@ Object {
       width="300"
     />,
     <a
-      className="sc-hLBbgP sc-eDvSVe hEWbyi eUGSku"
+      className="sc-hLBbgP sc-eDvSVe fGqcTx bljQoe"
       href="/"
       onClick={[Function]}
     >
@@ -68,7 +68,7 @@ Object {
         Cart
       </h2>
       <section
-        className="sc-ilhmMj eDWjXp"
+        className="sc-ilhmMj cfwoNL"
         onClick={[Function]}
         onKeyDown={[Function]}
         tabIndex={0}
@@ -145,7 +145,7 @@ Object {
         >
           <button
             aria-label="minus"
-            className="sc-hLBbgP sc-iBYQkv sc-ftTHYK hEWbyi iDltE gAmYgi"
+            className="sc-hLBbgP sc-iBYQkv sc-ftTHYK fGqcTx iDltE YugEl"
             disabled={false}
             onClick={[Function]}
           >
@@ -174,7 +174,7 @@ Object {
           </span>
           <button
             aria-label="plus"
-            className="sc-hLBbgP sc-iBYQkv sc-ftTHYK hEWbyi iDltE gAmYgi"
+            className="sc-hLBbgP sc-iBYQkv sc-ftTHYK fGqcTx iDltE YugEl"
             onClick={[Function]}
           >
             <svg
@@ -209,7 +209,7 @@ Object {
         >
           <button
             aria-label="delete"
-            className="sc-hLBbgP sc-iBYQkv sc-ftTHYK hEWbyi iDltE inMEkF"
+            className="sc-hLBbgP sc-iBYQkv sc-ftTHYK fGqcTx iDltE kTqzjG"
             onClick={[Function]}
           >
             <svg
@@ -275,7 +275,7 @@ Object {
         >
           <button
             aria-label="minus"
-            className="sc-hLBbgP sc-iBYQkv sc-ftTHYK hEWbyi iDltE gAmYgi"
+            className="sc-hLBbgP sc-iBYQkv sc-ftTHYK fGqcTx iDltE YugEl"
             disabled={true}
             onClick={[Function]}
           >
@@ -304,7 +304,7 @@ Object {
           </span>
           <button
             aria-label="plus"
-            className="sc-hLBbgP sc-iBYQkv sc-ftTHYK hEWbyi iDltE gAmYgi"
+            className="sc-hLBbgP sc-iBYQkv sc-ftTHYK fGqcTx iDltE YugEl"
             onClick={[Function]}
           >
             <svg
@@ -339,7 +339,7 @@ Object {
         >
           <button
             aria-label="delete"
-            className="sc-hLBbgP sc-iBYQkv sc-ftTHYK hEWbyi iDltE inMEkF"
+            className="sc-hLBbgP sc-iBYQkv sc-ftTHYK fGqcTx iDltE kTqzjG"
             onClick={[Function]}
           >
             <svg
@@ -397,7 +397,7 @@ Object {
         className="sc-cCjUiG jiBHHp"
       >
         <a
-          className="sc-hLBbgP sc-iBYQkv sc-pyfCe sc-jrcTuL hEWbyi iDltE uzlJh hoiVoq"
+          className="sc-hLBbgP sc-iBYQkv sc-pyfCe sc-jrcTuL fGqcTx iDltE uzlJh hoiVoq"
           href="/"
           onClick={[Function]}
         >
@@ -426,7 +426,7 @@ Object {
           </span>
         </a>
         <button
-          className="sc-hLBbgP sc-gKPRtg hEWbyi cwILTQ"
+          className="sc-hLBbgP sc-gKPRtg fGqcTx fdWAyy"
           onClick={[Function]}
         >
           <span>

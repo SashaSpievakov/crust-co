@@ -4,7 +4,7 @@ exports[`Header Tests renders the Header component 1`] = `
 Object {
   "children": Array [
     <a
-      className="sc-bcXHqe eHbXto"
+      className="sc-bcXHqe eIKbVE"
       href="/"
       ishome="home"
       onClick={[Function]}
@@ -35,7 +35,7 @@ Object {
       className="sc-eDvSVe cigAor"
     >
       <svg
-        className="sc-jSUZER ldvbWQ"
+        className="sc-jSUZER jSvbOj"
         data-testid="themeIcon"
         data-theme="light"
         fill="currentColor"
@@ -60,7 +60,7 @@ Object {
         />
       </svg>
       <a
-        className="sc-iBYQkv sc-pyfCe eRXbvH djZoFJ"
+        className="sc-iBYQkv sc-pyfCe ijTkAU bTSNfv"
         data-testid="cartLink"
         href="/cart"
         onClick={[Function]}
@@ -107,7 +107,7 @@ exports[`Header Tests renders the Header component on the Cart page 1`] = `
 Object {
   "children": Array [
     <a
-      className="sc-bcXHqe LyGCx"
+      className="sc-bcXHqe hbPHdy"
       href="/"
       ishome={null}
       onClick={[Function]}
@@ -138,7 +138,7 @@ Object {
       className="sc-eDvSVe cigAor"
     >
       <svg
-        className="sc-jSUZER cTyQkW"
+        className="sc-jSUZER GIBYd"
         data-testid="themeIcon"
         data-theme="light"
         fill="currentColor"

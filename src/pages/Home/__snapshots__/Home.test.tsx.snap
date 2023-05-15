@@ -14,35 +14,35 @@ exports[`Home Tests renders the Home page 1`] = `
       >
         <li
           aria-current="true"
-          class="sc-pyfCe fazFgk"
-          tabindex="0"
+          class="sc-pyfCe hHqZjT"
+          tabindex="-1"
         >
           All
         </li>
         <li
           aria-current="false"
-          class="sc-pyfCe glGnNc"
+          class="sc-pyfCe jpmhfP"
           tabindex="0"
         >
           Meat
         </li>
         <li
           aria-current="false"
-          class="sc-pyfCe glGnNc"
+          class="sc-pyfCe jpmhfP"
           tabindex="0"
         >
           Vegetarian
         </li>
         <li
           aria-current="false"
-          class="sc-pyfCe glGnNc"
+          class="sc-pyfCe jpmhfP"
           tabindex="0"
         >
           Grill
         </li>
         <li
           aria-current="false"
-          class="sc-pyfCe glGnNc"
+          class="sc-pyfCe jpmhfP"
           tabindex="0"
         >
           Spicy
@@ -53,7 +53,7 @@ exports[`Home Tests renders the Home page 1`] = `
       class="sc-jrcTuL dJlpZs"
     >
       <div
-        class="sc-kDvujY gZJVyG"
+        class="sc-kDvujY fMRlQg"
         tabindex="0"
       >
         <svg
@@ -89,19 +89,19 @@ exports[`Home Tests renders the Home page 1`] = `
           data-testid="popupList"
         >
           <li
-            class="sc-bqWxrE eZibAV"
+            class="sc-bqWxrE zUhUC"
             tabindex="0"
           >
             rating
           </li>
           <li
-            class="sc-bqWxrE jwipBq"
+            class="sc-bqWxrE foQLWV"
             tabindex="0"
           >
             price
           </li>
           <li
-            class="sc-bqWxrE jwipBq"
+            class="sc-bqWxrE foQLWV"
             tabindex="0"
           >
             A to Z
@@ -150,7 +150,7 @@ exports[`Home Tests renders the Home page 1`] = `
       class="sc-kMjNwy kQBYkb"
     >
       <a
-        class="sc-ilhmMj fvvtfq"
+        class="sc-ilhmMj jgDQgV"
         href="/item/3"
       >
         <picture>
@@ -182,14 +182,14 @@ exports[`Home Tests renders the Home page 1`] = `
         <ul>
           <li
             aria-current="true"
-            class="sc-bYMpWt gzAmWf"
+            class="sc-bYMpWt fgmSHs"
             tabindex="0"
           >
             traditional
           </li>
           <li
             aria-current="false"
-            class="sc-bYMpWt eNiScO"
+            class="sc-bYMpWt fHqYed"
             tabindex="0"
           >
             thin
@@ -198,7 +198,7 @@ exports[`Home Tests renders the Home page 1`] = `
         <ul>
           <li
             aria-current="true"
-            class="sc-bYMpWt gzAmWf"
+            class="sc-bYMpWt fgmSHs"
             tabindex="0"
           >
             12
@@ -206,7 +206,7 @@ exports[`Home Tests renders the Home page 1`] = `
           </li>
           <li
             aria-current="false"
-            class="sc-bYMpWt eNiScO"
+            class="sc-bYMpWt fHqYed"
             tabindex="0"
           >
             14
@@ -214,7 +214,7 @@ exports[`Home Tests renders the Home page 1`] = `
           </li>
           <li
             aria-current="false"
-            class="sc-bYMpWt eNiScO"
+            class="sc-bYMpWt fHqYed"
             tabindex="0"
           >
             16
@@ -232,7 +232,7 @@ exports[`Home Tests renders the Home page 1`] = `
           $
         </h3>
         <button
-          class="sc-bjfHbI sc-dmctIk sc-fLcnxK iZjqnc ikwRmO lgLYJY"
+          class="sc-bjfHbI sc-dmctIk sc-fLcnxK dKotXH ikwRmO lgLYJY"
         >
           <svg
             class="sc-gikAfH bTUcpv"
@@ -258,7 +258,7 @@ exports[`Home Tests renders the Home page 1`] = `
       class="sc-kMjNwy kQBYkb"
     >
       <a
-        class="sc-ilhmMj fvvtfq"
+        class="sc-ilhmMj jgDQgV"
         href="/item/2"
       >
         <picture>
@@ -290,7 +290,7 @@ exports[`Home Tests renders the Home page 1`] = `
         <ul>
           <li
             aria-current="true"
-            class="sc-bYMpWt gzAmWf"
+            class="sc-bYMpWt fgmSHs"
             tabindex="0"
           >
             traditional
@@ -299,7 +299,7 @@ exports[`Home Tests renders the Home page 1`] = `
         <ul>
           <li
             aria-current="true"
-            class="sc-bYMpWt gzAmWf"
+            class="sc-bYMpWt fgmSHs"
             tabindex="0"
           >
             12
@@ -307,7 +307,7 @@ exports[`Home Tests renders the Home page 1`] = `
           </li>
           <li
             aria-current="false"
-            class="sc-bYMpWt eNiScO"
+            class="sc-bYMpWt fHqYed"
             tabindex="0"
           >
             14
@@ -325,7 +325,7 @@ exports[`Home Tests renders the Home page 1`] = `
           $
         </h3>
         <button
-          class="sc-bjfHbI sc-dmctIk sc-fLcnxK iZjqnc ikwRmO lgLYJY"
+          class="sc-bjfHbI sc-dmctIk sc-fLcnxK dKotXH ikwRmO lgLYJY"
         >
           <svg
             class="sc-gikAfH bTUcpv"
@@ -351,7 +351,7 @@ exports[`Home Tests renders the Home page 1`] = `
       class="sc-kMjNwy kQBYkb"
     >
       <a
-        class="sc-ilhmMj fvvtfq"
+        class="sc-ilhmMj jgDQgV"
         href="/item/6"
       >
         <picture>
@@ -383,14 +383,14 @@ exports[`Home Tests renders the Home page 1`] = `
         <ul>
           <li
             aria-current="true"
-            class="sc-bYMpWt gzAmWf"
+            class="sc-bYMpWt fgmSHs"
             tabindex="0"
           >
             traditional
           </li>
           <li
             aria-current="false"
-            class="sc-bYMpWt eNiScO"
+            class="sc-bYMpWt fHqYed"
             tabindex="0"
           >
             thin
@@ -399,7 +399,7 @@ exports[`Home Tests renders the Home page 1`] = `
         <ul>
           <li
             aria-current="true"
-            class="sc-bYMpWt gzAmWf"
+            class="sc-bYMpWt fgmSHs"
             tabindex="0"
           >
             12
@@ -407,7 +407,7 @@ exports[`Home Tests renders the Home page 1`] = `
           </li>
           <li
             aria-current="false"
-            class="sc-bYMpWt eNiScO"
+            class="sc-bYMpWt fHqYed"
             tabindex="0"
           >
             16
@@ -425,7 +425,7 @@ exports[`Home Tests renders the Home page 1`] = `
           $
         </h3>
         <button
-          class="sc-bjfHbI sc-dmctIk sc-fLcnxK iZjqnc ikwRmO lgLYJY"
+          class="sc-bjfHbI sc-dmctIk sc-fLcnxK dKotXH ikwRmO lgLYJY"
         >
           <svg
             class="sc-gikAfH bTUcpv"

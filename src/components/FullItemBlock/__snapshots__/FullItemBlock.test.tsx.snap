@@ -36,7 +36,7 @@ Object {
       <ul>
         <li
           aria-current={true}
-          className="sc-pyfCe iFPNsr"
+          className="sc-pyfCe cPrsBo"
           onClick={[Function]}
           onKeyDown={[Function]}
           tabIndex={0}
@@ -45,7 +45,7 @@ Object {
         </li>
         <li
           aria-current={false}
-          className="sc-pyfCe jabEBG"
+          className="sc-pyfCe lmPPGp"
           onClick={[Function]}
           onKeyDown={[Function]}
           tabIndex={0}
@@ -56,7 +56,7 @@ Object {
       <ul>
         <li
           aria-current={true}
-          className="sc-pyfCe iFPNsr"
+          className="sc-pyfCe cPrsBo"
           onClick={[Function]}
           onKeyDown={[Function]}
           tabIndex={0}
@@ -66,7 +66,7 @@ Object {
         </li>
         <li
           aria-current={false}
-          className="sc-pyfCe jabEBG"
+          className="sc-pyfCe lmPPGp"
           onClick={[Function]}
           onKeyDown={[Function]}
           tabIndex={0}
@@ -76,7 +76,7 @@ Object {
         </li>
         <li
           aria-current={false}
-          className="sc-pyfCe jabEBG"
+          className="sc-pyfCe lmPPGp"
           onClick={[Function]}
           onKeyDown={[Function]}
           tabIndex={0}
@@ -93,7 +93,7 @@ Object {
       $
     </h3>,
     <button
-      className="sc-jrcTuL sc-eDWCr sc-ksBlkl NVsbP gmfTyJ eEkmYo"
+      className="sc-jrcTuL sc-eDWCr sc-ksBlkl gIyntY gmfTyJ eEkmYo"
       onClick={[Function]}
     >
       <svg
@@ -120,7 +120,7 @@ Object {
       </span>
     </button>,
     <a
-      className="sc-jrcTuL sc-kDvujY NVsbP laolsC"
+      className="sc-jrcTuL sc-kDvujY gIyntY kBCvtO"
       href="/"
       onClick={[Function]}
     >

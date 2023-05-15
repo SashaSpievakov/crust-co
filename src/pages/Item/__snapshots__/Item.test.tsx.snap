@@ -38,14 +38,14 @@ exports[`Item Tests renders the Item page 1`] = `
     <ul>
       <li
         aria-current="true"
-        class="sc-eDWCr dPBKll"
+        class="sc-eDWCr iTKkpy"
         tabindex="0"
       >
         traditional
       </li>
       <li
         aria-current="false"
-        class="sc-eDWCr ifQPTE"
+        class="sc-eDWCr hxUnpv"
         tabindex="0"
       >
         thin
@@ -54,7 +54,7 @@ exports[`Item Tests renders the Item page 1`] = `
     <ul>
       <li
         aria-current="true"
-        class="sc-eDWCr dPBKll"
+        class="sc-eDWCr iTKkpy"
         tabindex="0"
       >
         12
@@ -62,7 +62,7 @@ exports[`Item Tests renders the Item page 1`] = `
       </li>
       <li
         aria-current="false"
-        class="sc-eDWCr ifQPTE"
+        class="sc-eDWCr hxUnpv"
         tabindex="0"
       >
         14
@@ -70,7 +70,7 @@ exports[`Item Tests renders the Item page 1`] = `
       </li>
       <li
         aria-current="false"
-        class="sc-eDWCr ifQPTE"
+        class="sc-eDWCr hxUnpv"
         tabindex="0"
       >
         16
@@ -85,7 +85,7 @@ exports[`Item Tests renders the Item page 1`] = `
     $
   </h3>
   <button
-    class="sc-bqWxrE sc-fEXmlR sc-idXgbr iscXUy iJRlym hDVZFP"
+    class="sc-bqWxrE sc-fEXmlR sc-idXgbr dKnlDp iJRlym hDVZFP"
   >
     <svg
       class="sc-bBABsx iIMNKJ"
@@ -106,7 +106,7 @@ exports[`Item Tests renders the Item page 1`] = `
     </span>
   </button>
   <a
-    class="sc-bqWxrE sc-ksBlkl iscXUy diEqgc"
+    class="sc-bqWxrE sc-ksBlkl dKnlDp htsvHw"
     href="/"
   >
     <span>
