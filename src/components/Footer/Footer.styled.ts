@@ -28,9 +28,9 @@ const Contact = styled.a`
   align-items: center;
   border-radius: 5px;
 
-  &:focus {
-    background-color: ${({ theme }) => theme.colors.primary};
-    outline: 5px solid ${({ theme }) => theme.colors.primary};
+  &:focus-visible {
+    background-color: ${({ theme }) => theme.colors.gray};
+    outline: 5px solid ${({ theme }) => theme.colors.gray};
     outline-offset: -1px;
   }
 
