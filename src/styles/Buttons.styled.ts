@@ -79,6 +79,10 @@ const ButtonCart = styled(Button)`
     font-weight: 600;
     font-size: 16px;
   }
+
+  &:focus-visible {
+    outline: 5px solid #d5d5d5;
+  }
 `;
 
 const ButtonPay = styled(Button)`
