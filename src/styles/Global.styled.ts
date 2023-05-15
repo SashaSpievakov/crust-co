@@ -62,9 +62,9 @@ const Global = createGlobalStyle`
       margin: 25px auto;
     }
 
-    @media (max-width: 450px) {
-      width: calc(100vw - 40px);
-      margin: 20px auto;
+    @media (max-width: 500px) {
+      width: calc(100vw - 30px);
+      margin: 15px auto;
     }
   }
 `;
