@@ -1,31 +1,29 @@
 import styled from 'styled-components';
 
 const FooterWrapper = styled.footer`
-  width: 90%;
   display: flex;
-  margin: 0 auto;
-  padding: 40px 0;
-  flex-direction: column;
+  justify-content: space-around;
+  align-items: end;
+  padding: 60px 0;
   row-gap: 50px;
-`;
 
-const Ul = styled.ul`
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  margin: 50px 0;
-
-  @media screen and (max-width: 700px) {
-    flex-direction: column;
-    row-gap: 20px;
-    margin: 50px 0;
+  @media screen and (max-width: 720px) {
+    width: fit-content;
+    margin: auto;
+    flex-direction: column-reverse;
+    align-items: stretch;
   }
 `;
 
-const Contact = styled.a`
+const Contacts = styled.section`
   display: flex;
-  gap: 5px;
-  align-items: center;
+  width: fit-content;
+  flex-direction: column;
+  row-gap: 4px;
+`;
+
+const Contact = styled.a`
+  width: fit-content;
   border-radius: 5px;
 
   &:focus-visible {
@@ -36,19 +34,14 @@ const Contact = styled.a`
 
   &:hover {
     color: ${({ theme }) => theme.colors.secondary};
-
-    span {
-      color: ${({ theme }) => theme.colors.secondary};
-    }
   }
 `;
 
-const Icon = styled.a`
-  font-size: 30px;
+const Copyright = styled.section`
+  display: flex;
+  width: fit-content;
+  flex-direction: column;
+  row-gap: 4px;
 `;
 
-const Copyright = styled.p`
-  text-align: center;
-`;
-
-export { FooterWrapper, Ul, Icon, Copyright, Contact };
+export { FooterWrapper, Contacts, Contact, Copyright };

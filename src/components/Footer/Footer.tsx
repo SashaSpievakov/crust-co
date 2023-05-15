@@ -1,37 +1,26 @@
-import { MdEmail, MdPhone, MdLocationOn } from 'react-icons/md';
-
-import { FooterWrapper, Ul, Contact, Icon, Copyright } from './Footer.styled';
+import { FooterWrapper, Contacts, Contact, Copyright } from './Footer.styled';
 
 const Footer = () => {
   return (
     <FooterWrapper>
-      <Ul>
-        <li>
-          <Contact href="mailto:spievakov@gamil.com">
-            <Icon as={MdEmail} />
-            <span>spievakov@gmail.com</span>
-          </Contact>
-        </li>
+      <Copyright>
+        <p>&#169; 2022 Crust & Co.</p>
+        <p>All rights reserved.</p>
+        <p>Developer - Sasha Spievakov.</p>
+      </Copyright>
 
-        <li>
-          <Contact href="tel:+16474739502">
-            <Icon as={MdPhone} />
-            <span>+1 (647) 473-9502 </span>
-          </Contact>
-        </li>
+      <Contacts>
+        <Contact href="https://github.com/SashaSpievakov">GitHub</Contact>
 
-        <li>
-          <Contact
-            href="https://www.google.com/maps/place/88+Alice+St,+Guelph,+ON+N1E+2Z8/@43.5471712,-80.2392008,17z/data=!3m1!4b1!4m5!3m4!1s0x882b9ae0d0802679:0x74ca5ec44983415f!8m2!3d43.5471673!4d-80.2370121"
-            target="_blank"
-          >
-            <Icon as={MdLocationOn} />
-            <span>88 Alice st</span>
-          </Contact>
-        </li>
-      </Ul>
+        <Contact
+          href="https://www.google.com/maps/place/687+Yonge+St,+Toronto,+ON+M4Y+2B2/@43.6689719,-79.3870519,18z/data=!3m1!4b1!4m6!3m5!1s0x882b34ae07a20ea5:0xcb9f91518efcc2c1!8m2!3d43.6689704!4d-79.3860646!16s%2Fg%2F11nnkxs6c3"
+          target="_blank"
+        >
+          687 Yonge St
+        </Contact>
 
-      <Copyright>&#169; 2022 Oleksandr Spievakov</Copyright>
+        <Contact href="mailto:spievakov@gamil.com">spievakov@gmail.com</Contact>
+      </Contacts>
     </FooterWrapper>
   );
 };

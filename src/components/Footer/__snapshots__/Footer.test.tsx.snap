@@ -3,118 +3,45 @@
 exports[`Footer Tests renders the Footer component 1`] = `
 Object {
   "children": Array [
-    <ul
-      className="sc-gswNZR heSPKu"
+    <section
+      className="sc-hLBbgP kDGbD"
     >
-      <li>
-        <a
-          className="sc-dkrFOg jifVKU"
-          href="mailto:spievakov@gamil.com"
-        >
-          <svg
-            className="sc-hLBbgP wGpjw"
-            fill="currentColor"
-            height="1em"
-            stroke="currentColor"
-            strokeWidth="0"
-            style={
-              Object {
-                "color": undefined,
-              }
-            }
-            viewBox="0 0 24 24"
-            width="1em"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M0 0h24v24H0z"
-              fill="none"
-            />
-            <path
-              d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"
-            />
-          </svg>
-          <span>
-            spievakov@gmail.com
-          </span>
-        </a>
-      </li>
-      <li>
-        <a
-          className="sc-dkrFOg jifVKU"
-          href="tel:+16474739502"
-        >
-          <svg
-            className="sc-hLBbgP wGpjw"
-            fill="currentColor"
-            height="1em"
-            stroke="currentColor"
-            strokeWidth="0"
-            style={
-              Object {
-                "color": undefined,
-              }
-            }
-            viewBox="0 0 24 24"
-            width="1em"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M0 0h24v24H0z"
-              fill="none"
-            />
-            <path
-              d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"
-            />
-          </svg>
-          <span>
-            +1 (647) 473-9502 
-          </span>
-        </a>
-      </li>
-      <li>
-        <a
-          className="sc-dkrFOg jifVKU"
-          href="https://www.google.com/maps/place/88+Alice+St,+Guelph,+ON+N1E+2Z8/@43.5471712,-80.2392008,17z/data=!3m1!4b1!4m5!3m4!1s0x882b9ae0d0802679:0x74ca5ec44983415f!8m2!3d43.5471673!4d-80.2370121"
-          target="_blank"
-        >
-          <svg
-            className="sc-hLBbgP wGpjw"
-            fill="currentColor"
-            height="1em"
-            stroke="currentColor"
-            strokeWidth="0"
-            style={
-              Object {
-                "color": undefined,
-              }
-            }
-            viewBox="0 0 24 24"
-            width="1em"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M0 0h24v24H0z"
-              fill="none"
-            />
-            <path
-              d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5a2.5 2.5 0 010-5 2.5 2.5 0 010 5z"
-            />
-          </svg>
-          <span>
-            88 Alice st
-          </span>
-        </a>
-      </li>
-    </ul>,
-    <p
-      className="sc-eDvSVe bWauGy"
+      <p>
+        © 2022 Crust & Co.
+      </p>
+      <p>
+        All rights reserved.
+      </p>
+      <p>
+        Developer - Sasha Spievakov.
+      </p>
+    </section>,
+    <section
+      className="sc-gswNZR eZoxSh"
     >
-      © 2022 Oleksandr Spievakov
-    </p>,
+      <a
+        className="sc-dkrFOg bkEmDM"
+        href="https://github.com/SashaSpievakov"
+      >
+        GitHub
+      </a>
+      <a
+        className="sc-dkrFOg bkEmDM"
+        href="https://www.google.com/maps/place/687+Yonge+St,+Toronto,+ON+M4Y+2B2/@43.6689719,-79.3870519,18z/data=!3m1!4b1!4m6!3m5!1s0x882b34ae07a20ea5:0xcb9f91518efcc2c1!8m2!3d43.6689704!4d-79.3860646!16s%2Fg%2F11nnkxs6c3"
+        target="_blank"
+      >
+        687 Yonge St
+      </a>
+      <a
+        className="sc-dkrFOg bkEmDM"
+        href="mailto:spievakov@gamil.com"
+      >
+        spievakov@gmail.com
+      </a>
+    </section>,
   ],
   "props": Object {
-    "className": "sc-bcXHqe cIQQgr",
+    "className": "sc-bcXHqe jAcUYq",
   },
   "type": "footer",
 }
