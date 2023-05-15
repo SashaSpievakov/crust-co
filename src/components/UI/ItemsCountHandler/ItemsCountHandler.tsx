@@ -74,7 +74,7 @@ const ItemsCountHandler = ({
       <Minus
         onClick={onClickRemove}
         onKeyDown={(e) => handleRemoveKeyDownClick(e)}
-        tabIndex={0}
+        tabIndex={currentItemCount < 1 ? -1 : 0}
         disabled={currentItemCount < 1}
         data-testid="itemsHandlerMinus"
       />

@@ -16,7 +16,7 @@ const mixinButton = css`
   user-select: none;
   cursor: pointer;
 
-  &:focus {
+  &:focus-visible {
     outline: 3px solid ${({ theme }) => theme.colors.third};
     outline-offset: 3px;
   }

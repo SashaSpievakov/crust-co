@@ -25,7 +25,7 @@ const CustomLink = styled(Link)`
   display: block;
   border-radius: 5px;
 
-  &:focus {
+  &:focus-visible {
     outline: 5px solid ${({ theme }) => theme.colors.third};
   }
 `;

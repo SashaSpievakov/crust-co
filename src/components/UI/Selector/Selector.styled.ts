@@ -50,7 +50,7 @@ const Li = styled.li<LiProps>`
   cursor: pointer;
   transition: 0;
 
-  &:focus {
+  &:focus-visible {
     outline: 3px solid ${({ theme }) => theme.colors.black};
     outline-offset: -3px;
   }
