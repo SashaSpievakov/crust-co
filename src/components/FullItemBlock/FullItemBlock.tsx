@@ -1,8 +1,8 @@
 import { useState } from 'react';
 
 import { Image, Title, Paragraph, Price, Item } from './FullItemBlock.styled';
-import Selector from '../UI/Selector/Selector';
-import ItemsCountHandler from '../UI/ItemsCountHandler/ItemsCountHandler';
+import Selector from '../Selector/Selector';
+import ItemsCountHandler from '../ItemsCountHandler/ItemsCountHandler';
 import ButtonBackToHome from '../UI/ButtonBackToHome/ButtonBackToHome';
 import { IPizzaItem } from '../../models/IPizzaItem';
 

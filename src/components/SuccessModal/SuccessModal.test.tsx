@@ -4,8 +4,8 @@ import userEvent from '@testing-library/user-event';
 
 import { CartItemsMockProps } from 'src/tests/mocks/mockData/mockData';
 import SuccessModal from './SuccessModal';
-import rendererWithAllProviders from '../../../tests/helpers/rendererWithProviders';
-import renderWithProviders from '../../../tests/helpers/renderWithProviders';
+import rendererWithAllProviders from '../../tests/helpers/rendererWithProviders';
+import renderWithProviders from '../../tests/helpers/renderWithProviders';
 
 describe('SuccessModal Tests', () => {
   test('renders the SuccessModal UI component', () => {

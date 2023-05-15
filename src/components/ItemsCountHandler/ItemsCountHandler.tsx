@@ -1,15 +1,15 @@
 import { KeyboardEvent } from 'react';
 
-import { useAppDispatch, useAppSelector } from '../../../hooks/reduxHooks';
-import { ICartItem } from '../../../models/ICartItem';
-import { IItemsCountHandler } from '../../../models/IItemsCountHandler';
+import { useAppDispatch, useAppSelector } from '../../hooks/reduxHooks';
+import { ICartItem } from '../../models/ICartItem';
+import { IItemsCountHandler } from '../../models/IItemsCountHandler';
 import {
   addItem,
   removeItem,
-} from '../../../store/slices/cart/reducer/cartReducer';
-import { selectItemsCount } from '../../../store/slices/cart/selectors/selectItemsCount/selectItemsCount';
-import { selectCurrentItemCount } from '../../../store/slices/cart/selectors/selectCurrentItemCount/selectCurrentItemCount';
-import { ButtonAdd } from '../../../styles/Buttons.styled';
+} from '../../store/slices/cart/reducer/cartReducer';
+import { selectItemsCount } from '../../store/slices/cart/selectors/selectItemsCount/selectItemsCount';
+import { selectCurrentItemCount } from '../../store/slices/cart/selectors/selectCurrentItemCount/selectCurrentItemCount';
+import { ButtonAdd } from '../../styles/Buttons.styled';
 import {
   Counter,
   Minus,

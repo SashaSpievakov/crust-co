@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 
-import ItemsCountHandler from '../UI/ItemsCountHandler/ItemsCountHandler';
-import Selector from '../UI/Selector/Selector';
+import ItemsCountHandler from '../ItemsCountHandler/ItemsCountHandler';
+import Selector from '../Selector/Selector';
 import {
   Block,
   CustomLink,

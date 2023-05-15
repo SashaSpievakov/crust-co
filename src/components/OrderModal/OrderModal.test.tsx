@@ -4,8 +4,8 @@ import userEvent from '@testing-library/user-event';
 
 import { CartItemsMockProps } from 'src/tests/mocks/mockData/mockData';
 import OrderModal from './OrderModal';
-import rendererWithAllProviders from '../../../tests/helpers/rendererWithProviders';
-import renderWithProviders from '../../../tests/helpers/renderWithProviders';
+import rendererWithAllProviders from '../../tests/helpers/rendererWithProviders';
+import renderWithProviders from '../../tests/helpers/renderWithProviders';
 
 describe('OrderModal Tests', () => {
   test('renders the OrderModal UI component', () => {

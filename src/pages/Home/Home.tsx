@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 
 import { Container } from 'src/styles/Base.styled';
-import ErrorRequest from 'src/components/UI/ErrorRequest/ErrorRequest';
+import ErrorRequest from 'src/components/ErrorRequest/ErrorRequest';
 import { Title, Block, Top } from './Home.styled';
 import { useAppSelector } from '../../hooks/reduxHooks';
 import { selectSort } from '../../store/slices/sort/selectors/selectSort';
