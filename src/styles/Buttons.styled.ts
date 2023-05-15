@@ -28,7 +28,7 @@ const Button = styled.button`
     opacity: 0.8;
   }
 
-  &:focus {
+  &:focus-visible {
     outline: 5px solid ${({ theme }) => theme.colors.third};
     outline-offset: -5px;
   }

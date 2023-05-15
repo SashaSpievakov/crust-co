@@ -57,7 +57,7 @@ const Icon = styled.i<LiProps>`
     color: ${({ theme }) => theme.colors.primary};
   }
 
-  &:focus {
+  &:focus-visible {
     outline: 4px solid ${({ theme }) => theme.colors.secondary};
     outline-offset: 5px;
   }
