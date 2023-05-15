@@ -34,7 +34,7 @@ const Label = styled.div`
   align-items: center;
   border-radius: 5px;
 
-  &:focus {
+  &:focus-visible {
     background-color: ${({ theme }) => theme.colors.secondary};
   }
 
@@ -89,7 +89,7 @@ const Li = styled.li<LiProps>`
     ${mixinBackground}
   }
 
-  &:focus {
+  &:focus-visible {
     outline: 4px solid ${({ theme }) => theme.colors.third};
     outline-offset: -4px;
   }
