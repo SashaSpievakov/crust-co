@@ -2,7 +2,7 @@ import { memo } from 'react';
 import { useLocation } from 'react-router-dom';
 
 import mainLogo from '../../../assets/img/main-logo.svg';
-import { CustomLink, Logo, Heading } from './LogoSection.styled';
+import { CustomLink, Logo, Heading, SubHeading } from './LogoSection.styled';
 
 const LogoSection = memo(() => {
   const location = useLocation();
@@ -17,7 +17,7 @@ const LogoSection = memo(() => {
         <img width="38" height="54.5" src={mainLogo} alt="Pizza logo" />
         <div>
           <Heading>Crust & Co.</Heading>
-          <p>the most delicious pizzas in town</p>
+          <SubHeading>the most delicious pizzas in town</SubHeading>
         </div>
       </Logo>
     </CustomLink>

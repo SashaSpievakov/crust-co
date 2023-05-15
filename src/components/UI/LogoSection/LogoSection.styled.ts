@@ -31,10 +31,6 @@ const Logo = styled.section`
     margin-right: 15px;
   }
 
-  p {
-    color: #7b7b7b;
-  }
-
   @media screen and (max-width: 400px) {
     img {
       height: 76px;
@@ -54,4 +50,12 @@ const Heading = styled.h1`
   font-weight: 800;
 `;
 
-export { CustomLink, Logo, Heading };
+const SubHeading = styled.p`
+  color: ${({ theme }) => theme.colors.grayReverse};
+
+  @media screen and (max-width: 400px) {
+    max-width: 190px;
+  }
+`;
+
+export { CustomLink, Logo, Heading, SubHeading };
