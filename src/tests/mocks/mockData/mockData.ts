@@ -1,4 +1,4 @@
-import { ICartSliceState } from '../../../models/CartSliceState';
+import { ICartSliceState } from '../../../models/ICartSliceState';
 import { ICartItem } from '../../../models/ICartItem';
 import { IPizzaItem } from '../../../models/IPizzaItem';
 
