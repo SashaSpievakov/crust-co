@@ -26,7 +26,7 @@ const Categories = () => {
             onClick={() => dispatch(setCategory(i))}
             onKeyDown={(e) => handleKeyDown(e, i)}
             chosen={chosenClass === name}
-            tabIndex={0}
+            tabIndex={chosenClass === name ? -1 : 0}
             aria-current={chosenClass === name}
           >
             {name}
