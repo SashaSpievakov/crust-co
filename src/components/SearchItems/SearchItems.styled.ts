@@ -69,7 +69,7 @@ const Cross = styled(BsXLg)`
     opacity: 0.7;
   }
 
-  &:focus {
+  &:focus-visible {
     outline: 3px solid ${({ theme }) => theme.colors.black};
     outline-offset: 3px;
   }
