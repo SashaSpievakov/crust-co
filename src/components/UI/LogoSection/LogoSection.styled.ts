@@ -8,7 +8,7 @@ interface CustomLinkProps {
 const CustomLink = styled(Link)<CustomLinkProps>`
   border-radius: 5px;
 
-  &:focus {
+  &:focus-visible {
     outline: 4px solid ${({ theme }) => theme.colors.secondary};
     outline-offset: 10px;
   }
@@ -18,7 +18,7 @@ const CustomLink = styled(Link)<CustomLinkProps>`
     css`
       cursor: default;
 
-      &:focus {
+      &:focus-visible {
         outline: none;
       }
     `}
