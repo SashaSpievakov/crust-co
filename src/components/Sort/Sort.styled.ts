@@ -36,6 +36,7 @@ const Label = styled.div`
 
   &:focus-visible {
     background-color: ${({ theme }) => theme.colors.secondary};
+    outline: 3px solid ${({ theme }) => theme.colors.secondary};
   }
 
   b {
