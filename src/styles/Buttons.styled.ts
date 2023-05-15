@@ -90,6 +90,10 @@ const ButtonPay = styled(Button)`
   font-weight: 600;
   width: 210px;
   padding: 16px;
+
+  &:focus-visible {
+    outline: 5px solid #d5d5d5;
+  }
 `;
 
 const ButtonOutline = styled(Button)`
