@@ -3,6 +3,7 @@ import { DefaultTheme } from 'styled-components';
 const lightTheme: DefaultTheme = {
   colors: {
     primary: '#5e3d1d',
+    primarySecondary: '#5e3d1d',
     secondary: '#b08c69',
     secondaryTransparent: 'rgba(176, 140, 105, 0.05)',
     third: '#232323',
@@ -20,6 +21,7 @@ const lightTheme: DefaultTheme = {
 const darkTheme: DefaultTheme = {
   colors: {
     primary: '#755d47',
+    primarySecondary: '#ae8a69',
     secondary: '#694421',
     secondaryTransparent: 'rgba(176, 140, 105, 0.05)',
     third: '#d5d5d5',

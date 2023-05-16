@@ -35,8 +35,8 @@ const Label = styled.div`
   border-radius: 5px;
 
   &:focus-visible {
-    background-color: ${({ theme }) => theme.colors.secondary};
-    outline: 3px solid ${({ theme }) => theme.colors.secondary};
+    background-color: ${({ theme }) => theme.colors.gray};
+    outline: 5px solid ${({ theme }) => theme.colors.gray};
   }
 
   b {
@@ -44,8 +44,8 @@ const Label = styled.div`
   }
 
   span {
-    color: ${({ theme }) => theme.colors.primary};
-    border-bottom: 1px dashed ${({ theme }) => theme.colors.primary};
+    color: ${({ theme }) => theme.colors.primarySecondary};
+    border-bottom: 1px dashed ${({ theme }) => theme.colors.primarySecondary};
   }
 `;
 
@@ -99,7 +99,7 @@ const Li = styled.li<LiProps>`
     chosen &&
     css`
       font-weight: bold;
-      color: ${({ theme }) => theme.colors.primary};
+      color: ${({ theme }) => theme.colors.primarySecondary};
       ${mixinBackground}
     `}
 `;
