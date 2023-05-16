@@ -20,7 +20,7 @@ const Article = styled.article`
     font-size: 20px;
     line-height: 145.4%;
     letter-spacing: 0.01em;
-    color: #777777;
+    color: ${({ theme }) => theme.colors.grayReverse};
 
     @media screen and (max-width: 500px) {
       font-size: 15px;
