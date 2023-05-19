@@ -28,6 +28,7 @@ const Aricle = styled.article`
 
   @media screen and (max-width: 420px) {
     width: 18rem;
+    height: 37rem;
   }
 `;
 
