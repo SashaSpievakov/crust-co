@@ -52,11 +52,12 @@ const Title = styled.h2`
 `;
 
 const Paragraph = styled.p`
-  max-width: 800px;
+  font-size: 19px;
+  max-width: 600px;
   text-align: center;
   margin-bottom: 15px;
 
-  @media screen and (max-width: 400px) {
+  @media screen and (max-width: 550px) {
     font-size: 14px;
   }
 `;
