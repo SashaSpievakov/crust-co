@@ -5,40 +5,44 @@ import { ButtonPay } from 'src/styles/Buttons.styled';
 
 const Aricle = styled.article`
   position: fixed;
-  top: 40%;
+  top: 50%;
   left: 50%;
-  width: 40%;
-  height: 95%;
+  width: 35rem;
+  height: 47rem;
   text-align: center;
   background: ${({ theme }) => theme.colors.fourth};
-  transform: translate(-50%, -40%);
+  transform: translate(-50%, -50%);
   z-index: 10;
   border-radius: 15px;
   box-shadow: 0 5px 20px 0 rgba(0, 0, 0, 0.05);
 
-  @media screen and (max-width: 900px) {
-    width: 70%;
-    height: 95%;
+  @media screen and (max-width: 720px) {
+    width: 30rem;
+    height: 40rem;
   }
 
-  @media screen and (max-width: 500px) {
-    top: 35%;
-    width: 80%;
-    height: 90%;
-    transform: translate(-50%, -35%);
+  @media screen and (max-width: 550px) {
+    width: 25rem;
+    height: 38rem;
+  }
+
+  @media screen and (max-width: 420px) {
+    width: 18rem;
+    height: 36rem;
   }
 `;
 
 const Header = styled.h3`
   font-size: 2.5rem;
-  margin-top: 5%;
+  margin-top: 1.5rem;
 
-  @media screen and (max-width: 700px) {
+  @media screen and (max-width: 720px) {
     font-size: 2rem;
   }
 
-  @media screen and (max-width: 500px) {
+  @media screen and (max-width: 550px) {
     font-size: 1.7rem;
+    margin-top: 1rem;
   }
 `;
 
@@ -48,12 +52,17 @@ const SubHeader = styled.h4`
   width: 70%;
   margin: 0 auto 3%;
 
-  @media screen and (max-width: 700px) {
-    font-size: 1rem;
+  @media screen and (max-width: 720px) {
+    font-size: 1.15rem;
   }
 
-  @media screen and (max-width: 500px) {
-    font-size: 0.75rem;
+  @media screen and (max-width: 550px) {
+    width: 80%;
+  }
+
+  @media screen and (max-width: 420px) {
+    width: 85%;
+    font-size: 1rem;
   }
 `;
 
@@ -74,6 +83,10 @@ const Cross = styled(BsXLg)`
     outline: 3px solid ${({ theme }) => theme.colors.third};
     outline-offset: 3px;
   }
+
+  @media screen and (max-width: 550px) {
+    font-size: 20px;
+  }
 `;
 
 const Form = styled.form`
@@ -81,15 +94,21 @@ const Form = styled.form`
   flex-direction: column;
   align-items: center;
   row-gap: 2em;
-  width: 60%;
+  width: 70%;
   margin: 0 auto;
 
-  @media screen and (max-width: 900px) {
+  @media screen and (max-width: 720px) {
     row-gap: 1.5em;
   }
 
-  @media screen and (max-width: 500px) {
-    width: 75%;
+  @media screen and (max-width: 550px) {
+    width: 80%;
+    row-gap: 1.3em;
+  }
+
+  @media screen and (max-width: 420px) {
+    width: 85%;
+    row-gap: 1.1em;
   }
 `;
 
@@ -104,7 +123,11 @@ const Label = styled.label`
   font-size: 1.3em;
   font-weight: 700;
 
-  @media screen and (max-width: 700px) {
+  @media screen and (max-width: 720px) {
+    font-size: 1.15rem;
+  }
+
+  @media screen and (max-width: 420px) {
     font-size: 1rem;
   }
 `;
@@ -122,13 +145,17 @@ const Input = styled.input`
     border: 3px solid ${({ theme }) => theme.colors.secondary};
   }
 
-  @media screen and (max-width: 700px) {
+  @media screen and (max-width: 720px) {
     padding: 0.3em 0.5em;
   }
 `;
 
 const ModalButton = styled(ButtonPay)`
-  margin-top: 5%;
+  margin-top: 1rem;
+
+  @media screen and (max-width: 550px) {
+    padding: 0.8rem 1rem;
+  }
 `;
 
 export {
