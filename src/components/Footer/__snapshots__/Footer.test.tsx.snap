@@ -4,7 +4,7 @@ exports[`Footer Tests renders the Footer component 1`] = `
 Object {
   "children": Array [
     <section
-      className="sc-hLBbgP kDGbD"
+      className="sc-hLBbgP iHshg"
     >
       <p>
         © 2022 Crust & Co.
@@ -17,7 +17,7 @@ Object {
       </p>
     </section>,
     <section
-      className="sc-gswNZR eZoxSh"
+      className="sc-gswNZR hqpSOe"
     >
       <a
         className="sc-dkrFOg bkEmDM"

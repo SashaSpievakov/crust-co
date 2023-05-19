@@ -53,7 +53,7 @@ exports[`Home Tests renders the Home page 1`] = `
       class="sc-jrcTuL dJlpZs"
     >
       <div
-        class="sc-kDvujY fMRlQg"
+        class="sc-kDvujY iXMwPe"
         tabindex="0"
       >
         <svg
@@ -89,7 +89,7 @@ exports[`Home Tests renders the Home page 1`] = `
           data-testid="popupList"
         >
           <li
-            class="sc-bqWxrE zUhUC"
+            class="sc-bqWxrE ajkGM"
             tabindex="0"
           >
             rating

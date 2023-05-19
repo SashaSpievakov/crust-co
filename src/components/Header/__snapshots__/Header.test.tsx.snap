@@ -11,7 +11,7 @@ Object {
       tabIndex={-1}
     >
       <section
-        className="sc-gswNZR ilMqZL"
+        className="sc-gswNZR coGVzz"
       >
         <img
           alt="Pizza logo"
@@ -25,17 +25,19 @@ Object {
           >
             Crust & Co.
           </h1>
-          <p>
+          <p
+            className="sc-hLBbgP fQwgQP"
+          >
             the most delicious pizzas in town
           </p>
         </div>
       </section>
     </a>,
     <section
-      className="sc-eDvSVe cigAor"
+      className="sc-jSUZER jAeLAN"
     >
       <svg
-        className="sc-jSUZER jSvbOj"
+        className="sc-gKPRtg iQgFmL"
         data-testid="themeIcon"
         data-theme="light"
         fill="currentColor"
@@ -60,7 +62,7 @@ Object {
         />
       </svg>
       <a
-        className="sc-iBYQkv sc-pyfCe ijTkAU bTSNfv"
+        className="sc-ftTHYK sc-jrcTuL hCHlxy fCeKZA"
         data-testid="cartLink"
         href="/cart"
         onClick={[Function]}
@@ -70,7 +72,7 @@ Object {
            $
         </span>
         <div
-          className="sc-gKPRtg gvvkog"
+          className="sc-iBYQkv iTPFCD"
         />
         <svg
           fill="currentColor"
@@ -97,7 +99,7 @@ Object {
     </section>,
   ],
   "props": Object {
-    "className": "sc-hLBbgP eYuoYk",
+    "className": "sc-eDvSVe duMYvY",
   },
   "type": "header",
 }
@@ -114,7 +116,7 @@ Object {
       tabIndex={0}
     >
       <section
-        className="sc-gswNZR ilMqZL"
+        className="sc-gswNZR coGVzz"
       >
         <img
           alt="Pizza logo"
@@ -128,17 +130,19 @@ Object {
           >
             Crust & Co.
           </h1>
-          <p>
+          <p
+            className="sc-hLBbgP fQwgQP"
+          >
             the most delicious pizzas in town
           </p>
         </div>
       </section>
     </a>,
     <section
-      className="sc-eDvSVe cigAor"
+      className="sc-jSUZER jAeLAN"
     >
       <svg
-        className="sc-jSUZER GIBYd"
+        className="sc-gKPRtg ePnksF"
         data-testid="themeIcon"
         data-theme="light"
         fill="currentColor"
@@ -165,7 +169,7 @@ Object {
     </section>,
   ],
   "props": Object {
-    "className": "sc-hLBbgP CgfjB",
+    "className": "sc-eDvSVe hkvHeB",
   },
   "type": "header",
 }

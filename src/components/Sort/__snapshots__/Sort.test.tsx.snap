@@ -4,7 +4,7 @@ exports[`Sort Test renders the Sort component 1`] = `
 Object {
   "children": Array [
     <div
-      className="sc-gswNZR hVXWUm"
+      className="sc-gswNZR XlAtM"
       onClick={[Function]}
       onKeyDown={[Function]}
       tabIndex={0}
@@ -48,7 +48,7 @@ Object {
         data-testid="popupList"
       >
         <li
-          className="sc-jSUZER EJGPA"
+          className="sc-jSUZER egQMou"
           onClick={[Function]}
           onKeyDown={[Function]}
           tabIndex={0}

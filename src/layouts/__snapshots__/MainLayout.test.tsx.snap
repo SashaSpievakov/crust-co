@@ -3,7 +3,7 @@
 exports[`MainLayout Tests renders the MainLayout component 1`] = `
 Object {
   "0": <header
-    className="sc-ftTHYK cCOKiD"
+    className="sc-pyfCe bMckfK"
   >
     <a
       className="sc-jSUZER cqJXfQ"
@@ -13,7 +13,7 @@ Object {
       tabIndex={-1}
     >
       <section
-        className="sc-gKPRtg bEDqgb"
+        className="sc-gKPRtg jHZyUn"
       >
         <img
           alt="Pizza logo"
@@ -27,17 +27,19 @@ Object {
           >
             Crust & Co.
           </h1>
-          <p>
+          <p
+            className="sc-ftTHYK gxQNiU"
+          >
             the most delicious pizzas in town
           </p>
         </div>
       </section>
     </a>
     <section
-      className="sc-pyfCe kLYOGx"
+      className="sc-jrcTuL kDaWQG"
     >
       <svg
-        className="sc-jrcTuL hDGpKo"
+        className="sc-kDvujY cKaVLZ"
         data-testid="themeIcon"
         data-theme="light"
         fill="currentColor"
@@ -62,7 +64,7 @@ Object {
         />
       </svg>
       <a
-        className="sc-ipEyDJ sc-eDWCr iEA-Dqt cmZQyN"
+        className="sc-csuSiG sc-bqWxrE jZHoAi iVOPKl"
         data-testid="cartLink"
         href="/cart"
         onClick={[Function]}
@@ -72,7 +74,7 @@ Object {
            $
         </span>
         <div
-          className="sc-kDvujY ivIxim"
+          className="sc-ipEyDJ dDMWcG"
         />
         <svg
           fill="currentColor"
@@ -105,7 +107,7 @@ Object {
     className="sc-gswNZR jLMlFC"
   >
     <section
-      className="sc-eDvSVe eswfWf"
+      className="sc-eDvSVe eyXHhA"
     >
       <p>
         © 2022 Crust & Co.
@@ -118,7 +120,7 @@ Object {
       </p>
     </section>
     <section
-      className="sc-dkrFOg jjlhxv"
+      className="sc-dkrFOg jeskXE"
     >
       <a
         className="sc-hLBbgP icTdNo"

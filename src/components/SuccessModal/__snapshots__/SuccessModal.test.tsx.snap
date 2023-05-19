@@ -7,20 +7,20 @@ Object {
     onClick={[Function]}
   />,
   "1": <article
-    className="sc-kDvujY cnQXHJ"
+    className="sc-kDvujY JtPpy"
   >
     <h3
-      className="sc-ipEyDJ gtVqqb"
+      className="sc-ipEyDJ ddlMpp"
     >
       Thank you for your order!
     </h3>
     <h4
-      className="sc-csuSiG kPjyyr"
+      className="sc-csuSiG doODed"
     >
       Our operator will give you a call in a few minutes
     </h4>
     <button
-      className="sc-hLBbgP sc-eDvSVe sc-eDWCr fGqcTx bljQoe tncLY"
+      className="sc-hLBbgP sc-eDvSVe sc-eDWCr fGqcTx bljQoe bNCkfm"
       onClick={[Function]}
     >
       <span>

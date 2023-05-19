@@ -4,7 +4,7 @@ exports[`LogoSection Tests renders the LogoSection UI component 1`] = `
 Object {
   "children": Array [
     <section
-      className="sc-gswNZR ilMqZL"
+      className="sc-gswNZR coGVzz"
     >
       <img
         alt="Pizza logo"
@@ -18,7 +18,9 @@ Object {
         >
           Crust & Co.
         </h1>
-        <p>
+        <p
+          className="sc-hLBbgP fQwgQP"
+        >
           the most delicious pizzas in town
         </p>
       </div>

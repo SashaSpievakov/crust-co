@@ -7,20 +7,20 @@ Object {
     onClick={[Function]}
   />,
   "1": <article
-    className="sc-bqWxrE boOcDi"
+    className="sc-bqWxrE hZAuSu"
   >
     <h3
-      className="sc-ksBlkl ljtipp"
+      className="sc-ksBlkl iOmBCe"
     >
       Order
     </h3>
     <h4
-      className="sc-hBxehG btPktv"
+      className="sc-hBxehG gyyzfn"
     >
       Please provide your information, and our operator will get in touch with you as soon as possible to finish your order
     </h4>
     <svg
-      className="sc-fnGiBr kperDT"
+      className="sc-fnGiBr dlGtui"
       data-testid="modalCross"
       fill="currentColor"
       height="1em"
@@ -43,20 +43,20 @@ Object {
       />
     </svg>
     <form
-      className="sc-fEXmlR dWupFg"
+      className="sc-fEXmlR leSxcA"
       onSubmit={[Function]}
     >
       <div
         className="sc-bjfHbI iYBNeV"
       >
         <label
-          className="sc-idXgbr eoKsmz"
+          className="sc-idXgbr jbpggx"
           htmlFor="inputName"
         >
           Name
         </label>
         <input
-          className="sc-dIfARi kdngOR"
+          className="sc-dIfARi esqODf"
           id="inputName"
           name="name"
           onBlur={[Function]}
@@ -67,13 +67,13 @@ Object {
         className="sc-bjfHbI iYBNeV"
       >
         <label
-          className="sc-idXgbr eoKsmz"
+          className="sc-idXgbr jbpggx"
           htmlFor="inputPhone"
         >
           Phone Number
         </label>
         <input
-          className="sc-dIfARi kdngOR"
+          className="sc-dIfARi esqODf"
           id="inputPhone"
           name="phone"
           onBlur={[Function]}
@@ -86,13 +86,13 @@ Object {
         className="sc-bjfHbI iYBNeV"
       >
         <label
-          className="sc-idXgbr eoKsmz"
+          className="sc-idXgbr jbpggx"
           htmlFor="inputCity"
         >
           City
         </label>
         <input
-          className="sc-dIfARi kdngOR"
+          className="sc-dIfARi esqODf"
           id="inputCity"
           name="city"
           onBlur={[Function]}
@@ -103,13 +103,13 @@ Object {
         className="sc-bjfHbI iYBNeV"
       >
         <label
-          className="sc-idXgbr eoKsmz"
+          className="sc-idXgbr jbpggx"
           htmlFor="inputAdddress"
         >
           Adddress (optional)
         </label>
         <input
-          className="sc-dIfARi kdngOR"
+          className="sc-dIfARi esqODf"
           id="inputAdddress"
           name="address"
           onBlur={[Function]}
@@ -117,7 +117,7 @@ Object {
         />
       </div>
       <button
-        className="sc-hLBbgP sc-gKPRtg sc-hHTYSt fGqcTx fdWAyy deIBzx"
+        className="sc-hLBbgP sc-gKPRtg sc-hHTYSt fGqcTx fdWAyy iMqWqg"
         type="submit"
       >
         <span>
