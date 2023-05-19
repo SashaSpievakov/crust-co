@@ -28,7 +28,6 @@ const Aricle = styled.article`
 
   @media screen and (max-width: 420px) {
     width: 18rem;
-    height: 36rem;
   }
 `;
 
@@ -154,7 +153,11 @@ const ModalButton = styled(ButtonPay)`
   margin-top: 1rem;
 
   @media screen and (max-width: 550px) {
-    padding: 0.8rem 1rem;
+    padding: 0.8rem 0.9rem;
+  }
+
+  @media screen and (max-width: 420px) {
+    padding: 0.6rem 0.7rem;
   }
 `;
 
