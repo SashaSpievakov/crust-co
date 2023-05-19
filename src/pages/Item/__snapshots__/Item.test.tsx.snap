@@ -2,7 +2,7 @@
 
 exports[`Item Tests renders the Item page 1`] = `
 <article
-  class="sc-bcXHqe sc-ftTHYK bZXhLi kMnbQe"
+  class="sc-bcXHqe sc-ftTHYK bZXhLi fYsEmF"
   data-testid="itemPage"
 >
   <picture>
