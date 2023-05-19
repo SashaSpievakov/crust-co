@@ -7,8 +7,16 @@ const Item = styled(Container)`
   align-items: center;
   gap: 20px;
 
+  a {
+    margin-top: 100px;
+  }
+
   @media screen and (max-width: 600px) {
     gap: 15px;
+
+    a {
+      margin-top: 75px;
+    }
   }
 
   @media screen and (max-width: 400px) {
