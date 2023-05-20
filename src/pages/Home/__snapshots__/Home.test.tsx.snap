@@ -53,11 +53,11 @@ exports[`Home Tests renders the Home page 1`] = `
       class="sc-jrcTuL dJlpZs"
     >
       <div
-        class="sc-kDvujY iXMwPe"
+        class="sc-kDvujY bBtfuD"
         tabindex="0"
       >
         <svg
-          class="sc-csuSiG ivtTtK"
+          class="sc-csuSiG jHtScD"
           data-testid="popupIcon"
           fill="currentColor"
           height="1em"

@@ -12,6 +12,7 @@ interface LiProps {
 const mixinArrow = css`
   font-size: 15px;
   margin-right: 5px;
+  user-select: none;
 `;
 
 const mixinBackground = css`
@@ -30,9 +31,11 @@ const Section = styled.section`
 `;
 
 const Label = styled.div`
+  position: relative;
   display: flex;
   align-items: center;
   border-radius: 5px;
+  z-index: 10;
 
   &:focus-visible {
     background-color: ${({ theme }) => theme.colors.gray};
@@ -77,7 +80,7 @@ const Popup = styled.section<PopupProps>`
     open &&
     css`
       visibility: visible;
-      top: 22.5px;
+      top: 20px;
       opacity: 1;
     `}
 `;
