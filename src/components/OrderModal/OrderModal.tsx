@@ -32,7 +32,7 @@ const OrderModal = ({ setIsOpen }: OrderModalProps) => {
     register,
     handleSubmit,
     formState: { errors },
-  } = useForm<FormValues>();
+  } = useForm<FormValues>({ mode: 'onChange' });
 
   const onSubmit: SubmitHandler<FormValues> = () => {
     setIsSubmitted(true);
