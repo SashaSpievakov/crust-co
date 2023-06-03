@@ -10,8 +10,7 @@ import AppRouter from './router/AppRouter';
 ReactGA.initialize('G-W99PVF5JMB');
 
 ReactGA.send({ hitType: 'pageview', page: '/cart', title: 'Cart' });
-ReactGA.send({ hitType: 'pageview', page: '/item/:id', title: 'Item' });
-ReactGA.send({ hitType: 'pageview', page: '/', title: 'Main' });
+ReactGA.send({ hitType: 'pageview', page: '/item/14', title: 'Item' });
 
 function App() {
   const isLight = useAppSelector(selectIsLight);
