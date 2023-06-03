@@ -17,7 +17,7 @@ const Item = () => {
   );
 
   useEffect(() => {
-    document.title = `Crust & Co. | Items ${data?.id}`;
+    document.title = `Crust & Co. | Item`;
   }, []);
 
   return isLoading ? (
