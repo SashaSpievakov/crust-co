@@ -1,8 +1,14 @@
+import { useEffect } from 'react';
+
 import { ErrorParagraph } from 'src/styles/Base.styled';
 import { Article, Title } from './NotFound.styled';
 import ButtonBackToHome from '../../components/UI/ButtonBackToHome/ButtonBackToHome';
 
 const NotFound = () => {
+  useEffect(() => {
+    document.title = 'Not Found';
+  }, []);
+
   return (
     <Article>
       <Title>The page wasn&apos;t found</Title>

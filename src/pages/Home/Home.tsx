@@ -31,6 +31,10 @@ const Home = () => {
   );
 
   useEffect(() => {
+    document.title = 'Crust & Co.';
+  }, []);
+
+  useEffect(() => {
     if (isSuccess) {
       setPizzas(data);
     }

@@ -40,6 +40,10 @@ const Cart = () => {
   };
 
   useEffect(() => {
+    document.title = 'Crust & Co. | Cart';
+  }, []);
+
+  useEffect(() => {
     if (isOpen) {
       document.body.style.overflow = 'hidden';
     }

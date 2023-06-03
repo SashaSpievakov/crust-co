@@ -1,3 +1,4 @@
+import { useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 
 import ErrorRequest from 'src/components/ErrorRequest/ErrorRequest';
@@ -14,6 +15,10 @@ const Item = () => {
       refetchOnFocus: true,
     },
   );
+
+  useEffect(() => {
+    document.title = `Crust & Co. | Items ${data?.id}`;
+  }, []);
 
   return isLoading ? (
     <Loading />
