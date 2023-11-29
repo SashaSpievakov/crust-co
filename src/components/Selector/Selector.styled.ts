@@ -48,7 +48,7 @@ const Li = styled.li<LiProps>`
   padding: 8px;
   border-radius: 5px;
   cursor: pointer;
-  transition: 0.2s;
+  transition: background-color 0.2s;
 
   &:focus-visible {
     outline: 3px solid ${({ theme }) => theme.colors.black};

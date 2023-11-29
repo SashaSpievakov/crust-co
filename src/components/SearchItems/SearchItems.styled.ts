@@ -8,7 +8,7 @@ const Section = styled.section`
 const SearchIcon = styled(BsSearch)`
   position: absolute;
   top: 10px;
-  left: 10px;
+  left: 17px;
   font-size: 20px;
   opacity: 0.5;
 
@@ -23,7 +23,7 @@ const Input = styled.input`
   color: ${({ theme }) => theme.colors.third};
   height: 40px;
   width: 240px;
-  padding: 10px 33px 10px 40px;
+  padding: 10px 33px 10px 50px;
   background-color: ${({ theme }) => theme.colors.gray};
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 10px;
