@@ -36,7 +36,7 @@ Object {
       <ul>
         <li
           aria-current={true}
-          className="sc-pyfCe cPrsBo"
+          className="sc-pyfCe bGDsGv"
           onClick={[Function]}
           onKeyDown={[Function]}
           tabIndex={0}
@@ -45,7 +45,7 @@ Object {
         </li>
         <li
           aria-current={false}
-          className="sc-pyfCe lmPPGp"
+          className="sc-pyfCe iTZcaU"
           onClick={[Function]}
           onKeyDown={[Function]}
           tabIndex={0}
@@ -56,7 +56,7 @@ Object {
       <ul>
         <li
           aria-current={true}
-          className="sc-pyfCe cPrsBo"
+          className="sc-pyfCe bGDsGv"
           onClick={[Function]}
           onKeyDown={[Function]}
           tabIndex={0}
@@ -66,7 +66,7 @@ Object {
         </li>
         <li
           aria-current={false}
-          className="sc-pyfCe lmPPGp"
+          className="sc-pyfCe iTZcaU"
           onClick={[Function]}
           onKeyDown={[Function]}
           tabIndex={0}
@@ -76,7 +76,7 @@ Object {
         </li>
         <li
           aria-current={false}
-          className="sc-pyfCe lmPPGp"
+          className="sc-pyfCe iTZcaU"
           onClick={[Function]}
           onKeyDown={[Function]}
           tabIndex={0}

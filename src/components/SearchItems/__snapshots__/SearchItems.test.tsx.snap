@@ -4,7 +4,7 @@ exports[`SearchItems Tests renders the SearchItems component 1`] = `
 Object {
   "children": Array [
     <svg
-      className="sc-gswNZR hNTceg"
+      className="sc-gswNZR eQOVyb"
       data-testid="searchIcon"
       fill="currentColor"
       height="1em"
@@ -25,7 +25,7 @@ Object {
       />
     </svg>,
     <input
-      className="sc-dkrFOg jqvJmq"
+      className="sc-dkrFOg iebHbn"
       onChange={[Function]}
       placeholder="Search..."
       value=""
