@@ -2,6 +2,7 @@ import styled from 'styled-components';
 
 const Title = styled.h2`
   margin: 35px 0;
+  font-size: 34px;
 
   @media screen and (max-width: 650px) {
     margin: 20px 0;
