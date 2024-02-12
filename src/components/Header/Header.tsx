@@ -8,8 +8,8 @@ import { selectCart } from '../../store/slices/cart/selectors/selectCart/selectC
 import { setTheme } from '../../store/slices/theme/reducer/themeReducer';
 import { selectIsLight } from '../../store/slices/theme/selectors/selectIsLight';
 import { ButtonCart } from '../../styles/Buttons.styled';
-import LogoSection from '../UI/LogoSection/LogoSection';
 import { Delimiter, HeaderWrapper, Icon, Right } from './Header.styled';
+import { LogoSection } from './LogoSection';
 
 const Header = () => {
   const scrollRef = useRef<null | HTMLDivElement>(null);

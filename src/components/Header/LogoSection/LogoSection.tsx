@@ -4,7 +4,7 @@ import { useLocation } from 'react-router-dom';
 import mainLogo from '../../../assets/img/main-logo.svg';
 import { CustomLink, Heading, Logo, SubHeading } from './LogoSection.styled';
 
-const LogoSection = memo(() => {
+export const LogoSection = memo(() => {
   const location = useLocation();
 
   return (
@@ -23,4 +23,3 @@ const LogoSection = memo(() => {
     </CustomLink>
   );
 });
-export default LogoSection;
