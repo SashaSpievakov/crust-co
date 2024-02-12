@@ -1,5 +1,5 @@
 import cartImg from '../../assets/img/empty-cart.png';
-import ButtonBackToHome from '../UI/ButtonBackToHome/ButtonBackToHome';
+import { ButtonLink } from '../UI/ButtonLink';
 import { Article } from './CartEmpty.styled';
 
 const CartEmpty = () => {
@@ -14,7 +14,7 @@ const CartEmpty = () => {
         If you want to make an order, go back to the main page.
       </p>
       <img src={cartImg} alt="empty cart" width="300" height="255" />
-      <ButtonBackToHome />
+      <ButtonLink link="/">Go Back</ButtonLink>
     </Article>
   );
 };

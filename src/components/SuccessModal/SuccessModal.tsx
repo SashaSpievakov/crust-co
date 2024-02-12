@@ -15,9 +15,7 @@ const SuccessModal = ({ setIsOpen }: SuccessModalProps) => {
         <SubHeader>
           Our operator will give you a call in a few minutes
         </SubHeader>
-        <CloseButton onClick={() => setIsOpen(false)}>
-          <span>Close</span>
-        </CloseButton>
+        <CloseButton onClick={() => setIsOpen(false)}>Close</CloseButton>
       </Aricle>
     </>
   );

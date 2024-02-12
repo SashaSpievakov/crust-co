@@ -5,7 +5,7 @@ import userEvent from '@testing-library/user-event';
 
 import rendererWithAllProviders from '../../../tests/helpers/rendererWithProviders';
 import renderWithAllProviders from '../../../tests/helpers/renderWithProviders';
-import LogoSection from './LogoSection';
+import { LogoSection } from './LogoSection';
 
 describe('LogoSection Tests', () => {
   test('renders the LogoSection UI component', () => {
