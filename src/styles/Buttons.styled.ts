@@ -45,6 +45,7 @@ const ButtonBack = styled(Button)`
   font-weight: 600;
   font-size: 18px;
   background-color: ${({ theme }) => theme.colors.third};
+  color: ${({ theme }) => theme.colors.fourth};
 
   &:hover {
     background-color: ${({ theme }) => theme.colors.third};
@@ -52,10 +53,6 @@ const ButtonBack = styled(Button)`
 
   &:focus-visible {
     outline: 5px solid ${({ theme }) => theme.colors.secondary};
-  }
-
-  span {
-    color: ${({ theme }) => theme.colors.fourth};
   }
 
   @media screen and (max-width: 400px) {
