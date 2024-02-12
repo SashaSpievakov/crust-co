@@ -1,5 +1,5 @@
-import styled from 'styled-components';
 import ContentLoader from 'react-content-loader';
+import styled from 'styled-components';
 
 const Loader = styled(ContentLoader)`
   width: 250px;

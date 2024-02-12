@@ -1,9 +1,9 @@
 import { useEffect } from 'react';
 import { useParams } from 'react-router-dom';
-
 import ErrorRequest from 'src/components/ErrorRequest/ErrorRequest';
-import Loading from '../../components/UI/Loading/Loading';
+
 import FullItemBlock from '../../components/FullItemBlock/FullItemBlock';
+import Loading from '../../components/UI/Loading/Loading';
 import itemAPI from '../../services/ItemService';
 
 const Item = () => {

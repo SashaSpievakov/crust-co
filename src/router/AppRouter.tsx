@@ -1,9 +1,9 @@
-import { Route, Routes } from 'react-router-dom';
 import React, { Suspense } from 'react';
+import { Route, Routes } from 'react-router-dom';
 
-import Home from '../pages/Home/Home';
-import MainLayout from '../layouts/MainLayout';
 import Loading from '../components/UI/Loading/Loading';
+import MainLayout from '../layouts/MainLayout';
+import Home from '../pages/Home/Home';
 
 const Cart = React.lazy(
   () => import(/* webpackChunkName: "Cart" */ '../pages/Cart/Cart'),

@@ -1,4 +1,5 @@
 import { rest } from 'msw';
+
 import { mockItem, mockItems } from '../mockData/mockData';
 
 const handlers = [

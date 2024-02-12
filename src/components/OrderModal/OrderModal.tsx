@@ -1,18 +1,18 @@
 import { KeyboardEvent, useState } from 'react';
-import { useForm, SubmitHandler } from 'react-hook-form';
-
+import { SubmitHandler, useForm } from 'react-hook-form';
 import { ModalBg } from 'src/styles/Base.styled';
+
 import SuccessModal from '../SuccessModal/SuccessModal';
 import {
   Aricle,
-  Header,
-  SubHeader,
   Cross,
   Form,
   Group,
-  Label,
+  Header,
   Input,
+  Label,
   ModalButton,
+  SubHeader,
 } from './OrderModal.styled';
 
 interface OrderModalProps {

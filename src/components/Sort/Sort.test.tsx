@@ -1,11 +1,12 @@
 import '@testing-library/jest-dom';
+
 import { screen } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
 
-import Sort from './Sort';
+import { sortNamesArr } from '../../pages/Home/Home';
 import rendererWithProviders from '../../tests/helpers/rendererWithProviders';
 import renderWithProviders from '../../tests/helpers/renderWithProviders';
-import { sortNamesArr } from '../../pages/Home/Home';
+import Sort from './Sort';
 
 describe('Sort Test', () => {
   test('renders the Sort component', () => {

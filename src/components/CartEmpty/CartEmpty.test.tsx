@@ -1,7 +1,7 @@
 import '@testing-library/jest-dom';
 
-import CartEmpty from './CartEmpty';
 import rendererWithProviders from '../../tests/helpers/rendererWithProviders';
+import CartEmpty from './CartEmpty';
 
 describe('CartEmpty Tests', () => {
   test('renders the CartEmpty component', () => {

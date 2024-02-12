@@ -190,10 +190,10 @@ const ButtonBackCart = styled(ButtonAdd)`
 `;
 
 export {
-  ButtonBack,
-  ButtonCart,
-  ButtonPay,
-  ButtonCircle,
   ButtonAdd,
+  ButtonBack,
   ButtonBackCart,
+  ButtonCart,
+  ButtonCircle,
+  ButtonPay,
 };

@@ -1,7 +1,7 @@
 import { KeyboardEvent, useLayoutEffect } from 'react';
 
-import { Section, Li } from './Selector.styled';
 import { ISelector } from '../../models/ISelector';
+import { Li, Section } from './Selector.styled';
 
 const Selector = ({
   price,

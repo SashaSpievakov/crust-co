@@ -1,7 +1,6 @@
-import styled from 'styled-components';
 import { BsXLg } from 'react-icons/bs';
-
 import { ButtonPay } from 'src/styles/Buttons.styled';
+import styled from 'styled-components';
 
 const Aricle = styled.article`
   position: fixed;
@@ -164,12 +163,12 @@ const ModalButton = styled(ButtonPay)`
 
 export {
   Aricle,
-  Header,
-  SubHeader,
   Cross,
   Form,
   Group,
-  Label,
+  Header,
   Input,
+  Label,
   ModalButton,
+  SubHeader,
 };

@@ -45,4 +45,4 @@ const Copyright = styled.section`
   ${mixinFooterItems}
 `;
 
-export { FooterWrapper, Contacts, Contact, Copyright };
+export { Contact, Contacts, Copyright, FooterWrapper };

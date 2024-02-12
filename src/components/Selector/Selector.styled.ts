@@ -64,4 +64,4 @@ const Li = styled.li<LiProps>`
     `}
 `;
 
-export { Section, Li };
+export { Li, Section };

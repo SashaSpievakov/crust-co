@@ -3,7 +3,7 @@ import React, { KeyboardEvent } from 'react';
 import { useAppDispatch, useAppSelector } from '../../hooks/reduxHooks';
 import { setCategory } from '../../store/slices/category/reducer/categoryReducer';
 import { selectCategory } from '../../store/slices/category/selectors/selectCategory';
-import { Ul, Li } from './Categories.styled';
+import { Li, Ul } from './Categories.styled';
 
 const categoriesArr: string[] = ['All', 'Meat', 'Vegetarian', 'Grill', 'Spicy'];
 

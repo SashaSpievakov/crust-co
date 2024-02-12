@@ -1,7 +1,7 @@
 import '@testing-library/jest-dom';
 
-import MainLayout from './MainLayout';
 import rendererWithProviders from '../tests/helpers/rendererWithProviders';
+import MainLayout from './MainLayout';
 
 describe('MainLayout Tests', () => {
   test('renders the MainLayout component', () => {

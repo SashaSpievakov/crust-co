@@ -1,12 +1,13 @@
 import '@testing-library/jest-dom';
+
 import { screen } from '@testing-library/react';
 import { rest } from 'msw';
 
-import Home from './Home';
+import pizzasAPI from '../../services/PizzasService';
+import { setupStore } from '../../store/store';
 import renderWithProviders from '../../tests/helpers/renderWithProviders';
 import server from '../../tests/mocks/api/server';
-import { setupStore } from '../../store/store';
-import pizzasAPI from '../../services/PizzasService';
+import Home from './Home';
 
 describe('Home Tests', () => {
   beforeAll(() => {

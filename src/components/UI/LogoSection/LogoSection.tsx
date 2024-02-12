@@ -2,7 +2,7 @@ import { memo } from 'react';
 import { useLocation } from 'react-router-dom';
 
 import mainLogo from '../../../assets/img/main-logo.svg';
-import { CustomLink, Logo, Heading, SubHeading } from './LogoSection.styled';
+import { CustomLink, Heading, Logo, SubHeading } from './LogoSection.styled';
 
 const LogoSection = memo(() => {
   const location = useLocation();

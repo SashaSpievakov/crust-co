@@ -38,4 +38,4 @@ const SearchError = styled.h3`
   }
 `;
 
-export { Section, SearchError };
+export { SearchError, Section };

@@ -27,4 +27,4 @@ const Title = styled.h2`
   }
 `;
 
-export { Title, Article };
+export { Article, Title };

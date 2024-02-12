@@ -1,11 +1,12 @@
 import '@testing-library/jest-dom';
+
 import { screen } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
 
-import Cart from './Cart';
 import rendererWithProviders from '../../tests/helpers/rendererWithProviders';
 import renderWithProviders from '../../tests/helpers/renderWithProviders';
 import { CartItemsMockProps } from '../../tests/mocks/mockData/mockData';
+import Cart from './Cart';
 
 describe('Cart Tests', () => {
   test('renders the Cart page', () => {

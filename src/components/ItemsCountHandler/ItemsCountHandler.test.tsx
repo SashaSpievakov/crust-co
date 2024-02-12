@@ -1,13 +1,14 @@
 import '@testing-library/jest-dom';
+
 import { screen } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
 
-import ItemsCountHandler from './ItemsCountHandler';
+import { IItemsCountHandler } from '../../models/IItemsCountHandler';
 import rendererWithAllProviders from '../../tests/helpers/rendererWithProviders';
 import renderWithProviders from '../../tests/helpers/renderWithProviders';
-import { typeNames } from '../FullItemBlock/FullItemBlock';
 import { CartItemsMockProps } from '../../tests/mocks/mockData/mockData';
-import { IItemsCountHandler } from '../../models/IItemsCountHandler';
+import { typeNames } from '../FullItemBlock/FullItemBlock';
+import ItemsCountHandler from './ItemsCountHandler';
 
 const ItemsCountHandlerMockProps: IItemsCountHandler = {
   id: '6',

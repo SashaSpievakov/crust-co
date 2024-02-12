@@ -1,8 +1,8 @@
 import '@testing-library/jest-dom';
+
 import { screen } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
 
-import CartItem from './CartItem';
 import rendererWithProviders from '../../tests/helpers/rendererWithProviders';
 import renderWithProviders from '../../tests/helpers/renderWithProviders';
 import {
@@ -10,6 +10,7 @@ import {
   CartItemMockProps2,
   CartItemsMockProps,
 } from '../../tests/mocks/mockData/mockData';
+import CartItem from './CartItem';
 
 describe('CartItem Tests', () => {
   test('renders the CartItem component', () => {

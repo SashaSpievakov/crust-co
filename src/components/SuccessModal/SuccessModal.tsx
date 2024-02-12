@@ -1,5 +1,6 @@
 import { ModalBg } from 'src/styles/Base.styled';
-import { Aricle, Header, SubHeader, CloseButton } from './SuccessModal.styled';
+
+import { Aricle, CloseButton, Header, SubHeader } from './SuccessModal.styled';
 
 interface SuccessModalProps {
   setIsOpen: (value: boolean) => void;

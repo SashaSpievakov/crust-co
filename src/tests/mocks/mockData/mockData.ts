@@ -1,5 +1,5 @@
-import { ICartSliceState } from '../../../models/ICartSliceState';
 import { ICartItem } from '../../../models/ICartItem';
+import { ICartSliceState } from '../../../models/ICartSliceState';
 import { IPizzaItem } from '../../../models/IPizzaItem';
 
 export const mockItems: IPizzaItem[] = [

@@ -1,5 +1,5 @@
-import { RootState } from '../../../../store';
 import { ICartItem } from '../../../../../models/ICartItem';
+import { RootState } from '../../../../store';
 
 export const selectCurrentItemCount =
   (name: string, size: number, type: string) => (state: RootState) => {

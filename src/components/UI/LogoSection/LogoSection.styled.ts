@@ -1,5 +1,5 @@
-import styled, { css } from 'styled-components';
 import { Link } from 'react-router-dom';
+import styled, { css } from 'styled-components';
 
 interface CustomLinkProps {
   ishome: string | null;
@@ -58,4 +58,4 @@ const SubHeading = styled.p`
   }
 `;
 
-export { CustomLink, Logo, Heading, SubHeading };
+export { CustomLink, Heading, Logo, SubHeading };

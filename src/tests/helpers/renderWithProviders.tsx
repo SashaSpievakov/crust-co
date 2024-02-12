@@ -1,15 +1,15 @@
 /* eslint import/no-extraneous-dependencies: 0 */
 
+import { PreloadedState } from '@reduxjs/toolkit';
+import { render } from '@testing-library/react';
 import { ReactElement } from 'react';
 import { Provider } from 'react-redux';
-import { PreloadedState } from '@reduxjs/toolkit';
 import { MemoryRouter } from 'react-router-dom';
 import { ThemeProvider } from 'styled-components';
-import { render } from '@testing-library/react';
 
-import { darkTheme } from '../../styles/Themes.styled';
-import { RootState, setupStore } from '../../store/store';
 import AppRouterTester from '../../router/AppRouterTester';
+import { RootState, setupStore } from '../../store/store';
+import { darkTheme } from '../../styles/Themes.styled';
 
 const renderWithProviders = (
   compenent: ReactElement | null,

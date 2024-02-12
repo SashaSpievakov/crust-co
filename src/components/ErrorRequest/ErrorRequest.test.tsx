@@ -1,7 +1,7 @@
 import '@testing-library/jest-dom';
 
-import ErrorRequest from './ErrorRequest';
 import rendererWithAllProviders from '../../tests/helpers/rendererWithProviders';
+import ErrorRequest from './ErrorRequest';
 
 describe('ErrorRequest Tests', () => {
   test('renders the ErrorRequest UI component', () => {

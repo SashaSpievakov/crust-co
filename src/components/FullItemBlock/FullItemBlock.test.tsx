@@ -1,11 +1,12 @@
 import '@testing-library/jest-dom';
+
 import { screen } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
 
-import FullItemBlock from './FullItemBlock';
 import rendererWithProviders from '../../tests/helpers/rendererWithProviders';
 import renderWithProviders from '../../tests/helpers/renderWithProviders';
 import { mockItem } from '../../tests/mocks/mockData/mockData';
+import FullItemBlock from './FullItemBlock';
 
 describe('FullItemBlock Tests', () => {
   test('renders the FullItemBlock component', () => {

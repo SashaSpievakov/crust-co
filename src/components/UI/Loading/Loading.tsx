@@ -1,4 +1,4 @@
-import { Article, Loader, Circle } from './Loading.styled';
+import { Article, Circle, Loader } from './Loading.styled';
 
 const Loading = () => {
   return (

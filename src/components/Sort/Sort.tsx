@@ -1,9 +1,9 @@
-import { useEffect, useState, useRef, memo, KeyboardEvent } from 'react';
-import { useAppDispatch, useAppSelector } from '../../hooks/reduxHooks';
+import { KeyboardEvent, memo, useEffect, useRef, useState } from 'react';
 
+import { useAppDispatch, useAppSelector } from '../../hooks/reduxHooks';
 import { setSort } from '../../store/slices/sort/reducer/sortReducer';
 import { selectSort } from '../../store/slices/sort/selectors/selectSort';
-import { Section, Label, ArrowUp, ArrowDown, Popup, Li } from './Sort.styled';
+import { ArrowDown, ArrowUp, Label, Li, Popup, Section } from './Sort.styled';
 
 interface CategoriesProps {
   sortNamesArr: string[];
