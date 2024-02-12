@@ -4,7 +4,7 @@ const Footer = () => {
   return (
     <FooterWrapper>
       <Copyright>
-        <p>&#169; 2022 Crust & Co.</p>
+        <p>&#169; 2024 Crust & Co.</p>
         <p>All rights reserved.</p>
         <p>Developer - Sasha Spievakov.</p>
       </Copyright>
