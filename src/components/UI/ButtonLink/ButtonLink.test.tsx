@@ -5,11 +5,13 @@ import userEvent from '@testing-library/user-event';
 
 import rendererWithProviders from '../../../tests/helpers/rendererWithProviders';
 import renderWithProviders from '../../../tests/helpers/renderWithProviders';
-import ButtonBackToHome from './ButtonBackToHome';
+import { ButtonLink } from './ButtonLink';
 
 describe('ButtonBackToHome Tests', () => {
   test('renders the ButtonBackToHome UI component', () => {
-    const snapshot = rendererWithProviders(<ButtonBackToHome />);
+    const snapshot = rendererWithProviders(
+      <ButtonLink link="/">Go Back</ButtonLink>,
+    );
     expect(snapshot).toMatchSnapshot();
   });
 

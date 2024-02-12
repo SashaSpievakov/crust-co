@@ -3,7 +3,7 @@ import { useState } from 'react';
 import { IPizzaItem } from '../../models/IPizzaItem';
 import ItemsCountHandler from '../ItemsCountHandler/ItemsCountHandler';
 import Selector from '../Selector/Selector';
-import ButtonBackToHome from '../UI/ButtonBackToHome/ButtonBackToHome';
+import { ButtonLink } from '../UI/ButtonLink';
 import { Image, Item, Paragraph, Price, Title } from './FullItemBlock.styled';
 
 interface FullItemProps {
@@ -56,7 +56,7 @@ const FullItemBlock = ({ item }: FullItemProps) => {
         typeNames={typeNames}
         isFullScreen
       />
-      <ButtonBackToHome />
+      <ButtonLink link="/">Go Back</ButtonLink>
     </Item>
   );
 };
