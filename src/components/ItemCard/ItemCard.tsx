@@ -1,16 +1,16 @@
 import { useEffect, useState } from 'react';
 
+import { typeNames } from '../FullItemBlock/FullItemBlock';
 import ItemsCountHandler from '../ItemsCountHandler/ItemsCountHandler';
 import Selector from '../Selector/Selector';
 import {
   Block,
+  Bottom,
   CustomLink,
   Image,
-  Title,
-  Bottom,
   Price,
+  Title,
 } from './ItemCard.styled';
-import { typeNames } from '../FullItemBlock/FullItemBlock';
 
 interface ItemCardProps {
   id: string;

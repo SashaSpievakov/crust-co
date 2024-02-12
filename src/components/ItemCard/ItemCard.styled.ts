@@ -1,5 +1,5 @@
-import styled from 'styled-components';
 import { Link } from 'react-router-dom';
+import styled from 'styled-components';
 
 const Block = styled.article`
   width: 250px;
@@ -66,4 +66,4 @@ const Price = styled.h3`
   }
 `;
 
-export { Block, CustomLink, Image, Title, Bottom, Price };
+export { Block, Bottom, CustomLink, Image, Price, Title };

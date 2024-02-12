@@ -1,4 +1,5 @@
 import { FunctionComponent, ReactNode } from 'react';
+
 import Loader from './SkeletonLoader.styled';
 
 interface SkeletonLoaderProps {

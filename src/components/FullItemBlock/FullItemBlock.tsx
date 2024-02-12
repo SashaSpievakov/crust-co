@@ -1,10 +1,10 @@
 import { useState } from 'react';
 
-import { Image, Title, Paragraph, Price, Item } from './FullItemBlock.styled';
-import Selector from '../Selector/Selector';
-import ItemsCountHandler from '../ItemsCountHandler/ItemsCountHandler';
-import ButtonBackToHome from '../UI/ButtonBackToHome/ButtonBackToHome';
 import { IPizzaItem } from '../../models/IPizzaItem';
+import ItemsCountHandler from '../ItemsCountHandler/ItemsCountHandler';
+import Selector from '../Selector/Selector';
+import ButtonBackToHome from '../UI/ButtonBackToHome/ButtonBackToHome';
+import { Image, Item, Paragraph, Price, Title } from './FullItemBlock.styled';
 
 interface FullItemProps {
   item: IPizzaItem;

@@ -1,4 +1,5 @@
 import { ErrorParagraph } from 'src/styles/Base.styled';
+
 import { Article, ErrorHeading } from './ErrorRequest.styled';
 
 const ErrorRequest = () => {

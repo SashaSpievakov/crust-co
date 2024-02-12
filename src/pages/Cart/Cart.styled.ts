@@ -1,6 +1,6 @@
-import styled from 'styled-components';
-import { BsCart3, BsTrash, BsChevronLeft } from 'react-icons/bs';
+import { BsCart3, BsChevronLeft, BsTrash } from 'react-icons/bs';
 import { Container } from 'src/styles/Base.styled';
+import styled from 'styled-components';
 
 const Article = styled(Container)`
   margin: 50px auto;
@@ -99,13 +99,13 @@ const ChevronLeft = styled(BsChevronLeft)`
 
 export {
   Article,
-  Top,
-  Title,
-  CartIcon,
-  Clear,
-  Trash,
   Bottom,
-  Details,
   Buttons,
+  CartIcon,
   ChevronLeft,
+  Clear,
+  Details,
+  Title,
+  Top,
+  Trash,
 };

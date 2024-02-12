@@ -1,18 +1,18 @@
 import { useEffect, useState } from 'react';
-
-import { Container } from 'src/styles/Base.styled';
 import ErrorRequest from 'src/components/ErrorRequest/ErrorRequest';
-import { Title, Block, Top } from './Home.styled';
-import { useAppSelector } from '../../hooks/reduxHooks';
-import { selectSort } from '../../store/slices/sort/selectors/selectSort';
-import { selectCategory } from '../../store/slices/category/selectors/selectCategory';
+import { Container } from 'src/styles/Base.styled';
+
 import Categories from '../../components/Categories/Categories';
-import Sort from '../../components/Sort/Sort';
-import SearchItems from '../../components/SearchItems/SearchItems';
 import ProductsContainer from '../../components/ProductsContainer/ProductsContainer';
+import SearchItems from '../../components/SearchItems/SearchItems';
+import Sort from '../../components/Sort/Sort';
+import { useAppSelector } from '../../hooks/reduxHooks';
 import { IPizzaItem } from '../../models/IPizzaItem';
 import pizzasAPI from '../../services/PizzasService';
+import { selectCategory } from '../../store/slices/category/selectors/selectCategory';
+import { selectSort } from '../../store/slices/sort/selectors/selectSort';
 import modifySearchParamsName from '../../utils/modifySearchParamsName/modifySearchParamsName';
+import { Block, Title, Top } from './Home.styled';
 
 export const sortNamesArr: string[] = ['rating', 'price', 'A to Z'];
 

@@ -1,10 +1,11 @@
 import '@testing-library/jest-dom';
+
 import { screen } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
 
-import Categories from './Categories';
 import rendererWithProviders from '../../tests/helpers/rendererWithProviders';
 import renderWithProviders from '../../tests/helpers/renderWithProviders';
+import Categories from './Categories';
 
 describe('Categories Tests', () => {
   test('renders the Categories component', () => {

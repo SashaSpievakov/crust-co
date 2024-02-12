@@ -36,4 +36,4 @@ const darkTheme: DefaultTheme = {
   duration: '0.2s',
 };
 
-export { lightTheme, darkTheme };
+export { darkTheme, lightTheme };

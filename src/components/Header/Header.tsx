@@ -1,15 +1,15 @@
 import { KeyboardEvent, useEffect, useRef } from 'react';
+import { BsCart3, BsFillMoonFill, BsFillSunFill } from 'react-icons/bs';
 import { shallowEqual } from 'react-redux';
 import { Link, useLocation } from 'react-router-dom';
-import { BsCart3, BsFillSunFill, BsFillMoonFill } from 'react-icons/bs';
 
-import LogoSection from '../UI/LogoSection/LogoSection';
-import { HeaderWrapper, Right, Icon, Delimiter } from './Header.styled';
+import { useAppDispatch, useAppSelector } from '../../hooks/reduxHooks';
+import { selectCart } from '../../store/slices/cart/selectors/selectCart/selectCart';
 import { setTheme } from '../../store/slices/theme/reducer/themeReducer';
 import { selectIsLight } from '../../store/slices/theme/selectors/selectIsLight';
-import { selectCart } from '../../store/slices/cart/selectors/selectCart/selectCart';
 import { ButtonCart } from '../../styles/Buttons.styled';
-import { useAppDispatch, useAppSelector } from '../../hooks/reduxHooks';
+import LogoSection from '../UI/LogoSection/LogoSection';
+import { Delimiter, HeaderWrapper, Icon, Right } from './Header.styled';
 
 const Header = () => {
   const scrollRef = useRef<null | HTMLDivElement>(null);

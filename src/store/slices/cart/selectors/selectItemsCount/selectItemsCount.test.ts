@@ -1,10 +1,10 @@
-import { RootState } from '../../../../store';
-import { selectItemsCount } from './selectItemsCount';
 import {
   CartItemMockProps,
   CartItemMockProps2,
   CartItemsMockProps,
 } from '../../../../../tests/mocks/mockData/mockData';
+import { RootState } from '../../../../store';
+import { selectItemsCount } from './selectItemsCount';
 
 describe('tests selectItemsCount', () => {
   test('works with a normal state', () => {

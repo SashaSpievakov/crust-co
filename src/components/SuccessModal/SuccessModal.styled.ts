@@ -1,6 +1,5 @@
-import styled from 'styled-components';
-
 import { ButtonBack } from 'src/styles/Buttons.styled';
+import styled from 'styled-components';
 
 const Aricle = styled.article`
   position: fixed;
@@ -79,4 +78,4 @@ const CloseButton = styled(ButtonBack)`
   }
 `;
 
-export { Aricle, Header, SubHeader, CloseButton };
+export { Aricle, CloseButton, Header, SubHeader };

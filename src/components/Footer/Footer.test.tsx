@@ -1,7 +1,7 @@
 import '@testing-library/jest-dom';
 
-import Footer from './Footer';
 import rendererWithProviders from '../../tests/helpers/rendererWithProviders';
+import Footer from './Footer';
 
 describe('Footer Tests', () => {
   test('renders the Footer component', () => {

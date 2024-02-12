@@ -1,13 +1,14 @@
 import '@testing-library/jest-dom';
+
 import { screen } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
 
-import SearchItems from './SearchItems';
+import pizzasAPI from '../../services/PizzasService';
+import { setupStore } from '../../store/store';
 import rendererWithProviders from '../../tests/helpers/rendererWithProviders';
 import renderWithProviders from '../../tests/helpers/renderWithProviders';
-import { setupStore } from '../../store/store';
 import server from '../../tests/mocks/api/server';
-import pizzasAPI from '../../services/PizzasService';
+import SearchItems from './SearchItems';
 
 describe('SearchItems Tests', () => {
   test('renders the SearchItems component', () => {

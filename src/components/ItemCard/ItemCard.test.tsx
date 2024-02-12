@@ -1,14 +1,15 @@
 import '@testing-library/jest-dom';
+
 import { screen } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
 
-import ItemCard from './ItemCard';
+import itemAPI from '../../services/ItemService';
+import { setupStore } from '../../store/store';
 import rendererWithProviders from '../../tests/helpers/rendererWithProviders';
 import renderWithProviders from '../../tests/helpers/renderWithProviders';
-import { mockItem } from '../../tests/mocks/mockData/mockData';
-import { setupStore } from '../../store/store';
 import server from '../../tests/mocks/api/server';
-import itemAPI from '../../services/ItemService';
+import { mockItem } from '../../tests/mocks/mockData/mockData';
+import ItemCard from './ItemCard';
 
 describe('ItemCard Tests', () => {
   test('renders the ItemCard component', () => {

@@ -1,15 +1,16 @@
 import '@testing-library/jest-dom';
+
 import { screen } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
 
-import Selector from './Selector';
+import { ISelector } from '../../models/ISelector';
+import itemAPI from '../../services/ItemService';
+import { setupStore } from '../../store/store';
 import rendererWithAllProviders from '../../tests/helpers/rendererWithProviders';
 import renderWithProviders from '../../tests/helpers/renderWithProviders';
-import { typeNames } from '../FullItemBlock/FullItemBlock';
-import { ISelector } from '../../models/ISelector';
 import server from '../../tests/mocks/api/server';
-import { setupStore } from '../../store/store';
-import itemAPI from '../../services/ItemService';
+import { typeNames } from '../FullItemBlock/FullItemBlock';
+import Selector from './Selector';
 
 const SelectorMockProps: ISelector = {
   price: 10,

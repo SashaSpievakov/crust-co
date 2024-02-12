@@ -1,6 +1,6 @@
-import styled, { css } from 'styled-components';
-import { HiMinus, HiPlus } from 'react-icons/hi';
 import { BsPlusLg } from 'react-icons/bs';
+import { HiMinus, HiPlus } from 'react-icons/hi';
+import styled, { css } from 'styled-components';
 
 interface CounterProps {
   isFullScreen?: boolean;
@@ -70,4 +70,4 @@ const MainPlus = styled(BsPlusLg)`
   margin-right: 5px;
 `;
 
-export { Counter, Minus, Plus, Count, MainPlus };
+export { Count, Counter, MainPlus, Minus, Plus };

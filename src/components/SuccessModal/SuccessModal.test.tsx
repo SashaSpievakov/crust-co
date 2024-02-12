@@ -1,11 +1,12 @@
 import '@testing-library/jest-dom';
+
 import { screen } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
-
 import { CartItemsMockProps } from 'src/tests/mocks/mockData/mockData';
-import SuccessModal from './SuccessModal';
+
 import rendererWithAllProviders from '../../tests/helpers/rendererWithProviders';
 import renderWithProviders from '../../tests/helpers/renderWithProviders';
+import SuccessModal from './SuccessModal';
 
 describe('SuccessModal Tests', () => {
   test('renders the SuccessModal UI component', () => {

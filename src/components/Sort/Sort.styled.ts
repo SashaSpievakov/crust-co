@@ -1,5 +1,5 @@
-import styled, { css } from 'styled-components';
 import { BsCaretDownFill, BsCaretUpFill } from 'react-icons/bs';
+import styled, { css } from 'styled-components';
 
 interface PopupProps {
   open: boolean;
@@ -107,4 +107,4 @@ const Li = styled.li<LiProps>`
     `}
 `;
 
-export { Section, Label, ArrowUp, ArrowDown, Popup, Li };
+export { ArrowDown, ArrowUp, Label, Li, Popup, Section };

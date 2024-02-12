@@ -1,10 +1,10 @@
 import ReactDOM from 'react-dom/client';
-import { BrowserRouter } from 'react-router-dom';
-import { Provider } from 'react-redux';
 import ReactGA from 'react-ga4';
+import { Provider } from 'react-redux';
+import { BrowserRouter } from 'react-router-dom';
 
-import { setupStore } from './store/store';
 import App from './App';
+import { setupStore } from './store/store';
 
 ReactGA.initialize('G-W99PVF5JMB');
 

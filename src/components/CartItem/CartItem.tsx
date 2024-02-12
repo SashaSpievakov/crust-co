@@ -1,6 +1,8 @@
 import { memo } from 'react';
 import { BsDashLg, BsPlusLg } from 'react-icons/bs';
 
+import { useAppDispatch } from '../../hooks/reduxHooks';
+import { ICartItem } from '../../models/ICartItem';
 import {
   addItem,
   removeItem,
@@ -9,15 +11,13 @@ import {
 import { ButtonCircle } from '../../styles/Buttons.styled';
 import {
   Article,
-  ImgWrapper,
-  InfoWrapper,
   Counter,
   CountIcon,
+  ImgWrapper,
+  InfoWrapper,
   Price,
   Remove,
 } from './CartItem.styled';
-import { ICartItem } from '../../models/ICartItem';
-import { useAppDispatch } from '../../hooks/reduxHooks';
 
 const CartItem = memo(({ id, name, price, size, type, count }: ICartItem) => {
   const dispatch = useAppDispatch();

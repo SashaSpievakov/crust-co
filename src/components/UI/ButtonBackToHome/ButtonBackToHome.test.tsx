@@ -1,10 +1,11 @@
 import '@testing-library/jest-dom';
+
 import { screen } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
 
-import ButtonBackToHome from './ButtonBackToHome';
-import renderWithProviders from '../../../tests/helpers/renderWithProviders';
 import rendererWithProviders from '../../../tests/helpers/rendererWithProviders';
+import renderWithProviders from '../../../tests/helpers/renderWithProviders';
+import ButtonBackToHome from './ButtonBackToHome';
 
 describe('ButtonBackToHome Tests', () => {
   test('renders the ButtonBackToHome UI component', () => {

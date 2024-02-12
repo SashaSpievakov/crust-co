@@ -81,4 +81,4 @@ const Delimiter = styled.div`
   margin-right: 14px;
 `;
 
-export { HeaderWrapper, Right, Icon, Delimiter };
+export { Delimiter, HeaderWrapper, Icon, Right };

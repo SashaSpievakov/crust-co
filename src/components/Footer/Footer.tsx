@@ -1,4 +1,4 @@
-import { FooterWrapper, Contacts, Contact, Copyright } from './Footer.styled';
+import { Contact, Contacts, Copyright, FooterWrapper } from './Footer.styled';
 
 const Footer = () => {
   return (

@@ -39,4 +39,4 @@ const Circle = styled.circle`
   animation: ${dash} 1.5s ease-in-out infinite;
 `;
 
-export { Article, Loader, Circle };
+export { Article, Circle, Loader };

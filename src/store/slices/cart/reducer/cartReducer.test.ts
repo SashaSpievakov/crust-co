@@ -5,9 +5,9 @@ import {
 } from '../../../../tests/mocks/mockData/mockData';
 import cartReducer, {
   addItem,
+  clearCart,
   removeItem,
   removeItems,
-  clearCart,
 } from './cartReducer';
 
 describe('tests cartReducer', () => {

@@ -1,3 +1,4 @@
+import debounce from 'lodash.debounce';
 import React, {
   KeyboardEvent,
   memo,
@@ -6,12 +7,11 @@ import React, {
   useRef,
   useState,
 } from 'react';
-import debounce from 'lodash.debounce';
 
 import { useAppDispatch, useAppSelector } from '../../hooks/reduxHooks';
 import { setSearchValue } from '../../store/slices/search/reducer/searchValueReducer';
 import { selectSearchValue } from '../../store/slices/search/selectors/selectSearchValue';
-import { Section, SearchIcon, Input, Cross } from './SearchItems.styled';
+import { Cross, Input, SearchIcon, Section } from './SearchItems.styled';
 
 const SearchItems = memo(() => {
   const [value, setValue] = useState<string>('');

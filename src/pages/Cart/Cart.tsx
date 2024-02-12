@@ -1,27 +1,27 @@
 import { KeyboardEvent, useEffect, useState } from 'react';
-import { Link } from 'react-router-dom';
 import { shallowEqual } from 'react-redux';
-
+import { Link } from 'react-router-dom';
 import Modal from 'src/components/OrderModal/OrderModal';
+
+import CartEmpty from '../../components/CartEmpty/CartEmpty';
+import CartItem from '../../components/CartItem/CartItem';
+import { useAppDispatch, useAppSelector } from '../../hooks/reduxHooks';
+import { ICartItem } from '../../models/ICartItem';
 import { clearCart } from '../../store/slices/cart/reducer/cartReducer';
 import { selectCart } from '../../store/slices/cart/selectors/selectCart/selectCart';
-import CartItem from '../../components/CartItem/CartItem';
-import CartEmpty from '../../components/CartEmpty/CartEmpty';
 import { ButtonBackCart, ButtonPay } from '../../styles/Buttons.styled';
 import {
   Article,
-  Top,
-  Title,
-  CartIcon,
-  Clear,
-  Trash,
   Bottom,
-  Details,
   Buttons,
+  CartIcon,
   ChevronLeft,
+  Clear,
+  Details,
+  Title,
+  Top,
+  Trash,
 } from './Cart.styled';
-import { ICartItem } from '../../models/ICartItem';
-import { useAppDispatch, useAppSelector } from '../../hooks/reduxHooks';
 
 const Cart = () => {
   const [isOpen, setIsOpen] = useState(false);

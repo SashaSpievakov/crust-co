@@ -1,6 +1,7 @@
 import { ErrorParagraph } from 'src/styles/Base.styled';
-import { Article, Title } from './NotFound.styled';
+
 import ButtonBackToHome from '../../components/UI/ButtonBackToHome/ButtonBackToHome';
+import { Article, Title } from './NotFound.styled';
 
 const NotFound = () => {
   return (

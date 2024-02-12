@@ -1,5 +1,5 @@
+import { BsSearch, BsXLg } from 'react-icons/bs';
 import styled from 'styled-components';
-import { BsXLg, BsSearch } from 'react-icons/bs';
 
 const Section = styled.section`
   position: relative;
@@ -75,4 +75,4 @@ const Cross = styled(BsXLg)`
   }
 `;
 
-export { Section, SearchIcon, Input, Cross };
+export { Cross, Input, SearchIcon, Section };

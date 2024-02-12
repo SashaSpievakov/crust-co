@@ -1,7 +1,7 @@
 import '@testing-library/jest-dom';
 
-import NotFound from './NotFound';
 import rendererWithProviders from '../../tests/helpers/rendererWithProviders';
+import NotFound from './NotFound';
 
 describe('NotFound Tests', () => {
   test('renders the NotFound page', () => {

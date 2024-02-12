@@ -1,10 +1,11 @@
 import '@testing-library/jest-dom';
+
 import { screen } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
 
-import Header from './Header';
 import rendererWithProviders from '../../tests/helpers/rendererWithProviders';
 import renderWithProviders from '../../tests/helpers/renderWithProviders';
+import Header from './Header';
 
 describe('Header Tests', () => {
   test('renders the Header component', () => {

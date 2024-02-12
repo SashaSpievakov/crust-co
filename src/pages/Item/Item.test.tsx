@@ -1,12 +1,13 @@
 import '@testing-library/jest-dom';
+
 import { screen } from '@testing-library/react';
 import { rest } from 'msw';
 
-import Item from './Item';
+import itemAPI from '../../services/ItemService';
+import { setupStore } from '../../store/store';
 import renderWithProviders from '../../tests/helpers/renderWithProviders';
 import server from '../../tests/mocks/api/server';
-import { setupStore } from '../../store/store';
-import itemAPI from '../../services/ItemService';
+import Item from './Item';
 
 describe('Item Tests', () => {
   beforeAll(() => {

@@ -36,4 +36,4 @@ const Block = styled(Top)`
   }
 `;
 
-export { Title, Top, Block };
+export { Block, Title, Top };

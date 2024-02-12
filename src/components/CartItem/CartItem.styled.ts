@@ -101,4 +101,4 @@ const Remove = styled.div`
   }
 `;
 
-export { Article, ImgWrapper, InfoWrapper, Counter, CountIcon, Price, Remove };
+export { Article, Counter, CountIcon, ImgWrapper, InfoWrapper, Price, Remove };

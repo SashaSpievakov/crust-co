@@ -1,8 +1,9 @@
 import '@testing-library/jest-dom';
+
 import { screen } from '@testing-library/react';
 
-import { SkeletonLoader } from './SkeletonLoader';
 import renderWithAllProviders from '../../../tests/helpers/renderWithProviders';
+import { SkeletonLoader } from './SkeletonLoader';
 
 describe('Skeleton Tests', () => {
   test('renders the Skeleton UI component', () => {

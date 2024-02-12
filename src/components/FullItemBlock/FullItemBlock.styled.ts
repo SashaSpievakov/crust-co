@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+
 import { Container } from '../../styles/Base.styled';
 
 const Item = styled(Container)`
@@ -78,4 +79,4 @@ const Price = styled.h3`
   }
 `;
 
-export { Item, Image, Title, Paragraph, Price };
+export { Image, Item, Paragraph, Price, Title };
