@@ -16,9 +16,12 @@ const pizzasAPI = createApi({
   endpoints: (build) => ({
     fetchPizzas: build.query<IPizzaItem[], IFetchItems>({
       query: ({ activeCategory, sortSearchParam }) => ({
-        url: `pizza-items?${
-          activeCategory > 0 ? `category=${activeCategory}&` : ''
-        }sortBy=${sortSearchParam}`,
+        url: `pizza-items?sortBy=${sortSearchParam}`,
+        params: {
+          category: activeCategory > 0 ? activeCategory : undefined,
+          // TODO refactor to the normalized query after your custom backend is ready and supports that
+          // sortBy: sortSearchParam,
+        },
       }),
       providesTags: () => ['Pizzas'],
     }),

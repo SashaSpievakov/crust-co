@@ -1,4 +1,4 @@
-import modifySearchParamsName from './modifySearchParamsName';
+import { modifySearchParamsName } from './modifySearchParamsName';
 
 describe('tests modifySearchParamsName', () => {
   test('works with the right parameters', () => {
