@@ -10,17 +10,16 @@ interface IFetchItems {
 const pizzasAPI = createApi({
   reducerPath: 'pizzasAPI',
   baseQuery: fetchBaseQuery({
-    baseUrl: process.env.REACT_APP_API_URL,
+    baseUrl: `${process.env.REACT_APP_API_URL}/api`,
   }),
   tagTypes: ['Pizzas'],
   endpoints: (build) => ({
     fetchPizzas: build.query<IPizzaItem[], IFetchItems>({
       query: ({ activeCategory, sortSearchParam }) => ({
-        url: `/pizza-items?sortBy=${sortSearchParam}`,
+        url: '/pizzas',
         params: {
           category: activeCategory > 0 ? activeCategory : undefined,
-          // TODO refactor to the normalized query after your custom backend is ready and supports that
-          // sortBy: sortSearchParam,
+          sortBy: sortSearchParam,
         },
       }),
       providesTags: () => ['Pizzas'],
