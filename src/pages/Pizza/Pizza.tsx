@@ -6,7 +6,7 @@ import FullItemBlock from '../../components/FullItemBlock/FullItemBlock';
 import Loading from '../../components/UI/Loading/Loading';
 import itemAPI from '../../services/ItemService';
 
-const Item = () => {
+export const Pizza = () => {
   const { id } = useParams();
 
   const { data, isLoading, isSuccess } = itemAPI.useFetchItemQuery(
@@ -28,5 +28,3 @@ const Item = () => {
     <ErrorRequest />
   );
 };
-
-export default Item;

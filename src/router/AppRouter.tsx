@@ -8,8 +8,8 @@ import Home from '../pages/Home/Home';
 const Cart = React.lazy(
   () => import(/* webpackChunkName: "Cart" */ '../pages/Cart/Cart'),
 );
-const FullItem = React.lazy(
-  () => import(/* webpackChunkName: "FullItem" */ '../pages/Item/Item'),
+const Pizza = React.lazy(
+  () => import(/* webpackChunkName: "FullItem" */ '../pages/Pizza'),
 );
 const NotFound = React.lazy(
   () => import(/* webpackChunkName: "NotFound" */ '../pages/NotFound/NotFound'),
@@ -29,10 +29,10 @@ const AppRouter = () => {
           }
         />
         <Route
-          path="item/:id"
+          path="pizza/:id"
           element={
             <Suspense fallback={<Loading />}>
-              <FullItem />
+              <Pizza />
             </Suspense>
           }
         />
