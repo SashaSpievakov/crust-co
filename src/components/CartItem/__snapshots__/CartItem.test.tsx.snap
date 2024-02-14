@@ -4,7 +4,7 @@ exports[`CartItem Tests renders the CartItem component 1`] = `
 Object {
   "children": Array [
     <div
-      className="sc-pyfCe jtVCjF"
+      className="sc-fLcnxK hXKdzk"
     >
       <picture>
         <source
@@ -24,7 +24,7 @@ Object {
       </picture>
     </div>,
     <section
-      className="sc-jrcTuL fufNrK"
+      className="sc-bBABsx eQgYPc"
     >
       <h3>
         Cheesburger Pizza
@@ -37,16 +37,16 @@ Object {
       </p>
     </section>,
     <section
-      className="sc-kDvujY tAPcE"
+      className="sc-iveFHk lePfuw"
     >
       <button
         aria-label="minus"
-        className="sc-bcXHqe sc-eDvSVe sc-jSUZER glVyWT fwWQTF ggHeaE"
+        className="sc-hLBbgP sc-iBYQkv sc-ftTHYK fGqcTx iDltE YugEl"
         disabled={false}
         onClick={[Function]}
       >
         <svg
-          className="sc-ipEyDJ kPOfaS"
+          className="sc-cwSeag hTIaIl"
           fill="currentColor"
           height="1em"
           stroke="currentColor"
@@ -70,11 +70,11 @@ Object {
       </span>
       <button
         aria-label="plus"
-        className="sc-bcXHqe sc-eDvSVe sc-jSUZER glVyWT fwWQTF ggHeaE"
+        className="sc-hLBbgP sc-iBYQkv sc-ftTHYK fGqcTx iDltE YugEl"
         onClick={[Function]}
       >
         <svg
-          className="sc-ipEyDJ kPOfaS"
+          className="sc-cwSeag hTIaIl"
           fill="currentColor"
           height="1em"
           stroke="currentColor"
@@ -95,21 +95,21 @@ Object {
       </button>
     </section>,
     <h3
-      className="sc-csuSiG jyyJbU"
+      className="sc-lllmON HjOCA"
     >
       91
       $
     </h3>,
     <div
-      className="sc-eDWCr fGJRdl"
+      className="sc-iJnaPW iUmlfh"
     >
       <button
         aria-label="delete"
-        className="sc-bcXHqe sc-eDvSVe sc-jSUZER glVyWT fwWQTF gjJRSz"
+        className="sc-hLBbgP sc-iBYQkv sc-ftTHYK fGqcTx iDltE kTqzjG"
         onClick={[Function]}
       >
         <svg
-          className="sc-ipEyDJ kPOfaS"
+          className="sc-cwSeag hTIaIl"
           fill="currentColor"
           height="1em"
           stroke="currentColor"
@@ -131,7 +131,7 @@ Object {
     </div>,
   ],
   "props": Object {
-    "className": "sc-ftTHYK kpyIvF",
+    "className": "sc-kgTSHT hAsYAG",
   },
   "type": "article",
 }
@@ -141,7 +141,7 @@ exports[`CartItem Tests renders the CartItem component with a disabled button 1`
 Object {
   "children": Array [
     <div
-      className="sc-pyfCe jtVCjF"
+      className="sc-fLcnxK hXKdzk"
     >
       <picture>
         <source
@@ -161,7 +161,7 @@ Object {
       </picture>
     </div>,
     <section
-      className="sc-jrcTuL fufNrK"
+      className="sc-bBABsx eQgYPc"
     >
       <h3>
         Pepperoni Pizza
@@ -174,16 +174,16 @@ Object {
       </p>
     </section>,
     <section
-      className="sc-kDvujY tAPcE"
+      className="sc-iveFHk lePfuw"
     >
       <button
         aria-label="minus"
-        className="sc-bcXHqe sc-eDvSVe sc-jSUZER glVyWT fwWQTF ggHeaE"
+        className="sc-hLBbgP sc-iBYQkv sc-ftTHYK fGqcTx iDltE YugEl"
         disabled={true}
         onClick={[Function]}
       >
         <svg
-          className="sc-ipEyDJ kPOfaS"
+          className="sc-cwSeag hTIaIl"
           fill="currentColor"
           height="1em"
           stroke="currentColor"
@@ -207,11 +207,11 @@ Object {
       </span>
       <button
         aria-label="plus"
-        className="sc-bcXHqe sc-eDvSVe sc-jSUZER glVyWT fwWQTF ggHeaE"
+        className="sc-hLBbgP sc-iBYQkv sc-ftTHYK fGqcTx iDltE YugEl"
         onClick={[Function]}
       >
         <svg
-          className="sc-ipEyDJ kPOfaS"
+          className="sc-cwSeag hTIaIl"
           fill="currentColor"
           height="1em"
           stroke="currentColor"
@@ -232,21 +232,21 @@ Object {
       </button>
     </section>,
     <h3
-      className="sc-csuSiG jyyJbU"
+      className="sc-lllmON HjOCA"
     >
       9
       $
     </h3>,
     <div
-      className="sc-eDWCr fGJRdl"
+      className="sc-iJnaPW iUmlfh"
     >
       <button
         aria-label="delete"
-        className="sc-bcXHqe sc-eDvSVe sc-jSUZER glVyWT fwWQTF gjJRSz"
+        className="sc-hLBbgP sc-iBYQkv sc-ftTHYK fGqcTx iDltE kTqzjG"
         onClick={[Function]}
       >
         <svg
-          className="sc-ipEyDJ kPOfaS"
+          className="sc-cwSeag hTIaIl"
           fill="currentColor"
           height="1em"
           stroke="currentColor"
@@ -268,7 +268,7 @@ Object {
     </div>,
   ],
   "props": Object {
-    "className": "sc-ftTHYK kpyIvF",
+    "className": "sc-kgTSHT hAsYAG",
   },
   "type": "article",
 }

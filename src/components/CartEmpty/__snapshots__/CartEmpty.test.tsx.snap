@@ -21,13 +21,11 @@ Object {
       width="300"
     />,
     <a
-      className="sc-bcXHqe sc-gswNZR glVyWT kfudRI"
+      className="sc-bcXHqe sc-gswNZR glVyWT bMYeao"
       href="/"
       onClick={[Function]}
     >
-      <span>
-        Go Back
-      </span>
+      Go Back
     </a>,
   ],
   "props": Object {

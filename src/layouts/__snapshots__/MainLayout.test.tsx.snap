@@ -3,17 +3,17 @@
 exports[`MainLayout Tests renders the MainLayout component 1`] = `
 Object {
   "0": <header
-    className="sc-pyfCe bMckfK"
+    className="sc-ipEyDJ eZXFgc"
   >
     <a
-      className="sc-jSUZER cqJXfQ"
+      className="sc-ksBlkl dYQANI"
       href="/"
       ishome="home"
       onClick={[Function]}
       tabIndex={-1}
     >
       <section
-        className="sc-gKPRtg jHZyUn"
+        className="sc-hBxehG fLOGEO"
       >
         <img
           alt="Pizza logo"
@@ -23,12 +23,12 @@ Object {
         />
         <div>
           <h1
-            className="sc-iBYQkv kWKvOK"
+            className="sc-fnGiBr QzCsu"
           >
             Crust & Co.
           </h1>
           <p
-            className="sc-ftTHYK gxQNiU"
+            className="sc-fEXmlR gNhCaQ"
           >
             the most delicious pizzas in town
           </p>
@@ -36,10 +36,10 @@ Object {
       </section>
     </a>
     <section
-      className="sc-jrcTuL kDaWQG"
+      className="sc-csuSiG ilzMEo"
     >
       <svg
-        className="sc-kDvujY cKaVLZ"
+        className="sc-eDWCr HpcLB"
         data-testid="themeIcon"
         data-theme="light"
         fill="currentColor"
@@ -64,7 +64,7 @@ Object {
         />
       </svg>
       <a
-        className="sc-csuSiG sc-bqWxrE jZHoAi iVOPKl"
+        className="sc-eDvSVe sc-gKPRtg hYrGSV iBcMRb"
         data-testid="cartLink"
         href="/cart"
         onClick={[Function]}
@@ -74,7 +74,7 @@ Object {
            $
         </span>
         <div
-          className="sc-ipEyDJ dDMWcG"
+          className="sc-bqWxrE ktwTXe"
         />
         <svg
           fill="currentColor"
@@ -101,16 +101,16 @@ Object {
     </section>
   </header>,
   "1": <main
-    className="sc-bcXHqe hvEOqJ"
+    className="sc-bjfHbI iWCwjx"
   />,
   "2": <footer
-    className="sc-gswNZR jLMlFC"
+    className="sc-bcXHqe jAcUYq"
   >
     <section
-      className="sc-eDvSVe eyXHhA"
+      className="sc-hLBbgP iHshg"
     >
       <p>
-        © 2022 Crust & Co.
+        © 2024 Crust & Co.
       </p>
       <p>
         All rights reserved.
@@ -120,23 +120,23 @@ Object {
       </p>
     </section>
     <section
-      className="sc-dkrFOg jeskXE"
+      className="sc-gswNZR hqpSOe"
     >
       <a
-        className="sc-hLBbgP icTdNo"
+        className="sc-dkrFOg bkEmDM"
         href="https://github.com/SashaSpievakov"
       >
         GitHub
       </a>
       <a
-        className="sc-hLBbgP icTdNo"
+        className="sc-dkrFOg bkEmDM"
         href="https://www.google.com/maps/place/687+Yonge+St,+Toronto,+ON+M4Y+2B2/@43.6689719,-79.3870519,18z/data=!3m1!4b1!4m6!3m5!1s0x882b34ae07a20ea5:0xcb9f91518efcc2c1!8m2!3d43.6689704!4d-79.3860646!16s%2Fg%2F11nnkxs6c3"
         target="_blank"
       >
         687 Yonge St
       </a>
       <a
-        className="sc-hLBbgP icTdNo"
+        className="sc-dkrFOg bkEmDM"
         href="mailto:spievakov@gamil.com"
       >
         spievakov@gmail.com
