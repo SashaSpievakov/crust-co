@@ -6,43 +6,43 @@ exports[`Home Tests renders the Home page 1`] = `
   data-testid="homePage"
 >
   <section
-    class="sc-gKPRtg hhjIAx"
+    class="sc-kImNAt dCNWbc"
   >
     <section>
       <ul
-        class="sc-ftTHYK bcilT"
+        class="sc-iTFTee hMQjgY"
       >
         <li
           aria-current="true"
-          class="sc-pyfCe hHqZjT"
+          class="sc-iAEawV rqmHb"
           tabindex="-1"
         >
           All
         </li>
         <li
           aria-current="false"
-          class="sc-pyfCe jpmhfP"
+          class="sc-iAEawV hUGHqj"
           tabindex="0"
         >
           Meat
         </li>
         <li
           aria-current="false"
-          class="sc-pyfCe jpmhfP"
+          class="sc-iAEawV hUGHqj"
           tabindex="0"
         >
           Vegetarian
         </li>
         <li
           aria-current="false"
-          class="sc-pyfCe jpmhfP"
+          class="sc-iAEawV hUGHqj"
           tabindex="0"
         >
           Grill
         </li>
         <li
           aria-current="false"
-          class="sc-pyfCe jpmhfP"
+          class="sc-iAEawV hUGHqj"
           tabindex="0"
         >
           Spicy
@@ -50,14 +50,14 @@ exports[`Home Tests renders the Home page 1`] = `
       </ul>
     </section>
     <section
-      class="sc-jrcTuL dJlpZs"
+      class="sc-UpCWa dHOyAq"
     >
       <div
-        class="sc-kDvujY bBtfuD"
+        class="sc-jIILKH ShNFR"
         tabindex="0"
       >
         <svg
-          class="sc-csuSiG jHtScD"
+          class="sc-jNJNQp hvFtFa"
           data-testid="popupIcon"
           fill="currentColor"
           height="1em"
@@ -82,26 +82,26 @@ exports[`Home Tests renders the Home page 1`] = `
       </div>
       <section
         aria-hidden="true"
-        class="sc-eDWCr brNIBR"
+        class="sc-hlLBRy eNPgVv"
       >
         <ul
           aria-hidden="true"
           data-testid="popupList"
         >
           <li
-            class="sc-bqWxrE ajkGM"
+            class="sc-eKJbhj iuLHkr"
             tabindex="0"
           >
             rating
           </li>
           <li
-            class="sc-bqWxrE foQLWV"
+            class="sc-eKJbhj bpHbrS"
             tabindex="0"
           >
             price
           </li>
           <li
-            class="sc-bqWxrE foQLWV"
+            class="sc-eKJbhj bpHbrS"
             tabindex="0"
           >
             A to Z
@@ -111,18 +111,18 @@ exports[`Home Tests renders the Home page 1`] = `
     </section>
   </section>
   <section
-    class="sc-gKPRtg sc-iBYQkv hhjIAx nbBfx"
+    class="sc-kImNAt sc-hOzowv dCNWbc fKVefI"
   >
     <h2
-      class="sc-jSUZER cDmlDK"
+      class="sc-bTTELM bxlnJZ"
     >
       All Pizzas
     </h2>
     <section
-      class="sc-ksBlkl ha-DibX"
+      class="sc-fbYMXx jkjslO"
     >
       <svg
-        class="sc-hBxehG iQldjO"
+        class="sc-GhhNo caaOaY"
         data-testid="searchIcon"
         fill="currentColor"
         height="1em"
@@ -137,20 +137,20 @@ exports[`Home Tests renders the Home page 1`] = `
         />
       </svg>
       <input
-        class="sc-fnGiBr dRIjBi"
+        class="sc-fXqpFg ixFgiC"
         placeholder="Search..."
         value=""
       />
     </section>
   </section>
   <section
-    class="sc-cUEOzv cJcNer"
+    class="sc-gGvHcT fEkslm"
   >
     <article
-      class="sc-kMjNwy kQBYkb"
+      class="sc-iOeugr gEJccE"
     >
       <a
-        class="sc-ilhmMj jgDQgV"
+        class="sc-jfvxQR bWKwoj"
         href="/item/3"
       >
         <picture>
@@ -164,32 +164,32 @@ exports[`Home Tests renders the Home page 1`] = `
           />
           <img
             alt="Shrimp Pizza pizza"
-            class="sc-jIRcFI fkeTDo"
+            class="sc-eJDSGI hqHNQr"
             height="250"
             src="./assets/img/pizza3.png"
             width="250"
           />
         </picture>
         <h3
-          class="sc-hhOBVt cuARF"
+          class="sc-oZIhv gNyuoE"
         >
           Shrimp Pizza
         </h3>
       </a>
       <section
-        class="sc-ezOQGI klsHMq"
+        class="sc-cOxWqc hpfERk"
       >
         <ul>
           <li
             aria-current="true"
-            class="sc-bYMpWt gzdjND"
+            class="sc-AHaJN hzTerC"
             tabindex="0"
           >
             traditional
           </li>
           <li
             aria-current="false"
-            class="sc-bYMpWt ctPIdM"
+            class="sc-AHaJN euprUJ"
             tabindex="0"
           >
             thin
@@ -198,7 +198,7 @@ exports[`Home Tests renders the Home page 1`] = `
         <ul>
           <li
             aria-current="true"
-            class="sc-bYMpWt gzdjND"
+            class="sc-AHaJN hzTerC"
             tabindex="0"
           >
             12
@@ -206,7 +206,7 @@ exports[`Home Tests renders the Home page 1`] = `
           </li>
           <li
             aria-current="false"
-            class="sc-bYMpWt ctPIdM"
+            class="sc-AHaJN euprUJ"
             tabindex="0"
           >
             14
@@ -214,7 +214,7 @@ exports[`Home Tests renders the Home page 1`] = `
           </li>
           <li
             aria-current="false"
-            class="sc-bYMpWt ctPIdM"
+            class="sc-AHaJN euprUJ"
             tabindex="0"
           >
             16
@@ -223,19 +223,19 @@ exports[`Home Tests renders the Home page 1`] = `
         </ul>
       </section>
       <section
-        class="sc-gYbzsP KLKRp"
+        class="sc-hiDMwi iYWLhC"
       >
         <h3
-          class="sc-cCjUiG enJHzk"
+          class="sc-ehvNnt bVVxWG"
         >
           10
           $
         </h3>
         <button
-          class="sc-bjfHbI sc-dmctIk sc-fLcnxK dKotXH ikwRmO lgLYJY"
+          class="sc-hLBbgP sc-iBYQkv sc-pyfCe fGqcTx iDltE uzlJh"
         >
           <svg
-            class="sc-gikAfH bTUcpv"
+            class="sc-bCfvAP gqRgOl"
             fill="currentColor"
             height="1em"
             stroke="currentColor"
@@ -255,10 +255,10 @@ exports[`Home Tests renders the Home page 1`] = `
       </section>
     </article>
     <article
-      class="sc-kMjNwy kQBYkb"
+      class="sc-iOeugr gEJccE"
     >
       <a
-        class="sc-ilhmMj jgDQgV"
+        class="sc-jfvxQR bWKwoj"
         href="/item/2"
       >
         <picture>
@@ -272,25 +272,25 @@ exports[`Home Tests renders the Home page 1`] = `
           />
           <img
             alt="Pepperoni Pizza pizza"
-            class="sc-jIRcFI fkeTDo"
+            class="sc-eJDSGI hqHNQr"
             height="250"
             src="./assets/img/pizza2.png"
             width="250"
           />
         </picture>
         <h3
-          class="sc-hhOBVt cuARF"
+          class="sc-oZIhv gNyuoE"
         >
           Pepperoni Pizza
         </h3>
       </a>
       <section
-        class="sc-ezOQGI klsHMq"
+        class="sc-cOxWqc hpfERk"
       >
         <ul>
           <li
             aria-current="true"
-            class="sc-bYMpWt gzdjND"
+            class="sc-AHaJN hzTerC"
             tabindex="0"
           >
             traditional
@@ -299,7 +299,7 @@ exports[`Home Tests renders the Home page 1`] = `
         <ul>
           <li
             aria-current="true"
-            class="sc-bYMpWt gzdjND"
+            class="sc-AHaJN hzTerC"
             tabindex="0"
           >
             12
@@ -307,7 +307,7 @@ exports[`Home Tests renders the Home page 1`] = `
           </li>
           <li
             aria-current="false"
-            class="sc-bYMpWt ctPIdM"
+            class="sc-AHaJN euprUJ"
             tabindex="0"
           >
             14
@@ -316,19 +316,19 @@ exports[`Home Tests renders the Home page 1`] = `
         </ul>
       </section>
       <section
-        class="sc-gYbzsP KLKRp"
+        class="sc-hiDMwi iYWLhC"
       >
         <h3
-          class="sc-cCjUiG enJHzk"
+          class="sc-ehvNnt bVVxWG"
         >
           12
           $
         </h3>
         <button
-          class="sc-bjfHbI sc-dmctIk sc-fLcnxK dKotXH ikwRmO lgLYJY"
+          class="sc-hLBbgP sc-iBYQkv sc-pyfCe fGqcTx iDltE uzlJh"
         >
           <svg
-            class="sc-gikAfH bTUcpv"
+            class="sc-bCfvAP gqRgOl"
             fill="currentColor"
             height="1em"
             stroke="currentColor"
@@ -348,10 +348,10 @@ exports[`Home Tests renders the Home page 1`] = `
       </section>
     </article>
     <article
-      class="sc-kMjNwy kQBYkb"
+      class="sc-iOeugr gEJccE"
     >
       <a
-        class="sc-ilhmMj jgDQgV"
+        class="sc-jfvxQR bWKwoj"
         href="/item/6"
       >
         <picture>
@@ -365,32 +365,32 @@ exports[`Home Tests renders the Home page 1`] = `
           />
           <img
             alt="Diablo pizza"
-            class="sc-jIRcFI fkeTDo"
+            class="sc-eJDSGI hqHNQr"
             height="250"
             src="./assets/img/pizza6.png"
             width="250"
           />
         </picture>
         <h3
-          class="sc-hhOBVt cuARF"
+          class="sc-oZIhv gNyuoE"
         >
           Diablo
         </h3>
       </a>
       <section
-        class="sc-ezOQGI klsHMq"
+        class="sc-cOxWqc hpfERk"
       >
         <ul>
           <li
             aria-current="true"
-            class="sc-bYMpWt gzdjND"
+            class="sc-AHaJN hzTerC"
             tabindex="0"
           >
             traditional
           </li>
           <li
             aria-current="false"
-            class="sc-bYMpWt ctPIdM"
+            class="sc-AHaJN euprUJ"
             tabindex="0"
           >
             thin
@@ -399,7 +399,7 @@ exports[`Home Tests renders the Home page 1`] = `
         <ul>
           <li
             aria-current="true"
-            class="sc-bYMpWt gzdjND"
+            class="sc-AHaJN hzTerC"
             tabindex="0"
           >
             12
@@ -407,7 +407,7 @@ exports[`Home Tests renders the Home page 1`] = `
           </li>
           <li
             aria-current="false"
-            class="sc-bYMpWt ctPIdM"
+            class="sc-AHaJN euprUJ"
             tabindex="0"
           >
             16
@@ -416,19 +416,19 @@ exports[`Home Tests renders the Home page 1`] = `
         </ul>
       </section>
       <section
-        class="sc-gYbzsP KLKRp"
+        class="sc-hiDMwi iYWLhC"
       >
         <h3
-          class="sc-cCjUiG enJHzk"
+          class="sc-ehvNnt bVVxWG"
         >
           15
           $
         </h3>
         <button
-          class="sc-bjfHbI sc-dmctIk sc-fLcnxK dKotXH ikwRmO lgLYJY"
+          class="sc-hLBbgP sc-iBYQkv sc-pyfCe fGqcTx iDltE uzlJh"
         >
           <svg
-            class="sc-gikAfH bTUcpv"
+            class="sc-bCfvAP gqRgOl"
             fill="currentColor"
             height="1em"
             stroke="currentColor"

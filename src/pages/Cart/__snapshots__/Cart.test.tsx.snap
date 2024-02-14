@@ -21,17 +21,15 @@ Object {
       width="300"
     />,
     <a
-      className="sc-hLBbgP sc-eDvSVe fGqcTx bljQoe"
+      className="sc-hLBbgP sc-eDvSVe fGqcTx lhIsum"
       href="/"
       onClick={[Function]}
     >
-      <span>
-        Go Back
-      </span>
+      Go Back
     </a>,
   ],
   "props": Object {
-    "className": "sc-iJnaPW NRduA",
+    "className": "sc-dmctIk kKYKzz",
   },
   "type": "article",
 }
@@ -105,10 +103,10 @@ Object {
     </section>,
     <section>
       <article
-        className="sc-dmctIk jnyOtN"
+        className="sc-kgTSHT hAsYAG"
       >
         <div
-          className="sc-kgTSHT clovpX"
+          className="sc-fLcnxK hXKdzk"
         >
           <picture>
             <source
@@ -128,7 +126,7 @@ Object {
           </picture>
         </div>
         <section
-          className="sc-fLcnxK caYGyk"
+          className="sc-bBABsx eQgYPc"
         >
           <h3>
             Cheesburger Pizza
@@ -141,7 +139,7 @@ Object {
           </p>
         </section>
         <section
-          className="sc-bBABsx ldDbQj"
+          className="sc-iveFHk lePfuw"
         >
           <button
             aria-label="minus"
@@ -150,7 +148,7 @@ Object {
             onClick={[Function]}
           >
             <svg
-              className="sc-iveFHk dedqSy"
+              className="sc-cwSeag hTIaIl"
               fill="currentColor"
               height="1em"
               stroke="currentColor"
@@ -178,7 +176,7 @@ Object {
             onClick={[Function]}
           >
             <svg
-              className="sc-iveFHk dedqSy"
+              className="sc-cwSeag hTIaIl"
               fill="currentColor"
               height="1em"
               stroke="currentColor"
@@ -199,13 +197,13 @@ Object {
           </button>
         </section>
         <h3
-          className="sc-cwSeag jcMRxs"
+          className="sc-lllmON HjOCA"
         >
           91
           $
         </h3>
         <div
-          className="sc-lllmON etKjZe"
+          className="sc-iJnaPW iUmlfh"
         >
           <button
             aria-label="delete"
@@ -213,7 +211,7 @@ Object {
             onClick={[Function]}
           >
             <svg
-              className="sc-iveFHk dedqSy"
+              className="sc-cwSeag hTIaIl"
               fill="currentColor"
               height="1em"
               stroke="currentColor"
@@ -235,10 +233,10 @@ Object {
         </div>
       </article>
       <article
-        className="sc-dmctIk jnyOtN"
+        className="sc-kgTSHT hAsYAG"
       >
         <div
-          className="sc-kgTSHT clovpX"
+          className="sc-fLcnxK hXKdzk"
         >
           <picture>
             <source
@@ -258,7 +256,7 @@ Object {
           </picture>
         </div>
         <section
-          className="sc-fLcnxK caYGyk"
+          className="sc-bBABsx eQgYPc"
         >
           <h3>
             Pepperoni Pizza
@@ -271,7 +269,7 @@ Object {
           </p>
         </section>
         <section
-          className="sc-bBABsx ldDbQj"
+          className="sc-iveFHk lePfuw"
         >
           <button
             aria-label="minus"
@@ -280,7 +278,7 @@ Object {
             onClick={[Function]}
           >
             <svg
-              className="sc-iveFHk dedqSy"
+              className="sc-cwSeag hTIaIl"
               fill="currentColor"
               height="1em"
               stroke="currentColor"
@@ -308,7 +306,7 @@ Object {
             onClick={[Function]}
           >
             <svg
-              className="sc-iveFHk dedqSy"
+              className="sc-cwSeag hTIaIl"
               fill="currentColor"
               height="1em"
               stroke="currentColor"
@@ -329,13 +327,13 @@ Object {
           </button>
         </section>
         <h3
-          className="sc-cwSeag jcMRxs"
+          className="sc-lllmON HjOCA"
         >
           9
           $
         </h3>
         <div
-          className="sc-lllmON etKjZe"
+          className="sc-iJnaPW iUmlfh"
         >
           <button
             aria-label="delete"
@@ -343,7 +341,7 @@ Object {
             onClick={[Function]}
           >
             <svg
-              className="sc-iveFHk dedqSy"
+              className="sc-cwSeag hTIaIl"
               fill="currentColor"
               height="1em"
               stroke="currentColor"

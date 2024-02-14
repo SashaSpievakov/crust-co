@@ -20,12 +20,10 @@ Object {
       Our operator will give you a call in a few minutes
     </h4>
     <button
-      className="sc-hLBbgP sc-eDvSVe sc-eDWCr fGqcTx bljQoe bNCkfm"
+      className="sc-hLBbgP sc-eDvSVe sc-eDWCr fGqcTx lhIsum bNCkfm"
       onClick={[Function]}
     >
-      <span>
-        Close
-      </span>
+      Close
     </button>
   </article>,
 }

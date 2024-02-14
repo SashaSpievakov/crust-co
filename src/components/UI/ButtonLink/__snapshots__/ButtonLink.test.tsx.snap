@@ -3,12 +3,10 @@
 exports[`ButtonBackToHome Tests renders the ButtonBackToHome UI component 1`] = `
 Object {
   "children": Array [
-    <span>
-      Go Back
-    </span>,
+    "Go Back",
   ],
   "props": Object {
-    "className": "sc-bcXHqe sc-gswNZR glVyWT kfudRI",
+    "className": "sc-hLBbgP sc-eDvSVe fGqcTx lhIsum",
     "href": "/",
     "onClick": [Function],
     "target": undefined,

@@ -4,7 +4,7 @@ exports[`LogoSection Tests renders the LogoSection UI component 1`] = `
 Object {
   "children": Array [
     <section
-      className="sc-gswNZR coGVzz"
+      className="sc-GKYbw eJexPu"
     >
       <img
         alt="Pizza logo"
@@ -14,12 +14,12 @@ Object {
       />
       <div>
         <h1
-          className="sc-dkrFOg iZFYkr"
+          className="sc-gsGlKL kJACqs"
         >
           Crust & Co.
         </h1>
         <p
-          className="sc-hLBbgP fQwgQP"
+          className="sc-bWOGAC ggShfj"
         >
           the most delicious pizzas in town
         </p>
@@ -27,7 +27,7 @@ Object {
     </section>,
   ],
   "props": Object {
-    "className": "sc-bcXHqe eIKbVE",
+    "className": "sc-fcCDlF ktCmbd",
     "href": "/",
     "ishome": "home",
     "onClick": [Function],

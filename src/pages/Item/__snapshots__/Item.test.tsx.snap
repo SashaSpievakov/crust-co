@@ -2,7 +2,7 @@
 
 exports[`Item Tests renders the Item page 1`] = `
 <article
-  class="sc-bcXHqe sc-ftTHYK bZXhLi fYsEmF"
+  class="sc-bcXHqe sc-khsqcC bZXhLi hfqgck"
   data-testid="itemPage"
 >
   <picture>
@@ -16,36 +16,36 @@ exports[`Item Tests renders the Item page 1`] = `
     />
     <img
       alt="Chicken Curry pizza"
-      class="sc-pyfCe ckTqYX"
+      class="sc-hTBuwn duNTVM"
       height="450"
       src="../assets/img/pizza9.png"
       width="450"
     />
   </picture>
   <h2
-    class="sc-jrcTuL jZvvGW"
+    class="sc-jfTVlA fHmNLH"
   >
     Chicken Curry
   </h2>
   <p
-    class="sc-kDvujY esxdtt"
+    class="sc-gScZFl ivbLrd"
   >
     Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquid nisi aspernatur debitis quod suscipit, vitae placeat natus ipsum inventore esse rerum animi facere numquam saepe vero mollitia quibusdam at voluptates est commodi laudantium? Iste inventore quibusdam cupiditate nemo sint iusto minus nihil culpa! Sequi architecto nesciunt explicabo mollitia. Laboriosam, odio.
   </p>
   <section
-    class="sc-csuSiG gjzBId"
+    class="sc-cOxWqc gXOsNM"
   >
     <ul>
       <li
         aria-current="true"
-        class="sc-eDWCr izhotF"
+        class="sc-AHaJN hzTerC"
         tabindex="0"
       >
         traditional
       </li>
       <li
         aria-current="false"
-        class="sc-eDWCr ksHZVK"
+        class="sc-AHaJN euprUJ"
         tabindex="0"
       >
         thin
@@ -54,7 +54,7 @@ exports[`Item Tests renders the Item page 1`] = `
     <ul>
       <li
         aria-current="true"
-        class="sc-eDWCr izhotF"
+        class="sc-AHaJN hzTerC"
         tabindex="0"
       >
         12
@@ -62,7 +62,7 @@ exports[`Item Tests renders the Item page 1`] = `
       </li>
       <li
         aria-current="false"
-        class="sc-eDWCr ksHZVK"
+        class="sc-AHaJN euprUJ"
         tabindex="0"
       >
         14
@@ -70,7 +70,7 @@ exports[`Item Tests renders the Item page 1`] = `
       </li>
       <li
         aria-current="false"
-        class="sc-eDWCr ksHZVK"
+        class="sc-AHaJN euprUJ"
         tabindex="0"
       >
         16
@@ -79,16 +79,16 @@ exports[`Item Tests renders the Item page 1`] = `
     </ul>
   </section>
   <h3
-    class="sc-ipEyDJ kdoVAs"
+    class="sc-lbVpMG cnpKEl"
   >
     14
     $
   </h3>
   <button
-    class="sc-bqWxrE sc-fEXmlR sc-idXgbr dKnlDp iJRlym hDVZFP"
+    class="sc-hLBbgP sc-iBYQkv sc-pyfCe fGqcTx iDltE eflScM"
   >
     <svg
-      class="sc-bBABsx iIMNKJ"
+      class="sc-bCfvAP gqRgOl"
       fill="currentColor"
       height="1em"
       stroke="currentColor"
@@ -106,12 +106,10 @@ exports[`Item Tests renders the Item page 1`] = `
     </span>
   </button>
   <a
-    class="sc-bqWxrE sc-ksBlkl dKnlDp htsvHw"
+    class="sc-hLBbgP sc-eDvSVe fGqcTx lhIsum"
     href="/"
   >
-    <span>
-      Go Back
-    </span>
+    Go Back
   </a>
 </article>
 `;

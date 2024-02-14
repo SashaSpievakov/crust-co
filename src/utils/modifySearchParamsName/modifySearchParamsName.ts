@@ -1,4 +1,4 @@
-const modifySearchParamsName = (param: string) => {
+export const modifySearchParamsName = (param: string) => {
   const trimmedParam = param.trim();
 
   if (!trimmedParam) return '';
@@ -6,7 +6,6 @@ const modifySearchParamsName = (param: string) => {
   if (trimmedParam === 'A to Z') {
     return 'name&order=asc';
   }
+
   return `${trimmedParam}&order=desc`;
 };
-
-export default modifySearchParamsName;

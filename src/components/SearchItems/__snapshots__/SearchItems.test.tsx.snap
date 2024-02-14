@@ -4,7 +4,7 @@ exports[`SearchItems Tests renders the SearchItems component 1`] = `
 Object {
   "children": Array [
     <svg
-      className="sc-gswNZR eQOVyb"
+      className="sc-GhhNo caaOaY"
       data-testid="searchIcon"
       fill="currentColor"
       height="1em"
@@ -25,14 +25,14 @@ Object {
       />
     </svg>,
     <input
-      className="sc-dkrFOg iebHbn"
+      className="sc-fXqpFg ixFgiC"
       onChange={[Function]}
       placeholder="Search..."
       value=""
     />,
   ],
   "props": Object {
-    "className": "sc-bcXHqe zqhWb",
+    "className": "sc-fbYMXx jkjslO",
   },
   "type": "section",
 }

@@ -11,7 +11,7 @@ import { IPizzaItem } from '../../models/IPizzaItem';
 import pizzasAPI from '../../services/PizzasService';
 import { selectCategory } from '../../store/slices/category/selectors/selectCategory';
 import { selectSort } from '../../store/slices/sort/selectors/selectSort';
-import modifySearchParamsName from '../../utils/modifySearchParamsName/modifySearchParamsName';
+import { modifySearchParamsName } from '../../utils/modifySearchParamsName/modifySearchParamsName';
 import { Block, Title, Top } from './Home.styled';
 
 export const sortNamesArr: string[] = ['rating', 'price', 'A to Z'];
