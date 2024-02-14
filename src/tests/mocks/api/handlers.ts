@@ -4,13 +4,13 @@ import { mockItem, mockItems } from '../mockData/mockData';
 
 const handlers = [
   rest.get(
-    'https://6344adb1dcae733e8fe3067a.mockapi.io/pizza-items/9',
+    `${process.env.REACT_APP_API_URL}/pizza-items/9`,
     (req, res, ctx) => {
       return res(ctx.json(mockItem), ctx.status(200), ctx.delay(20));
     },
   ),
   rest.get(
-    'https://6344adb1dcae733e8fe3067a.mockapi.io/pizza-items',
+    `${process.env.REACT_APP_API_URL}/pizza-items`,
     async (req, res, ctx) => {
       const category = req.url.searchParams.get('category');
       if (category) {

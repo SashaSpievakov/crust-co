@@ -5,13 +5,13 @@ import { IPizzaItem } from '../models/IPizzaItem';
 const itemAPI = createApi({
   reducerPath: 'itemAPI',
   baseQuery: fetchBaseQuery({
-    baseUrl: 'https://6344adb1dcae733e8fe3067a.mockapi.io/',
+    baseUrl: process.env.REACT_APP_API_URL,
   }),
   tagTypes: ['Item'],
   endpoints: (build) => ({
     fetchItem: build.query<IPizzaItem, string>({
       query: (id) => ({
-        url: `pizza-items/${id}`,
+        url: `/pizza-items/${id}`,
       }),
       providesTags: () => ['Item'],
     }),
