@@ -151,7 +151,7 @@ exports[`Home Tests renders the Home page 1`] = `
     >
       <a
         class="sc-jfvxQR bWKwoj"
-        href="/item/3"
+        href="/pizza/3"
       >
         <picture>
           <source
@@ -259,7 +259,7 @@ exports[`Home Tests renders the Home page 1`] = `
     >
       <a
         class="sc-jfvxQR bWKwoj"
-        href="/item/2"
+        href="/pizza/2"
       >
         <picture>
           <source
@@ -352,7 +352,7 @@ exports[`Home Tests renders the Home page 1`] = `
     >
       <a
         class="sc-jfvxQR bWKwoj"
-        href="/item/6"
+        href="/pizza/6"
       >
         <picture>
           <source
