@@ -10,22 +10,26 @@ import ProductsContainer from './ProductsContainer';
 describe('ProductsContainer Tests', () => {
   test('renders the ProductsContainer component', () => {
     const snapshot = rendererWithAllProviders(
-      <ProductsContainer isLoading={false} items={mockItems} />,
+      <ProductsContainer isLoading={false} items={mockItems} searchValue="" />,
     );
     expect(snapshot).toMatchSnapshot();
   });
 
   test('renders the ProductsContainer component with not matching search value', () => {
     const snapshot = rendererWithAllProviders(
-      <ProductsContainer isLoading={false} items={mockItems} />,
-      '/',
-      { searchValue: { value: 'testing value' } },
+      <ProductsContainer
+        isLoading={false}
+        items={mockItems}
+        searchValue="testing value"
+      />,
     );
     expect(snapshot).toMatchSnapshot();
   });
 
   test('renders the ProductsContainer component skeletons', () => {
-    renderWithProviders(<ProductsContainer isLoading items={mockItems} />);
+    renderWithProviders(
+      <ProductsContainer isLoading items={mockItems} searchValue="" />,
+    );
     const skeletons = screen.getAllByRole('presentation');
 
     expect(skeletons[0]).toBeInTheDocument();
@@ -34,10 +38,11 @@ describe('ProductsContainer Tests', () => {
 
   test('renders items with a search value', () => {
     renderWithProviders(
-      <ProductsContainer isLoading={false} items={mockItems} />,
-      false,
-      '/',
-      { searchValue: { value: '  Shrimp piZza   ' } },
+      <ProductsContainer
+        isLoading={false}
+        items={mockItems}
+        searchValue="  Shrimp piZza   "
+      />,
     );
     const heading = screen.getByRole('heading', { name: /shrimp pizza/i });
 

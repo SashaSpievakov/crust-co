@@ -118,7 +118,7 @@ exports[`Home Tests renders the Home page 1`] = `
     >
       All Pizzas
     </h2>
-    <section
+    <div
       class="sc-fbYMXx jkjslO"
     >
       <svg
@@ -141,7 +141,7 @@ exports[`Home Tests renders the Home page 1`] = `
         placeholder="Search..."
         value=""
       />
-    </section>
+    </div>
   </section>
   <section
     class="sc-gGvHcT fEkslm"
