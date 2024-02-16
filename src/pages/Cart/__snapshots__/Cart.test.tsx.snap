@@ -29,7 +29,7 @@ Object {
     </a>,
   ],
   "props": Object {
-    "className": "sc-dmctIk kKYKzz",
+    "className": "sc-gikAfH jgwSHN",
   },
   "type": "article",
 }
@@ -39,13 +39,13 @@ exports[`Cart Tests renders the Cart page with items 1`] = `
 Object {
   "children": Array [
     <section
-      className="sc-ezOQGI bKdKOB"
+      className="sc-cjibBx eMsni"
     >
       <h2
-        className="sc-bYMpWt drwAsM"
+        className="sc-jcMfQk kyZZBh"
       >
         <svg
-          className="sc-kMjNwy cepSNe"
+          className="sc-cabOPr hrQlNv"
           fill="currentColor"
           height="1em"
           stroke="currentColor"
@@ -66,13 +66,13 @@ Object {
         Cart
       </h2>
       <section
-        className="sc-ilhmMj cfwoNL"
+        className="sc-iTFTee bDKgHL"
         onClick={[Function]}
         onKeyDown={[Function]}
         tabIndex={0}
       >
         <svg
-          className="sc-jIRcFI mYRl"
+          className="sc-iAEawV fqfnEp"
           fill="currentColor"
           height="1em"
           stroke="currentColor"
@@ -103,10 +103,10 @@ Object {
     </section>,
     <section>
       <article
-        className="sc-kgTSHT hAsYAG"
+        className="sc-ezOQGI bqqjuW"
       >
         <div
-          className="sc-fLcnxK hXKdzk"
+          className="sc-bYMpWt bnFYVZ"
         >
           <picture>
             <source
@@ -126,7 +126,7 @@ Object {
           </picture>
         </div>
         <section
-          className="sc-bBABsx eQgYPc"
+          className="sc-kMjNwy gJsxfE"
         >
           <h3>
             Cheesburger Pizza
@@ -139,7 +139,7 @@ Object {
           </p>
         </section>
         <section
-          className="sc-iveFHk lePfuw"
+          className="sc-ilhmMj fPuPTA"
         >
           <button
             aria-label="minus"
@@ -148,7 +148,7 @@ Object {
             onClick={[Function]}
           >
             <svg
-              className="sc-cwSeag hTIaIl"
+              className="sc-jIRcFI kihpWA"
               fill="currentColor"
               height="1em"
               stroke="currentColor"
@@ -176,7 +176,7 @@ Object {
             onClick={[Function]}
           >
             <svg
-              className="sc-cwSeag hTIaIl"
+              className="sc-jIRcFI kihpWA"
               fill="currentColor"
               height="1em"
               stroke="currentColor"
@@ -197,13 +197,13 @@ Object {
           </button>
         </section>
         <h3
-          className="sc-lllmON HjOCA"
+          className="sc-hhOBVt kgouOf"
         >
           91
           $
         </h3>
         <div
-          className="sc-iJnaPW iUmlfh"
+          className="sc-gYbzsP kNflxz"
         >
           <button
             aria-label="delete"
@@ -211,7 +211,7 @@ Object {
             onClick={[Function]}
           >
             <svg
-              className="sc-cwSeag hTIaIl"
+              className="sc-jIRcFI kihpWA"
               fill="currentColor"
               height="1em"
               stroke="currentColor"
@@ -233,10 +233,10 @@ Object {
         </div>
       </article>
       <article
-        className="sc-kgTSHT hAsYAG"
+        className="sc-ezOQGI bqqjuW"
       >
         <div
-          className="sc-fLcnxK hXKdzk"
+          className="sc-bYMpWt bnFYVZ"
         >
           <picture>
             <source
@@ -256,7 +256,7 @@ Object {
           </picture>
         </div>
         <section
-          className="sc-bBABsx eQgYPc"
+          className="sc-kMjNwy gJsxfE"
         >
           <h3>
             Pepperoni Pizza
@@ -269,7 +269,7 @@ Object {
           </p>
         </section>
         <section
-          className="sc-iveFHk lePfuw"
+          className="sc-ilhmMj fPuPTA"
         >
           <button
             aria-label="minus"
@@ -278,7 +278,7 @@ Object {
             onClick={[Function]}
           >
             <svg
-              className="sc-cwSeag hTIaIl"
+              className="sc-jIRcFI kihpWA"
               fill="currentColor"
               height="1em"
               stroke="currentColor"
@@ -306,7 +306,7 @@ Object {
             onClick={[Function]}
           >
             <svg
-              className="sc-cwSeag hTIaIl"
+              className="sc-jIRcFI kihpWA"
               fill="currentColor"
               height="1em"
               stroke="currentColor"
@@ -327,13 +327,13 @@ Object {
           </button>
         </section>
         <h3
-          className="sc-lllmON HjOCA"
+          className="sc-hhOBVt kgouOf"
         >
           9
           $
         </h3>
         <div
-          className="sc-iJnaPW iUmlfh"
+          className="sc-gYbzsP kNflxz"
         >
           <button
             aria-label="delete"
@@ -341,7 +341,7 @@ Object {
             onClick={[Function]}
           >
             <svg
-              className="sc-cwSeag hTIaIl"
+              className="sc-jIRcFI kihpWA"
               fill="currentColor"
               height="1em"
               stroke="currentColor"
@@ -364,10 +364,10 @@ Object {
       </article>
     </section>,
     <section
-      className="sc-hhOBVt gcMLBl"
+      className="sc-eeMvmM gZuIyJ"
     >
       <section
-        className="sc-gYbzsP hglxNI"
+        className="sc-cUEOzv jEoHkZ"
       >
         <span>
            
@@ -392,7 +392,7 @@ Object {
         </span>
       </section>
       <section
-        className="sc-cCjUiG jiBHHp"
+        className="sc-jOiSOi hJIfdV"
       >
         <a
           className="sc-hLBbgP sc-iBYQkv sc-pyfCe sc-jrcTuL fGqcTx iDltE uzlJh hoiVoq"
@@ -400,7 +400,7 @@ Object {
           onClick={[Function]}
         >
           <svg
-            className="sc-cjibBx dmlKfD"
+            className="sc-dPWrhe bcZsET"
             fill="currentColor"
             height="1em"
             stroke="currentColor"
@@ -435,7 +435,7 @@ Object {
     </section>,
   ],
   "props": Object {
-    "className": "sc-bcXHqe sc-gikAfH bZXhLi gOzQuz",
+    "className": "sc-bcXHqe sc-cCjUiG bZXhLi bvyhPU",
   },
   "type": "article",
 }

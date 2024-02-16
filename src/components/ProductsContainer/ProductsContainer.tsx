@@ -1,17 +1,19 @@
-import { useAppSelector } from '../../hooks/reduxHooks';
 import { IPizzaItem } from '../../models/IPizzaItem';
-import { selectSearchValue } from '../../store/slices/search/selectors/selectSearchValue';
 import ItemCard from '../ItemCard/ItemCard';
-import { SkeletonLoader } from '../UI/SkeletonLoader';
+import { SkeletonLoader } from '../UI';
 import { SearchError, Section } from './ProductsContainer.styled';
 
 interface ProductsContainerProps {
   isLoading: boolean;
   items: IPizzaItem[];
+  searchValue: string;
 }
 
-const ProductsContainer = ({ isLoading, items }: ProductsContainerProps) => {
-  const searchValue = useAppSelector(selectSearchValue);
+const ProductsContainer = ({
+  isLoading,
+  items,
+  searchValue,
+}: ProductsContainerProps) => {
   const filteredItems = items.filter((item: IPizzaItem) =>
     item.name.toLowerCase().includes(searchValue.trim().toLowerCase()),
   );

@@ -1,5 +1,5 @@
 import cartImg from '../../assets/img/empty-cart.png';
-import { ButtonLink } from '../UI/ButtonLink';
+import { ButtonLink } from '../UI';
 import { Article } from './CartEmpty.styled';
 
 const CartEmpty = () => {

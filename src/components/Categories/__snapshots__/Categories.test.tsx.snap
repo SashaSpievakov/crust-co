@@ -4,11 +4,11 @@ exports[`Categories Tests renders the Categories component 1`] = `
 Object {
   "children": Array [
     <ul
-      className="sc-iTFTee hMQjgY"
+      className="sc-AHaJN dvTOlD"
     >
       <li
         aria-current={true}
-        className="sc-iAEawV rqmHb"
+        className="sc-khsqcC iwbZoX"
         onClick={[Function]}
         onKeyDown={[Function]}
         tabIndex={-1}
@@ -17,7 +17,7 @@ Object {
       </li>
       <li
         aria-current={false}
-        className="sc-iAEawV hUGHqj"
+        className="sc-khsqcC kiqOPb"
         onClick={[Function]}
         onKeyDown={[Function]}
         tabIndex={0}
@@ -26,7 +26,7 @@ Object {
       </li>
       <li
         aria-current={false}
-        className="sc-iAEawV hUGHqj"
+        className="sc-khsqcC kiqOPb"
         onClick={[Function]}
         onKeyDown={[Function]}
         tabIndex={0}
@@ -35,7 +35,7 @@ Object {
       </li>
       <li
         aria-current={false}
-        className="sc-iAEawV hUGHqj"
+        className="sc-khsqcC kiqOPb"
         onClick={[Function]}
         onKeyDown={[Function]}
         tabIndex={0}
@@ -44,7 +44,7 @@ Object {
       </li>
       <li
         aria-current={false}
-        className="sc-iAEawV hUGHqj"
+        className="sc-khsqcC kiqOPb"
         onClick={[Function]}
         onKeyDown={[Function]}
         tabIndex={0}

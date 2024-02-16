@@ -1,7 +1,7 @@
 import { BsSearch, BsXLg } from 'react-icons/bs';
 import styled from 'styled-components';
 
-const Section = styled.section`
+const Wrapper = styled.div`
   position: relative;
 `;
 
@@ -18,11 +18,11 @@ const SearchIcon = styled(BsSearch)`
   }
 `;
 
-const Input = styled.input`
+const Input = styled.input<{ width: string; expandedWidth?: string }>`
   font-size: 16px;
   color: ${({ theme }) => theme.colors.third};
   height: 40px;
-  width: 240px;
+  width: ${({ width }) => width};
   padding: 10px 33px 10px 50px;
   background-color: ${({ theme }) => theme.colors.gray};
   border: 1px solid rgba(0, 0, 0, 0.1);
@@ -30,7 +30,7 @@ const Input = styled.input`
   transition: 0.3s;
 
   &:focus {
-    width: 300px;
+    width: ${({ width, expandedWidth }) => expandedWidth || width};
     border: 1px solid rgba(0, 0, 0, 0.3);
   }
 
@@ -75,4 +75,4 @@ const Cross = styled(BsXLg)`
   }
 `;
 
-export { Cross, Input, SearchIcon, Section };
+export { Cross, Input, SearchIcon, Wrapper };

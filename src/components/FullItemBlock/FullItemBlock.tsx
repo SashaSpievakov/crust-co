@@ -3,7 +3,7 @@ import { useState } from 'react';
 import { IPizzaItem } from '../../models/IPizzaItem';
 import ItemsCountHandler from '../ItemsCountHandler/ItemsCountHandler';
 import Selector from '../Selector/Selector';
-import { ButtonLink } from '../UI/ButtonLink';
+import { ButtonLink } from '../UI';
 import { Image, Item, Paragraph, Price, Title } from './FullItemBlock.styled';
 
 interface FullItemProps {
