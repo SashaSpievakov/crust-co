@@ -1,6 +1,6 @@
 import { IPizzaItem } from '../../models/IPizzaItem';
 import ItemCard from '../ItemCard/ItemCard';
-import { SkeletonLoader } from '../UI/SkeletonLoader';
+import { SkeletonLoader } from '../UI';
 import { SearchError, Section } from './ProductsContainer.styled';
 
 interface ProductsContainerProps {

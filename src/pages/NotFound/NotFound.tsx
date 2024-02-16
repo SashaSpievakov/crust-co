@@ -1,6 +1,6 @@
 import { ErrorParagraph } from 'src/styles/Base.styled';
 
-import { ButtonLink } from '../../components/UI/ButtonLink';
+import { ButtonLink } from '../../components/UI';
 import { Article, Title } from './NotFound.styled';
 
 const NotFound = () => {

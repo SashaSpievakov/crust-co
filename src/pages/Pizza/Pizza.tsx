@@ -3,7 +3,7 @@ import { useParams } from 'react-router-dom';
 import ErrorRequest from 'src/components/ErrorRequest/ErrorRequest';
 
 import FullItemBlock from '../../components/FullItemBlock/FullItemBlock';
-import Loading from '../../components/UI/Loading/Loading';
+import { Loading } from '../../components/UI';
 import itemAPI from '../../services/ItemService';
 
 export const Pizza = () => {

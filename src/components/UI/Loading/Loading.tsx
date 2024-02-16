@@ -1,6 +1,8 @@
+import { FunctionComponent } from 'react';
+
 import { Article, Circle, Loader } from './Loading.styled';
 
-const Loading = () => {
+export const Loading: FunctionComponent = () => {
   return (
     <Article>
       <Loader viewBox="0 0 50 50">
@@ -9,5 +11,3 @@ const Loading = () => {
     </Article>
   );
 };
-
-export default Loading;

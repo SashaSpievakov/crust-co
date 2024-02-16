@@ -1,4 +1,4 @@
-import { ReactNode } from 'react';
+import { FunctionComponent, ReactNode } from 'react';
 import { Link } from 'react-router-dom';
 
 import { ButtonBack } from '../../../styles/Buttons.styled';
@@ -8,7 +8,10 @@ interface ButtonLinkProps {
   children: ReactNode;
 }
 
-export const ButtonLink = ({ link, children }: ButtonLinkProps) => {
+export const ButtonLink: FunctionComponent<ButtonLinkProps> = ({
+  link,
+  children,
+}) => {
   return (
     <ButtonBack to={link} as={Link}>
       {children}
