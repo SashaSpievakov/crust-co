@@ -4,13 +4,11 @@ import { Container } from 'src/styles/Base.styled';
 
 import Categories from '../../components/Categories/Categories';
 import ProductsContainer from '../../components/ProductsContainer/ProductsContainer';
-import Sort from '../../components/Sort/Sort';
-import { SearchItems } from '../../components/UI';
+import { DropdownSelect, SearchItems } from '../../components/UI';
 import { useAppSelector } from '../../hooks/reduxHooks';
 import { IPizzaItem } from '../../models/IPizzaItem';
 import { pizzasAPI } from '../../services';
 import { selectCategory } from '../../store/slices/category/selectors/selectCategory';
-import { selectSort } from '../../store/slices/sort/selectors/selectSort';
 import { modifySearchParamsName } from '../../utils/modifySearchParamsName';
 import { Block, Title, Top } from './Home.styled';
 
@@ -19,8 +17,8 @@ export const sortNamesArr: string[] = ['rating', 'price', 'A to Z'];
 const Home = () => {
   const [pizzas, setPizzas] = useState<IPizzaItem[]>([]);
   const [searchValue, setSearchValue] = useState<string>('');
+  const [activeSort, setActiveSort] = useState<number>(0);
   const activeCategory = useAppSelector(selectCategory);
-  const activeSort = useAppSelector(selectSort);
 
   const sortSearchParam = modifySearchParamsName(sortNamesArr[activeSort]);
   const { data, isSuccess, isError, isLoading } = pizzasAPI.useFetchPizzasQuery(
@@ -40,6 +38,10 @@ const Home = () => {
     }
   }, [activeCategory, sortSearchParam, data, isSuccess]);
 
+  const handleSortSelect = (index: number): void => {
+    setActiveSort(index);
+  };
+
   const onChangeSearch = (e: ChangeEvent<HTMLInputElement>): void => {
     setSearchValue(e.target.value);
   };
@@ -54,7 +56,11 @@ const Home = () => {
     <Container data-testid="homePage">
       <Top>
         <Categories />
-        <Sort sortNamesArr={sortNamesArr} />
+        <DropdownSelect
+          chosenValue={sortNamesArr[activeSort]}
+          sortNamesArr={sortNamesArr}
+          onSelect={handleSortSelect}
+        />
       </Top>
       <Block>
         <Title>All Pizzas</Title>

@@ -7,12 +7,10 @@ import {
 import { itemAPI, pizzasAPI } from '../services';
 import cart from './slices/cart/reducer/cartReducer';
 import categorySlice from './slices/category/reducer/categoryReducer';
-import sortSlice from './slices/sort/reducer/sortReducer';
 import theme from './slices/theme/reducer/themeReducer';
 
 const rootReducer = combineReducers({
   activeCategory: categorySlice,
-  activeSort: sortSlice,
   theme,
   cart,
   [itemAPI.reducerPath]: itemAPI.reducer,
