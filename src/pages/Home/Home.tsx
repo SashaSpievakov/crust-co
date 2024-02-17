@@ -3,14 +3,12 @@ import { useSearchParams } from 'react-router-dom';
 import ErrorRequest from 'src/components/ErrorRequest/ErrorRequest';
 import { Container } from 'src/styles/Base.styled';
 
-import Categories from '../../components/Categories/Categories';
 import ProductsContainer from '../../components/ProductsContainer/ProductsContainer';
 import { DropdownSelect, SearchItems } from '../../components/UI';
-import { useAppSelector } from '../../hooks/reduxHooks';
 import { IPizzaItem } from '../../models/IPizzaItem';
 import { pizzasAPI } from '../../services';
-import { selectCategory } from '../../store/slices/category/selectors/selectCategory';
 import { modifySearchParamsName } from '../../utils/modifySearchParamsName';
+import { Categories } from './Categories';
 import { Block, Title, Top } from './Home.styled';
 
 export const sortNamesArr: string[] = ['rating', 'price', 'A to Z'];
@@ -22,7 +20,9 @@ const Home = () => {
   const [activeSort, setActiveSort] = useState<number>(
     parseInt(searchParams.get('sortBy') || '0', 10) || 0,
   );
-  const activeCategory = useAppSelector(selectCategory);
+  const [activeCategory, setActiveCategory] = useState<number>(
+    parseInt(searchParams.get('category') || '0', 10) || 0,
+  );
 
   const sortSearchParam = modifySearchParamsName(sortNamesArr[activeSort]);
   const { data, isSuccess, isError, isLoading } = pizzasAPI.useFetchPizzasQuery(
@@ -44,7 +44,18 @@ const Home = () => {
 
   const handleSortSelect = (index: number): void => {
     setActiveSort(index);
-    setSearchParams({ sortBy: index.toString() });
+    setSearchParams({
+      sortBy: index.toString(),
+      category: activeCategory.toString(),
+    });
+  };
+
+  const handleCategorySelect = (index: number): void => {
+    setActiveCategory(index);
+    setSearchParams({
+      category: index.toString(),
+      sortBy: activeSort.toString(),
+    });
   };
 
   const onChangeSearch = (e: ChangeEvent<HTMLInputElement>): void => {
@@ -60,7 +71,10 @@ const Home = () => {
   ) : (
     <Container data-testid="homePage">
       <Top>
-        <Categories />
+        <Categories
+          activeCategory={activeCategory}
+          onSelect={handleCategorySelect}
+        />
         <DropdownSelect
           chosenValue={sortNamesArr[activeSort]}
           sortNamesArr={sortNamesArr}

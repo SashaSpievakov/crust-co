@@ -6,11 +6,9 @@ import {
 
 import { itemAPI, pizzasAPI } from '../services';
 import cart from './slices/cart/reducer/cartReducer';
-import categorySlice from './slices/category/reducer/categoryReducer';
 import theme from './slices/theme/reducer/themeReducer';
 
 const rootReducer = combineReducers({
-  activeCategory: categorySlice,
   theme,
   cart,
   [itemAPI.reducerPath]: itemAPI.reducer,

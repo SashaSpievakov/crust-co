@@ -2,7 +2,7 @@
 
 exports[`Pizza Page Tests renders the Pizza page 1`] = `
 <article
-  class="sc-bcXHqe sc-fbYMXx bZXhLi hZSvIl"
+  class="sc-bcXHqe sc-gGvHcT bZXhLi jHewLw"
   data-testid="itemPage"
 >
   <picture>
@@ -16,36 +16,36 @@ exports[`Pizza Page Tests renders the Pizza page 1`] = `
     />
     <img
       alt="Chicken Curry pizza"
-      class="sc-GhhNo dzmXqM"
+      class="sc-ckEbSK cfsLkV"
       height="450"
       src="../assets/img/pizza9.png"
       width="450"
     />
   </picture>
   <h2
-    class="sc-fXqpFg bMoOTe"
+    class="sc-fbYMXx duHjFQ"
   >
     Chicken Curry
   </h2>
   <p
-    class="sc-dwnOUR gYzojb"
+    class="sc-GhhNo buyqOM"
   >
     Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquid nisi aspernatur debitis quod suscipit, vitae placeat natus ipsum inventore esse rerum animi facere numquam saepe vero mollitia quibusdam at voluptates est commodi laudantium? Iste inventore quibusdam cupiditate nemo sint iusto minus nihil culpa! Sequi architecto nesciunt explicabo mollitia. Laboriosam, odio.
   </p>
   <section
-    class="sc-gGvHcT DWbJE"
+    class="sc-ehvNnt DELCS"
   >
     <ul>
       <li
         aria-current="true"
-        class="sc-ckEbSK hSXaaR"
+        class="sc-laZRCg btIfIf"
         tabindex="0"
       >
         traditional
       </li>
       <li
         aria-current="false"
-        class="sc-ckEbSK fbgxe"
+        class="sc-laZRCg iWnZCM"
         tabindex="0"
       >
         thin
@@ -54,7 +54,7 @@ exports[`Pizza Page Tests renders the Pizza page 1`] = `
     <ul>
       <li
         aria-current="true"
-        class="sc-ckEbSK hSXaaR"
+        class="sc-laZRCg btIfIf"
         tabindex="0"
       >
         12
@@ -62,7 +62,7 @@ exports[`Pizza Page Tests renders the Pizza page 1`] = `
       </li>
       <li
         aria-current="false"
-        class="sc-ckEbSK fbgxe"
+        class="sc-laZRCg iWnZCM"
         tabindex="0"
       >
         14
@@ -70,7 +70,7 @@ exports[`Pizza Page Tests renders the Pizza page 1`] = `
       </li>
       <li
         aria-current="false"
-        class="sc-ckEbSK fbgxe"
+        class="sc-laZRCg iWnZCM"
         tabindex="0"
       >
         16
@@ -79,7 +79,7 @@ exports[`Pizza Page Tests renders the Pizza page 1`] = `
     </ul>
   </section>
   <h3
-    class="sc-UpCWa dLNuKH"
+    class="sc-fXqpFg dfwxlZ"
   >
     14
     $
@@ -88,7 +88,7 @@ exports[`Pizza Page Tests renders the Pizza page 1`] = `
     class="sc-hLBbgP sc-iBYQkv sc-pyfCe fGqcTx iDltE eflScM"
   >
     <svg
-      class="sc-laZRCg ekmfhU"
+      class="sc-hiDMwi hTdBHz"
       fill="currentColor"
       height="1em"
       stroke="currentColor"
