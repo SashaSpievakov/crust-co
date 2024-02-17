@@ -4,7 +4,7 @@ import { screen } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
 
 import { ISelector } from '../../models/ISelector';
-import itemAPI from '../../services/ItemService';
+import { itemAPI } from '../../services';
 import { setupStore } from '../../store/store';
 import rendererWithAllProviders from '../../tests/helpers/rendererWithProviders';
 import renderWithProviders from '../../tests/helpers/renderWithProviders';

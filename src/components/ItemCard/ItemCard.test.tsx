@@ -3,7 +3,7 @@ import '@testing-library/jest-dom';
 import { screen } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
 
-import itemAPI from '../../services/ItemService';
+import { itemAPI } from '../../services';
 import { setupStore } from '../../store/store';
 import rendererWithProviders from '../../tests/helpers/rendererWithProviders';
 import renderWithProviders from '../../tests/helpers/renderWithProviders';

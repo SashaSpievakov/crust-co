@@ -8,7 +8,7 @@ import Sort from '../../components/Sort/Sort';
 import { SearchItems } from '../../components/UI';
 import { useAppSelector } from '../../hooks/reduxHooks';
 import { IPizzaItem } from '../../models/IPizzaItem';
-import pizzasAPI from '../../services/PizzasService';
+import { pizzasAPI } from '../../services';
 import { selectCategory } from '../../store/slices/category/selectors/selectCategory';
 import { selectSort } from '../../store/slices/sort/selectors/selectSort';
 import { modifySearchParamsName } from '../../utils/modifySearchParamsName';
