@@ -4,7 +4,7 @@ import ErrorRequest from 'src/components/ErrorRequest/ErrorRequest';
 
 import FullItemBlock from '../../components/FullItemBlock/FullItemBlock';
 import { Loading } from '../../components/UI';
-import itemAPI from '../../services/ItemService';
+import { itemAPI } from '../../services';
 
 export const Pizza = () => {
   const { id } = useParams();

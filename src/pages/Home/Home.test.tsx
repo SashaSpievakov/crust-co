@@ -3,7 +3,7 @@ import '@testing-library/jest-dom';
 import { screen } from '@testing-library/react';
 import { rest } from 'msw';
 
-import pizzasAPI from '../../services/PizzasService';
+import { pizzasAPI } from '../../services';
 import { setupStore } from '../../store/store';
 import renderWithProviders from '../../tests/helpers/renderWithProviders';
 import server from '../../tests/mocks/api/server';

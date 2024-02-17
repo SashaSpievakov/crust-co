@@ -7,7 +7,7 @@ interface IFetchItems {
   sortSearchParam: string;
 }
 
-const pizzasAPI = createApi({
+export const pizzasAPI = createApi({
   reducerPath: 'pizzasAPI',
   baseQuery: fetchBaseQuery({
     baseUrl: `${process.env.REACT_APP_API_URL}/api`,
@@ -26,5 +26,3 @@ const pizzasAPI = createApi({
     }),
   }),
 });
-
-export default pizzasAPI;

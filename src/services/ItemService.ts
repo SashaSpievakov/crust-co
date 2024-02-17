@@ -2,7 +2,7 @@ import { createApi, fetchBaseQuery } from '@reduxjs/toolkit/dist/query/react';
 
 import { IPizzaItem } from '../models/IPizzaItem';
 
-const itemAPI = createApi({
+export const itemAPI = createApi({
   reducerPath: 'itemAPI',
   baseQuery: fetchBaseQuery({
     baseUrl: `${process.env.REACT_APP_API_URL}/api`,
@@ -17,5 +17,3 @@ const itemAPI = createApi({
     }),
   }),
 });
-
-export default itemAPI;

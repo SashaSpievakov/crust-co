@@ -4,13 +4,13 @@ exports[`Sort Test renders the Sort component 1`] = `
 Object {
   "children": Array [
     <div
-      className="sc-iTFTee bGqJDz"
+      className="sc-idXgbr fYmPoy"
       onClick={[Function]}
       onKeyDown={[Function]}
       tabIndex={0}
     >
       <svg
-        className="sc-eeMvmM Bmsqg"
+        className="sc-hHTYSt cijjmx"
         data-testid="popupIcon"
         fill="currentColor"
         height="1em"
@@ -40,7 +40,7 @@ Object {
     </div>,
     <section
       aria-hidden={true}
-      className="sc-cUEOzv cASkIi"
+      className="sc-dmctIk ikiszO"
       open={false}
     >
       <ul
@@ -48,7 +48,7 @@ Object {
         data-testid="popupList"
       >
         <li
-          className="sc-jOiSOi gAuyvq"
+          className="sc-kgTSHT kXJAEI"
           onClick={[Function]}
           onKeyDown={[Function]}
           tabIndex={0}
@@ -56,7 +56,7 @@ Object {
           rating
         </li>
         <li
-          className="sc-jOiSOi cTMasf"
+          className="sc-kgTSHT azQnF"
           onClick={[Function]}
           onKeyDown={[Function]}
           tabIndex={0}
@@ -64,7 +64,7 @@ Object {
           price
         </li>
         <li
-          className="sc-jOiSOi cTMasf"
+          className="sc-kgTSHT azQnF"
           onClick={[Function]}
           onKeyDown={[Function]}
           tabIndex={0}
@@ -75,7 +75,7 @@ Object {
     </section>,
   ],
   "props": Object {
-    "className": "sc-cabOPr jcowrr",
+    "className": "sc-bjfHbI FKPCf",
   },
   "type": "section",
 }
