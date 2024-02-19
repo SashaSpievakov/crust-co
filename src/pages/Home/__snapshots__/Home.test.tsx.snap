@@ -152,7 +152,7 @@ exports[`Home Tests renders the Home page 1`] = `
     >
       <a
         class="sc-UpCWa hEnEO"
-        href="/pizza/3"
+        href="/pizzas/Shrimp Pizza"
       >
         <picture>
           <source
@@ -260,7 +260,7 @@ exports[`Home Tests renders the Home page 1`] = `
     >
       <a
         class="sc-UpCWa hEnEO"
-        href="/pizza/2"
+        href="/pizzas/Pepperoni Pizza"
       >
         <picture>
           <source
@@ -353,7 +353,7 @@ exports[`Home Tests renders the Home page 1`] = `
     >
       <a
         class="sc-UpCWa hEnEO"
-        href="/pizza/6"
+        href="/pizzas/Diablo"
       >
         <picture>
           <source

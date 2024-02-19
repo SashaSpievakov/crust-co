@@ -2,18 +2,19 @@ import { createApi, fetchBaseQuery } from '@reduxjs/toolkit/dist/query/react';
 
 import { IPizzaItem } from '../models/IPizzaItem';
 
-export const itemAPI = createApi({
-  reducerPath: 'itemAPI',
+export const pizzaAPI = createApi({
+  reducerPath: 'pizzaPI',
   baseQuery: fetchBaseQuery({
     baseUrl: `${process.env.REACT_APP_API_URL}/api`,
   }),
-  tagTypes: ['Item'],
+  tagTypes: ['Pizza'],
   endpoints: (build) => ({
     fetchItem: build.query<IPizzaItem, string>({
-      query: (id) => ({
-        url: `/pizzas/${id}`,
+      query: (name) => ({
+        url: `/pizzas/${name}`,
       }),
-      providesTags: () => ['Item'],
+      providesTags: (result) =>
+        result ? [{ type: 'Pizza', id: result.name }] : ['Pizza'],
     }),
   }),
 });

@@ -4,14 +4,14 @@ import {
   PreloadedState,
 } from '@reduxjs/toolkit';
 
-import { itemAPI, pizzasAPI } from '../services';
+import { pizzaAPI, pizzasAPI } from '../services';
 import cart from './slices/cart/reducer/cartReducer';
 import theme from './slices/theme/reducer/themeReducer';
 
 const rootReducer = combineReducers({
   theme,
   cart,
-  [itemAPI.reducerPath]: itemAPI.reducer,
+  [pizzaAPI.reducerPath]: pizzaAPI.reducer,
   [pizzasAPI.reducerPath]: pizzasAPI.reducer,
 });
 
@@ -20,7 +20,7 @@ export const setupStore = (preloadedState?: PreloadedState<RootState>) => {
     reducer: rootReducer,
     middleware: (getDefaultMiddleware) =>
       getDefaultMiddleware()
-        .concat(itemAPI.middleware)
+        .concat(pizzaAPI.middleware)
         .concat(pizzasAPI.middleware),
     preloadedState,
   });

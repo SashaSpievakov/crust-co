@@ -3,7 +3,7 @@ import '@testing-library/jest-dom';
 import { screen } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
 
-import { itemAPI } from '../../services';
+import { pizzaAPI } from '../../services';
 import { setupStore } from '../../store/store';
 import rendererWithProviders from '../../tests/helpers/rendererWithProviders';
 import renderWithProviders from '../../tests/helpers/renderWithProviders';
@@ -63,7 +63,7 @@ describe('ItemCard Tests', () => {
 
     afterEach(() => {
       server.resetHandlers();
-      setupStore().dispatch(itemAPI.util.resetApiState());
+      setupStore().dispatch(pizzaAPI.util.resetApiState());
     });
 
     test('checks link redirect to the Item page', async () => {

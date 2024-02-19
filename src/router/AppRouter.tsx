@@ -29,7 +29,7 @@ const AppRouter = () => {
           }
         />
         <Route
-          path="pizza/:id"
+          path="pizzas/:name"
           element={
             <Suspense fallback={<Loading />}>
               <Pizza />
