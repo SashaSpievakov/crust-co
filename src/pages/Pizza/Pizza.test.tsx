@@ -3,7 +3,7 @@ import '@testing-library/jest-dom';
 import { screen } from '@testing-library/react';
 import { rest } from 'msw';
 
-import { itemAPI } from '../../services';
+import { pizzaAPI } from '../../services';
 import { setupStore } from '../../store/store';
 import renderWithProviders from '../../tests/helpers/renderWithProviders';
 import server from '../../tests/mocks/api/server';
@@ -20,11 +20,11 @@ describe('Pizza Page Tests', () => {
 
   afterEach(() => {
     server.resetHandlers();
-    setupStore().dispatch(itemAPI.util.resetApiState());
+    setupStore().dispatch(pizzaAPI.util.resetApiState());
   });
 
   test('renders the Pizza page', async () => {
-    renderWithProviders(null, true, '/pizza/Chicken%20Curry');
+    renderWithProviders(null, true, '/pizzas/Chicken%20Curry');
     const itemTitle = await screen.findByText(/chicken curry/i); // eslint-disable-line @typescript-eslint/no-unused-vars
 
     const loadedItem = screen.getByTestId('itemPage');

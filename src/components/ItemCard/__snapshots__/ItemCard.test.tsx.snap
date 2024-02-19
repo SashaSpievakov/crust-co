@@ -5,7 +5,7 @@ Object {
   "children": Array [
     <a
       className="sc-UpCWa hEnEO"
-      href="/pizza/Chicken Curry"
+      href="/pizzas/Chicken Curry"
       onClick={[Function]}
     >
       <picture>

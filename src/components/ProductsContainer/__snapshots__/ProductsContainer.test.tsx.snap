@@ -8,7 +8,7 @@ Object {
     >
       <a
         className="sc-UpCWa hEnEO"
-        href="/pizza/Shrimp Pizza"
+        href="/pizzas/Shrimp Pizza"
         onClick={[Function]}
       >
         <picture>
@@ -133,7 +133,7 @@ Object {
     >
       <a
         className="sc-UpCWa hEnEO"
-        href="/pizza/Pepperoni Pizza"
+        href="/pizzas/Pepperoni Pizza"
         onClick={[Function]}
       >
         <picture>
@@ -239,7 +239,7 @@ Object {
     >
       <a
         className="sc-UpCWa hEnEO"
-        href="/pizza/Diablo"
+        href="/pizzas/Diablo"
         onClick={[Function]}
       >
         <picture>

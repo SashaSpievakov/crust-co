@@ -4,7 +4,7 @@ import { screen } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
 
 import { ISelector } from '../../models/ISelector';
-import { itemAPI } from '../../services';
+import { pizzaAPI } from '../../services';
 import { setupStore } from '../../store/store';
 import rendererWithAllProviders from '../../tests/helpers/rendererWithProviders';
 import renderWithProviders from '../../tests/helpers/renderWithProviders';
@@ -43,12 +43,12 @@ describe('Selector Tests', () => {
     });
 
     beforeEach(() => {
-      renderWithProviders(null, true, '/pizza/Chicken%20Curry');
+      renderWithProviders(null, true, '/pizzas/Chicken%20Curry');
     });
 
     afterEach(() => {
       server.resetHandlers();
-      setupStore().dispatch(itemAPI.util.resetApiState());
+      setupStore().dispatch(pizzaAPI.util.resetApiState());
     });
 
     test('checks thin type click', async () => {
