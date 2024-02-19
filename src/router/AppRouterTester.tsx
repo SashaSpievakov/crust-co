@@ -10,7 +10,7 @@ const AppRouterTester = () => {
     <Routes>
       <Route path="/" element={<Home />} />
       <Route path="cart" element={<Cart />} />
-      <Route path="pizza/:id" element={<Pizza />} />
+      <Route path="pizza/:name" element={<Pizza />} />
       <Route path="*" element={<NotFound />} />
     </Routes>
   );

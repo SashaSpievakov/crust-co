@@ -43,7 +43,7 @@ describe('Selector Tests', () => {
     });
 
     beforeEach(() => {
-      renderWithProviders(null, true, '/pizza/9');
+      renderWithProviders(null, true, '/pizza/Chicken%20Curry');
     });
 
     afterEach(() => {

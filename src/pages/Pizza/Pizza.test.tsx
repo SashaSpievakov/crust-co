@@ -24,7 +24,7 @@ describe('Pizza Page Tests', () => {
   });
 
   test('renders the Pizza page', async () => {
-    renderWithProviders(null, true, '/pizza/9');
+    renderWithProviders(null, true, '/pizza/Chicken%20Curry');
     const itemTitle = await screen.findByText(/chicken curry/i); // eslint-disable-line @typescript-eslint/no-unused-vars
 
     const loadedItem = screen.getByTestId('itemPage');

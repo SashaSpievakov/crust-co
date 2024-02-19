@@ -7,14 +7,11 @@ import { Loading } from '../../components/UI';
 import { itemAPI } from '../../services';
 
 export const Pizza = () => {
-  const { id } = useParams();
+  const { name } = useParams();
 
-  const { data, isLoading, isSuccess } = itemAPI.useFetchItemQuery(
-    id as string,
-    {
-      refetchOnFocus: true,
-    },
-  );
+  const { data, isLoading, isSuccess } = itemAPI.useFetchItemQuery(name || '', {
+    refetchOnFocus: true,
+  });
 
   useEffect(() => {
     document.title = `Crust & Co. | Item`;

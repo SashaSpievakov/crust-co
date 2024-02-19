@@ -10,8 +10,8 @@ export const itemAPI = createApi({
   tagTypes: ['Item'],
   endpoints: (build) => ({
     fetchItem: build.query<IPizzaItem, string>({
-      query: (id) => ({
-        url: `/pizzas/${id}`,
+      query: (name) => ({
+        url: `/pizzas/${name}`,
       }),
       providesTags: () => ['Item'],
     }),
