@@ -23,19 +23,22 @@ Object {
         />
       </picture>
     </div>,
-    <section
-      className="sc-cjibBx rZGMU"
+    <div
+      className="sc-cjibBx kQjAzT"
     >
-      <h3>
+      <a
+        href="/pizzas/Cheesburger Pizza"
+        onClick={[Function]}
+      >
         Cheesburger Pizza
-      </h3>
+      </a>
       <p>
         thin
          dough, 
         14
          inch
       </p>
-    </section>,
+    </div>,
     <section
       className="sc-jcMfQk zlKfn"
     >
@@ -160,19 +163,22 @@ Object {
         />
       </picture>
     </div>,
-    <section
-      className="sc-cjibBx rZGMU"
+    <div
+      className="sc-cjibBx kQjAzT"
     >
-      <h3>
+      <a
+        href="/pizzas/Pepperoni Pizza"
+        onClick={[Function]}
+      >
         Pepperoni Pizza
-      </h3>
+      </a>
       <p>
         traditional
          dough, 
         16
          inch
       </p>
-    </section>,
+    </div>,
     <section
       className="sc-jcMfQk zlKfn"
     >

@@ -1,5 +1,6 @@
 import { memo } from 'react';
 import { BsDashLg, BsPlusLg } from 'react-icons/bs';
+import { Link } from 'react-router-dom';
 
 import { useAppDispatch } from '../../hooks/reduxHooks';
 import { ICartItem } from '../../models/ICartItem';
@@ -73,7 +74,7 @@ const CartItem = memo(({ id, name, price, size, type, count }: ICartItem) => {
         </picture>
       </ImgWrapper>
       <InfoWrapper>
-        <h3>{name}</h3>
+        <Link to={`/pizzas/${name}`}>{name}</Link>
         <p>
           {type} dough, {size} inch
         </p>

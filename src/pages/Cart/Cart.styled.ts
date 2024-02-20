@@ -10,7 +10,7 @@ const Article = styled(Container)`
   }
 `;
 
-const Top = styled.section`
+const Top = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -44,24 +44,24 @@ const Clear = styled.section`
     outline-offset: -1px;
   }
 
-  span {
-    display: inline-block;
-    margin-left: 7px;
-    font-size: 18px;
-  }
-
   &:hover {
     color: ${({ theme }) => theme.colors.secondary};
-
-    span {
-      color: ${({ theme }) => theme.colors.secondary};
-    }
   }
 `;
 
 const Trash = styled(BsTrash)`
   font-size: 18px;
   stroke-width: 0.3;
+`;
+
+const DeleteText = styled.span`
+  display: inline-block;
+  margin-left: 7px;
+  font-size: 18px;
+
+  &:hover {
+    color: ${({ theme }) => theme.colors.secondary};
+  }
 `;
 
 const Bottom = styled.section`
@@ -104,6 +104,7 @@ export {
   CartIcon,
   ChevronLeft,
   Clear,
+  DeleteText,
   Details,
   Title,
   Top,

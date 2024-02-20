@@ -17,6 +17,7 @@ import {
   CartIcon,
   ChevronLeft,
   Clear,
+  DeleteText,
   Details,
   Title,
   Top,
@@ -66,7 +67,7 @@ const Cart = () => {
           tabIndex={0}
         >
           <Trash />
-          <span role="presentation">Delete all items</span>
+          <DeleteText role="presentation">Delete all items</DeleteText>
         </Clear>
       </Top>
 
