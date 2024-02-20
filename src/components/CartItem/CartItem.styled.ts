@@ -36,17 +36,22 @@ const ImgWrapper = styled.div`
   }
 `;
 
-const InfoWrapper = styled.section`
+const InfoWrapper = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
   width: 40%;
 
-  h3 {
+  a {
     font-weight: bold;
     font-size: 22px;
     line-height: 27px;
-    letter-spacing: 0.01em;
+    width: fit-content;
+    transition: 0.15s;
+
+    &:hover {
+      color: ${({ theme }) => theme.colors.secondary};
+    }
   }
 
   p {
