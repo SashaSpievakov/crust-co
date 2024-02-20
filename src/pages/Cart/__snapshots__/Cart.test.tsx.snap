@@ -38,7 +38,7 @@ Object {
 exports[`Cart Tests renders the Cart page with items 1`] = `
 Object {
   "children": Array [
-    <section
+    <div
       className="sc-cUEOzv eswvEC"
     >
       <h2
@@ -66,7 +66,7 @@ Object {
         Cart
       </h2>
       <section
-        className="sc-bCfvAP bixWxQ"
+        className="sc-bCfvAP euPzUj"
         onClick={[Function]}
         onKeyDown={[Function]}
         tabIndex={0}
@@ -95,12 +95,13 @@ Object {
           />
         </svg>
         <span
+          className="sc-AHaJN lcihuJ"
           role="presentation"
         >
           Delete all items
         </span>
       </section>
-    </section>,
+    </div>,
     <section>
       <article
         className="sc-gYbzsP dQjeHg"
@@ -125,19 +126,22 @@ Object {
             />
           </picture>
         </div>
-        <section
-          className="sc-cjibBx rZGMU"
+        <div
+          className="sc-cjibBx kQjAzT"
         >
-          <h3>
+          <a
+            href="/pizzas/Cheesburger Pizza"
+            onClick={[Function]}
+          >
             Cheesburger Pizza
-          </h3>
+          </a>
           <p>
             thin
              dough, 
             14
              inch
           </p>
-        </section>
+        </div>
         <section
           className="sc-jcMfQk zlKfn"
         >
@@ -255,19 +259,22 @@ Object {
             />
           </picture>
         </div>
-        <section
-          className="sc-cjibBx rZGMU"
+        <div
+          className="sc-cjibBx kQjAzT"
         >
-          <h3>
+          <a
+            href="/pizzas/Pepperoni Pizza"
+            onClick={[Function]}
+          >
             Pepperoni Pizza
-          </h3>
+          </a>
           <p>
             traditional
              dough, 
             16
              inch
           </p>
-        </section>
+        </div>
         <section
           className="sc-jcMfQk zlKfn"
         >
@@ -364,10 +371,10 @@ Object {
       </article>
     </section>,
     <section
-      className="sc-AHaJN cTiCEC"
+      className="sc-khsqcC dDirrv"
     >
       <section
-        className="sc-khsqcC idYImQ"
+        className="sc-hTBuwn kLrNKj"
       >
         <span>
            
@@ -392,7 +399,7 @@ Object {
         </span>
       </section>
       <section
-        className="sc-hTBuwn hlvsQi"
+        className="sc-jfTVlA ddmDGX"
       >
         <a
           className="sc-hLBbgP sc-iBYQkv sc-pyfCe sc-jrcTuL fGqcTx iDltE uzlJh hoiVoq"
@@ -400,7 +407,7 @@ Object {
           onClick={[Function]}
         >
           <svg
-            className="sc-jfTVlA jhbrRo"
+            className="sc-gScZFl bnhutc"
             fill="currentColor"
             height="1em"
             stroke="currentColor"

@@ -4,14 +4,14 @@ exports[`Header Tests renders the Header component 1`] = `
 Object {
   "children": Array [
     <a
-      className="sc-eGugkK eLlkUx"
+      className="sc-csDkEv bKWphx"
       href="/"
       ishome="home"
       onClick={[Function]}
       tabIndex={-1}
     >
       <section
-        className="sc-csDkEv exvfdO"
+        className="sc-dEVLtI cXpONY"
       >
         <img
           alt="Pizza logo"
@@ -21,12 +21,12 @@ Object {
         />
         <div>
           <h1
-            className="sc-dEVLtI kFUhmS"
+            className="sc-brePNt illhDH"
           >
             Crust & Co.
           </h1>
           <p
-            className="sc-brePNt fZnQmT"
+            className="sc-gJqSRm bFmaCc"
           >
             the most delicious pizzas in town
           </p>
@@ -34,10 +34,10 @@ Object {
       </section>
     </a>,
     <section
-      className="sc-GKYbw gPngps"
+      className="sc-gsGlKL bJBECw"
     >
       <svg
-        className="sc-gsGlKL doWCcy"
+        className="sc-bWOGAC dHZZbd"
         data-testid="themeIcon"
         data-theme="light"
         fill="currentColor"
@@ -72,7 +72,7 @@ Object {
            $
         </span>
         <div
-          className="sc-bWOGAC fVbnXy"
+          className="sc-eGugkK jJKRCZ"
         />
         <svg
           fill="currentColor"
@@ -99,7 +99,7 @@ Object {
     </section>,
   ],
   "props": Object {
-    "className": "sc-fcCDlF hSRqaj",
+    "className": "sc-GKYbw bEJVIP",
   },
   "type": "header",
 }
@@ -109,14 +109,14 @@ exports[`Header Tests renders the Header component on the Cart page 1`] = `
 Object {
   "children": Array [
     <a
-      className="sc-eGugkK kUgYrD"
+      className="sc-csDkEv cZPBtb"
       href="/"
       ishome={null}
       onClick={[Function]}
       tabIndex={0}
     >
       <section
-        className="sc-csDkEv exvfdO"
+        className="sc-dEVLtI cXpONY"
       >
         <img
           alt="Pizza logo"
@@ -126,12 +126,12 @@ Object {
         />
         <div>
           <h1
-            className="sc-dEVLtI kFUhmS"
+            className="sc-brePNt illhDH"
           >
             Crust & Co.
           </h1>
           <p
-            className="sc-brePNt fZnQmT"
+            className="sc-gJqSRm bFmaCc"
           >
             the most delicious pizzas in town
           </p>
@@ -139,10 +139,10 @@ Object {
       </section>
     </a>,
     <section
-      className="sc-GKYbw gPngps"
+      className="sc-gsGlKL bJBECw"
     >
       <svg
-        className="sc-gsGlKL endpKI"
+        className="sc-bWOGAC bEyUQD"
         data-testid="themeIcon"
         data-theme="light"
         fill="currentColor"
@@ -169,7 +169,7 @@ Object {
     </section>,
   ],
   "props": Object {
-    "className": "sc-fcCDlF iBofTq",
+    "className": "sc-GKYbw hXrBda",
   },
   "type": "header",
 }
