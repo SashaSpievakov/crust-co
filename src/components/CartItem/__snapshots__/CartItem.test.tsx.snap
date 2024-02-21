@@ -4,7 +4,7 @@ exports[`CartItem Tests renders the CartItem component 1`] = `
 Object {
   "children": Array [
     <div
-      className="sc-cCjUiG bccqQd"
+      className="sc-dsHJmm ieBQdt"
     >
       <picture>
         <source
@@ -24,7 +24,7 @@ Object {
       </picture>
     </div>,
     <div
-      className="sc-cjibBx kQjAzT"
+      className="sc-cZFQFd jWKeZz"
     >
       <a
         href="/pizzas/Cheesburger Pizza"
@@ -40,16 +40,16 @@ Object {
       </p>
     </div>,
     <section
-      className="sc-jcMfQk zlKfn"
+      className="sc-jTjUTQ jWQcBX"
     >
       <button
         aria-label="minus"
-        className="sc-hLBbgP sc-iBYQkv sc-ftTHYK fGqcTx iDltE YugEl"
+        className="sc-bcXHqe sc-eDvSVe sc-jSUZER glVyWT fwWQTF ggHeaE"
         disabled={false}
         onClick={[Function]}
       >
         <svg
-          className="sc-cabOPr krJtqk"
+          className="sc-jRwbcX dfKjYP"
           fill="currentColor"
           height="1em"
           stroke="currentColor"
@@ -73,11 +73,11 @@ Object {
       </span>
       <button
         aria-label="plus"
-        className="sc-hLBbgP sc-iBYQkv sc-ftTHYK fGqcTx iDltE YugEl"
+        className="sc-bcXHqe sc-eDvSVe sc-jSUZER glVyWT fwWQTF ggHeaE"
         onClick={[Function]}
       >
         <svg
-          className="sc-cabOPr krJtqk"
+          className="sc-jRwbcX dfKjYP"
           fill="currentColor"
           height="1em"
           stroke="currentColor"
@@ -98,21 +98,21 @@ Object {
       </button>
     </section>,
     <h3
-      className="sc-iTFTee iGmcon"
+      className="sc-fvEvSO dFHaIT"
     >
       91
       $
     </h3>,
     <div
-      className="sc-iAEawV kgGcST"
+      className="sc-fcCDlF pgrLe"
     >
       <button
         aria-label="delete"
-        className="sc-hLBbgP sc-iBYQkv sc-ftTHYK fGqcTx iDltE kTqzjG"
+        className="sc-bcXHqe sc-eDvSVe sc-jSUZER glVyWT fwWQTF gjJRSz"
         onClick={[Function]}
       >
         <svg
-          className="sc-cabOPr krJtqk"
+          className="sc-jRwbcX dfKjYP"
           fill="currentColor"
           height="1em"
           stroke="currentColor"
@@ -134,7 +134,7 @@ Object {
     </div>,
   ],
   "props": Object {
-    "className": "sc-gYbzsP dQjeHg",
+    "className": "sc-hOzowv eVAKGS",
   },
   "type": "article",
 }
@@ -144,7 +144,7 @@ exports[`CartItem Tests renders the CartItem component with a disabled button 1`
 Object {
   "children": Array [
     <div
-      className="sc-cCjUiG bccqQd"
+      className="sc-dsHJmm ieBQdt"
     >
       <picture>
         <source
@@ -164,7 +164,7 @@ Object {
       </picture>
     </div>,
     <div
-      className="sc-cjibBx kQjAzT"
+      className="sc-cZFQFd jWKeZz"
     >
       <a
         href="/pizzas/Pepperoni Pizza"
@@ -180,16 +180,16 @@ Object {
       </p>
     </div>,
     <section
-      className="sc-jcMfQk zlKfn"
+      className="sc-jTjUTQ jWQcBX"
     >
       <button
         aria-label="minus"
-        className="sc-hLBbgP sc-iBYQkv sc-ftTHYK fGqcTx iDltE YugEl"
+        className="sc-bcXHqe sc-eDvSVe sc-jSUZER glVyWT fwWQTF ggHeaE"
         disabled={true}
         onClick={[Function]}
       >
         <svg
-          className="sc-cabOPr krJtqk"
+          className="sc-jRwbcX dfKjYP"
           fill="currentColor"
           height="1em"
           stroke="currentColor"
@@ -213,11 +213,11 @@ Object {
       </span>
       <button
         aria-label="plus"
-        className="sc-hLBbgP sc-iBYQkv sc-ftTHYK fGqcTx iDltE YugEl"
+        className="sc-bcXHqe sc-eDvSVe sc-jSUZER glVyWT fwWQTF ggHeaE"
         onClick={[Function]}
       >
         <svg
-          className="sc-cabOPr krJtqk"
+          className="sc-jRwbcX dfKjYP"
           fill="currentColor"
           height="1em"
           stroke="currentColor"
@@ -238,21 +238,21 @@ Object {
       </button>
     </section>,
     <h3
-      className="sc-iTFTee iGmcon"
+      className="sc-fvEvSO dFHaIT"
     >
       9
       $
     </h3>,
     <div
-      className="sc-iAEawV kgGcST"
+      className="sc-fcCDlF pgrLe"
     >
       <button
         aria-label="delete"
-        className="sc-hLBbgP sc-iBYQkv sc-ftTHYK fGqcTx iDltE kTqzjG"
+        className="sc-bcXHqe sc-eDvSVe sc-jSUZER glVyWT fwWQTF gjJRSz"
         onClick={[Function]}
       >
         <svg
-          className="sc-cabOPr krJtqk"
+          className="sc-jRwbcX dfKjYP"
           fill="currentColor"
           height="1em"
           stroke="currentColor"
@@ -274,7 +274,7 @@ Object {
     </div>,
   ],
   "props": Object {
-    "className": "sc-gYbzsP dQjeHg",
+    "className": "sc-hOzowv eVAKGS",
   },
   "type": "article",
 }

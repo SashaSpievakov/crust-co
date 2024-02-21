@@ -5,7 +5,7 @@ import Home from '../pages/Home/Home';
 import NotFound from '../pages/NotFound/NotFound';
 import Pizza from '../pages/Pizza';
 
-const AppRouterTester = () => {
+export const AppRouterTester = () => {
   return (
     <Routes>
       <Route path="/" element={<Home />} />
@@ -15,5 +15,3 @@ const AppRouterTester = () => {
     </Routes>
   );
 };
-
-export default AppRouterTester;

@@ -7,7 +7,7 @@ import { Provider } from 'react-redux';
 import { MemoryRouter } from 'react-router-dom';
 import { ThemeProvider } from 'styled-components';
 
-import AppRouterTester from '../../router/AppRouterTester';
+import { AppRouterTester } from '../../router';
 import { RootState, setupStore } from '../../store/store';
 import { darkTheme } from '../../styles/Themes.styled';
 

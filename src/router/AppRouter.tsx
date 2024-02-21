@@ -15,7 +15,7 @@ const NotFound = React.lazy(
   () => import(/* webpackChunkName: "NotFound" */ '../pages/NotFound/NotFound'),
 );
 
-const AppRouter = () => {
+export const AppRouter = (): JSX.Element => {
   return (
     <Routes>
       <Route path="/" element={<MainLayout />}>
@@ -48,5 +48,3 @@ const AppRouter = () => {
     </Routes>
   );
 };
-
-export default AppRouter;

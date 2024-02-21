@@ -4,18 +4,18 @@ exports[`ErrorRequest Tests renders the ErrorRequest UI component 1`] = `
 Object {
   "children": Array [
     <h2
-      className="sc-iOeugr cfyUNX"
+      className="sc-gYbzsP kWrogJ"
     >
       Error: failed to get data from the server
     </h2>,
     <p
-      className="sc-gswNZR cyBoAG"
+      className="sc-ilhmMj LAFKk"
     >
       We are already working on that. Try again later
     </p>,
   ],
   "props": Object {
-    "className": "sc-bcXHqe sc-lbVpMG bZXhLi kRUTbk",
+    "className": "sc-kMjNwy sc-hhOBVt jDuCDX jWBJiZ",
     "data-testid": "itemPage",
   },
   "type": "article",

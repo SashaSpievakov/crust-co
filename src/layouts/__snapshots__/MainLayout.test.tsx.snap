@@ -3,17 +3,17 @@
 exports[`MainLayout Tests renders the MainLayout component 1`] = `
 Object {
   "0": <header
-    className="sc-csDkEv iQmeXz"
+    className="sc-fLcnxK gKwcGv"
   >
     <a
-      className="sc-evzXkX fWoDzz"
+      className="sc-lllmON iNpDSF"
       href="/"
       ishome="home"
       onClick={[Function]}
       tabIndex={-1}
     >
       <section
-        className="sc-fHSyak joJNyg"
+        className="sc-iJnaPW dycudx"
       >
         <img
           alt="Pizza logo"
@@ -23,12 +23,12 @@ Object {
         />
         <div>
           <h1
-            className="sc-dubCtV kZCDve"
+            className="sc-gikAfH dUdZiW"
           >
             Crust & Co.
           </h1>
           <p
-            className="sc-dkBdza hCUGhe"
+            className="sc-ezOQGI fTfOLP"
           >
             the most delicious pizzas in town
           </p>
@@ -36,10 +36,10 @@ Object {
       </section>
     </a>
     <section
-      className="sc-dEVLtI lcWYLu"
+      className="sc-bBABsx ldaFoo"
     >
       <svg
-        className="sc-brePNt bsJION"
+        className="sc-iveFHk ffA-DzJ"
         data-testid="themeIcon"
         data-theme="light"
         fill="currentColor"
@@ -64,7 +64,7 @@ Object {
         />
       </svg>
       <a
-        className="sc-hLBbgP sc-jSUZER fGqcTx bTwWrT"
+        className="sc-bcXHqe sc-dkrFOg glVyWT hgxfKt"
         data-testid="cartLink"
         href="/cart"
         onClick={[Function]}
@@ -74,7 +74,7 @@ Object {
            $
         </span>
         <div
-          className="sc-gJqSRm IhSIR"
+          className="sc-cwSeag SAbhR"
         />
         <svg
           fill="currentColor"
@@ -101,13 +101,13 @@ Object {
     </section>
   </header>,
   "1": <main
-    className="sc-WKhSL ePwdsv"
+    className="sc-bYMpWt kohrxN"
   />,
   "2": <footer
-    className="sc-GKYbw iusQa-D"
+    className="sc-dIfARi gwwtVq"
   >
     <section
-      className="sc-eGugkK bSjcir"
+      className="sc-kgTSHT gwtJzY"
     >
       <p>
         © 2024 Crust & Co.
@@ -120,23 +120,23 @@ Object {
       </p>
     </section>
     <section
-      className="sc-gsGlKL kehPuz"
+      className="sc-hHTYSt jVgCvh"
     >
       <a
-        className="sc-bWOGAC ciJtwE"
+        className="sc-dmctIk eSsQMn"
         href="https://github.com/SashaSpievakov"
       >
         GitHub
       </a>
       <a
-        className="sc-bWOGAC ciJtwE"
+        className="sc-dmctIk eSsQMn"
         href="https://www.google.com/maps/place/687+Yonge+St,+Toronto,+ON+M4Y+2B2/@43.6689719,-79.3870519,18z/data=!3m1!4b1!4m6!3m5!1s0x882b34ae07a20ea5:0xcb9f91518efcc2c1!8m2!3d43.6689704!4d-79.3860646!16s%2Fg%2F11nnkxs6c3"
         target="_blank"
       >
         687 Yonge St
       </a>
       <a
-        className="sc-bWOGAC ciJtwE"
+        className="sc-dmctIk eSsQMn"
         href="mailto:spievakov@gamil.com"
       >
         spievakov@gmail.com

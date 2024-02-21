@@ -4,10 +4,10 @@ exports[`ProductsContainer Tests renders the ProductsContainer component 1`] = `
 Object {
   "children": Array [
     <article
-      className="sc-UpCWa jbELBP"
+      className="sc-AHaJN jxjpmj"
     >
       <a
-        className="sc-jIILKH fDvFav"
+        className="sc-khsqcC bdOKlL"
         href="/pizzas/Shrimp Pizza"
         onClick={[Function]}
       >
@@ -22,25 +22,25 @@ Object {
           />
           <img
             alt="Shrimp Pizza pizza"
-            className="sc-ZqFbI fwYvUr"
+            className="sc-hTBuwn kCJxdb"
             height="250"
             src="./assets/img/pizza3.png"
             width="250"
           />
         </picture>
         <h3
-          className="sc-jNJNQp bYmarH"
+          className="sc-jfTVlA feAbCx"
         >
           Shrimp Pizza
         </h3>
       </a>
       <section
-        className="sc-laZRCg EsEwE"
+        className="sc-iAEawV cVUlqk"
       >
         <ul>
           <li
             aria-current={true}
-            className="sc-gGvHcT fNVaNP"
+            className="sc-eeMvmM lkpzEF"
             onClick={[Function]}
             onKeyDown={[Function]}
             tabIndex={0}
@@ -49,7 +49,7 @@ Object {
           </li>
           <li
             aria-current={false}
-            className="sc-gGvHcT JoYtY"
+            className="sc-eeMvmM iDOvIe"
             onClick={[Function]}
             onKeyDown={[Function]}
             tabIndex={0}
@@ -60,7 +60,7 @@ Object {
         <ul>
           <li
             aria-current={true}
-            className="sc-gGvHcT fNVaNP"
+            className="sc-eeMvmM lkpzEF"
             onClick={[Function]}
             onKeyDown={[Function]}
             tabIndex={0}
@@ -70,7 +70,7 @@ Object {
           </li>
           <li
             aria-current={false}
-            className="sc-gGvHcT JoYtY"
+            className="sc-eeMvmM iDOvIe"
             onClick={[Function]}
             onKeyDown={[Function]}
             tabIndex={0}
@@ -80,7 +80,7 @@ Object {
           </li>
           <li
             aria-current={false}
-            className="sc-gGvHcT JoYtY"
+            className="sc-eeMvmM iDOvIe"
             onClick={[Function]}
             onKeyDown={[Function]}
             tabIndex={0}
@@ -91,20 +91,20 @@ Object {
         </ul>
       </section>
       <section
-        className="sc-hlLBRy lhgnLB"
+        className="sc-gScZFl fOLxYr"
       >
         <h3
-          className="sc-eKJbhj hvEjUZ"
+          className="sc-lbVpMG ilqvdr"
         >
           10
           $
         </h3>
         <button
-          className="sc-hLBbgP sc-iBYQkv sc-pyfCe fGqcTx iDltE uzlJh"
+          className="sc-bcXHqe sc-eDvSVe sc-gKPRtg glVyWT fwWQTF gmBSoV"
           onClick={[Function]}
         >
           <svg
-            className="sc-ehvNnt dGnZdy"
+            className="sc-iTFTee kJxSjW"
             fill="currentColor"
             height="1em"
             stroke="currentColor"
@@ -129,10 +129,10 @@ Object {
       </section>
     </article>,
     <article
-      className="sc-UpCWa jbELBP"
+      className="sc-AHaJN jxjpmj"
     >
       <a
-        className="sc-jIILKH fDvFav"
+        className="sc-khsqcC bdOKlL"
         href="/pizzas/Pepperoni Pizza"
         onClick={[Function]}
       >
@@ -147,25 +147,25 @@ Object {
           />
           <img
             alt="Pepperoni Pizza pizza"
-            className="sc-ZqFbI fwYvUr"
+            className="sc-hTBuwn kCJxdb"
             height="250"
             src="./assets/img/pizza2.png"
             width="250"
           />
         </picture>
         <h3
-          className="sc-jNJNQp bYmarH"
+          className="sc-jfTVlA feAbCx"
         >
           Pepperoni Pizza
         </h3>
       </a>
       <section
-        className="sc-laZRCg EsEwE"
+        className="sc-iAEawV cVUlqk"
       >
         <ul>
           <li
             aria-current={true}
-            className="sc-gGvHcT fNVaNP"
+            className="sc-eeMvmM lkpzEF"
             onClick={[Function]}
             onKeyDown={[Function]}
             tabIndex={0}
@@ -176,7 +176,7 @@ Object {
         <ul>
           <li
             aria-current={true}
-            className="sc-gGvHcT fNVaNP"
+            className="sc-eeMvmM lkpzEF"
             onClick={[Function]}
             onKeyDown={[Function]}
             tabIndex={0}
@@ -186,7 +186,7 @@ Object {
           </li>
           <li
             aria-current={false}
-            className="sc-gGvHcT JoYtY"
+            className="sc-eeMvmM iDOvIe"
             onClick={[Function]}
             onKeyDown={[Function]}
             tabIndex={0}
@@ -197,20 +197,20 @@ Object {
         </ul>
       </section>
       <section
-        className="sc-hlLBRy lhgnLB"
+        className="sc-gScZFl fOLxYr"
       >
         <h3
-          className="sc-eKJbhj hvEjUZ"
+          className="sc-lbVpMG ilqvdr"
         >
           12
           $
         </h3>
         <button
-          className="sc-hLBbgP sc-iBYQkv sc-pyfCe fGqcTx iDltE uzlJh"
+          className="sc-bcXHqe sc-eDvSVe sc-gKPRtg glVyWT fwWQTF gmBSoV"
           onClick={[Function]}
         >
           <svg
-            className="sc-ehvNnt dGnZdy"
+            className="sc-iTFTee kJxSjW"
             fill="currentColor"
             height="1em"
             stroke="currentColor"
@@ -235,10 +235,10 @@ Object {
       </section>
     </article>,
     <article
-      className="sc-UpCWa jbELBP"
+      className="sc-AHaJN jxjpmj"
     >
       <a
-        className="sc-jIILKH fDvFav"
+        className="sc-khsqcC bdOKlL"
         href="/pizzas/Diablo"
         onClick={[Function]}
       >
@@ -253,25 +253,25 @@ Object {
           />
           <img
             alt="Diablo pizza"
-            className="sc-ZqFbI fwYvUr"
+            className="sc-hTBuwn kCJxdb"
             height="250"
             src="./assets/img/pizza6.png"
             width="250"
           />
         </picture>
         <h3
-          className="sc-jNJNQp bYmarH"
+          className="sc-jfTVlA feAbCx"
         >
           Diablo
         </h3>
       </a>
       <section
-        className="sc-laZRCg EsEwE"
+        className="sc-iAEawV cVUlqk"
       >
         <ul>
           <li
             aria-current={true}
-            className="sc-gGvHcT fNVaNP"
+            className="sc-eeMvmM lkpzEF"
             onClick={[Function]}
             onKeyDown={[Function]}
             tabIndex={0}
@@ -280,7 +280,7 @@ Object {
           </li>
           <li
             aria-current={false}
-            className="sc-gGvHcT JoYtY"
+            className="sc-eeMvmM iDOvIe"
             onClick={[Function]}
             onKeyDown={[Function]}
             tabIndex={0}
@@ -291,7 +291,7 @@ Object {
         <ul>
           <li
             aria-current={true}
-            className="sc-gGvHcT fNVaNP"
+            className="sc-eeMvmM lkpzEF"
             onClick={[Function]}
             onKeyDown={[Function]}
             tabIndex={0}
@@ -301,7 +301,7 @@ Object {
           </li>
           <li
             aria-current={false}
-            className="sc-gGvHcT JoYtY"
+            className="sc-eeMvmM iDOvIe"
             onClick={[Function]}
             onKeyDown={[Function]}
             tabIndex={0}
@@ -312,20 +312,20 @@ Object {
         </ul>
       </section>
       <section
-        className="sc-hlLBRy lhgnLB"
+        className="sc-gScZFl fOLxYr"
       >
         <h3
-          className="sc-eKJbhj hvEjUZ"
+          className="sc-lbVpMG ilqvdr"
         >
           15
           $
         </h3>
         <button
-          className="sc-hLBbgP sc-iBYQkv sc-pyfCe fGqcTx iDltE uzlJh"
+          className="sc-bcXHqe sc-eDvSVe sc-gKPRtg glVyWT fwWQTF gmBSoV"
           onClick={[Function]}
         >
           <svg
-            className="sc-ehvNnt dGnZdy"
+            className="sc-iTFTee kJxSjW"
             fill="currentColor"
             height="1em"
             stroke="currentColor"
@@ -351,7 +351,7 @@ Object {
     </article>,
   ],
   "props": Object {
-    "className": "sc-bTTELM fJyjmh",
+    "className": "sc-iOeugr hFqnuI",
   },
   "type": "section",
 }
@@ -361,13 +361,13 @@ exports[`ProductsContainer Tests renders the ProductsContainer component with no
 Object {
   "children": Array [
     <h3
-      className="sc-kImNAt ehwQmC"
+      className="sc-jfvxQR dcJxAb"
     >
       No pizzas with that name were found...
     </h3>,
   ],
   "props": Object {
-    "className": "sc-bTTELM iHaUxH",
+    "className": "sc-iOeugr cwngey",
   },
   "type": "section",
 }

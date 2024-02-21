@@ -3,24 +3,24 @@
 exports[`OrderModal Tests renders the OrderModal UI component 1`] = `
 Object {
   "0": <div
-    className="sc-dkrFOg ewVMXk"
+    className="sc-jIRcFI hPpEmG"
     onClick={[Function]}
   />,
   "1": <article
-    className="sc-bqWxrE hZAuSu"
+    className="sc-fXqpFg dQdjaH"
   >
     <h3
-      className="sc-ksBlkl iOmBCe"
+      className="sc-dwnOUR jjgWxu"
     >
       Order
     </h3>
     <h4
-      className="sc-hBxehG gyyzfn"
+      className="sc-UpCWa efMLHL"
     >
       Please provide your information, and our operator will get in touch with you as soon as possible to finish your order
     </h4>
     <svg
-      className="sc-fnGiBr dlGtui"
+      className="sc-jIILKH cmnKLx"
       data-testid="modalCross"
       fill="currentColor"
       height="1em"
@@ -43,20 +43,20 @@ Object {
       />
     </svg>
     <form
-      className="sc-fEXmlR leSxcA"
+      className="sc-ZqFbI ldxxUu"
       onSubmit={[Function]}
     >
       <div
-        className="sc-bjfHbI iYBNeV"
+        className="sc-jNJNQp cMgFTV"
       >
         <label
-          className="sc-idXgbr jbpggx"
+          className="sc-hlLBRy igTqIe"
           htmlFor="inputName"
         >
           Name
         </label>
         <input
-          className="sc-dIfARi esqODf"
+          className="sc-eKJbhj UUBdW"
           id="inputName"
           name="name"
           onBlur={[Function]}
@@ -64,16 +64,16 @@ Object {
         />
       </div>
       <div
-        className="sc-bjfHbI iYBNeV"
+        className="sc-jNJNQp cMgFTV"
       >
         <label
-          className="sc-idXgbr jbpggx"
+          className="sc-hlLBRy igTqIe"
           htmlFor="inputPhone"
         >
           Phone Number
         </label>
         <input
-          className="sc-dIfARi esqODf"
+          className="sc-eKJbhj UUBdW"
           id="inputPhone"
           name="phone"
           onBlur={[Function]}
@@ -83,16 +83,16 @@ Object {
         />
       </div>
       <div
-        className="sc-bjfHbI iYBNeV"
+        className="sc-jNJNQp cMgFTV"
       >
         <label
-          className="sc-idXgbr jbpggx"
+          className="sc-hlLBRy igTqIe"
           htmlFor="inputCity"
         >
           City
         </label>
         <input
-          className="sc-dIfARi esqODf"
+          className="sc-eKJbhj UUBdW"
           id="inputCity"
           name="city"
           onBlur={[Function]}
@@ -100,16 +100,16 @@ Object {
         />
       </div>
       <div
-        className="sc-bjfHbI iYBNeV"
+        className="sc-jNJNQp cMgFTV"
       >
         <label
-          className="sc-idXgbr jbpggx"
+          className="sc-hlLBRy igTqIe"
           htmlFor="inputAdddress"
         >
           Adddress (optional)
         </label>
         <input
-          className="sc-dIfARi esqODf"
+          className="sc-eKJbhj UUBdW"
           id="inputAdddress"
           name="address"
           onBlur={[Function]}
@@ -117,7 +117,7 @@ Object {
         />
       </div>
       <button
-        className="sc-hLBbgP sc-gKPRtg sc-hHTYSt fGqcTx fdWAyy iMqWqg"
+        className="sc-bcXHqe sc-hLBbgP sc-bTTELM glVyWT iWJkHc erHGGk"
         type="submit"
       >
         <span>

@@ -14,29 +14,29 @@ Object {
       />
       <img
         alt="Chicken Curry pizza"
-        className="sc-fbYMXx hgyqMO"
+        className="sc-jOiSOi jWNeMX"
         height="450"
         src="../assets/img/pizza9.png"
         width="450"
       />
     </picture>,
     <h2
-      className="sc-GhhNo llEpZe"
+      className="sc-dPWrhe euoAmA"
     >
       Chicken Curry
     </h2>,
     <p
-      className="sc-fXqpFg eHWNQg"
+      className="sc-bCfvAP rWOoO"
     >
       Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquid nisi aspernatur debitis quod suscipit, vitae placeat natus ipsum inventore esse rerum animi facere numquam saepe vero mollitia quibusdam at voluptates est commodi laudantium? Iste inventore quibusdam cupiditate nemo sint iusto minus nihil culpa! Sequi architecto nesciunt explicabo mollitia. Laboriosam, odio.
     </p>,
     <section
-      className="sc-laZRCg hwUUdM"
+      className="sc-iAEawV fmevog"
     >
       <ul>
         <li
           aria-current={true}
-          className="sc-gGvHcT fNVaNP"
+          className="sc-eeMvmM lkpzEF"
           onClick={[Function]}
           onKeyDown={[Function]}
           tabIndex={0}
@@ -45,7 +45,7 @@ Object {
         </li>
         <li
           aria-current={false}
-          className="sc-gGvHcT JoYtY"
+          className="sc-eeMvmM iDOvIe"
           onClick={[Function]}
           onKeyDown={[Function]}
           tabIndex={0}
@@ -56,7 +56,7 @@ Object {
       <ul>
         <li
           aria-current={true}
-          className="sc-gGvHcT fNVaNP"
+          className="sc-eeMvmM lkpzEF"
           onClick={[Function]}
           onKeyDown={[Function]}
           tabIndex={0}
@@ -66,7 +66,7 @@ Object {
         </li>
         <li
           aria-current={false}
-          className="sc-gGvHcT JoYtY"
+          className="sc-eeMvmM iDOvIe"
           onClick={[Function]}
           onKeyDown={[Function]}
           tabIndex={0}
@@ -76,7 +76,7 @@ Object {
         </li>
         <li
           aria-current={false}
-          className="sc-gGvHcT JoYtY"
+          className="sc-eeMvmM iDOvIe"
           onClick={[Function]}
           onKeyDown={[Function]}
           tabIndex={0}
@@ -87,17 +87,17 @@ Object {
       </ul>
     </section>,
     <h3
-      className="sc-dwnOUR bZhQMC"
+      className="sc-cOxWqc jYILQy"
     >
       14
       $
     </h3>,
     <button
-      className="sc-hLBbgP sc-iBYQkv sc-pyfCe fGqcTx iDltE eflScM"
+      className="sc-bcXHqe sc-eDvSVe sc-gKPRtg glVyWT fwWQTF dBjrMs"
       onClick={[Function]}
     >
       <svg
-        className="sc-ehvNnt dGnZdy"
+        className="sc-iTFTee kJxSjW"
         fill="currentColor"
         height="1em"
         stroke="currentColor"
@@ -120,7 +120,7 @@ Object {
       </span>
     </button>,
     <a
-      className="sc-hLBbgP sc-eDvSVe fGqcTx lhIsum"
+      className="sc-bcXHqe sc-gswNZR glVyWT bMYeao"
       href="/"
       onClick={[Function]}
     >
@@ -128,7 +128,7 @@ Object {
     </a>,
   ],
   "props": Object {
-    "className": "sc-bcXHqe sc-ckEbSK bZXhLi kZkJSK",
+    "className": "sc-kMjNwy sc-cUEOzv jDuCDX clafHF",
     "data-testid": "itemPage",
   },
   "type": "article",
