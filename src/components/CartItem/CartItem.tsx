@@ -3,7 +3,7 @@ import { BsDashLg, BsPlusLg } from 'react-icons/bs';
 import { Link } from 'react-router-dom';
 
 import { useAppDispatch } from '../../hooks/reduxHooks';
-import { ICartItem } from '../../models/ICartItem';
+import { ICartItem } from '../../models';
 import {
   addItem,
   removeItem,

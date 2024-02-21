@@ -3,7 +3,6 @@ import '@testing-library/jest-dom';
 import { screen } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
 
-import { ISelector } from '../../models/ISelector';
 import { pizzaAPI } from '../../services';
 import { setupStore } from '../../store/store';
 import {
@@ -13,6 +12,7 @@ import {
 import { testServer } from '../../tests/mocks';
 import { typeNames } from '../FullItemBlock/FullItemBlock';
 import Selector from './Selector';
+import { ISelector } from './Selector.type';
 
 const SelectorMockProps: ISelector = {
   price: 10,

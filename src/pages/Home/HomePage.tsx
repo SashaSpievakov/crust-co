@@ -5,7 +5,7 @@ import { Container } from 'src/styles/Base.styled';
 
 import ProductsContainer from '../../components/ProductsContainer/ProductsContainer';
 import { DropdownSelect, SearchItems } from '../../components/UI';
-import { IPizzaItem } from '../../models/IPizzaItem';
+import { IPizzaItem } from '../../models';
 import { pizzasAPI } from '../../services';
 import { modifySearchParamsName } from '../../utils/modifySearchParamsName';
 import { Categories } from './Categories';

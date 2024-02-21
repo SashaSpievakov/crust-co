@@ -1,4 +1,4 @@
-import { FunctionComponent, KeyboardEvent } from 'react';
+import { FC, KeyboardEvent } from 'react';
 
 import { Li, Ul } from './Categories.styled';
 
@@ -9,7 +9,7 @@ interface CategoriesProps {
 
 const categoriesArr: string[] = ['All', 'Meat', 'Vegetarian', 'Grill', 'Spicy'];
 
-export const Categories: FunctionComponent<CategoriesProps> = ({
+export const Categories: FC<CategoriesProps> = ({
   activeCategory,
   onSelect,
 }) => {

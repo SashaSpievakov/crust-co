@@ -1,8 +1,7 @@
 import { KeyboardEvent } from 'react';
 
 import { useAppDispatch, useAppSelector } from '../../hooks/reduxHooks';
-import { ICartItem } from '../../models/ICartItem';
-import { IItemsCountHandler } from '../../models/IItemsCountHandler';
+import { ICartItem } from '../../models';
 import {
   addItem,
   removeItem,
@@ -10,6 +9,7 @@ import {
 import { selectCurrentItemCount } from '../../store/slices/cart/selectors/selectCurrentItemCount/selectCurrentItemCount';
 import { selectItemsCount } from '../../store/slices/cart/selectors/selectItemsCount/selectItemsCount';
 import { ButtonAdd } from '../../styles/Buttons.styled';
+import { IItemsCountHandler } from './IItemsCountHandler.type';
 import {
   Count,
   Counter,

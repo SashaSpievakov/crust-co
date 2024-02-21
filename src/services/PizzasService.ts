@@ -1,6 +1,6 @@
 import { createApi, fetchBaseQuery } from '@reduxjs/toolkit/dist/query/react';
 
-import { IPizzaItem } from '../models/IPizzaItem';
+import { IPizzaItem } from '../models';
 
 interface IFetchItems {
   activeCategory: number;

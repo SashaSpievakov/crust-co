@@ -1,6 +1,6 @@
-import { ICartItem } from '../../../models/ICartItem';
-import { ICartSliceState } from '../../../models/ICartSliceState';
-import { IPizzaItem } from '../../../models/IPizzaItem';
+import { CartSliceState } from 'src/store/slices/cart/reducer/cartReducer';
+
+import { ICartItem, IPizzaItem } from '../../../models';
 
 export const mockItems: IPizzaItem[] = [
   {
@@ -68,7 +68,7 @@ export const CartItemMockProps2: ICartItem = {
   count: 1,
 };
 
-export const CartItemsMockProps: ICartSliceState = {
+export const CartItemsMockProps: CartSliceState = {
   totalPrice: 100,
   itemsCount: 14,
   items: [CartItemMockProps, CartItemMockProps2],

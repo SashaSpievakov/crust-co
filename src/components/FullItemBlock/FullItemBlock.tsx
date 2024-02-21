@@ -1,6 +1,6 @@
 import { useState } from 'react';
 
-import { IPizzaItem } from '../../models/IPizzaItem';
+import { IPizzaItem } from '../../models';
 import ItemsCountHandler from '../ItemsCountHandler/ItemsCountHandler';
 import Selector from '../Selector/Selector';
 import { ButtonLink } from '../UI';

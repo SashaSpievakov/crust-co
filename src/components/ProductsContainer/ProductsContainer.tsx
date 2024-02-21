@@ -1,4 +1,4 @@
-import { IPizzaItem } from '../../models/IPizzaItem';
+import { IPizzaItem } from '../../models';
 import ItemCard from '../ItemCard/ItemCard';
 import { SkeletonLoader } from '../UI';
 import { SearchError, Section } from './ProductsContainer.styled';
