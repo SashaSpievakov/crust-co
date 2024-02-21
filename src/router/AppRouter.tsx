@@ -3,16 +3,18 @@ import { Route, Routes } from 'react-router-dom';
 
 import { Loading } from '../components/UI';
 import MainLayout from '../layouts/MainLayout';
-import Home from '../pages/Home/Home';
 
+const Home = React.lazy(
+  () => import(/* webpackChunkName: "Home" */ '../pages/Home'),
+);
 const Cart = React.lazy(
-  () => import(/* webpackChunkName: "Cart" */ '../pages/Cart/Cart'),
+  () => import(/* webpackChunkName: "Cart" */ '../pages/Cart'),
 );
 const Pizza = React.lazy(
   () => import(/* webpackChunkName: "FullItem" */ '../pages/Pizza'),
 );
 const NotFound = React.lazy(
-  () => import(/* webpackChunkName: "NotFound" */ '../pages/NotFound/NotFound'),
+  () => import(/* webpackChunkName: "NotFound" */ '../pages/NotFound'),
 );
 
 export const AppRouter = (): JSX.Element => {

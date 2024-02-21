@@ -7,7 +7,7 @@ import { pizzasAPI } from '../../services';
 import { setupStore } from '../../store/store';
 import { renderWithProvidersAndRoutes } from '../../tests/helpers';
 import { testServer } from '../../tests/mocks';
-import Home from './Home';
+import { HomePage } from './HomePage';
 
 describe('Home Tests', () => {
   beforeAll(() => {
@@ -24,7 +24,7 @@ describe('Home Tests', () => {
   });
 
   test('renders the Home page', async () => {
-    renderWithProvidersAndRoutes(<Home />);
+    renderWithProvidersAndRoutes(<HomePage />);
     const lastItem = await screen.findByText(/diablo/i); // eslint-disable-line @typescript-eslint/no-unused-vars
 
     const loadedHome = screen.getByTestId('homePage');
@@ -35,7 +35,7 @@ describe('Home Tests', () => {
     testServer.use(
       rest.get('*', (_req, res, ctx) => res.once(ctx.status(500))),
     );
-    renderWithProvidersAndRoutes(<Home />);
+    renderWithProvidersAndRoutes(<HomePage />);
 
     expect(
       await screen.findByText(/failed to get data from the server/i),

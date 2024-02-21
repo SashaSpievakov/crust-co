@@ -7,7 +7,7 @@ import { pizzaAPI } from '../../services';
 import { setupStore } from '../../store/store';
 import { renderWithProvidersAndRoutes } from '../../tests/helpers';
 import { testServer } from '../../tests/mocks';
-import { Pizza } from './Pizza';
+import { PizzaPage } from './PizzaPage';
 
 describe('Pizza Page Tests', () => {
   beforeAll(() => {
@@ -35,7 +35,7 @@ describe('Pizza Page Tests', () => {
     testServer.use(
       rest.get('*', (_req, res, ctx) => res.once(ctx.status(500))),
     );
-    renderWithProvidersAndRoutes(<Pizza />);
+    renderWithProvidersAndRoutes(<PizzaPage />);
 
     expect(
       await screen.findByText(/failed to get data from the server/i),

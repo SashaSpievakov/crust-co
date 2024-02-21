@@ -8,23 +8,23 @@ import {
   renderWithProvidersAndRoutes,
 } from '../../tests/helpers';
 import { CartItemsMockProps } from '../../tests/mocks/mockData/mockData';
-import Cart from './Cart';
+import { CartPage } from './CartPage';
 
 describe('Cart Tests', () => {
   test('renders the Cart page', () => {
-    const snapshot = rendererWithProviders(<Cart />);
+    const snapshot = rendererWithProviders(<CartPage />);
     expect(snapshot).toMatchSnapshot();
   });
 
   test('renders the Cart page with items', () => {
-    const snapshot = rendererWithProviders(<Cart />, '/', {
+    const snapshot = rendererWithProviders(<CartPage />, '/', {
       cart: CartItemsMockProps,
     });
     expect(snapshot).toMatchSnapshot();
   });
 
   test('deletes all items from the cart', () => {
-    renderWithProvidersAndRoutes(<Cart />, false, '/', {
+    renderWithProvidersAndRoutes(<CartPage />, false, '/', {
       cart: CartItemsMockProps,
     });
     const deleteButton = screen.getByText(/delete all items/i);

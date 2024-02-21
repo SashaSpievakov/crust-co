@@ -1,4 +1,4 @@
-import { ChangeEvent, useEffect, useState } from 'react';
+import { ChangeEvent, FC, useEffect, useState } from 'react';
 import { useSearchParams } from 'react-router-dom';
 import ErrorRequest from 'src/components/ErrorRequest/ErrorRequest';
 import { Container } from 'src/styles/Base.styled';
@@ -9,11 +9,11 @@ import { IPizzaItem } from '../../models/IPizzaItem';
 import { pizzasAPI } from '../../services';
 import { modifySearchParamsName } from '../../utils/modifySearchParamsName';
 import { Categories } from './Categories';
-import { Block, Title, Top } from './Home.styled';
+import { Block, Title, Top } from './HomePage.styled';
 
 export const sortNamesArr: string[] = ['rating', 'price', 'A to Z'];
 
-const Home = () => {
+export const HomePage: FC = () => {
   const [searchParams, setSearchParams] = useSearchParams();
   const [pizzas, setPizzas] = useState<IPizzaItem[]>([]);
   const [searchValue, setSearchValue] = useState<string>('');
@@ -99,5 +99,3 @@ const Home = () => {
     </Container>
   );
 };
-
-export default Home;

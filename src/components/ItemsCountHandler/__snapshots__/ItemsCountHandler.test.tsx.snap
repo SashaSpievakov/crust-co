@@ -4,7 +4,7 @@ exports[`ItemsCountHandler Tests renders the ItemsCountHandler UI component 1`] 
 Object {
   "children": Array [
     <svg
-      className="sc-iTFTee kJxSjW"
+      className="sc-eKJbhj heVTGF"
       fill="currentColor"
       height="1em"
       stroke="currentColor"
@@ -38,7 +38,7 @@ exports[`ItemsCountHandler Tests renders the ItemsCountHandler component with it
 Object {
   "children": Array [
     <svg
-      className="sc-cjibBx cXgAam"
+      className="sc-ZqFbI fUqjDE"
       data-testid="itemsHandlerMinus"
       disabled={true}
       fill="currentColor"
@@ -64,12 +64,12 @@ Object {
       />
     </svg>,
     <span
-      className="sc-cabOPr cjkgHC"
+      className="sc-hlLBRy bsXvni"
     >
       13
     </span>,
     <svg
-      className="sc-jcMfQk NKWgY"
+      className="sc-jNJNQp bwMqeJ"
       data-testid="itemsHandlerPlus"
       fill="currentColor"
       height="1em"
@@ -95,7 +95,7 @@ Object {
     </svg>,
   ],
   "props": Object {
-    "className": "sc-cCjUiG ijRWDW",
+    "className": "sc-jIILKH jNVmmq",
   },
   "type": "section",
 }

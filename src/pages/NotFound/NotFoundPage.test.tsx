@@ -1,11 +1,11 @@
 import '@testing-library/jest-dom';
 
 import { rendererWithProviders } from '../../tests/helpers';
-import NotFound from './NotFound';
+import { NotFoundPage } from './NotFoundPage';
 
 describe('NotFound Tests', () => {
   test('renders the NotFound page', () => {
-    const snapshot = rendererWithProviders(<NotFound />);
+    const snapshot = rendererWithProviders(<NotFoundPage />);
     expect(snapshot).toMatchSnapshot();
   });
 });

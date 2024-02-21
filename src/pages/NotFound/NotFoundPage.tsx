@@ -1,9 +1,10 @@
+import { FC } from 'react';
 import { ErrorParagraph } from 'src/styles/Base.styled';
 
 import { ButtonLink } from '../../components/UI';
-import { Article, Title } from './NotFound.styled';
+import { Article, Title } from './NotFoundPage.styled';
 
-const NotFound = () => {
+export const NotFoundPage: FC = () => {
   return (
     <Article>
       <Title>The page wasn&apos;t found</Title>
@@ -12,5 +13,3 @@ const NotFound = () => {
     </Article>
   );
 };
-
-export default NotFound;

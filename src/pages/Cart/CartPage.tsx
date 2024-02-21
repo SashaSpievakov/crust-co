@@ -1,4 +1,4 @@
-import { KeyboardEvent, useEffect, useState } from 'react';
+import { FC, KeyboardEvent, useEffect, useState } from 'react';
 import { shallowEqual } from 'react-redux';
 import { Link } from 'react-router-dom';
 import Modal from 'src/components/OrderModal/OrderModal';
@@ -22,9 +22,9 @@ import {
   Title,
   Top,
   Trash,
-} from './Cart.styled';
+} from './CartPage.styled';
 
-const Cart = () => {
+export const CartPage: FC = () => {
   const [isOpen, setIsOpen] = useState(false);
   const { itemsCount, totalPrice, items } = useAppSelector(
     selectCart,
@@ -104,5 +104,3 @@ const Cart = () => {
     <CartEmpty />
   );
 };
-
-export default Cart;

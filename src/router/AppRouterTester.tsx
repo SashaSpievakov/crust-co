@@ -1,8 +1,8 @@
 import { Route, Routes } from 'react-router-dom';
 
-import Cart from '../pages/Cart/Cart';
-import Home from '../pages/Home/Home';
-import NotFound from '../pages/NotFound/NotFound';
+import Cart from '../pages/Cart';
+import Home from '../pages/Home';
+import NotFound from '../pages/NotFound';
 import Pizza from '../pages/Pizza';
 
 export const AppRouterTester = () => {

@@ -3,7 +3,7 @@ import '@testing-library/jest-dom';
 import { screen } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
 
-import { sortNamesArr } from '../../../pages/Home/Home';
+import { sortNamesArr } from '../../../pages/Home/HomePage';
 import {
   rendererWithProviders,
   renderWithProvidersAndRoutes,

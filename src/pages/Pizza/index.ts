@@ -1,3 +1,3 @@
-import { Pizza } from './Pizza';
+import { PizzaPage } from './PizzaPage';
 
-export default Pizza;
+export default PizzaPage;
