@@ -3,8 +3,10 @@ import '@testing-library/jest-dom';
 import { screen } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
 
-import rendererWithProviders from '../../tests/helpers/rendererWithProviders';
-import renderWithProviders from '../../tests/helpers/renderWithProviders';
+import {
+  rendererWithProviders,
+  renderWithProvidersAndRoutes,
+} from '../../tests/helpers';
 import { CartItemsMockProps } from '../../tests/mocks/mockData/mockData';
 import Cart from './Cart';
 
@@ -22,7 +24,7 @@ describe('Cart Tests', () => {
   });
 
   test('deletes all items from the cart', () => {
-    renderWithProviders(<Cart />, false, '/', {
+    renderWithProvidersAndRoutes(<Cart />, false, '/', {
       cart: CartItemsMockProps,
     });
     const deleteButton = screen.getByText(/delete all items/i);
@@ -35,7 +37,7 @@ describe('Cart Tests', () => {
   });
 
   test('checks redirect to the Home page', () => {
-    renderWithProviders(null, true, '/cart', {
+    renderWithProvidersAndRoutes(null, true, '/cart', {
       cart: CartItemsMockProps,
     });
     const link = screen.getByRole('link', {

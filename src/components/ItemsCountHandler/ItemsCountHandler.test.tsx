@@ -4,8 +4,10 @@ import { screen } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
 
 import { IItemsCountHandler } from '../../models/IItemsCountHandler';
-import rendererWithAllProviders from '../../tests/helpers/rendererWithProviders';
-import renderWithProviders from '../../tests/helpers/renderWithProviders';
+import {
+  rendererWithProviders,
+  renderWithProvidersAndRoutes,
+} from '../../tests/helpers';
 import { CartItemsMockProps } from '../../tests/mocks/mockData/mockData';
 import { typeNames } from '../FullItemBlock/FullItemBlock';
 import ItemsCountHandler from './ItemsCountHandler';
@@ -22,14 +24,14 @@ const ItemsCountHandlerMockProps: IItemsCountHandler = {
 
 describe('ItemsCountHandler Tests', () => {
   test('renders the ItemsCountHandler UI component', () => {
-    const snapshot = rendererWithAllProviders(
+    const snapshot = rendererWithProviders(
       <ItemsCountHandler {...ItemsCountHandlerMockProps} />,
     );
     expect(snapshot).toMatchSnapshot();
   });
 
   test('renders the ItemsCountHandler component with items', () => {
-    const snapshot = rendererWithAllProviders(
+    const snapshot = rendererWithProviders(
       <ItemsCountHandler {...ItemsCountHandlerMockProps} />,
       '/',
       { cart: CartItemsMockProps },
@@ -39,7 +41,7 @@ describe('ItemsCountHandler Tests', () => {
 
   describe('checks buttons clicks', () => {
     test('clicks add button', async () => {
-      renderWithProviders(
+      renderWithProvidersAndRoutes(
         <ItemsCountHandler {...ItemsCountHandlerMockProps} />,
       );
       const addButton = screen.getByRole('button');
@@ -50,7 +52,7 @@ describe('ItemsCountHandler Tests', () => {
     });
 
     test('clicks minus button', async () => {
-      renderWithProviders(
+      renderWithProvidersAndRoutes(
         <ItemsCountHandler {...ItemsCountHandlerMockProps} />,
       );
       const addButton = screen.getByRole('button');
@@ -63,7 +65,7 @@ describe('ItemsCountHandler Tests', () => {
     });
 
     test('clicks plus button', async () => {
-      renderWithProviders(
+      renderWithProvidersAndRoutes(
         <ItemsCountHandler {...ItemsCountHandlerMockProps} />,
       );
       const addButton = screen.getByRole('button');

@@ -3,8 +3,10 @@ import '@testing-library/jest-dom';
 import { screen } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
 
-import rendererWithProviders from '../../tests/helpers/rendererWithProviders';
-import renderWithProviders from '../../tests/helpers/renderWithProviders';
+import {
+  rendererWithProviders,
+  renderWithProvidersAndRoutes,
+} from '../../tests/helpers';
 import {
   CartItemMockProps,
   CartItemMockProps2,
@@ -27,7 +29,7 @@ describe('CartItem Tests', () => {
 
   describe('Button tests', () => {
     beforeEach(() => {
-      renderWithProviders(null, true, '/cart', {
+      renderWithProvidersAndRoutes(null, true, '/cart', {
         cart: CartItemsMockProps,
       });
     });

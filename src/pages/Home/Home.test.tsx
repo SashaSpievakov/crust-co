@@ -5,26 +5,26 @@ import { rest } from 'msw';
 
 import { pizzasAPI } from '../../services';
 import { setupStore } from '../../store/store';
-import renderWithProviders from '../../tests/helpers/renderWithProviders';
-import server from '../../tests/mocks/api/server';
+import { renderWithProvidersAndRoutes } from '../../tests/helpers';
+import { testServer } from '../../tests/mocks';
 import Home from './Home';
 
 describe('Home Tests', () => {
   beforeAll(() => {
-    server.listen();
+    testServer.listen();
   });
 
   afterAll(() => {
-    server.close();
+    testServer.close();
   });
 
   afterEach(() => {
-    server.resetHandlers();
+    testServer.resetHandlers();
     setupStore().dispatch(pizzasAPI.util.resetApiState());
   });
 
   test('renders the Home page', async () => {
-    renderWithProviders(<Home />);
+    renderWithProvidersAndRoutes(<Home />);
     const lastItem = await screen.findByText(/diablo/i); // eslint-disable-line @typescript-eslint/no-unused-vars
 
     const loadedHome = screen.getByTestId('homePage');
@@ -32,8 +32,10 @@ describe('Home Tests', () => {
   });
 
   test('renders the Home page with a server requesr error', async () => {
-    server.use(rest.get('*', (_req, res, ctx) => res.once(ctx.status(500))));
-    renderWithProviders(<Home />);
+    testServer.use(
+      rest.get('*', (_req, res, ctx) => res.once(ctx.status(500))),
+    );
+    renderWithProvidersAndRoutes(<Home />);
 
     expect(
       await screen.findByText(/failed to get data from the server/i),

@@ -5,10 +5,11 @@ import userEvent from '@testing-library/user-event';
 
 import { pizzaAPI } from '../../services';
 import { setupStore } from '../../store/store';
-import rendererWithProviders from '../../tests/helpers/rendererWithProviders';
-import renderWithProviders from '../../tests/helpers/renderWithProviders';
-import server from '../../tests/mocks/api/server';
-import { mockItem } from '../../tests/mocks/mockData/mockData';
+import {
+  rendererWithProviders,
+  renderWithProvidersAndRoutes,
+} from '../../tests/helpers';
+import { mockItem, testServer } from '../../tests/mocks';
 import ItemCard from './ItemCard';
 
 describe('ItemCard Tests', () => {
@@ -19,7 +20,7 @@ describe('ItemCard Tests', () => {
 
   describe('checks the price changing', () => {
     beforeEach(() => {
-      renderWithProviders(<ItemCard {...mockItem} />);
+      renderWithProvidersAndRoutes(<ItemCard {...mockItem} />);
     });
 
     test('checks type click', () => {
@@ -54,20 +55,20 @@ describe('ItemCard Tests', () => {
 
   describe('checks rtk query hook', () => {
     beforeAll(() => {
-      server.listen();
+      testServer.listen();
     });
 
     afterAll(() => {
-      server.close();
+      testServer.close();
     });
 
     afterEach(() => {
-      server.resetHandlers();
+      testServer.resetHandlers();
       setupStore().dispatch(pizzaAPI.util.resetApiState());
     });
 
     test('checks link redirect to the Item page', async () => {
-      renderWithProviders(<ItemCard {...mockItem} />, true, '/cart');
+      renderWithProvidersAndRoutes(<ItemCard {...mockItem} />, true, '/cart');
       const link = screen.getByRole('heading', {
         name: /chicken curry/i,
       });

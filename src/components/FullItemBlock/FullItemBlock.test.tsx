@@ -3,8 +3,10 @@ import '@testing-library/jest-dom';
 import { screen } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
 
-import rendererWithProviders from '../../tests/helpers/rendererWithProviders';
-import renderWithProviders from '../../tests/helpers/renderWithProviders';
+import {
+  rendererWithProviders,
+  renderWithProvidersAndRoutes,
+} from '../../tests/helpers';
 import { mockItem } from '../../tests/mocks/mockData/mockData';
 import FullItemBlock from './FullItemBlock';
 
@@ -16,7 +18,7 @@ describe('FullItemBlock Tests', () => {
 
   describe('checks the price changing', () => {
     beforeEach(() => {
-      renderWithProviders(<FullItemBlock item={mockItem} />);
+      renderWithProvidersAndRoutes(<FullItemBlock item={mockItem} />);
     });
 
     test('checks type click', () => {
@@ -57,7 +59,7 @@ describe('FullItemBlock Tests', () => {
 
   describe('checks the integration between CoundHandler, Selector and FullItem', () => {
     beforeEach(() => {
-      renderWithProviders(<FullItemBlock item={mockItem} />);
+      renderWithProvidersAndRoutes(<FullItemBlock item={mockItem} />);
     });
 
     test('checks disabled minus button after type switching', () => {

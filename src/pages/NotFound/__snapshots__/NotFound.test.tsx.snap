@@ -4,7 +4,7 @@ exports[`NotFound Tests renders the NotFound page 1`] = `
 Object {
   "children": Array [
     <h2
-      className="sc-fLcnxK jaJAMV"
+      className="sc-fcCDlF jNUSkZ"
     >
       The page wasn't found
     </h2>,
@@ -22,7 +22,7 @@ Object {
     </a>,
   ],
   "props": Object {
-    "className": "sc-kgTSHT cJzgGY",
+    "className": "sc-fvEvSO gIfjZU",
   },
   "type": "article",
 }

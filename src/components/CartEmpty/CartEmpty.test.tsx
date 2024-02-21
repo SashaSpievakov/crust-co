@@ -1,6 +1,6 @@
 import '@testing-library/jest-dom';
 
-import rendererWithProviders from '../../tests/helpers/rendererWithProviders';
+import { rendererWithProviders } from '../../tests/helpers';
 import CartEmpty from './CartEmpty';
 
 describe('CartEmpty Tests', () => {

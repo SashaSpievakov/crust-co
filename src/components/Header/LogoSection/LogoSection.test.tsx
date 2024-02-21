@@ -3,18 +3,20 @@ import '@testing-library/jest-dom';
 import { screen } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
 
-import rendererWithAllProviders from '../../../tests/helpers/rendererWithProviders';
-import renderWithAllProviders from '../../../tests/helpers/renderWithProviders';
+import {
+  rendererWithProviders,
+  renderWithProvidersAndRoutes,
+} from '../../../tests/helpers';
 import { LogoSection } from './LogoSection';
 
 describe('LogoSection Tests', () => {
   test('renders the LogoSection UI component', () => {
-    const snapshot = rendererWithAllProviders(<LogoSection />);
+    const snapshot = rendererWithProviders(<LogoSection />);
     expect(snapshot).toMatchSnapshot();
   });
 
   test('checks link redirect to the Home page', () => {
-    renderWithAllProviders(<LogoSection />, true, '/cart');
+    renderWithProvidersAndRoutes(<LogoSection />, true, '/cart');
     const mainHeader = screen.getByRole('heading', {
       level: 1,
     });

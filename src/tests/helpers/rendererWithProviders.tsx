@@ -8,7 +8,7 @@ import { ThemeProvider } from 'styled-components';
 import { RootState, setupStore } from '../../store/store';
 import { darkTheme } from '../../styles/Themes.styled';
 
-const rendererWithProviders = (
+export const rendererWithProviders = (
   compenent: ReactElement,
   route: string = '/',
   preloadedStore: PreloadedState<RootState> = {},
@@ -25,5 +25,3 @@ const rendererWithProviders = (
       .toJSON(),
   };
 };
-
-export default rendererWithProviders;

@@ -2,21 +2,23 @@ import '@testing-library/jest-dom';
 
 import { screen } from '@testing-library/react';
 
-import rendererWithAllProviders from '../../tests/helpers/rendererWithProviders';
-import renderWithProviders from '../../tests/helpers/renderWithProviders';
+import {
+  rendererWithProviders,
+  renderWithProvidersAndRoutes,
+} from '../../tests/helpers';
 import { mockItems } from '../../tests/mocks/mockData/mockData';
 import ProductsContainer from './ProductsContainer';
 
 describe('ProductsContainer Tests', () => {
   test('renders the ProductsContainer component', () => {
-    const snapshot = rendererWithAllProviders(
+    const snapshot = rendererWithProviders(
       <ProductsContainer isLoading={false} items={mockItems} searchValue="" />,
     );
     expect(snapshot).toMatchSnapshot();
   });
 
   test('renders the ProductsContainer component with not matching search value', () => {
-    const snapshot = rendererWithAllProviders(
+    const snapshot = rendererWithProviders(
       <ProductsContainer
         isLoading={false}
         items={mockItems}
@@ -27,7 +29,7 @@ describe('ProductsContainer Tests', () => {
   });
 
   test('renders the ProductsContainer component skeletons', () => {
-    renderWithProviders(
+    renderWithProvidersAndRoutes(
       <ProductsContainer isLoading items={mockItems} searchValue="" />,
     );
     const skeletons = screen.getAllByRole('presentation');
@@ -37,7 +39,7 @@ describe('ProductsContainer Tests', () => {
   });
 
   test('renders items with a search value', () => {
-    renderWithProviders(
+    renderWithProvidersAndRoutes(
       <ProductsContainer
         isLoading={false}
         items={mockItems}

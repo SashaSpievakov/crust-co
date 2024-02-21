@@ -1,8 +1,8 @@
 import { rest } from 'msw';
 
-import { mockItem, mockItems } from '../mockData/mockData';
+import { mockItem, mockItems } from '../mockData';
 
-const handlers = [
+export const handlers = [
   rest.get(
     `${process.env.REACT_APP_API_URL}/api/pizzas/Chicken%20Curry`,
     (req, res, ctx) => {
@@ -23,5 +23,3 @@ const handlers = [
     },
   ),
 ];
-
-export default handlers;

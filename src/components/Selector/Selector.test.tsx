@@ -6,9 +6,11 @@ import userEvent from '@testing-library/user-event';
 import { ISelector } from '../../models/ISelector';
 import { pizzaAPI } from '../../services';
 import { setupStore } from '../../store/store';
-import rendererWithAllProviders from '../../tests/helpers/rendererWithProviders';
-import renderWithProviders from '../../tests/helpers/renderWithProviders';
-import server from '../../tests/mocks/api/server';
+import {
+  rendererWithProviders,
+  renderWithProvidersAndRoutes,
+} from '../../tests/helpers';
+import { testServer } from '../../tests/mocks';
 import { typeNames } from '../FullItemBlock/FullItemBlock';
 import Selector from './Selector';
 
@@ -27,27 +29,25 @@ const SelectorMockProps: ISelector = {
 
 describe('Selector Tests', () => {
   test('renders the Selector UI component', () => {
-    const snapshot = rendererWithAllProviders(
-      <Selector {...SelectorMockProps} />,
-    );
+    const snapshot = rendererWithProviders(<Selector {...SelectorMockProps} />);
     expect(snapshot).toMatchSnapshot();
   });
 
   describe('checks select logic', () => {
     beforeAll(() => {
-      server.listen();
+      testServer.listen();
     });
 
     afterAll(() => {
-      server.close();
+      testServer.close();
     });
 
     beforeEach(() => {
-      renderWithProviders(null, true, '/pizzas/Chicken%20Curry');
+      renderWithProvidersAndRoutes(null, true, '/pizzas/Chicken%20Curry');
     });
 
     afterEach(() => {
-      server.resetHandlers();
+      testServer.resetHandlers();
       setupStore().dispatch(pizzaAPI.util.resetApiState());
     });
 

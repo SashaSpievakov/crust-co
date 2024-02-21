@@ -11,7 +11,7 @@ import AppRouterTester from '../../router/AppRouterTester';
 import { RootState, setupStore } from '../../store/store';
 import { darkTheme } from '../../styles/Themes.styled';
 
-const renderWithProviders = (
+export const renderWithProvidersAndRoutes = (
   compenent: ReactElement | null,
   routes: boolean = false,
   route: string = '/',
@@ -30,5 +30,3 @@ const renderWithProviders = (
     ),
   };
 };
-
-export default renderWithProviders;

@@ -3,8 +3,10 @@ import '@testing-library/jest-dom';
 import { screen } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
 
-import rendererWithProviders from '../../tests/helpers/rendererWithProviders';
-import renderWithProviders from '../../tests/helpers/renderWithProviders';
+import {
+  rendererWithProviders,
+  renderWithProvidersAndRoutes,
+} from '../../tests/helpers';
 import Header from './Header';
 
 describe('Header Tests', () => {
@@ -20,7 +22,7 @@ describe('Header Tests', () => {
 
   test('checks link redirect to the Cart page', () => {
     window.HTMLElement.prototype.scrollIntoView = () => {};
-    renderWithProviders(<Header />, true, '/testing');
+    renderWithProvidersAndRoutes(<Header />, true, '/testing');
     const link = screen.getByTestId('cartLink');
 
     userEvent.click(link);

@@ -4,13 +4,15 @@ import { screen } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
 import { CartItemsMockProps } from 'src/tests/mocks/mockData/mockData';
 
-import rendererWithAllProviders from '../../tests/helpers/rendererWithProviders';
-import renderWithProviders from '../../tests/helpers/renderWithProviders';
+import {
+  rendererWithProviders,
+  renderWithProvidersAndRoutes,
+} from '../../tests/helpers';
 import OrderModal from './OrderModal';
 
 describe('OrderModal Tests', () => {
   test('renders the OrderModal UI component', () => {
-    const snapshot = rendererWithAllProviders(
+    const snapshot = rendererWithProviders(
       <OrderModal setIsOpen={jest.fn()} />,
     );
     expect(snapshot).toMatchSnapshot();
@@ -18,7 +20,7 @@ describe('OrderModal Tests', () => {
 
   describe('checks OrderModal logic', () => {
     beforeEach(() => {
-      renderWithProviders(null, true, '/cart', {
+      renderWithProvidersAndRoutes(null, true, '/cart', {
         cart: CartItemsMockProps,
       });
     });

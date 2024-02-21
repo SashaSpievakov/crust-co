@@ -5,26 +5,26 @@ import { rest } from 'msw';
 
 import { pizzaAPI } from '../../services';
 import { setupStore } from '../../store/store';
-import renderWithProviders from '../../tests/helpers/renderWithProviders';
-import server from '../../tests/mocks/api/server';
+import { renderWithProvidersAndRoutes } from '../../tests/helpers';
+import { testServer } from '../../tests/mocks';
 import { Pizza } from './Pizza';
 
 describe('Pizza Page Tests', () => {
   beforeAll(() => {
-    server.listen();
+    testServer.listen();
   });
 
   afterAll(() => {
-    server.close();
+    testServer.close();
   });
 
   afterEach(() => {
-    server.resetHandlers();
+    testServer.resetHandlers();
     setupStore().dispatch(pizzaAPI.util.resetApiState());
   });
 
   test('renders the Pizza page', async () => {
-    renderWithProviders(null, true, '/pizzas/Chicken%20Curry');
+    renderWithProvidersAndRoutes(null, true, '/pizzas/Chicken%20Curry');
     const itemTitle = await screen.findByText(/chicken curry/i); // eslint-disable-line @typescript-eslint/no-unused-vars
 
     const loadedItem = screen.getByTestId('itemPage');
@@ -32,8 +32,10 @@ describe('Pizza Page Tests', () => {
   });
 
   test('renders the Pizza page with a server requesr error', async () => {
-    server.use(rest.get('*', (_req, res, ctx) => res.once(ctx.status(500))));
-    renderWithProviders(<Pizza />);
+    testServer.use(
+      rest.get('*', (_req, res, ctx) => res.once(ctx.status(500))),
+    );
+    renderWithProvidersAndRoutes(<Pizza />);
 
     expect(
       await screen.findByText(/failed to get data from the server/i),
