@@ -5,7 +5,7 @@ import Modal from 'src/components/OrderModal/OrderModal';
 
 import CartEmpty from '../../components/CartEmpty/CartEmpty';
 import CartItem from '../../components/CartItem/CartItem';
-import { useAppDispatch, useAppSelector } from '../../hooks/reduxHooks';
+import { useAppDispatch, useAppSelector } from '../../hooks';
 import { ICartItem } from '../../models';
 import { clearCart } from '../../store/slices/cart/reducer/cartReducer';
 import { selectCart } from '../../store/slices/cart/selectors/selectCart/selectCart';

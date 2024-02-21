@@ -1,7 +1,7 @@
 import { FC } from 'react';
 import { ThemeProvider } from 'styled-components';
 
-import { useAppSelector } from './hooks/reduxHooks';
+import { useAppSelector } from './hooks';
 import { AppRouter } from './router';
 import { selectIsLight } from './store/slices/theme/selectors/selectIsLight';
 import { Global } from './styles/Global.styled';

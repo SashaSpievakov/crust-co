@@ -1,6 +1,6 @@
 import { KeyboardEvent } from 'react';
 
-import { useAppDispatch, useAppSelector } from '../../hooks/reduxHooks';
+import { useAppDispatch, useAppSelector } from '../../hooks';
 import { ICartItem } from '../../models';
 import {
   addItem,

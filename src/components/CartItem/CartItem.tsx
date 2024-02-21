@@ -2,7 +2,7 @@ import { memo } from 'react';
 import { BsDashLg, BsPlusLg } from 'react-icons/bs';
 import { Link } from 'react-router-dom';
 
-import { useAppDispatch } from '../../hooks/reduxHooks';
+import { useAppDispatch } from '../../hooks';
 import { ICartItem } from '../../models';
 import {
   addItem,

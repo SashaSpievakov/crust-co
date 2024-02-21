@@ -3,7 +3,7 @@ import { BsCart3, BsFillMoonFill, BsFillSunFill } from 'react-icons/bs';
 import { shallowEqual } from 'react-redux';
 import { Link, useLocation } from 'react-router-dom';
 
-import { useAppDispatch, useAppSelector } from '../../hooks/reduxHooks';
+import { useAppDispatch, useAppSelector } from '../../hooks';
 import { selectCart } from '../../store/slices/cart/selectors/selectCart/selectCart';
 import { setTheme } from '../../store/slices/theme/reducer/themeReducer';
 import { selectIsLight } from '../../store/slices/theme/selectors/selectIsLight';
