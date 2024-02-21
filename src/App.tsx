@@ -1,3 +1,4 @@
+import { FC } from 'react';
 import { ThemeProvider } from 'styled-components';
 
 import { useAppSelector } from './hooks/reduxHooks';
@@ -6,7 +7,7 @@ import { selectIsLight } from './store/slices/theme/selectors/selectIsLight';
 import Global from './styles/Global.styled';
 import { darkTheme, lightTheme } from './styles/Themes.styled';
 
-function App() {
+export const App: FC = () => {
   const isLight = useAppSelector(selectIsLight);
 
   return (
@@ -15,6 +16,6 @@ function App() {
       <AppRouter />
     </ThemeProvider>
   );
-}
+};
 
 export default App;
