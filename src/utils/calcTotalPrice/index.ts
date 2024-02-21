@@ -1,0 +1,1 @@
+export { calcTotalPrice } from './calcTotalPrice';

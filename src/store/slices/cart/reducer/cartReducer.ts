@@ -2,7 +2,7 @@ import { createSlice, PayloadAction } from '@reduxjs/toolkit';
 
 import { ICartItem } from '../../../../models/ICartItem';
 import { ICartSliceState } from '../../../../models/ICartSliceState';
-import getCartFromLS from '../../../../utils/getCartFromLS/getCartFromLS';
+import { getCartFromLS } from '../../../../utils';
 
 const { items, totalPrice, itemsCount } = getCartFromLS();
 

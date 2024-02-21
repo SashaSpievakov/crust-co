@@ -2,14 +2,14 @@ import {
   CartItemMockProps,
   CartItemMockProps2,
 } from '../../tests/mocks/mockData/mockData';
-import calTotalCount from './calcTotalCount';
+import { calcTotalCount } from './calcTotalCount';
 
 describe('tests calTotalCount', () => {
   test('works with the right parameters', () => {
-    expect(calTotalCount([CartItemMockProps, CartItemMockProps2])).toBe(14);
+    expect(calcTotalCount([CartItemMockProps, CartItemMockProps2])).toBe(14);
   });
 
   test('works with an empty array', () => {
-    expect(calTotalCount([])).toBe(0);
+    expect(calcTotalCount([])).toBe(0);
   });
 });

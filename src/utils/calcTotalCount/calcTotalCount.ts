@@ -1,5 +1,5 @@
 import { ICartItem } from '../../models/ICartItem';
 
-export default function calTotalCount(items: ICartItem[]) {
+export const calcTotalCount = (items: ICartItem[]): number => {
   return items.reduce((sum, obj) => obj.count + sum, 0);
-}
+};

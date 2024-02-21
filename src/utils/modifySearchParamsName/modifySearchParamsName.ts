@@ -1,4 +1,4 @@
-export const modifySearchParamsName = (param: string) => {
+export const modifySearchParamsName = (param: string): string => {
   const trimmedParam = param.trim();
 
   if (!trimmedParam) return '';
