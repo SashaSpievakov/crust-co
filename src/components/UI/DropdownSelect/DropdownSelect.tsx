@@ -1,10 +1,4 @@
-import {
-  FunctionComponent,
-  KeyboardEvent,
-  useEffect,
-  useRef,
-  useState,
-} from 'react';
+import { FC, KeyboardEvent, useEffect, useRef, useState } from 'react';
 
 import {
   ArrowDown,
@@ -21,7 +15,7 @@ interface DropdownSelectProps {
   onSelect: (index: number) => void;
 }
 
-export const DropdownSelect: FunctionComponent<DropdownSelectProps> = ({
+export const DropdownSelect: FC<DropdownSelectProps> = ({
   chosenValue,
   sortNamesArr,
   onSelect,

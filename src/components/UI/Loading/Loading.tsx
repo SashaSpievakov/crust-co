@@ -1,8 +1,8 @@
-import { FunctionComponent } from 'react';
+import { FC } from 'react';
 
 import { Article, Circle, Loader } from './Loading.styled';
 
-export const Loading: FunctionComponent = () => {
+export const Loading: FC = () => {
   return (
     <Article>
       <Loader viewBox="0 0 50 50">
