@@ -5,18 +5,18 @@ Object {
   "children": Array [
     <picture>
       <source
-        srcSet="../assets/img/pizza9.webp"
+        srcSet="../assets/img/pizzas/pizza9.webp"
         type="image/webp"
       />
       <source
-        srcSet="../assets/img/pizza9.png"
+        srcSet="../assets/img/pizzas/pizza9.png"
         type="image/png"
       />
       <img
         alt="Chicken Curry pizza"
         className="sc-dsHJmm fYybnX"
         height="450"
-        src="../assets/img/pizza9.png"
+        src="../assets/img/pizzas/pizza9.png"
         width="450"
       />
     </picture>,

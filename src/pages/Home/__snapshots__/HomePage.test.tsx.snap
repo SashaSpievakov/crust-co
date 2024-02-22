@@ -156,18 +156,18 @@ exports[`Home Tests renders the Home page 1`] = `
       >
         <picture>
           <source
-            srcset="./assets/img/pizza3.webp"
+            srcset="./assets/img/pizzas/pizza3.webp"
             type="image/webp"
           />
           <source
-            srcset="./assets/img/pizza3.png"
+            srcset="./assets/img/pizzas/pizza3.png"
             type="image/png"
           />
           <img
             alt="Shrimp Pizza pizza"
             class="sc-GKYbw dcJNxJ"
             height="250"
-            src="./assets/img/pizza3.png"
+            src="./assets/img/pizzas/pizza3.png"
             width="250"
           />
         </picture>
@@ -264,18 +264,18 @@ exports[`Home Tests renders the Home page 1`] = `
       >
         <picture>
           <source
-            srcset="./assets/img/pizza2.webp"
+            srcset="./assets/img/pizzas/pizza2.webp"
             type="image/webp"
           />
           <source
-            srcset="./assets/img/pizza2.png"
+            srcset="./assets/img/pizzas/pizza2.png"
             type="image/png"
           />
           <img
             alt="Pepperoni Pizza pizza"
             class="sc-GKYbw dcJNxJ"
             height="250"
-            src="./assets/img/pizza2.png"
+            src="./assets/img/pizzas/pizza2.png"
             width="250"
           />
         </picture>
@@ -357,18 +357,18 @@ exports[`Home Tests renders the Home page 1`] = `
       >
         <picture>
           <source
-            srcset="./assets/img/pizza6.webp"
+            srcset="./assets/img/pizzas/pizza6.webp"
             type="image/webp"
           />
           <source
-            srcset="./assets/img/pizza6.png"
+            srcset="./assets/img/pizzas/pizza6.png"
             type="image/png"
           />
           <img
             alt="Diablo pizza"
             class="sc-GKYbw dcJNxJ"
             height="250"
-            src="./assets/img/pizza6.png"
+            src="./assets/img/pizzas/pizza6.png"
             width="250"
           />
         </picture>

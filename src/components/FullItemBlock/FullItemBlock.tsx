@@ -21,12 +21,15 @@ const FullItemBlock = ({ item }: FullItemProps) => {
     <Item data-testid="itemPage">
       <picture>
         <source
-          srcSet={`../assets/img/pizza${item.id}.webp`}
+          srcSet={`../assets/img/pizzas/pizza${item.id}.webp`}
           type="image/webp"
         />
-        <source srcSet={`../assets/img/pizza${item.id}.png`} type="image/png" />
+        <source
+          srcSet={`../assets/img/pizzas/pizza${item.id}.png`}
+          type="image/png"
+        />
         <Image
-          src={`../assets/img/pizza${item.id}.png`}
+          src={`../assets/img/pizzas/pizza${item.id}.png`}
           alt={`${item.name} pizza`}
           width="450"
           height="450"

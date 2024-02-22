@@ -33,10 +33,16 @@ const ItemCard = ({ id, name, price, sizes, types }: ItemCardProps) => {
     <Block>
       <CustomLink to={`/pizzas/${name}`}>
         <picture>
-          <source srcSet={`./assets/img/pizza${id}.webp`} type="image/webp" />
-          <source srcSet={`./assets/img/pizza${id}.png`} type="image/png" />
+          <source
+            srcSet={`./assets/img/pizzas/pizza${id}.webp`}
+            type="image/webp"
+          />
+          <source
+            srcSet={`./assets/img/pizzas/pizza${id}.png`}
+            type="image/png"
+          />
           <Image
-            src={`./assets/img/pizza${id}.png`}
+            src={`./assets/img/pizzas/pizza${id}.png`}
             alt={`${name} pizza`}
             width="250"
             height="250"

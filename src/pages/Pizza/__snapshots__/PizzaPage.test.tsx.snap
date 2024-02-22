@@ -7,18 +7,18 @@ exports[`Pizza Page Tests renders the Pizza page 1`] = `
 >
   <picture>
     <source
-      srcset="../assets/img/pizza9.webp"
+      srcset="../assets/img/pizzas/pizza9.webp"
       type="image/webp"
     />
     <source
-      srcset="../assets/img/pizza9.png"
+      srcset="../assets/img/pizzas/pizza9.png"
       type="image/png"
     />
     <img
       alt="Chicken Curry pizza"
       class="sc-dsHJmm fYybnX"
       height="450"
-      src="../assets/img/pizza9.png"
+      src="../assets/img/pizzas/pizza9.png"
       width="450"
     />
   </picture>
