@@ -1,8 +1,8 @@
 /// <reference types="cypress" />
 import '@testing-library/cypress/add-commands';
 
-describe('itemCard tests', () => {
-  it('tests all itemCard logic', () => {
+describe('Product card tests', () => {
+  it('tests all product card logic', () => {
     cy.visit('/');
 
     // add different items to the cart
