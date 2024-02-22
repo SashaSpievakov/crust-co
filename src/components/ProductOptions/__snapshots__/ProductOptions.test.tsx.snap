@@ -1,0 +1,64 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ProductOptions Tests renders the ProductOptions UI component 1`] = `
+Object {
+  "children": Array [
+    <ul>
+      <li
+        aria-current={true}
+        className="sc-eDWCr izhotF"
+        onClick={[Function]}
+        onKeyDown={[Function]}
+        tabIndex={0}
+      >
+        traditional
+      </li>
+      <li
+        aria-current={false}
+        className="sc-eDWCr ksHZVK"
+        onClick={[Function]}
+        onKeyDown={[Function]}
+        tabIndex={0}
+      >
+        thin
+      </li>
+    </ul>,
+    <ul>
+      <li
+        aria-current={false}
+        className="sc-eDWCr ksHZVK"
+        onClick={[Function]}
+        onKeyDown={[Function]}
+        tabIndex={0}
+      >
+        12
+         inch
+      </li>
+      <li
+        aria-current={false}
+        className="sc-eDWCr ksHZVK"
+        onClick={[Function]}
+        onKeyDown={[Function]}
+        tabIndex={0}
+      >
+        14
+         inch
+      </li>
+      <li
+        aria-current={false}
+        className="sc-eDWCr ksHZVK"
+        onClick={[Function]}
+        onKeyDown={[Function]}
+        tabIndex={0}
+      >
+        16
+         inch
+      </li>
+    </ul>,
+  ],
+  "props": Object {
+    "className": "sc-csuSiG gjzBId",
+  },
+  "type": "div",
+}
+`;

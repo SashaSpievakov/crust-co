@@ -2,7 +2,7 @@
 import '@testing-library/cypress/add-commands';
 
 describe('filters tests', () => {
-  it('tests all filtering logic logic in the application', () => {
+  it('tests products filtering logic in the application', () => {
     cy.visit('/');
 
     // change category to Grill

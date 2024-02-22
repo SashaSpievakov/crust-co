@@ -6,14 +6,15 @@ describe('local Storage tests', () => {
     cy.visit('/');
 
     // add different items to the cart
-    cy.findAllByRole('button').as('allButtons').eq(0).click();
+    cy.findAllByRole('button').as('allButtons').its('length').should('eq', 22);
+    cy.get('@allButtons').eq(0).click();
     cy.get('@allButtons').eq(1).click();
     cy.get('@allButtons').eq(2).click();
     cy.get('@allButtons').eq(3).click();
     cy.get('@allButtons').eq(4).click();
 
     // check cart's values
-    cy.findByText(/68 \$/i).should('be.visible');
+    cy.findByText(/72 \$/i).should('be.visible');
     cy.findByText('5').should('be.visible');
 
     // switch to the dark mode
@@ -27,11 +28,11 @@ describe('local Storage tests', () => {
     // check all items are saved and still showing
     // cy.get('[data-theme="dark"]').should('be.visible');
     cy.get('[data-theme="dark"]').should('be.visible');
-    cy.findByText(/68 \$/i).should('be.visible');
+    cy.findByText(/72 \$/i).should('be.visible');
     cy.findByText('5').should('be.visible').click();
 
     // check items on the cart page
     cy.reload();
-    cy.findAllByRole('heading', { level: 3 }).should('have.length', 10);
+    cy.findAllByRole('heading', { level: 3 }).should('have.length', 5);
   });
 });

@@ -1,4 +1,4 @@
-import { KeyboardEvent } from 'react';
+import { FC, KeyboardEvent } from 'react';
 
 import { useAppDispatch, useAppSelector } from '../../hooks';
 import { ICartItem } from '../../models';
@@ -18,7 +18,7 @@ import {
   Plus,
 } from './ItemsCountHandler.styled';
 
-const ItemsCountHandler = ({
+export const ItemsCountHandler: FC<IItemsCountHandler> = ({
   id,
   name,
   price,
@@ -26,7 +26,7 @@ const ItemsCountHandler = ({
   activeType,
   typeNames,
   isFullScreen = false,
-}: IItemsCountHandler) => {
+}) => {
   const dispatch = useAppDispatch();
   const namesCount = useAppSelector(selectItemsCount(id));
   const currentItemCount = useAppSelector(
@@ -93,5 +93,3 @@ const ItemsCountHandler = ({
     </ButtonAdd>
   );
 };
-
-export default ItemsCountHandler;

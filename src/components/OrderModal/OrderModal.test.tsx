@@ -8,7 +8,7 @@ import {
   rendererWithProviders,
   renderWithProvidersAndRoutes,
 } from '../../tests/helpers';
-import OrderModal from './OrderModal';
+import { OrderModal } from './OrderModal';
 
 describe('OrderModal Tests', () => {
   test('renders the OrderModal UI component', () => {

@@ -8,7 +8,7 @@ import {
   rendererWithProviders,
   renderWithProvidersAndRoutes,
 } from '../../tests/helpers';
-import SuccessModal from './SuccessModal';
+import { SuccessModal } from './SuccessModal';
 
 describe('SuccessModal Tests', () => {
   test('renders the SuccessModal UI component', () => {

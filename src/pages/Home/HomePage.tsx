@@ -1,14 +1,13 @@
 import { ChangeEvent, FC, useEffect, useState } from 'react';
 import { useSearchParams } from 'react-router-dom';
-import ErrorRequest from 'src/components/ErrorRequest/ErrorRequest';
+import { ErrorRequest } from 'src/components/ErrorRequest';
 import { Container } from 'src/styles/Base.styled';
 
-import ProductsContainer from '../../components/ProductsContainer/ProductsContainer';
 import { DropdownSelect, SearchItems } from '../../components/UI';
 import { IPizzaItem } from '../../models';
 import { pizzasAPI } from '../../services';
 import { modifySearchParamsName } from '../../utils/modifySearchParamsName';
-import { Categories } from './Categories';
+import { Categories, ProductsContainer } from './components';
 import { Block, Title, Top } from './HomePage.styled';
 
 export const sortNamesArr: string[] = ['rating', 'price', 'A to Z'];

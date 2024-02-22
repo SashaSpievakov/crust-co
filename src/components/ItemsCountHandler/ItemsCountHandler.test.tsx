@@ -3,14 +3,14 @@ import '@testing-library/jest-dom';
 import { screen } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
 
+import { typeNames } from '../../pages/Pizza/FullProduct/FullProduct';
 import {
   rendererWithProviders,
   renderWithProvidersAndRoutes,
 } from '../../tests/helpers';
 import { CartItemsMockProps } from '../../tests/mocks/mockData/mockData';
-import { typeNames } from '../FullItemBlock/FullItemBlock';
 import { IItemsCountHandler } from './IItemsCountHandler.type';
-import ItemsCountHandler from './ItemsCountHandler';
+import { ItemsCountHandler } from './ItemsCountHandler';
 
 const ItemsCountHandlerMockProps: IItemsCountHandler = {
   id: '6',

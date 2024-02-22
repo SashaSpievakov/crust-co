@@ -1,0 +1,59 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Categories Tests renders the Categories component 1`] = `
+Object {
+  "children": Array [
+    <ul
+      className="sc-jIILKH iZcOtu"
+    >
+      <li
+        aria-current={true}
+        className="sc-ZqFbI jHNOUM"
+        onClick={[Function]}
+        onKeyDown={[Function]}
+        tabIndex={-1}
+      >
+        All
+      </li>
+      <li
+        aria-current={false}
+        className="sc-ZqFbI isYAHE"
+        onClick={[Function]}
+        onKeyDown={[Function]}
+        tabIndex={0}
+      >
+        Meat
+      </li>
+      <li
+        aria-current={false}
+        className="sc-ZqFbI isYAHE"
+        onClick={[Function]}
+        onKeyDown={[Function]}
+        tabIndex={0}
+      >
+        Vegetarian
+      </li>
+      <li
+        aria-current={false}
+        className="sc-ZqFbI isYAHE"
+        onClick={[Function]}
+        onKeyDown={[Function]}
+        tabIndex={0}
+      >
+        Grill
+      </li>
+      <li
+        aria-current={false}
+        className="sc-ZqFbI isYAHE"
+        onClick={[Function]}
+        onKeyDown={[Function]}
+        tabIndex={0}
+      >
+        Spicy
+      </li>
+    </ul>,
+  ],
+  "props": Object {},
+  "type": "section",
+}
+`;

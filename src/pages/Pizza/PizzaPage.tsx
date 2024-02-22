@@ -1,10 +1,10 @@
 import { FC, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
-import ErrorRequest from 'src/components/ErrorRequest/ErrorRequest';
+import { ErrorRequest } from 'src/components/ErrorRequest';
 
-import FullItemBlock from '../../components/FullItemBlock/FullItemBlock';
 import { Loading } from '../../components/UI';
 import { pizzaAPI } from '../../services';
+import { FullProduct } from './FullProduct';
 
 export const PizzaPage: FC = () => {
   const { name } = useParams();
@@ -23,7 +23,7 @@ export const PizzaPage: FC = () => {
   return isLoading ? (
     <Loading />
   ) : isSuccess ? (
-    <FullItemBlock item={data} />
+    <FullProduct item={data} />
   ) : (
     <ErrorRequest />
   );

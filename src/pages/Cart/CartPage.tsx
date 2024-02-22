@@ -1,15 +1,15 @@
 import { FC, KeyboardEvent, useEffect, useState } from 'react';
 import { shallowEqual } from 'react-redux';
 import { Link } from 'react-router-dom';
-import Modal from 'src/components/OrderModal/OrderModal';
+import { OrderModal } from 'src/components/OrderModal';
 
-import CartEmpty from '../../components/CartEmpty/CartEmpty';
-import CartItem from '../../components/CartItem/CartItem';
 import { useAppDispatch, useAppSelector } from '../../hooks';
 import { ICartItem } from '../../models';
 import { clearCart } from '../../store/slices/cart/reducer/cartReducer';
 import { selectCart } from '../../store/slices/cart/selectors/selectCart/selectCart';
 import { ButtonBackCart, ButtonPay } from '../../styles/Buttons.styled';
+import { CartEmpty } from './CartEmpty';
+import { CartItem } from './CartItem';
 import {
   Article,
   Bottom,
@@ -96,7 +96,7 @@ export const CartPage: FC = () => {
           <ButtonPay onClick={() => setIsOpen(true)}>
             <span>Buy now</span>
           </ButtonPay>
-          {isOpen && <Modal setIsOpen={setIsOpen} />}
+          {isOpen && <OrderModal setIsOpen={setIsOpen} />}
         </Buttons>
       </Bottom>
     </Article>
