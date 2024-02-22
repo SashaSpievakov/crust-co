@@ -1,15 +1,17 @@
-import calTotalCount from '../calcTotalCount/calcTotalCount';
-import calTotalPrice from '../calcTotalPrice/calcTotalPrice';
+import { ICartItem } from 'src/models';
 
-export default function getCartFromLS() {
+import { calcTotalCount } from '../calcTotalCount';
+import { calcTotalPrice } from '../calcTotalPrice';
+
+export const getCartFromLS = () => {
   const data = localStorage.getItem('cart');
-  const items = data ? JSON.parse(data) : [];
-  const totalPrice = calTotalPrice(items);
-  const itemsCount = calTotalCount(items);
+  const items: ICartItem[] = data ? JSON.parse(data) : [];
+  const totalPrice = calcTotalPrice(items);
+  const itemsCount = calcTotalCount(items);
 
   return {
     items,
     totalPrice,
     itemsCount,
   };
-}
+};

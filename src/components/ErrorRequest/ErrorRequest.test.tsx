@@ -1,11 +1,11 @@
 import '@testing-library/jest-dom';
 
-import rendererWithAllProviders from '../../tests/helpers/rendererWithProviders';
-import ErrorRequest from './ErrorRequest';
+import { rendererWithProviders } from '../../tests/helpers';
+import { ErrorRequest } from './ErrorRequest';
 
 describe('ErrorRequest Tests', () => {
   test('renders the ErrorRequest UI component', () => {
-    const snapshot = rendererWithAllProviders(<ErrorRequest />);
+    const snapshot = rendererWithProviders(<ErrorRequest />);
     expect(snapshot).toMatchSnapshot();
   });
 });

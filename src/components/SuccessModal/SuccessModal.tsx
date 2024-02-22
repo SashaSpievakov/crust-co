@@ -1,3 +1,4 @@
+import { FC } from 'react';
 import { ModalBg } from 'src/styles/Base.styled';
 
 import { Aricle, CloseButton, Header, SubHeader } from './SuccessModal.styled';
@@ -6,7 +7,7 @@ interface SuccessModalProps {
   setIsOpen: (value: boolean) => void;
 }
 
-const SuccessModal = ({ setIsOpen }: SuccessModalProps) => {
+export const SuccessModal: FC<SuccessModalProps> = ({ setIsOpen }) => {
   return (
     <>
       <ModalBg onClick={() => setIsOpen(false)} />
@@ -20,4 +21,3 @@ const SuccessModal = ({ setIsOpen }: SuccessModalProps) => {
     </>
   );
 };
-export default SuccessModal;

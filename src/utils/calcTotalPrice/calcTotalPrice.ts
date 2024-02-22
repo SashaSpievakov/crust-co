@@ -1,5 +1,5 @@
-import { ICartItem } from '../../models/ICartItem';
+import { ICartItem } from '../../models';
 
-export default function calTotalPrice(items: ICartItem[]) {
+export const calcTotalPrice = (items: ICartItem[]): number => {
   return items.reduce((sum, obj) => obj.count * obj.price + sum, 0);
-}
+};

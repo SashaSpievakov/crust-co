@@ -1,0 +1,449 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Cart Tests renders the Cart page 1`] = `
+Object {
+  "children": Array [
+    <h2>
+      Your cart is empty 
+      <span>
+        😕
+      </span>
+    </h2>,
+    <p>
+      You haven't ordered food yet.
+      <br />
+      If you want to make an order, go back to the main page.
+    </p>,
+    <img
+      alt="empty cart"
+      height="255"
+      src="empty-cart.png"
+      width="300"
+    />,
+    <a
+      className="sc-bcXHqe sc-gswNZR glVyWT bMYeao"
+      href="/"
+      onClick={[Function]}
+    >
+      Go Back
+    </a>,
+  ],
+  "props": Object {
+    "className": "sc-cOxWqc cBMvZu",
+  },
+  "type": "article",
+}
+`;
+
+exports[`Cart Tests renders the Cart page with items 1`] = `
+Object {
+  "children": Array [
+    <div
+      className="sc-eJDSGI czKlxM"
+    >
+      <h2
+        className="sc-oZIhv hKMdUH"
+      >
+        <svg
+          className="sc-hiDMwi bjeJVo"
+          fill="currentColor"
+          height="1em"
+          stroke="currentColor"
+          strokeWidth="0"
+          style={
+            Object {
+              "color": undefined,
+            }
+          }
+          viewBox="0 0 16 16"
+          width="1em"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .49.598l-1 5a.5.5 0 0 1-.465.401l-9.397.472L4.415 11H13a.5.5 0 0 1 0 1H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l.84 4.479 9.144-.459L13.89 4H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"
+          />
+        </svg>
+        Cart
+      </h2>
+      <section
+        className="sc-ehvNnt bLHoZc"
+        onClick={[Function]}
+        onKeyDown={[Function]}
+        tabIndex={0}
+      >
+        <svg
+          className="sc-laZRCg byPhIJ"
+          fill="currentColor"
+          height="1em"
+          stroke="currentColor"
+          strokeWidth="0"
+          style={
+            Object {
+              "color": undefined,
+            }
+          }
+          viewBox="0 0 16 16"
+          width="1em"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M5.5 5.5A.5.5 0 0 1 6 6v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5zm2.5 0a.5.5 0 0 1 .5.5v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5zm3 .5a.5.5 0 0 0-1 0v6a.5.5 0 0 0 1 0V6z"
+          />
+          <path
+            d="M14.5 3a1 1 0 0 1-1 1H13v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V4h-.5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1H6a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1h3.5a1 1 0 0 1 1 1v1zM4.118 4 4 4.059V13a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V4.059L11.882 4H4.118zM2.5 3V2h11v1h-11z"
+            fillRule="evenodd"
+          />
+        </svg>
+        <span
+          className="sc-gGvHcT jrMeoo"
+          role="presentation"
+        >
+          Delete all items
+        </span>
+      </section>
+    </div>,
+    <section>
+      <article
+        className="sc-AHaJN fXlCNh"
+      >
+        <div
+          className="sc-khsqcC bvGTId"
+        >
+          <picture>
+            <source
+              srcSet="./assets/img/pizzas/pizza6.webp"
+              type="image/webp"
+            />
+            <source
+              srcSet="./assets/img/pizzas/pizza6.png"
+              type="image/png"
+            />
+            <img
+              alt="Cheesburger Pizza pizza"
+              height="80"
+              src="./assets/img/pizzas/pizza6.png"
+              width="80"
+            />
+          </picture>
+        </div>
+        <div
+          className="sc-hTBuwn dZgwDN"
+        >
+          <a
+            href="/pizzas/Cheesburger Pizza"
+            onClick={[Function]}
+          >
+            Cheesburger Pizza
+          </a>
+          <p>
+            thin
+             dough, 
+            14
+             inch
+          </p>
+        </div>
+        <section
+          className="sc-jfTVlA flwxrM"
+        >
+          <button
+            aria-label="minus"
+            className="sc-bcXHqe sc-eDvSVe sc-jSUZER glVyWT fwWQTF ggHeaE"
+            disabled={false}
+            onClick={[Function]}
+          >
+            <svg
+              className="sc-gScZFl eKZyyq"
+              fill="currentColor"
+              height="1em"
+              stroke="currentColor"
+              strokeWidth="0"
+              style={
+                Object {
+                  "color": undefined,
+                }
+              }
+              viewBox="0 0 16 16"
+              width="1em"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M0 8a1 1 0 0 1 1-1h14a1 1 0 1 1 0 2H1a1 1 0 0 1-1-1z"
+              />
+            </svg>
+          </button>
+          <span>
+            13
+          </span>
+          <button
+            aria-label="plus"
+            className="sc-bcXHqe sc-eDvSVe sc-jSUZER glVyWT fwWQTF ggHeaE"
+            onClick={[Function]}
+          >
+            <svg
+              className="sc-gScZFl eKZyyq"
+              fill="currentColor"
+              height="1em"
+              stroke="currentColor"
+              strokeWidth="0"
+              style={
+                Object {
+                  "color": undefined,
+                }
+              }
+              viewBox="0 0 16 16"
+              width="1em"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M8 0a1 1 0 0 1 1 1v6h6a1 1 0 1 1 0 2H9v6a1 1 0 1 1-2 0V9H1a1 1 0 0 1 0-2h6V1a1 1 0 0 1 1-1z"
+              />
+            </svg>
+          </button>
+        </section>
+        <h3
+          className="sc-lbVpMG cjbYsG"
+        >
+          91
+          $
+        </h3>
+        <div
+          className="sc-iOeugr krWYOZ"
+        >
+          <button
+            aria-label="delete"
+            className="sc-bcXHqe sc-eDvSVe sc-jSUZER glVyWT fwWQTF gjJRSz"
+            onClick={[Function]}
+          >
+            <svg
+              className="sc-gScZFl eKZyyq"
+              fill="currentColor"
+              height="1em"
+              stroke="currentColor"
+              strokeWidth="0"
+              style={
+                Object {
+                  "color": undefined,
+                }
+              }
+              viewBox="0 0 16 16"
+              width="1em"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M8 0a1 1 0 0 1 1 1v6h6a1 1 0 1 1 0 2H9v6a1 1 0 1 1-2 0V9H1a1 1 0 0 1 0-2h6V1a1 1 0 0 1 1-1z"
+              />
+            </svg>
+          </button>
+        </div>
+      </article>
+      <article
+        className="sc-AHaJN fXlCNh"
+      >
+        <div
+          className="sc-khsqcC bvGTId"
+        >
+          <picture>
+            <source
+              srcSet="./assets/img/pizzas/pizza2.webp"
+              type="image/webp"
+            />
+            <source
+              srcSet="./assets/img/pizzas/pizza2.png"
+              type="image/png"
+            />
+            <img
+              alt="Pepperoni Pizza pizza"
+              height="80"
+              src="./assets/img/pizzas/pizza2.png"
+              width="80"
+            />
+          </picture>
+        </div>
+        <div
+          className="sc-hTBuwn dZgwDN"
+        >
+          <a
+            href="/pizzas/Pepperoni Pizza"
+            onClick={[Function]}
+          >
+            Pepperoni Pizza
+          </a>
+          <p>
+            traditional
+             dough, 
+            16
+             inch
+          </p>
+        </div>
+        <section
+          className="sc-jfTVlA flwxrM"
+        >
+          <button
+            aria-label="minus"
+            className="sc-bcXHqe sc-eDvSVe sc-jSUZER glVyWT fwWQTF ggHeaE"
+            disabled={true}
+            onClick={[Function]}
+          >
+            <svg
+              className="sc-gScZFl eKZyyq"
+              fill="currentColor"
+              height="1em"
+              stroke="currentColor"
+              strokeWidth="0"
+              style={
+                Object {
+                  "color": undefined,
+                }
+              }
+              viewBox="0 0 16 16"
+              width="1em"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M0 8a1 1 0 0 1 1-1h14a1 1 0 1 1 0 2H1a1 1 0 0 1-1-1z"
+              />
+            </svg>
+          </button>
+          <span>
+            1
+          </span>
+          <button
+            aria-label="plus"
+            className="sc-bcXHqe sc-eDvSVe sc-jSUZER glVyWT fwWQTF ggHeaE"
+            onClick={[Function]}
+          >
+            <svg
+              className="sc-gScZFl eKZyyq"
+              fill="currentColor"
+              height="1em"
+              stroke="currentColor"
+              strokeWidth="0"
+              style={
+                Object {
+                  "color": undefined,
+                }
+              }
+              viewBox="0 0 16 16"
+              width="1em"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M8 0a1 1 0 0 1 1 1v6h6a1 1 0 1 1 0 2H9v6a1 1 0 1 1-2 0V9H1a1 1 0 0 1 0-2h6V1a1 1 0 0 1 1-1z"
+              />
+            </svg>
+          </button>
+        </section>
+        <h3
+          className="sc-lbVpMG cjbYsG"
+        >
+          9
+          $
+        </h3>
+        <div
+          className="sc-iOeugr krWYOZ"
+        >
+          <button
+            aria-label="delete"
+            className="sc-bcXHqe sc-eDvSVe sc-jSUZER glVyWT fwWQTF gjJRSz"
+            onClick={[Function]}
+          >
+            <svg
+              className="sc-gScZFl eKZyyq"
+              fill="currentColor"
+              height="1em"
+              stroke="currentColor"
+              strokeWidth="0"
+              style={
+                Object {
+                  "color": undefined,
+                }
+              }
+              viewBox="0 0 16 16"
+              width="1em"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M8 0a1 1 0 0 1 1 1v6h6a1 1 0 1 1 0 2H9v6a1 1 0 1 1-2 0V9H1a1 1 0 0 1 0-2h6V1a1 1 0 0 1 1-1z"
+              />
+            </svg>
+          </button>
+        </div>
+      </article>
+    </section>,
+    <section
+      className="sc-ckEbSK gDmolZ"
+    >
+      <section
+        className="sc-fbYMXx hEDUBp"
+      >
+        <span>
+           
+          Items 
+          <b
+            data-testid="cartPageItemsCount"
+          >
+            14
+          </b>
+           
+        </span>
+        <span>
+           
+          Total 
+          <b
+            data-testid="cartPageItemsPrice"
+          >
+            100
+            $
+          </b>
+           
+        </span>
+      </section>
+      <section
+        className="sc-GhhNo dJTMdi"
+      >
+        <a
+          className="sc-bcXHqe sc-eDvSVe sc-gKPRtg sc-iBYQkv glVyWT fwWQTF gmBSoV kPGGvm"
+          href="/"
+          onClick={[Function]}
+        >
+          <svg
+            className="sc-fXqpFg gjLeGN"
+            fill="currentColor"
+            height="1em"
+            stroke="currentColor"
+            strokeWidth="0"
+            style={
+              Object {
+                "color": undefined,
+              }
+            }
+            viewBox="0 0 16 16"
+            width="1em"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"
+              fillRule="evenodd"
+            />
+          </svg>
+          <span>
+            Go back
+          </span>
+        </a>
+        <button
+          className="sc-bcXHqe sc-hLBbgP glVyWT iWJkHc"
+          onClick={[Function]}
+        >
+          <span>
+            Buy now
+          </span>
+        </button>
+      </section>
+    </section>,
+  ],
+  "props": Object {
+    "className": "sc-kMjNwy sc-jfvxQR jDuCDX kIqlDo",
+  },
+  "type": "article",
+}
+`;

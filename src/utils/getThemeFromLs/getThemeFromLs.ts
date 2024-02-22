@@ -1,6 +1,6 @@
-export default function getThemeFromLs() {
+export const getThemeFromLs = (): boolean => {
   const data = localStorage.getItem('isLight');
-  const isLight = data ? JSON.parse(data) : true;
+  const isLight = data ? Boolean(JSON.parse(data)) : true;
 
   return isLight;
-}
+};

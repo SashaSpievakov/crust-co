@@ -4,20 +4,22 @@ import { screen } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
 import { CartItemsMockProps } from 'src/tests/mocks/mockData/mockData';
 
-import rendererWithAllProviders from '../../tests/helpers/rendererWithProviders';
-import renderWithProviders from '../../tests/helpers/renderWithProviders';
-import SuccessModal from './SuccessModal';
+import {
+  rendererWithProviders,
+  renderWithProvidersAndRoutes,
+} from '../../tests/helpers';
+import { SuccessModal } from './SuccessModal';
 
 describe('SuccessModal Tests', () => {
   test('renders the SuccessModal UI component', () => {
-    const snapshot = rendererWithAllProviders(
+    const snapshot = rendererWithProviders(
       <SuccessModal setIsOpen={jest.fn()} />,
     );
     expect(snapshot).toMatchSnapshot();
   });
 
   test('closes the SuccessModal', async () => {
-    renderWithProviders(null, true, '/cart', {
+    renderWithProvidersAndRoutes(null, true, '/cart', {
       cart: CartItemsMockProps,
     });
     const buyButton = screen.getByRole('button', {

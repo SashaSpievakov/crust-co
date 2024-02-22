@@ -2,20 +2,22 @@ import React, { Suspense } from 'react';
 import { Route, Routes } from 'react-router-dom';
 
 import { Loading } from '../components/UI';
-import MainLayout from '../layouts/MainLayout';
-import Home from '../pages/Home/Home';
+import { MainLayout } from '../layouts';
 
+const Home = React.lazy(
+  () => import(/* webpackChunkName: "Home" */ '../pages/Home'),
+);
 const Cart = React.lazy(
-  () => import(/* webpackChunkName: "Cart" */ '../pages/Cart/Cart'),
+  () => import(/* webpackChunkName: "Cart" */ '../pages/Cart'),
 );
 const Pizza = React.lazy(
   () => import(/* webpackChunkName: "FullItem" */ '../pages/Pizza'),
 );
 const NotFound = React.lazy(
-  () => import(/* webpackChunkName: "NotFound" */ '../pages/NotFound/NotFound'),
+  () => import(/* webpackChunkName: "NotFound" */ '../pages/NotFound'),
 );
 
-const AppRouter = () => {
+export const AppRouter = (): JSX.Element => {
   return (
     <Routes>
       <Route path="/" element={<MainLayout />}>
@@ -48,5 +50,3 @@ const AppRouter = () => {
     </Routes>
   );
 };
-
-export default AppRouter;

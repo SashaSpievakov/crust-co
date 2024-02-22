@@ -1,0 +1,147 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`MainLayout Tests renders the MainLayout component 1`] = `
+Object {
+  "0": <header
+    className="sc-fLcnxK gKwcGv"
+  >
+    <a
+      className="sc-lllmON iNpDSF"
+      href="/"
+      ishome="home"
+      onClick={[Function]}
+      tabIndex={-1}
+    >
+      <section
+        className="sc-iJnaPW dycudx"
+      >
+        <img
+          alt="Pizza logo"
+          height="54.5"
+          src="main-logo.svg"
+          width="38"
+        />
+        <div>
+          <h1
+            className="sc-gikAfH dUdZiW"
+          >
+            Crust & Co.
+          </h1>
+          <p
+            className="sc-ezOQGI fTfOLP"
+          >
+            the most delicious pizzas in town
+          </p>
+        </div>
+      </section>
+    </a>
+    <section
+      className="sc-bBABsx ldaFoo"
+    >
+      <svg
+        className="sc-iveFHk ffA-DzJ"
+        data-testid="themeIcon"
+        data-theme="light"
+        fill="currentColor"
+        height="1em"
+        mode=""
+        onClick={[Function]}
+        onKeyDown={[Function]}
+        stroke="currentColor"
+        strokeWidth="0"
+        style={
+          Object {
+            "color": undefined,
+          }
+        }
+        tabIndex={0}
+        viewBox="0 0 16 16"
+        width="1em"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M6 .278a.768.768 0 0 1 .08.858 7.208 7.208 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277.527 0 1.04-.055 1.533-.16a.787.787 0 0 1 .81.316.733.733 0 0 1-.031.893A8.349 8.349 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.752.752 0 0 1 6 .278z"
+        />
+      </svg>
+      <a
+        className="sc-bcXHqe sc-dkrFOg glVyWT hgxfKt"
+        data-testid="cartLink"
+        href="/cart"
+        onClick={[Function]}
+      >
+        <span>
+          0
+           $
+        </span>
+        <div
+          className="sc-cwSeag SAbhR"
+        />
+        <svg
+          fill="currentColor"
+          height="1em"
+          stroke="currentColor"
+          strokeWidth="0"
+          style={
+            Object {
+              "color": undefined,
+            }
+          }
+          viewBox="0 0 16 16"
+          width="1em"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .49.598l-1 5a.5.5 0 0 1-.465.401l-9.397.472L4.415 11H13a.5.5 0 0 1 0 1H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l.84 4.479 9.144-.459L13.89 4H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"
+          />
+        </svg>
+        <span>
+          0
+        </span>
+      </a>
+    </section>
+  </header>,
+  "1": <main
+    className="sc-bYMpWt kohrxN"
+  />,
+  "2": <footer
+    className="sc-dIfARi gwwtVq"
+  >
+    <section
+      className="sc-kgTSHT gwtJzY"
+    >
+      <p>
+        © 2024 Crust & Co.
+      </p>
+      <p>
+        All rights reserved.
+      </p>
+      <p>
+        Developer - Sasha Spievakov.
+      </p>
+    </section>
+    <section
+      className="sc-hHTYSt jVgCvh"
+    >
+      <a
+        className="sc-dmctIk eSsQMn"
+        href="https://github.com/SashaSpievakov"
+      >
+        GitHub
+      </a>
+      <a
+        className="sc-dmctIk eSsQMn"
+        href="https://www.google.com/maps/place/687+Yonge+St,+Toronto,+ON+M4Y+2B2/@43.6689719,-79.3870519,18z/data=!3m1!4b1!4m6!3m5!1s0x882b34ae07a20ea5:0xcb9f91518efcc2c1!8m2!3d43.6689704!4d-79.3860646!16s%2Fg%2F11nnkxs6c3"
+        target="_blank"
+      >
+        687 Yonge St
+      </a>
+      <a
+        className="sc-dmctIk eSsQMn"
+        href="mailto:spievakov@gamil.com"
+      >
+        spievakov@gmail.com
+      </a>
+    </section>
+  </footer>,
+}
+`;

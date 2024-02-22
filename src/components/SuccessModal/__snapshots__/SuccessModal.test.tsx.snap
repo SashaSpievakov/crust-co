@@ -3,24 +3,24 @@
 exports[`SuccessModal Tests renders the SuccessModal UI component 1`] = `
 Object {
   "0": <div
-    className="sc-dkrFOg ewVMXk"
+    className="sc-jIRcFI hPpEmG"
     onClick={[Function]}
   />,
   "1": <article
-    className="sc-kDvujY JtPpy"
+    className="sc-hhOBVt dbVGdO"
   >
     <h3
-      className="sc-ipEyDJ ddlMpp"
+      className="sc-gYbzsP ja-djPX"
     >
       Thank you for your order!
     </h3>
     <h4
-      className="sc-csuSiG doODed"
+      className="sc-cCjUiG kvdPPg"
     >
       Our operator will give you a call in a few minutes
     </h4>
     <button
-      className="sc-hLBbgP sc-eDvSVe sc-eDWCr fGqcTx lhIsum bNCkfm"
+      className="sc-bcXHqe sc-gswNZR sc-cjibBx glVyWT bMYeao dgnwbB"
       onClick={[Function]}
     >
       Close

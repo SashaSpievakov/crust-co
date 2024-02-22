@@ -1,4 +1,4 @@
-import { FunctionComponent, ReactNode } from 'react';
+import { FC, ReactNode } from 'react';
 
 import Loader from './SkeletonLoader.styled';
 
@@ -10,7 +10,7 @@ interface SkeletonLoaderProps {
   viewBox?: string;
 }
 
-export const SkeletonLoader: FunctionComponent<SkeletonLoaderProps> = ({
+export const SkeletonLoader: FC<SkeletonLoaderProps> = ({
   children,
   className,
   width,

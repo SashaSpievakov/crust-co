@@ -1,8 +1,9 @@
+import { FC } from 'react';
 import { ErrorParagraph } from 'src/styles/Base.styled';
 
 import { Article, ErrorHeading } from './ErrorRequest.styled';
 
-const ErrorRequest = () => {
+export const ErrorRequest: FC = () => {
   return (
     <Article data-testid="itemPage">
       <ErrorHeading>Error: failed to get data from the server</ErrorHeading>
@@ -12,5 +13,3 @@ const ErrorRequest = () => {
     </Article>
   );
 };
-
-export default ErrorRequest;

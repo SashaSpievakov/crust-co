@@ -1,8 +1,8 @@
-import { KeyboardEvent, useState } from 'react';
+import { FC, KeyboardEvent, useState } from 'react';
 import { SubmitHandler, useForm } from 'react-hook-form';
 import { ModalBg } from 'src/styles/Base.styled';
 
-import SuccessModal from '../SuccessModal/SuccessModal';
+import { SuccessModal } from '../SuccessModal';
 import {
   Aricle,
   Cross,
@@ -26,7 +26,7 @@ interface FormValues {
   address?: string;
 }
 
-const OrderModal = ({ setIsOpen }: OrderModalProps) => {
+export const OrderModal: FC<OrderModalProps> = ({ setIsOpen }) => {
   const [isSubmitted, setIsSubmitted] = useState(false);
   const {
     register,
@@ -115,4 +115,3 @@ const OrderModal = ({ setIsOpen }: OrderModalProps) => {
     <SuccessModal setIsOpen={setIsOpen} />
   );
 };
-export default OrderModal;

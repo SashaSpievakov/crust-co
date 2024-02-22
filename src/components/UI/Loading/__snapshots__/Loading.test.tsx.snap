@@ -4,11 +4,11 @@ exports[`Loading Tests renders the Loading UI component 1`] = `
 Object {
   "children": Array [
     <svg
-      className="sc-gswNZR fUMGUt"
+      className="sc-bqWxrE dhueEn"
       viewBox="0 0 50 50"
     >
       <circle
-        className="sc-dkrFOg fzFiEQ"
+        className="sc-ksBlkl eXydHC"
         cx="25"
         cy="25"
         fill="none"
@@ -18,7 +18,7 @@ Object {
     </svg>,
   ],
   "props": Object {
-    "className": "sc-bcXHqe iAoXHL",
+    "className": "sc-eDWCr jcwikJ",
   },
   "type": "article",
 }

@@ -1,0 +1,453 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Home Tests renders the Home page 1`] = `
+<article
+  class="sc-kMjNwy jDuCDX"
+  data-testid="homePage"
+>
+  <section
+    class="sc-fHSyak ekfLmS"
+  >
+    <section>
+      <ul
+        class="sc-jIILKH iZcOtu"
+      >
+        <li
+          aria-current="true"
+          class="sc-ZqFbI jHNOUM"
+          tabindex="-1"
+        >
+          All
+        </li>
+        <li
+          aria-current="false"
+          class="sc-ZqFbI isYAHE"
+          tabindex="0"
+        >
+          Meat
+        </li>
+        <li
+          aria-current="false"
+          class="sc-ZqFbI isYAHE"
+          tabindex="0"
+        >
+          Vegetarian
+        </li>
+        <li
+          aria-current="false"
+          class="sc-ZqFbI isYAHE"
+          tabindex="0"
+        >
+          Grill
+        </li>
+        <li
+          aria-current="false"
+          class="sc-ZqFbI isYAHE"
+          tabindex="0"
+        >
+          Spicy
+        </li>
+      </ul>
+    </section>
+    <section
+      class="sc-ftTHYK gjTCxi"
+    >
+      <div
+        class="sc-pyfCe kBoKrx"
+        tabindex="0"
+      >
+        <svg
+          class="sc-kDvujY iBKcZM"
+          data-testid="popupIcon"
+          fill="currentColor"
+          height="1em"
+          stroke="currentColor"
+          stroke-width="0"
+          viewBox="0 0 16 16"
+          width="1em"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z"
+          />
+        </svg>
+        <b>
+          Sort by
+        </b>
+        <span
+          data-testid="currenChosenSortName"
+        >
+          rating
+        </span>
+      </div>
+      <section
+        aria-hidden="true"
+        class="sc-ipEyDJ GIGYJ"
+      >
+        <ul
+          aria-hidden="true"
+          data-testid="popupList"
+        >
+          <li
+            class="sc-csuSiG jOMJNz"
+            tabindex="0"
+          >
+            rating
+          </li>
+          <li
+            class="sc-csuSiG iWIHQu"
+            tabindex="0"
+          >
+            price
+          </li>
+          <li
+            class="sc-csuSiG iWIHQu"
+            tabindex="0"
+          >
+            A to Z
+          </li>
+        </ul>
+      </section>
+    </section>
+  </section>
+  <section
+    class="sc-fHSyak sc-dubCtV ekfLmS czsuWh"
+  >
+    <h2
+      class="sc-evzXkX cngOxp"
+    >
+      All Pizzas
+    </h2>
+    <div
+      class="sc-hBxehG bMdLdG"
+    >
+      <svg
+        class="sc-fnGiBr ishTWY"
+        data-testid="searchIcon"
+        fill="currentColor"
+        height="1em"
+        stroke="currentColor"
+        stroke-width="0"
+        viewBox="0 0 16 16"
+        width="1em"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"
+        />
+      </svg>
+      <input
+        class="sc-fEXmlR hbGsv"
+        placeholder="Search..."
+        value=""
+        width="240px"
+      />
+    </div>
+  </section>
+  <section
+    class="sc-brePNt fdCBqo"
+  >
+    <article
+      class="sc-GKYbw fmZoYD"
+    >
+      <a
+        class="sc-gsGlKL iBkFUq"
+        href="/pizzas/Shrimp Pizza"
+      >
+        <picture>
+          <source
+            srcset="./assets/img/pizzas/pizza3.webp"
+            type="image/webp"
+          />
+          <source
+            srcset="./assets/img/pizzas/pizza3.png"
+            type="image/png"
+          />
+          <img
+            alt="Shrimp Pizza pizza"
+            class="sc-bWOGAC kVJyAy"
+            height="250"
+            src="./assets/img/pizzas/pizza3.png"
+            width="250"
+          />
+        </picture>
+        <h3
+          class="sc-eGugkK fiVuXq"
+        >
+          Shrimp Pizza
+        </h3>
+      </a>
+      <div
+        class="sc-hOzowv iYJRyu"
+      >
+        <ul>
+          <li
+            aria-current="true"
+            class="sc-dsHJmm ewokfL"
+            tabindex="0"
+          >
+            traditional
+          </li>
+          <li
+            aria-current="false"
+            class="sc-dsHJmm dgbJWc"
+            tabindex="0"
+          >
+            thin
+          </li>
+        </ul>
+        <ul>
+          <li
+            aria-current="true"
+            class="sc-dsHJmm ewokfL"
+            tabindex="0"
+          >
+            12
+             inch
+          </li>
+          <li
+            aria-current="false"
+            class="sc-dsHJmm dgbJWc"
+            tabindex="0"
+          >
+            14
+             inch
+          </li>
+          <li
+            aria-current="false"
+            class="sc-dsHJmm dgbJWc"
+            tabindex="0"
+          >
+            16
+             inch
+          </li>
+        </ul>
+      </div>
+      <section
+        class="sc-csDkEv iZAaHU"
+      >
+        <h3
+          class="sc-dEVLtI iStDFD"
+        >
+          10
+          $
+        </h3>
+        <button
+          class="sc-bcXHqe sc-eDvSVe sc-gKPRtg glVyWT fwWQTF gmBSoV"
+        >
+          <svg
+            class="sc-kImNAt ifacgh"
+            fill="currentColor"
+            height="1em"
+            stroke="currentColor"
+            stroke-width="0"
+            viewBox="0 0 16 16"
+            width="1em"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M8 0a1 1 0 0 1 1 1v6h6a1 1 0 1 1 0 2H9v6a1 1 0 1 1-2 0V9H1a1 1 0 0 1 0-2h6V1a1 1 0 0 1 1-1z"
+            />
+          </svg>
+          <span>
+            Add
+          </span>
+        </button>
+      </section>
+    </article>
+    <article
+      class="sc-GKYbw fmZoYD"
+    >
+      <a
+        class="sc-gsGlKL iBkFUq"
+        href="/pizzas/Pepperoni Pizza"
+      >
+        <picture>
+          <source
+            srcset="./assets/img/pizzas/pizza2.webp"
+            type="image/webp"
+          />
+          <source
+            srcset="./assets/img/pizzas/pizza2.png"
+            type="image/png"
+          />
+          <img
+            alt="Pepperoni Pizza pizza"
+            class="sc-bWOGAC kVJyAy"
+            height="250"
+            src="./assets/img/pizzas/pizza2.png"
+            width="250"
+          />
+        </picture>
+        <h3
+          class="sc-eGugkK fiVuXq"
+        >
+          Pepperoni Pizza
+        </h3>
+      </a>
+      <div
+        class="sc-hOzowv iYJRyu"
+      >
+        <ul>
+          <li
+            aria-current="true"
+            class="sc-dsHJmm ewokfL"
+            tabindex="0"
+          >
+            traditional
+          </li>
+        </ul>
+        <ul>
+          <li
+            aria-current="true"
+            class="sc-dsHJmm ewokfL"
+            tabindex="0"
+          >
+            12
+             inch
+          </li>
+          <li
+            aria-current="false"
+            class="sc-dsHJmm dgbJWc"
+            tabindex="0"
+          >
+            14
+             inch
+          </li>
+        </ul>
+      </div>
+      <section
+        class="sc-csDkEv iZAaHU"
+      >
+        <h3
+          class="sc-dEVLtI iStDFD"
+        >
+          12
+          $
+        </h3>
+        <button
+          class="sc-bcXHqe sc-eDvSVe sc-gKPRtg glVyWT fwWQTF gmBSoV"
+        >
+          <svg
+            class="sc-kImNAt ifacgh"
+            fill="currentColor"
+            height="1em"
+            stroke="currentColor"
+            stroke-width="0"
+            viewBox="0 0 16 16"
+            width="1em"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M8 0a1 1 0 0 1 1 1v6h6a1 1 0 1 1 0 2H9v6a1 1 0 1 1-2 0V9H1a1 1 0 0 1 0-2h6V1a1 1 0 0 1 1-1z"
+            />
+          </svg>
+          <span>
+            Add
+          </span>
+        </button>
+      </section>
+    </article>
+    <article
+      class="sc-GKYbw fmZoYD"
+    >
+      <a
+        class="sc-gsGlKL iBkFUq"
+        href="/pizzas/Diablo"
+      >
+        <picture>
+          <source
+            srcset="./assets/img/pizzas/pizza6.webp"
+            type="image/webp"
+          />
+          <source
+            srcset="./assets/img/pizzas/pizza6.png"
+            type="image/png"
+          />
+          <img
+            alt="Diablo pizza"
+            class="sc-bWOGAC kVJyAy"
+            height="250"
+            src="./assets/img/pizzas/pizza6.png"
+            width="250"
+          />
+        </picture>
+        <h3
+          class="sc-eGugkK fiVuXq"
+        >
+          Diablo
+        </h3>
+      </a>
+      <div
+        class="sc-hOzowv iYJRyu"
+      >
+        <ul>
+          <li
+            aria-current="true"
+            class="sc-dsHJmm ewokfL"
+            tabindex="0"
+          >
+            traditional
+          </li>
+          <li
+            aria-current="false"
+            class="sc-dsHJmm dgbJWc"
+            tabindex="0"
+          >
+            thin
+          </li>
+        </ul>
+        <ul>
+          <li
+            aria-current="true"
+            class="sc-dsHJmm ewokfL"
+            tabindex="0"
+          >
+            12
+             inch
+          </li>
+          <li
+            aria-current="false"
+            class="sc-dsHJmm dgbJWc"
+            tabindex="0"
+          >
+            16
+             inch
+          </li>
+        </ul>
+      </div>
+      <section
+        class="sc-csDkEv iZAaHU"
+      >
+        <h3
+          class="sc-dEVLtI iStDFD"
+        >
+          15
+          $
+        </h3>
+        <button
+          class="sc-bcXHqe sc-eDvSVe sc-gKPRtg glVyWT fwWQTF gmBSoV"
+        >
+          <svg
+            class="sc-kImNAt ifacgh"
+            fill="currentColor"
+            height="1em"
+            stroke="currentColor"
+            stroke-width="0"
+            viewBox="0 0 16 16"
+            width="1em"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M8 0a1 1 0 0 1 1 1v6h6a1 1 0 1 1 0 2H9v6a1 1 0 1 1-2 0V9H1a1 1 0 0 1 0-2h6V1a1 1 0 0 1 1-1z"
+            />
+          </svg>
+          <span>
+            Add
+          </span>
+        </button>
+      </section>
+    </article>
+  </section>
+</article>
+`;

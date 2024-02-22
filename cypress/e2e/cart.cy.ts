@@ -40,7 +40,7 @@ describe('cart tests', () => {
     cy.findByText('6').should('be.visible').click();
 
     // check cart items on the cart page
-    cy.findAllByRole('heading', { level: 3 }).should('have.length', 10);
+    cy.findAllByRole('heading', { level: 3 }).should('have.length', 5);
     cy.findByTestId('cartPageItemsCount').should('have.text', '6');
     cy.findByTestId('cartPageItemsPrice').should('have.text', '104$');
 

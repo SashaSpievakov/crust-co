@@ -3,9 +3,11 @@ import '@testing-library/jest-dom';
 import { screen } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
 
-import { sortNamesArr } from '../../../pages/Home/Home';
-import rendererWithProviders from '../../../tests/helpers/rendererWithProviders';
-import renderWithProviders from '../../../tests/helpers/renderWithProviders';
+import { sortNamesArr } from '../../../pages/Home/HomePage';
+import {
+  rendererWithProviders,
+  renderWithProvidersAndRoutes,
+} from '../../../tests/helpers';
 import { DropdownSelect } from './DropdownSelect';
 
 describe('Sort Test', () => {
@@ -22,7 +24,7 @@ describe('Sort Test', () => {
 
   describe('tests general functionality', () => {
     beforeEach(() => {
-      renderWithProviders(
+      renderWithProvidersAndRoutes(
         <DropdownSelect
           sortNamesArr={sortNamesArr}
           chosenValue="rating"
@@ -73,7 +75,7 @@ describe('Sort Test', () => {
 
   describe('tests in an application environment', () => {
     test('closes popup on body click', () => {
-      renderWithProviders(null, true);
+      renderWithProvidersAndRoutes(null, true);
       const sortCaption = screen.getByText(/sort by/i);
       const bodyHeading = screen.getByRole('heading', { level: 2 });
       const list = screen.getByTestId('popupList');

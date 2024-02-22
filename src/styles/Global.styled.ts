@@ -69,4 +69,4 @@ const Global = createGlobalStyle`
   }
 `;
 
-export default Global;
+export { Global };

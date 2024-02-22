@@ -3,8 +3,10 @@ import '@testing-library/jest-dom';
 import { screen } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
 
-import rendererWithProviders from '../../../tests/helpers/rendererWithProviders';
-import renderWithProviders from '../../../tests/helpers/renderWithProviders';
+import {
+  rendererWithProviders,
+  renderWithProvidersAndRoutes,
+} from '../../../tests/helpers';
 import { ButtonLink } from './ButtonLink';
 
 describe('ButtonBackToHome Tests', () => {
@@ -16,7 +18,7 @@ describe('ButtonBackToHome Tests', () => {
   });
 
   test('checks redirect to the Home page', () => {
-    renderWithProviders(null, true, '/testing');
+    renderWithProvidersAndRoutes(null, true, '/testing');
     const link = screen.getByRole('link', {
       name: /go back/i,
     });

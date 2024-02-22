@@ -1,0 +1,133 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ProductCard Tests renders the ProductCard component 1`] = `
+Object {
+  "children": Array [
+    <a
+      className="sc-gsGlKL iBkFUq"
+      href="/pizzas/Chicken Curry"
+      onClick={[Function]}
+    >
+      <picture>
+        <source
+          srcSet="./assets/img/pizzas/pizza9.webp"
+          type="image/webp"
+        />
+        <source
+          srcSet="./assets/img/pizzas/pizza9.png"
+          type="image/png"
+        />
+        <img
+          alt="Chicken Curry pizza"
+          className="sc-bWOGAC kVJyAy"
+          height="250"
+          src="./assets/img/pizzas/pizza9.png"
+          width="250"
+        />
+      </picture>
+      <h3
+        className="sc-eGugkK fiVuXq"
+      >
+        Chicken Curry
+      </h3>
+    </a>,
+    <div
+      className="sc-hOzowv iYJRyu"
+    >
+      <ul>
+        <li
+          aria-current={true}
+          className="sc-dsHJmm ewokfL"
+          onClick={[Function]}
+          onKeyDown={[Function]}
+          tabIndex={0}
+        >
+          traditional
+        </li>
+        <li
+          aria-current={false}
+          className="sc-dsHJmm dgbJWc"
+          onClick={[Function]}
+          onKeyDown={[Function]}
+          tabIndex={0}
+        >
+          thin
+        </li>
+      </ul>
+      <ul>
+        <li
+          aria-current={true}
+          className="sc-dsHJmm ewokfL"
+          onClick={[Function]}
+          onKeyDown={[Function]}
+          tabIndex={0}
+        >
+          12
+           inch
+        </li>
+        <li
+          aria-current={false}
+          className="sc-dsHJmm dgbJWc"
+          onClick={[Function]}
+          onKeyDown={[Function]}
+          tabIndex={0}
+        >
+          14
+           inch
+        </li>
+        <li
+          aria-current={false}
+          className="sc-dsHJmm dgbJWc"
+          onClick={[Function]}
+          onKeyDown={[Function]}
+          tabIndex={0}
+        >
+          16
+           inch
+        </li>
+      </ul>
+    </div>,
+    <section
+      className="sc-csDkEv iZAaHU"
+    >
+      <h3
+        className="sc-dEVLtI iStDFD"
+      >
+        14
+        $
+      </h3>
+      <button
+        className="sc-bcXHqe sc-eDvSVe sc-gKPRtg glVyWT fwWQTF gmBSoV"
+        onClick={[Function]}
+      >
+        <svg
+          className="sc-kImNAt ifacgh"
+          fill="currentColor"
+          height="1em"
+          stroke="currentColor"
+          strokeWidth="0"
+          style={
+            Object {
+              "color": undefined,
+            }
+          }
+          viewBox="0 0 16 16"
+          width="1em"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M8 0a1 1 0 0 1 1 1v6h6a1 1 0 1 1 0 2H9v6a1 1 0 1 1-2 0V9H1a1 1 0 0 1 0-2h6V1a1 1 0 0 1 1-1z"
+          />
+        </svg>
+        <span>
+          Add
+        </span>
+      </button>
+    </section>,
+  ],
+  "props": Object {
+    "className": "sc-GKYbw fmZoYD",
+  },
+  "type": "article",
+}
+`;

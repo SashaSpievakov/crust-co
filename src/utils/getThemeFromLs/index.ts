@@ -1,0 +1,1 @@
+export { getThemeFromLs } from './getThemeFromLs';
