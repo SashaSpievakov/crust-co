@@ -3,14 +3,12 @@ import { SubmitHandler, useForm } from 'react-hook-form';
 import { ModalBg } from 'src/styles/Base.styled';
 
 import { SuccessModal } from '../SuccessModal';
+import { Input } from '../UI';
 import {
   Aricle,
   Cross,
   Form,
-  Group,
   Header,
-  Input,
-  Label,
   ModalButton,
   SubHeader,
 } from './OrderModal.styled';
@@ -38,12 +36,6 @@ export const OrderModal: FC<OrderModalProps> = ({ setIsOpen }) => {
     setIsSubmitted(true);
   };
 
-  const handlePhoneInputKeyDownClick = (e: KeyboardEvent<HTMLInputElement>) => {
-    if (e.key === 'e' || e.key === '-') {
-      e.preventDefault();
-    }
-  };
-
   const handleCrossKeyDownClick = (e: KeyboardEvent<SVGElement>) => {
     if (e.code === 'Enter') setIsOpen(false);
   };
@@ -64,46 +56,46 @@ export const OrderModal: FC<OrderModalProps> = ({ setIsOpen }) => {
           data-testid="modalCross"
         />
         <Form onSubmit={handleSubmit(onSubmit)}>
-          <Group>
-            <Label htmlFor="inputName">Name</Label>
-            <Input id="inputName" {...register('name', { required: true })} />
-            {errors.name && <span>This field is required</span>}
-          </Group>
+          <Input
+            id="inputName"
+            label="Name"
+            {...register('name', { required: true })}
+            error={errors.name && 'This field is required'}
+          />
 
-          <Group>
-            <Label htmlFor="inputPhone">Phone Number</Label>
-            <Input
-              id="inputPhone"
-              type="number"
-              onKeyPress={(e) => handlePhoneInputKeyDownClick(e)}
-              {...register('phone', {
-                required: {
-                  value: true,
-                  message: 'This field is required',
-                },
-                maxLength: {
-                  value: 10,
-                  message: 'The phone number should have 10 characters',
-                },
-                minLength: {
-                  value: 10,
-                  message: 'The phone number should have 10 characters',
-                },
-              })}
-            />
-            {errors.phone && <span>{errors.phone.message}</span>}
-          </Group>
+          <Input
+            id="inputPhone"
+            label="Phone Number"
+            type="number"
+            {...register('phone', {
+              required: {
+                value: true,
+                message: 'This field is required',
+              },
+              maxLength: {
+                value: 10,
+                message: 'The phone number should have 10 characters',
+              },
+              minLength: {
+                value: 10,
+                message: 'The phone number should have 10 characters',
+              },
+            })}
+            error={errors.phone && errors.phone.message}
+          />
 
-          <Group>
-            <Label htmlFor="inputCity">City</Label>
-            <Input id="inputCity" {...register('city', { required: true })} />
-            {errors.city && <span>This field is required</span>}
-          </Group>
+          <Input
+            id="inputCity"
+            label="City"
+            {...register('city', { required: true })}
+            error={errors.city && 'This field is required'}
+          />
 
-          <Group>
-            <Label htmlFor="inputAdddress">Adddress (optional)</Label>
-            <Input id="inputAdddress" {...register('address')} />
-          </Group>
+          <Input
+            id="inputAdddress"
+            label="Adddress (optional)"
+            {...register('address')}
+          />
 
           <ModalButton type="submit">
             <span>Send</span>

@@ -2,7 +2,7 @@
 
 exports[`Home Tests renders the Home page 1`] = `
 <article
-  class="sc-kMjNwy jDuCDX"
+  class="sc-hhOBVt cSuYdA"
   data-testid="homePage"
 >
   <section
@@ -119,10 +119,10 @@ exports[`Home Tests renders the Home page 1`] = `
       All Pizzas
     </h2>
     <div
-      class="sc-hBxehG bMdLdG"
+      class="sc-bjfHbI iNTtOj"
     >
       <svg
-        class="sc-fnGiBr ishTWY"
+        class="sc-idXgbr hWNjFA"
         data-testid="searchIcon"
         fill="currentColor"
         height="1em"
@@ -137,7 +137,7 @@ exports[`Home Tests renders the Home page 1`] = `
         />
       </svg>
       <input
-        class="sc-fEXmlR hbGsv"
+        class="sc-dIfARi dxuNau"
         placeholder="Search..."
         value=""
         width="240px"
