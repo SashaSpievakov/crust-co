@@ -67,8 +67,8 @@ const SubHeader = styled.h4`
 
 const Cross = styled(BsXLg)`
   position: absolute;
-  top: 15px;
-  right: 15px;
+  top: 20px;
+  right: 20px;
   font-size: 25px;
   opacity: 0.3;
   border-radius: 5px;
