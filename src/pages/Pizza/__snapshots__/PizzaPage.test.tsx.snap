@@ -2,7 +2,7 @@
 
 exports[`Pizza Page Tests renders the Pizza page 1`] = `
 <article
-  class="sc-kMjNwy sc-cZFQFd jDuCDX epSrUx"
+  class="sc-hhOBVt sc-cZFQFd cSuYdA epSrUx"
   data-testid="itemPage"
 >
   <picture>
