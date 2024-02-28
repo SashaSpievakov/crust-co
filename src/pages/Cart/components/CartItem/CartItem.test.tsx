@@ -6,12 +6,12 @@ import userEvent from '@testing-library/user-event';
 import {
   rendererWithProviders,
   renderWithProvidersAndRoutes,
-} from '../../../tests/helpers';
+} from '../../../../tests/helpers';
 import {
   CartItemMockProps,
   CartItemMockProps2,
   CartItemsMockProps,
-} from '../../../tests/mocks/mockData/mockData';
+} from '../../../../tests/mocks/mockData/mockData';
 import { CartItem } from './CartItem';
 
 describe('CartItem Tests', () => {

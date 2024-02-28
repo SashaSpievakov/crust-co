@@ -1,15 +1,12 @@
 import { FC, KeyboardEvent, useEffect, useState } from 'react';
 import { shallowEqual } from 'react-redux';
 import { Link } from 'react-router-dom';
-import { OrderModal } from 'src/components/OrderModal';
 
 import { useAppDispatch, useAppSelector } from '../../hooks';
 import { ICartItem } from '../../models';
 import { clearCart } from '../../store/slices/cart/reducer/cartReducer';
 import { selectCart } from '../../store/slices/cart/selectors/selectCart/selectCart';
 import { ButtonBackCart, ButtonPay } from '../../styles/Buttons.styled';
-import { CartEmpty } from './CartEmpty';
-import { CartItem } from './CartItem';
 import {
   Article,
   Bottom,
@@ -23,6 +20,7 @@ import {
   Top,
   Trash,
 } from './CartPage.styled';
+import { CartEmpty, CartItem, OrderModal } from './components';
 
 export const CartPage: FC = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -43,16 +41,6 @@ export const CartPage: FC = () => {
   useEffect(() => {
     document.title = 'Crust & Co. | Cart';
   }, []);
-
-  useEffect(() => {
-    if (isOpen) {
-      document.body.style.overflow = 'hidden';
-    }
-
-    return () => {
-      document.body.style.overflow = 'scroll';
-    };
-  }, [isOpen]);
 
   return items.length ? (
     <Article>

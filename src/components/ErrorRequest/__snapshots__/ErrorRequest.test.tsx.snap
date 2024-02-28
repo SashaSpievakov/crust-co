@@ -9,13 +9,13 @@ Object {
       Error: failed to get data from the server
     </h2>,
     <p
-      className="sc-gYbzsP bGeNxm"
+      className="sc-idXgbr daODfB"
     >
       We are already working on that. Try again later
     </p>,
   ],
   "props": Object {
-    "className": "sc-hhOBVt sc-dwnOUR cSuYdA gJjmNT",
+    "className": "sc-bjfHbI sc-dwnOUR cXrwfW gJjmNT",
     "data-testid": "itemPage",
   },
   "type": "article",
