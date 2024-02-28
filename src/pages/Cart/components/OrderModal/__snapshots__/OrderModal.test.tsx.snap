@@ -3,24 +3,24 @@
 exports[`OrderModal Tests renders the OrderModal UI component 1`] = `
 Object {
   "0": <div
-    className="sc-cCjUiG DxGBG"
+    className="sc-dIfARi fgmXTO"
     onClick={[Function]}
   />,
-  "1": <article
-    className="sc-iAEawV ipfEMk"
+  "1": <div
+    className="sc-hHTYSt bXWXTc"
   >
     <h3
-      className="sc-eeMvmM dkxlBc"
+      className="sc-dmctIk kISmiY"
     >
       Order
     </h3>
     <h4
-      className="sc-cUEOzv fMdMkH"
+      className="sc-kgTSHT gMITNu"
     >
       Please provide your information, and our operator will get in touch with you as soon as possible to finish your order
     </h4>
     <svg
-      className="sc-jOiSOi fiinEF"
+      className="sc-fLcnxK hRyerw"
       data-testid="modalCross"
       fill="currentColor"
       height="1em"
@@ -43,7 +43,7 @@ Object {
       />
     </svg>
     <form
-      className="sc-dPWrhe QdNiw"
+      className="sc-GhhNo kGlAAC"
       onSubmit={[Function]}
     >
       <div
@@ -120,7 +120,7 @@ Object {
         />
       </div>
       <button
-        className="sc-bcXHqe sc-hLBbgP sc-bCfvAP glVyWT iWJkHc cJpVTy"
+        className="sc-bcXHqe sc-hLBbgP sc-fXqpFg glVyWT iWJkHc lbWCkk"
         type="submit"
       >
         <span>
@@ -128,6 +128,6 @@ Object {
         </span>
       </button>
     </form>
-  </article>,
+  </div>,
 }
 `;
