@@ -1,7 +1,7 @@
 import { FC } from 'react';
 
-import cartImg from '../../../assets/img/empty-cart.png';
-import { ButtonLink } from '../../../components/UI';
+import cartImg from '../../../../assets/img/empty-cart.png';
+import { ButtonLink } from '../../../../components/UI';
 import { Article } from './CartEmpty.styled';
 
 export const CartEmpty: FC = () => {

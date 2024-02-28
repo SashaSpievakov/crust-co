@@ -7,7 +7,7 @@ import { CartItemsMockProps } from 'src/tests/mocks/mockData/mockData';
 import {
   rendererWithProviders,
   renderWithProvidersAndRoutes,
-} from '../../tests/helpers';
+} from '../../../../tests/helpers';
 import { OrderModal } from './OrderModal';
 
 describe('OrderModal Tests', () => {

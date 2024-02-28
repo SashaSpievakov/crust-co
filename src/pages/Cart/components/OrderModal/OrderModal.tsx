@@ -1,8 +1,8 @@
 import { FC, useState } from 'react';
 import { SubmitHandler, useForm } from 'react-hook-form';
 
-import { SuccessModal } from '../SuccessModal';
-import { Input, Modal } from '../UI';
+import { SuccessModal } from '../../../../components/SuccessModal';
+import { Input, Modal } from '../../../../components/UI';
 import { Form, ModalButton } from './OrderModal.styled';
 
 interface OrderModalProps {
