@@ -4,7 +4,7 @@ exports[`Cart Tests renders the Cart page 1`] = `
 Object {
   "children": Array [
     <h2>
-      Your cart is empty 
+      Your cart is empty
       <span>
         😕
       </span>
@@ -137,7 +137,7 @@ Object {
           </a>
           <p>
             thin
-             dough, 
+             dough,
             14
              inch
           </p>
@@ -270,7 +270,7 @@ Object {
           </a>
           <p>
             traditional
-             dough, 
+             dough,
             16
              inch
           </p>
@@ -377,25 +377,25 @@ Object {
         className="sc-khsqcC idYImQ"
       >
         <span>
-           
-          Items 
+
+          Items
           <b
             data-testid="cartPageItemsCount"
           >
             14
           </b>
-           
+
         </span>
         <span>
-           
-          Total 
+
+          Total
           <b
             data-testid="cartPageItemsPrice"
           >
             100
             $
           </b>
-           
+
         </span>
       </section>
       <section
