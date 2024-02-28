@@ -21,7 +21,14 @@ export const AppRouter = (): JSX.Element => {
   return (
     <Routes>
       <Route path="/" element={<MainLayout />}>
-        <Route index element={<Home />} />
+        <Route
+          index
+          element={
+            <Suspense fallback={<Loading />}>
+              <Home />
+            </Suspense>
+          }
+        />
         <Route
           path="cart"
           element={
