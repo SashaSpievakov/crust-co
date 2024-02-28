@@ -44,16 +44,6 @@ export const CartPage: FC = () => {
     document.title = 'Crust & Co. | Cart';
   }, []);
 
-  useEffect(() => {
-    if (isOpen) {
-      document.body.style.overflow = 'hidden';
-    }
-
-    return () => {
-      document.body.style.overflow = 'scroll';
-    };
-  }, [isOpen]);
-
   return items.length ? (
     <Article>
       <Top>

@@ -1,4 +1,4 @@
-import { FC, KeyboardEvent, useState } from 'react';
+import { FC, KeyboardEvent, useEffect, useState } from 'react';
 import { SubmitHandler, useForm } from 'react-hook-form';
 import { ModalBg } from 'src/styles/Base.styled';
 
@@ -31,6 +31,13 @@ export const OrderModal: FC<OrderModalProps> = ({ setIsOpen }) => {
     handleSubmit,
     formState: { errors },
   } = useForm<FormValues>({ mode: 'onChange' });
+
+  useEffect(() => {
+    document.body.style.overflow = 'hidden';
+    return () => {
+      document.body.style.overflow = 'scroll';
+    };
+  }, []);
 
   const onSubmit: SubmitHandler<FormValues> = () => {
     setIsSubmitted(true);
