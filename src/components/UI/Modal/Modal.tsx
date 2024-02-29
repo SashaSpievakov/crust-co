@@ -7,7 +7,7 @@ interface ModalProps {
   title?: string;
   subTitle?: string;
   onClose: () => void;
-  children: ReactNode;
+  children?: ReactNode;
 }
 
 export const Modal: FC<ModalProps> = ({
