@@ -1,9 +1,8 @@
 import { FC, useState } from 'react';
 import { SubmitHandler, useForm } from 'react-hook-form';
 
-import { SuccessModal } from '../../../../components/SuccessModal';
 import { Input, Modal } from '../../../../components/UI';
-import { Form, ModalButton } from './OrderModal.styled';
+import { CloseButton, Form, ModalButton } from './OrderModal.styled';
 
 interface OrderModalProps {
   setIsOpen: (value: boolean) => void;
@@ -28,12 +27,16 @@ export const OrderModal: FC<OrderModalProps> = ({ setIsOpen }) => {
     setIsSubmitted(true);
   };
 
+  const onClose = () => {
+    setIsOpen(false);
+  };
+
   return !isSubmitted ? (
     <Modal
       title="Order"
       subTitle="Please provide your information, and our operator will get in touch
           with you as soon as possible to finish your order"
-      onClose={() => setIsOpen(false)}
+      onClose={onClose}
     >
       <Form onSubmit={handleSubmit(onSubmit)}>
         <Input
@@ -83,6 +86,12 @@ export const OrderModal: FC<OrderModalProps> = ({ setIsOpen }) => {
       </Form>
     </Modal>
   ) : (
-    <SuccessModal setIsOpen={setIsOpen} />
+    <Modal
+      title="Thank you for your order!"
+      subTitle="Our operator will give you a call in a few minutes"
+      onClose={onClose}
+    >
+      <CloseButton onClick={onClose}>Close</CloseButton>
+    </Modal>
   );
 };

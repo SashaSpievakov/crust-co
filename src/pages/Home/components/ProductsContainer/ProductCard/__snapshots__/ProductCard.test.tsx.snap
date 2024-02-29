@@ -4,7 +4,7 @@ exports[`ProductCard Tests renders the ProductCard component 1`] = `
 Object {
   "children": Array [
     <a
-      className="sc-gsGlKL iBkFUq"
+      className="sc-fvEvSO jSMwtJ"
       href="/pizzas/Chicken Curry"
       onClick={[Function]}
     >
@@ -19,25 +19,25 @@ Object {
         />
         <img
           alt="Chicken Curry pizza"
-          className="sc-bWOGAC kVJyAy"
+          className="sc-fcCDlF figEwF"
           height="250"
           src="./assets/img/pizzas/pizza9.png"
           width="250"
         />
       </picture>
       <h3
-        className="sc-eGugkK fiVuXq"
+        className="sc-GKYbw gOnPJi"
       >
         Chicken Curry
       </h3>
     </a>,
     <div
-      className="sc-hOzowv iYJRyu"
+      className="sc-eKJbhj gmULXV"
     >
       <ul>
         <li
           aria-current={true}
-          className="sc-dsHJmm ewokfL"
+          className="sc-bTTELM hWocCQ"
           onClick={[Function]}
           onKeyDown={[Function]}
           tabIndex={0}
@@ -46,7 +46,7 @@ Object {
         </li>
         <li
           aria-current={false}
-          className="sc-dsHJmm dgbJWc"
+          className="sc-bTTELM fNZKrT"
           onClick={[Function]}
           onKeyDown={[Function]}
           tabIndex={0}
@@ -57,7 +57,7 @@ Object {
       <ul>
         <li
           aria-current={true}
-          className="sc-dsHJmm ewokfL"
+          className="sc-bTTELM hWocCQ"
           onClick={[Function]}
           onKeyDown={[Function]}
           tabIndex={0}
@@ -67,7 +67,7 @@ Object {
         </li>
         <li
           aria-current={false}
-          className="sc-dsHJmm dgbJWc"
+          className="sc-bTTELM fNZKrT"
           onClick={[Function]}
           onKeyDown={[Function]}
           tabIndex={0}
@@ -77,7 +77,7 @@ Object {
         </li>
         <li
           aria-current={false}
-          className="sc-dsHJmm dgbJWc"
+          className="sc-bTTELM fNZKrT"
           onClick={[Function]}
           onKeyDown={[Function]}
           tabIndex={0}
@@ -88,10 +88,10 @@ Object {
       </ul>
     </div>,
     <section
-      className="sc-csDkEv iZAaHU"
+      className="sc-gsGlKL dFNTzs"
     >
       <h3
-        className="sc-dEVLtI iStDFD"
+        className="sc-bWOGAC jKsOjm"
       >
         14
         $
@@ -101,7 +101,7 @@ Object {
         onClick={[Function]}
       >
         <svg
-          className="sc-kImNAt ifacgh"
+          className="sc-hlLBRy dBNJHM"
           fill="currentColor"
           height="1em"
           stroke="currentColor"
@@ -126,7 +126,7 @@ Object {
     </section>,
   ],
   "props": Object {
-    "className": "sc-GKYbw fmZoYD",
+    "className": "sc-jRwbcX giLUud",
   },
   "type": "article",
 }

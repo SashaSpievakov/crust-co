@@ -1,4 +1,4 @@
-import { ButtonPay } from 'src/styles/Buttons.styled';
+import { ButtonBack, ButtonPay } from 'src/styles/Buttons.styled';
 import styled from 'styled-components';
 
 const Form = styled.form`
@@ -39,4 +39,16 @@ const ModalButton = styled(ButtonPay)`
   }
 `;
 
-export { Form, ModalButton };
+const CloseButton = styled(ButtonBack)`
+  margin-top: 5%;
+
+  @media screen and (max-width: 550px) {
+    padding: 0.8rem 0.9rem;
+  }
+
+  @media screen and (max-width: 420px) {
+    padding: 0.6rem 0.7rem;
+  }
+`;
+
+export { CloseButton, Form, ModalButton };
