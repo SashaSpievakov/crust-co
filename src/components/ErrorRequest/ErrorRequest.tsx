@@ -9,7 +9,7 @@ export const ErrorRequest: FC = () => {
       <ErrorHeading>Oops! Something went wrong.</ErrorHeading>
       <ErrorParagraph>
         We&apos;re having trouble fetching the data right now. Our team is on
-        it—please try again later.
+        it, please try again later.
       </ErrorParagraph>
     </Article>
   );
