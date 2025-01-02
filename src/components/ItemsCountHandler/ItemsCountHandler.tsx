@@ -9,7 +9,6 @@ import {
 import { selectCurrentItemCount } from '../../store/slices/cart/selectors/selectCurrentItemCount/selectCurrentItemCount';
 import { selectItemsCount } from '../../store/slices/cart/selectors/selectItemsCount/selectItemsCount';
 import { ButtonAdd } from '../../styles/Buttons.styled';
-import { IItemsCountHandler } from './IItemsCountHandler.type';
 import {
   Count,
   Counter,
@@ -17,8 +16,9 @@ import {
   Minus,
   Plus,
 } from './ItemsCountHandler.styled';
+import { ItemsCountHandlerType } from './ItemsCountHandler.type';
 
-export const ItemsCountHandler: FC<IItemsCountHandler> = ({
+export const ItemsCountHandler: FC<ItemsCountHandlerType> = ({
   id,
   name,
   price,

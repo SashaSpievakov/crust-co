@@ -9,10 +9,10 @@ import {
   renderWithProvidersAndRoutes,
 } from '../../tests/helpers';
 import { CartItemsMockProps } from '../../tests/mocks/mockData/mockData';
-import { IItemsCountHandler } from './IItemsCountHandler.type';
 import { ItemsCountHandler } from './ItemsCountHandler';
+import { ItemsCountHandlerType } from './ItemsCountHandler.type';
 
-const ItemsCountHandlerMockProps: IItemsCountHandler = {
+const ItemsCountHandlerMockProps: ItemsCountHandlerType = {
   id: '6',
   name: 'Cheesburger Pizza',
   price: 7,
@@ -72,10 +72,9 @@ describe('ItemsCountHandler Tests', () => {
       userEvent.click(addButton);
 
       const plusButton = await screen.findByTestId('itemsHandlerPlus');
-      userEvent.click(plusButton);
-      userEvent.click(plusButton);
-      userEvent.click(plusButton);
-      userEvent.click(plusButton);
+      for (let i = 0; i < 4; i++) {
+        userEvent.click(plusButton);
+      }
 
       expect(screen.getByText(/5/i)).toBeInTheDocument();
     });
