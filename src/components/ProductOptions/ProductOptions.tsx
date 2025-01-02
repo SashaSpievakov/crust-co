@@ -15,32 +15,19 @@ export const ProductOptions: FC<IProductOptions> = ({
   typeNames,
   isFullScreen = false,
 }) => {
-  const typeClickHandler = (type: number) => {
-    if (activeType === 0 && type === 1) {
-      setActivePrice(price + 1);
-    } else if (activeType === 1 && type === 0) {
-      setActivePrice(price - 1);
+  const typeClickHandler = (newType: number) => {
+    if (activeType !== newType) {
+      setActivePrice(activeType < newType ? price + 1 : price - 1);
     }
 
-    setActiveType(type);
+    setActiveType(newType);
   };
 
-  const sizeClickHandler = (size: number) => {
-    if (activeSize === 12 && size === 14) {
-      setActivePrice(price + 2);
-    } else if (activeSize === 12 && size === 16) {
-      setActivePrice(price + 4);
-    } else if (activeSize === 14 && size === 16) {
-      setActivePrice(price + 2);
-    } else if (activeSize === 14 && size === 12) {
-      setActivePrice(price - 2);
-    } else if (activeSize === 16 && size === 14) {
-      setActivePrice(price - 2);
-    } else if (activeSize === 16 && size === 12) {
-      setActivePrice(price - 4);
-    }
+  const sizeClickHandler = (newSize: number) => {
+    const priceDifference = newSize - activeSize;
+    setActivePrice(price + priceDifference);
 
-    setActiveSize(size);
+    setActiveSize(newSize);
   };
 
   const handleKeyDownType = (e: KeyboardEvent<HTMLElement>, type: number) => {

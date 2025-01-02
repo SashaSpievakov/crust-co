@@ -53,7 +53,7 @@ describe('ProductOptions Tests', () => {
       setupStore().dispatch(pizzaAPI.util.resetApiState());
     });
 
-    test('checks thin type click', async () => {
+    test('checks thin type selection', async () => {
       const price = await screen.findByRole('heading', {
         level: 3,
       });
@@ -64,7 +64,7 @@ describe('ProductOptions Tests', () => {
       expect(price).toHaveTextContent(/15\$/i);
     });
 
-    test('checks traditional type click', async () => {
+    test('checks changing back to traditional type', async () => {
       const price = await screen.findByRole('heading', {
         level: 3,
       });
@@ -75,6 +75,18 @@ describe('ProductOptions Tests', () => {
       userEvent.click(typeTraditional);
 
       expect(price).toHaveTextContent(/14\$/i);
+    });
+
+    test('checks double thin type selection', async () => {
+      const price = await screen.findByRole('heading', {
+        level: 3,
+      });
+      const typeThin = screen.getByText(/thin/i);
+
+      userEvent.click(typeThin);
+      userEvent.click(typeThin);
+
+      expect(price).toHaveTextContent(/15\$/i);
     });
 
     test('checks changing from 12 inch to 14 inch', async () => {
