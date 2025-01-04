@@ -6,9 +6,10 @@ import { Article, ErrorHeading } from './ErrorRequest.styled';
 export const ErrorRequest: FC = () => {
   return (
     <Article data-testid="itemPage">
-      <ErrorHeading>Error: failed to get data from the server</ErrorHeading>
+      <ErrorHeading>Oops! Something went wrong.</ErrorHeading>
       <ErrorParagraph>
-        We are already working on that. Try again later
+        We&apos;re having trouble fetching the data right now. Our team is on
+        it, please try again later.
       </ErrorParagraph>
     </Article>
   );

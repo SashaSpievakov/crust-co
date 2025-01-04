@@ -10,8 +10,8 @@ import {
 } from '../../../tests/helpers';
 import { DropdownSelect } from './DropdownSelect';
 
-describe('Sort Test', () => {
-  test('renders the Sort component', () => {
+describe('DropdownSelect Test', () => {
+  test('should render the DropdownSelect component', () => {
     const snapshot = rendererWithProviders(
       <DropdownSelect
         sortNamesArr={sortNamesArr}
@@ -22,7 +22,7 @@ describe('Sort Test', () => {
     expect(snapshot).toMatchSnapshot();
   });
 
-  describe('tests general functionality', () => {
+  describe('DropdownSelect general functionality', () => {
     beforeEach(() => {
       renderWithProvidersAndRoutes(
         <DropdownSelect
@@ -33,17 +33,7 @@ describe('Sort Test', () => {
       );
     });
 
-    // test('chooses a new value', () => {
-    //   const arrow = screen.getByTestId('popupIcon');
-    //   const chosenSornName = screen.getByTestId('currenChosenSortName');
-
-    //   userEvent.click(arrow);
-    //   userEvent.click(screen.getByText(/a to z/i));
-
-    //   expect(chosenSornName).toHaveTextContent(/a to z/i);
-    // });
-
-    test('opens the dropdown select', () => {
+    test('should open the dropdown select', () => {
       const arrow = screen.getByTestId('popupIcon');
       const list = screen.getByRole('list', { hidden: true });
 
@@ -52,7 +42,7 @@ describe('Sort Test', () => {
       expect(list).toBeVisible();
     });
 
-    test('closes the dropdown select on icon click', () => {
+    test('should close the dropdown select on icon click', () => {
       const arrow = screen.getByTestId('popupIcon');
       const list = screen.getByRole('list', { hidden: true });
 
@@ -62,7 +52,7 @@ describe('Sort Test', () => {
       expect(list).not.toBeVisible();
     });
 
-    test('closes the dropdown select on list item click', () => {
+    test('should close the dropdown select on list item click', () => {
       const sortCaption = screen.getByText(/sort by/i);
       const list = screen.getByRole('list', { hidden: true });
 
@@ -73,8 +63,8 @@ describe('Sort Test', () => {
     });
   });
 
-  describe('tests in an application environment', () => {
-    test('closes popup on body click', () => {
+  describe('DropdownSelect in an application environment', () => {
+    test('should close popup on an outside click', () => {
       renderWithProvidersAndRoutes(null, true);
       const sortCaption = screen.getByText(/sort by/i);
       const bodyHeading = screen.getByRole('heading', { level: 2 });

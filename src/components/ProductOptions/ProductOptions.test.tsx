@@ -27,15 +27,15 @@ const ProductOptionsMockProps: IProductOptions = {
   isFullScreen: true,
 };
 
-describe('ProductOptions Tests', () => {
-  test('renders the ProductOptions UI component', () => {
+describe('ProductOptions tests', () => {
+  test('should render the ProductOptions UI component', () => {
     const snapshot = rendererWithProviders(
       <ProductOptions {...ProductOptionsMockProps} />,
     );
     expect(snapshot).toMatchSnapshot();
   });
 
-  describe('checks select logic', () => {
+  describe('ProductOptions select logic', () => {
     beforeAll(() => {
       testServer.listen();
     });
@@ -53,7 +53,7 @@ describe('ProductOptions Tests', () => {
       setupStore().dispatch(pizzaAPI.util.resetApiState());
     });
 
-    test('checks thin type click', async () => {
+    test('should check thin type selection', async () => {
       const price = await screen.findByRole('heading', {
         level: 3,
       });
@@ -64,7 +64,7 @@ describe('ProductOptions Tests', () => {
       expect(price).toHaveTextContent(/15\$/i);
     });
 
-    test('checks traditional type click', async () => {
+    test('should change back to traditional type', async () => {
       const price = await screen.findByRole('heading', {
         level: 3,
       });
@@ -77,7 +77,19 @@ describe('ProductOptions Tests', () => {
       expect(price).toHaveTextContent(/14\$/i);
     });
 
-    test('checks changing from 12 inch to 14 inch', async () => {
+    test('should check double thin type selection', async () => {
+      const price = await screen.findByRole('heading', {
+        level: 3,
+      });
+      const typeThin = screen.getByText(/thin/i);
+
+      userEvent.click(typeThin);
+      userEvent.click(typeThin);
+
+      expect(price).toHaveTextContent(/15\$/i);
+    });
+
+    test('should change from 12 inch to 14 inch', async () => {
       const price = await screen.findByRole('heading', {
         level: 3,
       });
@@ -88,7 +100,7 @@ describe('ProductOptions Tests', () => {
       expect(price).toHaveTextContent(/16\$/i);
     });
 
-    test('checks changing from 12 inch to 16 inch', async () => {
+    test('should change from 12 inch to 16 inch', async () => {
       const price = await screen.findByRole('heading', {
         level: 3,
       });
@@ -99,7 +111,7 @@ describe('ProductOptions Tests', () => {
       expect(price).toHaveTextContent(/18\$/i);
     });
 
-    test('checks changing from 14 inch to 16 inch', async () => {
+    test('should change from 14 inch to 16 inch', async () => {
       const price = await screen.findByRole('heading', {
         level: 3,
       });
@@ -113,7 +125,7 @@ describe('ProductOptions Tests', () => {
       expect(price).toHaveTextContent(/18\$/i);
     });
 
-    test('checks changing from 14 inch to 12 inch', async () => {
+    test('should change from 14 inch to 12 inch', async () => {
       const price = await screen.findByRole('heading', {
         level: 3,
       });
@@ -127,7 +139,7 @@ describe('ProductOptions Tests', () => {
       expect(price).toHaveTextContent(/14\$/i);
     });
 
-    test('checks changing from 16 inch to 14 inch', async () => {
+    test('should change from 16 inch to 14 inch', async () => {
       const price = await screen.findByRole('heading', {
         level: 3,
       });
@@ -141,7 +153,7 @@ describe('ProductOptions Tests', () => {
       expect(price).toHaveTextContent(/16\$/i);
     });
 
-    test('checks changing from 16 inch to 12 inch', async () => {
+    test('should change from 16 inch to 12 inch', async () => {
       const price = await screen.findByRole('heading', {
         level: 3,
       });
@@ -155,7 +167,7 @@ describe('ProductOptions Tests', () => {
       expect(price).toHaveTextContent(/14\$/i);
     });
 
-    test('checks thin type and 16 inch clicks together', async () => {
+    test('should select thin type and 16 inch together', async () => {
       const price = await screen.findByRole('heading', {
         level: 3,
       });
@@ -168,7 +180,7 @@ describe('ProductOptions Tests', () => {
       expect(price).toHaveTextContent(/19\$/i);
     });
 
-    test('checks triple and double click on 14 inch', async () => {
+    test('should check triple and double click on 14 inch', async () => {
       const price = await screen.findByRole('heading', {
         level: 3,
       });
@@ -182,7 +194,7 @@ describe('ProductOptions Tests', () => {
       expect(price).toHaveTextContent(/16\$/i);
     });
 
-    test('checks all clicks combined', async () => {
+    test('should check all clicks combined', async () => {
       const price = await screen.findByRole('heading', {
         level: 3,
       });

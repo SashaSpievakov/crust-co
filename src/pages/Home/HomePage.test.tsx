@@ -31,14 +31,14 @@ describe('Home Tests', () => {
     expect(loadedHome).toMatchSnapshot();
   });
 
-  test('renders the Home page with a server requesr error', async () => {
+  test('renders the Home page with a server request error', async () => {
     testServer.use(
       rest.get('*', (_req, res, ctx) => res.once(ctx.status(500))),
     );
     renderWithProvidersAndRoutes(<HomePage />);
 
     expect(
-      await screen.findByText(/failed to get data from the server/i),
+      await screen.findByText(/something went wrong/i),
     ).toBeInTheDocument();
   });
 });

@@ -1,11 +1,10 @@
-import { FC, ReactNode } from 'react';
+import { FC, PropsWithChildren } from 'react';
 import { Link } from 'react-router-dom';
 
 import { ButtonBack } from '../../../styles/Buttons.styled';
 
-interface ButtonLinkProps {
+interface ButtonLinkProps extends PropsWithChildren {
   link: string;
-  children: ReactNode;
 }
 
 export const ButtonLink: FC<ButtonLinkProps> = ({ link, children }) => {

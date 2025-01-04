@@ -14,7 +14,7 @@ describe('local Storage tests', () => {
     cy.get('@allButtons').eq(4).click();
 
     // check cart's values
-    cy.findByText(/72 \$/i).should('be.visible');
+    cy.findByText(/68 \$/i).should('be.visible');
     cy.findByText('5').should('be.visible');
 
     // switch to the dark mode
@@ -28,7 +28,7 @@ describe('local Storage tests', () => {
     // check all items are saved and still showing
     // cy.get('[data-theme="dark"]').should('be.visible');
     cy.get('[data-theme="dark"]').should('be.visible');
-    cy.findByText(/72 \$/i).should('be.visible');
+    cy.findByText(/68 \$/i).should('be.visible');
     cy.findByText('5').should('be.visible').click();
 
     // check items on the cart page

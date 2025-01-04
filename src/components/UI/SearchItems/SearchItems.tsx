@@ -18,7 +18,7 @@ export const SearchItems = memo(
     onClickClose,
     expandedWidth,
   }: SearchItemsProps) => {
-    const inputRef = useRef<HTMLInputElement>(null);
+    const inputRef = useRef<HTMLInputElement | null>(null);
 
     const onClickSearch = () => {
       inputRef.current?.focus();

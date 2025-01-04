@@ -38,7 +38,7 @@ describe('Pizza Page Tests', () => {
     renderWithProvidersAndRoutes(<PizzaPage />);
 
     expect(
-      await screen.findByText(/failed to get data from the server/i),
+      await screen.findByText(/something went wrong/i),
     ).toBeInTheDocument();
   });
 });

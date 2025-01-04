@@ -9,15 +9,15 @@ import {
 } from '../../../tests/helpers';
 import { ButtonLink } from './ButtonLink';
 
-describe('ButtonBackToHome Tests', () => {
-  test('renders the ButtonBackToHome UI component', () => {
+describe('ButtonLink tests', () => {
+  test('should render the ButtonLink UI component', () => {
     const snapshot = rendererWithProviders(
       <ButtonLink link="/">Go Back</ButtonLink>,
     );
     expect(snapshot).toMatchSnapshot();
   });
 
-  test('checks redirect to the Home page', () => {
+  test('should redirect to the Home page', () => {
     renderWithProvidersAndRoutes(null, true, '/testing');
     const link = screen.getByRole('link', {
       name: /go back/i,

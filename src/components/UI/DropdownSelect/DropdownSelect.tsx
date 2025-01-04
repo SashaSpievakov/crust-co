@@ -20,7 +20,7 @@ export const DropdownSelect: FC<DropdownSelectProps> = ({
   sortNamesArr,
   onSelect,
 }) => {
-  const [open, setOpen] = useState(false);
+  const [open, setOpen] = useState<boolean>(false);
   const sortRef = useRef<HTMLDivElement | null>(null);
 
   const handleOptionClick = (index: number) => {
