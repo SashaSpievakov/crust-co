@@ -1,2 +1,2 @@
-export * from './reduxHooks';
+export * from './redux';
 export { useOutsideClick } from './useOutsideClick';
