@@ -1,6 +1,7 @@
 import { ChangeEvent, FC, useEffect, useState } from 'react';
 import { useSearchParams } from 'react-router-dom';
 import { ErrorRequest } from 'src/components/ErrorRequest';
+import { useDebounce } from 'src/hooks';
 import { Container } from 'src/styles/Base.styled';
 
 import { DropdownSelect, SearchItems } from '../../components/UI';
@@ -16,6 +17,7 @@ export const HomePage: FC = () => {
   const [searchParams, setSearchParams] = useSearchParams();
   const [pizzas, setPizzas] = useState<IPizzaItem[]>([]);
   const [searchValue, setSearchValue] = useState<string>('');
+  const debouncedSearchValue = useDebounce(searchValue, 100);
   const [activeSort, setActiveSort] = useState<number>(
     parseInt(searchParams.get('sortBy') || '0', 10) || 0,
   );
@@ -93,7 +95,7 @@ export const HomePage: FC = () => {
       <ProductsContainer
         isLoading={isLoading}
         items={pizzas}
-        searchValue={searchValue}
+        searchValue={debouncedSearchValue}
       />
     </Container>
   );

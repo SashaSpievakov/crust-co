@@ -9,7 +9,7 @@ import { renderWithProvidersAndRoutes } from '../../tests/helpers';
 import { testServer } from '../../tests/mocks';
 import { HomePage } from './HomePage';
 
-describe('Home Tests', () => {
+describe('HomePage tests', () => {
   beforeAll(() => {
     testServer.listen();
   });
@@ -23,7 +23,7 @@ describe('Home Tests', () => {
     setupStore().dispatch(pizzasAPI.util.resetApiState());
   });
 
-  test('renders the Home page', async () => {
+  test('should render the Home page', async () => {
     renderWithProvidersAndRoutes(<HomePage />);
     const lastItem = await screen.findByText(/diablo/i); // eslint-disable-line @typescript-eslint/no-unused-vars
 
@@ -31,7 +31,7 @@ describe('Home Tests', () => {
     expect(loadedHome).toMatchSnapshot();
   });
 
-  test('renders the Home page with a server request error', async () => {
+  test('should render the Home page with a server request error', async () => {
     testServer.use(
       rest.get('*', (_req, res, ctx) => res.once(ctx.status(500))),
     );
