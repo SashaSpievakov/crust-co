@@ -14,27 +14,27 @@ import {
 } from '../../../../tests/mocks/mockData/mockData';
 import { CartItem } from './CartItem';
 
-describe('CartItem Tests', () => {
-  test('renders the CartItem component', () => {
+describe('CartItem tests', () => {
+  test('should render the CartItem component', () => {
     const snapshot = rendererWithProviders(<CartItem {...CartItemMockProps} />);
     expect(snapshot).toMatchSnapshot();
   });
 
-  test('renders the CartItem component with a disabled button', () => {
+  test('should render the CartItem component with a disabled button', () => {
     const snapshot = rendererWithProviders(
       <CartItem {...CartItemMockProps2} />,
     );
     expect(snapshot).toMatchSnapshot();
   });
 
-  describe('Button tests', () => {
+  describe('CartItem button tests', () => {
     beforeEach(() => {
       renderWithProvidersAndRoutes(null, true, '/cart', {
         cart: CartItemsMockProps,
       });
     });
 
-    test('removes item', () => {
+    test('should remove an item', () => {
       const buttons = screen.getAllByRole('button');
       const count = screen.getByText(/13/i);
       const price = screen.getByText(/91/i);
@@ -46,7 +46,7 @@ describe('CartItem Tests', () => {
       expect(price).toHaveTextContent('77');
     });
 
-    test('adds item', () => {
+    test('should add an item', () => {
       const buttons = screen.getAllByRole('button');
       const count = screen.getByText(/13/i);
       const price = screen.getByText(/91/i);
@@ -58,7 +58,7 @@ describe('CartItem Tests', () => {
       expect(price).toHaveTextContent('105');
     });
 
-    test('deletes item', () => {
+    test('should delete all item', () => {
       const buttons = screen.getAllByRole('button');
 
       userEvent.click(buttons[2]);
@@ -71,7 +71,7 @@ describe('CartItem Tests', () => {
       ).toBeInTheDocument();
     });
 
-    test('changes global count', () => {
+    test('should change global count', () => {
       const buttons = screen.getAllByRole('button');
       const count = screen.getByTestId('cartPageItemsCount');
 
@@ -84,7 +84,7 @@ describe('CartItem Tests', () => {
       expect(count).toHaveTextContent('17');
     });
 
-    test('changes global price', () => {
+    test('should change global price', () => {
       const buttons = screen.getAllByRole('button');
       const count = screen.getByTestId('cartPageItemsPrice');
 

@@ -23,7 +23,7 @@ import {
 import { CartEmpty, CartItem, OrderModal } from './components';
 
 export const CartPage: FC = () => {
-  const [isOpen, setIsOpen] = useState(false);
+  const [isOpen, setIsOpen] = useState<boolean>(false);
   const { itemsCount, totalPrice, items } = useAppSelector(
     selectCart,
     shallowEqual,

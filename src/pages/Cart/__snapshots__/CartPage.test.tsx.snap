@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Cart Tests renders the Cart page 1`] = `
+exports[`CartPage tests should render the Cart page 1`] = `
 Object {
   "children": Array [
     <h2>
@@ -35,7 +35,7 @@ Object {
 }
 `;
 
-exports[`Cart Tests renders the Cart page with items 1`] = `
+exports[`CartPage tests should render the Cart page with items 1`] = `
 Object {
   "children": Array [
     <div
