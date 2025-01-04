@@ -9,8 +9,8 @@ import {
 } from '../../../tests/helpers';
 import { ButtonLink } from './ButtonLink';
 
-describe('ButtonBackToHome tests', () => {
-  test('should render the ButtonBackToHome UI component', () => {
+describe('ButtonLink tests', () => {
+  test('should render the ButtonLink UI component', () => {
     const snapshot = rendererWithProviders(
       <ButtonLink link="/">Go Back</ButtonLink>,
     );
