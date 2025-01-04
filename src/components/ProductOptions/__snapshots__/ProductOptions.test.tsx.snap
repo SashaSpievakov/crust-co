@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`ProductOptions Tests renders the ProductOptions UI component 1`] = `
+exports[`ProductOptions tests should render the ProductOptions UI component 1`] = `
 Object {
   "children": Array [
     <ul>

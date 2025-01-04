@@ -1,10 +1,10 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`LogoSection Tests renders the LogoSection UI component 1`] = `
+exports[`LogoSection tests should render the LogoSection component 1`] = `
 Object {
   "children": Array [
     <section
-      className="sc-jcMfQk keGfCa"
+      className="sc-cjibBx cIkYeW"
     >
       <img
         alt="Pizza logo"
@@ -14,12 +14,12 @@ Object {
       />
       <div>
         <h1
-          className="sc-cabOPr cuVlHd"
+          className="sc-jcMfQk ixQkIk"
         >
           Crust & Co.
         </h1>
         <p
-          className="sc-iTFTee gVjjJb"
+          className="sc-cabOPr fRWnLB"
         >
           the most delicious pizzas in town
         </p>
@@ -27,7 +27,7 @@ Object {
     </section>,
   ],
   "props": Object {
-    "className": "sc-cjibBx jSijnt",
+    "className": "sc-cCjUiG bNaMkg",
     "href": "/",
     "ishome": "home",
     "onClick": [Function],

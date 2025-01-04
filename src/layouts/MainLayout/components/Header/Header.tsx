@@ -2,12 +2,12 @@ import { FC, KeyboardEvent, useEffect, useRef } from 'react';
 import { BsCart3, BsFillMoonFill, BsFillSunFill } from 'react-icons/bs';
 import { shallowEqual } from 'react-redux';
 import { Link, useLocation } from 'react-router-dom';
+import { useAppDispatch, useAppSelector } from 'src/hooks';
+import { selectCart } from 'src/store/slices/cart/selectors/selectCart/selectCart';
+import { setTheme } from 'src/store/slices/theme/reducer/themeReducer';
+import { selectIsLight } from 'src/store/slices/theme/selectors/selectIsLight';
+import { ButtonCart } from 'src/styles/Buttons.styled';
 
-import { useAppDispatch, useAppSelector } from '../../../hooks';
-import { selectCart } from '../../../store/slices/cart/selectors/selectCart/selectCart';
-import { setTheme } from '../../../store/slices/theme/reducer/themeReducer';
-import { selectIsLight } from '../../../store/slices/theme/selectors/selectIsLight';
-import { ButtonCart } from '../../../styles/Buttons.styled';
 import { Delimiter, HeaderWrapper, Icon, Right } from './Header.styled';
 import { LogoSection } from './LogoSection';
 
@@ -33,7 +33,7 @@ export const Header: FC = () => {
     isMountedSecond.current = true;
   }, [location.pathname]);
 
-  // local storage effects
+  // local storage logic
   useEffect(() => {
     if (isMounted.current) {
       const jsonCart = JSON.stringify(items);
