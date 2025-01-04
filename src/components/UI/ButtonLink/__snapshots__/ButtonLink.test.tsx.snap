@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`ButtonBackToHome Tests renders the ButtonBackToHome UI component 1`] = `
+exports[`ButtonLink tests should render the ButtonLink UI component 1`] = `
 Object {
   "children": Array [
     "Go Back",

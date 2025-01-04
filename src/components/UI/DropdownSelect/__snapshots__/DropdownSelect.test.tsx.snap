@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Sort Test renders the Sort component 1`] = `
+exports[`DropdownSelect Test should render the DropdownSelect component 1`] = `
 Object {
   "children": Array [
     <div

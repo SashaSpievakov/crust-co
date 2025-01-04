@@ -1,10 +1,10 @@
-import { memo } from 'react';
+import { FC } from 'react';
 import { useLocation } from 'react-router-dom';
 
-import mainLogo from '../../../../assets/img/main-logo.svg';
+import mainLogo from '../../../../../assets/img/main-logo.svg';
 import { CustomLink, Heading, Logo, SubHeading } from './LogoSection.styled';
 
-export const LogoSection = memo(() => {
+export const LogoSection: FC = () => {
   const location = useLocation();
 
   return (
@@ -22,4 +22,4 @@ export const LogoSection = memo(() => {
       </Logo>
     </CustomLink>
   );
-});
+};

@@ -1,6 +1,6 @@
 import { Component, ReactNode } from 'react';
 
-import { TitleMessage } from './MainLayout.styled';
+import { TitleMessage } from './LayoutErrorBoundary.styled';
 
 interface LayoutErrorBoundaryProps {
   children: ReactNode;
