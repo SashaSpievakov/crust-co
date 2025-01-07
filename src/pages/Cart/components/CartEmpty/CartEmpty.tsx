@@ -1,8 +1,8 @@
 import { FC } from 'react';
 
-import cartImg from '../../../../assets/img/empty-cart.png';
 import { ButtonLink } from '../../../../components/UI';
 import { Article } from './CartEmpty.styled';
+import cartImg from './images/empty-cart.png';
 
 export const CartEmpty: FC = () => {
   return (

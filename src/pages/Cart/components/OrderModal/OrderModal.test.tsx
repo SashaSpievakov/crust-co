@@ -10,22 +10,22 @@ import {
 } from '../../../../tests/helpers';
 import { OrderModal } from './OrderModal';
 
-describe('OrderModal Tests', () => {
-  test('renders the OrderModal UI component', () => {
+describe('OrderModal tests', () => {
+  test('should render the OrderModal component', () => {
     const snapshot = rendererWithProviders(
       <OrderModal setIsOpen={jest.fn()} />,
     );
     expect(snapshot).toMatchSnapshot();
   });
 
-  describe('checks OrderModal logic', () => {
+  describe('OrderModal logic', () => {
     beforeEach(() => {
       renderWithProvidersAndRoutes(null, true, '/cart', {
         cart: CartItemsMockProps,
       });
     });
 
-    test('checks OrderModal opening', () => {
+    test('should open the ordering modal', () => {
       const buyButton = screen.getByRole('button', {
         name: /buy now/i,
       });
@@ -39,7 +39,7 @@ describe('OrderModal Tests', () => {
       ).toBeInTheDocument();
     });
 
-    test('closes OrderModal by clicking on the cross', () => {
+    test('should close the ordering modal', () => {
       const buyButton = screen.getByRole('button', {
         name: /buy now/i,
       });
@@ -57,7 +57,7 @@ describe('OrderModal Tests', () => {
       ).not.toBeInTheDocument();
     });
 
-    test('checks required fields error', async () => {
+    test('should show required fields error', async () => {
       const buyButton = screen.getByRole('button', {
         name: /buy now/i,
       });
@@ -75,7 +75,7 @@ describe('OrderModal Tests', () => {
       ).toHaveLength(3);
     });
 
-    test('checks min characters phone input error', async () => {
+    test('should show the minimal characters phone input error', async () => {
       const buyButton = screen.getByRole('button', {
         name: /buy now/i,
       });
@@ -95,7 +95,7 @@ describe('OrderModal Tests', () => {
       ).toBeInTheDocument();
     });
 
-    test('checks max characters phone input error', async () => {
+    test('should show the maximum characters phone input error', async () => {
       const buyButton = screen.getByRole('button', {
         name: /buy now/i,
       });
@@ -115,7 +115,7 @@ describe('OrderModal Tests', () => {
       ).toBeInTheDocument();
     });
 
-    test('successfully sumbits data', async () => {
+    test('should successfully sumbit the form', async () => {
       const buyButton = screen.getByRole('button', {
         name: /buy now/i,
       });

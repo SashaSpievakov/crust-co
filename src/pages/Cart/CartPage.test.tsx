@@ -10,20 +10,20 @@ import {
 import { CartItemsMockProps } from '../../tests/mocks/mockData/mockData';
 import { CartPage } from './CartPage';
 
-describe('Cart Tests', () => {
-  test('renders the Cart page', () => {
+describe('CartPage tests', () => {
+  test('should render the Cart page', () => {
     const snapshot = rendererWithProviders(<CartPage />);
     expect(snapshot).toMatchSnapshot();
   });
 
-  test('renders the Cart page with items', () => {
+  test('should render the Cart page with items', () => {
     const snapshot = rendererWithProviders(<CartPage />, '/', {
       cart: CartItemsMockProps,
     });
     expect(snapshot).toMatchSnapshot();
   });
 
-  test('deletes all items from the cart', () => {
+  test('should delete all items from the cart', () => {
     renderWithProvidersAndRoutes(<CartPage />, false, '/', {
       cart: CartItemsMockProps,
     });
@@ -36,7 +36,7 @@ describe('Cart Tests', () => {
     );
   });
 
-  test('checks redirect to the Home page', () => {
+  test('should redirect to the Home page', () => {
     renderWithProvidersAndRoutes(null, true, '/cart', {
       cart: CartItemsMockProps,
     });

@@ -1,9 +1,7 @@
 import { FC } from 'react';
 import { Outlet } from 'react-router-dom';
 
-import { LayoutErrorBoundary } from '../LayoutErrorBoundary';
-import { Footer } from './Footer';
-import { Header } from './Header';
+import { Footer, Header, LayoutErrorBoundary } from './components';
 import { Main } from './MainLayout.styled';
 
 export const MainLayout: FC = () => {

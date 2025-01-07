@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Home Tests renders the Home page 1`] = `
+exports[`HomePage tests should render the Home page 1`] = `
 <article
   class="sc-bjfHbI cXrwfW"
   data-testid="homePage"

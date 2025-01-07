@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`ProductsContainer Tests renders the ProductsContainer component 1`] = `
+exports[`ProductsContainer tests should render the ProductsContainer component 1`] = `
 Object {
   "children": Array [
     <article
@@ -357,7 +357,7 @@ Object {
 }
 `;
 
-exports[`ProductsContainer Tests renders the ProductsContainer component with not matching search value 1`] = `
+exports[`ProductsContainer tests should render the ProductsContainer component with not matching search value 1`] = `
 Object {
   "children": Array [
     <h3
