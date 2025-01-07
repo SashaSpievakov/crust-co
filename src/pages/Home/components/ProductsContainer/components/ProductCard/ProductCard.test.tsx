@@ -3,27 +3,27 @@ import '@testing-library/jest-dom';
 import { screen } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
 
-import { pizzaAPI } from '../../../../../services';
-import { setupStore } from '../../../../../store/store';
+import { pizzaAPI } from '../../../../../../services';
+import { setupStore } from '../../../../../../store/store';
 import {
   rendererWithProviders,
   renderWithProvidersAndRoutes,
-} from '../../../../../tests/helpers';
-import { mockItem, testServer } from '../../../../../tests/mocks';
+} from '../../../../../../tests/helpers';
+import { mockItem, testServer } from '../../../../../../tests/mocks';
 import { ProductCard } from './ProductCard';
 
-describe('ProductCard Tests', () => {
-  test('renders the ProductCard component', () => {
+describe('ProductCard tests', () => {
+  test('should render the ProductCard component', () => {
     const snapshot = rendererWithProviders(<ProductCard {...mockItem} />);
     expect(snapshot).toMatchSnapshot();
   });
 
-  describe('checks the price changing', () => {
+  describe('ProductCard price changing', () => {
     beforeEach(() => {
       renderWithProvidersAndRoutes(<ProductCard {...mockItem} />);
     });
 
-    test('checks type click', () => {
+    test('should click correct type', () => {
       const typeItem = screen.getByText(/thin/i);
       const price = screen.getByText(/14\$/i);
 
@@ -32,7 +32,7 @@ describe('ProductCard Tests', () => {
       expect(price).toHaveTextContent('15$');
     });
 
-    test('checks size click', () => {
+    test('should click correct size', () => {
       const sizeItem = screen.getByText(/16 inch/i);
       const price = screen.getByText(/14\$/i);
 
@@ -41,7 +41,7 @@ describe('ProductCard Tests', () => {
       expect(price).toHaveTextContent('18$');
     });
 
-    test('checks type and size click', () => {
+    test('should choose both correct type and size', () => {
       const typeItem = screen.getByText(/thin/i);
       const sizeItem = screen.getByText(/14 inch/i);
       const price = screen.getByText(/14\$/i);
@@ -53,7 +53,7 @@ describe('ProductCard Tests', () => {
     });
   });
 
-  describe('checks rtk query hook', () => {
+  describe('ProductCard redirects and requests', () => {
     beforeAll(() => {
       testServer.listen();
     });
@@ -67,7 +67,7 @@ describe('ProductCard Tests', () => {
       setupStore().dispatch(pizzaAPI.util.resetApiState());
     });
 
-    test('checks link redirect to the Item page', async () => {
+    test('should redirect to the product page', async () => {
       renderWithProvidersAndRoutes(
         <ProductCard {...mockItem} />,
         true,
