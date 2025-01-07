@@ -2,7 +2,7 @@ import { FC } from 'react';
 
 import { SkeletonLoader } from '../../../../components/UI';
 import { IPizzaItem } from '../../../../models';
-import { ProductCard } from './ProductCard';
+import { ProductCard } from './components';
 import { SearchError, Section } from './ProductsContainer.styled';
 
 interface ProductsContainerProps {

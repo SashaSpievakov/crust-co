@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`OrderModal Tests renders the OrderModal UI component 1`] = `
+exports[`OrderModal tests should render the OrderModal component 1`] = `
 Object {
   "0": <div
     className="sc-dIfARi fgmXTO"

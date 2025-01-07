@@ -9,15 +9,15 @@ import {
 import { mockItems } from '../../../../tests/mocks/mockData/mockData';
 import { ProductsContainer } from './ProductsContainer';
 
-describe('ProductsContainer Tests', () => {
-  test('renders the ProductsContainer component', () => {
+describe('ProductsContainer tests', () => {
+  test('should render the ProductsContainer component', () => {
     const snapshot = rendererWithProviders(
       <ProductsContainer isLoading={false} items={mockItems} searchValue="" />,
     );
     expect(snapshot).toMatchSnapshot();
   });
 
-  test('renders the ProductsContainer component with not matching search value', () => {
+  test('should render the ProductsContainer component with not matching search value', () => {
     const snapshot = rendererWithProviders(
       <ProductsContainer
         isLoading={false}
@@ -28,7 +28,7 @@ describe('ProductsContainer Tests', () => {
     expect(snapshot).toMatchSnapshot();
   });
 
-  test('renders the ProductsContainer component skeletons', () => {
+  test('should render the ProductsContainer component with loading skeletons', () => {
     renderWithProvidersAndRoutes(
       <ProductsContainer isLoading items={mockItems} searchValue="" />,
     );
@@ -38,7 +38,7 @@ describe('ProductsContainer Tests', () => {
     expect(skeletons[8]).toBeInTheDocument();
   });
 
-  test('renders items with a search value', () => {
+  test('should render items with a search value', () => {
     renderWithProvidersAndRoutes(
       <ProductsContainer
         isLoading={false}
