@@ -9,6 +9,10 @@ const Article = styled.article`
   p {
     margin-bottom: 50px;
   }
+
+  @media screen and (max-width: 600px) {
+    margin-top: 60px;
+  }
 `;
 
 const Title = styled.h2`
@@ -18,7 +22,7 @@ const Title = styled.h2`
   margin-bottom: 20px;
 
   @media screen and (max-width: 750px) {
-    font-size: 55px;
+    font-size: 45px;
     padding: 0 15px;
   }
 

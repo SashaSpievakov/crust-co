@@ -9,7 +9,7 @@ import { renderWithProvidersAndRoutes } from '../../tests/helpers';
 import { testServer } from '../../tests/mocks';
 import { PizzaPage } from './PizzaPage';
 
-describe('Pizza Page Tests', () => {
+describe('PizzaPage tests', () => {
   beforeAll(() => {
     testServer.listen();
   });
@@ -23,7 +23,7 @@ describe('Pizza Page Tests', () => {
     setupStore().dispatch(pizzaAPI.util.resetApiState());
   });
 
-  test('renders the Pizza page', async () => {
+  test('should render the Pizza page', async () => {
     renderWithProvidersAndRoutes(null, true, '/pizzas/Chicken%20Curry');
     const itemTitle = await screen.findByText(/chicken curry/i); // eslint-disable-line @typescript-eslint/no-unused-vars
 
@@ -31,7 +31,7 @@ describe('Pizza Page Tests', () => {
     expect(loadedItem).toMatchSnapshot();
   });
 
-  test('renders the Pizza page with a server requesr error', async () => {
+  test('should render the Pizza page with a server request error', async () => {
     testServer.use(
       rest.get('*', (_req, res, ctx) => res.once(ctx.status(500))),
     );

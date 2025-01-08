@@ -1,28 +1,28 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`NotFound Tests renders the NotFound page 1`] = `
+exports[`NotFound tests should render the NotFound page 1`] = `
 Object {
   "children": Array [
     <h2
-      className="sc-dubCtV hHoznT"
+      className="sc-dubCtV kSjejm"
     >
-      The page wasn't found
+      Oops! This page doesn't exist
     </h2>,
     <p
-      className="sc-idXgbr daODfB"
+      className="sc-idXgbr koWXFb"
     >
-      Make sure you wrote the correct URL
+      We couldn't find the page you were looking for. Please check the URL or navigate back to the homepage.
     </p>,
     <a
       className="sc-bcXHqe sc-gswNZR glVyWT bMYeao"
       href="/"
       onClick={[Function]}
     >
-      Go Back
+      Return Home
     </a>,
   ],
   "props": Object {
-    "className": "sc-fHSyak dTxEOR",
+    "className": "sc-fHSyak gDjAaJ",
   },
   "type": "article",
 }

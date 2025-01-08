@@ -7,9 +7,12 @@ import { Article, Title } from './NotFoundPage.styled';
 export const NotFoundPage: FC = () => {
   return (
     <Article>
-      <Title>The page wasn&apos;t found</Title>
-      <ErrorParagraph>Make sure you wrote the correct URL</ErrorParagraph>
-      <ButtonLink link="/">Go Back</ButtonLink>
+      <Title>Oops! This page doesn&apos;t exist</Title>
+      <ErrorParagraph>
+        We couldn&apos;t find the page you were looking for. Please check the
+        URL or navigate back to the homepage.
+      </ErrorParagraph>
+      <ButtonLink link="/">Return Home</ButtonLink>
     </Article>
   );
 };

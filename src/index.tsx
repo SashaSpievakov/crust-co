@@ -6,7 +6,7 @@ import { BrowserRouter } from 'react-router-dom';
 import { App } from './App';
 import { setupStore } from './store/store';
 
-ReactGA.initialize('G-W99PVF5JMB');
+ReactGA.initialize(process.env.GA_KEY as string);
 
 const rootElem = document.getElementById('root');
 
