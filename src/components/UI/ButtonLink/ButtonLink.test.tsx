@@ -20,7 +20,7 @@ describe('ButtonLink tests', () => {
   test('should redirect to the Home page', () => {
     renderWithProvidersAndRoutes(null, true, '/testing');
     const link = screen.getByRole('link', {
-      name: /go back/i,
+      name: /return home/i,
     });
 
     userEvent.click(link);

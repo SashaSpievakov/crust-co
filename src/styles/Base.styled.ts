@@ -6,7 +6,10 @@ const Container = styled.article`
 `;
 
 const ErrorParagraph = styled.p`
+  max-width: 900px;
+  text-align: center;
   font-size: 26px;
+  margin: 0 auto;
 
   @media screen and (max-width: 550px) {
     font-size: 20px;
