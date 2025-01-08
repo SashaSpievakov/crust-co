@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`FullProduct Tests renders the FullProduct component 1`] = `
+exports[`FullProduct tests should render the FullProduct component 1`] = `
 Object {
   "children": Array [
     <picture>

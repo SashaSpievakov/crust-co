@@ -10,18 +10,18 @@ import {
 import { mockItem } from '../../../tests/mocks/mockData/mockData';
 import { FullProduct } from './FullProduct';
 
-describe('FullProduct Tests', () => {
-  test('renders the FullProduct component', () => {
+describe('FullProduct tests', () => {
+  test('should render the FullProduct component', () => {
     const snapshot = rendererWithProviders(<FullProduct item={mockItem} />);
     expect(snapshot).toMatchSnapshot();
   });
 
-  describe('checks the price changing', () => {
+  describe('FullProduct price changing', () => {
     beforeEach(() => {
       renderWithProvidersAndRoutes(<FullProduct item={mockItem} />);
     });
 
-    test('checks type click', () => {
+    test('should choose new type', () => {
       const typeItem = screen.getByText(/thin/i);
       const price = screen.getByRole('heading', {
         level: 3,
@@ -32,7 +32,7 @@ describe('FullProduct Tests', () => {
       expect(price).toHaveTextContent('15$');
     });
 
-    test('checks size click', () => {
+    test('should choose new size', () => {
       const sizeItem = screen.getByText(/16 inch/i);
       const price = screen.getByRole('heading', {
         level: 3,
@@ -43,7 +43,7 @@ describe('FullProduct Tests', () => {
       expect(price).toHaveTextContent('18$');
     });
 
-    test('checks type and size click', () => {
+    test('should choose new type and size', () => {
       const typeItem = screen.getByText(/thin/i);
       const sizeItem = screen.getByText(/14 inch/i);
       const price = screen.getByRole('heading', {
@@ -57,12 +57,12 @@ describe('FullProduct Tests', () => {
     });
   });
 
-  describe('checks the integration between CoundHandler, Selector and FullItem', () => {
+  describe('FullProduct integrations', () => {
     beforeEach(() => {
       renderWithProvidersAndRoutes(<FullProduct item={mockItem} />);
     });
 
-    test('checks disabled minus button after type switching', () => {
+    test('should disable minus button after type switching', () => {
       const sizeItem = screen.getByText(/16 inch/i);
       const buttonAdd = screen.getByText(/add/i);
       userEvent.click(buttonAdd);
@@ -82,7 +82,7 @@ describe('FullProduct Tests', () => {
       expect(count).toHaveTextContent('3');
     });
 
-    test('goes back to add button after multiple changes in the count', () => {
+    test('should switch to add button after multiple changes in the count', () => {
       const typeTraditional = screen.getByText(/traditional/i);
       const typeThin = screen.getByText(/thin/i);
       const twelve = screen.getByText(/12 inch/i);

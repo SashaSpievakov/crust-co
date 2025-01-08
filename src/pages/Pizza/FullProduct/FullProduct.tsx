@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { FC, useState } from 'react';
 
 import { ItemsCountHandler } from '../../../components/ItemsCountHandler';
 import { ProductOptions } from '../../../components/ProductOptions';
@@ -12,7 +12,7 @@ interface FullProductProps {
 
 export const typeNames: string[] = ['traditional', 'thin'];
 
-export const FullProduct = ({ item }: FullProductProps) => {
+export const FullProduct: FC<FullProductProps> = ({ item }) => {
   const [activePrice, setActivePrice] = useState<number>(item.price);
   const [activeSize, setActiveSize] = useState<number>(12);
   const [activeType, setActiveType] = useState<number>(0);

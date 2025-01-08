@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Pizza Page Tests renders the Pizza page 1`] = `
+exports[`PizzaPage tests should render the Pizza page 1`] = `
 <article
   class="sc-bjfHbI sc-hOzowv cXrwfW gZWWhu"
   data-testid="itemPage"
