@@ -1,7 +1,9 @@
 import { FC, useEffect, useState } from 'react';
 
-import { ItemsCountHandler } from '../../../../../../components/ItemsCountHandler';
-import { ProductOptions } from '../../../../../../components/ProductOptions';
+import {
+  ItemsCountHandler,
+  ProductOptions,
+} from '../../../../../../components';
 import { typeNames } from '../../../../../Pizza/FullProduct/FullProduct';
 import {
   Block,

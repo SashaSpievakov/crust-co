@@ -10,39 +10,39 @@ exports[`HomePage tests should render the Home page 1`] = `
   >
     <section>
       <ul
-        class="sc-dwnOUR jaihlu"
+        class="sc-bTTELM kaxkWt"
       >
         <li
           aria-current="true"
-          class="sc-UpCWa kdRFSi"
+          class="sc-kImNAt eeKlYu"
           tabindex="-1"
         >
           All
         </li>
         <li
           aria-current="false"
-          class="sc-UpCWa gmKmvG"
+          class="sc-kImNAt lfVANu"
           tabindex="0"
         >
           Meat
         </li>
         <li
           aria-current="false"
-          class="sc-UpCWa gmKmvG"
+          class="sc-kImNAt lfVANu"
           tabindex="0"
         >
           Vegetarian
         </li>
         <li
           aria-current="false"
-          class="sc-UpCWa gmKmvG"
+          class="sc-kImNAt lfVANu"
           tabindex="0"
         >
           Grill
         </li>
         <li
           aria-current="false"
-          class="sc-UpCWa gmKmvG"
+          class="sc-kImNAt lfVANu"
           tabindex="0"
         >
           Spicy
@@ -178,19 +178,19 @@ exports[`HomePage tests should render the Home page 1`] = `
         </h3>
       </a>
       <div
-        class="sc-bTTELM XTSIj"
+        class="sc-hlLBRy YyxTc"
       >
         <ul>
           <li
             aria-current="true"
-            class="sc-kImNAt kkDrHe"
+            class="sc-eKJbhj kPugEa"
             tabindex="0"
           >
             traditional
           </li>
           <li
             aria-current="false"
-            class="sc-kImNAt eumjuZ"
+            class="sc-eKJbhj ccGuSZ"
             tabindex="0"
           >
             thin
@@ -199,7 +199,7 @@ exports[`HomePage tests should render the Home page 1`] = `
         <ul>
           <li
             aria-current="true"
-            class="sc-kImNAt kkDrHe"
+            class="sc-eKJbhj kPugEa"
             tabindex="0"
           >
             12
@@ -207,7 +207,7 @@ exports[`HomePage tests should render the Home page 1`] = `
           </li>
           <li
             aria-current="false"
-            class="sc-kImNAt eumjuZ"
+            class="sc-eKJbhj ccGuSZ"
             tabindex="0"
           >
             14
@@ -215,7 +215,7 @@ exports[`HomePage tests should render the Home page 1`] = `
           </li>
           <li
             aria-current="false"
-            class="sc-kImNAt eumjuZ"
+            class="sc-eKJbhj ccGuSZ"
             tabindex="0"
           >
             16
@@ -236,7 +236,7 @@ exports[`HomePage tests should render the Home page 1`] = `
           class="sc-bcXHqe sc-eDvSVe sc-gKPRtg glVyWT fwWQTF gmBSoV"
         >
           <svg
-            class="sc-eKJbhj heVTGF"
+            class="sc-jNJNQp MnBwI"
             fill="currentColor"
             height="1em"
             stroke="currentColor"
@@ -286,12 +286,12 @@ exports[`HomePage tests should render the Home page 1`] = `
         </h3>
       </a>
       <div
-        class="sc-bTTELM XTSIj"
+        class="sc-hlLBRy YyxTc"
       >
         <ul>
           <li
             aria-current="true"
-            class="sc-kImNAt kkDrHe"
+            class="sc-eKJbhj kPugEa"
             tabindex="0"
           >
             traditional
@@ -300,7 +300,7 @@ exports[`HomePage tests should render the Home page 1`] = `
         <ul>
           <li
             aria-current="true"
-            class="sc-kImNAt kkDrHe"
+            class="sc-eKJbhj kPugEa"
             tabindex="0"
           >
             12
@@ -308,7 +308,7 @@ exports[`HomePage tests should render the Home page 1`] = `
           </li>
           <li
             aria-current="false"
-            class="sc-kImNAt eumjuZ"
+            class="sc-eKJbhj ccGuSZ"
             tabindex="0"
           >
             14
@@ -329,7 +329,7 @@ exports[`HomePage tests should render the Home page 1`] = `
           class="sc-bcXHqe sc-eDvSVe sc-gKPRtg glVyWT fwWQTF gmBSoV"
         >
           <svg
-            class="sc-eKJbhj heVTGF"
+            class="sc-jNJNQp MnBwI"
             fill="currentColor"
             height="1em"
             stroke="currentColor"
@@ -379,19 +379,19 @@ exports[`HomePage tests should render the Home page 1`] = `
         </h3>
       </a>
       <div
-        class="sc-bTTELM XTSIj"
+        class="sc-hlLBRy YyxTc"
       >
         <ul>
           <li
             aria-current="true"
-            class="sc-kImNAt kkDrHe"
+            class="sc-eKJbhj kPugEa"
             tabindex="0"
           >
             traditional
           </li>
           <li
             aria-current="false"
-            class="sc-kImNAt eumjuZ"
+            class="sc-eKJbhj ccGuSZ"
             tabindex="0"
           >
             thin
@@ -400,7 +400,7 @@ exports[`HomePage tests should render the Home page 1`] = `
         <ul>
           <li
             aria-current="true"
-            class="sc-kImNAt kkDrHe"
+            class="sc-eKJbhj kPugEa"
             tabindex="0"
           >
             12
@@ -408,7 +408,7 @@ exports[`HomePage tests should render the Home page 1`] = `
           </li>
           <li
             aria-current="false"
-            class="sc-kImNAt eumjuZ"
+            class="sc-eKJbhj ccGuSZ"
             tabindex="0"
           >
             16
@@ -429,7 +429,7 @@ exports[`HomePage tests should render the Home page 1`] = `
           class="sc-bcXHqe sc-eDvSVe sc-gKPRtg glVyWT fwWQTF gmBSoV"
         >
           <svg
-            class="sc-eKJbhj heVTGF"
+            class="sc-jNJNQp MnBwI"
             fill="currentColor"
             height="1em"
             stroke="currentColor"
