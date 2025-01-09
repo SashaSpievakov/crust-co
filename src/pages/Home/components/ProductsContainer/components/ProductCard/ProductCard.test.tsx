@@ -4,7 +4,7 @@ import { screen } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
 
 import { pizzaAPI } from '../../../../../../services';
-import { setupStore } from '../../../../../../store/store';
+import { setupStore } from '../../../../../../store';
 import {
   rendererWithProviders,
   renderWithProvidersAndRoutes,

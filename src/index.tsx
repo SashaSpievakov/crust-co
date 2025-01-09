@@ -4,7 +4,7 @@ import { Provider } from 'react-redux';
 import { BrowserRouter } from 'react-router-dom';
 
 import { App } from './App';
-import { setupStore } from './store/store';
+import { setupStore } from './store';
 
 const gaKey = process.env.REACT_APP_GA_KEY;
 

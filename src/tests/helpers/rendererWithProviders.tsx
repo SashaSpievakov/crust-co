@@ -5,7 +5,7 @@ import { MemoryRouter } from 'react-router-dom';
 import renderer from 'react-test-renderer';
 import { ThemeProvider } from 'styled-components';
 
-import { RootState, setupStore } from '../../store/store';
+import { RootState, setupStore } from '../../store';
 import { darkTheme } from '../../styles/Themes.styled';
 
 export const rendererWithProviders = (
