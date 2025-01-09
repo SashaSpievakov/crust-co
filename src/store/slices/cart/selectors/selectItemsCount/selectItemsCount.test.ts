@@ -6,20 +6,20 @@ import {
 import { RootState } from '../../../../store';
 import { selectItemsCount } from './selectItemsCount';
 
-describe('tests selectItemsCount', () => {
-  test('works with a normal state', () => {
+describe('selectItemsCount tests', () => {
+  test('should work with a normal state', () => {
     expect(
       selectItemsCount('6')({ cart: CartItemsMockProps } as RootState),
     ).toBe(13);
   });
 
-  test('works with a wrong id', () => {
+  test('should work with a wrong id', () => {
     expect(
       selectItemsCount('7')({ cart: CartItemsMockProps } as RootState),
     ).toBe(0);
   });
 
-  test('works with multiple items of the same id', () => {
+  test('should work with multiple items of the same id', () => {
     expect(
       selectItemsCount('6')({
         cart: {
@@ -42,7 +42,7 @@ describe('tests selectItemsCount', () => {
     ).toBe(20);
   });
 
-  test('works with an empty state', () => {
+  test('should work with an empty state', () => {
     expect(selectItemsCount('15')({} as RootState)).toBe(0);
   });
 });

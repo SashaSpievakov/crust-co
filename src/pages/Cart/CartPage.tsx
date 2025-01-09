@@ -4,8 +4,7 @@ import { Link } from 'react-router-dom';
 
 import { useAppDispatch, useAppSelector } from '../../hooks';
 import { ICartItem } from '../../models';
-import { clearCart } from '../../store';
-import { selectCart } from '../../store/slices/cart/selectors/selectCart/selectCart';
+import { clearCart, selectCart } from '../../store';
 import { ButtonBackCart, ButtonPay } from '../../styles/Buttons.styled';
 import {
   Article,

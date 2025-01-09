@@ -2,9 +2,12 @@ import { FC, KeyboardEvent } from 'react';
 
 import { useAppDispatch, useAppSelector } from '../../hooks';
 import { ICartItem } from '../../models';
-import { addItem, removeItem } from '../../store';
-import { selectCurrentItemCount } from '../../store/slices/cart/selectors/selectCurrentItemCount/selectCurrentItemCount';
-import { selectItemsCount } from '../../store/slices/cart/selectors/selectItemsCount/selectItemsCount';
+import {
+  addItem,
+  removeItem,
+  selectCurrentItemCount,
+  selectItemsCount,
+} from '../../store';
 import { ButtonAdd } from '../../styles/Buttons.styled';
 import {
   Count,
