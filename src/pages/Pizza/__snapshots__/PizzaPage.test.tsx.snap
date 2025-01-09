@@ -33,19 +33,19 @@ exports[`PizzaPage tests should render the Pizza page 1`] = `
     Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquid nisi aspernatur debitis quod suscipit, vitae placeat natus ipsum inventore esse rerum animi facere numquam saepe vero mollitia quibusdam at voluptates est commodi laudantium? Iste inventore quibusdam cupiditate nemo sint iusto minus nihil culpa! Sequi architecto nesciunt explicabo mollitia. Laboriosam, odio.
   </p>
   <div
-    class="sc-bTTELM fSlmTH"
+    class="sc-hlLBRy iMsiwk"
   >
     <ul>
       <li
         aria-current="true"
-        class="sc-kImNAt kkDrHe"
+        class="sc-eKJbhj kPugEa"
         tabindex="0"
       >
         traditional
       </li>
       <li
         aria-current="false"
-        class="sc-kImNAt eumjuZ"
+        class="sc-eKJbhj ccGuSZ"
         tabindex="0"
       >
         thin
@@ -54,7 +54,7 @@ exports[`PizzaPage tests should render the Pizza page 1`] = `
     <ul>
       <li
         aria-current="true"
-        class="sc-kImNAt kkDrHe"
+        class="sc-eKJbhj kPugEa"
         tabindex="0"
       >
         12
@@ -62,7 +62,7 @@ exports[`PizzaPage tests should render the Pizza page 1`] = `
       </li>
       <li
         aria-current="false"
-        class="sc-kImNAt eumjuZ"
+        class="sc-eKJbhj ccGuSZ"
         tabindex="0"
       >
         14
@@ -70,7 +70,7 @@ exports[`PizzaPage tests should render the Pizza page 1`] = `
       </li>
       <li
         aria-current="false"
-        class="sc-kImNAt eumjuZ"
+        class="sc-eKJbhj ccGuSZ"
         tabindex="0"
       >
         16
@@ -88,7 +88,7 @@ exports[`PizzaPage tests should render the Pizza page 1`] = `
     class="sc-bcXHqe sc-eDvSVe sc-gKPRtg glVyWT fwWQTF dBjrMs"
   >
     <svg
-      class="sc-eKJbhj heVTGF"
+      class="sc-jNJNQp MnBwI"
       fill="currentColor"
       height="1em"
       stroke="currentColor"

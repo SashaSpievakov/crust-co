@@ -4,9 +4,13 @@ import { Provider } from 'react-redux';
 import { BrowserRouter } from 'react-router-dom';
 
 import { App } from './App';
-import { setupStore } from './store/store';
+import { setupStore } from './store';
 
-ReactGA.initialize(process.env.GA_KEY as string);
+const gaKey = process.env.REACT_APP_GA_KEY;
+
+if (gaKey) {
+  ReactGA.initialize(gaKey);
+}
 
 const rootElem = document.getElementById('root');
 

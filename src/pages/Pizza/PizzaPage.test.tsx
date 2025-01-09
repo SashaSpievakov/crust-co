@@ -4,7 +4,7 @@ import { screen } from '@testing-library/react';
 import { rest } from 'msw';
 
 import { pizzaAPI } from '../../services';
-import { setupStore } from '../../store/store';
+import { setupStore } from '../../store';
 import { renderWithProvidersAndRoutes } from '../../tests/helpers';
 import { testServer } from '../../tests/mocks';
 import { PizzaPage } from './PizzaPage';

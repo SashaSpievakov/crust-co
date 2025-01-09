@@ -10,9 +10,9 @@ import cartReducer, {
   removeItems,
 } from './cartReducer';
 
-describe('tests cartReducer', () => {
-  describe('tests addItem action', () => {
-    test('adds a new item', () => {
+describe('cartReducer tests', () => {
+  describe('cartReducer addItem action', () => {
+    test('should add a new item', () => {
       expect(
         cartReducer(
           { items: [], itemsCount: 0, totalPrice: 0 },
@@ -21,7 +21,7 @@ describe('tests cartReducer', () => {
       ).toEqual({ items: [CartItemMockProps2], itemsCount: 1, totalPrice: 9 });
     });
 
-    test('adds an existing item', () => {
+    test('should add an existing item', () => {
       expect(
         cartReducer(CartItemsMockProps, addItem(CartItemMockProps)),
       ).toEqual({
@@ -41,7 +41,7 @@ describe('tests cartReducer', () => {
       });
     });
 
-    test('adds an item with an undefined state', () => {
+    test('should add an item with an undefined state', () => {
       expect(cartReducer(undefined, addItem(CartItemMockProps2))).toEqual({
         items: [CartItemMockProps2],
         itemsCount: 1,
@@ -50,8 +50,8 @@ describe('tests cartReducer', () => {
     });
   });
 
-  describe('tests removeItem action', () => {
-    test('removes an item', () => {
+  describe('cartReducer removeItem action', () => {
+    test('should remove an item', () => {
       expect(
         cartReducer(CartItemsMockProps, removeItem(CartItemMockProps)),
       ).toEqual({
@@ -71,7 +71,7 @@ describe('tests cartReducer', () => {
       });
     });
 
-    test('removes the wrong item', () => {
+    test('should remove a non-existing item', () => {
       expect(
         cartReducer(
           { items: [CartItemMockProps], itemsCount: 13, totalPrice: 91 },
@@ -80,7 +80,7 @@ describe('tests cartReducer', () => {
       ).toEqual({ items: [CartItemMockProps], itemsCount: 13, totalPrice: 91 });
     });
 
-    test('removes an item with an undefined state', () => {
+    test('should remove an item with an undefined state', () => {
       expect(cartReducer(undefined, removeItem(CartItemMockProps))).toEqual({
         items: [],
         itemsCount: 0,
@@ -89,8 +89,8 @@ describe('tests cartReducer', () => {
     });
   });
 
-  describe('tests removeItems action', () => {
-    test('removes items', () => {
+  describe('cartReducer removeItems action', () => {
+    test('should remove items', () => {
       expect(
         cartReducer(CartItemsMockProps, removeItems(CartItemMockProps)),
       ).toEqual({
@@ -100,7 +100,7 @@ describe('tests cartReducer', () => {
       });
     });
 
-    test('removes the wrong items', () => {
+    test('should remove non-existing items', () => {
       expect(
         cartReducer(
           { items: [CartItemMockProps2], itemsCount: 1, totalPrice: 9 },
@@ -109,7 +109,7 @@ describe('tests cartReducer', () => {
       ).toEqual({ items: [CartItemMockProps2], itemsCount: 1, totalPrice: 9 });
     });
 
-    test('removes items with an undefined state', () => {
+    test('should remove items with an undefined state', () => {
       expect(cartReducer(undefined, removeItems(CartItemMockProps))).toEqual({
         items: [],
         itemsCount: 0,
@@ -118,8 +118,8 @@ describe('tests cartReducer', () => {
     });
   });
 
-  describe('tests clearCart action', () => {
-    test('clears cart with a normal state', () => {
+  describe('cartReducer clearCart action', () => {
+    test('should clear the cart', () => {
       expect(cartReducer(CartItemsMockProps, clearCart())).toEqual({
         items: [],
         itemsCount: 0,
@@ -127,7 +127,7 @@ describe('tests cartReducer', () => {
       });
     });
 
-    test('clears cart with an undefined state', () => {
+    test('should clear the cart with an undefined state', () => {
       expect(cartReducer(undefined, clearCart())).toEqual({
         items: [],
         itemsCount: 0,

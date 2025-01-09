@@ -5,9 +5,9 @@ import { ICartItem } from '../../models';
 import {
   addItem,
   removeItem,
-} from '../../store/slices/cart/reducer/cartReducer';
-import { selectCurrentItemCount } from '../../store/slices/cart/selectors/selectCurrentItemCount/selectCurrentItemCount';
-import { selectItemsCount } from '../../store/slices/cart/selectors/selectItemsCount/selectItemsCount';
+  selectCurrentItemCount,
+  selectItemsCount,
+} from '../../store';
 import { ButtonAdd } from '../../styles/Buttons.styled';
 import {
   Count,

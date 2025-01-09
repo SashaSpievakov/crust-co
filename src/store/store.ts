@@ -5,8 +5,8 @@ import {
 } from '@reduxjs/toolkit';
 
 import { pizzaAPI, pizzasAPI } from '../services';
-import cart from './slices/cart/reducer/cartReducer';
-import theme from './slices/theme/reducer/themeReducer';
+import cart from './slices/cart';
+import theme from './slices/theme';
 
 const rootReducer = combineReducers({
   theme,

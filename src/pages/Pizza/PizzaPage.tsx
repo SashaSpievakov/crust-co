@@ -1,6 +1,6 @@
 import { FC, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
-import { ErrorRequest } from 'src/components/ErrorRequest';
+import { ErrorRequest } from 'src/components';
 
 import { Loading } from '../../components/UI';
 import { pizzaAPI } from '../../services';

@@ -1,6 +1,6 @@
 import { ChangeEvent, FC, useEffect, useState } from 'react';
 import { useSearchParams } from 'react-router-dom';
-import { ErrorRequest } from 'src/components/ErrorRequest';
+import { ErrorRequest } from 'src/components';
 import { useDebounce } from 'src/hooks';
 import { Container } from 'src/styles/Base.styled';
 

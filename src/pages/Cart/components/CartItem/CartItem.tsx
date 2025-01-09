@@ -4,11 +4,7 @@ import { Link } from 'react-router-dom';
 
 import { useAppDispatch } from '../../../../hooks';
 import { ICartItem } from '../../../../models';
-import {
-  addItem,
-  removeItem,
-  removeItems,
-} from '../../../../store/slices/cart/reducer/cartReducer';
+import { addItem, removeItem, removeItems } from '../../../../store';
 import { ButtonCircle } from '../../../../styles/Buttons.styled';
 import {
   Article,
