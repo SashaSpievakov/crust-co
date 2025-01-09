@@ -3,7 +3,7 @@ import { ThemeProvider } from 'styled-components';
 
 import { useAppSelector } from './hooks';
 import { AppRouter } from './router';
-import { selectIsLight } from './store/slices/theme/selectors/selectIsLight';
+import { selectIsLight } from './store';
 import { Global } from './styles/Global.styled';
 import { darkTheme, lightTheme } from './styles/Themes.styled';
 

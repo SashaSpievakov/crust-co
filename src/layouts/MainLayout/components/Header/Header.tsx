@@ -3,9 +3,8 @@ import { BsCart3, BsFillMoonFill, BsFillSunFill } from 'react-icons/bs';
 import { shallowEqual } from 'react-redux';
 import { Link, useLocation } from 'react-router-dom';
 import { useAppDispatch, useAppSelector } from 'src/hooks';
+import { selectIsLight, setTheme } from 'src/store';
 import { selectCart } from 'src/store/slices/cart/selectors/selectCart/selectCart';
-import { setTheme } from 'src/store/slices/theme/reducer/themeReducer';
-import { selectIsLight } from 'src/store/slices/theme/selectors/selectIsLight';
 import { ButtonCart } from 'src/styles/Buttons.styled';
 
 import { Delimiter, HeaderWrapper, Icon, Right } from './Header.styled';
