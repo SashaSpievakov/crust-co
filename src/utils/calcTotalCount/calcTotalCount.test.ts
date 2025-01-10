@@ -4,12 +4,12 @@ import {
 } from '../../tests/mocks/mockData/mockData';
 import { calcTotalCount } from './calcTotalCount';
 
-describe('tests calTotalCount', () => {
-  test('works with the right parameters', () => {
+describe('calTotalCount tests', () => {
+  test('should calculate the correct amount', () => {
     expect(calcTotalCount([CartItemMockProps, CartItemMockProps2])).toBe(14);
   });
 
-  test('works with an empty array', () => {
+  test('should work with an empty array', () => {
     expect(calcTotalCount([])).toBe(0);
   });
 });
