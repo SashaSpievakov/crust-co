@@ -2,7 +2,7 @@
 
 exports[`PizzaPage tests should render the Pizza page 1`] = `
 <article
-  class="sc-bjfHbI sc-hOzowv cXrwfW gZWWhu"
+  class="sc-fnGiBr sc-kImNAt dptaOp cKMdsV"
   data-testid="itemPage"
 >
   <picture>
@@ -16,36 +16,36 @@ exports[`PizzaPage tests should render the Pizza page 1`] = `
     />
     <img
       alt="Chicken Curry pizza"
-      class="sc-dsHJmm fYybnX"
+      class="sc-hOzowv boIJkl"
       height="450"
       src="../assets/img/pizzas/pizza9.png"
       width="450"
     />
   </picture>
   <h2
-    class="sc-cZFQFd iZjtAc"
+    class="sc-dsHJmm fVDJSJ"
   >
     Chicken Curry
   </h2>
   <p
-    class="sc-jTjUTQ ACWRi"
+    class="sc-cZFQFd jAOJYu"
   >
     Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquid nisi aspernatur debitis quod suscipit, vitae placeat natus ipsum inventore esse rerum animi facere numquam saepe vero mollitia quibusdam at voluptates est commodi laudantium? Iste inventore quibusdam cupiditate nemo sint iusto minus nihil culpa! Sequi architecto nesciunt explicabo mollitia. Laboriosam, odio.
   </p>
   <div
-    class="sc-hlLBRy iMsiwk"
+    class="sc-jNJNQp FLbeI"
   >
     <ul>
       <li
         aria-current="true"
-        class="sc-eKJbhj kPugEa"
+        class="sc-hlLBRy hHFlzz"
         tabindex="0"
       >
         traditional
       </li>
       <li
         aria-current="false"
-        class="sc-eKJbhj ccGuSZ"
+        class="sc-hlLBRy iHgFco"
         tabindex="0"
       >
         thin
@@ -54,7 +54,7 @@ exports[`PizzaPage tests should render the Pizza page 1`] = `
     <ul>
       <li
         aria-current="true"
-        class="sc-eKJbhj kPugEa"
+        class="sc-hlLBRy hHFlzz"
         tabindex="0"
       >
         12
@@ -62,7 +62,7 @@ exports[`PizzaPage tests should render the Pizza page 1`] = `
       </li>
       <li
         aria-current="false"
-        class="sc-eKJbhj ccGuSZ"
+        class="sc-hlLBRy iHgFco"
         tabindex="0"
       >
         14
@@ -70,7 +70,7 @@ exports[`PizzaPage tests should render the Pizza page 1`] = `
       </li>
       <li
         aria-current="false"
-        class="sc-eKJbhj ccGuSZ"
+        class="sc-hlLBRy iHgFco"
         tabindex="0"
       >
         16
@@ -79,16 +79,16 @@ exports[`PizzaPage tests should render the Pizza page 1`] = `
     </ul>
   </div>
   <h3
-    class="sc-jRwbcX kmSjEp"
+    class="sc-jTjUTQ kbGJbb"
   >
     14
     $
   </h3>
   <button
-    class="sc-bcXHqe sc-eDvSVe sc-gKPRtg glVyWT fwWQTF dBjrMs"
+    class="sc-bcXHqe sc-hLBbgP sc-jSUZER glVyWT bcVaXZ huGlrc"
   >
     <svg
-      class="sc-jNJNQp MnBwI"
+      class="sc-ZqFbI dumUov"
       fill="currentColor"
       height="1em"
       stroke="currentColor"
@@ -106,7 +106,7 @@ exports[`PizzaPage tests should render the Pizza page 1`] = `
     </span>
   </button>
   <a
-    class="sc-bcXHqe sc-gswNZR glVyWT bMYeao"
+    class="sc-bcXHqe sc-dkrFOg glVyWT kuatBS"
     href="/"
   >
     Go Back

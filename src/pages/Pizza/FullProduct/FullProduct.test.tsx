@@ -64,8 +64,8 @@ describe('FullProduct tests', () => {
 
     test('should disable minus button after type switching', () => {
       const sizeItem = screen.getByText(/16 inch/i);
-      const buttonAdd = screen.getByText(/add/i);
-      userEvent.click(buttonAdd);
+      const ButtonTertiary = screen.getByText(/add/i);
+      userEvent.click(ButtonTertiary);
 
       const buttonPlus = screen.getByTestId('itemsHandlerPlus');
       const buttonMinus = screen.getByTestId('itemsHandlerMinus');
@@ -88,8 +88,8 @@ describe('FullProduct tests', () => {
       const twelve = screen.getByText(/12 inch/i);
       const fourteen = screen.getByText(/14 inch/i);
       const sixteen = screen.getByText(/16 inch/i);
-      const buttonAdd = screen.getByText(/add/i);
-      userEvent.click(buttonAdd);
+      const ButtonTertiary = screen.getByText(/add/i);
+      userEvent.click(ButtonTertiary);
 
       const buttonPlus = screen.getByTestId('itemsHandlerPlus');
       const buttonMinus = screen.getByTestId('itemsHandlerMinus');

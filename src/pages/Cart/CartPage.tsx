@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 import { useAppDispatch, useAppSelector } from '../../hooks';
 import { ICartItem } from '../../models';
 import { clearCart, selectCart } from '../../store';
-import { ButtonBackCart, ButtonPay } from '../../styles/Buttons.styled';
+import { ButtonMedium, ButtonTertiary } from '../../styles/Buttons.styled';
 import {
   Article,
   Bottom,
@@ -76,13 +76,17 @@ export const CartPage: FC = () => {
           </span>
         </Details>
         <Buttons>
-          <ButtonBackCart to="/" as={Link}>
+          <ButtonTertiary
+            to="/"
+            as={Link}
+            style={{ width: '210px', justifyContent: 'center' }}
+          >
             <ChevronLeft />
             <span>Go back</span>
-          </ButtonBackCart>
-          <ButtonPay onClick={() => setIsOpen(true)}>
+          </ButtonTertiary>
+          <ButtonMedium onClick={() => setIsOpen(true)}>
             <span>Buy now</span>
-          </ButtonPay>
+          </ButtonMedium>
           {isOpen && <OrderModal setIsOpen={setIsOpen} />}
         </Buttons>
       </Bottom>

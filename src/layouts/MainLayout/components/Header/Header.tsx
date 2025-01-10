@@ -4,9 +4,14 @@ import { shallowEqual } from 'react-redux';
 import { Link, useLocation } from 'react-router-dom';
 import { useAppDispatch, useAppSelector } from 'src/hooks';
 import { selectCart, selectIsLight, setTheme } from 'src/store';
-import { ButtonCart } from 'src/styles/Buttons.styled';
 
-import { Delimiter, HeaderWrapper, Icon, Right } from './Header.styled';
+import {
+  ButtonCart,
+  Delimiter,
+  HeaderWrapper,
+  Icon,
+  Right,
+} from './Header.styled';
 import { LogoSection } from './LogoSection';
 
 export const Header: FC = () => {

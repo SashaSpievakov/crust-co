@@ -1,4 +1,4 @@
-import { ButtonBack, ButtonPay } from 'src/styles/Buttons.styled';
+import { ButtonMedium, ButtonSecondary } from 'src/styles/Buttons.styled';
 import styled from 'styled-components';
 
 const Form = styled.form`
@@ -27,7 +27,7 @@ const Form = styled.form`
   }
 `;
 
-const ModalButton = styled(ButtonPay)`
+const ModalButton = styled(ButtonMedium)`
   margin-top: 1rem;
 
   @media screen and (max-width: 550px) {
@@ -39,7 +39,7 @@ const ModalButton = styled(ButtonPay)`
   }
 `;
 
-const CloseButton = styled(ButtonBack)`
+const CloseButton = styled(ButtonSecondary)`
   margin-top: 5%;
 
   @media screen and (max-width: 550px) {

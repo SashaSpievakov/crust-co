@@ -21,7 +21,7 @@ Object {
       width="300"
     />,
     <a
-      className="sc-bcXHqe sc-gswNZR glVyWT bMYeao"
+      className="sc-bcXHqe sc-dkrFOg glVyWT kuatBS"
       href="/"
       onClick={[Function]}
     >
@@ -29,7 +29,7 @@ Object {
     </a>,
   ],
   "props": Object {
-    "className": "sc-lbVpMG enMBOd",
+    "className": "sc-gScZFl ijbslA",
   },
   "type": "article",
 }

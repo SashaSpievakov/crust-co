@@ -1,3 +1,4 @@
+import { Button } from 'src/styles/Buttons.styled';
 import styled, { css } from 'styled-components';
 
 interface HeaderProps {
@@ -73,6 +74,27 @@ const Icon = styled.i<LiProps>`
     `}
 `;
 
+const ButtonCart = styled(Button)`
+  display: flex;
+  align-items: center;
+  line-height: 23px;
+  padding: 12px 25px;
+
+  svg {
+    margin-right: 8px;
+    margin-bottom: 1px;
+  }
+
+  span {
+    font-weight: 600;
+    font-size: 16px;
+  }
+
+  &:focus-visible {
+    outline: 5px solid #d5d5d5;
+  }
+`;
+
 const Delimiter = styled.div`
   width: 1px;
   height: 25px;
@@ -81,4 +103,4 @@ const Delimiter = styled.div`
   margin-right: 14px;
 `;
 
-export { Delimiter, HeaderWrapper, Icon, Right };
+export { ButtonCart, Delimiter, HeaderWrapper, Icon, Right };
