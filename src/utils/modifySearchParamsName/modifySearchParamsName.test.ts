@@ -1,15 +1,15 @@
 import { modifySearchParamsName } from './modifySearchParamsName';
 
-describe('tests modifySearchParamsName', () => {
-  test('works with the right parameters', () => {
+describe('modifySearchParamsName tests', () => {
+  test('should select the right category', () => {
     expect(modifySearchParamsName('category')).toBe('category,desc');
   });
 
-  test('works with the A to Z parameter', () => {
+  test('should select the correct alphabetic sorting', () => {
     expect(modifySearchParamsName('A to Z')).toBe('name,asc');
   });
 
-  test('works with an empty string', () => {
+  test('should work with an empty string', () => {
     expect(modifySearchParamsName('   ')).toBe('');
   });
 });

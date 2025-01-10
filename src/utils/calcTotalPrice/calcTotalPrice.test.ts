@@ -4,12 +4,12 @@ import {
 } from '../../tests/mocks/mockData/mockData';
 import { calcTotalPrice } from './calcTotalPrice';
 
-describe('tests calcTotalPrice', () => {
-  test('works with the right parameters', () => {
+describe('calcTotalPrice tests', () => {
+  test('should calculate total price', () => {
     expect(calcTotalPrice([CartItemMockProps, CartItemMockProps2])).toBe(100);
   });
 
-  test('works with an empty array', () => {
+  test('should work with an empty array', () => {
     expect(calcTotalPrice([])).toBe(0);
   });
 });

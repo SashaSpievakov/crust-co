@@ -8,7 +8,7 @@ import {
   selectCurrentItemCount,
   selectItemsCount,
 } from '../../store';
-import { ButtonAdd } from '../../styles/Buttons.styled';
+import { ButtonTertiary } from '../../styles/Buttons.styled';
 import {
   Count,
   Counter,
@@ -87,9 +87,9 @@ export const ItemsCountHandler: FC<ItemsCountHandlerType> = ({
       />
     </Counter>
   ) : (
-    <ButtonAdd onClick={onClickAdd} isFullScreen={isFullScreen}>
+    <ButtonTertiary onClick={onClickAdd} isFullScreen={isFullScreen}>
       <MainPlus />
       <span>Add</span>
-    </ButtonAdd>
+    </ButtonTertiary>
   );
 };

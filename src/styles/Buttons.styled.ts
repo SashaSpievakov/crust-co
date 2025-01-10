@@ -4,7 +4,7 @@ interface CircleProps {
   remove?: boolean;
 }
 
-interface ButtonAddProps {
+interface ButtonTertiaryProps {
   isFullScreen?: boolean;
 }
 
@@ -38,7 +38,18 @@ const Button = styled.button`
   }
 `;
 
-const ButtonBack = styled(Button)`
+const ButtonMedium = styled(Button)`
+  font-size: 18px;
+  font-weight: 600;
+  width: 210px;
+  padding: 16px;
+
+  &:focus-visible {
+    outline: 5px solid #d5d5d5;
+  }
+`;
+
+const ButtonSecondary = styled(Button)`
   padding: 12px 0 14px;
   width: 230px;
   margin: 0 auto;
@@ -58,38 +69,6 @@ const ButtonBack = styled(Button)`
   @media screen and (max-width: 400px) {
     width: 200px;
     padding: 10px 0 12px;
-  }
-`;
-
-const ButtonCart = styled(Button)`
-  display: flex;
-  align-items: center;
-  line-height: 23px;
-  padding: 12px 25px;
-
-  svg {
-    margin-right: 8px;
-    margin-bottom: 1px;
-  }
-
-  span {
-    font-weight: 600;
-    font-size: 16px;
-  }
-
-  &:focus-visible {
-    outline: 5px solid #d5d5d5;
-  }
-`;
-
-const ButtonPay = styled(Button)`
-  font-size: 18px;
-  font-weight: 600;
-  width: 210px;
-  padding: 16px;
-
-  &:focus-visible {
-    outline: 5px solid #d5d5d5;
   }
 `;
 
@@ -153,7 +132,7 @@ const ButtonCircle = styled(ButtonOutline)<CircleProps>`
     `}
 `;
 
-const ButtonAdd = styled(ButtonOutline)<ButtonAddProps>`
+const ButtonTertiary = styled(ButtonOutline)<ButtonTertiaryProps>`
   display: flex;
   align-items: center;
   color: ${({ theme }) => theme.colors.third};
@@ -181,16 +160,4 @@ const ButtonAdd = styled(ButtonOutline)<ButtonAddProps>`
     `}
 `;
 
-const ButtonBackCart = styled(ButtonAdd)`
-  width: 210px;
-  justify-content: center;
-`;
-
-export {
-  ButtonAdd,
-  ButtonBack,
-  ButtonBackCart,
-  ButtonCart,
-  ButtonCircle,
-  ButtonPay,
-};
+export { Button, ButtonCircle, ButtonMedium, ButtonSecondary, ButtonTertiary };
