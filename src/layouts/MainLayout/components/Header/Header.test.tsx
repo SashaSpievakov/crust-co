@@ -1,11 +1,11 @@
 import '@testing-library/jest-dom';
 
-import { screen } from '@testing-library/react';
-import userEvent from '@testing-library/user-event';
 import {
   rendererWithProviders,
   renderWithProvidersAndRoutes,
-} from 'src/tests/helpers';
+} from '@src/tests/helpers';
+import { screen } from '@testing-library/react';
+import userEvent from '@testing-library/user-event';
 
 import { Header } from './Header';
 

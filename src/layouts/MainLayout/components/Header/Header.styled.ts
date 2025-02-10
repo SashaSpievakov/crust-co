@@ -1,4 +1,4 @@
-import { Button } from 'src/styles/Buttons.styled';
+import { Button } from '@src/styles/Buttons.styled';
 import styled, { css } from 'styled-components';
 
 interface HeaderProps {

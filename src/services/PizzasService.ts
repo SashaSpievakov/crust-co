@@ -10,7 +10,7 @@ interface IFetchItems {
 export const pizzasAPI = createApi({
   reducerPath: 'pizzasAPI',
   baseQuery: fetchBaseQuery({
-    baseUrl: `${process.env.REACT_APP_API_URL}/api`,
+    baseUrl: `${import.meta.env.VITE_APP_API_URL}/api`,
   }),
   tagTypes: ['Pizzas'],
   endpoints: (build) => ({

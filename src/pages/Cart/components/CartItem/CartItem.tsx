@@ -105,3 +105,5 @@ export const CartItem = memo(
     );
   },
 );
+
+CartItem.displayName = 'CartItem';

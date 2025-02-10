@@ -5,7 +5,7 @@ import { IPizzaItem } from '../models';
 export const pizzaAPI = createApi({
   reducerPath: 'pizzaPI',
   baseQuery: fetchBaseQuery({
-    baseUrl: `${process.env.REACT_APP_API_URL}/api`,
+    baseUrl: `${import.meta.env.VITE_APP_API_URL}/api`,
   }),
   tagTypes: ['Pizza'],
   endpoints: (build) => ({

@@ -1,5 +1,5 @@
+import { Container } from '@src/styles/Base.styled';
 import { BsCart3, BsChevronLeft, BsTrash } from 'react-icons/bs';
-import { Container } from 'src/styles/Base.styled';
 import styled from 'styled-components';
 
 const Article = styled(Container)`

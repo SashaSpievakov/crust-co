@@ -1,4 +1,4 @@
-import { Container } from 'src/styles/Base.styled';
+import { Container } from '@src/styles/Base.styled';
 import styled from 'styled-components';
 
 const Article = styled(Container)`

@@ -1,18 +1,19 @@
 {
   "env": {
     "browser": true,
-    "es2021": true
+    "es2021": true,
+    "node": true
   },
   "extends": [
-    "react-app",
-    "react-app/jest",
-    "plugin:cypress/recommended",
-    "airbnb",
-    "airbnb-typescript",
-    "plugin:import/typescript",
+    "eslint:recommended",
+    "plugin:react/recommended",
+    "plugin:react-hooks/recommended",
+    "plugin:jsx-a11y/recommended",
+    "plugin:@typescript-eslint/recommended",
+    "plugin:import/recommended",
     "plugin:prettier/recommended"
   ],
-  "overrides": [],
+  "parser": "@typescript-eslint/parser",
   "parserOptions": {
     "ecmaVersion": "latest",
     "sourceType": "module",
@@ -20,47 +21,63 @@
   },
   "plugins": [
     "react",
+    "react-hooks",
+    "jsx-a11y",
     "@typescript-eslint",
     "simple-import-sort",
-    "cypress",
+    "import",
     "prettier"
   ],
   "rules": {
+    /** 🟢 React & Hooks **/
     "react/jsx-uses-react": "off",
     "react/react-in-jsx-scope": "off",
     "react/jsx-props-no-spreading": "off",
-    "react/no-array-index-key": "off",
-    "import/no-cycle": "off",
-    "no-plusplus": "off",
-    "no-param-reassign": "off",
     "react/function-component-definition": "off",
-    "no-nested-ternary": "off",
+    "react/no-array-index-key": "off",
     "react/require-default-props": "off",
+    "react/jsx-key": ["error", { "checkFragmentShorthand": true }],
     "react-hooks/exhaustive-deps": "off",
-    "testing-library/render-result-naming-convention": "off",
-    "testing-library/no-render-in-setup": "off",
-    "import/no-extraneous-dependencies": "off",
-    "import/prefer-default-export": "off",
-    "simple-import-sort/exports": 2,
+
+    /** 🟢 TypeScript Best Practices **/
+    "@typescript-eslint/no-unused-vars": ["warn", { "argsIgnorePattern": "^_" }],
+    "consistent-return": "warn",
+
+    /** 🟢 Code Style & Import Sorting **/
+    "prettier/prettier": "error",
     "simple-import-sort/imports": [
-      2,
+      "error",
       {
         "groups": [
-          // Side effect imports.
           ["^\\u0000"],
-          // Node.js builtins prefixed with `node:`.
           ["^node:"],
-          // Packages.
-          // Things that start with a letter (or digit or underscore), or `@` followed by a letter.
           ["^@?\\w"],
-          // Absolute imports and other imports such as Vue-style `@/foo`.
-          // Anything not matched in another group.
           ["^"],
-          // Relative imports.
-          // Anything that starts with a dot.
           ["^\\."]
         ]
       }
-    ]
+    ],
+    "simple-import-sort/exports": "error",
+    "import/no-extraneous-dependencies": "off",
+    "import/prefer-default-export": "off",
+
+    /** 🟢 Other Quality-of-Life Rules **/
+    "no-plusplus": "off",
+    "no-param-reassign": "off",
+    "no-nested-ternary": "off",
+    "jsx-a11y/anchor-is-valid": "warn",
+    "no-debugger": "warn",
+    "no-console": ["warn", { "allow": ["warn", "error"] }]
+  },
+   "settings": {
+    "react": {
+      "version": "detect"
+    },
+    "import/resolver": {
+      "typescript": {
+        "alwaysTryTypes": true,
+        "project": "./tsconfig.json"
+      }
+    }
   }
 }

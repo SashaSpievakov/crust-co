@@ -1,6 +1,6 @@
 import '@testing-library/jest-dom';
 
-import { rendererWithProviders } from 'src/tests/helpers';
+import { rendererWithProviders } from '@src/tests/helpers';
 
 import { Footer } from './Footer';
 

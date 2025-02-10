@@ -1,8 +1,8 @@
 import '@testing-library/jest-dom';
 
+import { CartItemsMockProps } from '@src/tests/mocks/mockData/mockData';
 import { screen } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
-import { CartItemsMockProps } from 'src/tests/mocks/mockData/mockData';
 
 import {
   rendererWithProviders,

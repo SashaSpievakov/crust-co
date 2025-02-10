@@ -1,5 +1,5 @@
+import { ModalBg } from '@src/styles/Base.styled';
 import { FC, KeyboardEvent, ReactNode, useEffect } from 'react';
-import { ModalBg } from 'src/styles/Base.styled';
 
 import { Cross, Header, ModalWrapper, SubHeader } from './Modal.styled';
 

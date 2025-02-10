@@ -1,8 +1,8 @@
+import { ErrorRequest } from '@src/components';
+import { useDebounce } from '@src/hooks';
+import { Container } from '@src/styles/Base.styled';
 import { ChangeEvent, FC, useEffect, useState } from 'react';
 import { useSearchParams } from 'react-router-dom';
-import { ErrorRequest } from 'src/components';
-import { useDebounce } from 'src/hooks';
-import { Container } from 'src/styles/Base.styled';
 
 import { DropdownSelect, SearchItems } from '../../components/UI';
 import { IPizzaItem } from '../../models';

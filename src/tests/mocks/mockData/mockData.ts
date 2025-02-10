@@ -1,4 +1,4 @@
-import { CartSliceState } from 'src/store';
+import { CartSliceState } from '@src/store';
 
 import { ICartItem, IPizzaItem } from '../../../models';
 

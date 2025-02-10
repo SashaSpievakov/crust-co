@@ -1,5 +1,5 @@
+import { ErrorParagraph } from '@src/styles/Base.styled';
 import { FC } from 'react';
-import { ErrorParagraph } from 'src/styles/Base.styled';
 
 import { ButtonLink } from '../../components/UI';
 import { Article, Title } from './NotFoundPage.styled';

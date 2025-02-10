@@ -6,7 +6,7 @@ import { BrowserRouter } from 'react-router-dom';
 import { App } from './App';
 import { setupStore } from './store';
 
-const gaKey = process.env.REACT_APP_GA_KEY;
+const gaKey = import.meta.env.VITE_APP_GA_KEY;
 
 if (gaKey) {
   ReactGA.initialize(gaKey);
