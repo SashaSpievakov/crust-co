@@ -5,7 +5,7 @@ config();
 
 export default defineConfig({
   e2e: {
-    baseUrl: `http://localhost:${process.env.PORT}`,
+    baseUrl: `http://localhost:${process.env.VITE_PORT}`,
     supportFile: false,
   },
   video: false,

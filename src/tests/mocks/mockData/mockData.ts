@@ -1,6 +1,5 @@
-import { CartSliceState } from 'src/store';
-
-import { ICartItem, IPizzaItem } from '../../../models';
+import { ICartItem, IPizzaItem } from '@src/models';
+import { CartSliceState } from '@src/store';
 
 export const mockItems: IPizzaItem[] = [
   {

@@ -1,6 +1,7 @@
 import { FC } from 'react';
 
-import { ButtonLink } from '../../../../components/UI';
+import { ButtonLink } from '@src/components/UI';
+
 import { Article } from './CartEmpty.styled';
 import cartImg from './images/empty-cart.png';
 

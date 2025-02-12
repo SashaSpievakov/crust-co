@@ -3,14 +3,15 @@ import '@testing-library/jest-dom';
 import { screen } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
 
-import { typeNames } from '../../pages/Pizza/FullProduct/FullProduct';
-import { pizzaAPI } from '../../services';
-import { setupStore } from '../../store';
+import { typeNames } from '@src/pages/Pizza/FullProduct/FullProduct';
+import { pizzaAPI } from '@src/services';
+import { setupStore } from '@src/store';
 import {
   rendererWithProviders,
   renderWithProvidersAndRoutes,
-} from '../../tests/helpers';
-import { testServer } from '../../tests/mocks';
+} from '@src/tests/helpers';
+import { testServer } from '@src/tests/mocks';
+
 import { ProductOptions } from './ProductOptions';
 import { IProductOptions } from './ProductOptions.type';
 

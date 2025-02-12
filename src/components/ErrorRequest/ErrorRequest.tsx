@@ -1,5 +1,6 @@
 import { FC } from 'react';
-import { ErrorParagraph } from 'src/styles/Base.styled';
+
+import { ErrorParagraph } from '@src/styles/Base.styled';
 
 import { Article, ErrorHeading } from './ErrorRequest.styled';
 

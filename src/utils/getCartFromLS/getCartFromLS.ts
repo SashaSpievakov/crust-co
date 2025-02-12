@@ -1,4 +1,4 @@
-import { ICartItem } from 'src/models';
+import { ICartItem } from '@src/models';
 
 import { calcTotalCount } from '../calcTotalCount';
 import { calcTotalPrice } from '../calcTotalPrice';

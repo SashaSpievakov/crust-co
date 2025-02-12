@@ -1,7 +1,7 @@
 import { FC, PropsWithChildren } from 'react';
 import { Link } from 'react-router-dom';
 
-import { ButtonSecondary } from '../../../styles/Buttons.styled';
+import { ButtonSecondary } from '@src/styles/Buttons.styled';
 
 interface ButtonLinkProps extends PropsWithChildren {
   link: string;

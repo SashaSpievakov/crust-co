@@ -1,6 +1,7 @@
 import { BsCart3, BsChevronLeft, BsTrash } from 'react-icons/bs';
-import { Container } from 'src/styles/Base.styled';
 import styled from 'styled-components';
+
+import { Container } from '@src/styles/Base.styled';
 
 const Article = styled(Container)`
   margin: 50px auto;

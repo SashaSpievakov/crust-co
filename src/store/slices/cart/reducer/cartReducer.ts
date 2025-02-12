@@ -1,7 +1,7 @@
 import { createSlice, PayloadAction } from '@reduxjs/toolkit';
 
-import { ICartItem } from '../../../../models';
-import { getCartFromLS } from '../../../../utils';
+import { ICartItem } from '@src/models';
+import { getCartFromLS } from '@src/utils';
 
 export interface CartSliceState {
   totalPrice: number;

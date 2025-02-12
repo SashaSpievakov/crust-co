@@ -1,11 +1,11 @@
 import { createApi, fetchBaseQuery } from '@reduxjs/toolkit/dist/query/react';
 
-import { IPizzaItem } from '../models';
+import { IPizzaItem } from '@src/models';
 
 export const pizzaAPI = createApi({
   reducerPath: 'pizzaPI',
   baseQuery: fetchBaseQuery({
-    baseUrl: `${process.env.REACT_APP_API_URL}/api`,
+    baseUrl: `${import.meta.env.VITE_APP_API_URL}/api`,
   }),
   tagTypes: ['Pizza'],
   endpoints: (build) => ({

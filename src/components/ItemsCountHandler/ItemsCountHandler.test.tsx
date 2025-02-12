@@ -3,12 +3,13 @@ import '@testing-library/jest-dom';
 import { screen } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
 
-import { typeNames } from '../../pages/Pizza/FullProduct/FullProduct';
+import { typeNames } from '@src/pages/Pizza/FullProduct/FullProduct';
 import {
   rendererWithProviders,
   renderWithProvidersAndRoutes,
-} from '../../tests/helpers';
-import { CartItemsMockProps } from '../../tests/mocks/mockData/mockData';
+} from '@src/tests/helpers';
+import { CartItemsMockProps } from '@src/tests/mocks/mockData/mockData';
+
 import { ItemsCountHandler } from './ItemsCountHandler';
 import { ItemsCountHandlerType } from './ItemsCountHandler.type';
 

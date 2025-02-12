@@ -3,13 +3,14 @@ import '@testing-library/jest-dom';
 import { screen } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
 
-import { pizzaAPI } from '../../../../../../services';
-import { setupStore } from '../../../../../../store';
+import { pizzaAPI } from '@src/services';
+import { setupStore } from '@src/store';
 import {
   rendererWithProviders,
   renderWithProvidersAndRoutes,
-} from '../../../../../../tests/helpers';
-import { mockItem, testServer } from '../../../../../../tests/mocks';
+} from '@src/tests/helpers';
+import { mockItem, testServer } from '@src/tests/mocks';
+
 import { ProductCard } from './ProductCard';
 
 describe('ProductCard tests', () => {

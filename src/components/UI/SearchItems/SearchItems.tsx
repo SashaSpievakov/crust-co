@@ -53,3 +53,5 @@ export const SearchItems = memo(
     );
   },
 );
+
+SearchItems.displayName = 'SearchItems';

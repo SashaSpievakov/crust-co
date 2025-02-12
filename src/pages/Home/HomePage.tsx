@@ -1,13 +1,14 @@
 import { ChangeEvent, FC, useEffect, useState } from 'react';
 import { useSearchParams } from 'react-router-dom';
-import { ErrorRequest } from 'src/components';
-import { useDebounce } from 'src/hooks';
-import { Container } from 'src/styles/Base.styled';
 
-import { DropdownSelect, SearchItems } from '../../components/UI';
-import { IPizzaItem } from '../../models';
-import { pizzasAPI } from '../../services';
-import { modifySearchParamsName } from '../../utils/modifySearchParamsName';
+import { ErrorRequest } from '@src/components';
+import { DropdownSelect, SearchItems } from '@src/components/UI';
+import { useDebounce } from '@src/hooks';
+import { IPizzaItem } from '@src/models';
+import { pizzasAPI } from '@src/services';
+import { Container } from '@src/styles/Base.styled';
+import { modifySearchParamsName } from '@src/utils/modifySearchParamsName';
+
 import { Categories, ProductsContainer } from './components';
 import { Block, Title, Top } from './HomePage.styled';
 

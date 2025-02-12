@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-import { Container } from '../../../styles/Base.styled';
+import { Container } from '@src/styles/Base.styled';
 
 const Item = styled(Container)`
   display: flex;

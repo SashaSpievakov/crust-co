@@ -1,5 +1,6 @@
-import { Container } from 'src/styles/Base.styled';
 import styled from 'styled-components';
+
+import { Container } from '@src/styles/Base.styled';
 
 const Article = styled(Container)`
   margin: 100px auto;

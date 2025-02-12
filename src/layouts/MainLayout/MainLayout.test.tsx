@@ -1,6 +1,7 @@
 import '@testing-library/jest-dom';
 
-import { rendererWithProviders } from '../../tests/helpers';
+import { rendererWithProviders } from '@src/tests/helpers';
+
 import { MainLayout } from './MainLayout';
 
 describe('MainLayout tests', () => {

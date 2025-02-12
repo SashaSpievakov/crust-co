@@ -2,10 +2,11 @@ import { FC, KeyboardEvent, useEffect, useState } from 'react';
 import { shallowEqual } from 'react-redux';
 import { Link } from 'react-router-dom';
 
-import { useAppDispatch, useAppSelector } from '../../hooks';
-import { ICartItem } from '../../models';
-import { clearCart, selectCart } from '../../store';
-import { ButtonMedium, ButtonTertiary } from '../../styles/Buttons.styled';
+import { useAppDispatch, useAppSelector } from '@src/hooks';
+import { ICartItem } from '@src/models';
+import { clearCart, selectCart } from '@src/store';
+import { ButtonMedium, ButtonTertiary } from '@src/styles/Buttons.styled';
+
 import {
   Article,
   Bottom,

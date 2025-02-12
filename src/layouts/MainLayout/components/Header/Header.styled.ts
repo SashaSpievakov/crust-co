@@ -1,5 +1,6 @@
-import { Button } from 'src/styles/Buttons.styled';
 import styled, { css } from 'styled-components';
+
+import { Button } from '@src/styles/Buttons.styled';
 
 interface HeaderProps {
   isCart: boolean;

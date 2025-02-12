@@ -2,8 +2,9 @@ import { FC, KeyboardEvent, useEffect, useRef } from 'react';
 import { BsCart3, BsFillMoonFill, BsFillSunFill } from 'react-icons/bs';
 import { shallowEqual } from 'react-redux';
 import { Link, useLocation } from 'react-router-dom';
-import { useAppDispatch, useAppSelector } from 'src/hooks';
-import { selectCart, selectIsLight, setTheme } from 'src/store';
+
+import { useAppDispatch, useAppSelector } from '@src/hooks';
+import { selectCart, selectIsLight, setTheme } from '@src/store';
 
 import {
   ButtonCart,

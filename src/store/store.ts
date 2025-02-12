@@ -4,7 +4,8 @@ import {
   PreloadedState,
 } from '@reduxjs/toolkit';
 
-import { pizzaAPI, pizzasAPI } from '../services';
+import { pizzaAPI, pizzasAPI } from '@src/services';
+
 import cart from './slices/cart';
 import theme from './slices/theme';
 

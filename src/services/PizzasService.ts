@@ -1,6 +1,6 @@
 import { createApi, fetchBaseQuery } from '@reduxjs/toolkit/dist/query/react';
 
-import { IPizzaItem } from '../models';
+import { IPizzaItem } from '@src/models';
 
 interface IFetchItems {
   activeCategory: number;
@@ -10,7 +10,7 @@ interface IFetchItems {
 export const pizzasAPI = createApi({
   reducerPath: 'pizzasAPI',
   baseQuery: fetchBaseQuery({
-    baseUrl: `${process.env.REACT_APP_API_URL}/api`,
+    baseUrl: `${import.meta.env.VITE_APP_API_URL}/api`,
   }),
   tagTypes: ['Pizzas'],
   endpoints: (build) => ({

@@ -1,7 +1,8 @@
 import { FC } from 'react';
 import { useLocation } from 'react-router-dom';
 
-import mainLogo from '../../../../../assets/img/main-logo.svg';
+import mainLogo from '@src/assets/img/main-logo.svg';
+
 import { CustomLink, Heading, Logo, SubHeading } from './LogoSection.styled';
 
 export const LogoSection: FC = () => {

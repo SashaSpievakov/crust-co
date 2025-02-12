@@ -6,8 +6,9 @@ import userEvent from '@testing-library/user-event';
 import {
   rendererWithProviders,
   renderWithProvidersAndRoutes,
-} from '../../../tests/helpers';
-import { mockItem } from '../../../tests/mocks/mockData/mockData';
+} from '@src/tests/helpers';
+import { mockItem } from '@src/tests/mocks/mockData/mockData';
+
 import { FullProduct } from './FullProduct';
 
 describe('FullProduct tests', () => {

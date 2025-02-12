@@ -1,8 +1,9 @@
 import { FC, useState } from 'react';
 
-import { ItemsCountHandler, ProductOptions } from '../../../components';
-import { ButtonLink } from '../../../components/UI';
-import { IPizzaItem } from '../../../models';
+import { ItemsCountHandler, ProductOptions } from '@src/components';
+import { ButtonLink } from '@src/components/UI';
+import { IPizzaItem } from '@src/models';
+
 import { Image, Item, Paragraph, Price, Title } from './FullProduct.styled';
 
 interface FullProductProps {

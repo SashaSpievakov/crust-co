@@ -1,5 +1,5 @@
-import { ICartItem } from '../../../../../models';
-import { RootState } from '../../../../store';
+import { ICartItem } from '@src/models';
+import { RootState } from '@src/store';
 
 export const selectItemsCount = (id: string) => (state: RootState) => {
   if (!state.cart) return 0;

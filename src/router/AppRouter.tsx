@@ -1,20 +1,20 @@
 import React, { Suspense } from 'react';
 import { Route, Routes } from 'react-router-dom';
 
-import { Loading } from '../components/UI';
-import { MainLayout } from '../layouts';
+import { Loading } from '@src/components/UI';
+import { MainLayout } from '@src/layouts';
 
 const Home = React.lazy(
-  () => import(/* webpackChunkName: "Home" */ '../pages/Home'),
+  () => import(/* webpackChunkName: "Home" */ '@src/pages/Home'),
 );
 const Cart = React.lazy(
-  () => import(/* webpackChunkName: "Cart" */ '../pages/Cart'),
+  () => import(/* webpackChunkName: "Cart" */ '@src/pages/Cart'),
 );
 const Pizza = React.lazy(
-  () => import(/* webpackChunkName: "FullItem" */ '../pages/Pizza'),
+  () => import(/* webpackChunkName: "FullItem" */ '@src/pages/Pizza'),
 );
 const NotFound = React.lazy(
-  () => import(/* webpackChunkName: "NotFound" */ '../pages/NotFound'),
+  () => import(/* webpackChunkName: "NotFound" */ '@src/pages/NotFound'),
 );
 
 export const AppRouter = (): JSX.Element => {

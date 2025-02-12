@@ -1,5 +1,6 @@
-import { CartItemsMockProps } from '../../../../../tests/mocks/mockData/mockData';
-import { RootState } from '../../../../store';
+import { RootState } from '@src/store';
+import { CartItemsMockProps } from '@src/tests/mocks/mockData/mockData';
+
 import { selectCart } from './selectCart';
 
 describe('selectCart tests', () => {

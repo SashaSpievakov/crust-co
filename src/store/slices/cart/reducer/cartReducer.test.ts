@@ -2,7 +2,8 @@ import {
   CartItemMockProps,
   CartItemMockProps2,
   CartItemsMockProps,
-} from '../../../../tests/mocks/mockData/mockData';
+} from '@src/tests/mocks/mockData/mockData';
+
 import cartReducer, {
   addItem,
   clearCart,
