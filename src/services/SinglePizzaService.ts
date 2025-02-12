@@ -1,6 +1,6 @@
 import { createApi, fetchBaseQuery } from '@reduxjs/toolkit/dist/query/react';
 
-import { IPizzaItem } from '../models';
+import { IPizzaItem } from '@src/models';
 
 export const pizzaAPI = createApi({
   reducerPath: 'pizzaPI',

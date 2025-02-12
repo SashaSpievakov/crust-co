@@ -1,10 +1,8 @@
 import { FC, useEffect, useState } from 'react';
 
-import {
-  ItemsCountHandler,
-  ProductOptions,
-} from '../../../../../../components';
-import { typeNames } from '../../../../../Pizza/FullProduct/FullProduct';
+import { ItemsCountHandler, ProductOptions } from '@src/components';
+import { typeNames } from '@src/pages/Pizza/FullProduct/FullProduct';
+
 import {
   Block,
   Bottom,

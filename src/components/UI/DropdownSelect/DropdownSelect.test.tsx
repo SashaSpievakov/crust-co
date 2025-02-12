@@ -3,11 +3,12 @@ import '@testing-library/jest-dom';
 import { screen } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
 
-import { sortNamesArr } from '../../../pages/Home/HomePage';
+import { sortNamesArr } from '@src/pages/Home/HomePage';
 import {
   rendererWithProviders,
   renderWithProvidersAndRoutes,
-} from '../../../tests/helpers';
+} from '@src/tests/helpers';
+
 import { DropdownSelect } from './DropdownSelect';
 
 describe('DropdownSelect Test', () => {

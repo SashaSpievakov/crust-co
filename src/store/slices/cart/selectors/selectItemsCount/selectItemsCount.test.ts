@@ -1,9 +1,10 @@
+import { RootState } from '@src/store';
 import {
   CartItemMockProps,
   CartItemMockProps2,
   CartItemsMockProps,
-} from '../../../../../tests/mocks/mockData/mockData';
-import { RootState } from '../../../../store';
+} from '@src/tests/mocks/mockData/mockData';
+
 import { selectItemsCount } from './selectItemsCount';
 
 describe('selectItemsCount tests', () => {

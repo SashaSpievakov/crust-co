@@ -1,14 +1,15 @@
 import { FC, KeyboardEvent } from 'react';
 
-import { useAppDispatch, useAppSelector } from '../../hooks';
-import { ICartItem } from '../../models';
+import { useAppDispatch, useAppSelector } from '@src/hooks';
+import { ICartItem } from '@src/models';
 import {
   addItem,
   removeItem,
   selectCurrentItemCount,
   selectItemsCount,
-} from '../../store';
-import { ButtonTertiary } from '../../styles/Buttons.styled';
+} from '@src/store';
+import { ButtonTertiary } from '@src/styles/Buttons.styled';
+
 import {
   Count,
   Counter,

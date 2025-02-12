@@ -1,9 +1,10 @@
-import { ErrorRequest } from '@src/components';
 import { FC, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 
-import { Loading } from '../../components/UI';
-import { pizzaAPI } from '../../services';
+import { ErrorRequest } from '@src/components';
+import { Loading } from '@src/components/UI';
+import { pizzaAPI } from '@src/services';
+
 import { FullProduct } from './FullProduct';
 
 export const PizzaPage: FC = () => {

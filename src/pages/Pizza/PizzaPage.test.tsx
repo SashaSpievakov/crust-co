@@ -3,10 +3,11 @@ import '@testing-library/jest-dom';
 import { screen } from '@testing-library/react';
 import { rest } from 'msw';
 
-import { pizzaAPI } from '../../services';
-import { setupStore } from '../../store';
-import { renderWithProvidersAndRoutes } from '../../tests/helpers';
-import { testServer } from '../../tests/mocks';
+import { pizzaAPI } from '@src/services';
+import { setupStore } from '@src/store';
+import { renderWithProvidersAndRoutes } from '@src/tests/helpers';
+import { testServer } from '@src/tests/mocks';
+
 import { PizzaPage } from './PizzaPage';
 
 describe('PizzaPage tests', () => {

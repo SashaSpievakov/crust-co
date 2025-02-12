@@ -2,7 +2,8 @@ import '@testing-library/jest-dom';
 
 import { screen } from '@testing-library/react';
 
-import { renderWithProvidersAndRoutes } from '../../../tests/helpers';
+import { renderWithProvidersAndRoutes } from '@src/tests/helpers';
+
 import { SkeletonLoader } from './SkeletonLoader';
 
 describe('Skeleton Tests', () => {

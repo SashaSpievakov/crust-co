@@ -1,7 +1,8 @@
-import { ErrorParagraph } from '@src/styles/Base.styled';
 import { FC } from 'react';
 
-import { ButtonLink } from '../../components/UI';
+import { ButtonLink } from '@src/components/UI';
+import { ErrorParagraph } from '@src/styles/Base.styled';
+
 import { Article, Title } from './NotFoundPage.styled';
 
 export const NotFoundPage: FC = () => {

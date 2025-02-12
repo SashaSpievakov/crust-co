@@ -1,12 +1,12 @@
-import { PreloadedState } from '@reduxjs/toolkit';
 import { ReactElement } from 'react';
+import { PreloadedState } from '@reduxjs/toolkit';
 import { Provider } from 'react-redux';
 import { MemoryRouter } from 'react-router-dom';
 import renderer from 'react-test-renderer';
 import { ThemeProvider } from 'styled-components';
 
-import { RootState, setupStore } from '../../store';
-import { darkTheme } from '../../styles/Themes.styled';
+import { RootState, setupStore } from '@src/store';
+import { darkTheme } from '@src/styles/Themes.styled';
 
 export const rendererWithProviders = (
   compenent: ReactElement,

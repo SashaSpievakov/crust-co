@@ -5,8 +5,9 @@ import { screen } from '@testing-library/react';
 import {
   rendererWithProviders,
   renderWithProvidersAndRoutes,
-} from '../../../../tests/helpers';
-import { mockItems } from '../../../../tests/mocks/mockData/mockData';
+} from '@src/tests/helpers';
+import { mockItems } from '@src/tests/mocks/mockData/mockData';
+
 import { ProductsContainer } from './ProductsContainer';
 
 describe('ProductsContainer tests', () => {

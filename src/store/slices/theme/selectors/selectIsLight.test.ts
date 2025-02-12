@@ -1,4 +1,5 @@
-import { RootState } from '../../../store';
+import { RootState } from '@src/store';
+
 import { selectIsLight } from './selectIsLight';
 
 describe('selectIsLight tests', () => {

@@ -1,5 +1,6 @@
-import { ButtonMedium, ButtonSecondary } from '@src/styles/Buttons.styled';
 import styled from 'styled-components';
+
+import { ButtonMedium, ButtonSecondary } from '@src/styles/Buttons.styled';
 
 const Form = styled.form`
   display: flex;

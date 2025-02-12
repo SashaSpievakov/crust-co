@@ -1,7 +1,8 @@
 import { FC } from 'react';
 
-import { SkeletonLoader } from '../../../../components/UI';
-import { IPizzaItem } from '../../../../models';
+import { SkeletonLoader } from '@src/components/UI';
+import { IPizzaItem } from '@src/models';
+
 import { ProductCard } from './components';
 import { SearchError, Section } from './ProductsContainer.styled';
 

@@ -1,7 +1,8 @@
 import {
   CartItemMockProps,
   CartItemMockProps2,
-} from '../../tests/mocks/mockData/mockData';
+} from '@src/tests/mocks/mockData/mockData';
+
 import { calcTotalCount } from './calcTotalCount';
 
 describe('calTotalCount tests', () => {

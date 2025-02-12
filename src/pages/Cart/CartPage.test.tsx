@@ -6,8 +6,9 @@ import userEvent from '@testing-library/user-event';
 import {
   rendererWithProviders,
   renderWithProvidersAndRoutes,
-} from '../../tests/helpers';
-import { CartItemsMockProps } from '../../tests/mocks/mockData/mockData';
+} from '@src/tests/helpers';
+import { CartItemsMockProps } from '@src/tests/mocks/mockData/mockData';
+
 import { CartPage } from './CartPage';
 
 describe('CartPage tests', () => {

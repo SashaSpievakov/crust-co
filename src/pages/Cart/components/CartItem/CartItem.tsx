@@ -2,10 +2,11 @@ import { memo } from 'react';
 import { BsDashLg, BsPlusLg } from 'react-icons/bs';
 import { Link } from 'react-router-dom';
 
-import { useAppDispatch } from '../../../../hooks';
-import { ICartItem } from '../../../../models';
-import { addItem, removeItem, removeItems } from '../../../../store';
-import { ButtonCircle } from '../../../../styles/Buttons.styled';
+import { useAppDispatch } from '@src/hooks';
+import { ICartItem } from '@src/models';
+import { addItem, removeItem, removeItems } from '@src/store';
+import { ButtonCircle } from '@src/styles/Buttons.styled';
+
 import {
   Article,
   Counter,

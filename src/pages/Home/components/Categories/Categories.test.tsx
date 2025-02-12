@@ -6,7 +6,8 @@ import userEvent from '@testing-library/user-event';
 import {
   rendererWithProviders,
   renderWithProvidersAndRoutes,
-} from '../../../../tests/helpers';
+} from '@src/tests/helpers';
+
 import { Categories } from './Categories';
 
 describe('Categories Tests', () => {
