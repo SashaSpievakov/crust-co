@@ -1,4 +1,3 @@
-/// <reference types="cypress" />
 import '@testing-library/cypress/add-commands';
 
 describe('cart tests', () => {
@@ -15,7 +14,7 @@ describe('cart tests', () => {
     cy.findAllByText(/14 inch/i)
       .eq(1)
       .click();
-    cy.findAllByTestId('itemsHandlerPlus').eq(1).click().click();
+    cy.findAllByTestId('itemsHandlerPlus').eq(1).dblclick();
 
     // check cart's values
     cy.findByText(/69 \$/i).should('be.visible');

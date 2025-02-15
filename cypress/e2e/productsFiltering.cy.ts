@@ -1,4 +1,3 @@
-/// <reference types="cypress" />
 import '@testing-library/cypress/add-commands';
 
 describe('filters tests', () => {
@@ -39,7 +38,8 @@ describe('filters tests', () => {
     cy.get('@secondPrice').should('have.text', '10$');
 
     // focus on the search input and type a value
-    cy.findByTestId('searchIcon').click().type('pep');
+    cy.findByTestId('searchIcon').click();
+    cy.findByTestId('searchIcon').type('pep');
 
     // check search input's sorting
     cy.findByRole('textbox').should('have.value', 'pep');

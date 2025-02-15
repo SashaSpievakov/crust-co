@@ -1,4 +1,3 @@
-/// <reference types="cypress" />
 import '@testing-library/cypress/add-commands';
 
 describe('Product card tests', () => {
@@ -18,7 +17,7 @@ describe('Product card tests', () => {
       .as('16inch')
       .click();
     cy.findByText(/18\$/i).should('be.visible');
-    cy.findAllByTestId('itemsHandlerPlus').first().click().click();
+    cy.findAllByTestId('itemsHandlerPlus').first().dblclick();
 
     // change category and rerender items
     cy.findByText('Meat').click();
@@ -42,17 +41,16 @@ describe('Product card tests', () => {
     cy.findAllByTestId('itemsHandlerMinus')
       .first()
       .as('minusButton')
-      .click()
-      .click();
+      .dblclick();
     cy.findAllByText('3').eq(1).should('be.visible');
 
     // delete all added items
     cy.get('@thinType').click();
     cy.get('@14inch').click();
-    cy.get('@minusButton').click().click();
+    cy.get('@minusButton').dblclick();
 
     cy.get('@16inch').click();
-    cy.get('@minusButton').click().click();
+    cy.get('@minusButton').dblclick();
 
     // check all add buttons are showing
     cy.findAllByRole('button').should('have.length', 11);
