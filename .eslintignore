@@ -1,9 +1,7 @@
 node_modules/
 dist/
 .vscode/
-package.json
 package-lock.json
-.eslintrc.json
 tsconfig.json
 tsconfig.node.json
 *.scss.d.ts

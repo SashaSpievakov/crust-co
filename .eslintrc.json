@@ -2,7 +2,8 @@
   "env": {
     "browser": true,
     "es2021": true,
-    "node": true
+    "node": true,
+    "cypress/globals": true
   },
   "extends": [
     "eslint:recommended",
@@ -11,6 +12,7 @@
     "plugin:jsx-a11y/recommended",
     "plugin:@typescript-eslint/recommended",
     "plugin:import/recommended",
+    "plugin:cypress/recommended",
     "plugin:prettier/recommended"
   ],
   "parser": "@typescript-eslint/parser",
@@ -26,6 +28,7 @@
     "@typescript-eslint",
     "simple-import-sort",
     "import",
+    "cypress",
     "prettier"
   ],
   "rules": {
@@ -71,7 +74,16 @@
     "no-debugger": "warn",
     "no-console": ["warn", { "allow": ["warn", "error"] }]
   },
-   "settings": {
+  "overrides": [
+    {
+      "files": ["*.json"],
+      "parser": "jsonc-eslint-parser",
+      "rules": {
+        "@typescript-eslint/no-unused-vars": "off"
+      }
+    }
+  ],
+  "settings": {
     "react": {
       "version": "detect"
     },
