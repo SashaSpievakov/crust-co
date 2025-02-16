@@ -16,7 +16,7 @@ export const pizzasAPI = createApi({
   endpoints: (build) => ({
     fetchPizzas: build.query<IPizzaItem[], IFetchItems>({
       query: ({ activeCategory, sortSearchParam }) => ({
-        url: '/pizzas',
+        url: '/pizza',
         params: {
           category: activeCategory > 0 ? activeCategory : undefined,
           sortBy: sortSearchParam,
