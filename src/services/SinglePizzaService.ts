@@ -11,7 +11,7 @@ export const pizzaAPI = createApi({
   endpoints: (build) => ({
     fetchItem: build.query<IPizzaItem, string>({
       query: (name) => ({
-        url: `/pizzas/${name}`,
+        url: `/pizza/${name}`,
       }),
       providesTags: (result) =>
         result ? [{ type: 'Pizza', id: result.name }] : ['Pizza'],
